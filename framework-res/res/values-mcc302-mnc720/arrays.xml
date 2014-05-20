@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="config_tether_upstream_types">
+        <item>1</item>
+        <item>4</item>
+        <item>7</item>
+        <item>9</item>
+    </integer-array>
+    <string-array name="config_operatorConsideredNonRoaming">
+        <item>302220</item>
+        <item>302221</item>
+        <item>302250</item>
+        <item>302270</item>
+        <item>302290</item>
+        <item>302320</item>
+        <item>302340</item>
+        <item>302350</item>
+        <item>302360</item>
+        <item>302370</item>
+        <item>302380</item>
+        <item>302390</item>
+        <item>302490</item>
+        <item>302500</item>
+        <item>302510</item>
+        <item>302560</item>
+        <item>302590</item>
+        <item>302610</item>
+        <item>302620</item>
+        <item>302630</item>
+        <item>302640</item>
+        <item>302656</item>
+        <item>302660</item>
+        <item>302670</item>
+        <item>302680</item>
+        <item>302710</item>
+        <item>302720</item>
+        <item>302730</item>
+        <item>302760</item>
+        <item>302770</item>
+        <item>302780</item>
+        <item>302860</item>
+        <item>302880</item>
+        <item>302940</item>
+        <item>302990</item>
+    </string-array>
+</resources>
