@@ -733,4 +733,76 @@
     <string name="keyguard_password_enter_password_code">Введите пароль</string>
     <string name="keyguard_password_enter_pin_password_code">Введите PIN-код</string>
     <string name="keyguard_password_wrong_pin_code">Неверный PIN-код.</string>
+    <string name="pinpuk_attempts">"
+Attempts Remaining :"</string>
+    <string name="keyguard_label_text">Для разблокировки нажмите \"Меню\", а затем 0.</string>
+    <string name="emergency_call_dialog_number_for_display">Экстренная служба</string>
+    <string name="lockscreen_carrier_default">Нет сигнала</string>
+    <string name="lockscreen_screen_locked">Экран заблокирован.</string>
+    <string name="lockscreen_instructions_when_pattern_enabled">Нажмите \"Меню\", чтобы разблокировать экран или вызвать службу экстренной помощи.</string>
+    <string name="lockscreen_instructions_when_pattern_disabled">Для разблокировки нажмите \"Меню\".</string>
+    <string name="lockscreen_pattern_instructions">Введите графический ключ</string>
+    <string name="lockscreen_emergency_call">Экстренный вызов</string>
+    <string name="lockscreen_return_to_call">Вернуться к вызову</string>
+    <string name="lockscreen_pattern_correct">Правильно!</string>
+    <string name="lockscreen_pattern_wrong">Повторите попытку</string>
+    <string name="lockscreen_password_wrong">Повторите попытку</string>
+    <string name="faceunlock_multiple_failures">Все попытки войти с помощью Фейсконтроля использованы</string>
+    <string name="lockscreen_plugged_in">Идет зарядка (%d%%)</string>
+    <string name="lockscreen_charged">Заряжено</string>
+    <string name="lockscreen_battery_short">%d%%</string>
+    <string name="lockscreen_low_battery">Подключите зарядное устройство</string>
+    <string name="lockscreen_missing_sim_message_short">Нет SIM-карты</string>
+    <string name="lockscreen_missing_sim_message">SIM-карта не установлена.</string>
+    <string name="lockscreen_missing_sim_instructions">Вставьте SIM-карту.</string>
+    <string name="lockscreen_missing_sim_instructions_long">SIM-карта отсутствует или недоступна. Вставьте SIM-карту.</string>
+    <string name="lockscreen_permanent_disabled_sim_message_short">SIM-карта непригодна к использованию.</string>
+    <string name="lockscreen_permanent_disabled_sim_instructions">"SIM-карта окончательно заблокирована.
+Чтобы получить новую, обратитесь к своему оператору."</string>
+    <string name="lockscreen_transport_prev_description">Кнопка перехода к предыдущему треку</string>
+    <string name="lockscreen_transport_next_description">Кнопка перехода к следующему треку</string>
+    <string name="lockscreen_transport_pause_description">Кнопка паузы</string>
+    <string name="lockscreen_transport_play_description">Кнопка воспроизведения</string>
+    <string name="lockscreen_transport_stop_description">Кнопка выключения</string>
+    <string name="emergency_calls_only">Только экстренные вызовы</string>
+    <string name="lockscreen_sim_error_message_short">Invalid Card.</string>
+    <string name="lockscreen_sim_error_message">SIM card is Invalid.</string>
+    <string name="lockscreen_network_locked_message">Сеть заблокирована</string>
+    <string name="lockscreen_sim_puk_locked_message">SIM-карта заблокирована с помощью кода PUK.</string>
+    <string name="lockscreen_sim_puk_locked_instructions">Ознакомьтесь с руководством пользователя или свяжитесь со службой поддержки.</string>
+    <string name="lockscreen_sim_locked_message">SIM-карта заблокирована</string>
+    <string name="lockscreen_sim_unlock_progress_dialog_message">Разблокировка SIM-карты…</string>
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали графический ключ. 
+
+Повтор через %d сек."</string>
+    <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали пароль. 
+
+Повтор через %d сек."</string>
+    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали PIN-код. 
+
+Повтор через %d сек."</string>
+    <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Вы %d раз неверно указали графический ключ. После %d неверных попыток для разблокировки телефона потребуется войти в аккаунт Google. 
+
+ Повтор через %d сек."</string>
+    <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">Вы %d раз не смогли разблокировать телефон. После %d неверных попыток будут восстановлены заводские настройки, что приведет к удалению всех пользовательских данных.</string>
+    <string name="lockscreen_failed_attempts_now_wiping">Вы %d раз не смогли разблокировать телефон. Будут восстановлены заводские настройки.</string>
+    <string name="lockscreen_too_many_failed_attempts_countdown">Повторите попытку через %d с.</string>
+    <string name="lockscreen_forgot_pattern_button_text">Забыли графический ключ?</string>
+    <string name="lockscreen_glogin_forgot_pattern">Снятие блокировки аккаунта</string>
+    <string name="lockscreen_glogin_too_many_attempts">Неверный графический ключ</string>
+    <string name="lockscreen_glogin_instructions">Чтобы разблокировать устройство, войдите в свой аккаунт Google.</string>
+    <string name="lockscreen_glogin_username_hint">Имя пользователя (эл. почта)</string>
+    <string name="lockscreen_glogin_password_hint">Пароль</string>
+    <string name="lockscreen_glogin_submit_button">Вход</string>
+    <string name="lockscreen_glogin_invalid_input">Неверное имя пользователя или пароль.</string>
+    <string name="lockscreen_glogin_account_recovery_hint">"Забыли имя пользователя или пароль?
+Перейдите на страницу "<b>google.com/accounts/recovery</b>.</string>
+    <string name="lockscreen_glogin_checking_password">Проверка…</string>
+    <string name="lockscreen_unlock_label">Разблокировать</string>
+    <string name="lockscreen_sound_on_label">Вкл. звук</string>
+    <string name="lockscreen_sound_off_label">Откл. звук</string>
+    <string name="lockscreen_access_pattern_start">Ввод графического ключа</string>
+    <string name="lockscreen_access_pattern_cleared">Графический ключ сброшен</string>
+    <string name="lockscreen_access_pattern_cell_added">Ячейка добавлена</string>
+    <string name="lockscreen_access_pattern_detected">Графический ключ введен</string>
 </resources>
