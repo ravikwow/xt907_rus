@@ -5,19 +5,16 @@
         <item quantity="one">Осталось попыток: %d. После этого SIM-карта будет заблокирована.</item>
     </plurals>
     <plurals name="num_seconds_ago">
-        <item quantity="other">%d секунд назад</item>
-        <item quantity="one">%d секунду назад</item>
-        <item quantity="few">%d секунды назад</item>
+        <item quantity="other">%d с. назад</item>
+        <item quantity="one">1 секунду назад</item>
     </plurals>
     <plurals name="num_minutes_ago">
-        <item quantity="other">%d минут назад</item>
-        <item quantity="one">%d минуту назад</item>
-        <item quantity="few">%d минуты назад</item>
+        <item quantity="other">%d мин. назад</item>
+        <item quantity="one">1 минуту назад</item>
     </plurals>
     <plurals name="num_hours_ago">
-        <item quantity="other">%d часов назад</item>
-        <item quantity="one">%d час назад</item>
-        <item quantity="few">%d часа назад</item>
+        <item quantity="other">%d ч. назад</item>
+        <item quantity="one">1 час назад</item>
     </plurals>
     <plurals name="last_num_days">
         <item quantity="other">Последние %d дн.</item>
@@ -27,19 +24,16 @@
         <item quantity="one">вчера</item>
     </plurals>
     <plurals name="in_num_seconds">
-        <item quantity="other">через %d секунд</item>
-        <item quantity="one">через %d секунду</item>
-        <item quantity="few">через %d секунды</item>
+        <item quantity="other">через %d с.</item>
+        <item quantity="one">через 1 секунду</item>
     </plurals>
     <plurals name="in_num_minutes">
-        <item quantity="other">через %d минут</item>
-        <item quantity="one">через %d минуту</item>
-        <item quantity="few">через %d минуты</item>
+        <item quantity="other">через %d мин.</item>
+        <item quantity="one">через 1 минуту</item>
     </plurals>
     <plurals name="in_num_hours">
-        <item quantity="other">через %d часов</item>
-        <item quantity="one">через %d час</item>
-        <item quantity="few">через %d часа</item>
+        <item quantity="other">через %d ч.</item>
+        <item quantity="one">через 1 час</item>
     </plurals>
     <plurals name="in_num_days">
         <item quantity="other">через %d дн.</item>
@@ -47,12 +41,15 @@
     </plurals>
     <plurals name="abbrev_num_seconds_ago">
         <item quantity="other">%d сек. назад</item>
+        <item quantity="one">1 сек. назад</item>
     </plurals>
     <plurals name="abbrev_num_minutes_ago">
         <item quantity="other">%d мин. назад</item>
+        <item quantity="one">1 мин. назад</item>
     </plurals>
     <plurals name="abbrev_num_hours_ago">
         <item quantity="other">%d ч. назад</item>
+        <item quantity="one">1 час назад</item>
     </plurals>
     <plurals name="abbrev_num_days_ago">
         <item quantity="other">%d дн. назад</item>
@@ -60,31 +57,31 @@
     </plurals>
     <plurals name="abbrev_in_num_seconds">
         <item quantity="other">через %d с.</item>
+        <item quantity="one">через 1 с.</item>
     </plurals>
     <plurals name="abbrev_in_num_minutes">
         <item quantity="other">через %d мин.</item>
+        <item quantity="one">через 1 мин.</item>
     </plurals>
     <plurals name="abbrev_in_num_hours">
         <item quantity="other">через %d ч.</item>
+        <item quantity="one">через 1 час</item>
     </plurals>
     <plurals name="abbrev_in_num_days">
         <item quantity="other">через %d дн.</item>
         <item quantity="one">завтра</item>
     </plurals>
     <plurals name="duration_seconds">
-        <item quantity="other">%d секунд</item>
-        <item quantity="one">%d секунда</item>
-        <item quantity="few">%d секунды</item>
+        <item quantity="other">%d сек.</item>
+        <item quantity="one">1 сек.</item>
     </plurals>
     <plurals name="duration_minutes">
-        <item quantity="other">%d минут</item>
-        <item quantity="one">%d минута</item>
-        <item quantity="few">%d минуты</item>
+        <item quantity="other">%d мин.</item>
+        <item quantity="one">1 мин.</item>
     </plurals>
     <plurals name="duration_hours">
-        <item quantity="other">%d часов</item>
-        <item quantity="one">%d час</item>
-        <item quantity="few">%d часа</item>
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">1 ч.</item>
     </plurals>
     <plurals name="wifi_available">
         <item quantity="other">Доступна сеть Wi-Fi</item>
@@ -100,6 +97,6 @@
     </plurals>
     <plurals name="restr_pin_countdown">
         <item quantity="other">Повтор через %d сек.</item>
-        <item quantity="one">Повтор через %d сек.</item>
+        <item quantity="one">Повтор через 1 сек.</item>
     </plurals>
 </resources>

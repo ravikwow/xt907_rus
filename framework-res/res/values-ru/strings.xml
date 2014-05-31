@@ -292,7 +292,7 @@
     <string name="permlab_changeConfiguration">Изменение настроек экрана</string>
     <string name="permdesc_changeConfiguration">Приложение сможет изменять текущую конфигурацию, например, региональные настройки или размер шрифта.</string>
     <string name="permlab_enableCarMode">Включение режима громкой связи</string>
-    <string name="permdesc_enableCarMode">Приложение сможет включать режим «Штурман».</string>
+    <string name="permdesc_enableCarMode">Приложение сможет включать режим \"Штурман\".</string>
     <string name="permlab_killBackgroundProcesses">Закрытие других приложений</string>
     <string name="permdesc_killBackgroundProcesses">Приложение сможет завершать фоновые процессы других приложений. Из-за этого другие приложения могут прекратить работу.</string>
     <string name="permlab_forceStopPackages">Принудительное закрытие других приложений</string>
@@ -588,7 +588,7 @@
     <string name="permlab_disableKeyguard">Отключение функции блокировки экрана</string>
     <string name="permdesc_disableKeyguard">Приложение сможет отключать блокировку экрана и другие функции защиты. Например, блокировка экрана будет отключаться при получении входящего вызова и включаться после завершения разговора.</string>
     <string name="permlab_readSyncSettings">Просмотр настроек синхронизации</string>
-    <string name="permdesc_readSyncSettings">Приложение сможет просматривать настройки синхронизации аккаунта, например определять, включена ли синхронизация для приложения «Контакты».</string>
+    <string name="permdesc_readSyncSettings">Приложение сможет просматривать настройки синхронизации аккаунта, например определять, включена ли синхронизация для приложения \"Контакты\".</string>
     <string name="permlab_writeSyncSettings">Включение/выключение синхронизации</string>
     <string name="permdesc_writeSyncSettings">Приложение сможет изменять настройки синхронизации аккаунта. Например, с помощью этого разрешения можно включить в аккаунте синхронизацию контактов.</string>
     <string name="permlab_readSyncStats">Просмотр статистики синхронизации</string>
@@ -653,8 +653,6 @@
     <string name="policydesc_disableCamera">Запретить использование камер на устройстве.</string>
     <string name="policylab_disableKeyguardFeatures">Отключить функции блокировки</string>
     <string name="policydesc_disableKeyguardFeatures">Запретить использование некоторых функций блокировки клавиатуры.</string>
-    <string name="policylab_nfcUnlock">Disable Nfc Unlock feature</string>
-    <string name="policydesc_nfcUnlock">Prevent use of Nfc Unlock feature.</string>
     <string name="phoneTypeCustom">Создать свой ярлык</string>
     <string name="phoneTypeHome">Домашний</string>
     <string name="phoneTypeMobile">Мобильный</string>
@@ -733,8 +731,6 @@
     <string name="keyguard_password_enter_password_code">Введите пароль</string>
     <string name="keyguard_password_enter_pin_password_code">Введите PIN-код</string>
     <string name="keyguard_password_wrong_pin_code">Неверный PIN-код.</string>
-    <string name="pinpuk_attempts">"
-Attempts Remaining :"</string>
     <string name="keyguard_label_text">Для разблокировки нажмите \"Меню\", а затем 0.</string>
     <string name="emergency_call_dialog_number_for_display">Экстренная служба</string>
     <string name="lockscreen_carrier_default">Нет сигнала</string>
@@ -765,8 +761,6 @@ Attempts Remaining :"</string>
     <string name="lockscreen_transport_play_description">Кнопка воспроизведения</string>
     <string name="lockscreen_transport_stop_description">Кнопка выключения</string>
     <string name="emergency_calls_only">Только экстренные вызовы</string>
-    <string name="lockscreen_sim_error_message_short">Invalid Card.</string>
-    <string name="lockscreen_sim_error_message">SIM card is Invalid.</string>
     <string name="lockscreen_network_locked_message">Сеть заблокирована</string>
     <string name="lockscreen_sim_puk_locked_message">SIM-карта заблокирована с помощью кода PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Ознакомьтесь с руководством пользователя или свяжитесь со службой поддержки.</string>
@@ -874,7 +868,7 @@ Attempts Remaining :"</string>
     <string name="permlab_setAlarm">Установка будильника</string>
     <string name="permdesc_setAlarm">Приложение сможет настраивать будильник. Функция поддерживается не во всех программах.</string>
     <string name="permlab_addVoicemail">Добавление голосовых сообщений</string>
-    <string name="permdesc_addVoicemail">Приложение сможет добавлять голосовые сообщения в папку «Входящие».</string>
+    <string name="permdesc_addVoicemail">Приложение сможет добавлять голосовые сообщения в папку \"Входящие\".</string>
     <string name="permlab_writeGeolocationPermissions">Изменение прав доступа к геоданным в браузере</string>
     <string name="permdesc_writeGeolocationPermissions">Приложение сможет изменять настройки доступа к геоданным в браузере. Вредоносные программы смогут таким образом отправлять информацию о местоположении на любые веб-сайты.</string>
     <string name="permlab_packageVerificationAgent">Проверка пакетов</string>
@@ -940,11 +934,11 @@ Attempts Remaining :"</string>
     <string name="editTextMenuTitle">Операции с текстом</string>
     <string name="low_internal_storage_view_title">Заканчивается свободное место</string>
     <string name="low_internal_storage_view_text">Некоторые системные функции могут не работать</string>
-    <string name="app_running_notification_title">Приложение «%1$s» выполняется</string>
-    <string name="app_running_notification_text">Нажмите, чтобы получить дополнительные сведения или завершить приложение.</string>
+    <string name="app_running_notification_title">Приложение \"%1$s\" выполняется</string>
+    <string name="app_running_notification_text">Нажмите, чтобы получить дополнительные данные или выключить приложение.</string>
     <string name="loading">Загрузка…</string>
-    <string name="capital_on">❙</string>
-    <string name="capital_off">〇</string>
+    <string name="capital_on">I</string>
+    <string name="capital_off">O</string>
     <string name="whichApplication">Что использовать?</string>
     <string name="whichHomeApplication">Выберите приложение</string>
     <string name="alwaysUse">По умолчанию для этого действия</string>
@@ -953,21 +947,21 @@ Attempts Remaining :"</string>
     <string name="chooseUsbActivity">Выбор приложения для USB-устройства</string>
     <string name="noApplications">Действие не поддерживается ни в одном приложении.</string>
     <string name="aerr_title" />
-    <string name="aerr_application">В приложении «%1$s» произошла ошибка.</string>
-    <string name="aerr_process">В работе процесса «%1$s» произошла ошибка.</string>
+    <string name="aerr_application">В приложении \"%1$s\" произошла ошибка.</string>
+    <string name="aerr_process">В приложении \"%1$s\" произошла ошибка.</string>
     <string name="anr_title" />
-    <string name="anr_activity_application">"Приложение «%2$s» не отвечает.
+    <string name="anr_activity_application">"Приложение \"%2$s\" не отвечает.
 
 Закрыть его?"</string>
-    <string name="anr_activity_process">"Процесс «%1$s» не отвечает.
+    <string name="anr_activity_process">"Приложение \"%1$s\" не отвечает.
 
-Завершить его?"</string>
-    <string name="anr_application_process">Процесс приложения «%1$s» не отвечает. Завершить его?</string>
-    <string name="anr_process">"Процесс «%1$s» не отвечает.
+Закрыть его?"</string>
+    <string name="anr_application_process">Приложение \"%1$s\" не отвечает. Закрыть его?</string>
+    <string name="anr_process">"Приложение \"%1$s\" не отвечает.
 
-Завершить его?"</string>
-    <string name="force_close">Завершить</string>
-    <string name="report">Отправить отчёт</string>
+Закрыть его?"</string>
+    <string name="force_close">ОК</string>
+    <string name="report">Отзыв</string>
     <string name="wait">Подождать</string>
     <string name="webpage_unresponsive">"Страница не отвечает.
 
@@ -1014,7 +1008,6 @@ Attempts Remaining :"</string>
     <string name="ringtone_unknown">Неизвестная мелодия</string>
     <string name="wifi_available_sign_in">Подключение к Wi-Fi</string>
     <string name="network_available_sign_in">Войдите в сеть</string>
-    <string name="network_available_sign_in_detailed">%1$s</string>
     <string name="wifi_watchdog_network_disabled">Не удалось подключиться к сети Wi-Fi</string>
     <string name="wifi_watchdog_network_disabled_detailed">" – плохое интернет-соединение."</string>
     <string name="wifi_p2p_dialog_title">Wi-Fi Direct</string>
@@ -1042,7 +1035,7 @@ Attempts Remaining :"</string>
     <string name="sms_short_code_confirm_allow">Отправить</string>
     <string name="sms_short_code_confirm_deny">Отмена</string>
     <string name="sms_short_code_remember_choice">Запомнить выбранный телефон</string>
-    <string name="sms_short_code_remember_undo_instruction">Это можно изменить позже в разделе настроек «Приложения».</string>
+    <string name="sms_short_code_remember_undo_instruction">Это можно изменить позже в разделе настроек \"Приложения\".</string>
     <string name="sms_short_code_confirm_always_allow">Всегда разрешать</string>
     <string name="sms_short_code_confirm_never_allow">Не разрешать</string>
     <string name="sim_removed_title">SIM-карта удалена</string>
@@ -1157,7 +1150,7 @@ Attempts Remaining :"</string>
     <string name="no_file_chosen">Не выбран файл</string>
     <string name="reset">Сбросить</string>
     <string name="submit">Отправить</string>
-    <string name="car_mode_disable_notification_title">Включен режим «Штурман»</string>
+    <string name="car_mode_disable_notification_title">Включен режим \"Штурман\"</string>
     <string name="car_mode_disable_notification_message">Чтобы выйти, нажмите здесь.</string>
     <string name="tethered_notification_title">Включен режим модема</string>
     <string name="tethered_notification_message">Нажмите для настройки.</string>
@@ -1339,7 +1332,7 @@ Attempts Remaining :"</string>
     <string name="kg_login_account_recovery_hint">"Забыли имя пользователя или пароль?
 Перейдите на страницу "<b>google.com/accounts/recovery</b>.</string>
     <string name="kg_login_checking_password">Проверка данных…</string>
-    <string name="kg_too_many_failed_pin_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали PIN-код..
+    <string name="kg_too_many_failed_pin_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали PIN-код. 
 
 Повтор через %d сек."</string>
     <string name="kg_too_many_failed_password_attempts_dialog_message" formatted="false">"Вы %d раз неверно указали пароль.
@@ -1366,12 +1359,6 @@ Attempts Remaining :"</string>
     <string name="app_no_restricted_accounts">Это приложение не поддерживается в аккаунтах для профилей с ограниченным доступом</string>
     <string name="app_not_found">Невозможно обработать это действие</string>
     <string name="revoke">Отменить</string>
-    <string name="stk_cc_ussd_to_dial">USSD request is modified to DIAL request.</string>
-    <string name="stk_cc_ussd_to_ss">USSD request is modified to SS request.</string>
-    <string name="stk_cc_ussd_to_ussd">USSD request is modified to new USSD request.</string>
-    <string name="stk_cc_ss_to_dial">SS request is modified to DIAL request.</string>
-    <string name="stk_cc_ss_to_ussd">SS request is modified to USSD request.</string>
-    <string name="stk_cc_ss_to_ss">SS request is modified to new SS request.</string>
     <string name="mediasize_iso_a0">ISO A0 (841 х 1189 мм)</string>
     <string name="mediasize_iso_a1">ISO A1 (594 х 841 мм)</string>
     <string name="mediasize_iso_a2">ISO A2 (420 х 594 мм)</string>
@@ -1472,86 +1459,6 @@ Attempts Remaining :"</string>
     <string name="restr_pin_error_too_short">PIN-код должен содержать не менее 4 символов.</string>
     <string name="restr_pin_try_later">Повторите попытку позже.</string>
     <string name="immersive_mode_confirmation">Чтобы вернуться в обычный режим, проведите пальцем вниз.</string>
-    <string name="fcc_security_notification_title">Protect your phone</string>
-    <string name="fcc_security_notification_text">Touch here to set up a pattern, PIN or password lock</string>
-    <string name="vzw_disable_we_gsm_cf">Call forward is disabled outside Verizon Wireless network.</string>
-    <string name="permlab_bindGeoFenceService">Bind to the Motorola Geofence Service</string>
-    <string name="permdesc_bindGeoFenceService">Allows holder to bind to the Motorola Geofence Service. Should only be used by the system.</string>
-    <string name="wispr_login_success">Login Success</string>
-    <string name="wispr_login_failed">Login Failed</string>
-    <string name="wispr_login_header">AT&amp;T Wi-Fi Hot Spot Status</string>
-    <string name="wispr_login_failed_credential">Unable to confirm eligibility, please call Customer CARE at 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Authentication Failed</string>
-    <string name="wispr_insert_sim">Unable to confirm eligibility, please call Customer CARE at 1-800-331-0500</string>
-    <string name="permlab_accessWifiAutonomous">Access WiFi Autonomous Mode</string>
-    <string name="permdesc_accessWifiAutonomous">Allow the access to WiFi Autonomous Mode, which makes WiFi passive scan possible for applications(with permission) even when wifi is off.</string>
-    <string name="config_wifi_hotspot_mask_ssid">AT&amp;T Wi-Fi</string>
-    <string name="config_wifi_hotspot_ssid_1">Wayport_Access</string>
-    <string name="config_wifi_hotspot_ssid_2">attmetrowifi</string>
-    <string name="config_wifi_hotspot_ssid_3">attwifi</string>
-    <string name="wifi_p2p_wifi_connection_active">Wi-Fi connection is active. Do you want to disconnect and connect to Direct device?</string>
-    <string name="wifi_p2p_direct_connection_active">Wi-Fi Direct connection is active. Do you want to disconnect and connect to access point?</string>
-    <string name="wifi_p2p_warning">Warning</string>
-    <string name="wifi_p2p_disconnect_and_reconnect">Wi-Fi Direct connection is active. Do you want to disconnect and connect to other P2P device?</string>
-    <string name="batt_temp_alert_title">Temperature Alert</string>
-    <string name="batt_temp_alert_charging_msg">Calls or applications should be shut down to cool the phone.</string>
-    <string name="batt_temp_alert_msg">Calls or applications should be shut down to cool the phone.</string>
-    <string name="batt_temp_ok_title">Temperature OK</string>
-    <string name="batt_temp_ok_charging_msg">Your phone temperature is back to normal.</string>
-    <string name="batt_temp_ok_msg">Phone has exited Cool Down mode. Normal operation has resumed.</string>
-    <string name="batt_temp_count_down_dialog_title">Cool Down Alert</string>
-    <string name="batt_temp_countdown_msg">"Phone will enter Cool Down mode in 20 seconds which will limit functions to emergency calls only. All data or settings are saved.
-"</string>
-    <string name="batt_temp_countdown_warning">Cool down starting in</string>
-    <string name="batt_temp_countdown_seconds">seconds</string>
-    <string name="smart_unlock_toast_charger">Phone will stay unlocked until the charger is disconnected</string>
-    <string name="smart_unlock_toast_cardock">Phone will stay unlocked until the cardock is disconnected</string>
-    <string name="smart_unlock_toast_deskdock">Phone will stay unlocked until the deskdock is disconnected</string>
-    <string name="kg_remote_lock_instructions">Enter remote lock password</string>
-    <string name="kg_remote_unlock_progress_dialog_message">Unlocking remote lock…</string>
-    <string name="kg_password_wrong_remote_lock_code">Incorrect remote lock code.</string>
-    <string name="switch_ime_warning">Please go to Settings application and select \"Language and Input\" to change your default language</string>
-    <string name="permlab_authenticationControl">Authentication Control</string>
-    <string name="permdesc_authenticationControl">Allows holder to send Lock screen Authentication intent.</string>
-    <string name="permlab_accessCheckin">permission to access the checkin provider</string>
-    <string name="permdesc_accessCheckin">Allows system apps to access the Checkin Provider.</string>
-    <string name="permlab_set_navbar_backgroundcolor">permission to change navigation bar background color</string>
-    <string name="permdesc_set_navbar_backgroundcolor">Allows system apps to change the navigation bar background color</string>
-    <string name="kg_wrong_wipe">%1$s - Attempt %2$d of %3$d</string>
-    <string name="lockscreen_emergency_text">Emergency message</string>
-    <string name="wifi_ap_pbc_client_connect_title">A device is attempting to connect to your hotspot</string>
-    <string name="wifi_ap_pbc_client_connect_text">Click to connect</string>
-    <string name="msim_puk_locked">PUK locked</string>
-    <string name="msim_avaliable">Available</string>
-    <string name="msim_absent">Absent</string>
-    <string name="msim_pin_locked">PIN locked</string>
-    <string name="msim_tap_to_unlock">Tap to unlock</string>
-    <string name="sim_name_primary">SIM1</string>
-    <string name="sim_name_secondary">SIM2</string>
-    <string name="msim_click_to_continue">Continue</string>
-    <string name="select_subscription_title">Use for mobile data</string>
-    <string name="subscription_option_initial">com.motorola.subscription_option_initial</string>
-    <string name="subscription_primary">Use SIM1</string>
-    <string name="subscription_secondary">Use SIM2</string>
-    <string name="subscription_off">Off</string>
-    <string name="unlock_sim_title">Unlock SIM</string>
-    <string name="unlock_sim_summary">Your SIM cards are locked. To continue, select a SIM card to unlock and enter your 4–8 digital SIM PIN.</string>
-    <string name="select_sim_title">Select SIM</string>
-    <string name="sim_lock_icon_content_description">SIM lock icon</string>
-    <string name="vibration_pattern_knock">Knock</string>
-    <string name="vibration_pattern_simple">Simple</string>
-    <string name="vibration_pattern_insistent">Insistent</string>
-    <string name="vibration_pattern_pulse">Pulse</string>
-    <string name="vibration_pattern_stumbling">Stumbling</string>
-    <string name="usb_factory_notification_title">Connected in Factory mode</string>
-    <string name="usb_bptools_notification_title">Connected in BP Tools mode</string>
-    <string name="storage_usb_disk">USB disk</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network Extender</string>
-    <string name="moto_eritext_extended_network">Extended Network</string>
-    <string name="moto_eritext_roaming">Roaming</string>
-    <string name="permlab_sdcardEncryption">sdcard encryption</string>
-    <string name="permdesc_sdcardEncryption">sdcard encryption.</string>
     <string name="webviewchromium_actionbar_share">Отправить</string>
     <string name="webviewchromium_actionbar_web_search">Веб-поиск</string>
     <string name="webviewchromium_accessibility_content_view">Вид в браузере</string>
