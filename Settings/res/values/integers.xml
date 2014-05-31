@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_user_dictionary_word_length">48</integer>
+    <integer name="max_battery_threshold">0</integer>
+    <integer name="default_hotspot_inactivity_timeout">900000</integer>
+    <integer name="keyguard_appwidget_picker_cols">1</integer>
+    <integer name="preference_scrollbar_style">33554432</integer>
+</resources>
