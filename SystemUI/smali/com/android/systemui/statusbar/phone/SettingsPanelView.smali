@@ -142,7 +142,7 @@
 
     .prologue
     .line 104
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
     check-cast v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 

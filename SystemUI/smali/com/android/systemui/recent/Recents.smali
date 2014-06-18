@@ -39,7 +39,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 210
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -50,7 +50,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
     .line 212
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -80,7 +80,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 220
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -114,7 +114,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 199
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -125,7 +125,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
     .line 201
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -161,7 +161,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -208,7 +208,7 @@
     .line 61
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -221,7 +221,7 @@
     .line 62
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -237,7 +237,7 @@
     .local v18, "opts":Landroid/app/ActivityOptions;
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -272,7 +272,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -349,7 +349,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -424,7 +424,7 @@
     .line 79
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 
@@ -769,7 +769,7 @@
     .line 185
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v34, v0
 

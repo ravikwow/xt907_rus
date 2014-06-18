@@ -108,9 +108,9 @@
     .prologue
     .line 161
     :try_start_0
-    iget-object v1, p0, Lcom/android/systemui/media/RingtonePlayer;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/systemui/media/RingtonePlayer;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -247,7 +247,7 @@
     .line 56
     iget-object v1, p0, Lcom/android/systemui/media/RingtonePlayer;->mAsyncPlayer:Lcom/android/systemui/media/NotificationPlayer;
 
-    iget-object v2, p0, Lcom/android/systemui/media/RingtonePlayer;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/media/NotificationPlayer;->setUsesWakeLock(Landroid/content/Context;)V
 

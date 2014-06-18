@@ -64,7 +64,7 @@
 
     .line 539
     .local v1, "iv":Landroid/widget/ImageView;
-    iget v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->iconId:I
+    iget v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -107,7 +107,7 @@
 
     .line 549
     .local v2, "tv":Landroid/widget/TextView;
-    iget-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->label:Ljava/lang/String;
+    iget-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -137,7 +137,7 @@
 
     if-eqz v4, :cond_1
 
-    iget-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->label:Ljava/lang/String;
+    iget-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     :goto_1
     aput-object v4, v9, v5

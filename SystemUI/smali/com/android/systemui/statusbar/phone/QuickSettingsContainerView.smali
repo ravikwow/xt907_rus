@@ -555,10 +555,10 @@
 
     move/from16 v0, v17
 
-    iput v0, v10, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iput v0, v10, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 83
-    iget v0, v10, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+    iget v0, v10, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     move/from16 v17, v0
 
@@ -570,7 +570,7 @@
 
     .line 84
     .local v13, "newWidthSpec":I
-    iget v0, v10, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+    iget v0, v10, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     move/from16 v17, v0
 

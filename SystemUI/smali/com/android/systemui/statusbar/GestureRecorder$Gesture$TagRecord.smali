@@ -36,7 +36,7 @@
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$Record;-><init>(Lcom/android/systemui/statusbar/GestureRecorder$Gesture;)V
 
     .line 81
-    iput-wide p2, p0, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$TagRecord;->time:J
+    iput-wide p2, p0, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$Record;->time:J
 
     .line 82
     iput-object p4, p0, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$TagRecord;->tag:Ljava/lang/String;

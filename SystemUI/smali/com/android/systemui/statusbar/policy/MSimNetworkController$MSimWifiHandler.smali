@@ -60,7 +60,7 @@
     .line 9831
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
+    iget-object v0, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
 
     const v1, 0x11001
 
@@ -88,7 +88,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, v1, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v1, v1, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     if-eq v0, v1, :cond_0
 
@@ -97,7 +97,7 @@
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    iput v1, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     .line 9841
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;

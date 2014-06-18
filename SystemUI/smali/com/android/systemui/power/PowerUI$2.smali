@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/power/PowerUI$2;->val$intent:Landroid/content/Intent;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .line 240
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$2;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget-object v0, v0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/power/PowerUI$2;->val$intent:Landroid/content/Intent;
 

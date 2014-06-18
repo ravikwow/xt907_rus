@@ -114,7 +114,7 @@
     const/4 v2, 0x0
 
     .line 157
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 121
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/QuickSettings;->mIsMultiSimEnabled:Z
@@ -1609,7 +1609,7 @@
 
     .line 1486
     .local v1, "dialog":Landroid/app/Dialog;
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -1629,7 +1629,7 @@
 
     .line 1491
     :goto_0
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     .line 1492
     return-void

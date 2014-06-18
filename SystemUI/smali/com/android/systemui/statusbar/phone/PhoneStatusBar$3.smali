@@ -44,7 +44,7 @@
     .line 457
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mUseHeadsUp:Z
+    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mUseHeadsUp:Z
     invoke-static {v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$200(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Z
 
     move-result v0
@@ -55,7 +55,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget-object v3, v3, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mContext:Landroid/content/Context;
+    iget-object v3, v3, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -72,7 +72,7 @@
     const/4 v1, 0x1
 
     :cond_0
-    # setter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mUseHeadsUp:Z
+    # setter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mUseHeadsUp:Z
     invoke-static {v2, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$302(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)Z
 
     .line 460
@@ -90,7 +90,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mUseHeadsUp:Z
+    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mUseHeadsUp:Z
     invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Z
 
     move-result v1
@@ -113,7 +113,7 @@
     .line 461
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mUseHeadsUp:Z
+    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mUseHeadsUp:Z
     invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$500(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Z
 
     move-result v1
@@ -123,7 +123,7 @@
     .line 462
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mUseHeadsUp:Z
+    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mUseHeadsUp:Z
     invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$600(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Z
 
     move-result v1
@@ -140,7 +140,7 @@
     .line 464
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
+    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
     invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$700(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
 
     move-result-object v1

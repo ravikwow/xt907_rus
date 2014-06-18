@@ -186,7 +186,7 @@
     const/4 v4, 0x0
 
     .line 431
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 209
     new-instance v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$1;
@@ -1497,7 +1497,7 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iput-boolean v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1160
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2028,9 +2028,9 @@
     .local v0, "r":Landroid/content/res/Resources;
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    iget-boolean v2, p1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iget-boolean v2, p1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
-    iput-boolean v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iput-boolean v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1177
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2042,7 +2042,7 @@
     .line 1182
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    iget-boolean v1, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iget-boolean v1, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     if-eqz v1, :cond_3
 
@@ -2071,7 +2071,7 @@
     const v1, 0x7f0200bb
 
     :goto_0
-    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->iconId:I
+    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1194
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2094,7 +2094,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->label:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1229
     :goto_2
@@ -2134,7 +2134,7 @@
     const v1, 0x7f0200b9
 
     :goto_3
-    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->iconId:I
+    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1207
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2174,7 +2174,7 @@
     const v1, 0x7f0200ba
 
     :goto_4
-    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->iconId:I
+    iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1222
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2185,7 +2185,7 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->label:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1224
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2215,7 +2215,7 @@
     .line 1170
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    iput-boolean p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iput-boolean p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1171
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
@@ -2280,7 +2280,7 @@
     const v0, 0x7f02002a
 
     :goto_1
-    iput v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BrightnessState;->iconId:I
+    iput v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1578
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBrightnessState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BrightnessState;
@@ -2291,7 +2291,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BrightnessState;->label:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1579
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBrightnessCallback:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RefreshCallback;
@@ -2691,7 +2691,7 @@
     const/4 v1, 0x1
 
     :goto_4
-    iput-boolean v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RSSIState;->activityIn:Z
+    iput-boolean v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$ActivityState;->activityIn:Z
 
     .line 841
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRSSIState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RSSIState;
@@ -2703,7 +2703,7 @@
     const/4 v1, 0x1
 
     :goto_5
-    iput-boolean v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RSSIState;->activityOut:Z
+    iput-boolean v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$ActivityState;->activityOut:Z
 
     .line 842
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRSSIState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RSSIState;
@@ -3364,7 +3364,7 @@
     .line 1542
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRotationLockState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;
 
-    iput-boolean p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;->enabled:Z
+    iput-boolean p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1543
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRotationLockState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;
@@ -3374,7 +3374,7 @@
     const v0, 0x7f020036
 
     :goto_0
-    iput v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;->iconId:I
+    iput v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1546
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRotationLockState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;
@@ -3390,7 +3390,7 @@
     move-result-object v0
 
     :goto_1
-    iput-object v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RotationLockState;->label:Ljava/lang/String;
+    iput-object v0, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1551
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mRotationLockCallback:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RefreshCallback;
@@ -3469,7 +3469,7 @@
     :goto_1
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    iput-boolean p1, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->enabled:Z
+    iput-boolean p1, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 715
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3486,7 +3486,7 @@
     move v5, v3
 
     :goto_2
-    iput-boolean v5, v6, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->activityIn:Z
+    iput-boolean v5, v6, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$ActivityState;->activityIn:Z
 
     .line 717
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3496,7 +3496,7 @@
     if-eqz p5, :cond_3
 
     :goto_3
-    iput-boolean v3, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->activityOut:Z
+    iput-boolean v3, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$ActivityState;->activityOut:Z
 
     .line 718
     if-eqz v1, :cond_4
@@ -3504,7 +3504,7 @@
     .line 719
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    iput p2, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->iconId:I
+    iput p2, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 720
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3518,7 +3518,7 @@
 
     move-result-object v4
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->label:Ljava/lang/String;
+    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 722
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3575,7 +3575,7 @@
 
     const v5, 0x7f020058
 
-    iput v5, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->iconId:I
+    iput v5, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 725
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3591,7 +3591,7 @@
 
     move-result-object v4
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->label:Ljava/lang/String;
+    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 727
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3612,7 +3612,7 @@
 
     const v5, 0x7f020063
 
-    iput v5, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->iconId:I
+    iput v5, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 730
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3628,7 +3628,7 @@
 
     move-result-object v4
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;->label:Ljava/lang/String;
+    iput-object v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 732
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
@@ -3689,7 +3689,7 @@
 
     iget-object v1, p2, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->label:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1398
     :cond_0
@@ -3697,7 +3697,7 @@
 
     const v1, 0x7f020067
 
-    iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1408
     :goto_1
@@ -3723,7 +3723,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;
 
-    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->enabled:Z
+    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     if-eqz v0, :cond_4
 
@@ -3732,7 +3732,7 @@
 
     const v2, 0x7f020068
 
-    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1405
     :goto_2
@@ -3744,7 +3744,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->label:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     goto :goto_1
 
@@ -3754,7 +3754,7 @@
 
     const v2, 0x7f020066
 
-    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     goto :goto_2
 .end method
@@ -3787,12 +3787,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->enabled:Z
+    iput-boolean v0, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1378
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;
 
-    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->enabled:Z
+    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     if-eqz v0, :cond_2
 
@@ -3801,7 +3801,7 @@
 
     const v2, 0x7f020068
 
-    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1383
     :goto_1
@@ -3813,7 +3813,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->label:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1385
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayCallback:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RefreshCallback;
@@ -3840,7 +3840,7 @@
 
     const v2, 0x7f020066
 
-    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v2, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     goto :goto_1
 .end method
@@ -3874,7 +3874,7 @@
     .line 1233
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->onBluetoothStateChange(Z)V
 
@@ -4015,7 +4015,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;
 
-    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->enabled:Z
+    iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     if-eq v0, v1, :cond_0
 
@@ -4034,14 +4034,14 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->label:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 1421
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;
 
     const v1, 0x7f020066
 
-    iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WirelessDisplayState;->iconId:I
+    iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 1422
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWirelessDisplayCallback:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$RefreshCallback;
@@ -4127,7 +4127,7 @@
     .line 541
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mUserState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$UserState;
 
-    iput-object p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$UserState;->label:Ljava/lang/String;
+    iput-object p1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->label:Ljava/lang/String;
 
     .line 542
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mUserState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$UserState;

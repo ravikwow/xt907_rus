@@ -47,7 +47,7 @@
 
     .prologue
     .line 89
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/high16 v4, 0x7f0b0000
 
@@ -84,7 +84,7 @@
     .line 95
     .local v0, "cls":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
     :try_start_0
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -111,16 +111,16 @@
     .line 104
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v4, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
+    iput-object v4, v3, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     .line 105
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v4, p0, Lcom/android/systemui/statusbar/SystemBars;->mComponents:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mComponents:Ljava/util/Map;
+    iput-object v4, v3, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
 
     .line 106
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -290,7 +290,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v4, "bar_service_component"
 

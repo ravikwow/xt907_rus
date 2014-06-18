@@ -113,7 +113,7 @@
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/systemui/settings/SettingsUI;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/settings/SettingsUI;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 

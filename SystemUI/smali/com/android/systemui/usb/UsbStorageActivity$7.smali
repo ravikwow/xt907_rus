@@ -29,7 +29,7 @@
     .line 249
     iput-object p1, p0, Lcom/android/systemui/usb/UsbStorageActivity$7;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

@@ -412,7 +412,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 364
-    iget-object v0, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -477,7 +477,7 @@
     const/4 v11, 0x1
 
     .line 263
-    iget-object v7, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -614,7 +614,7 @@
     if-eqz v6, :cond_0
 
     .line 286
-    iget-object v7, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v7, v6}, Landroid/media/RingtoneManager;->getRingtone(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;
 
@@ -652,7 +652,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 331
-    iget-object v2, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
@@ -711,7 +711,7 @@
     .line 307
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -837,7 +837,7 @@
     invoke-static {v6, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 212
-    iget-object v5, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const v6, 0x7f0b000e
 
@@ -882,7 +882,7 @@
     .line 218
     .restart local v3    # "levelText":Ljava/lang/CharSequence;
     :cond_1
-    iget-object v5, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/high16 v6, 0x7f040000
 
@@ -910,7 +910,7 @@
     .line 223
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v5, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -950,7 +950,7 @@
     invoke-virtual {v2, v5}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 235
-    iget-object v5, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1023,7 +1023,7 @@
 
     .prologue
     .line 77
-    iget-object v2, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1042,7 +1042,7 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1061,7 +1061,7 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1076,7 +1076,7 @@
     aput v4, v2, v3
 
     .line 84
-    iget-object v2, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v3, "power"
 
@@ -1121,7 +1121,7 @@
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 92
-    iget-object v2, p0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v3, p0, Lcom/android/systemui/power/PowerUI;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 

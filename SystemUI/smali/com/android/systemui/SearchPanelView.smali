@@ -1228,11 +1228,11 @@
     if-ne v3, v1, :cond_1
 
     .line 204
-    iget v3, v2, Landroid/widget/RelativeLayout$LayoutParams;->width:I
+    iget v3, v2, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     sub-int/2addr v3, v0
 
-    iput v3, v2, Landroid/widget/RelativeLayout$LayoutParams;->width:I
+    iput v3, v2, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 208
     :goto_0
@@ -1252,11 +1252,11 @@
     .restart local v1    # "orientation":I
     .restart local v2    # "params":Landroid/widget/RelativeLayout$LayoutParams;
     :cond_1
-    iget v3, v2, Landroid/widget/RelativeLayout$LayoutParams;->height:I
+    iget v3, v2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     sub-int/2addr v3, v0
 
-    iput v3, v2, Landroid/widget/RelativeLayout$LayoutParams;->height:I
+    iput v3, v2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     goto :goto_0
 .end method

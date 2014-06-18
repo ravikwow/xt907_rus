@@ -293,7 +293,7 @@
 
     .prologue
     .line 80
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mPanels:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PanelBar;->mPanels:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -647,7 +647,7 @@
     .line 247
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mPanelExpandedFractionSum:F
+    iget v0, v0, Lcom/android/systemui/statusbar/phone/PanelBar;->mPanelExpandedFractionSum:F
 
     move/from16 p2, v0
 
@@ -764,7 +764,7 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iget v8, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mPanelExpandedFractionSum:F
+    iget v8, v0, Lcom/android/systemui/statusbar/phone/PanelBar;->mPanelExpandedFractionSum:F
 
     invoke-virtual {v7, v6, v8}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateHeadsUp(ZF)V
 

@@ -71,7 +71,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/settings/SettingsUI$1;->this$0:Lcom/android/systemui/settings/SettingsUI;
 
-    iget-object v3, v3, Lcom/android/systemui/settings/SettingsUI;->mContext:Landroid/content/Context;
+    iget-object v3, v3, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-direct {v2, v3}, Lcom/android/systemui/settings/BrightnessDialog;-><init>(Landroid/content/Context;)V
 

@@ -97,12 +97,12 @@
 
     .prologue
     .line 84
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 56
     new-instance v8, Ljava/lang/Object;
 
-    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {v8 .. v8}, Ljava/lang/Object;-><init>()V
 
     iput-object v8, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstTaskLock:Ljava/lang/Object;
 

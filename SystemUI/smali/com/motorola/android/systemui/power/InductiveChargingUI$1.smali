@@ -29,7 +29,7 @@
     .line 182
     iput-object p1, p0, Lcom/motorola/android/systemui/power/InductiveChargingUI$1;->this$0:Lcom/motorola/android/systemui/power/InductiveChargingUI;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

@@ -29,7 +29,7 @@
     .line 175
     iput-object p1, p0, Lcom/android/systemui/recent/Recents$1;->this$0:Lcom/android/systemui/recent/Recents;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     .line 180
     iget-object v1, p0, Lcom/android/systemui/recent/Recents$1;->this$0:Lcom/android/systemui/recent/Recents;
 
-    iget-object v1, v1, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 

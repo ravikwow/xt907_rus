@@ -1028,9 +1028,9 @@
     :cond_1
     iget v10, p0, Lcom/android/systemui/DessertCaseView;->mCellSize:I
 
-    iput v10, v5, Landroid/widget/FrameLayout$LayoutParams;->height:I
+    iput v10, v5, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    iput v10, v5, Landroid/widget/FrameLayout$LayoutParams;->width:I
+    iput v10, v5, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 313
     invoke-virtual {p0, v8, v5}, Lcom/android/systemui/DessertCaseView;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V

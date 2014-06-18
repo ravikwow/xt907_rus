@@ -2233,7 +2233,7 @@
 
     new-instance v1, Ljava/lang/Object;
 
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {v1 .. v1}, Ljava/lang/Object;-><init>()V
 
     aput-object v1, v0, v5
 
@@ -2609,7 +2609,7 @@
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->registerPhoneStateListener(Landroid/content/Context;)V
 
     .line 1337
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -3118,12 +3118,12 @@
 
     .line 7834
     :goto_0
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     if-eq v1, v0, :cond_0
 
     .line 7835
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     .line 7836
     const-string v0, "SBar.MSimNetwCntrl"
@@ -3148,7 +3148,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3162,7 +3162,7 @@
 
     .line 7847
     :cond_0
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     return v0
 
@@ -3460,7 +3460,7 @@
     move-result v6
 
     .line 5136
-    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v3, :cond_1
 
@@ -3470,7 +3470,7 @@
 
     if-eqz v3, :cond_0
 
-    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-nez v3, :cond_1
 
@@ -6852,7 +6852,7 @@
 
     aget v2, v0, v8
 
-    iget v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionActual:[I
 
@@ -7036,7 +7036,7 @@
 
     move-result-object v4
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -7050,12 +7050,12 @@
 
     .line 10679
     :cond_2
-    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v3, :cond_1f
 
     .line 10692
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     if-nez v1, :cond_1e
 
@@ -7172,7 +7172,7 @@
 
     move-result-object v4
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-static {v5}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -7188,7 +7188,7 @@
 
     move-result-object v4
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-virtual {p0, v5, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -7233,7 +7233,7 @@
 
     move-result-object v4
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-static {v5}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -7249,7 +7249,7 @@
 
     move-result-object v4
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-virtual {p0, v5, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -7335,7 +7335,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -7349,7 +7349,7 @@
 
     .line 10819
     :cond_4
-    iget-boolean v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iget-boolean v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     if-eqz v4, :cond_5
 
@@ -7435,7 +7435,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTetherIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -7451,7 +7451,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTetherIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -7535,7 +7535,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -7763,7 +7763,7 @@
 
     .line 10925
     :cond_7
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     if-eqz v5, :cond_27
 
@@ -7820,7 +7820,7 @@
     .line 10952
     const v4, 0x7f0202e5
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     .line 10977
     :goto_5
@@ -7884,7 +7884,7 @@
     aput v7, v4, p1
 
     .line 10998
-    iget-boolean v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v4, :cond_25
 
@@ -8059,7 +8059,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -8075,7 +8075,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -8449,7 +8449,7 @@
 
     .line 11320
     :cond_a
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v0, :cond_3e
 
@@ -9029,7 +9029,7 @@
 
     move-result-object v6
 
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v0, :cond_69
 
@@ -9108,7 +9108,7 @@
 
     move-result-object v0
 
-    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -9756,7 +9756,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -9772,7 +9772,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -9788,7 +9788,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -9804,7 +9804,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -9820,7 +9820,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTetherIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -9836,7 +9836,7 @@
 
     move-result-object v0
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTetherIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -10270,7 +10270,7 @@
 
     .line 10643
     :cond_1c
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v1, :cond_1d
 
@@ -10339,7 +10339,7 @@
 
     .line 10698
     :cond_1e
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     .line 10699
     sget-boolean v3, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->CHATTY:Z
@@ -10380,16 +10380,16 @@
 
     .line 10785
     :goto_11
-    iput v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iput v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     .line 10786
-    iput v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiActivityIconId:I
+    iput v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiActivityIconId:I
 
     .line 10787
-    iput-boolean v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIn:Z
+    iput-boolean v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIn:Z
 
     .line 10788
-    iput-boolean v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityOut:Z
+    iput-boolean v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityOut:Z
 
     .line 10790
     sget-boolean v4, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->CHATTY:Z
@@ -10487,7 +10487,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-static {v6}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -10503,7 +10503,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -10554,7 +10554,7 @@
     :pswitch_0
     const v4, 0x7f0202c0
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     goto/16 :goto_5
 
@@ -10562,7 +10562,7 @@
     :pswitch_1
     const v4, 0x7f0202e0
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     goto/16 :goto_5
 
@@ -10577,7 +10577,7 @@
     .line 10964
     const v4, 0x7f02009f
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     goto/16 :goto_5
 
@@ -10585,7 +10585,7 @@
     :pswitch_2
     const v4, 0x7f0202bf
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     goto/16 :goto_5
 
@@ -10593,7 +10593,7 @@
     :pswitch_3
     const v4, 0x7f0202df
 
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     goto/16 :goto_5
 
@@ -10631,11 +10631,11 @@
 
     if-nez v5, :cond_2c
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-nez v5, :cond_2c
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     if-nez v5, :cond_2c
 
@@ -10751,7 +10751,7 @@
 
     move-result-object v4
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -10786,7 +10786,7 @@
 
     move-result-object v4
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -12876,9 +12876,9 @@
 
     if-ne v0, v5, :cond_6e
 
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiActivityIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiActivityIconId:I
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     if-ne v0, v5, :cond_6e
 
@@ -12902,9 +12902,9 @@
 
     if-ne v0, v5, :cond_6e
 
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     if-ne v0, v5, :cond_6e
 
@@ -12928,9 +12928,9 @@
 
     if-ne v0, v5, :cond_6e
 
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastAirplaneMode:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastAirplaneMode:Z
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     if-ne v0, v5, :cond_6e
 
@@ -13017,16 +13017,16 @@
 
     .line 12127
     :cond_70
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastAirplaneMode:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastAirplaneMode:Z
 
-    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     if-eq v0, v5, :cond_71
 
     .line 12128
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastAirplaneMode:Z
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastAirplaneMode:Z
 
     .line 12131
     :cond_71
@@ -13146,16 +13146,16 @@
 
     .line 12164
     :cond_75
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     if-eq v0, v5, :cond_76
 
     .line 12165
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiIconId:I
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
     .line 12169
     :cond_76
@@ -13222,9 +13222,9 @@
 
     .line 12205
     :cond_79
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiActivityIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiActivityIconId:I
 
-    iget v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     if-eq v0, v5, :cond_7b
 
@@ -13256,7 +13256,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -13268,7 +13268,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     invoke-virtual {p0, v6, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -13286,9 +13286,9 @@
 
     .line 12216
     :cond_7a
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiActivityIconId:I
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiActivityIconId:I
 
     .line 12222
     :cond_7b
@@ -13451,7 +13451,7 @@
 
     .line 12260
     :cond_81
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -13464,7 +13464,7 @@
     if-ge v3, v4, :cond_84
 
     .line 12262
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -13728,7 +13728,7 @@
 
     .line 12344
     :cond_8f
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mEmergencyLabelViews:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mEmergencyLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -13741,7 +13741,7 @@
     if-ge v2, v3, :cond_92
 
     .line 12346
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mEmergencyLabelViews:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mEmergencyLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -13912,7 +13912,7 @@
     aput p2, v1, v4
 
     .line 12438
-    iput p3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iput p3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     .line 12439
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetCondition:[I
@@ -13935,7 +13935,7 @@
     aput p2, v1, v4
 
     .line 12444
-    iput p3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput p3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12445
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -13979,7 +13979,7 @@
     aput v0, v1, v4
 
     .line 12455
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12456
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14010,7 +14010,7 @@
 
     or-int/2addr v1, v2
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     or-int/2addr v1, v2
 
@@ -14037,7 +14037,7 @@
     aput v1, v2, v4
 
     .line 12527
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     .line 12528
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetCondition:[I
@@ -14060,7 +14060,7 @@
 
     or-int/2addr v1, v2
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     or-int/2addr v1, v2
 
@@ -14087,7 +14087,7 @@
     aput v1, v2, v4
 
     .line 12544
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12545
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14146,7 +14146,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iget v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -14227,7 +14227,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -14339,7 +14339,7 @@
 
     .line 12415
     :cond_9
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v1, :cond_1
 
@@ -14390,7 +14390,7 @@
     aput v4, v1, v4
 
     .line 12461
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12462
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14424,9 +14424,9 @@
     aput v2, v1, v4
 
     .line 12471
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12472
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14475,9 +14475,9 @@
     aput v2, v1, v4
 
     .line 12484
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12485
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14518,7 +14518,7 @@
     aput v0, v1, v4
 
     .line 12494
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12495
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14544,7 +14544,7 @@
     aput v4, v1, v4
 
     .line 12500
-    iput v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     .line 12501
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionSB:[I
@@ -14652,7 +14652,7 @@
 
     .line 10058
     :sswitch_1
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     if-eq p3, v2, :cond_0
 
@@ -31091,7 +31091,7 @@
 
     .prologue
     .line 1980
-    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
     const-string v3, "wifi"
 
@@ -31101,7 +31101,7 @@
 
     check-cast v2, Landroid/net/wifi/WifiManager;
 
-    iput-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 1981
     new-instance v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;
@@ -31114,10 +31114,10 @@
 
     invoke-direct {v2}, Lcom/android/internal/util/AsyncChannel;-><init>()V
 
-    iput-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
+    iput-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
 
     .line 1983
-    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->getWifiServiceMessenger()Landroid/os/Messenger;
 
@@ -31128,7 +31128,7 @@
     if-eqz v1, :cond_0
 
     .line 1985
-    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContext:Landroid/content/Context;
 
@@ -31170,7 +31170,7 @@
     .line 13143
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiLevel:I
+    iget v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLevel:I
 
     move-object/from16 v0, p0
 
@@ -31192,7 +31192,7 @@
     .line 13145
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDataTypeIconId:I
+    iget v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataTypeIconId:I
 
     move-object/from16 v0, p0
 
@@ -31201,7 +31201,7 @@
     .line 13146
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastSignalLevel:I
+    iget v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastSignalLevel:I
 
     move-object/from16 v0, p0
 
@@ -32850,7 +32850,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12728
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiEnabled:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiEnabled:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
@@ -32860,7 +32860,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12730
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
@@ -32870,7 +32870,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12732
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiRssi:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiRssi:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
@@ -32880,7 +32880,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12734
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiLevel:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLevel:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
@@ -32890,7 +32890,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12736
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
@@ -32899,7 +32899,7 @@
 
     new-array v1, v5, [Ljava/lang/Object;
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -32907,7 +32907,7 @@
 
     aput-object v2, v1, v3
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-virtual {p0, v2, p4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -32926,7 +32926,7 @@
 
     new-array v1, v5, [Ljava/lang/Object;
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiIconId:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiIconId:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -32934,7 +32934,7 @@
 
     aput-object v2, v1, v3
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiIconId:I
+    iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiIconId:I
 
     invoke-virtual {p0, v2, p4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -32954,7 +32954,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12752
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
@@ -33300,7 +33300,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12807
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
@@ -33383,7 +33383,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12819
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(I)V
 
@@ -33393,7 +33393,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12821
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(I)V
 
@@ -33552,7 +33552,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12847
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiActivityIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiActivityIconId:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -33566,7 +33566,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12849
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiActivityIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiActivityIconId:I
 
     invoke-virtual {p0, v0, v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -33580,7 +33580,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12851
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -33594,7 +33594,7 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 12853
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mLastWifiIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
     invoke-virtual {p0, v0, p4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(II)Ljava/lang/String;
 
@@ -33942,13 +33942,13 @@
     .line 2594
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiEnabled:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiEnabled:Z
 
     if-eqz v2, :cond_7
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-nez v2, :cond_0
 
@@ -33969,7 +33969,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v9, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     .line 2608
     :goto_1
@@ -33986,13 +33986,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     if-eqz v2, :cond_9
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     const/4 v4, 0x3
 
@@ -34000,7 +34000,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     const/4 v4, 0x1
 
@@ -34012,20 +34012,20 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIn:Z
+    iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIn:Z
 
     .line 2621
     if-eqz v3, :cond_a
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiSsid:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     if-eqz v2, :cond_a
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     const/4 v4, 0x3
 
@@ -34033,7 +34033,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivity:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     const/4 v4, 0x2
 
@@ -34045,13 +34045,13 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityOut:Z
+    iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityOut:Z
 
     .line 2632
     :cond_3
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiIconId:I
+    iget v4, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiIconId:I
 
     move-object/from16 v0, p0
 
@@ -34071,7 +34071,7 @@
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mQSWifiActivityIconId:I
+    iget v5, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mQSWifiActivityIconId:I
 
     :goto_4
     move-object/from16 v0, p0
@@ -34114,7 +34114,7 @@
     :goto_6
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mContentDescriptionWifi:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
 
     move-object/from16 v2, p1
 
@@ -34862,7 +34862,7 @@
     :goto_18
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     move-object/from16 v0, p1
 
@@ -34904,14 +34904,14 @@
     :cond_c
     move-object/from16 v0, p0
 
-    iget-boolean v6, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIn:Z
+    iget-boolean v6, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIn:Z
 
     goto/16 :goto_5
 
     :cond_d
     move-object/from16 v0, p0
 
-    iget-boolean v7, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityOut:Z
+    iget-boolean v7, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityOut:Z
 
     goto/16 :goto_6
 
@@ -35659,7 +35659,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNetworkName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNetworkName:Ljava/lang/String;
 
     move-object/from16 v18, v0
 
@@ -37490,7 +37490,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     move v9, v2
 
@@ -37522,13 +37522,13 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiEnabled:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiEnabled:Z
 
     if-eqz v2, :cond_b
 
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-nez v2, :cond_1
 
@@ -37546,7 +37546,7 @@
     :goto_4
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v4, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     move-object/from16 v0, p0
 
@@ -37561,7 +37561,7 @@
     :goto_5
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mContentDescriptionWifi:Ljava/lang/String;
+    iget-object v8, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
 
     move-object/from16 v2, p1
 
@@ -37585,7 +37585,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v3, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     if-ne v2, v3, :cond_2
 
@@ -37627,7 +37627,7 @@
 
     move-object/from16 v0, p0
 
-    iget-boolean v4, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiConnected:Z
+    iget-boolean v4, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -37645,7 +37645,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -37669,7 +37669,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v4, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     move-object/from16 v0, p0
 
@@ -37759,7 +37759,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mContentDescriptionWifi:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -37795,7 +37795,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiIconId:I
+    iget v3, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     aput v3, v2, p2
 
@@ -37806,7 +37806,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIconId:I
+    iget v3, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     aput v3, v2, p2
 
@@ -38643,11 +38643,11 @@
     :goto_1d
     move-object/from16 v0, p0
 
-    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneMode:Z
+    iget-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mAirplaneIconId:I
+    iget v3, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
     move-object/from16 v0, p1
 
@@ -38667,7 +38667,7 @@
     :cond_9
     move-object/from16 v0, p0
 
-    iget-boolean v6, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityIn:Z
+    iget-boolean v6, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIn:Z
 
     goto/16 :goto_2
 
@@ -38675,7 +38675,7 @@
     :cond_a
     move-object/from16 v0, p0
 
-    iget-boolean v7, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiActivityOut:Z
+    iget-boolean v7, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityOut:Z
 
     goto/16 :goto_3
 
@@ -40036,7 +40036,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -40089,7 +40089,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetCondition:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -40142,7 +40142,7 @@
 
     move-result-object v5
 
-    iget v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionSB:I
+    iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionSB:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -40286,7 +40286,7 @@
 
     move-result-object v1
 
-    iget v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -40339,7 +40339,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     .line 10423
     :goto_4
@@ -40526,7 +40526,7 @@
     if-eqz v0, :cond_b
 
     .line 10287
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     if-eq v0, v1, :cond_b
 
@@ -40565,7 +40565,7 @@
 
     .line 10297
     :cond_b
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     goto/16 :goto_3
 
@@ -40576,7 +40576,7 @@
     if-eqz v0, :cond_d
 
     .line 10300
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     if-eqz v0, :cond_d
 
@@ -40615,7 +40615,7 @@
 
     .line 10309
     :cond_d
-    iput v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     goto/16 :goto_3
 
@@ -40841,7 +40841,7 @@
 
     .line 10360
     :cond_11
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     if-eqz v0, :cond_12
 
@@ -40936,7 +40936,7 @@
     aput v2, v0, p2
 
     .line 10381
-    iput v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mWifiInetConditionActual:I
+    iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetConditionActual:I
 
     .line 10382
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimWimaxInetConditionActual:[I
@@ -40947,7 +40947,7 @@
 
     .line 10415
     :cond_14
-    iput-boolean v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mBluetoothTethered:Z
+    iput-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     goto/16 :goto_4
 

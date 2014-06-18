@@ -39,7 +39,7 @@
     .line 121
     iput-object p1, p0, Lcom/android/systemui/BatteryMeterView$BatteryTracker$1;->this$1:Lcom/android/systemui/BatteryMeterView$BatteryTracker;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 122
     const/4 v0, 0x0

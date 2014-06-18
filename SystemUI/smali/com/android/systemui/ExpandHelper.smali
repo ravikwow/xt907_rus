@@ -105,7 +105,7 @@
     const/4 v5, 0x0
 
     .line 185
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 76
     iput v5, p0, Lcom/android/systemui/ExpandHelper;->mExpansionStyle:I

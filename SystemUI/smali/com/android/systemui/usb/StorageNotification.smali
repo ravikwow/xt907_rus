@@ -92,14 +92,14 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 134
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 135
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -342,14 +342,14 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 202
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/internal/app/ExternalMediaFormatActivity;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 203
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -397,14 +397,14 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 216
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/internal/app/ExternalMediaFormatActivity;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 217
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -604,7 +604,7 @@
     .line 363
     :cond_1
     :try_start_1
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v8, "notification"
 
@@ -712,7 +712,7 @@
 
     .line 400
     .local v1, "intent":Landroid/content/Intent;
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -734,7 +734,7 @@
     .line 405
     iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v0, p6
 
@@ -840,7 +840,7 @@
     .line 282
     :cond_1
     :try_start_1
-    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v9, "notification"
 
@@ -935,7 +935,7 @@
 
     .line 311
     .local v2, "intent":Landroid/content/Intent;
-    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -952,7 +952,7 @@
     :cond_3
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
-    iget-object v9, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     move-object/from16 v0, p6
 
@@ -961,7 +961,7 @@
     .line 316
     const/4 v8, 0x1
 
-    iget-object v9, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1075,7 +1075,7 @@
 
     .prologue
     .line 90
-    iget-object v3, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v4, "storage"
 
@@ -1152,7 +1152,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 258
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/systemui/usb/UsbStorageActivity;
 
@@ -1164,7 +1164,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 261
-    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v4, v0, v4}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 

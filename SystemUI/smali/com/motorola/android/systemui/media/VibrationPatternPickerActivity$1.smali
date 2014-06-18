@@ -29,7 +29,7 @@
     .line 43
     iput-object p1, p0, Lcom/motorola/android/systemui/media/VibrationPatternPickerActivity$1;->this$0:Lcom/motorola/android/systemui/media/VibrationPatternPickerActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

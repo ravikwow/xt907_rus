@@ -81,7 +81,7 @@
     if-ne v1, v6, :cond_1
 
     :goto_0
-    iput-boolean v3, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;->enabled:Z
+    iput-boolean v3, v5, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z
 
     .line 1531
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettings$35;->this$0:Lcom/android/systemui/statusbar/phone/QuickSettings;

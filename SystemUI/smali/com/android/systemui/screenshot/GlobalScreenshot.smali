@@ -63,7 +63,7 @@
     const/4 v3, 0x0
 
     .line 350
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 351
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

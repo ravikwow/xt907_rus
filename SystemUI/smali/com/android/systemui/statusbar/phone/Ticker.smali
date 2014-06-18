@@ -52,7 +52,7 @@
     const v6, 0x10a0031
 
     .line 153
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 43
     new-instance v4, Landroid/os/Handler;

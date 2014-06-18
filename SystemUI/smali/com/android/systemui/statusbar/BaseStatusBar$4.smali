@@ -41,7 +41,7 @@
 
     iput p4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->val$_id:I
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     .line 370
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const v1, 0x7f0b007d
 
