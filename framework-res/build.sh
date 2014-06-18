@@ -23,4 +23,3 @@ fi
 if [ -d "dist" ]; then
     rm -R dist
 fi
-#java -jar ../signapk.jar ../testkey.x509.pem ../testkey.pk8 dist/$PKG.apk ../build/$PKG.apk
