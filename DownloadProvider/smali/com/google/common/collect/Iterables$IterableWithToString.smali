@@ -34,8 +34,8 @@
 
     .prologue
     .line 1086
-    .local p0, this:Lcom/google/common/collect/Iterables$IterableWithToString;,"Lcom/google/common/collect/Iterables$IterableWithToString<TE;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/collect/Iterables$IterableWithToString;, "Lcom/google/common/collect/Iterables$IterableWithToString<TE;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     .prologue
     .line 1088
-    .local p0, this:Lcom/google/common/collect/Iterables$IterableWithToString;,"Lcom/google/common/collect/Iterables$IterableWithToString<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Iterables$IterableWithToString;, "Lcom/google/common/collect/Iterables$IterableWithToString<TE;>;"
     invoke-static {p0}, Lcom/google/common/collect/Iterables;->toString(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v0

@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/RegularImmutableMap;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,8 +48,8 @@
 
     .prologue
     .line 257
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$Values;,"Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
-    .local p1, map:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<*TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$Values;, "Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
+    .local p1, "map":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<*TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection;-><init>()V
 
     .line 258
@@ -64,11 +63,11 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "target"
+    .param p1, "target"    # Ljava/lang/Object;
 
     .prologue
     .line 275
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$Values;,"Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$Values;, "Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap$Values;->map:Lcom/google/common/collect/RegularImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/RegularImmutableMap;->containsValue(Ljava/lang/Object;)Z
@@ -90,12 +89,12 @@
 
     .prologue
     .line 267
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$Values;,"Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$Values;, "Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap$Values$1;
 
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableMap$Values;->map:Lcom/google/common/collect/RegularImmutableMap;
 
-    #getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
+    # getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     invoke-static {v1}, Lcom/google/common/collect/RegularImmutableMap;->access$000(Lcom/google/common/collect/RegularImmutableMap;)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     move-result-object v1
@@ -112,7 +111,7 @@
 
     .prologue
     .line 253
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$Values;,"Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$Values;, "Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableMap$Values;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -125,10 +124,10 @@
 
     .prologue
     .line 263
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$Values;,"Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$Values;, "Lcom/google/common/collect/RegularImmutableMap$Values<TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap$Values;->map:Lcom/google/common/collect/RegularImmutableMap;
 
-    #getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
+    # getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     invoke-static {v0}, Lcom/google/common/collect/RegularImmutableMap;->access$000(Lcom/google/common/collect/RegularImmutableMap;)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     move-result-object v0

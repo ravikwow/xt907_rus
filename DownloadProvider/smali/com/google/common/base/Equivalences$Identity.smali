@@ -28,7 +28,7 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/Equivalences$Identity; = null
+.field static final INSTANCE:Lcom/google/common/base/Equivalences$Identity;
 
 .field private static final serialVersionUID:J = 0x1L
 
@@ -72,8 +72,8 @@
 # virtual methods
 .method protected doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter "a"
-    .parameter "b"
+    .param p1, "a"    # Ljava/lang/Object;
+    .param p2, "b"    # Ljava/lang/Object;
 
     .prologue
     .line 85
@@ -84,7 +84,7 @@
 
 .method protected doHash(Ljava/lang/Object;)I
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 89

@@ -111,9 +111,8 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;II)V
     .locals 2
-    .parameter
-    .parameter "initialCapacity"
-    .parameter "maxSegmentSize"
+    .param p2, "initialCapacity"    # I
+    .param p3, "maxSegmentSize"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -123,8 +122,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, map:Lcom/google/common/collect/MapMakerInternalMap;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "map":Lcom/google/common/collect/MapMakerInternalMap;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 2140
@@ -268,7 +267,7 @@
 
     .prologue
     .line 2854
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     if-eqz v3, :cond_4
@@ -281,7 +280,7 @@
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2858
-    .local v2, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v2, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v3, v3, Lcom/google/common/collect/MapMakerInternalMap;->removalNotificationQueue:Ljava/util/Queue;
@@ -293,7 +292,7 @@
     .line 2859
     const/4 v1, 0x0
 
-    .local v1, i:I
+    .local v1, "i":I
     :goto_0
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
@@ -308,7 +307,7 @@
 
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_1
     if-eqz v0, :cond_1
 
@@ -343,12 +342,12 @@
     goto :goto_0
 
     .line 2868
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v1           #i:I
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v1    # "i":I
     :cond_2
     const/4 v1, 0x0
 
-    .restart local v1       #i:I
+    .restart local v1    # "i":I
     :goto_2
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
@@ -408,8 +407,8 @@
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
     .line 2883
-    .end local v1           #i:I
-    .end local v2           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v1    # "i":I
+    .end local v2    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :cond_4
     return-void
 
@@ -430,7 +429,7 @@
 
     .prologue
     .line 2270
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->keyReferenceQueue:Ljava/lang/ref/ReferenceQueue;
 
@@ -449,7 +448,7 @@
 
     .prologue
     .line 2261
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->usesKeyReferences()Z
@@ -481,9 +480,7 @@
 
 .method clearValue(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$ValueReference;)Z
     .locals 9
-    .parameter
-    .parameter "hash"
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -493,9 +490,9 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     const/4 v7, 0x0
 
     .line 2995
@@ -506,7 +503,7 @@
     iget-object v5, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2998
-    .local v5, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v5, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v8
@@ -516,7 +513,7 @@
     and-int v3, p2, v8
 
     .line 2999
-    .local v3, index:I
+    .local v3, "index":I
     invoke-virtual {v5, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -524,10 +521,10 @@
     check-cast v2, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 3001
-    .local v2, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v2, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v2
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_2
 
@@ -537,7 +534,7 @@
     move-result-object v1
 
     .line 3003
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v8
@@ -562,7 +559,7 @@
     move-result-object v6
 
     .line 3006
-    .local v6, v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v6, "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     if-ne v6, p3, :cond_0
 
     .line 3007
@@ -571,7 +568,7 @@
     move-result-object v4
 
     .line 3008
-    .local v4, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v4, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-virtual {v5, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -585,15 +582,15 @@
     .line 3018
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v4           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v6           #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v4    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v6    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_1
     return v7
 
     .line 3017
-    .restart local v1       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v6       #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v6    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -603,7 +600,7 @@
     goto :goto_1
 
     .line 3001
-    .end local v6           #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v6    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     :try_start_1
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -615,7 +612,7 @@
     goto :goto_0
 
     .line 3017
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_2
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -625,10 +622,10 @@
     goto :goto_1
 
     .line 3017
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v2           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #index:I
-    .end local v5           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v2    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "index":I
+    .end local v5    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v7
 
@@ -645,7 +642,7 @@
 
     .prologue
     .line 2274
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->valueReferenceQueue:Ljava/lang/ref/ReferenceQueue;
 
@@ -661,11 +658,11 @@
 
 .method containsKey(Ljava/lang/Object;I)Z
     .locals 3
-    .parameter "key"
-    .parameter "hash"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 2489
@@ -682,18 +679,18 @@
     move-result-object v0
 
     .line 2491
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-nez v0, :cond_0
 
     .line 2499
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postReadCleanup()V
 
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     return v1
 
     .line 2494
-    .restart local v0       #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .restart local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_0
     :try_start_1
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getValueReference()Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -716,7 +713,7 @@
 
     goto :goto_0
 
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_2
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postReadCleanup()V
 
@@ -732,11 +729,11 @@
 
 .method containsValue(Ljava/lang/Object;)Z
     .locals 6
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 2510
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     :try_start_0
     iget v5, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
@@ -746,16 +743,16 @@
     iget-object v4, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2512
-    .local v4, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v4, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v3
 
     .line 2513
-    .local v3, length:I
+    .local v3, "length":I
     const/4 v2, 0x0
 
-    .local v2, i:I
+    .local v2, "i":I
     :goto_0
     if-ge v2, v3, :cond_3
 
@@ -766,7 +763,7 @@
 
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_1
     if-eqz v0, :cond_2
 
@@ -776,7 +773,7 @@
     move-result-object v1
 
     .line 2516
-    .local v1, entryValue:Ljava/lang/Object;,"TV;"
+    .local v1, "entryValue":Ljava/lang/Object;, "TV;"
     if-nez v1, :cond_1
 
     .line 2514
@@ -807,29 +804,29 @@
     .line 2528
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postReadCleanup()V
 
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v1           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v2           #i:I
-    .end local v3           #length:I
-    .end local v4           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v1    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v2    # "i":I
+    .end local v3    # "length":I
+    .end local v4    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :goto_2
     return v5
 
     .line 2513
-    .restart local v0       #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .restart local v2       #i:I
-    .restart local v3       #length:I
-    .restart local v4       #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .restart local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .restart local v2    # "i":I
+    .restart local v3    # "length":I
+    .restart local v4    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     .line 2526
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v2           #i:I
-    .end local v3           #length:I
-    .end local v4           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v2    # "i":I
+    .end local v3    # "length":I
+    .end local v4    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :cond_3
     const/4 v5, 0x0
 
@@ -848,8 +845,6 @@
 
 .method copyEntry(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 3
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -864,15 +859,15 @@
 
     .prologue
     .line 2184
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, original:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .local p2, newNext:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "original":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p2, "newNext":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-interface {p1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getValueReference()Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     move-result-object v1
 
     .line 2185
-    .local v1, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v1, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v2, v2, Lcom/google/common/collect/MapMakerInternalMap;->entryFactory:Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;
@@ -882,7 +877,7 @@
     move-result-object v0
 
     .line 2186
-    .local v0, newEntry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "newEntry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->valueReferenceQueue:Ljava/lang/ref/ReferenceQueue;
 
     invoke-interface {v1, v2, v0}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -900,11 +895,11 @@
 
     .prologue
     .line 2232
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 2233
-    .local v1, i:I
+    .local v1, "i":I
     :cond_0
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->keyReferenceQueue:Ljava/lang/ref/ReferenceQueue;
 
@@ -912,7 +907,7 @@
 
     move-result-object v2
 
-    .local v2, ref:Ljava/lang/ref/Reference;,"Ljava/lang/ref/Reference<+TK;>;"
+    .local v2, "ref":Ljava/lang/ref/Reference;, "Ljava/lang/ref/Reference<+TK;>;"
     if-eqz v2, :cond_1
 
     move-object v0, v2
@@ -921,7 +916,7 @@
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2236
-    .local v0, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v3, v0}, Lcom/google/common/collect/MapMakerInternalMap;->reclaimKey(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
@@ -934,7 +929,7 @@
     if-ne v1, v3, :cond_0
 
     .line 2241
-    .end local v0           #entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v0    # "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_1
     return-void
 .end method
@@ -944,7 +939,7 @@
 
     .prologue
     .line 2338
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->recencyQueue:Ljava/util/Queue;
@@ -955,7 +950,7 @@
 
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-eqz v0, :cond_2
 
     .line 2343
@@ -1007,7 +1002,7 @@
 
     .prologue
     .line 2221
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->usesKeyReferences()Z
@@ -1042,11 +1037,11 @@
 
     .prologue
     .line 2246
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v0, 0x0
 
     .line 2247
-    .local v0, i:I
+    .local v0, "i":I
     :cond_0
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->valueReferenceQueue:Ljava/lang/ref/ReferenceQueue;
 
@@ -1054,7 +1049,7 @@
 
     move-result-object v1
 
-    .local v1, ref:Ljava/lang/ref/Reference;,"Ljava/lang/ref/Reference<+TV;>;"
+    .local v1, "ref":Ljava/lang/ref/Reference;, "Ljava/lang/ref/Reference<+TV;>;"
     if-eqz v1, :cond_1
 
     move-object v2, v1
@@ -1063,7 +1058,7 @@
     check-cast v2, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     .line 2250
-    .local v2, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v2, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v3, v2}, Lcom/google/common/collect/MapMakerInternalMap;->reclaimValue(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
@@ -1076,15 +1071,14 @@
     if-ne v0, v3, :cond_0
 
     .line 2255
-    .end local v2           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v2    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     return-void
 .end method
 
 .method enqueueNotification(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMaker$RemovalCause;)V
     .locals 3
-    .parameter
-    .parameter "cause"
+    .param p2, "cause"    # Lcom/google/common/collect/MapMaker$RemovalCause;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1097,8 +1091,8 @@
 
     .prologue
     .line 2394
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-interface {p1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -1123,10 +1117,8 @@
 
 .method enqueueNotification(Ljava/lang/Object;ILjava/lang/Object;Lcom/google/common/collect/MapMaker$RemovalCause;)V
     .locals 3
-    .parameter
-    .parameter "hash"
-    .parameter
-    .parameter "cause"
+    .param p2, "hash"    # I
+    .param p4, "cause"    # Lcom/google/common/collect/MapMaker$RemovalCause;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ITV;",
@@ -1137,9 +1129,9 @@
 
     .prologue
     .line 2398
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "value":Ljava/lang/Object;, "TV;"
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v1, v1, Lcom/google/common/collect/MapMakerInternalMap;->removalNotificationQueue:Ljava/util/Queue;
@@ -1154,7 +1146,7 @@
     invoke-direct {v0, p1, p3, p4}, Lcom/google/common/collect/MapMaker$RemovalNotification;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lcom/google/common/collect/MapMaker$RemovalCause;)V
 
     .line 2400
-    .local v0, notification:Lcom/google/common/collect/MapMaker$RemovalNotification;,"Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
+    .local v0, "notification":Lcom/google/common/collect/MapMaker$RemovalNotification;, "Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v1, v1, Lcom/google/common/collect/MapMakerInternalMap;->removalNotificationQueue:Ljava/util/Queue;
@@ -1162,7 +1154,7 @@
     invoke-interface {v1, v0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     .line 2402
-    .end local v0           #notification:Lcom/google/common/collect/MapMaker$RemovalNotification;,"Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
+    .end local v0    # "notification":Lcom/google/common/collect/MapMaker$RemovalNotification;, "Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
     :cond_0
     return-void
 .end method
@@ -1172,7 +1164,7 @@
 
     .prologue
     .line 2412
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v1}, Lcom/google/common/collect/MapMakerInternalMap;->evictsBySize()Z
@@ -1200,7 +1192,7 @@
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2416
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v1
@@ -1225,7 +1217,7 @@
     const/4 v1, 0x1
 
     .line 2421
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     return v1
 
@@ -1240,20 +1232,20 @@
 
     .prologue
     .line 2605
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2606
-    .local v14, oldTable:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v14, "oldTable":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v14}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v12
 
     .line 2607
-    .local v12, oldCapacity:I
-    const/high16 v17, 0x4000
+    .local v12, "oldCapacity":I
+    const/high16 v17, 0x40000000
 
     move/from16 v0, v17
 
@@ -1270,7 +1262,7 @@
     iget v5, v0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     .line 2622
-    .local v5, newCount:I
+    .local v5, "newCount":I
     shl-int/lit8 v17, v12, 0x1
 
     move-object/from16 v0, p0
@@ -1282,7 +1274,7 @@
     move-result-object v10
 
     .line 2623
-    .local v10, newTable:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v10, "newTable":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v10}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v17
@@ -1305,10 +1297,10 @@
     add-int/lit8 v8, v17, -0x1
 
     .line 2625
-    .local v8, newMask:I
+    .local v8, "newMask":I
     const/4 v13, 0x0
 
-    .local v13, oldIndex:I
+    .local v13, "oldIndex":I
     :goto_1
     if-ge v13, v12, :cond_6
 
@@ -1320,7 +1312,7 @@
     check-cast v3, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2630
-    .local v3, head:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v3, "head":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-eqz v3, :cond_1
 
     .line 2631
@@ -1329,7 +1321,7 @@
     move-result-object v11
 
     .line 2632
-    .local v11, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v11, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-interface {v3}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v17
@@ -1337,35 +1329,35 @@
     and-int v4, v17, v8
 
     .line 2635
-    .local v4, headIndex:I
+    .local v4, "headIndex":I
     if-nez v11, :cond_2
 
     .line 2636
     invoke-virtual {v10, v4, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
 
     .line 2625
-    .end local v4           #headIndex:I
-    .end local v11           #next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "headIndex":I
+    .end local v11    # "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_1
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_1
 
     .line 2641
-    .restart local v4       #headIndex:I
-    .restart local v11       #next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .restart local v4    # "headIndex":I
+    .restart local v11    # "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_2
     move-object v15, v3
 
     .line 2642
-    .local v15, tail:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v15, "tail":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move/from16 v16, v4
 
     .line 2643
-    .local v16, tailIndex:I
+    .local v16, "tailIndex":I
     move-object v2, v11
 
-    .local v2, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v2, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_2
     if-eqz v2, :cond_4
 
@@ -1377,7 +1369,7 @@
     and-int v7, v17, v8
 
     .line 2645
-    .local v7, newIndex:I
+    .local v7, "newIndex":I
     move/from16 v0, v16
 
     if-eq v7, v0, :cond_3
@@ -1397,7 +1389,7 @@
     goto :goto_2
 
     .line 2651
-    .end local v7           #newIndex:I
+    .end local v7    # "newIndex":I
     :cond_4
     move/from16 v0, v16
 
@@ -1443,7 +1435,7 @@
     and-int v7, v17, v8
 
     .line 2660
-    .restart local v7       #newIndex:I
+    .restart local v7    # "newIndex":I
     invoke-virtual {v10, v7}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v9
@@ -1451,7 +1443,7 @@
     check-cast v9, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2661
-    .local v9, newNext:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v9, "newNext":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v2, v9}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->copyEntry(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -1459,21 +1451,21 @@
     move-result-object v6
 
     .line 2662
-    .local v6, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v6, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-virtual {v10, v7, v6}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->set(ILjava/lang/Object;)V
 
     goto :goto_4
 
     .line 2668
-    .end local v2           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #head:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #headIndex:I
-    .end local v6           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v7           #newIndex:I
-    .end local v9           #newNext:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v11           #next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v15           #tail:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v16           #tailIndex:I
+    .end local v2    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "head":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "headIndex":I
+    .end local v6    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v7    # "newIndex":I
+    .end local v9    # "newNext":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v11    # "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v15    # "tail":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v16    # "tailIndex":I
     :cond_6
     move-object/from16 v0, p0
 
@@ -1492,7 +1484,7 @@
 
     .prologue
     .line 2375
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->drainRecencyQueue()V
 
     .line 2377
@@ -1519,7 +1511,7 @@
     move-result-wide v1
 
     .line 2384
-    .local v1, now:J
+    .local v1, "now":J
     :cond_2
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->expirationQueue:Ljava/util/Queue;
 
@@ -1529,7 +1521,7 @@
 
     check-cast v0, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-eqz v0, :cond_0
 
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
@@ -1563,8 +1555,8 @@
 
 .method get(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 3
-    .parameter "key"
-    .parameter "hash"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1575,7 +1567,7 @@
 
     .prologue
     .line 2470
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     :try_start_0
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->getLiveEntry(Ljava/lang/Object;I)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     :try_end_0
@@ -1584,7 +1576,7 @@
     move-result-object v0
 
     .line 2471
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-nez v0, :cond_0
 
     .line 2472
@@ -1608,7 +1600,7 @@
     move-result-object v1
 
     .line 2476
-    .local v1, value:Ljava/lang/Object;,"TV;"
+    .local v1, "value":Ljava/lang/Object;, "TV;"
     if-eqz v1, :cond_1
 
     .line 2477
@@ -1632,8 +1624,8 @@
     goto :goto_1
 
     .line 2483
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v1           #value:Ljava/lang/Object;,"TV;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v1    # "value":Ljava/lang/Object;, "TV;"
     :catchall_0
     move-exception v2
 
@@ -1644,8 +1636,8 @@
 
 .method getEntry(Ljava/lang/Object;I)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 3
-    .parameter "key"
-    .parameter "hash"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1658,7 +1650,7 @@
 
     .prologue
     .line 2436
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     if-eqz v2, :cond_3
@@ -1668,7 +1660,7 @@
 
     move-result-object v0
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_3
 
@@ -1695,7 +1687,7 @@
     move-result-object v1
 
     .line 2443
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     if-nez v1, :cond_2
 
     .line 2444
@@ -1716,8 +1708,8 @@
     if-eqz v2, :cond_0
 
     .line 2454
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :goto_2
     return-object v0
 
@@ -1729,7 +1721,7 @@
 
 .method getFirst(I)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 2
-    .parameter "hash"
+    .param p1, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1740,11 +1732,11 @@
 
     .prologue
     .line 2429
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2430
-    .local v0, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v0, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v1
@@ -1764,8 +1756,8 @@
 
 .method getLiveEntry(Ljava/lang/Object;I)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 3
-    .parameter "key"
-    .parameter "hash"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1777,7 +1769,7 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 2458
@@ -1786,19 +1778,19 @@
     move-result-object v0
 
     .line 2459
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     if-nez v0, :cond_1
 
     move-object v0, v1
 
     .line 2465
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_0
     :goto_0
     return-object v0
 
     .line 2461
-    .restart local v0       #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .restart local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_1
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
@@ -1827,7 +1819,6 @@
 
 .method getLiveValue(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1837,8 +1828,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 3071
@@ -1869,7 +1860,7 @@
     move-result-object v0
 
     .line 3076
-    .local v0, value:Ljava/lang/Object;,"TV;"
+    .local v0, "value":Ljava/lang/Object;, "TV;"
     if-nez v0, :cond_2
 
     .line 3077
@@ -1909,7 +1900,6 @@
 
 .method initTable(Ljava/util/concurrent/atomic/AtomicReferenceArray;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1922,8 +1912,8 @@
 
     .prologue
     .line 2169
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, newTable:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "newTable":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v0
@@ -1958,7 +1948,6 @@
 
 .method isCollected(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Z
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1969,8 +1958,8 @@
 
     .prologue
     .line 3049
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-interface {p1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -1998,7 +1987,6 @@
 
 .method isCollected(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2008,8 +1996,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     const/4 v0, 0x0
 
     .line 3060
@@ -2038,9 +2026,7 @@
 
 .method newEntry(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 1
-    .parameter
-    .parameter "hash"
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -2053,9 +2039,9 @@
 
     .prologue
     .line 2179
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v0, v0, Lcom/google/common/collect/MapMakerInternalMap;->entryFactory:Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;
@@ -2069,7 +2055,7 @@
 
 .method newEntryArray(I)Ljava/util/concurrent/atomic/AtomicReferenceArray;
     .locals 1
-    .parameter "size"
+    .param p1, "size"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2082,7 +2068,7 @@
 
     .prologue
     .line 2165
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;-><init>(I)V
@@ -2095,7 +2081,7 @@
 
     .prologue
     .line 3094
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->readCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
@@ -2119,7 +2105,7 @@
 
     .prologue
     .line 3114
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->runUnlockedCleanup()V
 
     .line 3115
@@ -2131,7 +2117,7 @@
 
     .prologue
     .line 3107
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->runLockedCleanup()V
 
     .line 3108
@@ -2140,10 +2126,8 @@
 
 .method put(Ljava/lang/Object;ILjava/lang/Object;Z)Ljava/lang/Object;
     .locals 11
-    .parameter
-    .parameter "hash"
-    .parameter
-    .parameter "onlyIfAbsent"
+    .param p2, "hash"    # I
+    .param p4, "onlyIfAbsent"    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ITV;Z)TV;"
@@ -2151,9 +2135,9 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "value":Ljava/lang/Object;, "TV;"
     const/4 v9, 0x0
 
     .line 2533
@@ -2169,7 +2153,7 @@
     add-int/lit8 v5, v10, 0x1
 
     .line 2538
-    .local v5, newCount:I
+    .local v5, "newCount":I
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->threshold:I
 
     if-le v5, v10, :cond_0
@@ -2187,7 +2171,7 @@
     iget-object v7, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2544
-    .local v7, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v7, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v10
@@ -2197,7 +2181,7 @@
     and-int v4, p2, v10
 
     .line 2545
-    .local v4, index:I
+    .local v4, "index":I
     invoke-virtual {v7, v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -2205,10 +2189,10 @@
     check-cast v3, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2548
-    .local v3, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v3, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v3
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_6
 
@@ -2218,7 +2202,7 @@
     move-result-object v1
 
     .line 2550
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v10
@@ -2243,13 +2227,13 @@
     move-result-object v8
 
     .line 2555
-    .local v8, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v8, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {v8}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     .line 2557
-    .local v2, entryValue:Ljava/lang/Object;,"TV;"
+    .local v2, "entryValue":Ljava/lang/Object;, "TV;"
     if-nez v2, :cond_3
 
     .line 2558
@@ -2292,16 +2276,16 @@
 
     move-object v2, v9
 
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_2
     return-object v2
 
     .line 2563
-    .restart local v1       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v2       #entryValue:Ljava/lang/Object;,"TV;"
-    .restart local v8       #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .restart local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_2
     :try_start_1
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->evictEntries()Z
@@ -2362,8 +2346,8 @@
     goto :goto_2
 
     .line 2548
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_5
     :try_start_3
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -2373,7 +2357,7 @@
     goto :goto_0
 
     .line 2585
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_6
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
 
@@ -2387,7 +2371,7 @@
     move-result-object v6
 
     .line 2587
-    .local v6, newEntry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v6, "newEntry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-virtual {p0, v6, p3}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->setValue(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Ljava/lang/Object;)V
 
     .line 2588
@@ -2422,12 +2406,12 @@
     goto :goto_2
 
     .line 2595
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #index:I
-    .end local v5           #newCount:I
-    .end local v6           #newEntry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v7           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "index":I
+    .end local v5    # "newCount":I
+    .end local v6    # "newEntry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v7    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v9
 
@@ -2441,8 +2425,7 @@
 
 .method reclaimKey(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;I)Z
     .locals 9
-    .parameter
-    .parameter "hash"
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2453,8 +2436,8 @@
 
     .prologue
     .line 2926
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     .line 2928
@@ -2464,11 +2447,11 @@
     add-int/lit8 v3, v6, -0x1
 
     .line 2929
-    .local v3, newCount:I
+    .local v3, "newCount":I
     iget-object v5, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2930
-    .local v5, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v5, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v6
@@ -2478,7 +2461,7 @@
     and-int v2, p2, v6
 
     .line 2931
-    .local v2, index:I
+    .local v2, "index":I
     invoke-virtual {v5, v2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -2486,10 +2469,10 @@
     check-cast v1, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2933
-    .local v1, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v1, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v1
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_1
 
@@ -2526,7 +2509,7 @@
     move-result-object v4
 
     .line 2939
-    .local v4, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v4, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v6, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v3, v6, -0x1
@@ -2548,7 +2531,7 @@
     .line 2949
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v4           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_1
     return v6
 
@@ -2576,11 +2559,11 @@
     goto :goto_1
 
     .line 2948
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v1           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v2           #index:I
-    .end local v3           #newCount:I
-    .end local v5           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v1    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v2    # "index":I
+    .end local v3    # "newCount":I
+    .end local v5    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v6
 
@@ -2594,9 +2577,7 @@
 
 .method reclaimValue(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$ValueReference;)Z
     .locals 10
-    .parameter
-    .parameter "hash"
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -2606,9 +2587,9 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     const/4 v8, 0x0
 
     .line 2957
@@ -2621,11 +2602,11 @@
     add-int/lit8 v4, v9, -0x1
 
     .line 2960
-    .local v4, newCount:I
+    .local v4, "newCount":I
     iget-object v6, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2961
-    .local v6, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v6, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v6}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v9
@@ -2635,7 +2616,7 @@
     and-int v3, p2, v9
 
     .line 2962
-    .local v3, index:I
+    .local v3, "index":I
     invoke-virtual {v6, v3}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -2643,10 +2624,10 @@
     check-cast v2, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2964
-    .local v2, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v2, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v2
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_3
 
@@ -2656,7 +2637,7 @@
     move-result-object v1
 
     .line 2966
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v9
@@ -2681,7 +2662,7 @@
     move-result-object v7
 
     .line 2969
-    .local v7, v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v7, "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     if-ne v7, p3, :cond_1
 
     .line 2970
@@ -2706,7 +2687,7 @@
     move-result-object v5
 
     .line 2973
-    .local v5, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v5, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v8, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v4, v8, -0x1
@@ -2735,16 +2716,16 @@
     .line 2986
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v5           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v7           #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v5    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v7    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_0
     :goto_1
     return v8
 
     .line 2984
-    .restart local v1       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v7       #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v7    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -2761,7 +2742,7 @@
     goto :goto_1
 
     .line 2964
-    .end local v7           #v:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v7    # "v":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_2
     :try_start_1
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -2773,7 +2754,7 @@
     goto :goto_0
 
     .line 2984
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_3
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -2790,11 +2771,11 @@
     goto :goto_1
 
     .line 2984
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v2           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #index:I
-    .end local v4           #newCount:I
-    .end local v6           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v2    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "index":I
+    .end local v4    # "newCount":I
+    .end local v6    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v8
 
@@ -2816,8 +2797,7 @@
 
 .method recordExpirationTime(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;J)V
     .locals 2
-    .parameter
-    .parameter "expirationNanos"
+    .param p2, "expirationNanos"    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2828,8 +2808,8 @@
 
     .prologue
     .line 2356
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v0, v0, Lcom/google/common/collect/MapMakerInternalMap;->ticker:Lcom/google/common/base/Ticker;
@@ -2848,7 +2828,6 @@
 
 .method recordLockedRead(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2859,8 +2838,8 @@
 
     .prologue
     .line 2302
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->evictionQueue:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
@@ -2893,7 +2872,6 @@
 
 .method recordRead(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2904,8 +2882,8 @@
 
     .prologue
     .line 2287
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->expiresAfterAccess()Z
@@ -2933,7 +2911,6 @@
 
 .method recordWrite(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2944,8 +2921,8 @@
 
     .prologue
     .line 2316
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->drainRecencyQueue()V
 
     .line 2317
@@ -2976,7 +2953,7 @@
     iget-wide v0, v2, Lcom/google/common/collect/MapMakerInternalMap;->expireAfterAccessNanos:J
 
     .line 2324
-    .local v0, expiration:J
+    .local v0, "expiration":J
     :goto_0
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->recordExpirationTime(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;J)V
 
@@ -2986,7 +2963,7 @@
     invoke-interface {v2, p1}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
     .line 2327
-    .end local v0           #expiration:J
+    .end local v0    # "expiration":J
     :cond_0
     return-void
 
@@ -3001,8 +2978,8 @@
 
 .method remove(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 12
-    .parameter "key"
-    .parameter "hash"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3012,7 +2989,7 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v10, 0x0
 
     .line 2768
@@ -3028,11 +3005,11 @@
     add-int/lit8 v6, v11, -0x1
 
     .line 2773
-    .local v6, newCount:I
+    .local v6, "newCount":I
     iget-object v8, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2774
-    .local v8, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v8, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v8}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v11
@@ -3042,7 +3019,7 @@
     and-int v5, p2, v11
 
     .line 2775
-    .local v5, index:I
+    .local v5, "index":I
     invoke-virtual {v8, v5}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -3050,10 +3027,10 @@
     check-cast v4, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2777
-    .local v4, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v4, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v1, v4
 
-    .local v1, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v1, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v1, :cond_3
 
@@ -3063,7 +3040,7 @@
     move-result-object v2
 
     .line 2779
-    .local v2, entryKey:Ljava/lang/Object;,"TK;"
+    .local v2, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v11
@@ -3088,20 +3065,20 @@
     move-result-object v9
 
     .line 2782
-    .local v9, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v9, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {v9}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
     .line 2785
-    .local v3, entryValue:Ljava/lang/Object;,"TV;"
+    .local v3, "entryValue":Ljava/lang/Object;, "TV;"
     if-eqz v3, :cond_0
 
     .line 2786
     sget-object v0, Lcom/google/common/collect/MapMaker$RemovalCause;->EXPLICIT:Lcom/google/common/collect/MapMaker$RemovalCause;
 
     .line 2793
-    .local v0, cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .local v0, "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     :goto_1
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
 
@@ -3118,7 +3095,7 @@
     move-result-object v7
 
     .line 2796
-    .local v7, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v7, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v6, v10, -0x1
@@ -3137,18 +3114,18 @@
     .line 2806
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v0           #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
-    .end local v2           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v3           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v7           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v9           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
+    .end local v2    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v7    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_2
     return-object v3
 
     .line 2787
-    .restart local v2       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v3       #entryValue:Ljava/lang/Object;,"TV;"
-    .restart local v9       #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v2    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .restart local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_0
     :try_start_1
     invoke-virtual {p0, v9}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isCollected(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)Z
@@ -3162,11 +3139,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .restart local v0       #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .restart local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     goto :goto_1
 
     .line 2805
-    .end local v0           #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .end local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3178,8 +3155,8 @@
     goto :goto_2
 
     .line 2777
-    .end local v3           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v9           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_2
     :try_start_2
     invoke-interface {v1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -3191,7 +3168,7 @@
     goto :goto_0
 
     .line 2805
-    .end local v2           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v2    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_3
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3203,11 +3180,11 @@
     goto :goto_2
 
     .line 2805
-    .end local v1           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v5           #index:I
-    .end local v6           #newCount:I
-    .end local v8           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v1    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v5    # "index":I
+    .end local v6    # "newCount":I
+    .end local v8    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v10
 
@@ -3221,12 +3198,12 @@
 
 .method remove(Ljava/lang/Object;ILjava/lang/Object;)Z
     .locals 12
-    .parameter "key"
-    .parameter "hash"
-    .parameter "value"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "hash"    # I
+    .param p3, "value"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     const/4 v10, 0x0
 
     .line 2811
@@ -3242,11 +3219,11 @@
     add-int/lit8 v6, v11, -0x1
 
     .line 2816
-    .local v6, newCount:I
+    .local v6, "newCount":I
     iget-object v8, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2817
-    .local v8, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v8, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v8}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v11
@@ -3256,7 +3233,7 @@
     and-int v5, p2, v11
 
     .line 2818
-    .local v5, index:I
+    .local v5, "index":I
     invoke-virtual {v8, v5}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -3264,10 +3241,10 @@
     check-cast v4, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2820
-    .local v4, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v4, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v1, v4
 
-    .local v1, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v1, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v1, :cond_4
 
@@ -3277,7 +3254,7 @@
     move-result-object v2
 
     .line 2822
-    .local v2, entryKey:Ljava/lang/Object;,"TK;"
+    .local v2, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v11
@@ -3302,13 +3279,13 @@
     move-result-object v9
 
     .line 2825
-    .local v9, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v9, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {v9}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
     .line 2828
-    .local v3, entryValue:Ljava/lang/Object;,"TV;"
+    .local v3, "entryValue":Ljava/lang/Object;, "TV;"
     iget-object v11, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v11, v11, Lcom/google/common/collect/MapMakerInternalMap;->valueEquivalence:Lcom/google/common/base/Equivalence;
@@ -3323,7 +3300,7 @@
     sget-object v0, Lcom/google/common/collect/MapMaker$RemovalCause;->EXPLICIT:Lcom/google/common/collect/MapMaker$RemovalCause;
 
     .line 2836
-    .local v0, cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .local v0, "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     :goto_1
     iget v11, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
 
@@ -3340,7 +3317,7 @@
     move-result-object v7
 
     .line 2839
-    .local v7, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v7, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v11, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v6, v11, -0x1
@@ -3367,18 +3344,18 @@
     .line 2849
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v0           #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
-    .end local v2           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v3           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v7           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v9           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
+    .end local v2    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v7    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_2
     return v10
 
     .line 2830
-    .restart local v2       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v3       #entryValue:Ljava/lang/Object;,"TV;"
-    .restart local v9       #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v2    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .restart local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     :try_start_1
     invoke-virtual {p0, v9}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isCollected(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)Z
@@ -3392,11 +3369,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .restart local v0       #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .restart local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     goto :goto_1
 
     .line 2848
-    .end local v0           #cause:Lcom/google/common/collect/MapMaker$RemovalCause;
+    .end local v0    # "cause":Lcom/google/common/collect/MapMaker$RemovalCause;
     :cond_2
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3406,8 +3383,8 @@
     goto :goto_2
 
     .line 2820
-    .end local v3           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v9           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v3    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v9    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_3
     :try_start_2
     invoke-interface {v1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -3419,7 +3396,7 @@
     goto :goto_0
 
     .line 2848
-    .end local v2           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v2    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_4
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3429,11 +3406,11 @@
     goto :goto_2
 
     .line 2848
-    .end local v1           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v5           #index:I
-    .end local v6           #newCount:I
-    .end local v8           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v1    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v5    # "index":I
+    .end local v6    # "newCount":I
+    .end local v8    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v10
 
@@ -3447,7 +3424,6 @@
 
 .method removeCollectedEntry(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3458,8 +3434,8 @@
 
     .prologue
     .line 2917
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     sget-object v0, Lcom/google/common/collect/MapMaker$RemovalCause;->COLLECTED:Lcom/google/common/collect/MapMaker$RemovalCause;
 
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->enqueueNotification(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMaker$RemovalCause;)V
@@ -3480,9 +3456,8 @@
 
 .method removeEntry(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;ILcom/google/common/collect/MapMaker$RemovalCause;)Z
     .locals 8
-    .parameter
-    .parameter "hash"
-    .parameter "cause"
+    .param p2, "hash"    # I
+    .param p3, "cause"    # Lcom/google/common/collect/MapMaker$RemovalCause;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3495,18 +3470,18 @@
 
     .prologue
     .line 3024
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v6, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v3, v6, -0x1
 
     .line 3025
-    .local v3, newCount:I
+    .local v3, "newCount":I
     iget-object v5, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 3026
-    .local v5, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v5, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v6
@@ -3516,7 +3491,7 @@
     and-int v2, p2, v6
 
     .line 3027
-    .local v2, index:I
+    .local v2, "index":I
     invoke-virtual {v5, v2}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -3524,10 +3499,10 @@
     check-cast v1, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 3029
-    .local v1, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v1, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v1
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_1
 
@@ -3562,7 +3537,7 @@
     move-result-object v4
 
     .line 3034
-    .local v4, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v4, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v6, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v3, v6, -0x1
@@ -3577,7 +3552,7 @@
     const/4 v6, 0x1
 
     .line 3041
-    .end local v4           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_1
     return v6
 
@@ -3598,8 +3573,6 @@
 
 .method removeFromChain(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
     .locals 4
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3614,9 +3587,9 @@
 
     .prologue
     .line 2899
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .local p2, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p2, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->evictionQueue:Ljava/util/Queue;
 
     invoke-interface {v3, p2}, Ljava/util/Queue;->remove(Ljava/lang/Object;)Z
@@ -3630,16 +3603,16 @@
     iget v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     .line 2903
-    .local v1, newCount:I
+    .local v1, "newCount":I
     invoke-interface {p2}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     move-result-object v2
 
     .line 2904
-    .local v2, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v2, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, p1
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eq v0, p2, :cond_1
 
@@ -3682,9 +3655,7 @@
 
 .method replace(Ljava/lang/Object;ILjava/lang/Object;)Ljava/lang/Object;
     .locals 11
-    .parameter
-    .parameter "hash"
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ITV;)TV;"
@@ -3692,9 +3663,9 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, newValue:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "newValue":Ljava/lang/Object;, "TV;"
     const/4 v9, 0x0
 
     .line 2724
@@ -3708,7 +3679,7 @@
     iget-object v7, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2729
-    .local v7, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v7, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v10
@@ -3718,7 +3689,7 @@
     and-int v4, p2, v10
 
     .line 2730
-    .local v4, index:I
+    .local v4, "index":I
     invoke-virtual {v7, v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -3726,10 +3697,10 @@
     check-cast v3, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2732
-    .local v3, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v3, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v3
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_3
 
@@ -3739,7 +3710,7 @@
     move-result-object v1
 
     .line 2734
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v10
@@ -3764,13 +3735,13 @@
     move-result-object v8
 
     .line 2739
-    .local v8, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v8, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {v8}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     .line 2740
-    .local v2, entryValue:Ljava/lang/Object;,"TV;"
+    .local v2, "entryValue":Ljava/lang/Object;, "TV;"
     if-nez v2, :cond_1
 
     .line 2741
@@ -3786,7 +3757,7 @@
     add-int/lit8 v5, v10, -0x1
 
     .line 2743
-    .local v5, newCount:I
+    .local v5, "newCount":I
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
 
     add-int/lit8 v10, v10, 0x1
@@ -3804,7 +3775,7 @@
     move-result-object v6
 
     .line 2746
-    .local v6, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v6, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v5, v10, -0x1
@@ -3818,8 +3789,8 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2762
-    .end local v5           #newCount:I
-    .end local v6           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v5    # "newCount":I
+    .end local v6    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3828,16 +3799,16 @@
 
     move-object v2, v9
 
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_1
     return-object v2
 
     .line 2753
-    .restart local v1       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v2       #entryValue:Ljava/lang/Object;,"TV;"
-    .restart local v8       #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .restart local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     :try_start_1
     iget v9, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
@@ -3865,8 +3836,8 @@
     goto :goto_1
 
     .line 2732
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_2
     :try_start_2
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -3878,7 +3849,7 @@
     goto :goto_0
 
     .line 2762
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_3
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -3890,10 +3861,10 @@
     goto :goto_1
 
     .line 2762
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #index:I
-    .end local v7           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "index":I
+    .end local v7    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v9
 
@@ -3907,10 +3878,7 @@
 
 .method replace(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)Z
     .locals 11
-    .parameter
-    .parameter "hash"
-    .parameter
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ITV;TV;)Z"
@@ -3918,10 +3886,10 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, oldValue:Ljava/lang/Object;,"TV;"
-    .local p4, newValue:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "oldValue":Ljava/lang/Object;, "TV;"
+    .local p4, "newValue":Ljava/lang/Object;, "TV;"
     const/4 v9, 0x0
 
     .line 2673
@@ -3935,7 +3903,7 @@
     iget-object v7, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     .line 2678
-    .local v7, table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .local v7, "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->length()I
 
     move-result v10
@@ -3945,7 +3913,7 @@
     and-int v4, p2, v10
 
     .line 2679
-    .local v4, index:I
+    .local v4, "index":I
     invoke-virtual {v7, v4}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -3953,10 +3921,10 @@
     check-cast v3, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 2681
-    .local v3, first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v3, "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     move-object v0, v3
 
-    .local v0, e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v0, "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :goto_0
     if-eqz v0, :cond_4
 
@@ -3966,7 +3934,7 @@
     move-result-object v1
 
     .line 2683
-    .local v1, entryKey:Ljava/lang/Object;,"TK;"
+    .local v1, "entryKey":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getHash()I
 
     move-result v10
@@ -3991,13 +3959,13 @@
     move-result-object v8
 
     .line 2688
-    .local v8, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v8, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {v8}, Lcom/google/common/collect/MapMakerInternalMap$ValueReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     .line 2689
-    .local v2, entryValue:Ljava/lang/Object;,"TV;"
+    .local v2, "entryValue":Ljava/lang/Object;, "TV;"
     if-nez v2, :cond_1
 
     .line 2690
@@ -4013,7 +3981,7 @@
     add-int/lit8 v5, v10, -0x1
 
     .line 2692
-    .local v5, newCount:I
+    .local v5, "newCount":I
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->modCount:I
 
     add-int/lit8 v10, v10, 0x1
@@ -4031,7 +3999,7 @@
     move-result-object v6
 
     .line 2695
-    .local v6, newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local v6, "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
 
     add-int/lit8 v5, v10, -0x1
@@ -4045,24 +4013,24 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2718
-    .end local v5           #newCount:I
-    .end local v6           #newFirst:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v5    # "newCount":I
+    .end local v6    # "newFirst":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     .line 2719
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :goto_1
     return v9
 
     .line 2702
-    .restart local v1       #entryKey:Ljava/lang/Object;,"TK;"
-    .restart local v2       #entryValue:Ljava/lang/Object;,"TV;"
-    .restart local v8       #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .restart local v1    # "entryKey":Ljava/lang/Object;, "TK;"
+    .restart local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .restart local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_1
     :try_start_1
     iget-object v10, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
@@ -4119,8 +4087,8 @@
     goto :goto_1
 
     .line 2681
-    .end local v2           #entryValue:Ljava/lang/Object;,"TV;"
-    .end local v8           #valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .end local v2    # "entryValue":Ljava/lang/Object;, "TV;"
+    .end local v8    # "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     :cond_3
     :try_start_3
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getNext()Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
@@ -4132,7 +4100,7 @@
     goto :goto_0
 
     .line 2718
-    .end local v1           #entryKey:Ljava/lang/Object;,"TK;"
+    .end local v1    # "entryKey":Ljava/lang/Object;, "TK;"
     :cond_4
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
@@ -4142,10 +4110,10 @@
     goto :goto_1
 
     .line 2718
-    .end local v0           #e:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v3           #first:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .end local v4           #index:I
-    .end local v7           #table:Ljava/util/concurrent/atomic/AtomicReferenceArray;,"Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
+    .end local v0    # "e":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v3    # "first":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .end local v4    # "index":I
+    .end local v7    # "table":Ljava/util/concurrent/atomic/AtomicReferenceArray;, "Ljava/util/concurrent/atomic/AtomicReferenceArray<Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;>;"
     :catchall_0
     move-exception v9
 
@@ -4162,7 +4130,7 @@
 
     .prologue
     .line 3118
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->runLockedCleanup()V
 
     .line 3119
@@ -4177,7 +4145,7 @@
 
     .prologue
     .line 3123
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0
@@ -4221,7 +4189,7 @@
 
     .prologue
     .line 3136
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v0
@@ -4240,8 +4208,6 @@
 
 .method setValue(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Ljava/lang/Object;)V
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4252,9 +4218,9 @@
 
     .prologue
     .line 2195
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v1, v1, Lcom/google/common/collect/MapMakerInternalMap;->valueStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
@@ -4264,7 +4230,7 @@
     move-result-object v0
 
     .line 2196
-    .local v0, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v0, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-interface {p1, v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->setValueReference(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
 
     .line 2197
@@ -4279,7 +4245,7 @@
 
     .prologue
     .line 2206
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0
@@ -4313,7 +4279,7 @@
 
     .prologue
     .line 2363
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Segment;,"Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Segment;, "Lcom/google/common/collect/MapMakerInternalMap$Segment<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0

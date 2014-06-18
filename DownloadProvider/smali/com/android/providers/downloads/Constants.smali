@@ -51,7 +51,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 95
-    .local v0, builder:Ljava/lang/StringBuilder;
+    .local v0, "builder":Ljava/lang/StringBuilder;
     sget-object v6, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -63,7 +63,7 @@
     move v3, v4
 
     .line 96
-    .local v3, validRelease:Z
+    .local v3, "validRelease":Z
     :goto_0
     sget-object v6, Landroid/os/Build;->ID:Ljava/lang/String;
 
@@ -76,7 +76,7 @@
     move v2, v4
 
     .line 97
-    .local v2, validId:Z
+    .local v2, "validId":Z
     :goto_1
     const-string v6, "REL"
 
@@ -99,7 +99,7 @@
     move v1, v4
 
     .line 100
-    .local v1, includeModel:Z
+    .local v1, "includeModel":Z
     :goto_2
     const-string v4, "AndroidDownloadManager"
 
@@ -201,23 +201,23 @@
 
     return-void
 
-    .end local v1           #includeModel:Z
-    .end local v2           #validId:Z
-    .end local v3           #validRelease:Z
+    .end local v1    # "includeModel":Z
+    .end local v2    # "validId":Z
+    .end local v3    # "validRelease":Z
     :cond_5
     move v3, v5
 
     .line 95
     goto :goto_0
 
-    .restart local v3       #validRelease:Z
+    .restart local v3    # "validRelease":Z
     :cond_6
     move v2, v5
 
     .line 96
     goto :goto_1
 
-    .restart local v2       #validId:Z
+    .restart local v2    # "validId":Z
     :cond_7
     move v1, v5
 
@@ -230,7 +230,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

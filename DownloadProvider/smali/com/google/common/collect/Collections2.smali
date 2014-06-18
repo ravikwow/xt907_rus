@@ -29,14 +29,13 @@
 
     .prologue
     .line 46
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static cast(Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -51,17 +50,15 @@
 
     .prologue
     .line 341
-    .local p0, iterable:Ljava/lang/Iterable;,"Ljava/lang/Iterable<TT;>;"
+    .local p0, "iterable":Ljava/lang/Iterable;, "Ljava/lang/Iterable<TT;>;"
     check-cast p0, Ljava/util/Collection;
 
-    .end local p0           #iterable:Ljava/lang/Iterable;,"Ljava/lang/Iterable<TT;>;"
+    .end local p0    # "iterable":Ljava/lang/Iterable;, "Ljava/lang/Iterable<TT;>;"
     return-object p0
 .end method
 
 .method static containsAllImpl(Ljava/util/Collection;Ljava/util/Collection;)Z
     .locals 3
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,8 +71,8 @@
 
     .prologue
     .line 305
-    .local p0, self:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "self":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 306
@@ -83,7 +80,7 @@
 
     move-result-object v0
 
-    .local v0, i$:Ljava/util/Iterator;
+    .local v0, "i$":Ljava/util/Iterator;
     :cond_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -96,7 +93,7 @@
     move-result-object v1
 
     .line 307
-    .local v1, o:Ljava/lang/Object;
+    .local v1, "o":Ljava/lang/Object;
     invoke-interface {p0, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v2
@@ -107,7 +104,7 @@
     const/4 v2, 0x0
 
     .line 311
-    .end local v1           #o:Ljava/lang/Object;
+    .end local v1    # "o":Ljava/lang/Object;
     :goto_0
     return v2
 
@@ -119,7 +116,7 @@
 
 .method static newStringBuilderForCollection(I)Ljava/lang/StringBuilder;
     .locals 5
-    .parameter "size"
+    .param p0, "size"    # I
 
     .prologue
     .line 333
@@ -162,8 +159,7 @@
 
 .method static safeContains(Ljava/util/Collection;Ljava/lang/Object;)Z
     .locals 2
-    .parameter
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -176,7 +172,7 @@
 
     .prologue
     .line 96
-    .local p0, collection:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
     :try_end_0
@@ -193,7 +189,7 @@
     move-exception v0
 
     .line 98
-    .local v0, e:Ljava/lang/ClassCastException;
+    .local v0, "e":Ljava/lang/ClassCastException;
     const/4 v1, 0x0
 
     goto :goto_0
@@ -201,7 +197,6 @@
 
 .method static toStringImpl(Ljava/util/Collection;)Ljava/lang/String;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -213,7 +208,7 @@
 
     .prologue
     .line 318
-    .local p0, collection:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -229,7 +224,7 @@
     move-result-object v0
 
     .line 320
-    .local v0, sb:Ljava/lang/StringBuilder;
+    .local v0, "sb":Ljava/lang/StringBuilder;
     sget-object v1, Lcom/google/common/collect/Collections2;->STANDARD_JOINER:Lcom/google/common/base/Joiner;
 
     new-instance v2, Lcom/google/common/collect/Collections2$1;

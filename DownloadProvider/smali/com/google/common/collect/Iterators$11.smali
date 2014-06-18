@@ -28,8 +28,7 @@
 # direct methods
 .method constructor <init>(I[Ljava/lang/Object;)V
     .locals 0
-    .parameter "x0"
-    .parameter
+    .param p1, "x0"    # I
 
     .prologue
     .line 1038
@@ -44,7 +43,7 @@
 # virtual methods
 .method protected get(I)Ljava/lang/Object;
     .locals 1
-    .parameter "index"
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"

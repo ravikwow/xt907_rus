@@ -31,11 +31,11 @@
 # direct methods
 .method constructor <init>([Ljava/lang/Object;)V
     .locals 0
-    .parameter "elements"
+    .param p1, "elements"    # [Ljava/lang/Object;
 
     .prologue
     .line 381
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
     .line 382
@@ -49,7 +49,6 @@
 # virtual methods
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 8
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,8 +58,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
-    .local p1, targets:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p1, "targets":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     const/4 v4, 0x1
 
     const/4 v5, 0x0
@@ -69,13 +68,13 @@
     if-ne p1, p0, :cond_1
 
     .line 435
-    .end local p1           #targets:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .end local p1    # "targets":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     :cond_0
     :goto_0
     return v4
 
     .line 424
-    .restart local p1       #targets:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .restart local p1    # "targets":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     :cond_1
     instance-of v6, p1, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;
 
@@ -109,23 +108,23 @@
     :cond_3
     check-cast p1, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;
 
-    .end local p1           #targets:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .end local p1    # "targets":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     iget-object v0, p1, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->elements:[Ljava/lang/Object;
 
-    .local v0, arr$:[Ljava/lang/Object;
+    .local v0, "arr$":[Ljava/lang/Object;
     array-length v2, v0
 
-    .local v2, len$:I
+    .local v2, "len$":I
     const/4 v1, 0x0
 
-    .local v1, i$:I
+    .local v1, "i$":I
     :goto_1
     if-ge v1, v2, :cond_0
 
     aget-object v3, v0, v1
 
     .line 431
-    .local v3, target:Ljava/lang/Object;
+    .local v3, "target":Ljava/lang/Object;
     invoke-virtual {p0, v3}, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->contains(Ljava/lang/Object;)Z
 
     move-result v6
@@ -149,7 +148,7 @@
 
     .prologue
     .line 391
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     const/4 v0, 0x0
 
     return v0
@@ -167,7 +166,7 @@
 
     .prologue
     .line 400
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->elements:[Ljava/lang/Object;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterators;->forArray([Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
@@ -182,7 +181,7 @@
 
     .prologue
     .line 377
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -195,7 +194,7 @@
 
     .prologue
     .line 387
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->elements:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -207,7 +206,7 @@
     .locals 4
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
     const/4 v3, 0x0
 
     .line 404
@@ -218,7 +217,7 @@
     new-array v0, v1, [Ljava/lang/Object;
 
     .line 405
-    .local v0, array:[Ljava/lang/Object;
+    .local v0, "array":[Ljava/lang/Object;
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->elements:[Ljava/lang/Object;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->size()I
@@ -233,7 +232,6 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -243,8 +241,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;,"Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
-    .local p1, array:[Ljava/lang/Object;,"[TT;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;, "Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet<TE;>;"
+    .local p1, "array":[Ljava/lang/Object;, "[TT;"
     const/4 v2, 0x0
 
     .line 410
@@ -253,7 +251,7 @@
     move-result v0
 
     .line 411
-    .local v0, size:I
+    .local v0, "size":I
     array-length v1, p1
 
     if-ge v1, v0, :cond_1

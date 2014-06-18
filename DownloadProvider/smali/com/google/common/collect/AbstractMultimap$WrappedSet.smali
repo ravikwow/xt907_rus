@@ -33,9 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/Set;)V
     .locals 1
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -46,9 +43,9 @@
 
     .prologue
     .line 647
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSet;"
-    .local p2, key:Ljava/lang/Object;,"TK;"
-    .local p3, delegate:Ljava/util/Set;,"Ljava/util/Set<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSet;"
+    .local p2, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "delegate":Ljava/util/Set;, "Ljava/util/Set<TV;>;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedSet;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     .line 648

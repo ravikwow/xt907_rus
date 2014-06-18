@@ -24,11 +24,11 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 1
-    .parameter "size"
+    .param p1, "size"    # I
 
     .prologue
     .line 54
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(II)V
@@ -39,12 +39,12 @@
 
 .method protected constructor <init>(II)V
     .locals 0
-    .parameter "size"
-    .parameter "position"
+    .param p1, "size"    # I
+    .param p2, "position"    # I
 
     .prologue
     .line 68
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableListIterator;-><init>()V
 
     .line 69
@@ -75,7 +75,7 @@
 
     .prologue
     .line 76
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     iget v1, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->size:I
@@ -98,7 +98,7 @@
 
     .prologue
     .line 94
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     if-lez v0, :cond_0
@@ -124,7 +124,7 @@
 
     .prologue
     .line 81
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIndexedListIterator;->hasNext()Z
 
     move-result v0
@@ -158,7 +158,7 @@
 
     .prologue
     .line 89
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     return v0
@@ -174,7 +174,7 @@
 
     .prologue
     .line 99
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIndexedListIterator;->hasPrevious()Z
 
     move-result v0
@@ -208,7 +208,7 @@
 
     .prologue
     .line 107
-    .local p0, this:Lcom/google/common/collect/AbstractIndexedListIterator;,"Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractIndexedListIterator;, "Lcom/google/common/collect/AbstractIndexedListIterator<TE;>;"
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     add-int/lit8 v0, v0, -0x1

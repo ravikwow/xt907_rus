@@ -85,7 +85,7 @@
 
 .method static synthetic access$000(Lcom/android/providers/downloads/DownloadService;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -96,7 +96,7 @@
 
 .method static synthetic access$100(Lcom/android/providers/downloads/DownloadService;)Ljava/util/Map;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -107,7 +107,7 @@
 
 .method static synthetic access$200(Lcom/android/providers/downloads/DownloadService;)Z
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -120,7 +120,7 @@
 
 .method static synthetic access$300(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadNotifier;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -131,7 +131,7 @@
 
 .method static synthetic access$400(Lcom/android/providers/downloads/DownloadService;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -142,7 +142,7 @@
 
 .method static synthetic access$500(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadService$DownloadManagerContentObserver;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -153,7 +153,7 @@
 
 .method static synthetic access$600(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadScanner;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -164,7 +164,7 @@
 
 .method static synthetic access$700(Lcom/android/providers/downloads/DownloadService;)Landroid/os/HandlerThread;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadService;
 
     .prologue
     .line 74
@@ -189,7 +189,7 @@
     move-result v1
 
     .line 109
-    .local v1, maxConcurrent:I
+    .local v1, "maxConcurrent":I
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
     const-wide/16 v3, 0xa
@@ -205,7 +205,7 @@
     invoke-direct/range {v0 .. v6}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V
 
     .line 112
-    .local v0, executor:Ljava/util/concurrent/ThreadPoolExecutor;
+    .local v0, "executor":Ljava/util/concurrent/ThreadPoolExecutor;
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
@@ -216,7 +216,7 @@
 
 .method private deleteDownloadLocked(J)V
     .locals 4
-    .parameter "id"
+    .param p1, "id"    # J
 
     .prologue
     .line 431
@@ -233,7 +233,7 @@
     check-cast v0, Lcom/android/providers/downloads/DownloadInfo;
 
     .line 432
-    .local v0, info:Lcom/android/providers/downloads/DownloadInfo;
+    .local v0, "info":Lcom/android/providers/downloads/DownloadInfo;
     iget v1, v0, Lcom/android/providers/downloads/DownloadInfo;->mStatus:I
 
     const/16 v2, 0xc0
@@ -309,7 +309,7 @@
 
 .method private deleteFileIfExists(Ljava/lang/String;)V
     .locals 4
-    .parameter "path"
+    .param p1, "path"    # Ljava/lang/String;
 
     .prologue
     .line 445
@@ -354,7 +354,7 @@
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 450
-    .local v0, file:Ljava/io/File;
+    .local v0, "file":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -397,7 +397,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 454
-    .end local v0           #file:Ljava/io/File;
+    .end local v0    # "file":Ljava/io/File;
     :cond_1
     return-void
 .end method
@@ -464,8 +464,8 @@
 
 .method private insertDownloadLocked(Lcom/android/providers/downloads/DownloadInfo$Reader;J)Lcom/android/providers/downloads/DownloadInfo;
     .locals 5
-    .parameter "reader"
-    .parameter "now"
+    .param p1, "reader"    # Lcom/android/providers/downloads/DownloadInfo$Reader;
+    .param p2, "now"    # J
 
     .prologue
     .line 405
@@ -480,7 +480,7 @@
     move-result-object v0
 
     .line 407
-    .local v0, info:Lcom/android/providers/downloads/DownloadInfo;
+    .local v0, "info":Lcom/android/providers/downloads/DownloadInfo;
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadService;->mDownloads:Ljava/util/Map;
 
     iget-wide v2, v0, Lcom/android/providers/downloads/DownloadInfo;->mId:J
@@ -528,9 +528,9 @@
 
 .method private updateDownload(Lcom/android/providers/downloads/DownloadInfo$Reader;Lcom/android/providers/downloads/DownloadInfo;J)V
     .locals 4
-    .parameter "reader"
-    .parameter "info"
-    .parameter "now"
+    .param p1, "reader"    # Lcom/android/providers/downloads/DownloadInfo$Reader;
+    .param p2, "info"    # Lcom/android/providers/downloads/DownloadInfo;
+    .param p3, "now"    # J
 
     .prologue
     .line 420
@@ -936,7 +936,7 @@
 
     const/4 v7, 0x0
 
-    const/high16 v8, 0x4000
+    const/high16 v8, 0x40000000
 
     move-object/from16 v0, p0
 
@@ -955,9 +955,9 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 7
-    .parameter "fd"
-    .parameter "writer"
-    .parameter "args"
+    .param p1, "fd"    # Ljava/io/FileDescriptor;
+    .param p2, "writer"    # Ljava/io/PrintWriter;
+    .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
     .line 458
@@ -968,7 +968,7 @@
     invoke-direct {v4, p2, v5}, Lcom/android/internal/util/IndentingPrintWriter;-><init>(Ljava/io/Writer;Ljava/lang/String;)V
 
     .line 459
-    .local v4, pw:Lcom/android/internal/util/IndentingPrintWriter;
+    .local v4, "pw":Lcom/android/internal/util/IndentingPrintWriter;
     iget-object v6, p0, Lcom/android/providers/downloads/DownloadService;->mDownloads:Ljava/util/Map;
 
     monitor-enter v6
@@ -986,7 +986,7 @@
     move-result-object v2
 
     .line 461
-    .local v2, ids:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Long;>;"
+    .local v2, "ids":Ljava/util/List;, "Ljava/util/List<Ljava/lang/Long;>;"
     invoke-static {v2}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 462
@@ -994,7 +994,7 @@
 
     move-result-object v0
 
-    .local v0, i$:Ljava/util/Iterator;
+    .local v0, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1009,7 +1009,7 @@
     check-cast v1, Ljava/lang/Long;
 
     .line 463
-    .local v1, id:Ljava/lang/Long;
+    .local v1, "id":Ljava/lang/Long;
     iget-object v5, p0, Lcom/android/providers/downloads/DownloadService;->mDownloads:Ljava/util/Map;
 
     invoke-interface {v5, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1019,16 +1019,16 @@
     check-cast v3, Lcom/android/providers/downloads/DownloadInfo;
 
     .line 464
-    .local v3, info:Lcom/android/providers/downloads/DownloadInfo;
+    .local v3, "info":Lcom/android/providers/downloads/DownloadInfo;
     invoke-virtual {v3, v4}, Lcom/android/providers/downloads/DownloadInfo;->dump(Lcom/android/internal/util/IndentingPrintWriter;)V
 
     goto :goto_0
 
     .line 466
-    .end local v0           #i$:Ljava/util/Iterator;
-    .end local v1           #id:Ljava/lang/Long;
-    .end local v2           #ids:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Long;>;"
-    .end local v3           #info:Lcom/android/providers/downloads/DownloadInfo;
+    .end local v0    # "i$":Ljava/util/Iterator;
+    .end local v1    # "id":Ljava/lang/Long;
+    .end local v2    # "ids":Ljava/util/List;, "Ljava/util/List<Ljava/lang/Long;>;"
+    .end local v3    # "info":Lcom/android/providers/downloads/DownloadInfo;
     :catchall_0
     move-exception v5
 
@@ -1038,8 +1038,8 @@
 
     throw v5
 
-    .restart local v0       #i$:Ljava/util/Iterator;
-    .restart local v2       #ids:Ljava/util/List;,"Ljava/util/List<Ljava/lang/Long;>;"
+    .restart local v0    # "i$":Ljava/util/Iterator;
+    .restart local v2    # "ids":Ljava/util/List;, "Ljava/util/List<Ljava/lang/Long;>;"
     :cond_0
     :try_start_1
     monitor-exit v6
@@ -1052,7 +1052,7 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .parameter "i"
+    .param p1, "i"    # Landroid/content/Intent;
 
     .prologue
     .line 145
@@ -1199,7 +1199,7 @@
     move-exception v0
 
     .line 166
-    .local v0, ex:Lcom/motorola/android/cryptography/CryptographicModeException;
+    .local v0, "ex":Lcom/motorola/android/cryptography/CryptographicModeException;
     const-string v1, "DownloadManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1270,9 +1270,9 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .parameter "intent"
-    .parameter "flags"
-    .parameter "startId"
+    .param p1, "intent"    # Landroid/content/Intent;
+    .param p2, "flags"    # I
+    .param p3, "startId"    # I
 
     .prologue
     .line 193
@@ -1281,7 +1281,7 @@
     move-result v0
 
     .line 194
-    .local v0, returnValue:I
+    .local v0, "returnValue":I
     sget-boolean v1, Lcom/android/providers/downloads/Constants;->LOGVV:Z
 
     if-eqz v1, :cond_0

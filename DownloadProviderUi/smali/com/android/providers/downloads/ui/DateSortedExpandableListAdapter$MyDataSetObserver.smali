@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 69
@@ -34,8 +33,8 @@
 
 .method synthetic constructor <init>(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p1, "x0"    # Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;
+    .param p2, "x1"    # Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter$1;
 
     .prologue
     .line 69
@@ -53,13 +52,13 @@
     .line 72
     iget-object v2, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter$MyDataSetObserver;->this$0:Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;
 
-    #calls: Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->buildMap()V
+    # invokes: Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->buildMap()V
     invoke-static {v2}, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->access$000(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;)V
 
     .line 73
     iget-object v2, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter$MyDataSetObserver;->this$0:Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;
 
-    #getter for: Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mObservers:Ljava/util/Vector;
+    # getter for: Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mObservers:Ljava/util/Vector;
     invoke-static {v2}, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->access$100(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;)Ljava/util/Vector;
 
     move-result-object v2
@@ -68,7 +67,7 @@
 
     move-result-object v0
 
-    .local v0, i$:Ljava/util/Iterator;
+    .local v0, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -83,13 +82,13 @@
     check-cast v1, Landroid/database/DataSetObserver;
 
     .line 74
-    .local v1, o:Landroid/database/DataSetObserver;
+    .local v1, "o":Landroid/database/DataSetObserver;
     invoke-virtual {v1}, Landroid/database/DataSetObserver;->onChanged()V
 
     goto :goto_0
 
     .line 76
-    .end local v1           #o:Landroid/database/DataSetObserver;
+    .end local v1    # "o":Landroid/database/DataSetObserver;
     :cond_0
     return-void
 .end method

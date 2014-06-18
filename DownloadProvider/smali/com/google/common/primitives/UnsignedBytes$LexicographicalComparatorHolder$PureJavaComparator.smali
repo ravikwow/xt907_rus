@@ -66,8 +66,6 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -83,7 +81,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$PureJavaComparator;
     .locals 1
-    .parameter
 
     .prologue
     .line 334
@@ -118,17 +115,17 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p1, "x0"    # Ljava/lang/Object;
+    .param p2, "x1"    # Ljava/lang/Object;
 
     .prologue
     .line 334
     check-cast p1, [B
 
-    .end local p1
+    .end local p1    # "x0":Ljava/lang/Object;
     check-cast p2, [B
 
-    .end local p2
+    .end local p2    # "x1":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$PureJavaComparator;->compare([B[B)I
 
     move-result v0
@@ -138,8 +135,8 @@
 
 .method public compare([B[B)I
     .locals 5
-    .parameter "left"
-    .parameter "right"
+    .param p1, "left"    # [B
+    .param p2, "right"    # [B
 
     .prologue
     .line 338
@@ -152,10 +149,10 @@
     move-result v1
 
     .line 339
-    .local v1, minLength:I
+    .local v1, "minLength":I
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_0
     if-ge v0, v1, :cond_1
 
@@ -169,23 +166,23 @@
     move-result v2
 
     .line 341
-    .local v2, result:I
+    .local v2, "result":I
     if-eqz v2, :cond_0
 
     .line 345
-    .end local v2           #result:I
+    .end local v2    # "result":I
     :goto_1
     return v2
 
     .line 339
-    .restart local v2       #result:I
+    .restart local v2    # "result":I
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
     .line 345
-    .end local v2           #result:I
+    .end local v2    # "result":I
     :cond_1
     array-length v3, p1
 

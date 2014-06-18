@@ -24,13 +24,12 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 267
     iput-object p1, p0, Lcom/android/providers/downloads/ui/DownloadList$3;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -39,11 +38,11 @@
 # virtual methods
 .method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
     .locals 3
-    .parameter "parent"
-    .parameter "v"
-    .parameter "groupPosition"
-    .parameter "childPosition"
-    .parameter "id"
+    .param p1, "parent"    # Landroid/widget/ExpandableListView;
+    .param p2, "v"    # Landroid/view/View;
+    .param p3, "groupPosition"    # I
+    .param p4, "childPosition"    # I
+    .param p5, "id"    # J
 
     .prologue
     const/4 v0, 0x1
@@ -57,16 +56,16 @@
     const/4 v0, 0x0
 
     .line 282
-    .end local p2
+    .end local p2    # "v":Landroid/view/View;
     :goto_0
     return v0
 
     .line 276
-    .restart local p2
+    .restart local p2    # "v":Landroid/view/View;
     :cond_0
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$3;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$100(Lcom/android/providers/downloads/ui/DownloadList;)Ljava/util/Map;
 
     move-result-object v1
@@ -80,17 +79,17 @@
     .line 277
     check-cast p2, Lcom/android/providers/downloads/ui/DownloadItem;
 
-    .end local p2
+    .end local p2    # "v":Landroid/view/View;
     invoke-virtual {p2, v0}, Lcom/android/providers/downloads/ui/DownloadItem;->setChecked(Z)V
 
     goto :goto_0
 
     .line 279
-    .restart local p2
+    .restart local p2    # "v":Landroid/view/View;
     :cond_1
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$3;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$500(Lcom/android/providers/downloads/ui/DownloadList;)Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
 
     move-result-object v1
@@ -102,12 +101,12 @@
 
     iget-object v2, p0, Lcom/android/providers/downloads/ui/DownloadList$3;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedCursor:Landroid/database/Cursor;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedCursor:Landroid/database/Cursor;
     invoke-static {v2}, Lcom/android/providers/downloads/ui/DownloadList;->access$700(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/database/Cursor;
 
     move-result-object v2
 
-    #calls: Lcom/android/providers/downloads/ui/DownloadList;->handleItemClick(Landroid/database/Cursor;)V
+    # invokes: Lcom/android/providers/downloads/ui/DownloadList;->handleItemClick(Landroid/database/Cursor;)V
     invoke-static {v1, v2}, Lcom/android/providers/downloads/ui/DownloadList;->access$800(Lcom/android/providers/downloads/ui/DownloadList;Landroid/database/Cursor;)V
 
     goto :goto_0

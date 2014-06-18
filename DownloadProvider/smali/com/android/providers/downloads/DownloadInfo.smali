@@ -127,14 +127,14 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Lcom/android/providers/downloads/SystemFacade;Lcom/android/providers/downloads/StorageManager;Lcom/android/providers/downloads/DownloadNotifier;)V
     .locals 2
-    .parameter "context"
-    .parameter "systemFacade"
-    .parameter "storageManager"
-    .parameter "notifier"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "systemFacade"    # Lcom/android/providers/downloads/SystemFacade;
+    .param p3, "storageManager"    # Lcom/android/providers/downloads/StorageManager;
+    .param p4, "notifier"    # Lcom/android/providers/downloads/DownloadNotifier;
 
     .prologue
     .line 261
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 243
     new-instance v0, Ljava/util/ArrayList;
@@ -172,11 +172,11 @@
 
 .method synthetic constructor <init>(Landroid/content/Context;Lcom/android/providers/downloads/SystemFacade;Lcom/android/providers/downloads/StorageManager;Lcom/android/providers/downloads/DownloadNotifier;Lcom/android/providers/downloads/DownloadInfo$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
-    .parameter "x3"
-    .parameter "x4"
+    .param p1, "x0"    # Landroid/content/Context;
+    .param p2, "x1"    # Lcom/android/providers/downloads/SystemFacade;
+    .param p3, "x2"    # Lcom/android/providers/downloads/StorageManager;
+    .param p4, "x3"    # Lcom/android/providers/downloads/DownloadNotifier;
+    .param p5, "x4"    # Lcom/android/providers/downloads/DownloadInfo$1;
 
     .prologue
     .line 50
@@ -187,7 +187,7 @@
 
 .method static synthetic access$100(Lcom/android/providers/downloads/DownloadInfo;)Ljava/util/List;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     .line 50
@@ -198,7 +198,7 @@
 
 .method private checkIsNetworkTypeAllowed(I)Lcom/android/providers/downloads/DownloadInfo$NetworkState;
     .locals 4
-    .parameter "networkType"
+    .param p1, "networkType"    # I
 
     .prologue
     .line 396
@@ -212,7 +212,7 @@
     move-result v1
 
     .line 398
-    .local v1, flag:I
+    .local v1, "flag":I
     iget v2, p0, Lcom/android/providers/downloads/DownloadInfo;->mAllowedNetworkTypes:I
 
     const/4 v3, -0x1
@@ -222,7 +222,7 @@
     const/4 v0, 0x1
 
     .line 399
-    .local v0, allowAllNetworkTypes:Z
+    .local v0, "allowAllNetworkTypes":Z
     :goto_0
     if-nez v0, :cond_1
 
@@ -236,20 +236,20 @@
     sget-object v2, Lcom/android/providers/downloads/DownloadInfo$NetworkState;->TYPE_DISALLOWED_BY_REQUESTOR:Lcom/android/providers/downloads/DownloadInfo$NetworkState;
 
     .line 403
-    .end local v0           #allowAllNetworkTypes:Z
-    .end local v1           #flag:I
+    .end local v0    # "allowAllNetworkTypes":Z
+    .end local v1    # "flag":I
     :goto_1
     return-object v2
 
     .line 398
-    .restart local v1       #flag:I
+    .restart local v1    # "flag":I
     :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
 
     .line 403
-    .end local v1           #flag:I
+    .end local v1    # "flag":I
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/providers/downloads/DownloadInfo;->checkSizeAllowedForNetwork(I)Lcom/android/providers/downloads/DownloadInfo$NetworkState;
 
@@ -260,7 +260,7 @@
 
 .method private checkSizeAllowedForNetwork(I)Lcom/android/providers/downloads/DownloadInfo$NetworkState;
     .locals 6
-    .parameter "networkType"
+    .param p1, "networkType"    # I
 
     .prologue
     .line 431
@@ -299,7 +299,7 @@
     move-result-object v0
 
     .line 438
-    .local v0, maxBytesOverMobile:Ljava/lang/Long;
+    .local v0, "maxBytesOverMobile":Ljava/lang/Long;
     if-eqz v0, :cond_2
 
     iget-wide v2, p0, Lcom/android/providers/downloads/DownloadInfo;->mTotalBytes:J
@@ -331,7 +331,7 @@
     move-result-object v1
 
     .line 443
-    .local v1, recommendedMaxBytesOverMobile:Ljava/lang/Long;
+    .local v1, "recommendedMaxBytesOverMobile":Ljava/lang/Long;
     if-eqz v1, :cond_3
 
     iget-wide v2, p0, Lcom/android/providers/downloads/DownloadInfo;->mTotalBytes:J
@@ -350,7 +350,7 @@
     goto :goto_0
 
     .line 448
-    .end local v1           #recommendedMaxBytesOverMobile:Ljava/lang/Long;
+    .end local v1    # "recommendedMaxBytesOverMobile":Ljava/lang/Long;
     :cond_3
     sget-object v2, Lcom/android/providers/downloads/DownloadInfo$NetworkState;->OK:Lcom/android/providers/downloads/DownloadInfo$NetworkState;
 
@@ -418,7 +418,7 @@
     move-result-wide v0
 
     .line 337
-    .local v0, now:J
+    .local v0, "now":J
     invoke-virtual {p0, v0, v1}, Lcom/android/providers/downloads/DownloadInfo;->restartTime(J)J
 
     move-result-wide v4
@@ -438,7 +438,7 @@
     goto :goto_2
 
     .line 340
-    .end local v0           #now:J
+    .end local v0    # "now":J
     :sswitch_4
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
@@ -501,8 +501,8 @@
 
 .method public static queryDownloadStatus(Landroid/content/ContentResolver;J)I
     .locals 7
-    .parameter "resolver"
-    .parameter "id"
+    .param p0, "resolver"    # Landroid/content/ContentResolver;
+    .param p1, "id"    # J
 
     .prologue
     const/4 v4, 0x0
@@ -535,7 +535,7 @@
     move-result-object v6
 
     .line 601
-    .local v6, cursor:Landroid/database/Cursor;
+    .local v6, "cursor":Landroid/database/Cursor;
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -577,7 +577,7 @@
 
 .method private translateNetworkTypeToApiFlag(I)I
     .locals 1
-    .parameter "networkType"
+    .param p1, "networkType"    # I
 
     .prologue
     .line 411
@@ -634,7 +634,7 @@
     move-result-object v0
 
     .line 367
-    .local v0, info:Landroid/net/NetworkInfo;
+    .local v0, "info":Landroid/net/NetworkInfo;
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
@@ -725,7 +725,7 @@
 
 .method public dump(Lcom/android/internal/util/IndentingPrintWriter;)V
     .locals 3
-    .parameter "pw"
+    .param p1, "pw"    # Lcom/android/internal/util/IndentingPrintWriter;
 
     .prologue
     .line 510
@@ -1045,7 +1045,7 @@
 
 .method public nextActionMillis(J)J
     .locals 6
-    .parameter "now"
+    .param p1, "now"    # J
 
     .prologue
     const-wide/16 v2, 0x0
@@ -1081,7 +1081,7 @@
     move-result-wide v0
 
     .line 566
-    .local v0, when:J
+    .local v0, "when":J
     cmp-long v4, v0, p1
 
     if-lez v4, :cond_0
@@ -1094,7 +1094,6 @@
 
 .method notifyPauseDueToSize(Z)V
     .locals 3
-    .parameter
 
     .prologue
     .line 584
@@ -1131,7 +1130,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 588
-    const/high16 v1, 0x1000
+    const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
@@ -1151,7 +1150,7 @@
 
 .method public restartTime(J)J
     .locals 5
-    .parameter "now"
+    .param p1, "now"    # J
 
     .prologue
     .line 304
@@ -1160,12 +1159,12 @@
     if-nez v0, :cond_0
 
     .line 310
-    .end local p1
+    .end local p1    # "now":J
     :goto_0
     return-wide p1
 
     .line 307
-    .restart local p1
+    .restart local p1    # "now":J
     :cond_0
     iget v0, p0, Lcom/android/providers/downloads/DownloadInfo;->mRetryAfter:I
 
@@ -1237,7 +1236,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 281
-    .local v0, intent:Landroid/content/Intent;
+    .local v0, "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadInfo;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
@@ -1258,7 +1257,7 @@
     goto :goto_0
 
     .line 284
-    .end local v0           #intent:Landroid/content/Intent;
+    .end local v0    # "intent":Landroid/content/Intent;
     :cond_2
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadInfo;->mClass:Ljava/lang/String;
 
@@ -1272,7 +1271,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 288
-    .restart local v0       #intent:Landroid/content/Intent;
+    .restart local v0    # "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadInfo;->mPackage:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadInfo;->mClass:Ljava/lang/String;
@@ -1349,7 +1348,7 @@
 
 .method public startDownloadIfReady(Ljava/util/concurrent/ExecutorService;)Z
     .locals 9
-    .parameter "executor"
+    .param p1, "executor"    # Ljava/util/concurrent/ExecutorService;
 
     .prologue
     const/16 v1, 0xc0
@@ -1364,7 +1363,7 @@
     move-result v7
 
     .line 461
-    .local v7, isReady:Z
+    .local v7, "isReady":Z
     iget-object v0, p0, Lcom/android/providers/downloads/DownloadInfo;->mSubmittedTask:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_2
@@ -1380,7 +1379,7 @@
     const/4 v6, 0x1
 
     .line 462
-    .local v6, isActive:Z
+    .local v6, "isActive":Z
     :goto_0
     if-eqz v7, :cond_1
 
@@ -1402,7 +1401,7 @@
     invoke-direct {v8}, Landroid/content/ContentValues;-><init>()V
 
     .line 466
-    .local v8, values:Landroid/content/ContentValues;
+    .local v8, "values":Landroid/content/ContentValues;
     const-string v0, "status"
 
     iget v1, p0, Lcom/android/providers/downloads/DownloadInfo;->mStatus:I
@@ -1431,7 +1430,7 @@
     invoke-virtual {v0, v1, v8, v2, v3}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
     .line 470
-    .end local v8           #values:Landroid/content/ContentValues;
+    .end local v8    # "values":Landroid/content/ContentValues;
     :cond_0
     new-instance v0, Lcom/android/providers/downloads/DownloadThread;
 
@@ -1465,14 +1464,14 @@
     return v7
 
     .line 461
-    .end local v6           #isActive:Z
+    .end local v6    # "isActive":Z
     :cond_2
     const/4 v6, 0x0
 
     goto :goto_0
 
     .line 475
-    .end local v7           #isReady:Z
+    .end local v7    # "isReady":Z
     :catchall_0
     move-exception v0
 
@@ -1485,7 +1484,7 @@
 
 .method public startScanIfReady(Lcom/android/providers/downloads/DownloadScanner;)Z
     .locals 2
-    .parameter "scanner"
+    .param p1, "scanner"    # Lcom/android/providers/downloads/DownloadScanner;
 
     .prologue
     .line 485
@@ -1498,7 +1497,7 @@
     move-result v0
 
     .line 487
-    .local v0, isReady:Z
+    .local v0, "isReady":Z
     if-eqz v0, :cond_0
 
     .line 488
@@ -1511,7 +1510,7 @@
     return v0
 
     .line 491
-    .end local v0           #isReady:Z
+    .end local v0    # "isReady":Z
     :catchall_0
     move-exception v1
 

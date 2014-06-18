@@ -77,13 +77,13 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .parameter "context"
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     const/4 v0, 0x0
 
     .line 81
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 76
     iput v0, p0, Lcom/android/providers/downloads/StorageManager;->mBytesDownloadedSinceLastCheckOnSpace:I
@@ -129,7 +129,7 @@
 
 .method static synthetic access$000(Lcom/android/providers/downloads/StorageManager;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/StorageManager;
 
     .prologue
     .line 50
@@ -140,7 +140,7 @@
 
 .method static synthetic access$100(Lcom/android/providers/downloads/StorageManager;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/StorageManager;
 
     .prologue
     .line 50
@@ -151,8 +151,8 @@
 
 .method private discardPurgeableFiles(IJ)J
     .locals 17
-    .parameter "destination"
-    .parameter "targetBytes"
+    .param p1, "destination"    # I
+    .param p2, "targetBytes"    # J
 
     .prologue
     .line 306
@@ -204,7 +204,7 @@
     move-result-object v11
 
     .line 312
-    .local v11, destStr:Ljava/lang/String;
+    .local v11, "destStr":Ljava/lang/String;
     :goto_0
     const/4 v2, 0x1
 
@@ -215,7 +215,7 @@
     aput-object v11, v6, v2
 
     .line 313
-    .local v6, bindArgs:[Ljava/lang/String;
+    .local v6, "bindArgs":[Ljava/lang/String;
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/providers/downloads/StorageManager;->mContext:Landroid/content/Context;
@@ -237,7 +237,7 @@
     move-result-object v8
 
     .line 321
-    .local v8, cursor:Landroid/database/Cursor;
+    .local v8, "cursor":Landroid/database/Cursor;
     if-nez v8, :cond_1
 
     .line 322
@@ -248,9 +248,9 @@
     return-wide v15
 
     .line 309
-    .end local v6           #bindArgs:[Ljava/lang/String;
-    .end local v8           #cursor:Landroid/database/Cursor;
-    .end local v11           #destStr:Ljava/lang/String;
+    .end local v6    # "bindArgs":[Ljava/lang/String;
+    .end local v8    # "cursor":Landroid/database/Cursor;
+    .end local v11    # "destStr":Ljava/lang/String;
     :cond_0
     const/4 v2, 0x2
 
@@ -261,14 +261,14 @@
     goto :goto_0
 
     .line 324
-    .restart local v6       #bindArgs:[Ljava/lang/String;
-    .restart local v8       #cursor:Landroid/database/Cursor;
-    .restart local v11       #destStr:Ljava/lang/String;
+    .restart local v6    # "bindArgs":[Ljava/lang/String;
+    .restart local v8    # "cursor":Landroid/database/Cursor;
+    .restart local v11    # "destStr":Ljava/lang/String;
     :cond_1
     const-wide/16 v15, 0x0
 
     .line 326
-    .local v15, totalFreed:J
+    .local v15, "totalFreed":J
     :try_start_0
     const-string v2, "_data"
 
@@ -277,7 +277,7 @@
     move-result v10
 
     .line 327
-    .local v10, dataIndex:I
+    .local v10, "dataIndex":I
     :cond_2
     :goto_2
     invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
@@ -296,7 +296,7 @@
     move-result-object v9
 
     .line 329
-    .local v9, data:Ljava/lang/String;
+    .local v9, "data":Ljava/lang/String;
     invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -309,7 +309,7 @@
     invoke-direct {v12, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 332
-    .local v12, file:Ljava/io/File;
+    .local v12, "file":Ljava/io/File;
     sget-boolean v2, Lcom/android/providers/downloads/Constants;->LOGV:Z
 
     if-eqz v2, :cond_3
@@ -384,7 +384,7 @@
     move-result-wide v13
 
     .line 339
-    .local v13, id:J
+    .local v13, "id":J
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/providers/downloads/StorageManager;->mContext:Landroid/content/Context;
@@ -410,10 +410,10 @@
     goto :goto_2
 
     .line 344
-    .end local v9           #data:Ljava/lang/String;
-    .end local v10           #dataIndex:I
-    .end local v12           #file:Ljava/io/File;
-    .end local v13           #id:J
+    .end local v9    # "data":Ljava/lang/String;
+    .end local v10    # "dataIndex":I
+    .end local v12    # "file":Ljava/io/File;
+    .end local v13    # "id":J
     :catchall_0
     move-exception v2
 
@@ -421,7 +421,7 @@
 
     throw v2
 
-    .restart local v10       #dataIndex:I
+    .restart local v10    # "dataIndex":I
     :cond_4
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
@@ -473,9 +473,9 @@
 
 .method private declared-synchronized findSpace(Ljava/io/File;JI)V
     .locals 6
-    .parameter "root"
-    .parameter "targetBytes"
-    .parameter "destination"
+    .param p1, "root"    # Ljava/io/File;
+    .param p2, "targetBytes"    # J
+    .param p4, "destination"    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -550,7 +550,7 @@
     move-result-wide v0
 
     .line 187
-    .local v0, bytesAvailable:J
+    .local v0, "bytesAvailable":J
     sget-wide v2, Lcom/android/providers/downloads/StorageManager;->sDownloadDataDirLowSpaceThreshold:J
 
     cmp-long v2, v0, v2
@@ -765,7 +765,7 @@
 
 .method private getAvailableBytesInDownloadsDataDir(Ljava/io/File;)J
     .locals 10
-    .parameter "root"
+    .param p1, "root"    # Ljava/io/File;
 
     .prologue
     .line 241
@@ -774,32 +774,32 @@
     move-result-object v0
 
     .line 242
-    .local v0, files:[Ljava/io/File;
+    .local v0, "files":[Ljava/io/File;
     sget-wide v3, Lcom/android/providers/downloads/StorageManager;->sMaxdownloadDataDirSize:J
 
     .line 243
-    .local v3, space:J
+    .local v3, "space":J
     if-nez v0, :cond_0
 
     move-wide v5, v3
 
     .line 253
-    .end local v3           #space:J
-    .local v5, space:J
+    .end local v3    # "space":J
+    .local v5, "space":J
     :goto_0
     return-wide v5
 
     .line 246
-    .end local v5           #space:J
-    .restart local v3       #space:J
+    .end local v5    # "space":J
+    .restart local v3    # "space":J
     :cond_0
     array-length v2, v0
 
     .line 247
-    .local v2, size:I
+    .local v2, "size":I
     const/4 v1, 0x0
 
-    .local v1, i:I
+    .local v1, "i":I
     :goto_1
     if-ge v1, v2, :cond_1
 
@@ -850,14 +850,14 @@
     move-wide v5, v3
 
     .line 253
-    .end local v3           #space:J
-    .restart local v5       #space:J
+    .end local v3    # "space":J
+    .restart local v5    # "space":J
     goto :goto_0
 .end method
 
 .method private getAvailableBytesInFileSystemAtGivenRoot(Ljava/io/File;)J
     .locals 9
-    .parameter "root"
+    .param p1, "root"    # Ljava/io/File;
 
     .prologue
     .line 257
@@ -870,7 +870,7 @@
     invoke-direct {v4, v5}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
     .line 259
-    .local v4, stat:Landroid/os/StatFs;
+    .local v4, "stat":Landroid/os/StatFs;
     invoke-virtual {v4}, Landroid/os/StatFs;->getAvailableBlocks()I
 
     move-result v5
@@ -882,7 +882,7 @@
     sub-long v0, v5, v7
 
     .line 260
-    .local v0, availableBlocks:J
+    .local v0, "availableBlocks":J
     invoke-virtual {v4}, Landroid/os/StatFs;->getBlockSize()I
 
     move-result v5
@@ -892,7 +892,7 @@
     mul-long v2, v5, v0
 
     .line 261
-    .local v2, size:J
+    .local v2, "size":J
     sget-boolean v5, Lcom/android/providers/downloads/Constants;->LOGV:Z
 
     if-eqz v5, :cond_0
@@ -941,7 +941,7 @@
 
 .method public static getDownloadDataDirectory(Landroid/content/Context;)Ljava/io/File;
     .locals 1
-    .parameter "context"
+    .param p0, "context"    # Landroid/content/Context;
 
     .prologue
     .line 296
@@ -954,7 +954,7 @@
 
 .method private declared-synchronized incrementBytesDownloadedSinceLastCheckOnSpace(J)I
     .locals 2
-    .parameter "val"
+    .param p1, "val"    # J
 
     .prologue
     .line 465
@@ -1012,7 +1012,7 @@
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
     .line 366
-    .local v11, files:Ljava/util/List;,"Ljava/util/List<Ljava/io/File;>;"
+    .local v11, "files":Ljava/util/List;, "Ljava/util/List<Ljava/io/File;>;"
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/providers/downloads/StorageManager;->mSystemCacheDir:Ljava/io/File;
@@ -1022,7 +1022,7 @@
     move-result-object v13
 
     .line 367
-    .local v13, listOfFiles:[Ljava/io/File;
+    .local v13, "listOfFiles":[Ljava/io/File;
     if-eqz v13, :cond_1
 
     .line 368
@@ -1097,7 +1097,7 @@
     move-result-object v7
 
     .line 381
-    .local v7, cursor:Landroid/database/Cursor;
+    .local v7, "cursor":Landroid/database/Cursor;
     if-eqz v7, :cond_8
 
     .line 382
@@ -1118,7 +1118,7 @@
     move-result-object v10
 
     .line 384
-    .local v10, filename:Ljava/lang/String;
+    .local v10, "filename":Ljava/lang/String;
     invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -1166,7 +1166,7 @@
     goto :goto_0
 
     .line 394
-    .end local v10           #filename:Ljava/lang/String;
+    .end local v10    # "filename":Ljava/lang/String;
     :catchall_0
     move-exception v1
 
@@ -1192,12 +1192,12 @@
     move-result v14
 
     .line 401
-    .local v14, myUid:I
+    .local v14, "myUid":I
     invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v12
 
-    .local v12, i$:Ljava/util/Iterator;
+    .local v12, "i$":Ljava/util/Iterator;
     :cond_a
     :goto_1
     invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
@@ -1213,13 +1213,13 @@
     check-cast v9, Ljava/io/File;
 
     .line 402
-    .local v9, file:Ljava/io/File;
+    .local v9, "file":Ljava/io/File;
     invoke-virtual {v9}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v15
 
     .line 404
-    .local v15, path:Ljava/lang/String;
+    .local v15, "path":Ljava/lang/String;
     :try_start_1
     sget-object v1, Llibcore/io/Libcore;->os:Llibcore/io/Os;
 
@@ -1228,7 +1228,7 @@
     move-result-object v16
 
     .line 405
-    .local v16, stat:Llibcore/io/StructStat;
+    .local v16, "stat":Llibcore/io/StructStat;
     move-object/from16 v0, v16
 
     iget v1, v0, Llibcore/io/StructStat;->st_uid:I
@@ -1272,12 +1272,12 @@
     goto :goto_1
 
     .line 411
-    .end local v16           #stat:Llibcore/io/StructStat;
+    .end local v16    # "stat":Llibcore/io/StructStat;
     :catch_0
     move-exception v8
 
     .line 412
-    .local v8, e:Llibcore/io/ErrnoException;
+    .local v8, "e":Llibcore/io/ErrnoException;
     const-string v1, "DownloadManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1417,7 +1417,7 @@
     const/4 v7, 0x0
 
     .line 428
-    .local v7, cursor:Landroid/database/Cursor;
+    .local v7, "cursor":Landroid/database/Cursor;
     :try_start_0
     iget-object v0, p0, Lcom/android/providers/downloads/StorageManager;->mContext:Landroid/content/Context;
 
@@ -1457,8 +1457,8 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 458
     if-eqz v7, :cond_1
@@ -1488,7 +1488,7 @@
     add-int/lit16 v10, v0, -0x3e8
 
     .line 440
-    .local v10, numDelete:I
+    .local v10, "numDelete":I
     const-string v0, "_id"
 
     invoke-interface {v7, v0}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -1496,7 +1496,7 @@
     move-result v6
 
     .line 441
-    .local v6, columnId:I
+    .local v6, "columnId":I
     :goto_1
     if-lez v10, :cond_3
 
@@ -1512,7 +1512,7 @@
     move-result-object v8
 
     .line 444
-    .local v8, downloadUri:Landroid/net/Uri;
+    .local v8, "downloadUri":Landroid/net/Uri;
     iget-object v0, p0, Lcom/android/providers/downloads/StorageManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1528,26 +1528,26 @@
     .line 445
     invoke-interface {v7}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     move-result v0
 
     if-nez v0, :cond_4
 
     .line 458
-    .end local v6           #columnId:I
-    .end local v8           #downloadUri:Landroid/net/Uri;
-    .end local v10           #numDelete:I
+    .end local v6    # "columnId":I
+    .end local v8    # "downloadUri":Landroid/net/Uri;
+    .end local v10    # "numDelete":I
     :cond_3
     if-eqz v7, :cond_1
 
     goto :goto_0
 
     .line 448
-    .restart local v6       #columnId:I
-    .restart local v8       #downloadUri:Landroid/net/Uri;
-    .restart local v10       #numDelete:I
+    .restart local v6    # "columnId":I
+    .restart local v8    # "downloadUri":Landroid/net/Uri;
+    .restart local v10    # "numDelete":I
     :cond_4
     add-int/lit8 v10, v10, -0x1
 
@@ -1555,14 +1555,14 @@
     goto :goto_1
 
     .line 451
-    .end local v6           #columnId:I
-    .end local v8           #downloadUri:Landroid/net/Uri;
-    .end local v10           #numDelete:I
+    .end local v6    # "columnId":I
+    .end local v8    # "downloadUri":Landroid/net/Uri;
+    .end local v10    # "numDelete":I
     :catch_0
     move-exception v9
 
     .line 455
-    .local v9, e:Landroid/database/sqlite/SQLiteException;
+    .local v9, "e":Landroid/database/sqlite/SQLiteException;
     :try_start_2
     const-string v0, "DownloadManager"
 
@@ -1597,7 +1597,7 @@
 
     goto :goto_0
 
-    .end local v9           #e:Landroid/database/sqlite/SQLiteException;
+    .end local v9    # "e":Landroid/database/sqlite/SQLiteException;
     :catchall_0
     move-exception v0
 
@@ -1663,9 +1663,9 @@
 
 .method locateDestinationDirectory(Ljava/lang/String;IJ)Ljava/io/File;
     .locals 5
-    .parameter "mimeType"
-    .parameter "destination"
-    .parameter "contentLength"
+    .param p1, "mimeType"    # Ljava/lang/String;
+    .param p2, "destination"    # I
+    .param p3, "contentLength"    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1748,7 +1748,7 @@
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 279
-    .local v0, base:Ljava/io/File;
+    .local v0, "base":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result v1
@@ -1808,9 +1808,9 @@
 
 .method verifySpace(ILjava/lang/String;J)V
     .locals 4
-    .parameter "destination"
-    .parameter "path"
-    .parameter "length"
+    .param p1, "destination"    # I
+    .param p2, "path"    # Ljava/lang/String;
+    .param p3, "length"    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1825,7 +1825,7 @@
     const/4 v0, 0x0
 
     .line 132
-    .local v0, dir:Ljava/io/File;
+    .local v0, "dir":Ljava/io/File;
     sget-boolean v1, Lcom/android/providers/downloads/Constants;->LOGV:Z
 
     if-eqz v1, :cond_0
@@ -2029,9 +2029,9 @@
 
 .method verifySpaceBeforeWritingToFile(ILjava/lang/String;J)V
     .locals 2
-    .parameter "destination"
-    .parameter "path"
-    .parameter "length"
+    .param p1, "destination"    # I
+    .param p2, "path"    # Ljava/lang/String;
+    .param p3, "length"    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -2044,7 +2044,7 @@
 
     move-result v0
 
-    const/high16 v1, 0x10
+    const/high16 v1, 0x100000
 
     if-ge v0, v1, :cond_0
 

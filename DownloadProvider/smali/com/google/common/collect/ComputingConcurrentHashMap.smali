@@ -46,8 +46,7 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/base/Function;)V
     .locals 1
-    .parameter "builder"
-    .parameter
+    .param p1, "builder"    # Lcom/google/common/collect/MapMaker;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,8 +58,8 @@
 
     .prologue
     .line 53
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
-    .local p2, computingFunction:Lcom/google/common/base/Function;,"Lcom/google/common/base/Function<-TK;+TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p2, "computingFunction":Lcom/google/common/base/Function;, "Lcom/google/common/base/Function<-TK;+TV;>;"
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;-><init>(Lcom/google/common/collect/MapMaker;)V
 
     .line 54
@@ -80,8 +79,8 @@
 # virtual methods
 .method createSegment(II)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 1
-    .parameter "initialCapacity"
-    .parameter "maxSegmentSize"
+    .param p1, "initialCapacity"    # I
+    .param p2, "maxSegmentSize"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -92,7 +91,7 @@
 
     .prologue
     .line 59
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
     new-instance v0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;-><init>(Lcom/google/common/collect/MapMakerInternalMap;II)V
@@ -102,7 +101,6 @@
 
 .method getOrCompute(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
@@ -117,8 +115,8 @@
 
     .prologue
     .line 68
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -128,7 +126,7 @@
     move-result v0
 
     .line 69
-    .local v0, hash:I
+    .local v0, "hash":I
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     move-result-object v1
@@ -144,7 +142,7 @@
 
 .method segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
     .locals 1
-    .parameter "hash"
+    .param p1, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -155,7 +153,7 @@
 
     .prologue
     .line 64
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
     invoke-super {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;->segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
 
     move-result-object v0
@@ -167,11 +165,11 @@
 
 .method bridge synthetic segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # I
 
     .prologue
     .line 44
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     move-result-object v0
@@ -184,26 +182,26 @@
 
     .prologue
     .line 413
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap;,"Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap;, "Lcom/google/common/collect/ComputingConcurrentHashMap<TK;TV;>;"
     new-instance v0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSerializationProxy;
 
-    iget-object v1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->keyStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
+    iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap;->keyStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
-    iget-object v2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->valueStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
+    iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap;->valueStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
-    iget-object v3, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->keyEquivalence:Lcom/google/common/base/Equivalence;
+    iget-object v3, p0, Lcom/google/common/collect/MapMakerInternalMap;->keyEquivalence:Lcom/google/common/base/Equivalence;
 
-    iget-object v4, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->valueEquivalence:Lcom/google/common/base/Equivalence;
+    iget-object v4, p0, Lcom/google/common/collect/MapMakerInternalMap;->valueEquivalence:Lcom/google/common/base/Equivalence;
 
-    iget-wide v5, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->expireAfterWriteNanos:J
+    iget-wide v5, p0, Lcom/google/common/collect/MapMakerInternalMap;->expireAfterWriteNanos:J
 
-    iget-wide v7, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->expireAfterAccessNanos:J
+    iget-wide v7, p0, Lcom/google/common/collect/MapMakerInternalMap;->expireAfterAccessNanos:J
 
-    iget v9, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->maximumSize:I
+    iget v9, p0, Lcom/google/common/collect/MapMakerInternalMap;->maximumSize:I
 
-    iget v10, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->concurrencyLevel:I
+    iget v10, p0, Lcom/google/common/collect/MapMakerInternalMap;->concurrencyLevel:I
 
-    iget-object v11, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
+    iget-object v11, p0, Lcom/google/common/collect/MapMakerInternalMap;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     iget-object v13, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->computingFunction:Lcom/google/common/base/Function;
 

@@ -58,14 +58,13 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap$AsMap;)V
     .locals 1
-    .parameter
 
     .prologue
     .line 1271
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 1272
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
@@ -92,7 +91,7 @@
 
     .prologue
     .line 1278
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->delegateIterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -107,7 +106,7 @@
 
     .prologue
     .line 1271
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->next()Ljava/util/Map$Entry;
 
     move-result-object v0
@@ -129,7 +128,7 @@
 
     .prologue
     .line 1283
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->delegateIterator:Ljava/util/Iterator;
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -139,13 +138,13 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 1284
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     .line 1285
-    .local v1, key:Ljava/lang/Object;,"TK;"
+    .local v1, "key":Ljava/lang/Object;, "TK;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -161,7 +160,7 @@
 
     iget-object v3, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->collection:Ljava/util/Collection;
 
-    #calls: Lcom/google/common/collect/AbstractMultimap;->wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    # invokes: Lcom/google/common/collect/AbstractMultimap;->wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     invoke-static {v2, v1, v3}, Lcom/google/common/collect/AbstractMultimap;->access$400(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     move-result-object v2
@@ -178,7 +177,7 @@
 
     .prologue
     .line 1291
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapIterator;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;->delegateIterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
@@ -194,6 +193,7 @@
 
     move-result v1
 
+    # -= operator for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v0, v1}, Lcom/google/common/collect/AbstractMultimap;->access$220(Lcom/google/common/collect/AbstractMultimap;I)I
 
     .line 1293

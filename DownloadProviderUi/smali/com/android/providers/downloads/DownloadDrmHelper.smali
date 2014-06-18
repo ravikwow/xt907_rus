@@ -9,16 +9,16 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static getOriginalMimeType(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .parameter "context"
-    .parameter "file"
-    .parameter "currentMime"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "file"    # Ljava/io/File;
+    .param p2, "currentMime"    # Ljava/lang/String;
 
     .prologue
     .line 90
@@ -27,14 +27,14 @@
     invoke-direct {v0, p0}, Landroid/drm/DrmManagerClient;-><init>(Landroid/content/Context;)V
 
     .line 92
-    .local v0, client:Landroid/drm/DrmManagerClient;
+    .local v0, "client":Landroid/drm/DrmManagerClient;
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     .line 93
-    .local v1, rawFile:Ljava/lang/String;
+    .local v1, "rawFile":Ljava/lang/String;
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/drm/DrmManagerClient;->canHandle(Ljava/lang/String;Ljava/lang/String;)Z
@@ -51,19 +51,19 @@
     move-result-object p2
 
     .line 99
-    .end local p2
+    .end local p2    # "currentMime":Ljava/lang/String;
     invoke-virtual {v0}, Landroid/drm/DrmManagerClient;->release()V
 
     :goto_0
     return-object p2
 
-    .restart local p2
+    .restart local p2    # "currentMime":Ljava/lang/String;
     :cond_0
     invoke-virtual {v0}, Landroid/drm/DrmManagerClient;->release()V
 
     goto :goto_0
 
-    .end local v1           #rawFile:Ljava/lang/String;
+    .end local v1    # "rawFile":Ljava/lang/String;
     :catchall_0
     move-exception v2
 
@@ -74,7 +74,7 @@
 
 .method public static isDrmConvertNeeded(Ljava/lang/String;)Z
     .locals 1
-    .parameter "mimetype"
+    .param p0, "mimetype"    # Ljava/lang/String;
 
     .prologue
     .line 61

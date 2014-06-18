@@ -37,8 +37,7 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/base/Function;)V
     .locals 0
-    .parameter "mapMaker"
-    .parameter
+    .param p1, "mapMaker"    # Lcom/google/common/collect/MapMaker;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,8 +49,8 @@
 
     .prologue
     .line 385
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;,"Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter<TK;TV;>;"
-    .local p2, computingFunction:Lcom/google/common/base/Function;,"Lcom/google/common/base/Function<-TK;+TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;, "Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter<TK;TV;>;"
+    .local p2, "computingFunction":Lcom/google/common/base/Function;, "Lcom/google/common/base/Function<-TK;+TV;>;"
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ComputingConcurrentHashMap;-><init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/base/Function;)V
 
     .line 386
@@ -62,7 +61,6 @@
 # virtual methods
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,7 +88,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;->computingFunction:Lcom/google/common/base/Function;
+    iget-object v2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->computingFunction:Lcom/google/common/base/Function;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -148,11 +146,11 @@
 
 .method bridge synthetic segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # I
 
     .prologue
     .line 379
-    .local p0, this:Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;,"Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;, "Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter<TK;TV;>;"
     invoke-super {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     move-result-object v0

@@ -41,8 +41,7 @@
 # direct methods
 .method constructor <init>([Ljava/lang/Object;I)V
     .locals 0
-    .parameter
-    .parameter "hashCode"
+    .param p2, "hashCode"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TD;I)V"
@@ -51,8 +50,8 @@
 
     .prologue
     .line 452
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
-    .local p1, source:[Ljava/lang/Object;,"[TD;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p1, "source":[Ljava/lang/Object;, "[TD;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
     .line 453
@@ -72,7 +71,7 @@
 
     .prologue
     .line 497
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     iget v0, p0, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->hashCode:I
 
     return v0
@@ -83,7 +82,7 @@
 
     .prologue
     .line 465
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     const/4 v0, 0x0
 
     return v0
@@ -94,7 +93,7 @@
 
     .prologue
     .line 501
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     const/4 v0, 0x1
 
     return v0
@@ -112,7 +111,7 @@
 
     .prologue
     .line 469
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     new-instance v0, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet$1;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->source:[Ljava/lang/Object;
@@ -129,7 +128,7 @@
 
     .prologue
     .line 448
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -142,7 +141,7 @@
 
     .prologue
     .line 461
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->source:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -155,7 +154,7 @@
 
     .prologue
     .line 477
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->size()I
 
     move-result v0
@@ -171,7 +170,6 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 4
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -182,14 +180,14 @@
 
     .prologue
     .line 481
-    .local p0, this:Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;,"Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
-    .local p1, array:[Ljava/lang/Object;,"[TT;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;, "Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet<TD;TE;>;"
+    .local p1, "array":[Ljava/lang/Object;, "[TT;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->size()I
 
     move-result v2
 
     .line 482
-    .local v2, size:I
+    .local v2, "size":I
     array-length v3, p1
 
     if-ge v3, v2, :cond_1
@@ -205,10 +203,10 @@
     move-object v1, p1
 
     .line 490
-    .local v1, objectArray:[Ljava/lang/Object;
+    .local v1, "objectArray":[Ljava/lang/Object;
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_1
     iget-object v3, p0, Lcom/google/common/collect/ImmutableSet$TransformedImmutableSet;->source:[Ljava/lang/Object;
 
@@ -233,8 +231,8 @@
     goto :goto_1
 
     .line 484
-    .end local v0           #i:I
-    .end local v1           #objectArray:[Ljava/lang/Object;
+    .end local v0    # "i":I
+    .end local v1    # "objectArray":[Ljava/lang/Object;
     :cond_1
     array-length v3, p1
 
@@ -248,8 +246,8 @@
     goto :goto_0
 
     .line 493
-    .restart local v0       #i:I
-    .restart local v1       #objectArray:[Ljava/lang/Object;
+    .restart local v0    # "i":I
+    .restart local v1    # "objectArray":[Ljava/lang/Object;
     :cond_2
     return-object p1
 .end method

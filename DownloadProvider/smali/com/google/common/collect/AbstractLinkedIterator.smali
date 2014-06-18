@@ -28,7 +28,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -37,8 +36,8 @@
 
     .prologue
     .line 53
-    .local p0, this:Lcom/google/common/collect/AbstractLinkedIterator;,"Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
-    .local p1, firstOrNull:Ljava/lang/Object;,"TT;"
+    .local p0, "this":Lcom/google/common/collect/AbstractLinkedIterator;, "Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
+    .local p1, "firstOrNull":Ljava/lang/Object;, "TT;"
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
     .line 54
@@ -63,7 +62,7 @@
 
     .prologue
     .line 67
-    .local p0, this:Lcom/google/common/collect/AbstractLinkedIterator;,"Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractLinkedIterator;, "Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractLinkedIterator;->nextOrNull:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
@@ -89,7 +88,7 @@
 
     .prologue
     .line 72
-    .local p0, this:Lcom/google/common/collect/AbstractLinkedIterator;,"Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractLinkedIterator;, "Lcom/google/common/collect/AbstractLinkedIterator<TT;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractLinkedIterator;->hasNext()Z
 
     move-result v0

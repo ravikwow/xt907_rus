@@ -9,14 +9,14 @@
 
     .prologue
     .line 48
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static saturatedCast(J)I
     .locals 2
-    .parameter "value"
+    .param p0, "value"    # J
 
     .prologue
     .line 97
@@ -42,7 +42,7 @@
     if-gez v0, :cond_1
 
     .line 101
-    const/high16 v0, -0x8000
+    const/high16 v0, -0x80000000
 
     goto :goto_0
 

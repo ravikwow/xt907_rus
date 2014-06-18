@@ -30,10 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/DownloadReceiver;Landroid/content/Context;Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     .line 95
@@ -45,7 +41,7 @@
 
     iput-object p4, p0, Lcom/android/providers/downloads/DownloadReceiver$1;->val$result:Landroid/content/BroadcastReceiver$PendingResult;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -63,7 +59,7 @@
 
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadReceiver$1;->val$intent:Landroid/content/Intent;
 
-    #calls: Lcom/android/providers/downloads/DownloadReceiver;->handleNotificationBroadcast(Landroid/content/Context;Landroid/content/Intent;)V
+    # invokes: Lcom/android/providers/downloads/DownloadReceiver;->handleNotificationBroadcast(Landroid/content/Context;Landroid/content/Intent;)V
     invoke-static {v0, v1, v2}, Lcom/android/providers/downloads/DownloadReceiver;->access$000(Lcom/android/providers/downloads/DownloadReceiver;Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 99

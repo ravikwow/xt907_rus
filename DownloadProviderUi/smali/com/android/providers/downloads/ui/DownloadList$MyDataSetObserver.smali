@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 137
@@ -34,8 +33,8 @@
 
 .method synthetic constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;Lcom/android/providers/downloads/ui/DownloadList$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p1, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p2, "x1"    # Lcom/android/providers/downloads/ui/DownloadList$1;
 
     .prologue
     .line 137
@@ -53,7 +52,7 @@
     .line 141
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$MyDataSetObserver;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$100(Lcom/android/providers/downloads/ui/DownloadList;)Ljava/util/Map;
 
     move-result-object v0
@@ -72,13 +71,13 @@
     :cond_0
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$MyDataSetObserver;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #calls: Lcom/android/providers/downloads/ui/DownloadList;->chooseListToShow()V
+    # invokes: Lcom/android/providers/downloads/ui/DownloadList;->chooseListToShow()V
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$200(Lcom/android/providers/downloads/ui/DownloadList;)V
 
     .line 146
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$MyDataSetObserver;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #calls: Lcom/android/providers/downloads/ui/DownloadList;->ensureSomeGroupIsExpanded()V
+    # invokes: Lcom/android/providers/downloads/ui/DownloadList;->ensureSomeGroupIsExpanded()V
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$300(Lcom/android/providers/downloads/ui/DownloadList;)V
 
     goto :goto_0

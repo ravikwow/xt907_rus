@@ -24,13 +24,12 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 244
     iput-object p1, p0, Lcom/android/providers/downloads/ui/DownloadList$2;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,7 +43,7 @@
     .line 246
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$2;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$500(Lcom/android/providers/downloads/ui/DownloadList;)Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
 
     move-result-object v1
@@ -64,11 +63,11 @@
     :cond_1
     const/4 v0, 0x0
 
-    .local v0, group:I
+    .local v0, "group":I
     :goto_1
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$2;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedAdapter:Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$500(Lcom/android/providers/downloads/ui/DownloadList;)Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
 
     move-result-object v1
@@ -82,7 +81,7 @@
     .line 250
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$2;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateOrderedListView:Landroid/widget/ExpandableListView;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateOrderedListView:Landroid/widget/ExpandableListView;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$600(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/widget/ExpandableListView;
 
     move-result-object v1
@@ -102,7 +101,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadList$2;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateOrderedListView:Landroid/widget/ExpandableListView;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mDateOrderedListView:Landroid/widget/ExpandableListView;
     invoke-static {v1}, Lcom/android/providers/downloads/ui/DownloadList;->access$600(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/widget/ExpandableListView;
 
     move-result-object v1

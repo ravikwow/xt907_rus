@@ -9,15 +9,14 @@
 
     .prologue
     .line 65
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
     .locals 6
-    .parameter
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -29,7 +28,7 @@
     .end annotation
 
     .prologue
-    .local p0, s:Ljava/util/Set;,"Ljava/util/Set<*>;"
+    .local p0, "s":Ljava/util/Set;, "Ljava/util/Set<*>;"
     const/4 v2, 0x1
 
     const/4 v3, 0x0
@@ -56,7 +55,7 @@
     check-cast v1, Ljava/util/Set;
 
     .line 1270
-    .local v1, o:Ljava/util/Set;,"Ljava/util/Set<*>;"
+    .local v1, "o":Ljava/util/Set;, "Ljava/util/Set<*>;"
     :try_start_0
     invoke-interface {p0}, Ljava/util/Set;->size()I
 
@@ -92,22 +91,21 @@
     move-exception v0
 
     .line 1272
-    .local v0, ignored:Ljava/lang/NullPointerException;
+    .local v0, "ignored":Ljava/lang/NullPointerException;
     goto :goto_0
 
     .line 1273
-    .end local v0           #ignored:Ljava/lang/NullPointerException;
+    .end local v0    # "ignored":Ljava/lang/NullPointerException;
     :catch_1
     move-exception v0
 
     .line 1274
-    .local v0, ignored:Ljava/lang/ClassCastException;
+    .local v0, "ignored":Ljava/lang/ClassCastException;
     goto :goto_0
 .end method
 
 .method static hashCodeImpl(Ljava/util/Set;)I
     .locals 4
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,16 +116,16 @@
 
     .prologue
     .line 1252
-    .local p0, s:Ljava/util/Set;,"Ljava/util/Set<*>;"
+    .local p0, "s":Ljava/util/Set;, "Ljava/util/Set<*>;"
     const/4 v0, 0x0
 
     .line 1253
-    .local v0, hashCode:I
+    .local v0, "hashCode":I
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .local v1, i$:Ljava/util/Iterator;
+    .local v1, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -140,7 +138,7 @@
     move-result-object v2
 
     .line 1254
-    .local v2, o:Ljava/lang/Object;
+    .local v2, "o":Ljava/lang/Object;
     if-eqz v2, :cond_0
 
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
@@ -158,7 +156,7 @@
     goto :goto_1
 
     .line 1256
-    .end local v2           #o:Ljava/lang/Object;
+    .end local v2    # "o":Ljava/lang/Object;
     :cond_1
     return v0
 .end method
@@ -186,7 +184,6 @@
 
 .method public static newHashSet(Ljava/lang/Iterable;)Ljava/util/HashSet;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -201,7 +198,7 @@
 
     .prologue
     .line 211
-    .local p0, elements:Ljava/lang/Iterable;,"Ljava/lang/Iterable<+TE;>;"
+    .local p0, "elements":Ljava/lang/Iterable;, "Ljava/lang/Iterable<+TE;>;"
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
@@ -231,7 +228,6 @@
 
 .method public static newHashSet(Ljava/util/Iterator;)Ljava/util/HashSet;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -246,13 +242,13 @@
 
     .prologue
     .line 230
-    .local p0, elements:Ljava/util/Iterator;,"Ljava/util/Iterator<+TE;>;"
+    .local p0, "elements":Ljava/util/Iterator;, "Ljava/util/Iterator<+TE;>;"
     invoke-static {}, Lcom/google/common/collect/Sets;->newHashSet()Ljava/util/HashSet;
 
     move-result-object v0
 
     .line 231
-    .local v0, set:Ljava/util/HashSet;,"Ljava/util/HashSet<TE;>;"
+    .local v0, "set":Ljava/util/HashSet;, "Ljava/util/HashSet<TE;>;"
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -276,7 +272,7 @@
 
 .method public static newHashSetWithExpectedSize(I)Ljava/util/HashSet;
     .locals 2
-    .parameter "expectedSize"
+    .param p0, "expectedSize"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

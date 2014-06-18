@@ -23,11 +23,11 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .parameter "className"
+    .param p1, "className"    # Ljava/lang/String;
 
     .prologue
     .line 190
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 185
     const/4 v0, 0x0
@@ -62,8 +62,8 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Lcom/google/common/base/Objects$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p1, "x0"    # Ljava/lang/String;
+    .param p2, "x1"    # Lcom/google/common/base/Objects$1;
 
     .prologue
     .line 183
@@ -74,7 +74,7 @@
 
 .method private checkNameAndAppend(Ljava/lang/String;)Ljava/lang/StringBuilder;
     .locals 2
-    .parameter "name"
+    .param p1, "name"    # Ljava/lang/String;
 
     .prologue
     .line 272
@@ -136,8 +136,8 @@
 # virtual methods
 .method public add(Ljava/lang/String;I)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 1
-    .parameter "name"
-    .parameter "value"
+    .param p1, "name"    # Ljava/lang/String;
+    .param p2, "value"    # I
 
     .prologue
     .line 256
@@ -153,8 +153,8 @@
 
 .method public add(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 1
-    .parameter "name"
-    .parameter "value"
+    .param p1, "name"    # Ljava/lang/String;
+    .param p2, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 201
@@ -170,7 +170,7 @@
 
 .method public addValue(Ljava/lang/Object;)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 1
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 283

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/StorageManager;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 110
@@ -41,13 +40,13 @@
     .line 112
     iget-object v0, p0, Lcom/android/providers/downloads/StorageManager$1;->this$0:Lcom/android/providers/downloads/StorageManager;
 
-    #calls: Lcom/android/providers/downloads/StorageManager;->removeSpuriousFiles()V
+    # invokes: Lcom/android/providers/downloads/StorageManager;->removeSpuriousFiles()V
     invoke-static {v0}, Lcom/android/providers/downloads/StorageManager;->access$000(Lcom/android/providers/downloads/StorageManager;)V
 
     .line 113
     iget-object v0, p0, Lcom/android/providers/downloads/StorageManager$1;->this$0:Lcom/android/providers/downloads/StorageManager;
 
-    #calls: Lcom/android/providers/downloads/StorageManager;->trimDatabase()V
+    # invokes: Lcom/android/providers/downloads/StorageManager;->trimDatabase()V
     invoke-static {v0}, Lcom/android/providers/downloads/StorageManager;->access$100(Lcom/android/providers/downloads/StorageManager;)V
 
     .line 114

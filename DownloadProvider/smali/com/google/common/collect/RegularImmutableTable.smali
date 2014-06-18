@@ -89,7 +89,7 @@
 
     .prologue
     .line 86
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable<TR;TC;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable;->cellSet:Lcom/google/common/collect/ImmutableSet;
 
     return-object v0
@@ -100,7 +100,7 @@
 
     .prologue
     .line 41
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable<TR;TC;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0

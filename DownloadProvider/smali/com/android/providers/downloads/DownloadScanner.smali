@@ -39,11 +39,11 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .parameter "context"
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 69
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 66
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    .local v0, i$:Ljava/util/Iterator;
+    .local v0, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -104,7 +104,7 @@
     check-cast v1, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
 
     .line 123
-    .local v1, req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .local v1, "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadScanner;->mConnection:Landroid/media/MediaScannerConnection;
 
     invoke-virtual {v1, v2}, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;->exec(Landroid/media/MediaScannerConnection;)V
@@ -112,8 +112,8 @@
     goto :goto_0
 
     .line 125
-    .end local v0           #i$:Ljava/util/Iterator;
-    .end local v1           #req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .end local v0    # "i$":Ljava/util/Iterator;
+    .end local v1    # "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     :catchall_0
     move-exception v2
 
@@ -123,7 +123,7 @@
 
     throw v2
 
-    .restart local v0       #i$:Ljava/util/Iterator;
+    .restart local v0    # "i$":Ljava/util/Iterator;
     :cond_0
     :try_start_1
     monitor-exit v3
@@ -136,8 +136,8 @@
 
 .method public onScanCompleted(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 9
-    .parameter "path"
-    .parameter "uri"
+    .param p1, "path"    # Ljava/lang/String;
+    .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
     const/4 v8, 0x0
@@ -158,7 +158,7 @@
     check-cast v1, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
 
     .line 133
-    .local v1, req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .local v1, "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     monitor-exit v6
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -195,7 +195,7 @@
     return-void
 
     .line 133
-    .end local v1           #req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .end local v1    # "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     :catchall_0
     move-exception v5
 
@@ -207,14 +207,14 @@
     throw v5
 
     .line 141
-    .restart local v1       #req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .restart local v1    # "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     :cond_1
     new-instance v4, Landroid/content/ContentValues;
 
     invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
 
     .line 142
-    .local v4, values:Landroid/content/ContentValues;
+    .local v4, "values":Landroid/content/ContentValues;
     const-string v5, "scanned"
 
     const/4 v6, 0x1
@@ -246,7 +246,7 @@
     move-result-object v2
 
     .line 148
-    .local v2, resolver:Landroid/content/ContentResolver;
+    .local v2, "resolver":Landroid/content/ContentResolver;
     sget-object v5, Landroid/provider/Downloads$Impl;->ALL_DOWNLOADS_CONTENT_URI:Landroid/net/Uri;
 
     iget-wide v6, v1, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;->id:J
@@ -256,13 +256,13 @@
     move-result-object v0
 
     .line 150
-    .local v0, downloadUri:Landroid/net/Uri;
+    .local v0, "downloadUri":Landroid/net/Uri;
     invoke-virtual {v2, v0, v4, v8, v8}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
     move-result v3
 
     .line 151
-    .local v3, rows:I
+    .local v3, "rows":I
     if-nez v3, :cond_0
 
     .line 154
@@ -273,7 +273,7 @@
 
 .method public requestScan(Lcom/android/providers/downloads/DownloadInfo;)V
     .locals 6
-    .parameter "info"
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     .line 102
@@ -324,7 +324,7 @@
     invoke-direct {v0, v3, v4, v1, v5}, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;-><init>(JLjava/lang/String;Ljava/lang/String;)V
 
     .line 105
-    .local v0, req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .local v0, "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadScanner;->mPending:Ljava/util/HashMap;
 
     iget-object v3, v0, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;->path:Ljava/lang/String;
@@ -361,7 +361,7 @@
     goto :goto_0
 
     .line 112
-    .end local v0           #req:Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
+    .end local v0    # "req":Lcom/android/providers/downloads/DownloadScanner$ScanRequest;
     :catchall_0
     move-exception v1
 

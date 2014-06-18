@@ -39,7 +39,7 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -48,7 +48,6 @@
 # virtual methods
 .method public apply(Lcom/google/common/collect/Table$Cell;)Ljava/lang/Object;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64,7 +63,7 @@
 
     .prologue
     .line 53
-    .local p1, from:Lcom/google/common/collect/Table$Cell;,"Lcom/google/common/collect/Table$Cell<Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;>;"
+    .local p1, "from":Lcom/google/common/collect/Table$Cell;, "Lcom/google/common/collect/Table$Cell<Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;>;"
     invoke-interface {p1}, Lcom/google/common/collect/Table$Cell;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -74,13 +73,13 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 51
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
-    .end local p1
+    .end local p1    # "x0":Ljava/lang/Object;
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularImmutableTable$1;->apply(Lcom/google/common/collect/Table$Cell;)Ljava/lang/Object;
 
     move-result-object v0

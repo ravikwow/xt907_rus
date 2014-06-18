@@ -79,7 +79,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/util/Map;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,9 +91,9 @@
 
     .prologue
     .line 118
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, map:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 119
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
@@ -112,7 +111,7 @@
 
 .method static synthetic access$000(Lcom/google/common/collect/AbstractMultimap;)Ljava/util/Map;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
 
     .prologue
     .line 88
@@ -123,8 +122,8 @@
 
 .method static synthetic access$100(Lcom/google/common/collect/AbstractMultimap;Ljava/util/Collection;)Ljava/util/Iterator;
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # Ljava/util/Collection;
 
     .prologue
     .line 88
@@ -137,7 +136,7 @@
 
 .method static synthetic access$208(Lcom/google/common/collect/AbstractMultimap;)I
     .locals 2
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
 
     .prologue
     .line 88
@@ -152,7 +151,7 @@
 
 .method static synthetic access$210(Lcom/google/common/collect/AbstractMultimap;)I
     .locals 2
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
 
     .prologue
     .line 88
@@ -167,8 +166,8 @@
 
 .method static synthetic access$212(Lcom/google/common/collect/AbstractMultimap;I)I
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # I
 
     .prologue
     .line 88
@@ -183,8 +182,8 @@
 
 .method static synthetic access$220(Lcom/google/common/collect/AbstractMultimap;I)I
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # I
 
     .prologue
     .line 88
@@ -199,10 +198,10 @@
 
 .method static synthetic access$300(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
-    .parameter "x3"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # Ljava/lang/Object;
+    .param p2, "x2"    # Ljava/util/List;
+    .param p3, "x3"    # Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 
     .prologue
     .line 88
@@ -215,9 +214,9 @@
 
 .method static synthetic access$400(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # Ljava/lang/Object;
+    .param p2, "x2"    # Ljava/util/Collection;
 
     .prologue
     .line 88
@@ -230,8 +229,8 @@
 
 .method static synthetic access$500(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;)I
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/google/common/collect/AbstractMultimap;
+    .param p1, "x1"    # Ljava/lang/Object;
 
     .prologue
     .line 88
@@ -256,7 +255,7 @@
 
     .prologue
     .line 1162
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     instance-of v0, v0, Ljava/util/SortedMap;
@@ -298,7 +297,7 @@
 
     .prologue
     .line 871
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     instance-of v0, v0, Ljava/util/SortedMap;
@@ -330,7 +329,6 @@
 
 .method private getOrCreateCollection(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -341,8 +339,8 @@
 
     .prologue
     .line 212
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -352,7 +350,7 @@
     check-cast v0, Ljava/util/Collection;
 
     .line 213
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     if-nez v0, :cond_0
 
     .line 214
@@ -372,7 +370,6 @@
 
 .method private iteratorOrListIterator(Ljava/util/Collection;)Ljava/util/Iterator;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -385,15 +382,15 @@
 
     .prologue
     .line 640
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     instance-of v0, p1, Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     check-cast p1, Ljava/util/List;
 
-    .end local p1           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local p1    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-interface {p1}, Ljava/util/List;->listIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -401,7 +398,7 @@
     :goto_0
     return-object v0
 
-    .restart local p1       #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .restart local p1    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_0
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -412,10 +409,10 @@
 
 .method private removeValuesForKey(Ljava/lang/Object;)I
     .locals 4
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     const/4 v1, 0x0
 
     .line 1012
@@ -432,11 +429,11 @@
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 1019
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     const/4 v1, 0x0
 
     .line 1020
-    .local v1, count:I
+    .local v1, "count":I
     if-eqz v0, :cond_0
 
     .line 1021
@@ -455,8 +452,8 @@
     iput v3, p0, Lcom/google/common/collect/AbstractMultimap;->totalSize:I
 
     .line 1025
-    .end local v0           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
-    .end local v1           #count:I
+    .end local v0    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
+    .end local v1    # "count":I
     :cond_0
     :goto_0
     return v1
@@ -466,23 +463,21 @@
     move-exception v2
 
     .line 1014
-    .local v2, e:Ljava/lang/NullPointerException;
+    .local v2, "e":Ljava/lang/NullPointerException;
     goto :goto_0
 
     .line 1015
-    .end local v2           #e:Ljava/lang/NullPointerException;
+    .end local v2    # "e":Ljava/lang/NullPointerException;
     :catch_1
     move-exception v2
 
     .line 1016
-    .local v2, e:Ljava/lang/ClassCastException;
+    .local v2, "e":Ljava/lang/ClassCastException;
     goto :goto_0
 .end method
 
 .method private wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -494,9 +489,9 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     const/4 v1, 0x0
 
     .line 364
@@ -509,7 +504,7 @@
 
     check-cast p2, Ljava/util/SortedSet;
 
-    .end local p2           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-direct {v0, p0, p1, p2, v1}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;-><init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/SortedSet;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
 
     .line 371
@@ -517,7 +512,7 @@
     return-object v0
 
     .line 366
-    .restart local p2       #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .restart local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_0
     instance-of v0, p2, Ljava/util/Set;
 
@@ -528,13 +523,13 @@
 
     check-cast p2, Ljava/util/Set;
 
-    .end local p2           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/collect/AbstractMultimap$WrappedSet;-><init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/Set;)V
 
     goto :goto_0
 
     .line 368
-    .restart local p2       #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .restart local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_1
     instance-of v0, p2, Ljava/util/List;
 
@@ -543,7 +538,7 @@
     .line 369
     check-cast p2, Ljava/util/List;
 
-    .end local p2           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-direct {p0, p1, p2, v1}, Lcom/google/common/collect/AbstractMultimap;->wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
 
     move-result-object v0
@@ -551,7 +546,7 @@
     goto :goto_0
 
     .line 371
-    .restart local p2       #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .restart local p2    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_2
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 
@@ -562,9 +557,6 @@
 
 .method private wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
     .locals 1
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -579,10 +571,10 @@
 
     .prologue
     .line 377
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, list:Ljava/util/List;,"Ljava/util/List<TV;>;"
-    .local p3, ancestor:Lcom/google/common/collect/AbstractMultimap$WrappedCollection;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "list":Ljava/util/List;, "Ljava/util/List<TV;>;"
+    .local p3, "ancestor":Lcom/google/common/collect/AbstractMultimap$WrappedCollection;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
     instance-of v0, p2, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
@@ -618,18 +610,18 @@
 
     .prologue
     .line 1157
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->asMap:Ljava/util/Map;
 
     .line 1158
-    .local v0, result:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    .local v0, "result":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
     if-nez v0, :cond_0
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;->createAsMap()Ljava/util/Map;
 
     move-result-object v0
 
-    .end local v0           #result:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    .end local v0    # "result":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
     iput-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->asMap:Ljava/util/Map;
 
     :cond_0
@@ -641,7 +633,7 @@
 
     .prologue
     .line 334
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v2}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -652,7 +644,7 @@
 
     move-result-object v1
 
-    .local v1, i$:Ljava/util/Iterator;
+    .local v1, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -667,13 +659,13 @@
     check-cast v0, Ljava/util/Collection;
 
     .line 335
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-interface {v0}, Ljava/util/Collection;->clear()V
 
     goto :goto_0
 
     .line 337
-    .end local v0           #collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local v0    # "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_0
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
@@ -690,11 +682,11 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 177
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -716,7 +708,6 @@
 
 .method createCollection(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -727,8 +718,8 @@
 
     .prologue
     .line 156
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object v0
@@ -738,11 +729,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 1352
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     if-ne p1, p0, :cond_0
 
     .line 1353
@@ -764,7 +755,7 @@
     check-cast v0, Lcom/google/common/collect/Multimap;
 
     .line 1357
-    .local v0, that:Lcom/google/common/collect/Multimap;,"Lcom/google/common/collect/Multimap<**>;"
+    .local v0, "that":Lcom/google/common/collect/Multimap;, "Lcom/google/common/collect/Multimap<**>;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
@@ -778,7 +769,7 @@
     goto :goto_0
 
     .line 1359
-    .end local v0           #that:Lcom/google/common/collect/Multimap;,"Lcom/google/common/collect/Multimap<**>;"
+    .end local v0    # "that":Lcom/google/common/collect/Multimap;, "Lcom/google/common/collect/Multimap<**>;"
     :cond_1
     const/4 v1, 0x0
 
@@ -787,7 +778,6 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -798,8 +788,8 @@
 
     .prologue
     .line 350
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -809,7 +799,7 @@
     check-cast v0, Ljava/util/Collection;
 
     .line 351
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     if-nez v0, :cond_0
 
     .line 352
@@ -831,7 +821,7 @@
 
     .prologue
     .line 1371
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -853,18 +843,18 @@
 
     .prologue
     .line 866
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->keySet:Ljava/util/Set;
 
     .line 867
-    .local v0, result:Ljava/util/Set;,"Ljava/util/Set<TK;>;"
+    .local v0, "result":Ljava/util/Set;, "Ljava/util/Set<TK;>;"
     if-nez v0, :cond_0
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;->createKeySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .end local v0           #result:Ljava/util/Set;,"Ljava/util/Set<TK;>;"
+    .end local v0    # "result":Ljava/util/Set;, "Ljava/util/Set<TK;>;"
     iput-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->keySet:Ljava/util/Set;
 
     :cond_0
@@ -873,8 +863,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)Z"
@@ -883,15 +871,15 @@
 
     .prologue
     .line 201
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultimap;->getOrCreateCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
     .line 203
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-interface {v0, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move-result v1
@@ -920,7 +908,6 @@
 
 .method final setMap(Ljava/util/Map;)V
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -932,8 +919,8 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
-    .local p1, map:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
     const/4 v3, 0x0
 
     .line 125
@@ -951,7 +938,7 @@
 
     move-result-object v0
 
-    .local v0, i$:Ljava/util/Iterator;
+    .local v0, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -966,7 +953,7 @@
     check-cast v1, Ljava/util/Collection;
 
     .line 128
-    .local v1, values:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v1, "values":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v2
@@ -998,7 +985,7 @@
     goto :goto_1
 
     .line 131
-    .end local v1           #values:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local v1    # "values":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_1
     return-void
 .end method
@@ -1008,7 +995,7 @@
 
     .prologue
     .line 1382
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

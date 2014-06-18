@@ -29,7 +29,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/util/Map;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -42,8 +41,8 @@
 
     .prologue
     .line 46
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
-    .local p1, map:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultimap;-><init>(Ljava/util/Map;)V
 
     .line 47
@@ -66,7 +65,7 @@
 
     .prologue
     .line 105
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object v0
@@ -79,7 +78,7 @@
 
     .prologue
     .line 36
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractListMultimap;->createCollection()Ljava/util/List;
 
     move-result-object v0
@@ -99,11 +98,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 116
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractMultimap;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -113,11 +112,11 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 36
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractListMultimap;->get(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
@@ -127,7 +126,6 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -138,8 +136,8 @@
 
     .prologue
     .line 61
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
@@ -151,8 +149,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)Z"
@@ -161,9 +157,9 @@
 
     .prologue
     .line 95
-    .local p0, this:Lcom/google/common/collect/AbstractListMultimap;,"Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractListMultimap;, "Lcom/google/common/collect/AbstractListMultimap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/AbstractMultimap;->put(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0

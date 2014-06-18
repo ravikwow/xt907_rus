@@ -28,9 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/DownloadProvider;Ljava/io/File;Landroid/net/Uri;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     .line 1302
@@ -40,7 +37,7 @@
 
     iput-object p3, p0, Lcom/android/providers/downloads/DownloadProvider$1;->val$uri:Landroid/net/Uri;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -49,7 +46,7 @@
 # virtual methods
 .method public onClose(Ljava/io/IOException;)V
     .locals 5
-    .parameter "e"
+    .param p1, "e"    # Ljava/io/IOException;
 
     .prologue
     const/4 v4, 0x0
@@ -60,7 +57,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 1306
-    .local v0, values:Landroid/content/ContentValues;
+    .local v0, "values":Landroid/content/ContentValues;
     const-string v1, "total_bytes"
 
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadProvider$1;->val$file:Ljava/io/File;

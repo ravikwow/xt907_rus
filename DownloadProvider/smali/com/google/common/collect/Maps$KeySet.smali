@@ -32,7 +32,7 @@
 
     .prologue
     .line 2114
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
 
     .prologue
     .line 2153
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -58,11 +58,11 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 2135
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -79,7 +79,7 @@
 
     .prologue
     .line 2131
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -103,7 +103,7 @@
 
     .prologue
     .line 2118
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -139,11 +139,11 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 2139
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$KeySet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -172,7 +172,6 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,8 +182,8 @@
 
     .prologue
     .line 2149
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -203,7 +202,7 @@
 
     .prologue
     .line 2127
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet;,"Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet;, "Lcom/google/common/collect/Maps$KeySet<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0

@@ -38,8 +38,7 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/util/Set;)V
     .locals 4
-    .parameter "selection"
-    .parameter
+    .param p1, "selection"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,11 +51,11 @@
     .end annotation
 
     .prologue
-    .local p2, allowedColumns:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
+    .local p2, "allowedColumns":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     const/4 v3, 0x0
 
     .line 538
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 534
     iput v3, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
@@ -101,7 +100,7 @@
 
 .method private static final isIdentifierChar(C)Z
     .locals 1
-    .parameter "c"
+    .param p0, "c"    # C
 
     .prologue
     .line 691
@@ -149,7 +148,7 @@
 
 .method private static final isIdentifierStart(C)Z
     .locals 1
-    .parameter "c"
+    .param p0, "c"    # C
 
     .prologue
     .line 685
@@ -206,7 +205,7 @@
     iget-object v0, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mChars:[C
 
     .line 554
-    .local v0, chars:[C
+    .local v0, "chars":[C
     :goto_0
     iget v3, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
 
@@ -520,7 +519,7 @@
     iget v1, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
 
     .line 633
-    .local v1, startOffset:I
+    .local v1, "startOffset":I
     iget v3, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
 
     add-int/lit8 v3, v3, 0x1
@@ -565,7 +564,7 @@
     move-result-object v2
 
     .line 638
-    .local v2, word:Ljava/lang/String;
+    .local v2, "word":Ljava/lang/String;
     iget v3, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
 
     sub-int/2addr v3, v1
@@ -657,8 +656,8 @@
     throw v3
 
     .line 660
-    .end local v1           #startOffset:I
-    .end local v2           #word:Ljava/lang/String;
+    .end local v1    # "startOffset":I
+    .end local v2    # "word":Ljava/lang/String;
     :cond_12
     iget v3, p0, Lcom/android/providers/downloads/Helpers$Lexer;->mOffset:I
 

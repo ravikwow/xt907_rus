@@ -103,8 +103,8 @@
 
 .method private checkExpiration(JLjava/util/concurrent/TimeUnit;)V
     .locals 9
-    .parameter "duration"
-    .parameter "unit"
+    .param p1, "duration"    # J
+    .param p3, "unit"    # Ljava/util/concurrent/TimeUnit;
 
     .prologue
     const-wide/16 v7, -0x1
@@ -233,7 +233,7 @@
 # virtual methods
 .method public concurrencyLevel(I)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter "concurrencyLevel"
+    .param p1, "concurrencyLevel"    # I
 
     .prologue
     const/4 v1, 0x1
@@ -291,8 +291,8 @@
 
 .method expireAfterAccess(JLjava/util/concurrent/TimeUnit;)Lcom/google/common/collect/MapMaker;
     .locals 2
-    .parameter "duration"
-    .parameter "unit"
+    .param p1, "duration"    # J
+    .param p3, "unit"    # Ljava/util/concurrent/TimeUnit;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -335,8 +335,8 @@
 
 .method expireAfterWrite(JLjava/util/concurrent/TimeUnit;)Lcom/google/common/collect/MapMaker;
     .locals 2
-    .parameter "duration"
-    .parameter "unit"
+    .param p1, "duration"    # J
+    .param p3, "unit"    # Ljava/util/concurrent/TimeUnit;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -593,7 +593,7 @@
 
 .method public initialCapacity(I)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter "initialCapacity"
+    .param p1, "initialCapacity"    # I
 
     .prologue
     const/4 v1, 0x1
@@ -651,7 +651,6 @@
 
 .method keyEquivalence(Lcom/google/common/base/Equivalence;)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -664,7 +663,7 @@
     .end annotation
 
     .prologue
-    .local p1, equivalence:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
+    .local p1, "equivalence":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
     const/4 v2, 0x0
 
     const/4 v1, 0x1
@@ -711,7 +710,6 @@
 
 .method public makeComputingMap(Lcom/google/common/base/Function;)Ljava/util/concurrent/ConcurrentMap;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -731,7 +729,7 @@
 
     .prologue
     .line 668
-    .local p1, computingFunction:Lcom/google/common/base/Function;,"Lcom/google/common/base/Function<-TK;+TV;>;"
+    .local p1, "computingFunction":Lcom/google/common/base/Function;, "Lcom/google/common/base/Function<-TK;+TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/MapMaker;->useNullMap()Z
 
     move-result v0
@@ -780,7 +778,7 @@
 
     move-result v1
 
-    const/high16 v2, 0x3f40
+    const/high16 v2, 0x3f400000
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMaker;->getConcurrencyLevel()I
 
@@ -813,7 +811,7 @@
 
 .method maximumSize(I)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter "size"
+    .param p1, "size"    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -885,7 +883,6 @@
 
 .method removalListener(Lcom/google/common/collect/MapMaker$RemovalListener;)Lcom/google/common/collect/GenericMapMaker;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -904,11 +901,11 @@
     .end annotation
 
     .prologue
-    .local p1, listener:Lcom/google/common/collect/MapMaker$RemovalListener;,"Lcom/google/common/collect/MapMaker$RemovalListener<TK;TV;>;"
+    .local p1, "listener":Lcom/google/common/collect/MapMaker$RemovalListener;, "Lcom/google/common/collect/MapMaker$RemovalListener<TK;TV;>;"
     const/4 v2, 0x1
 
     .line 563
-    iget-object v1, p0, Lcom/google/common/collect/MapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
+    iget-object v1, p0, Lcom/google/common/collect/GenericMapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     if-nez v1, :cond_0
 
@@ -921,7 +918,7 @@
     move-object v0, p0
 
     .line 568
-    .local v0, me:Lcom/google/common/collect/GenericMapMaker;,"Lcom/google/common/collect/GenericMapMaker<TK;TV;>;"
+    .local v0, "me":Lcom/google/common/collect/GenericMapMaker;, "Lcom/google/common/collect/GenericMapMaker<TK;TV;>;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -937,7 +934,7 @@
     return-object v0
 
     .line 563
-    .end local v0           #me:Lcom/google/common/collect/GenericMapMaker;,"Lcom/google/common/collect/GenericMapMaker<TK;TV;>;"
+    .end local v0    # "me":Lcom/google/common/collect/GenericMapMaker;, "Lcom/google/common/collect/GenericMapMaker<TK;TV;>;"
     :cond_0
     const/4 v1, 0x0
 
@@ -946,7 +943,7 @@
 
 .method setKeyStrength(Lcom/google/common/collect/MapMakerInternalMap$Strength;)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter "strength"
+    .param p1, "strength"    # Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
     .prologue
     const/4 v2, 0x0
@@ -1001,7 +998,7 @@
 
 .method setValueStrength(Lcom/google/common/collect/MapMakerInternalMap$Strength;)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter "strength"
+    .param p1, "strength"    # Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
     .prologue
     const/4 v2, 0x0
@@ -1068,7 +1065,7 @@
     move-result-object v0
 
     .line 680
-    .local v0, s:Lcom/google/common/base/Objects$ToStringHelper;
+    .local v0, "s":Lcom/google/common/base/Objects$ToStringHelper;
     iget v1, p0, Lcom/google/common/collect/MapMaker;->initialCapacity:I
 
     if-eq v1, v3, :cond_0
@@ -1238,7 +1235,7 @@
 
     .line 707
     :cond_8
-    iget-object v1, p0, Lcom/google/common/collect/MapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
+    iget-object v1, p0, Lcom/google/common/collect/GenericMapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     if-eqz v1, :cond_9
 
@@ -1258,7 +1255,6 @@
 
 .method valueEquivalence(Lcom/google/common/base/Equivalence;)Lcom/google/common/collect/MapMaker;
     .locals 6
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1271,7 +1267,7 @@
     .end annotation
 
     .prologue
-    .local p1, equivalence:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
+    .local p1, "equivalence":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
     const/4 v2, 0x0
 
     const/4 v1, 0x1

@@ -33,11 +33,10 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap$WrappedList;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 803
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMultimap$WrappedList;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultimap$WrappedCollection$WrappedIterator;-><init>(Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
@@ -47,12 +46,11 @@
 
 .method public constructor <init>(Lcom/google/common/collect/AbstractMultimap$WrappedList;I)V
     .locals 1
-    .parameter
-    .parameter "index"
+    .param p2, "index"    # I
 
     .prologue
     .line 805
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMultimap$WrappedList;
 
     .line 806
@@ -82,7 +80,7 @@
 
     .prologue
     .line 810
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateIterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -96,7 +94,6 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
@@ -105,8 +102,8 @@
 
     .prologue
     .line 840
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
-    .local p1, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p1, "value":Ljava/lang/Object;, "TV;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMultimap$WrappedList;
 
     invoke-virtual {v1}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->isEmpty()Z
@@ -114,7 +111,7 @@
     move-result v0
 
     .line 841
-    .local v0, wasEmpty:Z
+    .local v0, "wasEmpty":Z
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v1
@@ -126,6 +123,7 @@
 
     iget-object v1, v1, Lcom/google/common/collect/AbstractMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
+    # operator++ for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v1}, Lcom/google/common/collect/AbstractMultimap;->access$208(Lcom/google/common/collect/AbstractMultimap;)I
 
     .line 843
@@ -146,7 +144,7 @@
 
     .prologue
     .line 815
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -163,7 +161,7 @@
 
     .prologue
     .line 825
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -185,7 +183,7 @@
 
     .prologue
     .line 820
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -202,7 +200,7 @@
 
     .prologue
     .line 830
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -216,7 +214,6 @@
 
 .method public set(Ljava/lang/Object;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
@@ -225,8 +222,8 @@
 
     .prologue
     .line 835
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
-    .local p1, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList.WrappedListIterator;"
+    .local p1, "value":Ljava/lang/Object;, "TV;"
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0

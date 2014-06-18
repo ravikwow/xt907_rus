@@ -126,7 +126,7 @@
 
 .method static synthetic access$100(Lcom/android/providers/downloads/ui/DownloadList;)Ljava/util/Map;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -137,7 +137,7 @@
 
 .method static synthetic access$1000(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/view/ActionMode;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -148,8 +148,8 @@
 
 .method static synthetic access$1002(Lcom/android/providers/downloads/ui/DownloadList;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Landroid/view/ActionMode;
 
     .prologue
     .line 71
@@ -160,7 +160,7 @@
 
 .method static synthetic access$1100(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/database/Cursor;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -171,7 +171,7 @@
 
 .method static synthetic access$1200(Lcom/android/providers/downloads/ui/DownloadList;)Z
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -184,8 +184,8 @@
 
 .method static synthetic access$1300(Lcom/android/providers/downloads/ui/DownloadList;J)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # J
 
     .prologue
     .line 71
@@ -196,7 +196,7 @@
 
 .method static synthetic access$1400(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/app/DownloadManager;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -207,8 +207,8 @@
 
 .method static synthetic access$1502(Lcom/android/providers/downloads/ui/DownloadList;Ljava/lang/Long;)Ljava/lang/Long;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Ljava/lang/Long;
 
     .prologue
     .line 71
@@ -219,8 +219,8 @@
 
 .method static synthetic access$1602(Lcom/android/providers/downloads/ui/DownloadList;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Landroid/app/AlertDialog;
 
     .prologue
     .line 71
@@ -231,8 +231,8 @@
 
 .method static synthetic access$1702(Lcom/android/providers/downloads/ui/DownloadList;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Landroid/app/AlertDialog;
 
     .prologue
     .line 71
@@ -243,7 +243,7 @@
 
 .method static synthetic access$200(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -254,7 +254,7 @@
 
 .method static synthetic access$300(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -265,7 +265,7 @@
 
 .method static synthetic access$400(Lcom/android/providers/downloads/ui/DownloadList;)Z
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -276,8 +276,8 @@
 
 .method static synthetic access$402(Lcom/android/providers/downloads/ui/DownloadList;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Z
 
     .prologue
     .line 71
@@ -288,7 +288,7 @@
 
 .method static synthetic access$500(Lcom/android/providers/downloads/ui/DownloadList;)Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -299,7 +299,7 @@
 
 .method static synthetic access$600(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/widget/ExpandableListView;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -310,7 +310,7 @@
 
 .method static synthetic access$700(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/database/Cursor;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -321,8 +321,8 @@
 
 .method static synthetic access$800(Lcom/android/providers/downloads/ui/DownloadList;Landroid/database/Cursor;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p1, "x1"    # Landroid/database/Cursor;
 
     .prologue
     .line 71
@@ -333,7 +333,7 @@
 
 .method static synthetic access$900(Lcom/android/providers/downloads/ui/DownloadList;)Landroid/database/Cursor;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 71
@@ -436,7 +436,7 @@
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     .line 824
-    .local v0, allIds:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/Long;>;"
+    .local v0, "allIds":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Long;>;"
     iget-object v2, p0, Lcom/android/providers/downloads/ui/DownloadList;->mDateSortedCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
@@ -484,7 +484,7 @@
 
     move-result-object v1
 
-    .local v1, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<Ljava/lang/Long;>;"
+    .local v1, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/lang/Long;>;"
     :cond_1
     :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -533,7 +533,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 548
-    const/high16 v1, 0x7f07
+    const/high16 v1, 0x7f070000
 
     invoke-virtual {p0, v1}, Lcom/android/providers/downloads/ui/DownloadList;->setTitle(I)V
 
@@ -593,7 +593,7 @@
     move-result-object v0
 
     .line 558
-    .local v0, lv:Landroid/widget/ListView;
+    .local v0, "lv":Landroid/widget/ListView;
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 559
@@ -604,7 +604,7 @@
 
 .method private deleteDownload(J)V
     .locals 3
-    .parameter "downloadId"
+    .param p1, "downloadId"    # J
 
     .prologue
     .line 792
@@ -643,7 +643,6 @@
 
 .method private findCommonMimeType(Ljava/util/ArrayList;)Ljava/lang/String;
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -752,7 +751,6 @@
 
 .method private findCommonString(Ljava/util/Collection;)Ljava/lang/String;
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -766,20 +764,20 @@
 
     .prologue
     .line 911
-    .local p1, set:Ljava/util/Collection;,"Ljava/util/Collection<Ljava/lang/String;>;"
+    .local p1, "set":Ljava/util/Collection;, "Ljava/util/Collection<Ljava/lang/String;>;"
     const/4 v3, 0x0
 
     .line 912
-    .local v3, str:Ljava/lang/String;
+    .local v3, "str":Ljava/lang/String;
     const/4 v0, 0x1
 
     .line 913
-    .local v0, found:Z
+    .local v0, "found":Z
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .local v1, i$:Ljava/util/Iterator;
+    .local v1, "i$":Ljava/util/Iterator;
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -795,7 +793,7 @@
     check-cast v2, Ljava/lang/String;
 
     .line 914
-    .local v2, s:Ljava/lang/String;
+    .local v2, "s":Ljava/lang/String;
     if-nez v3, :cond_1
 
     .line 915
@@ -815,15 +813,15 @@
     const/4 v0, 0x0
 
     .line 921
-    .end local v2           #s:Ljava/lang/String;
+    .end local v2    # "s":Ljava/lang/String;
     :cond_2
     if-eqz v0, :cond_3
 
-    .end local v3           #str:Ljava/lang/String;
+    .end local v3    # "str":Ljava/lang/String;
     :goto_1
     return-object v3
 
-    .restart local v3       #str:Ljava/lang/String;
+    .restart local v3    # "str":Ljava/lang/String;
     :cond_3
     const/4 v3, 0x0
 
@@ -832,7 +830,7 @@
 
 .method private getDeleteClickHandler(J)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
-    .parameter "downloadId"
+    .param p1, "downloadId"    # J
 
     .prologue
     .line 603
@@ -845,7 +843,7 @@
 
 .method private getErrorMessage(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 1
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 691
@@ -951,7 +949,7 @@
 
 .method private getRestartClickHandler(J)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
-    .parameter "downloadId"
+    .param p1, "downloadId"    # J
 
     .prologue
     .line 615
@@ -978,7 +976,7 @@
 
 .method private handleItemClick(Landroid/database/Cursor;)V
     .locals 5
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 646
@@ -991,7 +989,7 @@
     int-to-long v0, v2
 
     .line 647
-    .local v0, id:J
+    .local v0, "id":J
     iget v2, p0, Lcom/android/providers/downloads/ui/DownloadList;->mStatusColumnId:I
 
     invoke-interface {p1, v2}, Landroid/database/Cursor;->getInt(I)I
@@ -1137,7 +1135,7 @@
 
 .method private isOnExternalStorage(Landroid/database/Cursor;)Z
     .locals 7
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     const/4 v4, 0x0
@@ -1150,7 +1148,7 @@
     move-result-object v2
 
     .line 721
-    .local v2, localUriString:Ljava/lang/String;
+    .local v2, "localUriString":Ljava/lang/String;
     if-nez v2, :cond_1
 
     .line 730
@@ -1165,7 +1163,7 @@
     move-result-object v1
 
     .line 725
-    .local v1, localUri:Landroid/net/Uri;
+    .local v1, "localUri":Landroid/net/Uri;
     invoke-virtual {v1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v5
@@ -1184,7 +1182,7 @@
     move-result-object v3
 
     .line 729
-    .local v3, path:Ljava/lang/String;
+    .local v3, "path":Ljava/lang/String;
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v4
@@ -1194,7 +1192,7 @@
     move-result-object v0
 
     .line 730
-    .local v0, externalRoot:Ljava/lang/String;
+    .local v0, "externalRoot":Ljava/lang/String;
     invoke-virtual {v3, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
@@ -1204,7 +1202,7 @@
 
 .method private isPausedForWifi(Landroid/database/Cursor;)Z
     .locals 2
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 814
@@ -1231,7 +1229,7 @@
 
 .method private moveToDownload(J)Z
     .locals 2
-    .parameter "downloadId"
+    .param p1, "downloadId"    # J
 
     .prologue
     .line 842
@@ -1285,7 +1283,7 @@
 
 .method private openCurrentDownload(Landroid/database/Cursor;)V
     .locals 8
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     const/4 v6, 0x0
@@ -1302,7 +1300,7 @@
     move-result-object v3
 
     .line 629
-    .local v3, localUri:Landroid/net/Uri;
+    .local v3, "localUri":Landroid/net/Uri;
     :try_start_0
     invoke-virtual {p0}, Lcom/android/providers/downloads/ui/DownloadList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1332,7 +1330,7 @@
     move-result-wide v1
 
     .line 640
-    .local v1, id:J
+    .local v1, "id":J
     invoke-static {p0, v1, v2, v6}, Lcom/android/providers/downloads/OpenHelper;->startViewIntent(Landroid/content/Context;JI)Z
 
     move-result v4
@@ -1349,7 +1347,7 @@
     invoke-virtual {v4}, Landroid/widget/Toast;->show()V
 
     .line 643
-    .end local v1           #id:J
+    .end local v1    # "id":J
     :cond_0
     :goto_1
     return-void
@@ -1359,7 +1357,7 @@
     move-exception v0
 
     .line 631
-    .local v0, exc:Ljava/io/FileNotFoundException;
+    .local v0, "exc":Ljava/io/FileNotFoundException;
     const-string v4, "DownloadList"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1406,7 +1404,7 @@
     goto :goto_1
 
     .line 635
-    .end local v0           #exc:Ljava/io/FileNotFoundException;
+    .end local v0    # "exc":Ljava/io/FileNotFoundException;
     :catch_1
     move-exception v4
 
@@ -1433,7 +1431,7 @@
 
 .method private sendRunningDownloadClickedBroadcast(J)V
     .locals 4
-    .parameter "id"
+    .param p1, "id"    # J
 
     .prologue
     .line 759
@@ -1444,7 +1442,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 760
-    .local v0, intent:Landroid/content/Intent;
+    .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.android.providers.downloads"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
@@ -1476,7 +1474,7 @@
     const/4 v3, 0x3
 
     .line 260
-    const/high16 v1, 0x7f04
+    const/high16 v1, 0x7f040000
 
     invoke-virtual {p0, v1}, Lcom/android/providers/downloads/ui/DownloadList;->setContentView(I)V
 
@@ -1486,8 +1484,8 @@
     invoke-direct {v0, p0}, Lcom/android/providers/downloads/ui/DownloadList$ModeCallback;-><init>(Lcom/android/providers/downloads/ui/DownloadList;)V
 
     .line 264
-    .local v0, modeCallback:Lcom/android/providers/downloads/ui/DownloadList$ModeCallback;
-    const/high16 v1, 0x7f09
+    .local v0, "modeCallback":Lcom/android/providers/downloads/ui/DownloadList$ModeCallback;
+    const/high16 v1, 0x7f090000
 
     invoke-virtual {p0, v1}, Lcom/android/providers/downloads/ui/DownloadList;->findViewById(I)Landroid/view/View;
 
@@ -1561,8 +1559,8 @@
 
 .method private showFailedDialog(JLjava/lang/String;)V
     .locals 3
-    .parameter "downloadId"
-    .parameter "dialogBody"
+    .param p1, "downloadId"    # J
+    .param p3, "dialogBody"    # Ljava/lang/String;
 
     .prologue
     .line 743
@@ -1708,7 +1706,7 @@
 
 .method public isDownloadSelected(J)Z
     .locals 2
-    .parameter "id"
+    .param p1, "id"    # J
 
     .prologue
     .line 796
@@ -1727,7 +1725,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .parameter "icicle"
+    .param p1, "icicle"    # Landroid/os/Bundle;
 
     .prologue
     .line 152
@@ -1741,7 +1739,7 @@
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 156
-    .local v1, intent:Landroid/content/Intent;
+    .local v1, "intent":Landroid/content/Intent;
     const-string v2, "com.android.providers.downloads.documents"
 
     const-string v3, "downloads"
@@ -1770,7 +1768,7 @@
     move-exception v0
 
     .line 168
-    .local v0, ex:Landroid/content/ActivityNotFoundException;
+    .local v0, "ex":Landroid/content/ActivityNotFoundException;
     const-string v2, "DownloadList"
 
     const-string v3, "Failed to run in DocumentsUI activity"
@@ -1785,7 +1783,7 @@
 
 .method public onCreateLegacy(Landroid/os/Bundle;)V
     .locals 6
-    .parameter "icicle"
+    .param p1, "icicle"    # Landroid/os/Bundle;
 
     .prologue
     const/4 v5, 0x1
@@ -1830,7 +1828,7 @@
     move-result-object v0
 
     .line 188
-    .local v0, baseQuery:Landroid/app/DownloadManager$Query;
+    .local v0, "baseQuery":Landroid/app/DownloadManager$Query;
     iget-object v2, p0, Lcom/android/providers/downloads/ui/DownloadList;->mDownloadManager:Landroid/app/DownloadManager;
 
     invoke-virtual {v2, v0}, Landroid/app/DownloadManager;->query(Landroid/app/DownloadManager$Query;)Landroid/database/Cursor;
@@ -1974,7 +1972,7 @@
     move-result-object v1
 
     .line 220
-    .local v1, extras:Landroid/os/Bundle;
+    .local v1, "extras":Landroid/os/Bundle;
     if-eqz v1, :cond_1
 
     const-string v2, "android.app.DownloadManager.extra_sortBySize"
@@ -2086,10 +2084,10 @@
 
 .method public onDownloadSelectionChanged(JZLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .parameter "downloadId"
-    .parameter "isSelected"
-    .parameter "fileName"
-    .parameter "mimeType"
+    .param p1, "downloadId"    # J
+    .param p3, "isSelected"    # Z
+    .param p4, "fileName"    # Ljava/lang/String;
+    .param p5, "mimeType"    # Ljava/lang/String;
 
     .prologue
     .line 769
@@ -2160,7 +2158,7 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 9
-    .parameter "savedInstanceState"
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
     .line 522
@@ -2188,7 +2186,7 @@
     move-result-object v3
 
     .line 526
-    .local v3, selectedIds:[J
+    .local v3, "selectedIds":[J
     const-string v4, "filenames"
 
     invoke-virtual {p1, v4}, Landroid/os/Bundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
@@ -2196,7 +2194,7 @@
     move-result-object v0
 
     .line 527
-    .local v0, fileNames:[Ljava/lang/String;
+    .local v0, "fileNames":[Ljava/lang/String;
     const-string v4, "mimetypes"
 
     invoke-virtual {p1, v4}, Landroid/os/Bundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
@@ -2204,7 +2202,7 @@
     move-result-object v2
 
     .line 528
-    .local v2, mimeTypes:[Ljava/lang/String;
+    .local v2, "mimeTypes":[Ljava/lang/String;
     if-eqz v3, :cond_0
 
     array-length v4, v3
@@ -2214,7 +2212,7 @@
     .line 529
     const/4 v1, 0x0
 
-    .local v1, i:I
+    .local v1, "i":I
     :goto_0
     array-length v4, v3
 
@@ -2245,7 +2243,7 @@
     goto :goto_0
 
     .line 533
-    .end local v1           #i:I
+    .end local v1    # "i":I
     :cond_0
     invoke-direct {p0}, Lcom/android/providers/downloads/ui/DownloadList;->chooseListToShow()V
 
@@ -2313,7 +2311,7 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 11
-    .parameter "outState"
+    .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
     .line 498
@@ -2334,7 +2332,7 @@
     move-result v5
 
     .line 501
-    .local v5, len:I
+    .local v5, "len":I
     if-nez v5, :cond_0
 
     .line 518
@@ -2346,19 +2344,19 @@
     new-array v8, v5, [J
 
     .line 505
-    .local v8, selectedIds:[J
+    .local v8, "selectedIds":[J
     new-array v0, v5, [Ljava/lang/String;
 
     .line 506
-    .local v0, fileNames:[Ljava/lang/String;
+    .local v0, "fileNames":[Ljava/lang/String;
     new-array v6, v5, [Ljava/lang/String;
 
     .line 507
-    .local v6, mimeTypes:[Ljava/lang/String;
+    .local v6, "mimeTypes":[Ljava/lang/String;
     const/4 v1, 0x0
 
     .line 508
-    .local v1, i:I
+    .local v1, "i":I
     iget-object v9, p0, Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
 
     invoke-interface {v9}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -2369,7 +2367,7 @@
 
     move-result-object v2
 
-    .local v2, i$:Ljava/util/Iterator;
+    .local v2, "i$":Ljava/util/Iterator;
     :goto_1
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -2388,7 +2386,7 @@
     move-result-wide v3
 
     .line 509
-    .local v3, id:J
+    .local v3, "id":J
     aput-wide v3, v8, v1
 
     .line 510
@@ -2405,7 +2403,7 @@
     check-cast v7, Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;
 
     .line 511
-    .local v7, obj:Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;
+    .local v7, "obj":Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;
     invoke-virtual {v7}, Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;->getFileName()Ljava/lang/String;
 
     move-result-object v9
@@ -2426,8 +2424,8 @@
     goto :goto_1
 
     .line 515
-    .end local v3           #id:J
-    .end local v7           #obj:Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;
+    .end local v3    # "id":J
+    .end local v7    # "obj":Lcom/android/providers/downloads/ui/DownloadList$SelectionObjAttrs;
     :cond_1
     const-string v9, "download_ids"
 
@@ -2448,7 +2446,7 @@
 
 .method setActionModeTitle(Landroid/view/ActionMode;)V
     .locals 5
-    .parameter "mode"
+    .param p1, "mode"    # Landroid/view/ActionMode;
 
     .prologue
     .line 429
@@ -2459,7 +2457,7 @@
     move-result v0
 
     .line 430
-    .local v0, numSelected:I
+    .local v0, "numSelected":I
     if-lez v0, :cond_0
 
     .line 431

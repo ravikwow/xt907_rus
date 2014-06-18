@@ -61,8 +61,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/util/Map;)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,8 +73,8 @@
 
     .prologue
     .line 1173
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
-    .local p2, submap:Ljava/util/Map;,"Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p2, "submap":Ljava/util/Map;, "Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
@@ -95,12 +93,12 @@
 
     .prologue
     .line 1236
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
-    #getter for: Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
+    # getter for: Lcom/google/common/collect/AbstractMultimap;->map:Ljava/util/Map;
     invoke-static {v1}, Lcom/google/common/collect/AbstractMultimap;->access$000(Lcom/google/common/collect/AbstractMultimap;)Ljava/util/Map;
 
     move-result-object v1
@@ -129,11 +127,11 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 1187
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeContainsKey(Ljava/util/Map;Ljava/lang/Object;)Z
@@ -159,16 +157,16 @@
 
     .prologue
     .line 1180
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->entrySet:Ljava/util/Set;
 
     .line 1181
-    .local v0, result:Ljava/util/Set;,"Ljava/util/Set<Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;>;"
+    .local v0, "result":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;
 
-    .end local v0           #result:Ljava/util/Set;,"Ljava/util/Set<Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;>;"
+    .end local v0    # "result":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;>;"
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;-><init>(Lcom/google/common/collect/AbstractMultimap$AsMap;)V
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->entrySet:Ljava/util/Set;
@@ -179,11 +177,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 1223
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     if-eq p0, p1, :cond_0
 
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
@@ -208,11 +206,11 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 1166
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMultimap$AsMap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
@@ -222,7 +220,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 3
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -235,7 +233,7 @@
 
     .prologue
     .line 1191
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-static {v2, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -245,7 +243,7 @@
     check-cast v0, Ljava/util/Collection;
 
     .line 1192
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     if-nez v0, :cond_0
 
     .line 1193
@@ -260,10 +258,10 @@
     move-object v1, p1
 
     .line 1197
-    .local v1, k:Ljava/lang/Object;,"TK;"
+    .local v1, "k":Ljava/lang/Object;, "TK;"
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
-    #calls: Lcom/google/common/collect/AbstractMultimap;->wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    # invokes: Lcom/google/common/collect/AbstractMultimap;->wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     invoke-static {v2, v1, v0}, Lcom/google/common/collect/AbstractMultimap;->access$400(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     move-result-object v2
@@ -276,7 +274,7 @@
 
     .prologue
     .line 1227
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -298,7 +296,7 @@
 
     .prologue
     .line 1201
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractMultimap;->keySet()Ljava/util/Set;
@@ -310,11 +308,11 @@
 
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 1166
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMultimap$AsMap;->remove(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
@@ -324,7 +322,7 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 4
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -337,7 +335,7 @@
 
     .prologue
     .line 1210
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v2, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-interface {v2, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -347,7 +345,7 @@
     check-cast v0, Ljava/util/Collection;
 
     .line 1211
-    .local v0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     if-nez v0, :cond_0
 
     .line 1212
@@ -366,7 +364,7 @@
     move-result-object v1
 
     .line 1216
-    .local v1, output:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v1, "output":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-interface {v1, v0}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
     .line 1217
@@ -376,6 +374,7 @@
 
     move-result v3
 
+    # -= operator for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v2, v3}, Lcom/google/common/collect/AbstractMultimap;->access$220(Lcom/google/common/collect/AbstractMultimap;I)I
 
     .line 1218
@@ -389,7 +388,7 @@
 
     .prologue
     .line 1206
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -404,7 +403,7 @@
 
     .prologue
     .line 1231
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

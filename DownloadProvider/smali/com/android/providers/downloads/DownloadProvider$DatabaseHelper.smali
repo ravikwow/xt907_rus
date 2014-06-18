@@ -21,8 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/providers/downloads/DownloadProvider;Landroid/content/Context;)V
     .locals 3
-    .parameter
-    .parameter "context"
+    .param p2, "context"    # Landroid/content/Context;
 
     .prologue
     .line 236
@@ -43,10 +42,10 @@
 
 .method private addColumn(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .parameter "db"
-    .parameter "dbTable"
-    .parameter "columnName"
-    .parameter "columnDefinition"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "dbTable"    # Ljava/lang/String;
+    .param p3, "columnName"    # Ljava/lang/String;
+    .param p4, "columnDefinition"    # Ljava/lang/String;
 
     .prologue
     .line 450
@@ -96,10 +95,10 @@
 
 .method private columnExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .parameter "db"
-    .parameter "table_name"
-    .parameter "col_name"
-    .parameter "col_desc"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "table_name"    # Ljava/lang/String;
+    .param p3, "col_name"    # Ljava/lang/String;
+    .param p4, "col_desc"    # Ljava/lang/String;
 
     .prologue
     .line 370
@@ -128,11 +127,11 @@
     const/4 v2, 0x0
 
     .line 374
-    .local v2, rtnValue:Z
+    .local v2, "rtnValue":Z
     const/4 v0, 0x0
 
     .line 376
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -141,7 +140,7 @@
     invoke-direct {v3, v4}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
     .line 377
-    .local v3, sqlBuf:Ljava/lang/StringBuffer;
+    .local v3, "sqlBuf":Ljava/lang/StringBuffer;
     const-string v4, " type=\'"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
@@ -245,8 +244,8 @@
 
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v4
 
@@ -261,7 +260,7 @@
     if-eqz v0, :cond_4
 
     .line 395
-    .end local v3           #sqlBuf:Ljava/lang/StringBuffer;
+    .end local v3    # "sqlBuf":Ljava/lang/StringBuffer;
     :goto_2
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
@@ -290,19 +289,19 @@
     goto/16 :goto_0
 
     .line 389
-    .restart local v3       #sqlBuf:Ljava/lang/StringBuffer;
+    .restart local v3    # "sqlBuf":Ljava/lang/StringBuffer;
     :cond_5
     const/4 v2, 0x1
 
     goto :goto_1
 
     .line 391
-    .end local v3           #sqlBuf:Ljava/lang/StringBuffer;
+    .end local v3    # "sqlBuf":Ljava/lang/StringBuffer;
     :catch_0
     move-exception v1
 
     .line 392
-    .local v1, e:Ljava/lang/Exception;
+    .local v1, "e":Ljava/lang/Exception;
     const/4 v2, 0x0
 
     .line 394
@@ -310,7 +309,7 @@
 
     goto :goto_2
 
-    .end local v1           #e:Ljava/lang/Exception;
+    .end local v1    # "e":Ljava/lang/Exception;
     :catchall_0
     move-exception v4
 
@@ -326,7 +325,7 @@
 
 .method private createDownloadsTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 459
@@ -350,7 +349,7 @@
     move-exception v0
 
     .line 492
-    .local v0, ex:Landroid/database/SQLException;
+    .local v0, "ex":Landroid/database/SQLException;
     const-string v1, "DownloadManager"
 
     const-string v2, "couldn\'t create table in downloads database"
@@ -363,7 +362,7 @@
 
 .method private createHeadersTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 498
@@ -382,7 +381,7 @@
 
 .method private fillNullValues(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 414
@@ -391,7 +390,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 415
-    .local v0, values:Landroid/content/ContentValues;
+    .local v0, "values":Landroid/content/ContentValues;
     const-string v1, "current_bytes"
 
     const/4 v2, 0x0
@@ -445,8 +444,8 @@
 
 .method private fillNullValuesForColumn(Landroid/database/sqlite/SQLiteDatabase;Landroid/content/ContentValues;)V
     .locals 4
-    .parameter "db"
-    .parameter "values"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "values"    # Landroid/content/ContentValues;
 
     .prologue
     .line 426
@@ -471,7 +470,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 427
-    .local v0, column:Ljava/lang/String;
+    .local v0, "column":Ljava/lang/String;
     const-string v1, "downloads"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -505,10 +504,11 @@
 
 .method private logd(Ljava/lang/String;)V
     .locals 1
-    .parameter "message"
+    .param p1, "message"    # Ljava/lang/String;
 
     .prologue
     .line 403
+    # getter for: Lcom/android/providers/downloads/DownloadProvider;->DBG:Z
     invoke-static {}, Lcom/android/providers/downloads/DownloadProvider;->access$000()Z
 
     move-result v0
@@ -527,7 +527,7 @@
 
 .method private makeCacheDownloadsInvisible(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 435
@@ -536,7 +536,7 @@
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
     .line 436
-    .local v1, values:Landroid/content/ContentValues;
+    .local v1, "values":Landroid/content/ContentValues;
     const-string v2, "is_visible_in_downloads_ui"
 
     const/4 v3, 0x0
@@ -551,7 +551,7 @@
     const-string v0, "destination != 0"
 
     .line 439
-    .local v0, cacheSelection:Ljava/lang/String;
+    .local v0, "cacheSelection":Ljava/lang/String;
     const-string v2, "downloads"
 
     const/4 v3, 0x0
@@ -564,8 +564,8 @@
 
 .method private upgradeTo(Landroid/database/sqlite/SQLiteDatabase;I)V
     .locals 3
-    .parameter "db"
-    .parameter "version"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "version"    # I
 
     .prologue
     .line 298
@@ -779,7 +779,7 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 245
@@ -808,7 +808,7 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .parameter "db"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 255
@@ -828,7 +828,7 @@
     move-exception v0
 
     .line 258
-    .local v0, e:Landroid/database/SQLException;
+    .local v0, "e":Landroid/database/SQLException;
     const-string v1, "DownloadManager"
 
     const-string v2, "exception when cleaning drm data in downloads.db"
@@ -840,9 +840,9 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .parameter "db"
-    .parameter "oldV"
-    .parameter "newV"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "oldV"    # I
+    .param p3, "newV"    # I
 
     .prologue
     .line 272
@@ -858,7 +858,7 @@
     :goto_0
     add-int/lit8 v0, p2, 0x1
 
-    .local v0, version:I
+    .local v0, "version":I
     :goto_1
     if-gt v0, p3, :cond_3
 
@@ -871,7 +871,7 @@
     goto :goto_1
 
     .line 276
-    .end local v0           #version:I
+    .end local v0    # "version":I
     :cond_1
     const/16 v1, 0x64
 
@@ -970,7 +970,7 @@
     goto :goto_0
 
     .line 292
-    .restart local v0       #version:I
+    .restart local v0    # "version":I
     :cond_3
     return-void
 .end method

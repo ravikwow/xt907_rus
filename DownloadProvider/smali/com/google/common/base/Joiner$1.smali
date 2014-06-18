@@ -23,7 +23,7 @@
 # virtual methods
 .method toString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .parameter "part"
+    .param p1, "part"    # Ljava/lang/Object;
 
     .prologue
     .line 265

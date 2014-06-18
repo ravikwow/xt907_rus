@@ -33,10 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/SortedSet;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -49,10 +45,10 @@
 
     .prologue
     .line 658
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
-    .local p2, key:Ljava/lang/Object;,"TK;"
-    .local p3, delegate:Ljava/util/SortedSet;,"Ljava/util/SortedSet<TV;>;"
-    .local p4, ancestor:Lcom/google/common/collect/AbstractMultimap$WrappedCollection;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p2, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "delegate":Ljava/util/SortedSet;, "Ljava/util/SortedSet<TV;>;"
+    .local p4, "ancestor":Lcom/google/common/collect/AbstractMultimap$WrappedCollection;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     .line 659
@@ -76,7 +72,7 @@
 
     .prologue
     .line 668
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->getSortedSetDelegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -98,7 +94,7 @@
 
     .prologue
     .line 673
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->refreshIfEmpty()V
 
     .line 674
@@ -125,7 +121,7 @@
 
     .prologue
     .line 663
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->getDelegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -137,7 +133,6 @@
 
 .method public headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)",
@@ -148,8 +143,8 @@
 
     .prologue
     .line 685
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
-    .local p1, toElement:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p1, "toElement":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->refreshIfEmpty()V
 
     .line 686
@@ -175,13 +170,13 @@
 
     if-nez v4, :cond_0
 
-    .end local p0           #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .end local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :goto_0
     invoke-direct {v0, v1, v2, v3, p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;-><init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/SortedSet;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
 
     return-object v0
 
-    .restart local p0       #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .restart local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->getAncestor()Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 
@@ -200,7 +195,7 @@
 
     .prologue
     .line 679
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->refreshIfEmpty()V
 
     .line 680
@@ -217,8 +212,6 @@
 
 .method public subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 5
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;TV;)",
@@ -229,9 +222,9 @@
 
     .prologue
     .line 693
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
-    .local p1, fromElement:Ljava/lang/Object;,"TV;"
-    .local p2, toElement:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p1, "fromElement":Ljava/lang/Object;, "TV;"
+    .local p2, "toElement":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->refreshIfEmpty()V
 
     .line 694
@@ -257,13 +250,13 @@
 
     if-nez v4, :cond_0
 
-    .end local p0           #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .end local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :goto_0
     invoke-direct {v0, v1, v2, v3, p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;-><init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/SortedSet;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
 
     return-object v0
 
-    .restart local p0       #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .restart local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->getAncestor()Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 
@@ -274,7 +267,6 @@
 
 .method public tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)",
@@ -285,8 +277,8 @@
 
     .prologue
     .line 701
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
-    .local p1, fromElement:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .local p1, "fromElement":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->refreshIfEmpty()V
 
     .line 702
@@ -312,13 +304,13 @@
 
     if-nez v4, :cond_0
 
-    .end local p0           #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .end local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :goto_0
     invoke-direct {v0, v1, v2, v3, p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;-><init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/SortedSet;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
 
     return-object v0
 
-    .restart local p0       #this:Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
+    .restart local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedSortedSet;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedSortedSet;->getAncestor()Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 

@@ -35,7 +35,7 @@
 
     .prologue
     .line 198
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 199
     new-instance v0, Ljava/lang/StringBuilder;
@@ -56,7 +56,7 @@
 
 .method synthetic constructor <init>(Lcom/android/providers/downloads/DownloadProvider$1;)V
     .locals 0
-    .parameter "x0"
+    .param p1, "x0"    # Lcom/android/providers/downloads/DownloadProvider$1;
 
     .prologue
     .line 198
@@ -69,8 +69,7 @@
 # virtual methods
 .method public varargs appendClause(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 6
-    .parameter "newClause"
-    .parameter
+    .param p1, "newClause"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -83,7 +82,7 @@
 
     .prologue
     .line 203
-    .local p2, parameters:[Ljava/lang/Object;,"[TT;"
+    .local p2, "parameters":[Ljava/lang/Object;, "[TT;"
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
@@ -139,20 +138,20 @@
     .line 213
     move-object v0, p2
 
-    .local v0, arr$:[Ljava/lang/Object;
+    .local v0, "arr$":[Ljava/lang/Object;
     array-length v2, v0
 
-    .local v2, len$:I
+    .local v2, "len$":I
     const/4 v1, 0x0
 
-    .local v1, i$:I
+    .local v1, "i$":I
     :goto_0
     if-ge v1, v2, :cond_0
 
     aget-object v3, v0, v1
 
     .line 214
-    .local v3, parameter:Ljava/lang/Object;
+    .local v3, "parameter":Ljava/lang/Object;
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadProvider$SqlSelection;->mParameters:Ljava/util/List;
 
     invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -181,7 +180,7 @@
     new-array v0, v1, [Ljava/lang/String;
 
     .line 225
-    .local v0, array:[Ljava/lang/String;
+    .local v0, "array":[Ljava/lang/String;
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadProvider$SqlSelection;->mParameters:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

@@ -71,8 +71,8 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 5
-    .parameter "left"
-    .parameter "right"
+    .param p1, "left"    # Ljava/lang/Object;
+    .param p2, "right"    # Ljava/lang/Object;
 
     .prologue
     .line 221
@@ -92,13 +92,13 @@
     move-result v0
 
     .line 225
-    .local v0, leftCode:I
+    .local v0, "leftCode":I
     invoke-virtual {p0, p2}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v2
 
     .line 226
-    .local v2, rightCode:I
+    .local v2, "rightCode":I
     if-eq v0, v2, :cond_2
 
     .line 227
@@ -136,7 +136,7 @@
     move-result v1
 
     .line 232
-    .local v1, result:I
+    .local v1, "result":I
     if-nez v1, :cond_3
 
     .line 233
@@ -155,7 +155,7 @@
 
 .method identityHashCode(Ljava/lang/Object;)I
     .locals 1
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 251

@@ -28,11 +28,11 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .parameter "context"
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 88
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
@@ -75,7 +75,7 @@
 
 .method private static buildNotificationTag(Lcom/android/providers/downloads/DownloadInfo;)Ljava/lang/String;
     .locals 3
-    .parameter "info"
+    .param p0, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     .line 338
@@ -181,7 +181,6 @@
 
 .method private getDownloadIds(Ljava/util/Collection;)[J
     .locals 7
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -194,7 +193,7 @@
 
     .prologue
     .line 314
-    .local p1, infos:Ljava/util/Collection;,"Ljava/util/Collection<Lcom/android/providers/downloads/DownloadInfo;>;"
+    .local p1, "infos":Ljava/util/Collection;, "Ljava/util/Collection<Lcom/android/providers/downloads/DownloadInfo;>;"
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v5
@@ -202,16 +201,16 @@
     new-array v3, v5, [J
 
     .line 315
-    .local v3, ids:[J
+    .local v3, "ids":[J
     const/4 v0, 0x0
 
     .line 316
-    .local v0, i:I
+    .local v0, "i":I
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    .local v2, i$:Ljava/util/Iterator;
+    .local v2, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -226,31 +225,31 @@
     check-cast v4, Lcom/android/providers/downloads/DownloadInfo;
 
     .line 317
-    .local v4, info:Lcom/android/providers/downloads/DownloadInfo;
+    .local v4, "info":Lcom/android/providers/downloads/DownloadInfo;
     add-int/lit8 v1, v0, 0x1
 
-    .end local v0           #i:I
-    .local v1, i:I
+    .end local v0    # "i":I
+    .local v1, "i":I
     iget-wide v5, v4, Lcom/android/providers/downloads/DownloadInfo;->mId:J
 
     aput-wide v5, v3, v0
 
     move v0, v1
 
-    .end local v1           #i:I
-    .restart local v0       #i:I
+    .end local v1    # "i":I
+    .restart local v0    # "i":I
     goto :goto_0
 
     .line 319
-    .end local v4           #info:Lcom/android/providers/downloads/DownloadInfo;
+    .end local v4    # "info":Lcom/android/providers/downloads/DownloadInfo;
     :cond_0
     return-object v3
 .end method
 
 .method private static getDownloadTitle(Landroid/content/res/Resources;Lcom/android/providers/downloads/DownloadInfo;)Ljava/lang/CharSequence;
     .locals 1
-    .parameter "res"
-    .parameter "info"
+    .param p0, "res"    # Landroid/content/res/Resources;
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     .line 306
@@ -281,7 +280,7 @@
 
 .method private static getNotificationTagType(Ljava/lang/String;)I
     .locals 2
-    .parameter "tag"
+    .param p0, "tag"    # Ljava/lang/String;
 
     .prologue
     .line 355
@@ -306,7 +305,7 @@
 
 .method private static isActiveAndVisible(Lcom/android/providers/downloads/DownloadInfo;)Z
     .locals 3
-    .parameter "download"
+    .param p0, "download"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     const/4 v0, 0x1
@@ -338,7 +337,7 @@
 
 .method private static isCompleteAndVisible(Lcom/android/providers/downloads/DownloadInfo;)Z
     .locals 3
-    .parameter "download"
+    .param p0, "download"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     const/4 v0, 0x1
@@ -374,7 +373,6 @@
 
 .method private updateWithLocked(Ljava/util/Collection;)V
     .locals 30
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -584,7 +582,7 @@
 
     const/4 v5, 0x0
 
-    const/high16 v6, 0x800
+    const/high16 v6, 0x8000000
 
     invoke-static {v3, v5, v4, v6}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
@@ -844,7 +842,7 @@
 
     const/4 v6, 0x0
 
-    const/high16 v7, 0x800
+    const/high16 v7, 0x8000000
 
     invoke-static {v3, v6, v5, v7}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
@@ -1226,7 +1224,7 @@
     if-ne v15, v3, :cond_16
 
     .line 273
-    const/high16 v3, 0x7f04
+    const/high16 v3, 0x7f040000
 
     invoke-interface/range {v16 .. v16}, Ljava/util/Collection;->size()I
 
@@ -1440,7 +1438,7 @@
     .line 324
     const/4 v2, 0x0
 
-    .local v2, i:I
+    .local v2, "i":I
     :goto_0
     :try_start_0
     iget-object v5, p0, Lcom/android/providers/downloads/DownloadNotifier;->mDownloadSpeed:Landroid/util/LongSparseLongArray;
@@ -1459,7 +1457,7 @@
     move-result-wide v3
 
     .line 326
-    .local v3, id:J
+    .local v3, "id":J
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v7
@@ -1473,7 +1471,7 @@
     sub-long v0, v7, v9
 
     .line 327
-    .local v0, delta:J
+    .local v0, "delta":J
     const-string v5, "DownloadManager"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1534,8 +1532,8 @@
     goto :goto_0
 
     .line 330
-    .end local v0           #delta:J
-    .end local v3           #id:J
+    .end local v0    # "delta":J
+    .end local v3    # "id":J
     :cond_0
     monitor-exit v6
 
@@ -1555,8 +1553,8 @@
 
 .method public notifyDownloadSpeed(JJ)V
     .locals 4
-    .parameter "id"
-    .parameter "bytesPerSecond"
+    .param p1, "id"    # J
+    .param p3, "bytesPerSecond"    # J
 
     .prologue
     .line 103
@@ -1619,7 +1617,6 @@
 
 .method public updateWith(Ljava/util/Collection;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1632,7 +1629,7 @@
 
     .prologue
     .line 119
-    .local p1, downloads:Ljava/util/Collection;,"Ljava/util/Collection<Lcom/android/providers/downloads/DownloadInfo;>;"
+    .local p1, "downloads":Ljava/util/Collection;, "Ljava/util/Collection<Lcom/android/providers/downloads/DownloadInfo;>;"
     iget-object v1, p0, Lcom/android/providers/downloads/DownloadNotifier;->mActiveNotifs:Ljava/util/HashMap;
 
     monitor-enter v1

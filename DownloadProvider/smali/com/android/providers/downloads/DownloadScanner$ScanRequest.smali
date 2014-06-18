@@ -27,13 +27,13 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .parameter "id"
-    .parameter "path"
-    .parameter "mimeType"
+    .param p1, "id"    # J
+    .param p3, "path"    # Ljava/lang/String;
+    .param p4, "mimeType"    # Ljava/lang/String;
 
     .prologue
     .line 54
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 55
     iput-wide p1, p0, Lcom/android/providers/downloads/DownloadScanner$ScanRequest;->id:J
@@ -59,7 +59,7 @@
 # virtual methods
 .method public exec(Landroid/media/MediaScannerConnection;)V
     .locals 2
-    .parameter "conn"
+    .param p1, "conn"    # Landroid/media/MediaScannerConnection;
 
     .prologue
     .line 62

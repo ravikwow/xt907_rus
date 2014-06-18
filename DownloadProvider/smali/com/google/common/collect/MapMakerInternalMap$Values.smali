@@ -28,11 +28,10 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 3857
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -47,7 +46,7 @@
 
     .prologue
     .line 3881
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->clear()V
@@ -58,11 +57,11 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 3876
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/MapMakerInternalMap;->containsValue(Ljava/lang/Object;)Z
@@ -77,7 +76,7 @@
 
     .prologue
     .line 3871
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->isEmpty()Z
@@ -99,7 +98,7 @@
 
     .prologue
     .line 3861
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
@@ -114,7 +113,7 @@
 
     .prologue
     .line 3866
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$Values;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$Values;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.Values;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$Values;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMakerInternalMap;->size()I

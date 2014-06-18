@@ -40,7 +40,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;)V
     .locals 6
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -51,8 +50,8 @@
 
     .prologue
     .line 32
-    .local p0, this:Lcom/google/common/collect/RegularImmutableBiMap;,"Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
-    .local p1, delegate:Lcom/google/common/collect/ImmutableMap;,"Lcom/google/common/collect/ImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableBiMap;, "Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
+    .local p1, "delegate":Lcom/google/common/collect/ImmutableMap;, "Lcom/google/common/collect/ImmutableMap<TK;TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableBiMap;-><init>()V
 
     .line 33
@@ -64,7 +63,7 @@
     move-result-object v1
 
     .line 36
-    .local v1, builder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TV;TK;>;"
+    .local v1, "builder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TV;TK;>;"
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v4
@@ -73,7 +72,7 @@
 
     move-result-object v3
 
-    .local v3, i$:Ljava/util/Iterator;
+    .local v3, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -88,7 +87,7 @@
     check-cast v2, Ljava/util/Map$Entry;
 
     .line 37
-    .local v2, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local v2, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -102,14 +101,14 @@
     goto :goto_0
 
     .line 39
-    .end local v2           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .end local v2    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     :cond_0
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
 
     .line 40
-    .local v0, backwardMap:Lcom/google/common/collect/ImmutableMap;,"Lcom/google/common/collect/ImmutableMap<TV;TK;>;"
+    .local v0, "backwardMap":Lcom/google/common/collect/ImmutableMap;, "Lcom/google/common/collect/ImmutableMap<TV;TK;>;"
     new-instance v4, Lcom/google/common/collect/RegularImmutableBiMap;
 
     invoke-direct {v4, v0, p0}, Lcom/google/common/collect/RegularImmutableBiMap;-><init>(Lcom/google/common/collect/ImmutableMap;Lcom/google/common/collect/ImmutableBiMap;)V
@@ -122,8 +121,6 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;Lcom/google/common/collect/ImmutableBiMap;)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,9 +133,9 @@
 
     .prologue
     .line 44
-    .local p0, this:Lcom/google/common/collect/RegularImmutableBiMap;,"Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
-    .local p1, delegate:Lcom/google/common/collect/ImmutableMap;,"Lcom/google/common/collect/ImmutableMap<TK;TV;>;"
-    .local p2, inverse:Lcom/google/common/collect/ImmutableBiMap;,"Lcom/google/common/collect/ImmutableBiMap<TV;TK;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableBiMap;, "Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
+    .local p1, "delegate":Lcom/google/common/collect/ImmutableMap;, "Lcom/google/common/collect/ImmutableMap<TK;TV;>;"
+    .local p2, "inverse":Lcom/google/common/collect/ImmutableBiMap;, "Lcom/google/common/collect/ImmutableBiMap<TV;TK;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableBiMap;-><init>()V
 
     .line 45
@@ -165,7 +162,7 @@
 
     .prologue
     .line 50
-    .local p0, this:Lcom/google/common/collect/RegularImmutableBiMap;,"Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableBiMap;, "Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableBiMap;->delegate:Lcom/google/common/collect/ImmutableMap;
 
     return-object v0
@@ -183,7 +180,7 @@
 
     .prologue
     .line 54
-    .local p0, this:Lcom/google/common/collect/RegularImmutableBiMap;,"Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableBiMap;, "Lcom/google/common/collect/RegularImmutableBiMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableBiMap;->inverse:Lcom/google/common/collect/ImmutableBiMap;
 
     return-object v0

@@ -32,7 +32,7 @@
 
     .prologue
     .line 34
-    const/high16 v0, -0x4080
+    const/high16 v0, -0x40800000
 
     sput v0, Lcom/android/providers/downloads/ui/DownloadItem;->CHECKMARK_AREA:F
 
@@ -41,7 +41,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .parameter "context"
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 55
@@ -61,8 +61,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .parameter "context"
-    .parameter "attrs"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
     .line 50
@@ -82,9 +82,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .parameter "context"
-    .parameter "attrs"
-    .parameter "defStyle"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "attrs"    # Landroid/util/AttributeSet;
+    .param p3, "defStyle"    # I
 
     .prologue
     .line 45
@@ -104,7 +104,7 @@
 
 .method private inCheckArea(Landroid/view/MotionEvent;)Z
     .locals 5
-    .parameter "event"
+    .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
     const/4 v0, 0x1
@@ -172,7 +172,7 @@
     .line 60
     sget v0, Lcom/android/providers/downloads/ui/DownloadItem;->CHECKMARK_AREA:F
 
-    const/high16 v1, -0x4080
+    const/high16 v1, -0x40800000
 
     cmpl-float v0, v0, v1
 
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    const/high16 v1, 0x7f06
+    const/high16 v1, 0x7f060000
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -248,7 +248,7 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .parameter "event"
+    .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
     const/4 v3, 0x1
@@ -259,7 +259,7 @@
     const/4 v0, 0x0
 
     .line 96
-    .local v0, handled:Z
+    .local v0, "handled":Z
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v1
@@ -348,7 +348,7 @@
 
 .method public setChecked(Z)V
     .locals 6
-    .parameter "checked"
+    .param p1, "checked"    # Z
 
     .prologue
     .line 134
@@ -396,10 +396,10 @@
 
 .method public setData(JILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .parameter "downloadId"
-    .parameter "position"
-    .parameter "fileName"
-    .parameter "mimeType"
+    .param p1, "downloadId"    # J
+    .param p3, "position"    # I
+    .param p4, "fileName"    # Ljava/lang/String;
+    .param p5, "mimeType"    # Ljava/lang/String;
 
     .prologue
     .line 72
@@ -435,7 +435,7 @@
 
 .method public setDownloadListObj(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter "downloadList"
+    .param p1, "downloadList"    # Lcom/android/providers/downloads/ui/DownloadList;
 
     .prologue
     .line 82

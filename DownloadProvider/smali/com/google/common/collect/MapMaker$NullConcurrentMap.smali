@@ -53,11 +53,11 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMaker;)V
     .locals 1
-    .parameter "mapMaker"
+    .param p1, "mapMaker"    # Lcom/google/common/collect/MapMaker;
 
     .prologue
     .line 845
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
     .line 846
@@ -80,11 +80,11 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 854
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -92,11 +92,11 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 859
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -116,7 +116,7 @@
 
     .prologue
     .line 912
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     move-result-object v0
@@ -126,7 +126,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -137,7 +137,7 @@
 
     .prologue
     .line 864
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return-object v0
@@ -145,8 +145,6 @@
 
 .method notifyRemoval(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
@@ -155,9 +153,9 @@
 
     .prologue
     .line 868
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     new-instance v0, Lcom/google/common/collect/MapMaker$RemovalNotification;
 
     iget-object v1, p0, Lcom/google/common/collect/MapMaker$NullConcurrentMap;->removalCause:Lcom/google/common/collect/MapMaker$RemovalCause;
@@ -165,7 +163,7 @@
     invoke-direct {v0, p1, p2, v1}, Lcom/google/common/collect/MapMaker$RemovalNotification;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lcom/google/common/collect/MapMaker$RemovalCause;)V
 
     .line 870
-    .local v0, notification:Lcom/google/common/collect/MapMaker$RemovalNotification;,"Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
+    .local v0, "notification":Lcom/google/common/collect/MapMaker$RemovalNotification;, "Lcom/google/common/collect/MapMaker$RemovalNotification<TK;TV;>;"
     iget-object v1, p0, Lcom/google/common/collect/MapMaker$NullConcurrentMap;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     invoke-interface {v1, v0}, Lcom/google/common/collect/MapMaker$RemovalListener;->onRemoval(Lcom/google/common/collect/MapMaker$RemovalNotification;)V
@@ -176,8 +174,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -186,9 +182,9 @@
 
     .prologue
     .line 875
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 876
@@ -205,8 +201,6 @@
 
 .method public putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -215,9 +209,9 @@
 
     .prologue
     .line 883
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapMaker$NullConcurrentMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -227,7 +221,7 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -238,7 +232,7 @@
 
     .prologue
     .line 888
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return-object v0
@@ -246,12 +240,12 @@
 
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
-    .parameter "value"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 893
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -259,8 +253,6 @@
 
 .method public replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -269,9 +261,9 @@
 
     .prologue
     .line 898
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 899
@@ -285,9 +277,6 @@
 
 .method public replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;TV;)Z"
@@ -296,10 +285,10 @@
 
     .prologue
     .line 905
-    .local p0, this:Lcom/google/common/collect/MapMaker$NullConcurrentMap;,"Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, oldValue:Ljava/lang/Object;,"TV;"
-    .local p3, newValue:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMaker$NullConcurrentMap;, "Lcom/google/common/collect/MapMaker$NullConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "oldValue":Ljava/lang/Object;, "TV;"
+    .local p3, "newValue":Ljava/lang/Object;, "TV;"
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 906

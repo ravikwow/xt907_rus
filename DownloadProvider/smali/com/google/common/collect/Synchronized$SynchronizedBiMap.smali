@@ -61,7 +61,7 @@
 
     .prologue
     .line 1118
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,"Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedBiMap;, "Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMap;->delegate()Ljava/util/Map;
 
     move-result-object v0
@@ -76,7 +76,7 @@
 
     .prologue
     .line 1106
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,"Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedBiMap;, "Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -89,7 +89,7 @@
 
     .prologue
     .line 1106
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,"Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedBiMap;, "Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -102,7 +102,7 @@
 
     .prologue
     .line 1106
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,"Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedBiMap;, "Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;->values()Ljava/util/Set;
 
     move-result-object v0
@@ -122,8 +122,8 @@
 
     .prologue
     .line 1122
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,"Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedBiMap;, "Lcom/google/common/collect/Synchronized$SynchronizedBiMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -142,7 +142,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;->mutex:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     invoke-static {v0, v2}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 

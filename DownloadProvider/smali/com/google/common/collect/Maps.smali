@@ -40,14 +40,14 @@
 
     .prologue
     .line 71
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static capacity(I)I
     .locals 1
-    .parameter "expectedSize"
+    .param p0, "expectedSize"    # I
 
     .prologue
     .line 112
@@ -78,7 +78,7 @@
 
     .line 116
     :cond_1
-    const/high16 v0, 0x4000
+    const/high16 v0, 0x40000000
 
     if-ge p0, v0, :cond_2
 
@@ -98,8 +98,6 @@
 
 .method public static immutableEntry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -114,8 +112,8 @@
 
     .prologue
     .line 722
-    .local p0, key:Ljava/lang/Object;,"TK;"
-    .local p1, value:Ljava/lang/Object;,"TV;"
+    .local p0, "key":Ljava/lang/Object;, "TK;"
+    .local p1, "value":Ljava/lang/Object;, "TV;"
     new-instance v0, Lcom/google/common/collect/ImmutableEntry;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ImmutableEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -148,7 +146,7 @@
 
 .method public static newHashMapWithExpectedSize(I)Ljava/util/HashMap;
     .locals 2
-    .parameter "expectedSize"
+    .param p0, "expectedSize"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -176,8 +174,7 @@
 
 .method static safeContainsKey(Ljava/util/Map;Ljava/lang/Object;)Z
     .locals 2
-    .parameter
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -190,7 +187,7 @@
 
     .prologue
     .line 2003
-    .local p0, map:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .local p0, "map":Ljava/util/Map;, "Ljava/util/Map<**>;"
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
     :try_end_0
@@ -207,7 +204,7 @@
     move-exception v0
 
     .line 2005
-    .local v0, e:Ljava/lang/ClassCastException;
+    .local v0, "e":Ljava/lang/ClassCastException;
     const/4 v1, 0x0
 
     goto :goto_0
@@ -215,8 +212,7 @@
 
 .method static safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .parameter
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -231,7 +227,7 @@
 
     .prologue
     .line 1991
-    .local p0, map:Ljava/util/Map;,"Ljava/util/Map<*TV;>;"
+    .local p0, "map":Ljava/util/Map;, "Ljava/util/Map<*TV;>;"
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -248,7 +244,7 @@
     move-exception v0
 
     .line 1993
-    .local v0, e:Ljava/lang/ClassCastException;
+    .local v0, "e":Ljava/lang/ClassCastException;
     const/4 v1, 0x0
 
     goto :goto_0
@@ -256,7 +252,6 @@
 
 .method static toStringImpl(Ljava/util/Map;)Ljava/lang/String;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -268,7 +263,7 @@
 
     .prologue
     .line 2074
-    .local p0, map:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .local p0, "map":Ljava/util/Map;, "Ljava/util/Map<**>;"
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v1
@@ -284,7 +279,7 @@
     move-result-object v0
 
     .line 2076
-    .local v0, sb:Ljava/lang/StringBuilder;
+    .local v0, "sb":Ljava/lang/StringBuilder;
     sget-object v1, Lcom/google/common/collect/Maps;->STANDARD_JOINER:Lcom/google/common/base/Joiner$MapJoiner;
 
     invoke-virtual {v1, v0, p0}, Lcom/google/common/base/Joiner$MapJoiner;->appendTo(Ljava/lang/StringBuilder;Ljava/util/Map;)Ljava/lang/StringBuilder;

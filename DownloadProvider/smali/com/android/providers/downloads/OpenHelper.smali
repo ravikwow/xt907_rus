@@ -9,15 +9,15 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method private static buildViewIntent(Landroid/content/Context;J)Landroid/content/Intent;
     .locals 10
-    .parameter "context"
-    .parameter "id"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "id"    # J
 
     .prologue
     const/4 v8, 0x1
@@ -32,7 +32,7 @@
     check-cast v1, Landroid/app/DownloadManager;
 
     .line 67
-    .local v1, downManager:Landroid/app/DownloadManager;
+    .local v1, "downManager":Landroid/app/DownloadManager;
     invoke-virtual {v1, v8}, Landroid/app/DownloadManager;->setAccessAllDownloads(Z)V
 
     .line 69
@@ -55,7 +55,7 @@
     move-result-object v0
 
     .line 71
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
     :try_end_0
@@ -85,7 +85,7 @@
     move-result-object v4
 
     .line 76
-    .local v4, localUri:Landroid/net/Uri;
+    .local v4, "localUri":Landroid/net/Uri;
     const-string v7, "local_filename"
 
     invoke-static {v0, v7}, Lcom/android/providers/downloads/OpenHelper;->getCursorFile(Landroid/database/Cursor;Ljava/lang/String;)Ljava/io/File;
@@ -93,7 +93,7 @@
     move-result-object v2
 
     .line 77
-    .local v2, file:Ljava/io/File;
+    .local v2, "file":Ljava/io/File;
     const-string v7, "media_type"
 
     invoke-static {v0, v7}, Lcom/android/providers/downloads/OpenHelper;->getCursorString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
@@ -101,7 +101,7 @@
     move-result-object v5
 
     .line 78
-    .local v5, mimeType:Ljava/lang/String;
+    .local v5, "mimeType":Ljava/lang/String;
     invoke-static {p0, v2, v5}, Lcom/android/providers/downloads/DownloadDrmHelper;->getOriginalMimeType(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
@@ -114,7 +114,7 @@
     invoke-direct {v3, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 82
-    .local v3, intent:Landroid/content/Intent;
+    .local v3, "intent":Landroid/content/Intent;
     const-string v7, "application/vnd.android.package-archive"
 
     invoke-virtual {v7, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -134,7 +134,7 @@
     move-result-object v6
 
     .line 88
-    .local v6, remoteUri:Landroid/net/Uri;
+    .local v6, "remoteUri":Landroid/net/Uri;
     const-string v7, "android.intent.extra.ORIGINATING_URI"
 
     invoke-virtual {v3, v7, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
@@ -162,11 +162,11 @@
     goto :goto_0
 
     .line 114
-    .end local v2           #file:Ljava/io/File;
-    .end local v3           #intent:Landroid/content/Intent;
-    .end local v4           #localUri:Landroid/net/Uri;
-    .end local v5           #mimeType:Ljava/lang/String;
-    .end local v6           #remoteUri:Landroid/net/Uri;
+    .end local v2    # "file":Ljava/io/File;
+    .end local v3    # "intent":Landroid/content/Intent;
+    .end local v4    # "localUri":Landroid/net/Uri;
+    .end local v5    # "mimeType":Ljava/lang/String;
+    .end local v6    # "remoteUri":Landroid/net/Uri;
     :catchall_0
     move-exception v7
 
@@ -175,10 +175,10 @@
     throw v7
 
     .line 108
-    .restart local v2       #file:Ljava/io/File;
-    .restart local v3       #intent:Landroid/content/Intent;
-    .restart local v4       #localUri:Landroid/net/Uri;
-    .restart local v5       #mimeType:Ljava/lang/String;
+    .restart local v2    # "file":Ljava/io/File;
+    .restart local v3    # "intent":Landroid/content/Intent;
+    .restart local v4    # "localUri":Landroid/net/Uri;
+    .restart local v5    # "mimeType":Ljava/lang/String;
     :cond_1
     const/4 v7, 0x1
 
@@ -195,8 +195,8 @@
 
 .method private static getCursorFile(Landroid/database/Cursor;Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .parameter "cursor"
-    .parameter "column"
+    .param p0, "cursor"    # Landroid/database/Cursor;
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 162
@@ -217,8 +217,8 @@
 
 .method private static getCursorString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .parameter "cursor"
-    .parameter "column"
+    .param p0, "cursor"    # Landroid/database/Cursor;
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 154
@@ -235,8 +235,8 @@
 
 .method private static getCursorUri(Landroid/database/Cursor;Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .parameter "cursor"
-    .parameter "column"
+    .param p0, "cursor"    # Landroid/database/Cursor;
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 158
@@ -253,8 +253,8 @@
 
 .method private static getOriginatingUid(Landroid/content/Context;J)I
     .locals 7
-    .parameter "context"
-    .parameter "id"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "id"    # J
 
     .prologue
     const/4 v3, 0x0
@@ -267,7 +267,7 @@
     move-result-object v1
 
     .line 139
-    .local v1, uri:Landroid/net/Uri;
+    .local v1, "uri":Landroid/net/Uri;
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -291,7 +291,7 @@
     move-result-object v6
 
     .line 141
-    .local v6, cursor:Landroid/database/Cursor;
+    .local v6, "cursor":Landroid/database/Cursor;
     if-eqz v6, :cond_1
 
     .line 143
@@ -342,8 +342,8 @@
 
 .method private static getRefererUri(Landroid/content/Context;J)Landroid/net/Uri;
     .locals 8
-    .parameter "context"
-    .parameter "id"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "id"    # J
 
     .prologue
     const/4 v2, 0x0
@@ -362,7 +362,7 @@
     move-result-object v1
 
     .line 122
-    .local v1, headersUri:Landroid/net/Uri;
+    .local v1, "headersUri":Landroid/net/Uri;
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -378,7 +378,7 @@
     move-result-object v7
 
     .line 125
-    .local v7, headers:Landroid/database/Cursor;
+    .local v7, "headers":Landroid/database/Cursor;
     :cond_0
     :try_start_0
     invoke-interface {v7}, Landroid/database/Cursor;->moveToNext()Z
@@ -395,7 +395,7 @@
     move-result-object v6
 
     .line 127
-    .local v6, header:Ljava/lang/String;
+    .local v6, "header":Ljava/lang/String;
     const-string v0, "Referer"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -414,7 +414,7 @@
     move-result-object v2
 
     .line 132
-    .end local v6           #header:Ljava/lang/String;
+    .end local v6    # "header":Ljava/lang/String;
     :cond_1
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
@@ -432,9 +432,9 @@
 
 .method public static startViewIntent(Landroid/content/Context;JI)Z
     .locals 6
-    .parameter "context"
-    .parameter "id"
-    .parameter "intentFlags"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "id"    # J
+    .param p3, "intentFlags"    # I
 
     .prologue
     const/4 v2, 0x0
@@ -445,7 +445,7 @@
     move-result-object v1
 
     .line 45
-    .local v1, intent:Landroid/content/Intent;
+    .local v1, "intent":Landroid/content/Intent;
     if-nez v1, :cond_0
 
     .line 46
@@ -495,7 +495,7 @@
     move-exception v0
 
     .line 55
-    .local v0, e:Landroid/content/ActivityNotFoundException;
+    .local v0, "e":Landroid/content/ActivityNotFoundException;
     const-string v3, "DownloadManager"
 
     new-instance v4, Ljava/lang/StringBuilder;

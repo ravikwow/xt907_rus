@@ -46,13 +46,13 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 2
-    .parameter "context"
-    .parameter "cursor"
-    .parameter "dateIndex"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "cursor"    # Landroid/database/Cursor;
+    .param p3, "dateIndex"    # I
 
     .prologue
     .line 80
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 81
     iput-object p1, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mContext:Landroid/content/Context;
@@ -111,7 +111,7 @@
 
 .method static synthetic access$000(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;)V
     .locals 0
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;
 
     .prologue
     .line 39
@@ -122,7 +122,7 @@
 
 .method static synthetic access$100(Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;)Ljava/util/Vector;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;
 
     .prologue
     .line 39
@@ -143,10 +143,10 @@
     new-array v0, v7, [I
 
     .line 100
-    .local v0, array:[I
+    .local v0, "array":[I
     const/4 v5, 0x0
 
-    .local v5, j:I
+    .local v5, "j":I
     :goto_0
     if-ge v5, v7, :cond_0
 
@@ -166,7 +166,7 @@
     const/4 v3, -0x1
 
     .line 105
-    .local v3, dateIndex:I
+    .local v3, "dateIndex":I
     iget-object v6, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
@@ -201,7 +201,7 @@
     move-result-wide v1
 
     .line 108
-    .local v1, date:J
+    .local v1, "date":J
     iget-object v6, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mDateSorter:Landroid/webkit/DateSorter;
 
     invoke-virtual {v6, v1, v2}, Landroid/webkit/DateSorter;->getIndex(J)I
@@ -209,7 +209,7 @@
     move-result v4
 
     .line 109
-    .local v4, index:I
+    .local v4, "index":I
     if-le v4, v3, :cond_3
 
     .line 110
@@ -242,8 +242,8 @@
     aput v6, v0, v4
 
     .line 124
-    .end local v1           #date:J
-    .end local v4           #index:I
+    .end local v1    # "date":J
+    .end local v4    # "index":I
     :cond_1
     iput-object v0, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mItemMap:[I
 
@@ -251,8 +251,8 @@
     return-void
 
     .line 118
-    .restart local v1       #date:J
-    .restart local v4       #index:I
+    .restart local v1    # "date":J
+    .restart local v4    # "index":I
     :cond_2
     move v3, v4
 
@@ -274,7 +274,7 @@
 
 .method private groupPositionToBin(I)I
     .locals 3
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     const/4 v2, 0x5
@@ -316,7 +316,7 @@
     const/4 v0, -0x1
 
     .line 220
-    .local v0, arrayPosition:I
+    .local v0, "arrayPosition":I
     :cond_5
     :goto_0
     const/4 v1, -0x1
@@ -353,8 +353,8 @@
 
 .method public getChild(II)Ljava/lang/Object;
     .locals 1
-    .parameter "groupPosition"
-    .parameter "childPosition"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
 
     .prologue
     .line 311
@@ -365,8 +365,8 @@
 
 .method public getChildId(II)J
     .locals 2
-    .parameter "groupPosition"
-    .parameter "childPosition"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
 
     .prologue
     .line 319
@@ -395,11 +395,11 @@
 
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .parameter "groupPosition"
-    .parameter "childPosition"
-    .parameter "isLastChild"
-    .parameter "convertView"
-    .parameter "parent"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
+    .param p3, "isLastChild"    # Z
+    .param p4, "convertView"    # Landroid/view/View;
+    .param p5, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 287
@@ -410,7 +410,7 @@
 
 .method public getChildrenCount(I)I
     .locals 2
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     .line 303
@@ -427,8 +427,8 @@
 
 .method public getCombinedChildId(JJ)J
     .locals 0
-    .parameter "groupId"
-    .parameter "childId"
+    .param p1, "groupId"    # J
+    .param p3, "childId"    # J
 
     .prologue
     .line 344
@@ -437,7 +437,7 @@
 
 .method public getCombinedGroupId(J)J
     .locals 0
-    .parameter "groupId"
+    .param p1, "groupId"    # J
 
     .prologue
     .line 348
@@ -446,7 +446,7 @@
 
 .method public getGroup(I)Ljava/lang/Object;
     .locals 1
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     .line 307
@@ -467,7 +467,7 @@
 
 .method public getGroupId(I)J
     .locals 2
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     .line 315
@@ -478,10 +478,10 @@
 
 .method public getGroupView(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .parameter "groupPosition"
-    .parameter "isExpanded"
-    .parameter "convertView"
-    .parameter "parent"
+    .param p1, "groupPosition"    # I
+    .param p2, "isExpanded"    # Z
+    .param p3, "convertView"    # Landroid/view/View;
+    .param p4, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 274
@@ -500,7 +500,7 @@
     move-result-object v0
 
     .line 276
-    .local v0, factory:Landroid/view/LayoutInflater;
+    .local v0, "factory":Landroid/view/LayoutInflater;
     const v3, 0x7f040002
 
     const/4 v4, 0x0
@@ -512,8 +512,8 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 280
-    .end local v0           #factory:Landroid/view/LayoutInflater;
-    .local v1, item:Landroid/widget/TextView;
+    .end local v0    # "factory":Landroid/view/LayoutInflater;
+    .local v1, "item":Landroid/widget/TextView;
     :goto_0
     iget-object v3, p0, Lcom/android/providers/downloads/ui/DateSortedExpandableListAdapter;->mDateSorter:Landroid/webkit/DateSorter;
 
@@ -526,27 +526,27 @@
     move-result-object v2
 
     .line 281
-    .local v2, label:Ljava/lang/String;
+    .local v2, "label":Ljava/lang/String;
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 282
     return-object v1
 
-    .end local v1           #item:Landroid/widget/TextView;
-    .end local v2           #label:Ljava/lang/String;
+    .end local v1    # "item":Landroid/widget/TextView;
+    .end local v2    # "label":Ljava/lang/String;
     :cond_1
     move-object v1, p3
 
     .line 278
     check-cast v1, Landroid/widget/TextView;
 
-    .restart local v1       #item:Landroid/widget/TextView;
+    .restart local v1    # "item":Landroid/widget/TextView;
     goto :goto_0
 .end method
 
 .method getLong(I)J
     .locals 2
-    .parameter "cursorIndex"
+    .param p1, "cursorIndex"    # I
 
     .prologue
     .line 160
@@ -571,8 +571,8 @@
 
 .method public isChildSelectable(II)Z
     .locals 1
-    .parameter "groupPosition"
-    .parameter "childPosition"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
 
     .prologue
     .line 295
@@ -616,8 +616,8 @@
 
 .method moveCursorToChildPosition(II)Z
     .locals 3
-    .parameter "groupPosition"
-    .parameter "childPosition"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
 
     .prologue
     .line 255
@@ -645,10 +645,10 @@
     move v1, p2
 
     .line 258
-    .local v1, index:I
+    .local v1, "index":I
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_1
     if-ge v0, p1, :cond_1
 
@@ -677,7 +677,7 @@
 
 .method public onGroupCollapsed(I)V
     .locals 0
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     .line 341
@@ -686,7 +686,7 @@
 
 .method public onGroupExpanded(I)V
     .locals 0
-    .parameter "groupPosition"
+    .param p1, "groupPosition"    # I
 
     .prologue
     .line 338
@@ -721,7 +721,7 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .parameter "observer"
+    .param p1, "observer"    # Landroid/database/DataSetObserver;
 
     .prologue
     .line 330
@@ -735,7 +735,7 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .parameter "observer"
+    .param p1, "observer"    # Landroid/database/DataSetObserver;
 
     .prologue
     .line 334

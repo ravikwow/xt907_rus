@@ -9,16 +9,15 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static populateMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectInputStream;I)V
     .locals 6
-    .parameter
-    .parameter "stream"
-    .parameter "distinctKeys"
+    .param p1, "stream"    # Ljava/io/ObjectInputStream;
+    .param p2, "distinctKeys"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -42,10 +41,10 @@
 
     .prologue
     .line 182
-    .local p0, multimap:Lcom/google/common/collect/Multimap;,"Lcom/google/common/collect/Multimap<TK;TV;>;"
+    .local p0, "multimap":Lcom/google/common/collect/Multimap;, "Lcom/google/common/collect/Multimap<TK;TV;>;"
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_0
     if-ge v0, p2, :cond_1
 
@@ -55,22 +54,22 @@
     move-result-object v2
 
     .line 185
-    .local v2, key:Ljava/lang/Object;,"TK;"
+    .local v2, "key":Ljava/lang/Object;, "TK;"
     invoke-interface {p0, v2}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v5
 
     .line 186
-    .local v5, values:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .local v5, "values":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v4
 
     .line 187
-    .local v4, valueCount:I
+    .local v4, "valueCount":I
     const/4 v1, 0x0
 
-    .local v1, j:I
+    .local v1, "j":I
     :goto_1
     if-ge v1, v4, :cond_0
 
@@ -80,7 +79,7 @@
     move-result-object v3
 
     .line 190
-    .local v3, value:Ljava/lang/Object;,"TV;"
+    .local v3, "value":Ljava/lang/Object;, "TV;"
     invoke-interface {v5, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     .line 187
@@ -89,24 +88,24 @@
     goto :goto_1
 
     .line 182
-    .end local v3           #value:Ljava/lang/Object;,"TV;"
+    .end local v3    # "value":Ljava/lang/Object;, "TV;"
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
     .line 193
-    .end local v1           #j:I
-    .end local v2           #key:Ljava/lang/Object;,"TK;"
-    .end local v4           #valueCount:I
-    .end local v5           #values:Ljava/util/Collection;,"Ljava/util/Collection<TV;>;"
+    .end local v1    # "j":I
+    .end local v2    # "key":Ljava/lang/Object;, "TK;"
+    .end local v4    # "valueCount":I
+    .end local v5    # "values":Ljava/util/Collection;, "Ljava/util/Collection<TV;>;"
     :cond_1
     return-void
 .end method
 
 .method static readCount(Ljava/io/ObjectInputStream;)I
     .locals 1
-    .parameter "stream"
+    .param p0, "stream"    # Ljava/io/ObjectInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -124,8 +123,7 @@
 
 .method static writeMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectOutputStream;)V
     .locals 5
-    .parameter
-    .parameter "stream"
+    .param p1, "stream"    # Ljava/io/ObjectOutputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -148,7 +146,7 @@
 
     .prologue
     .line 153
-    .local p0, multimap:Lcom/google/common/collect/Multimap;,"Lcom/google/common/collect/Multimap<TK;TV;>;"
+    .local p0, "multimap":Lcom/google/common/collect/Multimap;, "Lcom/google/common/collect/Multimap<TK;TV;>;"
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v4
@@ -186,7 +184,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 155
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -217,7 +215,7 @@
 
     move-result-object v2
 
-    .local v2, i$:Ljava/util/Iterator;
+    .local v2, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -230,15 +228,15 @@
     move-result-object v3
 
     .line 158
-    .local v3, value:Ljava/lang/Object;,"TV;"
+    .local v3, "value":Ljava/lang/Object;, "TV;"
     invoke-virtual {p1, v3}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     goto :goto_0
 
     .line 161
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
-    .end local v2           #i$:Ljava/util/Iterator;
-    .end local v3           #value:Ljava/lang/Object;,"TV;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;Ljava/util/Collection<TV;>;>;"
+    .end local v2    # "i$":Ljava/util/Iterator;
+    .end local v3    # "value":Ljava/lang/Object;, "TV;"
     :cond_1
     return-void
 .end method

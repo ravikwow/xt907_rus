@@ -17,15 +17,15 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static compare(BB)I
     .locals 2
-    .parameter "a"
-    .parameter "b"
+    .param p0, "a"    # B
+    .param p1, "b"    # B
 
     .prologue
     .line 112
@@ -61,7 +61,7 @@
 
 .method public static toInt(B)I
     .locals 1
-    .parameter "value"
+    .param p0, "value"    # B
 
     .prologue
     .line 64

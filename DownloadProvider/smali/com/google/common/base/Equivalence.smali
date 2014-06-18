@@ -20,8 +20,8 @@
 
     .prologue
     .line 45
-    .local p0, this:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<TT;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<TT;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -46,8 +46,6 @@
 
 .method public final equivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;)Z"
@@ -56,9 +54,9 @@
 
     .prologue
     .line 66
-    .local p0, this:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<TT;>;"
-    .local p1, a:Ljava/lang/Object;,"TT;"
-    .local p2, b:Ljava/lang/Object;,"TT;"
+    .local p0, "this":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<TT;>;"
+    .local p1, "a":Ljava/lang/Object;, "TT;"
+    .local p2, "b":Ljava/lang/Object;, "TT;"
     if-ne p1, p2, :cond_0
 
     .line 67
@@ -91,7 +89,6 @@
 
 .method public final hash(Ljava/lang/Object;)I
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)I"
@@ -100,8 +97,8 @@
 
     .prologue
     .line 102
-    .local p0, this:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<TT;>;"
-    .local p1, t:Ljava/lang/Object;,"TT;"
+    .local p0, "this":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<TT;>;"
+    .local p1, "t":Ljava/lang/Object;, "TT;"
     if-nez p1, :cond_0
 
     .line 103

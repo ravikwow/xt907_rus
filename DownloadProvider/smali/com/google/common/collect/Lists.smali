@@ -9,14 +9,14 @@
 
     .prologue
     .line 60
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static computeArrayListCapacity(I)I
     .locals 4
-    .parameter "arraySize"
+    .param p0, "arraySize"    # I
 
     .prologue
     .line 99
@@ -76,7 +76,6 @@
 
 .method public static newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -91,7 +90,7 @@
 
     .prologue
     .line 117
-    .local p0, elements:Ljava/lang/Iterable;,"Ljava/lang/Iterable<+TE;>;"
+    .local p0, "elements":Ljava/lang/Iterable;, "Ljava/lang/Iterable<+TE;>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 119
@@ -124,7 +123,6 @@
 
 .method public static newArrayList(Ljava/util/Iterator;)Ljava/util/ArrayList;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -139,7 +137,7 @@
 
     .prologue
     .line 136
-    .local p0, elements:Ljava/util/Iterator;,"Ljava/util/Iterator<+TE;>;"
+    .local p0, "elements":Ljava/util/Iterator;, "Ljava/util/Iterator<+TE;>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
@@ -148,7 +146,7 @@
     move-result-object v0
 
     .line 138
-    .local v0, list:Ljava/util/ArrayList;,"Ljava/util/ArrayList<TE;>;"
+    .local v0, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<TE;>;"
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 

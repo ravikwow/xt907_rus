@@ -34,7 +34,7 @@
 
     .prologue
     .line 349
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection;-><init>()V
 
     return-void
@@ -42,13 +42,13 @@
 
 .method static chooseTableSize(I)I
     .locals 3
-    .parameter "setSize"
+    .param p0, "setSize"    # I
 
     .prologue
-    const/high16 v1, 0x4000
+    const/high16 v1, 0x40000000
 
     .line 223
-    const/high16 v0, 0x2000
+    const/high16 v0, 0x20000000
 
     if-ge p0, v0, :cond_0
 
@@ -88,7 +88,7 @@
 
 .method private static varargs construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
     .locals 19
-    .parameter "elements"
+    .param p0, "elements"    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -114,26 +114,26 @@
     move-result v13
 
     .line 162
-    .local v13, tableSize:I
+    .local v13, "tableSize":I
     new-array v12, v13, [Ljava/lang/Object;
 
     .line 163
-    .local v12, table:[Ljava/lang/Object;
+    .local v12, "table":[Ljava/lang/Object;
     add-int/lit8 v10, v13, -0x1
 
     .line 164
-    .local v10, mask:I
+    .local v10, "mask":I
     const/4 v15, 0x0
 
     .line 165
-    .local v15, uniqueElementsList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Object;>;"
+    .local v15, "uniqueElementsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Object;>;"
     const/4 v5, 0x0
 
     .line 166
-    .local v5, hashCode:I
+    .local v5, "hashCode":I
     const/4 v6, 0x0
 
-    .local v6, i:I
+    .local v6, "i":I
     :goto_0
     move-object/from16 v0, p0
 
@@ -149,28 +149,28 @@
     aget-object v2, p0, v6
 
     .line 168
-    .local v2, element:Ljava/lang/Object;
+    .local v2, "element":Ljava/lang/Object;
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     move-result v4
 
     .line 169
-    .local v4, hash:I
+    .local v4, "hash":I
     invoke-static {v4}, Lcom/google/common/collect/Hashing;->smear(I)I
 
     move-result v8
 
     .line 170
-    .local v8, j:I
+    .local v8, "j":I
     :goto_1
     and-int v7, v8, v10
 
     .line 171
-    .local v7, index:I
+    .local v7, "index":I
     aget-object v16, v12, v7
 
     .line 172
-    .local v16, value:Ljava/lang/Object;
+    .local v16, "value":Ljava/lang/Object;
     if-nez v16, :cond_2
 
     .line 173
@@ -208,7 +208,7 @@
     .line 183
     new-instance v15, Ljava/util/ArrayList;
 
-    .end local v15           #uniqueElementsList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Object;>;"
+    .end local v15    # "uniqueElementsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Object;>;"
     move-object/from16 v0, p0
 
     array-length v0, v0
@@ -220,10 +220,10 @@
     invoke-direct {v15, v0}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 184
-    .restart local v15       #uniqueElementsList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/Object;>;"
+    .restart local v15    # "uniqueElementsList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Object;>;"
     const/4 v9, 0x0
 
-    .local v9, k:I
+    .local v9, "k":I
     :goto_2
     if-ge v9, v6, :cond_1
 
@@ -231,7 +231,7 @@
     aget-object v11, p0, v9
 
     .line 186
-    .local v11, previous:Ljava/lang/Object;
+    .local v11, "previous":Ljava/lang/Object;
     invoke-virtual {v15, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 184
@@ -240,26 +240,26 @@
     goto :goto_2
 
     .line 169
-    .end local v9           #k:I
-    .end local v11           #previous:Ljava/lang/Object;
+    .end local v9    # "k":I
+    .end local v11    # "previous":Ljava/lang/Object;
     :cond_3
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_1
 
     .line 193
-    .end local v2           #element:Ljava/lang/Object;
-    .end local v4           #hash:I
-    .end local v7           #index:I
-    .end local v8           #j:I
-    .end local v16           #value:Ljava/lang/Object;
+    .end local v2    # "element":Ljava/lang/Object;
+    .end local v4    # "hash":I
+    .end local v7    # "index":I
+    .end local v8    # "j":I
+    .end local v16    # "value":Ljava/lang/Object;
     :cond_4
     if-nez v15, :cond_5
 
     move-object/from16 v14, p0
 
     .line 196
-    .local v14, uniqueElements:[Ljava/lang/Object;
+    .local v14, "uniqueElements":[Ljava/lang/Object;
     :goto_3
     array-length v0, v14
 
@@ -279,7 +279,7 @@
     aget-object v3, v14, v17
 
     .line 200
-    .local v3, element:Ljava/lang/Object;,"TE;"
+    .local v3, "element":Ljava/lang/Object;, "TE;"
     new-instance v17, Lcom/google/common/collect/SingletonImmutableSet;
 
     move-object/from16 v0, v17
@@ -287,12 +287,12 @@
     invoke-direct {v0, v3, v5}, Lcom/google/common/collect/SingletonImmutableSet;-><init>(Ljava/lang/Object;I)V
 
     .line 206
-    .end local v3           #element:Ljava/lang/Object;,"TE;"
+    .end local v3    # "element":Ljava/lang/Object;, "TE;"
     :goto_4
     return-object v17
 
     .line 193
-    .end local v14           #uniqueElements:[Ljava/lang/Object;
+    .end local v14    # "uniqueElements":[Ljava/lang/Object;
     :cond_5
     invoke-virtual {v15}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
 
@@ -301,7 +301,7 @@
     goto :goto_3
 
     .line 201
-    .restart local v14       #uniqueElements:[Ljava/lang/Object;
+    .restart local v14    # "uniqueElements":[Ljava/lang/Object;
     :cond_6
     array-length v0, v14
 
@@ -337,7 +337,6 @@
 
 .method public static copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -350,7 +349,7 @@
 
     .prologue
     .line 243
-    .local p0, elements:[Ljava/lang/Object;,"[TE;"
+    .local p0, "elements":[Ljava/lang/Object;, "[TE;"
     array-length v0, p0
 
     packed-switch v0, :pswitch_data_0
@@ -418,7 +417,6 @@
 
 .method public static of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -431,7 +429,7 @@
 
     .prologue
     .line 88
-    .local p0, element:Ljava/lang/Object;,"TE;"
+    .local p0, "element":Ljava/lang/Object;, "TE;"
     new-instance v0, Lcom/google/common/collect/SingletonImmutableSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/SingletonImmutableSet;-><init>(Ljava/lang/Object;)V
@@ -443,11 +441,11 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 357
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     if-ne p1, p0, :cond_0
 
     .line 358
@@ -508,7 +506,7 @@
 
     .prologue
     .line 370
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result v0
@@ -521,7 +519,7 @@
 
     .prologue
     .line 353
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     const/4 v0, 0x0
 
     return v0
@@ -542,7 +540,7 @@
 
     .prologue
     .line 66
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -555,7 +553,7 @@
 
     .prologue
     .line 524
-    .local p0, this:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TE;>;"
     new-instance v0, Lcom/google/common/collect/ImmutableSet$SerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet;->toArray()[Ljava/lang/Object;

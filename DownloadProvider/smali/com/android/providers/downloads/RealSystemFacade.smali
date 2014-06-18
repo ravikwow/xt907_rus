@@ -13,11 +13,11 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .parameter "context"
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 31
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
     iput-object p1, p0, Lcom/android/providers/downloads/RealSystemFacade;->mContext:Landroid/content/Context;
@@ -42,7 +42,7 @@
 
 .method public getActiveNetworkInfo(I)Landroid/net/NetworkInfo;
     .locals 4
-    .parameter "uid"
+    .param p1, "uid"    # I
 
     .prologue
     .line 42
@@ -57,7 +57,7 @@
     check-cast v1, Landroid/net/ConnectivityManager;
 
     .line 44
-    .local v1, connectivity:Landroid/net/ConnectivityManager;
+    .local v1, "connectivity":Landroid/net/ConnectivityManager;
     if-nez v1, :cond_1
 
     .line 45
@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 50
-    .local v0, activeInfo:Landroid/net/NetworkInfo;
+    .local v0, "activeInfo":Landroid/net/NetworkInfo;
     if-nez v0, :cond_0
 
     sget-boolean v2, Lcom/android/providers/downloads/Constants;->LOGVV:Z
@@ -139,7 +139,7 @@
     move-result-object v0
 
     .line 59
-    .local v0, conn:Landroid/net/ConnectivityManager;
+    .local v0, "conn":Landroid/net/ConnectivityManager;
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
 
     move-result v1
@@ -167,7 +167,7 @@
     check-cast v0, Landroid/net/ConnectivityManager;
 
     .line 66
-    .local v0, connectivity:Landroid/net/ConnectivityManager;
+    .local v0, "connectivity":Landroid/net/ConnectivityManager;
     if-nez v0, :cond_0
 
     .line 67
@@ -188,7 +188,7 @@
     move-result-object v1
 
     .line 72
-    .local v1, info:Landroid/net/NetworkInfo;
+    .local v1, "info":Landroid/net/NetworkInfo;
     if-eqz v1, :cond_2
 
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
@@ -200,7 +200,7 @@
     move v2, v3
 
     .line 73
-    .local v2, isMobile:Z
+    .local v2, "isMobile":Z
     :goto_1
     if-eqz v2, :cond_3
 
@@ -215,7 +215,7 @@
     if-eqz v5, :cond_3
 
     .line 74
-    .local v3, isRoaming:Z
+    .local v3, "isRoaming":Z
     :goto_2
     sget-boolean v4, Lcom/android/providers/downloads/Constants;->LOGVV:Z
 
@@ -236,15 +236,15 @@
     .line 77
     goto :goto_0
 
-    .end local v2           #isMobile:Z
-    .end local v3           #isRoaming:Z
+    .end local v2    # "isMobile":Z
+    .end local v3    # "isRoaming":Z
     :cond_2
     move v2, v4
 
     .line 72
     goto :goto_1
 
-    .restart local v2       #isMobile:Z
+    .restart local v2    # "isMobile":Z
     :cond_3
     move v3, v4
 
@@ -254,7 +254,7 @@
 
 .method public sendBroadcast(Landroid/content/Intent;)V
     .locals 1
-    .parameter "intent"
+    .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
     .line 92
@@ -268,8 +268,8 @@
 
 .method public userOwnsPackage(ILjava/lang/String;)Z
     .locals 2
-    .parameter "uid"
-    .parameter "packageName"
+    .param p1, "uid"    # I
+    .param p2, "packageName"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;

@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;)V
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,8 +40,8 @@
 
     .prologue
     .line 405
-    .local p1, map:Lcom/google/common/collect/ImmutableMap;,"Lcom/google/common/collect/ImmutableMap<**>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p1, "map":Lcom/google/common/collect/ImmutableMap;, "Lcom/google/common/collect/ImmutableMap<**>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 406
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap;->size()I
@@ -66,7 +65,7 @@
     const/4 v1, 0x0
 
     .line 409
-    .local v1, i:I
+    .local v1, "i":I
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v3
@@ -75,7 +74,7 @@
 
     move-result-object v2
 
-    .local v2, i$:Ljava/util/Iterator;
+    .local v2, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -90,7 +89,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 410
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     iget-object v3, p0, Lcom/google/common/collect/ImmutableMap$SerializedForm;->keys:[Ljava/lang/Object;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -114,7 +113,7 @@
     goto :goto_0
 
     .line 414
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     :cond_0
     return-void
 .end method
@@ -123,7 +122,6 @@
 # virtual methods
 .method createMap(Lcom/google/common/collect/ImmutableMap$Builder;)Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,10 +136,10 @@
 
     .prologue
     .line 420
-    .local p1, builder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<Ljava/lang/Object;Ljava/lang/Object;>;"
+    .local p1, "builder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<Ljava/lang/Object;Ljava/lang/Object;>;"
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_0
     iget-object v1, p0, Lcom/google/common/collect/ImmutableMap$SerializedForm;->keys:[Ljava/lang/Object;
 
@@ -184,7 +182,7 @@
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableMap$Builder;-><init>()V
 
     .line 417
-    .local v0, builder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<Ljava/lang/Object;Ljava/lang/Object;>;"
+    .local v0, "builder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<Ljava/lang/Object;Ljava/lang/Object;>;"
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableMap$SerializedForm;->createMap(Lcom/google/common/collect/ImmutableMap$Builder;)Ljava/lang/Object;
 
     move-result-object v1

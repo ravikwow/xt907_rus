@@ -44,8 +44,8 @@
 
     .prologue
     .line 171
-    .local p0, this:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 165
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
@@ -60,7 +60,6 @@
 
 .method private static fromEntryList(Ljava/util/List;)Lcom/google/common/collect/ImmutableMap;
     .locals 4
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -79,13 +78,13 @@
 
     .prologue
     .line 236
-    .local p0, entries:Ljava/util/List;,"Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;"
+    .local p0, "entries":Ljava/util/List;, "Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;"
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
 
     .line 237
-    .local v1, size:I
+    .local v1, "size":I
     packed-switch v1, :pswitch_data_0
 
     .line 243
@@ -102,12 +101,12 @@
     check-cast v0, [Ljava/util/Map$Entry;
 
     .line 245
-    .local v0, entryArray:[Ljava/util/Map$Entry;,"[Ljava/util/Map$Entry<**>;"
+    .local v0, "entryArray":[Ljava/util/Map$Entry;, "[Ljava/util/Map$Entry<**>;"
     new-instance v2, Lcom/google/common/collect/RegularImmutableMap;
 
     invoke-direct {v2, v0}, Lcom/google/common/collect/RegularImmutableMap;-><init>([Ljava/util/Map$Entry;)V
 
-    .end local v0           #entryArray:[Ljava/util/Map$Entry;,"[Ljava/util/Map$Entry<**>;"
+    .end local v0    # "entryArray":[Ljava/util/Map$Entry;, "[Ljava/util/Map$Entry<**>;"
     :goto_0
     return-object v2
 
@@ -159,7 +158,7 @@
 
     .prologue
     .line 231
-    .local p0, this:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:Ljava/util/ArrayList;
 
     invoke-static {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->fromEntryList(Ljava/util/List;)Lcom/google/common/collect/ImmutableMap;
@@ -171,8 +170,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)",
@@ -183,9 +180,9 @@
 
     .prologue
     .line 178
-    .local p0, this:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:Ljava/util/ArrayList;
 
     invoke-static {p1, p2}, Lcom/google/common/collect/ImmutableMap;->entryOf(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;

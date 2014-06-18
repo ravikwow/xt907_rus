@@ -9,15 +9,14 @@
 
     .prologue
     .line 39
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static propagateIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
     .locals 1
-    .parameter "throwable"
-    .parameter
+    .param p0, "throwable"    # Ljava/lang/Throwable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -37,7 +36,7 @@
 
     .prologue
     .line 59
-    .local p1, declaredType:Ljava/lang/Class;,"Ljava/lang/Class<TX;>;"
+    .local p1, "declaredType":Ljava/lang/Class;, "Ljava/lang/Class<TX;>;"
     if-eqz p0, :cond_0
 
     invoke-virtual {p1, p0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z

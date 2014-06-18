@@ -10,8 +10,8 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
-    .parameter "finalStatus"
-    .parameter "message"
+    .param p1, "finalStatus"    # I
+    .param p2, "message"    # Ljava/lang/String;
 
     .prologue
     .line 32
@@ -26,9 +26,9 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-    .parameter "finalStatus"
-    .parameter "message"
-    .parameter "t"
+    .param p1, "finalStatus"    # I
+    .param p2, "message"    # Ljava/lang/String;
+    .param p3, "t"    # Ljava/lang/Throwable;
 
     .prologue
     .line 42
@@ -43,8 +43,8 @@
 
 .method public constructor <init>(ILjava/lang/Throwable;)V
     .locals 0
-    .parameter "finalStatus"
-    .parameter "t"
+    .param p1, "finalStatus"    # I
+    .param p2, "t"    # Ljava/lang/Throwable;
 
     .prologue
     .line 37
@@ -59,8 +59,8 @@
 
 .method public static throwUnhandledHttpError(ILjava/lang/String;)Lcom/android/providers/downloads/StopRequestException;
     .locals 4
-    .parameter "code"
-    .parameter "message"
+    .param p0, "code"    # I
+    .param p1, "message"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -100,7 +100,7 @@
     move-result-object v0
 
     .line 53
-    .local v0, error:Ljava/lang/String;
+    .local v0, "error":Ljava/lang/String;
     if-lt p0, v3, :cond_0
 
     const/16 v1, 0x258

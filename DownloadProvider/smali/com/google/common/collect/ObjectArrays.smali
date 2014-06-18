@@ -9,15 +9,14 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method private static fillArray(Ljava/lang/Iterable;[Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 5
-    .parameter
-    .parameter "array"
+    .param p1, "array"    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -31,16 +30,16 @@
 
     .prologue
     .line 167
-    .local p0, elements:Ljava/lang/Iterable;,"Ljava/lang/Iterable<*>;"
+    .local p0, "elements":Ljava/lang/Iterable;, "Ljava/lang/Iterable<*>;"
     const/4 v1, 0x0
 
     .line 168
-    .local v1, i:I
+    .local v1, "i":I
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    .local v3, i$:Ljava/util/Iterator;
+    .local v3, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -53,29 +52,28 @@
     move-result-object v0
 
     .line 169
-    .local v0, element:Ljava/lang/Object;
+    .local v0, "element":Ljava/lang/Object;
     add-int/lit8 v2, v1, 0x1
 
-    .end local v1           #i:I
-    .local v2, i:I
+    .end local v1    # "i":I
+    .local v2, "i":I
     aput-object v0, p1, v1
 
     move v1, v2
 
-    .end local v2           #i:I
-    .restart local v1       #i:I
+    .end local v2    # "i":I
+    .restart local v1    # "i":I
     goto :goto_0
 
     .line 171
-    .end local v0           #element:Ljava/lang/Object;
+    .end local v0    # "element":Ljava/lang/Object;
     :cond_0
     return-object p1
 .end method
 
 .method public static newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter "length"
+    .param p1, "length"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -86,7 +84,7 @@
 
     .prologue
     .line 55
-    .local p0, reference:[Ljava/lang/Object;,"[TT;"
+    .local p0, "reference":[Ljava/lang/Object;, "[TT;"
     invoke-static {p0, p1}, Lcom/google/common/collect/Platform;->newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v0
@@ -96,7 +94,6 @@
 
 .method static toArrayImpl(Ljava/util/Collection;)[Ljava/lang/Object;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,7 +105,7 @@
 
     .prologue
     .line 163
-    .local p0, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p0, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
@@ -124,8 +121,6 @@
 
 .method static toArrayImpl(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -138,14 +133,14 @@
 
     .prologue
     .line 137
-    .local p0, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
-    .local p1, array:[Ljava/lang/Object;,"[TT;"
+    .local p0, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
+    .local p1, "array":[Ljava/lang/Object;, "[TT;"
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
 
     .line 138
-    .local v0, size:I
+    .local v0, "size":I
     array-length v1, p1
 
     if-ge v1, v0, :cond_0

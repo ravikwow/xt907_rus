@@ -9,16 +9,16 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static final TransferDrmFile(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 12
-    .parameter "cr"
-    .parameter "filename"
-    .parameter "title"
+    .param p0, "cr"    # Landroid/content/ContentResolver;
+    .param p1, "filename"    # Ljava/lang/String;
+    .param p2, "title"    # Ljava/lang/String;
 
     .prologue
     const/4 v0, 0x0
@@ -29,11 +29,11 @@
     invoke-direct {v10, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 130
-    .local v10, file:Ljava/io/File;
+    .local v10, "file":Ljava/io/File;
     const/4 v11, 0x0
 
     .line 132
-    .local v11, result:Landroid/content/Intent;
+    .local v11, "result":Landroid/content/Intent;
     invoke-static {p0, v10, v0}, Landroid/provider/DrmStore;->addDrmFile(Landroid/content/ContentResolver;Ljava/io/File;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v11
@@ -47,13 +47,13 @@
     move-result-object v7
 
     .line 135
-    .local v7, contentPath:Ljava/lang/String;
+    .local v7, "contentPath":Ljava/lang/String;
     invoke-virtual {v11}, Landroid/content/Intent;->getType()Ljava/lang/String;
 
     move-result-object v6
 
     .line 137
-    .local v6, contentMime:Ljava/lang/String;
+    .local v6, "contentMime":Ljava/lang/String;
     const-string v0, "content://drm/"
 
     invoke-virtual {v7, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -68,11 +68,11 @@
     move-result-object v1
 
     .line 139
-    .local v1, contentUri:Landroid/net/Uri;
+    .local v1, "contentUri":Landroid/net/Uri;
     const/4 v8, 0x0
 
     .line 141
-    .local v8, cursor:Landroid/database/Cursor;
+    .local v8, "cursor":Landroid/database/Cursor;
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -95,19 +95,19 @@
     const/4 v11, 0x0
 
     .line 165
-    .end local v1           #contentUri:Landroid/net/Uri;
-    .end local v6           #contentMime:Ljava/lang/String;
-    .end local v7           #contentPath:Ljava/lang/String;
-    .end local v8           #cursor:Landroid/database/Cursor;
+    .end local v1    # "contentUri":Landroid/net/Uri;
+    .end local v6    # "contentMime":Ljava/lang/String;
+    .end local v7    # "contentPath":Ljava/lang/String;
+    .end local v8    # "cursor":Landroid/database/Cursor;
     :cond_0
     :goto_0
     return-object v11
 
     .line 144
-    .restart local v1       #contentUri:Landroid/net/Uri;
-    .restart local v6       #contentMime:Ljava/lang/String;
-    .restart local v7       #contentPath:Ljava/lang/String;
-    .restart local v8       #cursor:Landroid/database/Cursor;
+    .restart local v1    # "contentUri":Landroid/net/Uri;
+    .restart local v6    # "contentMime":Ljava/lang/String;
+    .restart local v7    # "contentPath":Ljava/lang/String;
+    .restart local v8    # "cursor":Landroid/database/Cursor;
     :cond_1
     invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -186,7 +186,7 @@
     move-exception v9
 
     .line 158
-    .local v9, e:Ljava/lang/Exception;
+    .local v9, "e":Ljava/lang/Exception;
     const-string v0, "DownloadManager"
 
     invoke-virtual {v9}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -206,14 +206,14 @@
 
 .method public static checkMimetypeTable(Ljava/lang/String;)Z
     .locals 5
-    .parameter "mimeType"
+    .param p0, "mimeType"    # Ljava/lang/String;
 
     .prologue
     .line 110
     const/4 v2, 0x0
 
     .line 111
-    .local v2, result:Z
+    .local v2, "result":Z
     const/16 v3, 0x9
 
     new-array v1, v3, [Ljava/lang/String;
@@ -273,10 +273,10 @@
     aput-object v4, v1, v3
 
     .line 116
-    .local v1, mimetypetable:[Ljava/lang/String;
+    .local v1, "mimetypetable":[Ljava/lang/String;
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_0
     array-length v3, v1
 
@@ -307,9 +307,9 @@
 
 .method public static getOriginalMimeType(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .parameter "context"
-    .parameter "file"
-    .parameter "currentMime"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "file"    # Ljava/io/File;
+    .param p2, "currentMime"    # Ljava/lang/String;
 
     .prologue
     .line 90
@@ -318,14 +318,14 @@
     invoke-direct {v0, p0}, Landroid/drm/DrmManagerClient;-><init>(Landroid/content/Context;)V
 
     .line 92
-    .local v0, client:Landroid/drm/DrmManagerClient;
+    .local v0, "client":Landroid/drm/DrmManagerClient;
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     .line 93
-    .local v1, rawFile:Ljava/lang/String;
+    .local v1, "rawFile":Ljava/lang/String;
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/drm/DrmManagerClient;->canHandle(Ljava/lang/String;Ljava/lang/String;)Z
@@ -342,19 +342,19 @@
     move-result-object p2
 
     .line 99
-    .end local p2
+    .end local p2    # "currentMime":Ljava/lang/String;
     invoke-virtual {v0}, Landroid/drm/DrmManagerClient;->release()V
 
     :goto_0
     return-object p2
 
-    .restart local p2
+    .restart local p2    # "currentMime":Ljava/lang/String;
     :cond_0
     invoke-virtual {v0}, Landroid/drm/DrmManagerClient;->release()V
 
     goto :goto_0
 
-    .end local v1           #rawFile:Ljava/lang/String;
+    .end local v1    # "rawFile":Ljava/lang/String;
     :catchall_0
     move-exception v2
 
@@ -365,7 +365,7 @@
 
 .method public static isDrmConvertNeeded(Ljava/lang/String;)Z
     .locals 1
-    .parameter "mimetype"
+    .param p0, "mimetype"    # Ljava/lang/String;
 
     .prologue
     .line 61
@@ -399,7 +399,7 @@
 
 .method public static modifyDrmFwLockFileExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .parameter "filename"
+    .param p0, "filename"    # Ljava/lang/String;
 
     .prologue
     .line 71
@@ -413,7 +413,7 @@
     move-result v0
 
     .line 74
-    .local v0, extensionIndex:I
+    .local v0, "extensionIndex":I
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
@@ -434,7 +434,7 @@
     move-result-object p0
 
     .line 82
-    .end local v0           #extensionIndex:I
+    .end local v0    # "extensionIndex":I
     :cond_1
     return-object p0
 .end method

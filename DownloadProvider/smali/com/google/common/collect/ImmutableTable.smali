@@ -29,8 +29,8 @@
 
     .prologue
     .line 241
-    .local p0, this:Lcom/google/common/collect/ImmutableTable;,"Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/collect/ImmutableTable;, "Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     .prologue
     .line 41
-    .local p0, this:Lcom/google/common/collect/ImmutableTable;,"Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableTable;, "Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -64,11 +64,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .parameter "obj"
+    .param p1, "obj"    # Ljava/lang/Object;
 
     .prologue
     .line 317
-    .local p0, this:Lcom/google/common/collect/ImmutableTable;,"Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableTable;, "Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
     if-ne p1, p0, :cond_0
 
     .line 318
@@ -90,7 +90,7 @@
     check-cast v0, Lcom/google/common/collect/Table;
 
     .line 321
-    .local v0, that:Lcom/google/common/collect/Table;,"Lcom/google/common/collect/Table<***>;"
+    .local v0, "that":Lcom/google/common/collect/Table;, "Lcom/google/common/collect/Table<***>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v1
@@ -106,7 +106,7 @@
     goto :goto_0
 
     .line 323
-    .end local v0           #that:Lcom/google/common/collect/Table;,"Lcom/google/common/collect/Table<***>;"
+    .end local v0    # "that":Lcom/google/common/collect/Table;, "Lcom/google/common/collect/Table<***>;"
     :cond_1
     const/4 v1, 0x0
 
@@ -118,7 +118,7 @@
 
     .prologue
     .line 328
-    .local p0, this:Lcom/google/common/collect/ImmutableTable;,"Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableTable;, "Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -147,7 +147,7 @@
 
     .prologue
     .line 332
-    .local p0, this:Lcom/google/common/collect/ImmutableTable;,"Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ImmutableTable;, "Lcom/google/common/collect/ImmutableTable<TR;TC;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->rowMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0

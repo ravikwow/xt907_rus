@@ -26,8 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;J)V
     .locals 0
-    .parameter
-    .parameter
 
     .prologue
     .line 603
@@ -35,7 +33,7 @@
 
     iput-wide p2, p0, Lcom/android/providers/downloads/ui/DownloadList$5;->val$downloadId:J
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,8 +42,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .parameter "dialog"
-    .parameter "which"
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
+    .param p2, "which"    # I
 
     .prologue
     .line 606
@@ -53,7 +51,7 @@
 
     iget-wide v1, p0, Lcom/android/providers/downloads/ui/DownloadList$5;->val$downloadId:J
 
-    #calls: Lcom/android/providers/downloads/ui/DownloadList;->deleteDownload(J)V
+    # invokes: Lcom/android/providers/downloads/ui/DownloadList;->deleteDownload(J)V
     invoke-static {v0, v1, v2}, Lcom/android/providers/downloads/ui/DownloadList;->access$1300(Lcom/android/providers/downloads/ui/DownloadList;J)V
 
     .line 607

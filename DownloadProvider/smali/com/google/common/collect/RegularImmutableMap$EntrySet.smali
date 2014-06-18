@@ -42,7 +42,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/RegularImmutableMap;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,9 +52,9 @@
 
     .prologue
     .line 202
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$EntrySet;,"Lcom/google/common/collect/RegularImmutableMap$EntrySet<TK;TV;>;"
-    .local p1, map:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
-    #getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$EntrySet;, "Lcom/google/common/collect/RegularImmutableMap$EntrySet<TK;TV;>;"
+    .local p1, "map":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    # getter for: Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     invoke-static {p1}, Lcom/google/common/collect/RegularImmutableMap;->access$000(Lcom/google/common/collect/RegularImmutableMap;)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     move-result-object v0
@@ -73,10 +72,10 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 5
-    .parameter "target"
+    .param p1, "target"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$EntrySet;,"Lcom/google/common/collect/RegularImmutableMap$EntrySet<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$EntrySet;, "Lcom/google/common/collect/RegularImmutableMap$EntrySet<TK;TV;>;"
     const/4 v2, 0x0
 
     .line 207
@@ -90,7 +89,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 209
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     iget-object v3, p0, Lcom/google/common/collect/RegularImmutableMap$EntrySet;->map:Lcom/google/common/collect/RegularImmutableMap;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -102,7 +101,7 @@
     move-result-object v1
 
     .line 210
-    .local v1, mappedValue:Ljava/lang/Object;,"TV;"
+    .local v1, "mappedValue":Ljava/lang/Object;, "TV;"
     if-eqz v1, :cond_0
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -118,8 +117,8 @@
     const/4 v2, 0x1
 
     .line 212
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
-    .end local v1           #mappedValue:Ljava/lang/Object;,"TV;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
+    .end local v1    # "mappedValue":Ljava/lang/Object;, "TV;"
     :cond_0
     return v2
 .end method

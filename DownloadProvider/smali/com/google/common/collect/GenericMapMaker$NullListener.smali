@@ -69,8 +69,6 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -86,7 +84,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/GenericMapMaker$NullListener;
     .locals 1
-    .parameter "name"
+    .param p0, "name"    # Ljava/lang/String;
 
     .prologue
     .line 43
@@ -121,7 +119,6 @@
 # virtual methods
 .method public onRemoval(Lcom/google/common/collect/MapMaker$RemovalNotification;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -135,6 +132,6 @@
 
     .prologue
     .line 48
-    .local p1, notification:Lcom/google/common/collect/MapMaker$RemovalNotification;,"Lcom/google/common/collect/MapMaker$RemovalNotification<Ljava/lang/Object;Ljava/lang/Object;>;"
+    .local p1, "notification":Lcom/google/common/collect/MapMaker$RemovalNotification;, "Lcom/google/common/collect/MapMaker$RemovalNotification<Ljava/lang/Object;Ljava/lang/Object;>;"
     return-void
 .end method

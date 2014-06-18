@@ -46,11 +46,10 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 3157
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;,"Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;, "Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;->this$0:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue;
 
     invoke-direct {p0}, Lcom/google/common/collect/MapMakerInternalMap$AbstractReferenceEntry;-><init>()V
@@ -78,7 +77,7 @@
 
     .prologue
     .line 3163
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;,"Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;, "Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;->nextEvictable:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     return-object v0
@@ -96,7 +95,7 @@
 
     .prologue
     .line 3175
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;,"Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;, "Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;->previousEvictable:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     return-object v0
@@ -104,7 +103,6 @@
 
 .method public setNextEvictable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,8 +113,8 @@
 
     .prologue
     .line 3168
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;,"Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
-    .local p1, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;, "Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
+    .local p1, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;->nextEvictable:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 3169
@@ -125,7 +123,6 @@
 
 .method public setPreviousEvictable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,8 +133,8 @@
 
     .prologue
     .line 3180
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;,"Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
-    .local p1, previous:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;, "Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue.1;"
+    .local p1, "previous":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$EvictionQueue$1;->previousEvictable:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     .line 3181

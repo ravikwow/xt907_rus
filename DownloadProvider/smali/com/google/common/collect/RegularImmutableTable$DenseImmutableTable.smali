@@ -86,16 +86,16 @@
 
     .prologue
     .line 409
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v4
 
     .line 410
-    .local v4, rowMapBuilder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TR;Ljava/util/Map<TC;TV;>;>;"
+    .local v4, "rowMapBuilder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TR;Ljava/util/Map<TC;TV;>;>;"
     const/4 v2, 0x0
 
-    .local v2, r:I
+    .local v2, "r":I
     :goto_0
     iget-object v6, p0, Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;->values:[[Ljava/lang/Object;
 
@@ -109,16 +109,16 @@
     aget-object v3, v6, v2
 
     .line 412
-    .local v3, row:[Ljava/lang/Object;,"[TV;"
+    .local v3, "row":[Ljava/lang/Object;, "[TV;"
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v1
 
     .line 413
-    .local v1, columnMapBuilder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TC;TV;>;"
+    .local v1, "columnMapBuilder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TC;TV;>;"
     const/4 v0, 0x0
 
-    .local v0, c:I
+    .local v0, "c":I
     :goto_1
     array-length v6, v3
 
@@ -128,7 +128,7 @@
     aget-object v5, v3, v0
 
     .line 415
-    .local v5, value:Ljava/lang/Object;,"TV;"
+    .local v5, "value":Ljava/lang/Object;, "TV;"
     if-eqz v5, :cond_0
 
     .line 416
@@ -155,7 +155,7 @@
     goto :goto_1
 
     .line 419
-    .end local v5           #value:Ljava/lang/Object;,"TV;"
+    .end local v5    # "value":Ljava/lang/Object;, "TV;"
     :cond_1
     iget-object v6, p0, Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableBiMap;
 
@@ -183,9 +183,9 @@
     goto :goto_0
 
     .line 422
-    .end local v0           #c:I
-    .end local v1           #columnMapBuilder:Lcom/google/common/collect/ImmutableMap$Builder;,"Lcom/google/common/collect/ImmutableMap$Builder<TC;TV;>;"
-    .end local v3           #row:[Ljava/lang/Object;,"[TV;"
+    .end local v0    # "c":I
+    .end local v1    # "columnMapBuilder":Lcom/google/common/collect/ImmutableMap$Builder;, "Lcom/google/common/collect/ImmutableMap$Builder<TC;TV;>;"
+    .end local v3    # "row":[Ljava/lang/Object;, "[TV;"
     :cond_2
     invoke-virtual {v4}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 273
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
     invoke-super {p0}, Lcom/google/common/collect/RegularImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -223,11 +223,11 @@
 
     .prologue
     .line 426
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable<TR;TC;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$DenseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
     .line 427
-    .local v0, result:Lcom/google/common/collect/ImmutableMap;,"Lcom/google/common/collect/ImmutableMap<TR;Ljava/util/Map<TC;TV;>;>;"
+    .local v0, "result":Lcom/google/common/collect/ImmutableMap;, "Lcom/google/common/collect/ImmutableMap<TR;Ljava/util/Map<TC;TV;>;>;"
     if-nez v0, :cond_0
 
     .line 428

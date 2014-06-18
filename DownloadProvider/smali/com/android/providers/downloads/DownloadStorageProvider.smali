@@ -109,8 +109,8 @@
 
 .method private static addExtension(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .parameter "mimeType"
-    .parameter "name"
+    .param p0, "mimeType"    # Ljava/lang/String;
+    .param p1, "name"    # Ljava/lang/String;
 
     .prologue
     .line 374
@@ -123,7 +123,7 @@
     move-result-object v0
 
     .line 376
-    .local v0, extension:Ljava/lang/String;
+    .local v0, "extension":Ljava/lang/String;
     if-eqz v0, :cond_0
 
     .line 377
@@ -150,15 +150,15 @@
     move-result-object p1
 
     .line 379
-    .end local p1
+    .end local p1    # "name":Ljava/lang/String;
     :cond_0
     return-object p1
 .end method
 
 .method private copyNotificationUri(Landroid/database/MatrixCursor;Landroid/database/Cursor;)V
     .locals 2
-    .parameter "result"
-    .parameter "cursor"
+    .param p1, "result"    # Landroid/database/MatrixCursor;
+    .param p2, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 83
@@ -182,7 +182,7 @@
 
 .method private includeDefaultDocument(Landroid/database/MatrixCursor;)V
     .locals 3
-    .parameter "result"
+    .param p1, "result"    # Landroid/database/MatrixCursor;
 
     .prologue
     .line 282
@@ -191,7 +191,7 @@
     move-result-object v0
 
     .line 283
-    .local v0, row:Landroid/database/MatrixCursor$RowBuilder;
+    .local v0, "row":Landroid/database/MatrixCursor$RowBuilder;
     const-string v1, "document_id"
 
     const-string v2, "downloads"
@@ -222,8 +222,8 @@
 
 .method private includeDownloadFromCursor(Landroid/database/MatrixCursor;Landroid/database/Cursor;)V
     .locals 23
-    .parameter "result"
-    .parameter "cursor"
+    .param p1, "result"    # Landroid/database/MatrixCursor;
+    .param p2, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 290
@@ -246,13 +246,13 @@
     move-result-wide v5
 
     .line 291
-    .local v5, id:J
+    .local v5, "id":J
     invoke-static {v5, v6}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v3
 
     .line 293
-    .local v3, docId:Ljava/lang/String;
+    .local v3, "docId":Ljava/lang/String;
     const-string v18, "title"
 
     move-object/from16 v0, p2
@@ -272,7 +272,7 @@
     move-result-object v2
 
     .line 295
-    .local v2, displayName:Ljava/lang/String;
+    .local v2, "displayName":Ljava/lang/String;
     const-string v18, "description"
 
     move-object/from16 v0, p2
@@ -292,7 +292,7 @@
     move-result-object v17
 
     .line 297
-    .local v17, summary:Ljava/lang/String;
+    .local v17, "summary":Ljava/lang/String;
     const-string v18, "media_type"
 
     move-object/from16 v0, p2
@@ -312,7 +312,7 @@
     move-result-object v9
 
     .line 299
-    .local v9, mimeType:Ljava/lang/String;
+    .local v9, "mimeType":Ljava/lang/String;
     if-nez v9, :cond_0
 
     .line 301
@@ -343,7 +343,7 @@
     move-result-object v15
 
     .line 305
-    .local v15, size:Ljava/lang/Long;
+    .local v15, "size":Ljava/lang/Long;
     invoke-virtual {v15}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v18
@@ -378,7 +378,7 @@
     move-result v16
 
     .line 311
-    .local v16, status:I
+    .local v16, "status":I
     packed-switch v16, :pswitch_data_0
 
     .line 332
@@ -399,7 +399,7 @@
     const/4 v4, 0x6
 
     .line 337
-    .local v4, flags:I
+    .local v4, "flags":I
     if-eqz v9, :cond_2
 
     const-string v18, "image/"
@@ -436,13 +436,13 @@
     move-result-wide v7
 
     .line 344
-    .local v7, lastModified:J
+    .local v7, "lastModified":J
     invoke-virtual/range {p1 .. p1}, Landroid/database/MatrixCursor;->newRow()Landroid/database/MatrixCursor$RowBuilder;
 
     move-result-object v14
 
     .line 345
-    .local v14, row:Landroid/database/MatrixCursor$RowBuilder;
+    .local v14, "row":Landroid/database/MatrixCursor$RowBuilder;
     const-string v18, "document_id"
 
     move-object/from16 v0, v18
@@ -509,9 +509,9 @@
     return-void
 
     .line 315
-    .end local v4           #flags:I
-    .end local v7           #lastModified:J
-    .end local v14           #row:Landroid/database/MatrixCursor$RowBuilder;
+    .end local v4    # "flags":I
+    .end local v7    # "lastModified":J
+    .end local v14    # "row":Landroid/database/MatrixCursor$RowBuilder;
     :pswitch_2
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/downloads/DownloadStorageProvider;->getContext()Landroid/content/Context;
 
@@ -562,7 +562,7 @@
     move-result-wide v12
 
     .line 323
-    .local v12, progress:J
+    .local v12, "progress":J
     if-eqz v15, :cond_3
 
     .line 324
@@ -577,7 +577,7 @@
     div-long v10, v18, v20
 
     .line 325
-    .local v10, percent:J
+    .local v10, "percent":J
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/downloads/DownloadStorageProvider;->getContext()Landroid/content/Context;
 
     move-result-object v18
@@ -608,7 +608,7 @@
     goto/16 :goto_0
 
     .line 327
-    .end local v10           #percent:J
+    .end local v10    # "percent":J
     :cond_3
     invoke-virtual/range {p0 .. p0}, Lcom/android/providers/downloads/DownloadStorageProvider;->getContext()Landroid/content/Context;
 
@@ -639,8 +639,8 @@
 
 .method static onDownloadProviderDelete(Landroid/content/Context;J)V
     .locals 3
-    .parameter "context"
-    .parameter "id"
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "id"    # J
 
     .prologue
     .line 87
@@ -655,7 +655,7 @@
     move-result-object v0
 
     .line 88
-    .local v0, uri:Landroid/net/Uri;
+    .local v0, "uri":Landroid/net/Uri;
     const/4 v1, -0x1
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->revokeUriPermission(Landroid/net/Uri;I)V
@@ -666,8 +666,8 @@
 
 .method private static removeExtension(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .parameter "mimeType"
-    .parameter "name"
+    .param p0, "mimeType"    # Ljava/lang/String;
+    .param p1, "name"    # Ljava/lang/String;
 
     .prologue
     .line 359
@@ -678,7 +678,7 @@
     move-result v1
 
     .line 360
-    .local v1, lastDot:I
+    .local v1, "lastDot":I
     if-ltz v1, :cond_0
 
     .line 361
@@ -689,7 +689,7 @@
     move-result-object v0
 
     .line 362
-    .local v0, extension:Ljava/lang/String;
+    .local v0, "extension":Ljava/lang/String;
     invoke-static {}, Landroid/webkit/MimeTypeMap;->getSingleton()Landroid/webkit/MimeTypeMap;
 
     move-result-object v3
@@ -699,7 +699,7 @@
     move-result-object v2
 
     .line 363
-    .local v2, nameMime:Ljava/lang/String;
+    .local v2, "nameMime":Ljava/lang/String;
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -714,26 +714,26 @@
     move-result-object p1
 
     .line 367
-    .end local v0           #extension:Ljava/lang/String;
-    .end local v2           #nameMime:Ljava/lang/String;
-    .end local p1
+    .end local v0    # "extension":Ljava/lang/String;
+    .end local v2    # "nameMime":Ljava/lang/String;
+    .end local p1    # "name":Ljava/lang/String;
     :cond_0
     return-object p1
 .end method
 
 .method private static resolveDocumentProjection([Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .parameter "projection"
+    .param p0, "projection"    # [Ljava/lang/String;
 
     .prologue
     .line 79
     if-eqz p0, :cond_0
 
-    .end local p0
+    .end local p0    # "projection":[Ljava/lang/String;
     :goto_0
     return-object p0
 
-    .restart local p0
+    .restart local p0    # "projection":[Ljava/lang/String;
     :cond_0
     sget-object p0, Lcom/android/providers/downloads/DownloadStorageProvider;->DEFAULT_DOCUMENT_PROJECTION:[Ljava/lang/String;
 
@@ -742,17 +742,17 @@
 
 .method private static resolveRootProjection([Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .parameter "projection"
+    .param p0, "projection"    # [Ljava/lang/String;
 
     .prologue
     .line 75
     if-eqz p0, :cond_0
 
-    .end local p0
+    .end local p0    # "projection":[Ljava/lang/String;
     :goto_0
     return-object p0
 
-    .restart local p0
+    .restart local p0    # "projection":[Ljava/lang/String;
     :cond_0
     sget-object p0, Lcom/android/providers/downloads/DownloadStorageProvider;->DEFAULT_ROOT_PROJECTION:[Ljava/lang/String;
 
@@ -763,9 +763,9 @@
 # virtual methods
 .method public createDocument(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 18
-    .parameter "docId"
-    .parameter "mimeType"
-    .parameter "displayName"
+    .param p1, "docId"    # Ljava/lang/String;
+    .param p2, "mimeType"    # Ljava/lang/String;
+    .param p3, "displayName"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -802,7 +802,7 @@
     move-result-object v15
 
     .line 113
-    .local v15, parent:Ljava/io/File;
+    .local v15, "parent":Ljava/io/File;
     invoke-virtual {v15}, Ljava/io/File;->mkdirs()Z
 
     .line 116
@@ -811,7 +811,7 @@
     move-result-wide v16
 
     .line 118
-    .local v16, token:J
+    .local v16, "token":J
     :try_start_0
     invoke-static/range {p2 .. p3}, Lcom/android/providers/downloads/DownloadStorageProvider;->removeExtension(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -827,15 +827,15 @@
     invoke-direct {v12, v15, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 122
-    .local v12, file:Ljava/io/File;
+    .local v12, "file":Ljava/io/File;
     const/4 v13, 0x0
 
-    .local v13, n:I
+    .local v13, "n":I
     move v14, v13
 
     .line 123
-    .end local v13           #n:I
-    .local v14, n:I
+    .end local v13    # "n":I
+    .local v14, "n":I
     :goto_0
     invoke-virtual {v12}, Ljava/io/File;->exists()Z
 
@@ -845,8 +845,8 @@
 
     add-int/lit8 v13, v14, 0x1
 
-    .end local v14           #n:I
-    .restart local v13       #n:I
+    .end local v14    # "n":I
+    .restart local v13    # "n":I
     const/16 v1, 0x20
 
     if-ge v14, v1, :cond_2
@@ -854,7 +854,7 @@
     .line 124
     new-instance v12, Ljava/io/File;
 
-    .end local v12           #file:Ljava/io/File;
+    .end local v12    # "file":Ljava/io/File;
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -895,19 +895,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .restart local v12       #file:Ljava/io/File;
+    .restart local v12    # "file":Ljava/io/File;
     move v14, v13
 
-    .end local v13           #n:I
-    .restart local v14       #n:I
+    .end local v13    # "n":I
+    .restart local v14    # "n":I
     goto :goto_0
 
     :cond_1
     move v13, v14
 
     .line 128
-    .end local v14           #n:I
-    .restart local v13       #n:I
+    .end local v14    # "n":I
+    .restart local v13    # "n":I
     :cond_2
     :try_start_1
     invoke-virtual {v12}, Ljava/io/File;->createNewFile()Z
@@ -941,15 +941,15 @@
 
     throw v1
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 131
     :catch_0
     move-exception v11
 
     .line 132
-    .local v11, e:Ljava/io/IOException;
+    .local v11, "e":Ljava/io/IOException;
     :try_start_2
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -988,9 +988,9 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 139
-    .end local v11           #e:Ljava/io/IOException;
-    .end local v12           #file:Ljava/io/File;
-    .end local v13           #n:I
+    .end local v11    # "e":Ljava/io/IOException;
+    .end local v12    # "file":Ljava/io/File;
+    .end local v13    # "n":I
     :catchall_0
     move-exception v1
 
@@ -999,8 +999,8 @@
     throw v1
 
     .line 135
-    .restart local v12       #file:Ljava/io/File;
-    .restart local v13       #n:I
+    .restart local v12    # "file":Ljava/io/File;
+    .restart local v13    # "n":I
     :cond_3
     :try_start_3
     move-object/from16 v0, p0
@@ -1048,7 +1048,7 @@
 
 .method public deleteDocument(Ljava/lang/String;)V
     .locals 8
-    .parameter "docId"
+    .param p1, "docId"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1064,7 +1064,7 @@
     move-result-wide v0
 
     .line 148
-    .local v0, token:J
+    .local v0, "token":J
     :try_start_0
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
@@ -1160,9 +1160,9 @@
 
 .method public openDocument(Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .parameter "docId"
-    .parameter "mode"
-    .parameter "signal"
+    .param p1, "docId"    # Ljava/lang/String;
+    .param p2, "mode"    # Ljava/lang/String;
+    .param p3, "signal"    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1176,14 +1176,14 @@
     move-result-wide v3
 
     .line 265
-    .local v3, token:J
+    .local v3, "token":J
     :try_start_0
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v0
 
     .line 266
-    .local v0, id:J
+    .local v0, "id":J
     invoke-virtual {p0}, Lcom/android/providers/downloads/DownloadStorageProvider;->getContext()Landroid/content/Context;
 
     move-result-object v5
@@ -1193,7 +1193,7 @@
     move-result-object v2
 
     .line 267
-    .local v2, resolver:Landroid/content/ContentResolver;
+    .local v2, "resolver":Landroid/content/ContentResolver;
     iget-object v5, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
     invoke-virtual {v5, v0, v1}, Landroid/app/DownloadManager;->getDownloadUri(J)Landroid/net/Uri;
@@ -1213,8 +1213,8 @@
     return-object v5
 
     .line 269
-    .end local v0           #id:J
-    .end local v2           #resolver:Landroid/content/ContentResolver;
+    .end local v0    # "id":J
+    .end local v2    # "resolver":Landroid/content/ContentResolver;
     :catchall_0
     move-exception v5
 
@@ -1225,9 +1225,9 @@
 
 .method public openDocumentThumbnail(Ljava/lang/String;Landroid/graphics/Point;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;
     .locals 6
-    .parameter "docId"
-    .parameter "sizeHint"
-    .parameter "signal"
+    .param p1, "docId"    # Ljava/lang/String;
+    .param p2, "sizeHint"    # Landroid/graphics/Point;
+    .param p3, "signal"    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1243,7 +1243,7 @@
     move-result-object v1
 
     .line 278
-    .local v1, pfd:Landroid/os/ParcelFileDescriptor;
+    .local v1, "pfd":Landroid/os/ParcelFileDescriptor;
     new-instance v0, Landroid/content/res/AssetFileDescriptor;
 
     const-wide/16 v2, 0x0
@@ -1257,9 +1257,9 @@
 
 .method public queryChildDocuments(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .parameter "docId"
-    .parameter "projection"
-    .parameter "sortOrder"
+    .param p1, "docId"    # Ljava/lang/String;
+    .param p2, "projection"    # [Ljava/lang/String;
+    .param p3, "sortOrder"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1277,17 +1277,17 @@
     invoke-direct {v1, v4}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
     .line 186
-    .local v1, result:Landroid/database/MatrixCursor;
+    .local v1, "result":Landroid/database/MatrixCursor;
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
     .line 187
-    .local v2, token:J
+    .local v2, "token":J
     const/4 v0, 0x0
 
     .line 189
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
@@ -1353,9 +1353,9 @@
 
 .method public queryChildDocumentsForManage(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .parameter "parentDocumentId"
-    .parameter "projection"
-    .parameter "sortOrder"
+    .param p1, "parentDocumentId"    # Ljava/lang/String;
+    .param p2, "projection"    # [Ljava/lang/String;
+    .param p3, "sortOrder"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1373,17 +1373,17 @@
     invoke-direct {v1, v4}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
     .line 209
-    .local v1, result:Landroid/database/MatrixCursor;
+    .local v1, "result":Landroid/database/MatrixCursor;
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
     .line 210
-    .local v2, token:J
+    .local v2, "token":J
     const/4 v0, 0x0
 
     .line 212
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
@@ -1443,8 +1443,8 @@
 
 .method public queryDocument(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .parameter "docId"
-    .parameter "projection"
+    .param p1, "docId"    # Ljava/lang/String;
+    .param p2, "projection"    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1462,7 +1462,7 @@
     invoke-direct {v1, v4}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
     .line 160
-    .local v1, result:Landroid/database/MatrixCursor;
+    .local v1, "result":Landroid/database/MatrixCursor;
     const-string v4, "downloads"
 
     invoke-virtual {v4, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1485,11 +1485,11 @@
     move-result-wide v2
 
     .line 165
-    .local v2, token:J
+    .local v2, "token":J
     const/4 v0, 0x0
 
     .line 167
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
@@ -1556,8 +1556,8 @@
 
 .method public queryRecentDocuments(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 9
-    .parameter "rootId"
-    .parameter "projection"
+    .param p1, "rootId"    # Ljava/lang/String;
+    .param p2, "projection"    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1575,17 +1575,17 @@
     invoke-direct {v2, v6}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
     .line 231
-    .local v2, result:Landroid/database/MatrixCursor;
+    .local v2, "result":Landroid/database/MatrixCursor;
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v3
 
     .line 232
-    .local v3, token:J
+    .local v3, "token":J
     const/4 v0, 0x0
 
     .line 234
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     iget-object v6, p0, Lcom/android/providers/downloads/DownloadStorageProvider;->mDm:Landroid/app/DownloadManager;
 
@@ -1641,7 +1641,7 @@
     move-result-object v1
 
     .line 240
-    .local v1, mimeType:Ljava/lang/String;
+    .local v1, "mimeType":Ljava/lang/String;
     const-string v6, "mediaprovider_uri"
 
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -1653,7 +1653,7 @@
     move-result-object v5
 
     .line 245
-    .local v5, uri:Ljava/lang/String;
+    .local v5, "uri":Ljava/lang/String;
     if-eqz v1, :cond_0
 
     const-string v6, "image/"
@@ -1679,8 +1679,8 @@
     goto :goto_0
 
     .line 253
-    .end local v1           #mimeType:Ljava/lang/String;
-    .end local v5           #uri:Ljava/lang/String;
+    .end local v1    # "mimeType":Ljava/lang/String;
+    .end local v5    # "uri":Ljava/lang/String;
     :catchall_0
     move-exception v6
 
@@ -1704,7 +1704,7 @@
 
 .method public queryRoots([Ljava/lang/String;)Landroid/database/Cursor;
     .locals 5
-    .parameter "projection"
+    .param p1, "projection"    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1722,13 +1722,13 @@
     invoke-direct {v0, v2}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;)V
 
     .line 94
-    .local v0, result:Landroid/database/MatrixCursor;
+    .local v0, "result":Landroid/database/MatrixCursor;
     invoke-virtual {v0}, Landroid/database/MatrixCursor;->newRow()Landroid/database/MatrixCursor$RowBuilder;
 
     move-result-object v1
 
     .line 95
-    .local v1, row:Landroid/database/MatrixCursor$RowBuilder;
+    .local v1, "row":Landroid/database/MatrixCursor$RowBuilder;
     const-string v2, "root_id"
 
     const-string v3, "downloads"
@@ -1749,7 +1749,7 @@
     .line 98
     const-string v2, "icon"
 
-    const/high16 v3, 0x7f02
+    const/high16 v3, 0x7f020000
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

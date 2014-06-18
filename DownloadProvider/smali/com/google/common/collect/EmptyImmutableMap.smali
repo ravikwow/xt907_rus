@@ -50,7 +50,7 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 51
@@ -61,7 +61,7 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 55
@@ -108,7 +108,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 71
@@ -122,13 +122,13 @@
     check-cast v0, Ljava/util/Map;
 
     .line 73
-    .local v0, that:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .local v0, "that":Ljava/util/Map;, "Ljava/util/Map<**>;"
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v1
 
     .line 75
-    .end local v0           #that:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .end local v0    # "that":Ljava/util/Map;, "Ljava/util/Map<**>;"
     :goto_0
     return v1
 
@@ -140,7 +140,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 38

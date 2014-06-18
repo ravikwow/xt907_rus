@@ -33,15 +33,15 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/providers/downloads/SystemFacade;Lcom/android/providers/downloads/DownloadInfo;Lcom/android/providers/downloads/StorageManager;Lcom/android/providers/downloads/DownloadNotifier;)V
     .locals 1
-    .parameter "context"
-    .parameter "systemFacade"
-    .parameter "info"
-    .parameter "storageManager"
-    .parameter "notifier"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "systemFacade"    # Lcom/android/providers/downloads/SystemFacade;
+    .param p3, "info"    # Lcom/android/providers/downloads/DownloadInfo;
+    .param p4, "storageManager"    # Lcom/android/providers/downloads/StorageManager;
+    .param p5, "notifier"    # Lcom/android/providers/downloads/DownloadNotifier;
 
     .prologue
     .line 102
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 928
     new-instance v0, Lcom/android/providers/downloads/DownloadThread$1;
@@ -71,7 +71,7 @@
 
 .method static synthetic access$000(Lcom/android/providers/downloads/DownloadThread;)Lcom/android/providers/downloads/DownloadInfo;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadThread;
 
     .prologue
     .line 80
@@ -82,8 +82,8 @@
 
 .method static synthetic access$102(Lcom/android/providers/downloads/DownloadThread;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Lcom/android/providers/downloads/DownloadThread;
+    .param p1, "x1"    # Z
 
     .prologue
     .line 80
@@ -94,7 +94,6 @@
 
 .method private addCheckin(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 11
-    .parameter
 
     .prologue
     const/16 v6, 0x8
@@ -311,8 +310,6 @@
 
 .method private addRequestHeaders(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     .locals 4
-    .parameter
-    .parameter
 
     .prologue
     .line 875
@@ -435,7 +432,7 @@
 
 .method private cannotResume(Lcom/android/providers/downloads/DownloadThread$State;)Z
     .locals 4
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
 
     .prologue
     .line 667
@@ -500,7 +497,7 @@
     move-result-object v0
 
     .line 490
-    .local v0, networkUsable:Lcom/android/providers/downloads/DownloadInfo$NetworkState;
+    .local v0, "networkUsable":Lcom/android/providers/downloads/DownloadInfo$NetworkState;
     sget-object v2, Lcom/android/providers/downloads/DownloadInfo$NetworkState;->OK:Lcom/android/providers/downloads/DownloadInfo$NetworkState;
 
     if-eq v0, v2, :cond_2
@@ -509,7 +506,7 @@
     const/16 v1, 0xc3
 
     .line 492
-    .local v1, status:I
+    .local v1, "status":I
     sget-object v2, Lcom/android/providers/downloads/DownloadInfo$NetworkState;->UNUSABLE_DUE_TO_SIZE:Lcom/android/providers/downloads/DownloadInfo$NetworkState;
 
     if-ne v0, v2, :cond_1
@@ -554,14 +551,14 @@
     goto :goto_0
 
     .line 501
-    .end local v1           #status:I
+    .end local v1    # "status":I
     :cond_2
     return-void
 .end method
 
 .method private checkPausedOrCanceled(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 4
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -655,8 +652,8 @@
 
 .method private cleanupDestination(Lcom/android/providers/downloads/DownloadThread$State;I)V
     .locals 3
-    .parameter "state"
-    .parameter "finalStatus"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "finalStatus"    # I
 
     .prologue
     .line 546
@@ -722,7 +719,7 @@
 
 .method private executeDownload(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 9
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -784,8 +781,8 @@
     return-void
 
     .line 350
-    .local v1, conn:Ljava/net/HttpURLConnection;
-    .local v4, responseCode:I
+    .local v1, "conn":Ljava/net/HttpURLConnection;
+    .local v4, "responseCode":I
     :sswitch_0
     :try_start_0
     const-string v5, "Location"
@@ -795,7 +792,7 @@
     move-result-object v3
 
     .line 351
-    .local v3, location:Ljava/lang/String;
+    .local v3, "location":Ljava/lang/String;
     new-instance v5, Ljava/net/URL;
 
     iget-object v6, p1, Lcom/android/providers/downloads/DownloadThread$State;->mUrl:Ljava/net/URL;
@@ -818,20 +815,20 @@
 
     iput-object v5, p1, Lcom/android/providers/downloads/DownloadThread$State;->mRequestUri:Ljava/lang/String;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 380
     :cond_1
     if-eqz v1, :cond_2
 
-    .end local v3           #location:Ljava/lang/String;
+    .end local v3    # "location":Ljava/lang/String;
     :goto_1
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     .line 314
-    .end local v1           #conn:Ljava/net/HttpURLConnection;
-    .end local v4           #responseCode:I
+    .end local v1    # "conn":Ljava/net/HttpURLConnection;
+    .end local v4    # "responseCode":I
     :cond_2
     iget v5, p1, Lcom/android/providers/downloads/DownloadThread$State;->mRedirectionCount:I
 
@@ -847,7 +844,7 @@
     const/4 v1, 0x0
 
     .line 319
-    .restart local v1       #conn:Ljava/net/HttpURLConnection;
+    .restart local v1    # "conn":Ljava/net/HttpURLConnection;
     :try_start_1
     invoke-direct {p0}, Lcom/android/providers/downloads/DownloadThread;->checkConnectivity()V
 
@@ -888,7 +885,7 @@
     move-result v4
 
     .line 328
-    .restart local v4       #responseCode:I
+    .restart local v4    # "responseCode":I
     sparse-switch v4, :sswitch_data_0
 
     .line 372
@@ -920,16 +917,16 @@
 
     throw v5
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 375
-    .end local v4           #responseCode:I
+    .end local v4    # "responseCode":I
     :catch_0
     move-exception v2
 
     .line 377
-    .local v2, e:Ljava/io/IOException;
+    .local v2, "e":Ljava/io/IOException;
     :try_start_2
     new-instance v5, Lcom/android/providers/downloads/StopRequestException;
 
@@ -942,7 +939,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 380
-    .end local v2           #e:Ljava/io/IOException;
+    .end local v2    # "e":Ljava/io/IOException;
     :catchall_0
     move-exception v5
 
@@ -954,7 +951,7 @@
     throw v5
 
     .line 334
-    .restart local v4       #responseCode:I
+    .restart local v4    # "responseCode":I
     :cond_4
     :try_start_3
     invoke-direct {p0, p1, v1}, Lcom/android/providers/downloads/DownloadThread;->processResponseHeaders(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
@@ -962,8 +959,8 @@
     .line 335
     invoke-direct {p0, p1, v1}, Lcom/android/providers/downloads/DownloadThread;->transferData(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 380
     if-eqz v1, :cond_0
@@ -1043,12 +1040,12 @@
 
     throw v5
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 384
-    .end local v1           #conn:Ljava/net/HttpURLConnection;
-    .end local v4           #responseCode:I
+    .end local v1    # "conn":Ljava/net/HttpURLConnection;
+    .end local v4    # "responseCode":I
     :cond_6
     new-instance v5, Lcom/android/providers/downloads/StopRequestException;
 
@@ -1077,7 +1074,7 @@
 
 .method private finalizeDestinationFile(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 3
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
 
     .prologue
     const/4 v2, -0x1
@@ -1101,9 +1098,9 @@
 
 .method public static getHeaderFieldLong(Ljava/net/URLConnection;Ljava/lang/String;J)J
     .locals 2
-    .parameter "conn"
-    .parameter "field"
-    .parameter "defaultValue"
+    .param p0, "conn"    # Ljava/net/URLConnection;
+    .param p1, "field"    # Ljava/lang/String;
+    .param p2, "defaultValue"    # J
 
     .prologue
     .line 996
@@ -1119,23 +1116,23 @@
     move-result-wide p2
 
     .line 998
-    .end local p2
+    .end local p2    # "defaultValue":J
     :goto_0
     return-wide p2
 
     .line 997
-    .restart local p2
+    .restart local p2    # "defaultValue":J
     :catch_0
     move-exception v0
 
     .line 998
-    .local v0, e:Ljava/lang/NumberFormatException;
+    .local v0, "e":Ljava/lang/NumberFormatException;
     goto :goto_0
 .end method
 
 .method private handleEndOfStream(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 8
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1153,7 +1150,7 @@
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
     .line 647
-    .local v1, values:Landroid/content/ContentValues;
+    .local v1, "values":Landroid/content/ContentValues;
     const-string v2, "current_bytes"
 
     iget-wide v3, p1, Lcom/android/providers/downloads/DownloadThread$State;->mCurrentBytes:J
@@ -1216,7 +1213,7 @@
     const/4 v0, 0x1
 
     .line 655
-    .local v0, lengthMismatched:Z
+    .local v0, "lengthMismatched":Z
     :goto_0
     if-eqz v0, :cond_3
 
@@ -1239,14 +1236,14 @@
     throw v2
 
     .line 653
-    .end local v0           #lengthMismatched:Z
+    .end local v0    # "lengthMismatched":Z
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
 
     .line 660
-    .restart local v0       #lengthMismatched:Z
+    .restart local v0    # "lengthMismatched":Z
     :cond_2
     new-instance v2, Lcom/android/providers/downloads/StopRequestException;
 
@@ -1265,7 +1262,7 @@
 
 .method public static isStatusRetryable(I)Z
     .locals 1
-    .parameter "status"
+    .param p0, "status"    # I
 
     .prologue
     .line 1007
@@ -1296,10 +1293,10 @@
 
 .method private notifyDownloadCompleted(Lcom/android/providers/downloads/DownloadThread$State;ILjava/lang/String;I)V
     .locals 1
-    .parameter "state"
-    .parameter "finalStatus"
-    .parameter "errorMsg"
-    .parameter "numFailed"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "finalStatus"    # I
+    .param p3, "errorMsg"    # Ljava/lang/String;
+    .param p4, "numFailed"    # I
 
     .prologue
     .line 901
@@ -1324,10 +1321,6 @@
 
 .method private notifyThroughDatabase(Lcom/android/providers/downloads/DownloadThread$State;ILjava/lang/String;I)V
     .locals 5
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     const/4 v4, 0x0
@@ -1450,8 +1443,8 @@
 
 .method private parseRetryAfterHeaders(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     .locals 4
-    .parameter "state"
-    .parameter "conn"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "conn"    # Ljava/net/HttpURLConnection;
 
     .prologue
     const v3, 0x15180
@@ -1532,8 +1525,8 @@
 
 .method private processResponseHeaders(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     .locals 10
-    .parameter "state"
-    .parameter "conn"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "conn"    # Ljava/net/HttpURLConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1587,9 +1580,9 @@
 
 .method private readFromResponse(Lcom/android/providers/downloads/DownloadThread$State;[BLjava/io/InputStream;)I
     .locals 6
-    .parameter "state"
-    .parameter "data"
-    .parameter "entityStream"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "data"    # [B
+    .param p3, "entityStream"    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1616,7 +1609,7 @@
     move-exception v0
 
     .line 683
-    .local v0, ex:Ljava/io/IOException;
+    .local v0, "ex":Ljava/io/IOException;
     const-string v2, "unexpected end of stream"
 
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
@@ -1641,7 +1634,7 @@
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
     .line 688
-    .local v1, values:Landroid/content/ContentValues;
+    .local v1, "values":Landroid/content/ContentValues;
     const-string v2, "current_bytes"
 
     iget-wide v3, p1, Lcom/android/providers/downloads/DownloadThread$State;->mCurrentBytes:J
@@ -1738,8 +1731,8 @@
 
 .method private readResponseHeaders(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     .locals 7
-    .parameter "state"
-    .parameter "conn"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "conn"    # Ljava/net/HttpURLConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -1844,7 +1837,7 @@
     move-result-object v1
 
     .line 771
-    .local v1, transferEncoding:Ljava/lang/String;
+    .local v1, "transferEncoding":Ljava/lang/String;
     if-nez v1, :cond_4
 
     .line 772
@@ -1890,7 +1883,7 @@
     const/4 v0, 0x1
 
     .line 783
-    .local v0, noSizeInfo:Z
+    .local v0, "noSizeInfo":Z
     :goto_1
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadThread;->mInfo:Lcom/android/providers/downloads/DownloadInfo;
 
@@ -1912,7 +1905,7 @@
     throw v2
 
     .line 774
-    .end local v0           #noSizeInfo:Z
+    .end local v0    # "noSizeInfo":Z
     :cond_4
     const-string v2, "DownloadManager"
 
@@ -1932,14 +1925,14 @@
     goto :goto_1
 
     .line 787
-    .restart local v0       #noSizeInfo:Z
+    .restart local v0    # "noSizeInfo":Z
     :cond_6
     return-void
 .end method
 
 .method private reportProgress(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 12
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
 
     .prologue
     .line 580
@@ -1948,13 +1941,13 @@
     move-result-wide v0
 
     .line 582
-    .local v0, now:J
+    .local v0, "now":J
     iget-wide v7, p1, Lcom/android/providers/downloads/DownloadThread$State;->mSpeedSampleStart:J
 
     sub-long v2, v0, v7
 
     .line 583
-    .local v2, sampleDelta:J
+    .local v2, "sampleDelta":J
     const-wide/16 v7, 0x1f4
 
     cmp-long v7, v2, v7
@@ -1975,7 +1968,7 @@
     div-long v4, v7, v2
 
     .line 587
-    .local v4, sampleSpeed:J
+    .local v4, "sampleSpeed":J
     iget-wide v7, p1, Lcom/android/providers/downloads/DownloadThread$State;->mSpeed:J
 
     const-wide/16 v9, 0x0
@@ -2018,7 +2011,7 @@
     iput-wide v7, p1, Lcom/android/providers/downloads/DownloadThread$State;->mSpeedSampleBytes:J
 
     .line 602
-    .end local v4           #sampleSpeed:J
+    .end local v4    # "sampleSpeed":J
     :cond_1
     iget-wide v7, p1, Lcom/android/providers/downloads/DownloadThread$State;->mCurrentBytes:J
 
@@ -2048,7 +2041,7 @@
     invoke-direct {v6}, Landroid/content/ContentValues;-><init>()V
 
     .line 605
-    .local v6, values:Landroid/content/ContentValues;
+    .local v6, "values":Landroid/content/ContentValues;
     const-string v7, "current_bytes"
 
     iget-wide v8, p1, Lcom/android/providers/downloads/DownloadThread$State;->mCurrentBytes:J
@@ -2087,12 +2080,12 @@
     iput-wide v0, p1, Lcom/android/providers/downloads/DownloadThread$State;->mTimeLastNotification:J
 
     .line 610
-    .end local v6           #values:Landroid/content/ContentValues;
+    .end local v6    # "values":Landroid/content/ContentValues;
     :cond_2
     return-void
 
     .line 590
-    .restart local v4       #sampleSpeed:J
+    .restart local v4    # "sampleSpeed":J
     :cond_3
     iget-wide v7, p1, Lcom/android/providers/downloads/DownloadThread$State;->mSpeed:J
 
@@ -2194,15 +2187,15 @@
     invoke-direct {v12, v14}, Lcom/android/providers/downloads/DownloadThread$State;-><init>(Lcom/android/providers/downloads/DownloadInfo;)V
 
     .line 189
-    .local v12, state:Lcom/android/providers/downloads/DownloadThread$State;
+    .local v12, "state":Lcom/android/providers/downloads/DownloadThread$State;
     const/4 v13, 0x0
 
     .line 190
-    .local v13, wakeLock:Landroid/os/PowerManager$WakeLock;
+    .local v13, "wakeLock":Landroid/os/PowerManager$WakeLock;
     const/16 v6, 0x1eb
 
     .line 191
-    .local v6, finalStatus:I
+    .local v6, "finalStatus":I
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/providers/downloads/DownloadThread;->mInfo:Lcom/android/providers/downloads/DownloadInfo;
@@ -2210,11 +2203,11 @@
     iget v10, v14, Lcom/android/providers/downloads/DownloadInfo;->mNumFailed:I
 
     .line 192
-    .local v10, numFailed:I
+    .local v10, "numFailed":I
     const/4 v4, 0x0
 
     .line 194
-    .local v4, errorMsg:Ljava/lang/String;
+    .local v4, "errorMsg":Ljava/lang/String;
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/providers/downloads/DownloadThread;->mContext:Landroid/content/Context;
@@ -2224,7 +2217,7 @@
     move-result-object v9
 
     .line 195
-    .local v9, netPolicy:Landroid/net/NetworkPolicyManager;
+    .local v9, "netPolicy":Landroid/net/NetworkPolicyManager;
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/providers/downloads/DownloadThread;->mContext:Landroid/content/Context;
@@ -2238,7 +2231,7 @@
     check-cast v11, Landroid/os/PowerManager;
 
     .line 198
-    .local v11, pm:Landroid/os/PowerManager;
+    .local v11, "pm":Landroid/os/PowerManager;
     const/4 v14, 0x1
 
     :try_start_0
@@ -2328,7 +2321,7 @@
     move-result-object v7
 
     .line 210
-    .local v7, info:Landroid/net/NetworkInfo;
+    .local v7, "info":Landroid/net/NetworkInfo;
     if-eqz v7, :cond_1
 
     .line 211
@@ -2353,9 +2346,9 @@
 
     invoke-static {v14}, Landroid/net/TrafficStats;->setThreadStatsUid(I)V
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Lcom/android/providers/downloads/StopRequestException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 221
     :try_start_1
@@ -2367,10 +2360,10 @@
 
     iput-object v14, v12, Lcom/android/providers/downloads/DownloadThread$State;->mUrl:Ljava/net/URL;
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/net/MalformedURLException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Lcom/android/providers/downloads/StopRequestException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 226
     :try_start_2
@@ -2383,9 +2376,9 @@
 
     invoke-direct {v0, v12}, Lcom/android/providers/downloads/DownloadThread;->finalizeDestinationFile(Lcom/android/providers/downloads/DownloadThread$State;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Lcom/android/providers/downloads/StopRequestException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 229
     const/16 v6, 0xc8
@@ -2485,7 +2478,7 @@
     invoke-virtual {v13}, Landroid/os/PowerManager$WakeLock;->release()V
 
     .line 293
-    .end local v7           #info:Landroid/net/NetworkInfo;
+    .end local v7    # "info":Landroid/net/NetworkInfo;
     :goto_1
     const/4 v13, 0x0
 
@@ -2500,12 +2493,12 @@
     goto/16 :goto_0
 
     .line 222
-    .restart local v7       #info:Landroid/net/NetworkInfo;
+    .restart local v7    # "info":Landroid/net/NetworkInfo;
     :catch_0
     move-exception v2
 
     .line 223
-    .local v2, e:Ljava/net/MalformedURLException;
+    .local v2, "e":Ljava/net/MalformedURLException;
     :try_start_3
     new-instance v14, Lcom/android/providers/downloads/StopRequestException;
 
@@ -2515,18 +2508,18 @@
 
     throw v14
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Lcom/android/providers/downloads/StopRequestException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_2
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 230
-    .end local v2           #e:Ljava/net/MalformedURLException;
-    .end local v7           #info:Landroid/net/NetworkInfo;
+    .end local v2    # "e":Ljava/net/MalformedURLException;
+    .end local v7    # "info":Landroid/net/NetworkInfo;
     :catch_1
     move-exception v3
 
     .line 232
-    .local v3, error:Lcom/android/providers/downloads/StopRequestException;
+    .local v3, "error":Lcom/android/providers/downloads/StopRequestException;
     :try_start_4
     invoke-virtual {v3}, Lcom/android/providers/downloads/StopRequestException;->getMessage()Ljava/lang/String;
 
@@ -2568,7 +2561,7 @@
     move-result-object v8
 
     .line 234
-    .local v8, msg:Ljava/lang/String;
+    .local v8, "msg":Ljava/lang/String;
     const-string v14, "DownloadManager"
 
     invoke-static {v14, v8}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
@@ -2606,8 +2599,8 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 275
-    .end local v3           #error:Lcom/android/providers/downloads/StopRequestException;
-    .end local v8           #msg:Ljava/lang/String;
+    .end local v3    # "error":Lcom/android/providers/downloads/StopRequestException;
+    .end local v8    # "msg":Ljava/lang/String;
     :catchall_0
     move-exception v14
 
@@ -2712,8 +2705,8 @@
     throw v14
 
     .line 247
-    .restart local v3       #error:Lcom/android/providers/downloads/StopRequestException;
-    .restart local v8       #msg:Ljava/lang/String;
+    .restart local v3    # "error":Lcom/android/providers/downloads/StopRequestException;
+    .restart local v8    # "msg":Ljava/lang/String;
     :cond_7
     :try_start_5
     invoke-static {v6}, Lcom/android/providers/downloads/DownloadThread;->isStatusRetryable(I)Z
@@ -2752,7 +2745,7 @@
     move-result-object v7
 
     .line 256
-    .restart local v7       #info:Landroid/net/NetworkInfo;
+    .restart local v7    # "info":Landroid/net/NetworkInfo;
     if-eqz v7, :cond_b
 
     invoke-virtual {v7}, Landroid/net/NetworkInfo;->getType()I
@@ -2775,7 +2768,7 @@
     const/16 v6, 0xc2
 
     .line 275
-    .end local v7           #info:Landroid/net/NetworkInfo;
+    .end local v7    # "info":Landroid/net/NetworkInfo;
     :cond_8
     :goto_3
     const/16 v14, 0xc8
@@ -2880,21 +2873,21 @@
     goto/16 :goto_2
 
     .line 262
-    .restart local v7       #info:Landroid/net/NetworkInfo;
+    .restart local v7    # "info":Landroid/net/NetworkInfo;
     :cond_b
     const/16 v6, 0xc3
 
     goto :goto_3
 
     .line 268
-    .end local v3           #error:Lcom/android/providers/downloads/StopRequestException;
-    .end local v7           #info:Landroid/net/NetworkInfo;
-    .end local v8           #msg:Ljava/lang/String;
+    .end local v3    # "error":Lcom/android/providers/downloads/StopRequestException;
+    .end local v7    # "info":Landroid/net/NetworkInfo;
+    .end local v8    # "msg":Ljava/lang/String;
     :catch_2
     move-exception v5
 
     .line 269
-    .local v5, ex:Ljava/lang/Throwable;
+    .local v5, "ex":Ljava/lang/Throwable;
     :try_start_6
     invoke-virtual {v5}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
@@ -2936,7 +2929,7 @@
     move-result-object v8
 
     .line 271
-    .restart local v8       #msg:Ljava/lang/String;
+    .restart local v8    # "msg":Ljava/lang/String;
     const-string v14, "DownloadManager"
 
     invoke-static {v14, v8, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
@@ -3045,7 +3038,6 @@
 
 .method private setupDestinationFile(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 6
-    .parameter
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -3479,9 +3471,9 @@
 
 .method private transferData(Lcom/android/providers/downloads/DownloadThread$State;Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 6
-    .parameter "state"
-    .parameter "in"
-    .parameter "out"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "in"    # Ljava/io/InputStream;
+    .param p3, "out"    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -3495,14 +3487,14 @@
     new-array v1, v2, [B
 
     .line 511
-    .local v1, data:[B
+    .local v1, "data":[B
     :goto_0
     invoke-direct {p0, p1, v1, p2}, Lcom/android/providers/downloads/DownloadThread;->readFromResponse(Lcom/android/providers/downloads/DownloadThread$State;[BLjava/io/InputStream;)I
 
     move-result v0
 
     .line 512
-    .local v0, bytesRead:I
+    .local v0, "bytesRead":I
     const/4 v2, -0x1
 
     if-ne v0, v2, :cond_0
@@ -3587,8 +3579,8 @@
 
 .method private transferData(Lcom/android/providers/downloads/DownloadThread$State;Ljava/net/HttpURLConnection;)V
     .locals 18
-    .parameter "state"
-    .parameter "conn"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "conn"    # Ljava/net/HttpURLConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -3600,24 +3592,24 @@
     const/4 v3, 0x0
 
     .line 392
-    .local v3, drmClient:Landroid/drm/DrmManagerClient;
+    .local v3, "drmClient":Landroid/drm/DrmManagerClient;
     const/4 v7, 0x0
 
     .line 393
-    .local v7, in:Ljava/io/InputStream;
+    .local v7, "in":Ljava/io/InputStream;
     const/4 v10, 0x0
 
     .line 394
-    .local v10, out:Ljava/io/OutputStream;
+    .local v10, "out":Ljava/io/OutputStream;
     const/4 v12, 0x0
 
     .line 397
-    .local v12, outFd:Ljava/io/FileDescriptor;
+    .local v12, "outFd":Ljava/io/FileDescriptor;
     :try_start_0
     invoke-virtual/range {p2 .. p2}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v7
 
@@ -3642,12 +3634,12 @@
 
     invoke-direct {v4, v14}, Landroid/drm/DrmManagerClient;-><init>(Landroid/content/Context;)V
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 405
-    .end local v3           #drmClient:Landroid/drm/DrmManagerClient;
-    .local v4, drmClient:Landroid/drm/DrmManagerClient;
+    .end local v3    # "drmClient":Landroid/drm/DrmManagerClient;
+    .local v4, "drmClient":Landroid/drm/DrmManagerClient;
     :try_start_2
     new-instance v6, Ljava/io/RandomAccessFile;
 
@@ -3664,7 +3656,7 @@
     invoke-direct {v6, v14, v15}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 407
-    .local v6, file:Ljava/io/RandomAccessFile;
+    .local v6, "file":Ljava/io/RandomAccessFile;
     new-instance v11, Landroid/drm/DrmOutputStream;
 
     move-object/from16 v0, p1
@@ -3673,30 +3665,30 @@
 
     invoke-direct {v11, v4, v6, v14}, Landroid/drm/DrmOutputStream;-><init>(Landroid/drm/DrmManagerClient;Ljava/io/RandomAccessFile;Ljava/lang/String;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_3
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
+    .catchall {:try_start_2 .. :try_end_2} :catchall_3
 
     .line 408
-    .end local v10           #out:Ljava/io/OutputStream;
-    .local v11, out:Ljava/io/OutputStream;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .local v11, "out":Ljava/io/OutputStream;
     :try_start_3
     invoke-virtual {v6}, Ljava/io/RandomAccessFile;->getFD()Ljava/io/FileDescriptor;
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_4
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_8
+    .catchall {:try_start_3 .. :try_end_3} :catchall_4
 
     move-result-object v12
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     move-object v3, v4
 
     .line 419
-    .end local v4           #drmClient:Landroid/drm/DrmManagerClient;
-    .end local v6           #file:Ljava/io/RandomAccessFile;
-    .restart local v3       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .end local v6    # "file":Ljava/io/RandomAccessFile;
+    .restart local v3    # "drmClient":Landroid/drm/DrmManagerClient;
     :goto_0
     :try_start_4
     move-object/from16 v0, p0
@@ -3732,7 +3724,7 @@
     invoke-direct {v6, v14}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 430
-    .local v6, file:Ljava/io/File;
+    .local v6, "file":Ljava/io/File;
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/providers/downloads/DownloadThread;->mContext:Landroid/content/Context;
@@ -3746,7 +3738,7 @@
     move-result-object v9
 
     .line 432
-    .local v9, mimetype:Ljava/lang/String;
+    .local v9, "mimetype":Ljava/lang/String;
     if-eqz v9, :cond_0
 
     .line 433
@@ -3785,7 +3777,7 @@
     move-result-object v8
 
     .line 437
-    .local v8, item:Landroid/content/Intent;
+    .local v8, "item":Landroid/content/Intent;
     if-eqz v8, :cond_8
 
     .line 438
@@ -3825,13 +3817,13 @@
     move-result-object v2
 
     .line 447
-    .local v2, deletePath:Ljava/lang/String;
+    .local v2, "deletePath":Ljava/lang/String;
     new-instance v13, Landroid/content/ContentValues;
 
     invoke-direct {v13}, Landroid/content/ContentValues;-><init>()V
 
     .line 448
-    .local v13, values:Landroid/content/ContentValues;
+    .local v13, "values":Landroid/content/ContentValues;
     const-string v14, "scanned"
 
     const/4 v15, 0x1
@@ -3874,15 +3866,15 @@
 
     invoke-virtual {v14, v15, v13, v0, v1}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 466
-    .end local v2           #deletePath:Ljava/lang/String;
-    .end local v6           #file:Ljava/io/File;
-    .end local v8           #item:Landroid/content/Intent;
-    .end local v9           #mimetype:Ljava/lang/String;
-    .end local v13           #values:Landroid/content/ContentValues;
+    .end local v2    # "deletePath":Ljava/lang/String;
+    .end local v6    # "file":Ljava/io/File;
+    .end local v8    # "item":Landroid/content/Intent;
+    .end local v9    # "mimetype":Ljava/lang/String;
+    .end local v13    # "values":Landroid/content/ContentValues;
     :cond_0
     :goto_1
     if-eqz v3, :cond_1
@@ -3900,8 +3892,8 @@
     :try_start_6
     invoke-virtual {v10}, Ljava/io/OutputStream;->flush()V
     :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
     .line 474
     :cond_2
@@ -3910,8 +3902,8 @@
     :try_start_7
     invoke-virtual {v12}, Ljava/io/FileDescriptor;->sync()V
     :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
     .line 477
     :cond_3
@@ -3926,7 +3918,7 @@
     move-exception v5
 
     .line 399
-    .local v5, e:Ljava/io/IOException;
+    .local v5, "e":Ljava/io/IOException;
     :try_start_8
     new-instance v14, Lcom/android/providers/downloads/StopRequestException;
 
@@ -3939,7 +3931,7 @@
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
     .line 466
-    .end local v5           #e:Ljava/io/IOException;
+    .end local v5    # "e":Ljava/io/IOException;
     :catchall_0
     move-exception v14
 
@@ -3959,8 +3951,8 @@
     :try_start_9
     invoke-virtual {v10}, Ljava/io/OutputStream;->flush()V
     :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_1
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_5
+    .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
     .line 474
     :cond_5
@@ -3969,8 +3961,8 @@
     :try_start_a
     invoke-virtual {v12}, Ljava/io/FileDescriptor;->sync()V
     :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_1
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_6
+    .catchall {:try_start_a .. :try_end_a} :catchall_1
 
     .line 477
     :cond_6
@@ -3993,12 +3985,12 @@
 
     invoke-direct {v11, v14, v15}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;Z)V
     :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_0
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_1
+    .catchall {:try_start_b .. :try_end_b} :catchall_0
 
     .line 411
-    .end local v10           #out:Ljava/io/OutputStream;
-    .restart local v11       #out:Ljava/io/OutputStream;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .restart local v11    # "out":Ljava/io/OutputStream;
     :try_start_c
     move-object v0, v11
 
@@ -4008,15 +4000,15 @@
 
     invoke-virtual {v14}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
     :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_5
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_9
+    .catchall {:try_start_c .. :try_end_c} :catchall_5
 
     move-result-object v12
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     goto/16 :goto_0
 
     .line 413
@@ -4024,7 +4016,7 @@
     move-exception v5
 
     .line 414
-    .restart local v5       #e:Ljava/io/IOException;
+    .restart local v5    # "e":Ljava/io/IOException;
     :goto_5
     :try_start_d
     new-instance v14, Lcom/android/providers/downloads/StopRequestException;
@@ -4038,10 +4030,10 @@
     .catchall {:try_start_d .. :try_end_d} :catchall_0
 
     .line 454
-    .end local v5           #e:Ljava/io/IOException;
-    .restart local v6       #file:Ljava/io/File;
-    .restart local v8       #item:Landroid/content/Intent;
-    .restart local v9       #mimetype:Ljava/lang/String;
+    .end local v5    # "e":Ljava/io/IOException;
+    .restart local v6    # "file":Ljava/io/File;
+    .restart local v8    # "item":Landroid/content/Intent;
+    .restart local v9    # "mimetype":Ljava/lang/String;
     :cond_8
     :try_start_e
     const-string v14, "DownloadManager"
@@ -4050,20 +4042,20 @@
 
     invoke-static {v14, v15}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_0
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_2
+    .catchall {:try_start_e .. :try_end_e} :catchall_0
 
     goto :goto_1
 
     .line 461
-    .end local v6           #file:Ljava/io/File;
-    .end local v8           #item:Landroid/content/Intent;
-    .end local v9           #mimetype:Ljava/lang/String;
+    .end local v6    # "file":Ljava/io/File;
+    .end local v8    # "item":Landroid/content/Intent;
+    .end local v9    # "mimetype":Ljava/lang/String;
     :catch_2
     move-exception v5
 
     .line 462
-    .restart local v5       #e:Ljava/io/IOException;
+    .restart local v5    # "e":Ljava/io/IOException;
     :try_start_f
     new-instance v14, Lcom/android/providers/downloads/StopRequestException;
 
@@ -4076,23 +4068,23 @@
     .catchall {:try_start_f .. :try_end_f} :catchall_0
 
     .line 457
-    .end local v5           #e:Ljava/io/IOException;
-    .restart local v6       #file:Ljava/io/File;
-    .restart local v9       #mimetype:Ljava/lang/String;
+    .end local v5    # "e":Ljava/io/IOException;
+    .restart local v6    # "file":Ljava/io/File;
+    .restart local v9    # "mimetype":Ljava/lang/String;
     :cond_9
     :try_start_10
     move-object/from16 v0, p1
 
     iput-object v9, v0, Lcom/android/providers/downloads/DownloadThread$State;->mMimeType:Ljava/lang/String;
     :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_0
     .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_2
+    .catchall {:try_start_10 .. :try_end_10} :catchall_0
 
     goto :goto_1
 
     .line 477
-    .end local v6           #file:Ljava/io/File;
-    .end local v9           #mimetype:Ljava/lang/String;
+    .end local v6    # "file":Ljava/io/File;
+    .end local v9    # "mimetype":Ljava/lang/String;
     :catchall_1
     move-exception v14
 
@@ -4129,93 +4121,93 @@
     goto :goto_4
 
     .line 466
-    .end local v3           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v4       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v3    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v4    # "drmClient":Landroid/drm/DrmManagerClient;
     :catchall_3
     move-exception v14
 
     move-object v3, v4
 
-    .end local v4           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v3       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v3    # "drmClient":Landroid/drm/DrmManagerClient;
     goto :goto_3
 
-    .end local v3           #drmClient:Landroid/drm/DrmManagerClient;
-    .end local v10           #out:Ljava/io/OutputStream;
-    .restart local v4       #drmClient:Landroid/drm/DrmManagerClient;
-    .local v6, file:Ljava/io/RandomAccessFile;
-    .restart local v11       #out:Ljava/io/OutputStream;
+    .end local v3    # "drmClient":Landroid/drm/DrmManagerClient;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .restart local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .local v6, "file":Ljava/io/RandomAccessFile;
+    .restart local v11    # "out":Ljava/io/OutputStream;
     :catchall_4
     move-exception v14
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     move-object v3, v4
 
-    .end local v4           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v3       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v3    # "drmClient":Landroid/drm/DrmManagerClient;
     goto :goto_3
 
-    .end local v6           #file:Ljava/io/RandomAccessFile;
-    .end local v10           #out:Ljava/io/OutputStream;
-    .restart local v11       #out:Ljava/io/OutputStream;
+    .end local v6    # "file":Ljava/io/RandomAccessFile;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .restart local v11    # "out":Ljava/io/OutputStream;
     :catchall_5
     move-exception v14
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     goto :goto_3
 
     .line 413
-    .end local v3           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v4       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v3    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v4    # "drmClient":Landroid/drm/DrmManagerClient;
     :catch_7
     move-exception v5
 
     move-object v3, v4
 
-    .end local v4           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v3       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v3    # "drmClient":Landroid/drm/DrmManagerClient;
     goto :goto_5
 
-    .end local v3           #drmClient:Landroid/drm/DrmManagerClient;
-    .end local v10           #out:Ljava/io/OutputStream;
-    .restart local v4       #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v6       #file:Ljava/io/RandomAccessFile;
-    .restart local v11       #out:Ljava/io/OutputStream;
+    .end local v3    # "drmClient":Landroid/drm/DrmManagerClient;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .restart local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v6    # "file":Ljava/io/RandomAccessFile;
+    .restart local v11    # "out":Ljava/io/OutputStream;
     :catch_8
     move-exception v5
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     move-object v3, v4
 
-    .end local v4           #drmClient:Landroid/drm/DrmManagerClient;
-    .restart local v3       #drmClient:Landroid/drm/DrmManagerClient;
+    .end local v4    # "drmClient":Landroid/drm/DrmManagerClient;
+    .restart local v3    # "drmClient":Landroid/drm/DrmManagerClient;
     goto :goto_5
 
-    .end local v6           #file:Ljava/io/RandomAccessFile;
-    .end local v10           #out:Ljava/io/OutputStream;
-    .restart local v11       #out:Ljava/io/OutputStream;
+    .end local v6    # "file":Ljava/io/RandomAccessFile;
+    .end local v10    # "out":Ljava/io/OutputStream;
+    .restart local v11    # "out":Ljava/io/OutputStream;
     :catch_9
     move-exception v5
 
     move-object v10, v11
 
-    .end local v11           #out:Ljava/io/OutputStream;
-    .restart local v10       #out:Ljava/io/OutputStream;
+    .end local v11    # "out":Ljava/io/OutputStream;
+    .restart local v10    # "out":Ljava/io/OutputStream;
     goto :goto_5
 .end method
 
 .method private updateDatabaseFromHeaders(Lcom/android/providers/downloads/DownloadThread$State;)V
     .locals 5
-    .parameter "state"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
 
     .prologue
     const/4 v4, 0x0
@@ -4226,7 +4218,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 732
-    .local v0, values:Landroid/content/ContentValues;
+    .local v0, "values":Landroid/content/ContentValues;
     const-string v1, "_data"
 
     iget-object v2, p1, Lcom/android/providers/downloads/DownloadThread$State;->mFilename:Ljava/lang/String;
@@ -4301,7 +4293,7 @@
     iget-object v0, v1, Lcom/android/providers/downloads/DownloadInfo;->mUserAgent:Ljava/lang/String;
 
     .line 115
-    .local v0, userAgent:Ljava/lang/String;
+    .local v0, "userAgent":Ljava/lang/String;
     if-nez v0, :cond_0
 
     .line 116
@@ -4314,10 +4306,10 @@
 
 .method private writeDataToDestination(Lcom/android/providers/downloads/DownloadThread$State;[BILjava/io/OutputStream;)V
     .locals 7
-    .parameter "state"
-    .parameter "data"
-    .parameter "bytesRead"
-    .parameter "out"
+    .param p1, "state"    # Lcom/android/providers/downloads/DownloadThread$State;
+    .param p2, "data"    # [B
+    .param p3, "bytesRead"    # I
+    .param p4, "out"    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/providers/downloads/StopRequestException;
@@ -4342,7 +4334,7 @@
     const/4 v1, 0x0
 
     .line 625
-    .local v1, forceVerified:Z
+    .local v1, "forceVerified":Z
     :goto_0
     const/4 v2, 0x0
 
@@ -4359,7 +4351,7 @@
     move-exception v0
 
     .line 629
-    .local v0, ex:Ljava/io/IOException;
+    .local v0, "ex":Ljava/io/IOException;
     if-nez v1, :cond_0
 
     .line 631

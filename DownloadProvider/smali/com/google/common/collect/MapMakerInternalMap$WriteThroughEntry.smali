@@ -44,9 +44,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
@@ -55,9 +52,9 @@
 
     .prologue
     .line 3777
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
-    .local p2, key:Ljava/lang/Object;,"TK;"
-    .local p3, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p2, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "value":Ljava/lang/Object;, "TV;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
@@ -76,10 +73,10 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
     const/4 v1, 0x0
 
     .line 3795
@@ -93,7 +90,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 3797
-    .local v0, that:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .local v0, "that":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->key:Ljava/lang/Object;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -121,7 +118,7 @@
     const/4 v1, 0x1
 
     .line 3799
-    .end local v0           #that:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .end local v0    # "that":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     :cond_0
     return v1
 .end method
@@ -136,7 +133,7 @@
 
     .prologue
     .line 3784
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->key:Ljava/lang/Object;
 
     return-object v0
@@ -152,7 +149,7 @@
 
     .prologue
     .line 3789
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->value:Ljava/lang/Object;
 
     return-object v0
@@ -163,7 +160,7 @@
 
     .prologue
     .line 3805
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->key:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -183,7 +180,6 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
@@ -192,8 +188,8 @@
 
     .prologue
     .line 3810
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
-    .local p1, newValue:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.WriteThroughEntry;"
+    .local p1, "newValue":Ljava/lang/Object;, "TV;"
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->key:Ljava/lang/Object;
@@ -203,7 +199,7 @@
     move-result-object v0
 
     .line 3811
-    .local v0, oldValue:Ljava/lang/Object;,"TV;"
+    .local v0, "oldValue":Ljava/lang/Object;, "TV;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;->value:Ljava/lang/Object;
 
     .line 3812

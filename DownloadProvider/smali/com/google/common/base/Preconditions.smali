@@ -9,16 +9,16 @@
 
     .prologue
     .line 61
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method private static badPositionIndex(IILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .parameter "index"
-    .parameter "size"
-    .parameter "desc"
+    .param p0, "index"    # I
+    .param p1, "size"    # I
+    .param p2, "desc"    # Ljava/lang/String;
 
     .prologue
     const/4 v4, 0x2
@@ -111,7 +111,7 @@
 
 .method public static checkArgument(Z)V
     .locals 1
-    .parameter "expression"
+    .param p0, "expression"    # Z
 
     .prologue
     .line 71
@@ -131,8 +131,8 @@
 
 .method public static checkArgument(ZLjava/lang/Object;)V
     .locals 2
-    .parameter "expression"
-    .parameter "errorMessage"
+    .param p0, "expression"    # Z
+    .param p1, "errorMessage"    # Ljava/lang/Object;
 
     .prologue
     .line 87
@@ -156,9 +156,9 @@
 
 .method public static varargs checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .parameter "expression"
-    .parameter "errorMessageTemplate"
-    .parameter "errorMessageArgs"
+    .param p0, "expression"    # Z
+    .param p1, "errorMessageTemplate"    # Ljava/lang/String;
+    .param p2, "errorMessageArgs"    # [Ljava/lang/Object;
 
     .prologue
     .line 114
@@ -182,7 +182,6 @@
 
 .method public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -193,7 +192,7 @@
 
     .prologue
     .line 186
-    .local p0, reference:Ljava/lang/Object;,"TT;"
+    .local p0, "reference":Ljava/lang/Object;, "TT;"
     if-nez p0, :cond_0
 
     .line 187
@@ -210,8 +209,7 @@
 
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .parameter
-    .parameter "errorMessage"
+    .param p1, "errorMessage"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -224,7 +222,7 @@
 
     .prologue
     .line 203
-    .local p0, reference:Ljava/lang/Object;,"TT;"
+    .local p0, "reference":Ljava/lang/Object;, "TT;"
     if-nez p0, :cond_0
 
     .line 204
@@ -245,8 +243,8 @@
 
 .method public static checkPositionIndex(II)I
     .locals 1
-    .parameter "index"
-    .parameter "size"
+    .param p0, "index"    # I
+    .param p1, "size"    # I
 
     .prologue
     .line 330
@@ -261,9 +259,9 @@
 
 .method public static checkPositionIndex(IILjava/lang/String;)I
     .locals 2
-    .parameter "index"
-    .parameter "size"
-    .parameter "desc"
+    .param p0, "index"    # I
+    .param p1, "size"    # I
+    .param p2, "desc"    # Ljava/lang/String;
 
     .prologue
     .line 350
@@ -290,7 +288,7 @@
 
 .method public static checkState(Z)V
     .locals 1
-    .parameter "expression"
+    .param p0, "expression"    # Z
 
     .prologue
     .line 128
@@ -310,8 +308,8 @@
 
 .method public static checkState(ZLjava/lang/Object;)V
     .locals 2
-    .parameter "expression"
-    .parameter "errorMessage"
+    .param p0, "expression"    # Z
+    .param p1, "errorMessage"    # Ljava/lang/Object;
 
     .prologue
     .line 144
@@ -335,9 +333,9 @@
 
 .method public static varargs checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .parameter "expression"
-    .parameter "errorMessageTemplate"
-    .parameter "errorMessageArgs"
+    .param p0, "expression"    # Z
+    .param p1, "errorMessageTemplate"    # Ljava/lang/String;
+    .param p2, "errorMessageArgs"    # [Ljava/lang/Object;
 
     .prologue
     .line 171
@@ -361,8 +359,8 @@
 
 .method static varargs format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 7
-    .parameter "template"
-    .parameter "args"
+    .param p0, "template"    # Ljava/lang/String;
+    .param p1, "args"    # [Ljava/lang/Object;
 
     .prologue
     .line 414
@@ -386,15 +384,15 @@
     invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 419
-    .local v0, builder:Ljava/lang/StringBuilder;
+    .local v0, "builder":Ljava/lang/StringBuilder;
     const/4 v4, 0x0
 
     .line 420
-    .local v4, templateStart:I
+    .local v4, "templateStart":I
     const/4 v1, 0x0
 
     .line 421
-    .local v1, i:I
+    .local v1, "i":I
     :goto_0
     array-length v5, p1
 
@@ -408,13 +406,13 @@
     move-result v3
 
     .line 423
-    .local v3, placeholderStart:I
+    .local v3, "placeholderStart":I
     const/4 v5, -0x1
 
     if-ne v3, v5, :cond_1
 
     .line 430
-    .end local v3           #placeholderStart:I
+    .end local v3    # "placeholderStart":I
     :cond_0
     invoke-virtual {p0, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -435,8 +433,8 @@
     .line 435
     add-int/lit8 v2, v1, 0x1
 
-    .end local v1           #i:I
-    .local v2, i:I
+    .end local v1    # "i":I
+    .local v2, "i":I
     aget-object v5, p1, v1
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -444,8 +442,8 @@
     move v1, v2
 
     .line 436
-    .end local v2           #i:I
-    .restart local v1       #i:I
+    .end local v2    # "i":I
+    .restart local v1    # "i":I
     :goto_1
     array-length v5, p1
 
@@ -459,20 +457,20 @@
     .line 438
     add-int/lit8 v2, v1, 0x1
 
-    .end local v1           #i:I
-    .restart local v2       #i:I
+    .end local v1    # "i":I
+    .restart local v2    # "i":I
     aget-object v5, p1, v1
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move v1, v2
 
-    .end local v2           #i:I
-    .restart local v1       #i:I
+    .end local v2    # "i":I
+    .restart local v1    # "i":I
     goto :goto_1
 
     .line 426
-    .restart local v3       #placeholderStart:I
+    .restart local v3    # "placeholderStart":I
     :cond_1
     invoke-virtual {p0, v4, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -483,8 +481,8 @@
     .line 427
     add-int/lit8 v2, v1, 0x1
 
-    .end local v1           #i:I
-    .restart local v2       #i:I
+    .end local v1    # "i":I
+    .restart local v2    # "i":I
     aget-object v5, p1, v1
 
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -495,12 +493,12 @@
     move v1, v2
 
     .line 429
-    .end local v2           #i:I
-    .restart local v1       #i:I
+    .end local v2    # "i":I
+    .restart local v1    # "i":I
     goto :goto_0
 
     .line 440
-    .end local v3           #placeholderStart:I
+    .end local v3    # "placeholderStart":I
     :cond_2
     const/16 v5, 0x5d
 

@@ -72,14 +72,13 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 1
-    .parameter
 
     .prologue
     .line 3656
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 3657
     iget-object v0, p1, Lcom/google/common/collect/MapMakerInternalMap;->segments:[Lcom/google/common/collect/MapMakerInternalMap$Segment;
@@ -109,7 +108,7 @@
 
     .prologue
     .line 3663
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextExternal:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
@@ -192,7 +191,6 @@
 
 .method advanceTo(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Z
     .locals 4
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -203,15 +201,15 @@
 
     .prologue
     .line 3719
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
-    .local p1, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p1, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     :try_start_0
     invoke-interface {p1}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 3720
-    .local v0, key:Ljava/lang/Object;,"TK;"
+    .local v0, "key":Ljava/lang/Object;, "TK;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {v2, p1}, Lcom/google/common/collect/MapMakerInternalMap;->getLiveValue(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Ljava/lang/Object;
@@ -219,7 +217,7 @@
     move-result-object v1
 
     .line 3721
-    .local v1, value:Ljava/lang/Object;,"TV;"
+    .local v1, "value":Ljava/lang/Object;, "TV;"
     if-eqz v1, :cond_0
 
     .line 3722
@@ -255,8 +253,8 @@
 
     goto :goto_0
 
-    .end local v0           #key:Ljava/lang/Object;,"TK;"
-    .end local v1           #value:Ljava/lang/Object;,"TV;"
+    .end local v0    # "key":Ljava/lang/Object;, "TK;"
+    .end local v1    # "value":Ljava/lang/Object;, "TV;"
     :catchall_0
     move-exception v2
 
@@ -272,7 +270,7 @@
 
     .prologue
     .line 3734
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextExternal:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     if-eqz v0, :cond_0
@@ -300,7 +298,7 @@
 
     .prologue
     .line 3738
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextExternal:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     if-nez v0, :cond_0
@@ -332,7 +330,7 @@
 
     .prologue
     .line 3689
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextEntry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     if-eqz v0, :cond_1
@@ -391,7 +389,7 @@
 
     .prologue
     .line 3703
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     :cond_0
     iget v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextTableIndex:I
 
@@ -450,7 +448,7 @@
 
     .prologue
     .line 3747
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$HashIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$HashIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.HashIterator;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->lastReturned:Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     if-eqz v0, :cond_0

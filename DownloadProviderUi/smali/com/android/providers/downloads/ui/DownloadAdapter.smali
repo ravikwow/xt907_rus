@@ -36,8 +36,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;Landroid/database/Cursor;)V
     .locals 2
-    .parameter "downloadList"
-    .parameter "cursor"
+    .param p1, "downloadList"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p2, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     const/4 v1, 0x3
@@ -177,7 +177,7 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 142
-    .local v0, date:Ljava/util/Date;
+    .local v0, "date":Ljava/util/Date;
     invoke-direct {p0}, Lcom/android/providers/downloads/ui/DownloadAdapter;->getStartOfToday()Ljava/util/Date;
 
     move-result-object v1
@@ -223,11 +223,11 @@
     move-result-wide v1
 
     .line 160
-    .local v1, totalBytes:J
+    .local v1, "totalBytes":J
     const-string v0, ""
 
     .line 161
-    .local v0, sizeText:Ljava/lang/String;
+    .local v0, "sizeText":Ljava/lang/String;
     const-wide/16 v3, 0x0
 
     cmp-long v3, v1, v3
@@ -258,7 +258,7 @@
     invoke-direct {v0}, Ljava/util/GregorianCalendar;-><init>()V
 
     .line 151
-    .local v0, today:Ljava/util/Calendar;
+    .local v0, "today":Ljava/util/Calendar;
     const/16 v1, 0xb
 
     invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->set(II)V
@@ -288,7 +288,7 @@
 
 .method private getStatusStringId(I)I
     .locals 5
-    .parameter "status"
+    .param p1, "status"    # I
 
     .prologue
     const v1, 0x7f070008
@@ -355,7 +355,7 @@
     move-result v0
 
     .line 181
-    .local v0, reason:I
+    .local v0, "reason":I
     packed-switch v0, :pswitch_data_0
 
     goto :goto_0
@@ -387,10 +387,9 @@
 
 .method private retrieveAndSetIcon(Landroid/view/View;)V
     .locals 9
-    .parameter
 
     .prologue
-    const/high16 v8, 0x1
+    const/high16 v8, 0x10000
 
     const/4 v7, 0x0
 
@@ -505,7 +504,7 @@
     if-nez v1, :cond_1
 
     .line 226
-    const/high16 v1, 0x7f02
+    const/high16 v1, 0x7f020000
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -622,9 +621,9 @@
 
 .method private setTextForView(Landroid/view/View;ILjava/lang/CharSequence;)V
     .locals 1
-    .parameter "parent"
-    .parameter "textViewId"
-    .parameter "text"
+    .param p1, "parent"    # Landroid/view/View;
+    .param p2, "textViewId"    # I
+    .param p3, "text"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 263
@@ -635,7 +634,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 264
-    .local v0, view:Landroid/widget/TextView;
+    .local v0, "view":Landroid/widget/TextView;
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 265
@@ -646,8 +645,8 @@
 # virtual methods
 .method public bindView(Landroid/view/View;I)V
     .locals 9
-    .parameter "convertView"
-    .parameter "position"
+    .param p1, "convertView"    # Landroid/view/View;
+    .param p2, "position"    # I
 
     .prologue
     .line 107
@@ -656,12 +655,12 @@
     if-nez v0, :cond_0
 
     .line 138
-    .end local p1
+    .end local p1    # "convertView":Landroid/view/View;
     :goto_0
     return-void
 
     .line 111
-    .restart local p1
+    .restart local p1    # "convertView":Landroid/view/View;
     :cond_0
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadAdapter;->mCursor:Landroid/database/Cursor;
 
@@ -671,7 +670,7 @@
 
     move-result-wide v1
 
-    .local v1, downloadId:J
+    .local v1, "downloadId":J
     move-object v0, p1
 
     .line 112
@@ -710,7 +709,7 @@
     move-result-object v8
 
     .line 120
-    .local v8, title:Ljava/lang/String;
+    .local v8, "title":Ljava/lang/String;
     invoke-virtual {v8}, Ljava/lang/String;->isEmpty()Z
 
     move-result v0
@@ -764,7 +763,7 @@
     move-result v6
 
     .line 129
-    .local v6, status:I
+    .local v6, "status":I
     const/16 v0, 0x8
 
     if-ne v6, v0, :cond_2
@@ -775,7 +774,7 @@
     move-result-object v7
 
     .line 134
-    .local v7, statusText:Ljava/lang/CharSequence;
+    .local v7, "statusText":Ljava/lang/CharSequence;
     :goto_1
     const v0, 0x7f09000a
 
@@ -784,7 +783,7 @@
     .line 136
     check-cast p1, Lcom/android/providers/downloads/ui/DownloadItem;
 
-    .end local p1
+    .end local p1    # "convertView":Landroid/view/View;
     invoke-virtual {p1}, Lcom/android/providers/downloads/ui/DownloadItem;->getCheckBox()Landroid/widget/CheckBox;
 
     move-result-object v0
@@ -800,8 +799,8 @@
     goto :goto_0
 
     .line 132
-    .end local v7           #statusText:Ljava/lang/CharSequence;
-    .restart local p1
+    .end local v7    # "statusText":Ljava/lang/CharSequence;
+    .restart local p1    # "convertView":Landroid/view/View;
     :cond_2
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadAdapter;->mResources:Landroid/content/res/Resources;
 
@@ -813,15 +812,15 @@
 
     move-result-object v7
 
-    .restart local v7       #statusText:Ljava/lang/CharSequence;
+    .restart local v7    # "statusText":Ljava/lang/CharSequence;
     goto :goto_1
 .end method
 
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
-    .parameter "view"
-    .parameter "context"
-    .parameter "cursor"
+    .param p1, "view"    # Landroid/view/View;
+    .param p2, "context"    # Landroid/content/Context;
+    .param p3, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 276
@@ -857,7 +856,7 @@
     check-cast v0, Lcom/android/providers/downloads/ui/DownloadItem;
 
     .line 102
-    .local v0, view:Lcom/android/providers/downloads/ui/DownloadItem;
+    .local v0, "view":Lcom/android/providers/downloads/ui/DownloadItem;
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DownloadAdapter;->mDownloadList:Lcom/android/providers/downloads/ui/DownloadList;
 
     invoke-virtual {v0, v1}, Lcom/android/providers/downloads/ui/DownloadItem;->setDownloadListObj(Lcom/android/providers/downloads/ui/DownloadList;)V
@@ -868,9 +867,9 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .parameter "context"
-    .parameter "cursor"
-    .parameter "parent"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "cursor"    # Landroid/database/Cursor;
+    .param p3, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 271

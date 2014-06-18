@@ -438,7 +438,7 @@
 
 .method private checkFileUriDestination(Landroid/content/ContentValues;)V
     .locals 10
-    .parameter "values"
+    .param p1, "values"    # Landroid/content/ContentValues;
 
     .prologue
     .line 782
@@ -449,7 +449,7 @@
     move-result-object v3
 
     .line 783
-    .local v3, fileUri:Ljava/lang/String;
+    .local v3, "fileUri":Ljava/lang/String;
     if-nez v3, :cond_0
 
     .line 784
@@ -468,13 +468,13 @@
     move-result-object v6
 
     .line 788
-    .local v6, uri:Landroid/net/Uri;
+    .local v6, "uri":Landroid/net/Uri;
     invoke-virtual {v6}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v5
 
     .line 789
-    .local v5, scheme:Ljava/lang/String;
+    .local v5, "scheme":Ljava/lang/String;
     if-eqz v5, :cond_1
 
     const-string v7, "file"
@@ -518,7 +518,7 @@
     move-result-object v4
 
     .line 793
-    .local v4, path:Ljava/lang/String;
+    .local v4, "path":Ljava/lang/String;
     if-nez v4, :cond_3
 
     .line 794
@@ -558,7 +558,7 @@
     move-result-object v0
 
     .line 798
-    .local v0, canonicalPath:Ljava/lang/String;
+    .local v0, "canonicalPath":Ljava/lang/String;
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v7
@@ -568,7 +568,7 @@
     move-result-object v2
 
     .line 799
-    .local v2, externalPath:Ljava/lang/String;
+    .local v2, "externalPath":Ljava/lang/String;
     invoke-virtual {v0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v7
@@ -603,13 +603,13 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 802
-    .end local v0           #canonicalPath:Ljava/lang/String;
-    .end local v2           #externalPath:Ljava/lang/String;
+    .end local v0    # "canonicalPath":Ljava/lang/String;
+    .end local v2    # "externalPath":Ljava/lang/String;
     :catch_0
     move-exception v1
 
     .line 803
-    .local v1, e:Ljava/io/IOException;
+    .local v1, "e":Ljava/io/IOException;
     new-instance v7, Ljava/lang/SecurityException;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -635,16 +635,16 @@
     throw v7
 
     .line 805
-    .end local v1           #e:Ljava/io/IOException;
-    .restart local v0       #canonicalPath:Ljava/lang/String;
-    .restart local v2       #externalPath:Ljava/lang/String;
+    .end local v1    # "e":Ljava/io/IOException;
+    .restart local v0    # "canonicalPath":Ljava/lang/String;
+    .restart local v2    # "externalPath":Ljava/lang/String;
     :cond_4
     return-void
 .end method
 
 .method private checkInsertPermissions(Landroid/content/ContentValues;)V
     .locals 11
-    .parameter "values"
+    .param p1, "values"    # Landroid/content/ContentValues;
 
     .prologue
     .line 816
@@ -682,8 +682,8 @@
     invoke-direct {v6, p1}, Landroid/content/ContentValues;-><init>(Landroid/content/ContentValues;)V
 
     .line 829
-    .end local p1
-    .local v6, values:Landroid/content/ContentValues;
+    .end local p1    # "values":Landroid/content/ContentValues;
+    .local v6, "values":Landroid/content/ContentValues;
     const-string v7, "is_public_api"
 
     const/4 v8, 0x1
@@ -901,7 +901,7 @@
     move-result-object v4
 
     .line 875
-    .local v4, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
+    .local v4, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
     :cond_2
     :goto_2
     invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
@@ -924,7 +924,7 @@
     check-cast v5, Ljava/lang/String;
 
     .line 877
-    .local v5, key:Ljava/lang/String;
+    .local v5, "key":Ljava/lang/String;
     const-string v7, "http_header_"
 
     invoke-virtual {v5, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -939,8 +939,8 @@
     goto :goto_2
 
     .line 855
-    .end local v4           #iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
-    .end local v5           #key:Ljava/lang/String;
+    .end local v4    # "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
+    .end local v5    # "key":Ljava/lang/String;
     :cond_3
     const-string v7, "visibility"
 
@@ -983,7 +983,7 @@
     goto/16 :goto_1
 
     .line 883
-    .restart local v4       #iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
+    .restart local v4    # "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;"
     :cond_4
     invoke-virtual {v6}, Landroid/content/ContentValues;->size()I
 
@@ -999,11 +999,11 @@
     invoke-direct {v1, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 885
-    .local v1, error:Ljava/lang/StringBuilder;
+    .local v1, "error":Ljava/lang/StringBuilder;
     const/4 v2, 0x1
 
     .line 886
-    .local v2, first:Z
+    .local v2, "first":Z
     invoke-virtual {v6}, Landroid/content/ContentValues;->valueSet()Ljava/util/Set;
 
     move-result-object v7
@@ -1012,7 +1012,7 @@
 
     move-result-object v3
 
-    .local v3, i$:Ljava/util/Iterator;
+    .local v3, "i$":Ljava/util/Iterator;
     :goto_3
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1027,7 +1027,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 887
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
     if-nez v2, :cond_5
 
     .line 888
@@ -1048,7 +1048,7 @@
     goto :goto_3
 
     .line 892
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
     :cond_6
     new-instance v7, Ljava/lang/SecurityException;
 
@@ -1060,23 +1060,23 @@
 
     throw v7
 
-    .end local v1           #error:Ljava/lang/StringBuilder;
-    .end local v2           #first:Z
-    .end local v3           #i$:Ljava/util/Iterator;
+    .end local v1    # "error":Ljava/lang/StringBuilder;
+    .end local v2    # "first":Z
+    .end local v3    # "i$":Ljava/util/Iterator;
     :cond_7
     move-object p1, v6
 
     .line 894
-    .end local v6           #values:Landroid/content/ContentValues;
-    .restart local p1
+    .end local v6    # "values":Landroid/content/ContentValues;
+    .restart local p1    # "values":Landroid/content/ContentValues;
     goto/16 :goto_0
 .end method
 
 .method private static final copyBoolean(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
     .locals 1
-    .parameter "key"
-    .parameter "from"
-    .parameter "to"
+    .param p0, "key"    # Ljava/lang/String;
+    .param p1, "from"    # Landroid/content/ContentValues;
+    .param p2, "to"    # Landroid/content/ContentValues;
 
     .prologue
     .line 1395
@@ -1085,7 +1085,7 @@
     move-result-object v0
 
     .line 1396
-    .local v0, b:Ljava/lang/Boolean;
+    .local v0, "b":Ljava/lang/Boolean;
     if-eqz v0, :cond_0
 
     .line 1397
@@ -1098,9 +1098,9 @@
 
 .method private static final copyInteger(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
     .locals 1
-    .parameter "key"
-    .parameter "from"
-    .parameter "to"
+    .param p0, "key"    # Ljava/lang/String;
+    .param p1, "from"    # Landroid/content/ContentValues;
+    .param p2, "to"    # Landroid/content/ContentValues;
 
     .prologue
     .line 1388
@@ -1109,7 +1109,7 @@
     move-result-object v0
 
     .line 1389
-    .local v0, i:Ljava/lang/Integer;
+    .local v0, "i":Ljava/lang/Integer;
     if-eqz v0, :cond_0
 
     .line 1390
@@ -1122,9 +1122,9 @@
 
 .method private static final copyString(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
     .locals 1
-    .parameter "key"
-    .parameter "from"
-    .parameter "to"
+    .param p0, "key"    # Ljava/lang/String;
+    .param p1, "from"    # Landroid/content/ContentValues;
+    .param p2, "to"    # Landroid/content/ContentValues;
 
     .prologue
     .line 1402
@@ -1133,7 +1133,7 @@
     move-result-object v0
 
     .line 1403
-    .local v0, s:Ljava/lang/String;
+    .local v0, "s":Ljava/lang/String;
     if-eqz v0, :cond_0
 
     .line 1404
@@ -1146,10 +1146,10 @@
 
 .method private static final copyStringWithDefault(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 1
-    .parameter "key"
-    .parameter "from"
-    .parameter "to"
-    .parameter "defaultValue"
+    .param p0, "key"    # Ljava/lang/String;
+    .param p1, "from"    # Landroid/content/ContentValues;
+    .param p2, "to"    # Landroid/content/ContentValues;
+    .param p3, "defaultValue"    # Ljava/lang/String;
 
     .prologue
     .line 1410
@@ -1172,9 +1172,9 @@
 
 .method private deleteRequestHeaders(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 13
-    .parameter "db"
-    .parameter "where"
-    .parameter "whereArgs"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "where"    # Ljava/lang/String;
+    .param p3, "whereArgs"    # [Ljava/lang/String;
 
     .prologue
     .line 1073
@@ -1189,7 +1189,7 @@
     aput-object v1, v2, v0
 
     .line 1074
-    .local v2, projection:[Ljava/lang/String;
+    .local v2, "projection":[Ljava/lang/String;
     const-string v1, "downloads"
 
     const/4 v5, 0x0
@@ -1211,7 +1211,7 @@
     move-result-object v9
 
     .line 1076
-    .local v9, cursor:Landroid/database/Cursor;
+    .local v9, "cursor":Landroid/database/Cursor;
     :try_start_0
     invoke-interface {v9}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -1230,7 +1230,7 @@
     move-result-wide v10
 
     .line 1078
-    .local v10, id:J
+    .local v10, "id":J
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1250,7 +1250,7 @@
     move-result-object v12
 
     .line 1079
-    .local v12, idWhere:Ljava/lang/String;
+    .local v12, "idWhere":Ljava/lang/String;
     const-string v0, "request_headers"
 
     const/4 v1, 0x0
@@ -1265,8 +1265,8 @@
     goto :goto_0
 
     .line 1082
-    .end local v10           #id:J
-    .end local v12           #idWhere:Ljava/lang/String;
+    .end local v10    # "id":J
+    .end local v12    # "idWhere":Ljava/lang/String;
     :catchall_0
     move-exception v0
 
@@ -1283,9 +1283,9 @@
 
 .method private varargs enforceAllowedValues(Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 8
-    .parameter "values"
-    .parameter "column"
-    .parameter "allowedValues"
+    .param p1, "values"    # Landroid/content/ContentValues;
+    .param p2, "column"    # Ljava/lang/String;
+    .param p3, "allowedValues"    # [Ljava/lang/Object;
 
     .prologue
     .line 902
@@ -1294,26 +1294,26 @@
     move-result-object v4
 
     .line 903
-    .local v4, value:Ljava/lang/Object;
+    .local v4, "value":Ljava/lang/Object;
     invoke-virtual {p1, p2}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
     .line 904
     move-object v1, p3
 
-    .local v1, arr$:[Ljava/lang/Object;
+    .local v1, "arr$":[Ljava/lang/Object;
     array-length v3, v1
 
-    .local v3, len$:I
+    .local v3, "len$":I
     const/4 v2, 0x0
 
-    .local v2, i$:I
+    .local v2, "i$":I
     :goto_0
     if-ge v2, v3, :cond_3
 
     aget-object v0, v1, v2
 
     .line 905
-    .local v0, allowedValue:Ljava/lang/Object;
+    .local v0, "allowedValue":Ljava/lang/Object;
     if-nez v4, :cond_1
 
     if-nez v0, :cond_1
@@ -1339,7 +1339,7 @@
     goto :goto_0
 
     .line 912
-    .end local v0           #allowedValue:Ljava/lang/Object;
+    .end local v0    # "allowedValue":Ljava/lang/Object;
     :cond_3
     new-instance v5, Ljava/lang/SecurityException;
 
@@ -1378,7 +1378,7 @@
 
 .method private getDownloadIdFromUri(Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .parameter "uri"
+    .param p1, "uri"    # Landroid/net/Uri;
 
     .prologue
     .line 1033
@@ -1399,10 +1399,6 @@
 
 .method private getWhereClause(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;I)Lcom/android/providers/downloads/DownloadProvider$SqlSelection;
     .locals 7
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     const/4 v6, 0x0
@@ -1499,9 +1495,9 @@
 
 .method private insertRequestHeaders(Landroid/database/sqlite/SQLiteDatabase;JLandroid/content/ContentValues;)V
     .locals 9
-    .parameter "db"
-    .parameter "downloadId"
-    .parameter "values"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "downloadId"    # J
+    .param p4, "values"    # Landroid/content/ContentValues;
 
     .prologue
     .line 1040
@@ -1510,7 +1506,7 @@
     invoke-direct {v5}, Landroid/content/ContentValues;-><init>()V
 
     .line 1041
-    .local v5, rowValues:Landroid/content/ContentValues;
+    .local v5, "rowValues":Landroid/content/ContentValues;
     const-string v6, "download_id"
 
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1528,7 +1524,7 @@
 
     move-result-object v2
 
-    .local v2, i$:Ljava/util/Iterator;
+    .local v2, "i$":Ljava/util/Iterator;
     :cond_0
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
@@ -1544,7 +1540,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 1043
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -1552,7 +1548,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 1044
-    .local v3, key:Ljava/lang/String;
+    .local v3, "key":Ljava/lang/String;
     const-string v6, "http_header_"
 
     invoke-virtual {v3, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -1571,7 +1567,7 @@
     move-result-object v1
 
     .line 1046
-    .local v1, headerLine:Ljava/lang/String;
+    .local v1, "headerLine":Ljava/lang/String;
     const-string v6, ":"
 
     invoke-virtual {v1, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -1616,7 +1612,7 @@
     move-result-object v4
 
     .line 1050
-    .local v4, parts:[Ljava/lang/String;
+    .local v4, "parts":[Ljava/lang/String;
     const-string v6, "header"
 
     const/4 v7, 0x0
@@ -1652,18 +1648,16 @@
     goto :goto_0
 
     .line 1055
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
-    .end local v1           #headerLine:Ljava/lang/String;
-    .end local v3           #key:Ljava/lang/String;
-    .end local v4           #parts:[Ljava/lang/String;
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;"
+    .end local v1    # "headerLine":Ljava/lang/String;
+    .end local v3    # "key":Ljava/lang/String;
+    .end local v4    # "parts":[Ljava/lang/String;
     :cond_2
     return-void
 .end method
 
 .method private logVerboseOpenFileInfo(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 8
-    .parameter
-    .parameter
 
     .prologue
     const/4 v7, 0x1
@@ -1920,11 +1914,11 @@
 
 .method private logVerboseQueryInfo([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .parameter "projection"
-    .parameter "selection"
-    .parameter "selectionArgs"
-    .parameter "sort"
-    .parameter "db"
+    .param p1, "projection"    # [Ljava/lang/String;
+    .param p2, "selection"    # Ljava/lang/String;
+    .param p3, "selectionArgs"    # [Ljava/lang/String;
+    .param p4, "sort"    # Ljava/lang/String;
+    .param p5, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
     .line 991
@@ -1933,7 +1927,7 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 992
-    .local v1, sb:Ljava/lang/StringBuilder;
+    .local v1, "sb":Ljava/lang/StringBuilder;
     const-string v2, "starting query, database is "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -2027,7 +2021,7 @@
     :cond_4
     const/4 v0, 0x0
 
-    .local v0, i:I
+    .local v0, "i":I
     :goto_2
     array-length v2, p1
 
@@ -2062,7 +2056,7 @@
     goto :goto_2
 
     .line 1015
-    .end local v0           #i:I
+    .end local v0    # "i":I
     :cond_5
     array-length v2, p3
 
@@ -2079,7 +2073,7 @@
     :cond_6
     const/4 v0, 0x0
 
-    .restart local v0       #i:I
+    .restart local v0    # "i":I
     :goto_3
     array-length v2, p3
 
@@ -2116,15 +2110,15 @@
 
 .method private notifyContentChanged(Landroid/net/Uri;I)V
     .locals 7
-    .parameter "uri"
-    .parameter "uriMatch"
+    .param p1, "uri"    # Landroid/net/Uri;
+    .param p2, "uriMatch"    # I
 
     .prologue
     .line 1188
     const/4 v1, 0x0
 
     .line 1189
-    .local v1, downloadId:Ljava/lang/Long;
+    .local v1, "downloadId":Ljava/lang/Long;
     const/4 v5, 0x2
 
     if-eq p2, v5, :cond_0
@@ -2151,20 +2145,20 @@
     :cond_1
     sget-object v0, Lcom/android/providers/downloads/DownloadProvider;->BASE_URIS:[Landroid/net/Uri;
 
-    .local v0, arr$:[Landroid/net/Uri;
+    .local v0, "arr$":[Landroid/net/Uri;
     array-length v3, v0
 
-    .local v3, len$:I
+    .local v3, "len$":I
     const/4 v2, 0x0
 
-    .local v2, i$:I
+    .local v2, "i$":I
     :goto_0
     if-ge v2, v3, :cond_3
 
     aget-object v4, v0, v2
 
     .line 1193
-    .local v4, uriToNotify:Landroid/net/Uri;
+    .local v4, "uriToNotify":Landroid/net/Uri;
     if-eqz v1, :cond_2
 
     .line 1194
@@ -2196,15 +2190,15 @@
     goto :goto_0
 
     .line 1198
-    .end local v4           #uriToNotify:Landroid/net/Uri;
+    .end local v4    # "uriToNotify":Landroid/net/Uri;
     :cond_3
     return-void
 .end method
 
 .method private queryRequestHeaders(Landroid/database/sqlite/SQLiteDatabase;Landroid/net/Uri;)Landroid/database/Cursor;
     .locals 8
-    .parameter "db"
-    .parameter "uri"
+    .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
     const/4 v4, 0x0
@@ -2233,7 +2227,7 @@
     move-result-object v3
 
     .line 1063
-    .local v3, where:Ljava/lang/String;
+    .local v3, "where":Ljava/lang/String;
     const/4 v0, 0x2
 
     new-array v2, v0, [Ljava/lang/String;
@@ -2251,7 +2245,7 @@
     aput-object v1, v2, v0
 
     .line 1065
-    .local v2, projection:[Ljava/lang/String;
+    .local v2, "projection":[Ljava/lang/String;
     const-string v1, "request_headers"
 
     move-object v0, p1
@@ -2279,7 +2273,7 @@
     move-result v0
 
     .line 1091
-    .local v0, callingUid:I
+    .local v0, "callingUid":I
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v1
@@ -2313,9 +2307,6 @@
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 10
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     const/4 v4, 0x0
@@ -2507,9 +2498,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 9
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     const/4 v2, 0x0
@@ -2709,7 +2697,7 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 7
-    .parameter "uri"
+    .param p1, "uri"    # Landroid/net/Uri;
 
     .prologue
     .line 554
@@ -2720,7 +2708,7 @@
     move-result v2
 
     .line 555
-    .local v2, match:I
+    .local v2, "match":I
     packed-switch v2, :pswitch_data_0
 
     .line 577
@@ -2794,7 +2782,7 @@
     move-result-object v1
 
     .line 565
-    .local v1, id:Ljava/lang/String;
+    .local v1, "id":Ljava/lang/String;
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadProvider;->mOpenHelper:Landroid/database/sqlite/SQLiteOpenHelper;
 
     invoke-virtual {v4}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -2802,7 +2790,7 @@
     move-result-object v0
 
     .line 566
-    .local v0, db:Landroid/database/sqlite/SQLiteDatabase;
+    .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const-string v4, "SELECT mimetype FROM downloads WHERE _id = ?"
 
     const/4 v5, 0x1
@@ -2818,7 +2806,7 @@
     move-result-object v3
 
     .line 570
-    .local v3, mimeType:Ljava/lang/String;
+    .local v3, "mimeType":Ljava/lang/String;
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -2844,8 +2832,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 10
-    .parameter
-    .parameter
 
     .prologue
     .line 590
@@ -3853,8 +3839,6 @@
 
 .method public openFile(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 8
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -4058,7 +4042,7 @@
     if-eqz v0, :cond_6
 
     .line 1297
-    const/high16 v0, 0x1000
+    const/high16 v0, 0x10000000
 
     invoke-static {v1, v0}, Landroid/os/ParcelFileDescriptor;->open(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;
 
@@ -4120,11 +4104,11 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 23
-    .parameter "uri"
-    .parameter "projection"
-    .parameter "selection"
-    .parameter "selectionArgs"
-    .parameter "sort"
+    .param p1, "uri"    # Landroid/net/Uri;
+    .param p2, "projection"    # [Ljava/lang/String;
+    .param p3, "selection"    # Ljava/lang/String;
+    .param p4, "selectionArgs"    # [Ljava/lang/String;
+    .param p5, "sort"    # Ljava/lang/String;
 
     .prologue
     .line 923
@@ -4144,7 +4128,7 @@
     move-result-object v10
 
     .line 927
-    .local v10, db:Landroid/database/sqlite/SQLiteDatabase;
+    .local v10, "db":Landroid/database/sqlite/SQLiteDatabase;
     sget-object v5, Lcom/android/providers/downloads/DownloadProvider;->sURIMatcher:Landroid/content/UriMatcher;
 
     move-object/from16 v0, p1
@@ -4154,7 +4138,7 @@
     move-result v20
 
     .line 928
-    .local v20, match:I
+    .local v20, "match":I
     const/4 v5, -0x1
 
     move/from16 v0, v20
@@ -4276,7 +4260,7 @@
     move-result-object v18
 
     .line 945
-    .local v18, fullSelection:Lcom/android/providers/downloads/DownloadProvider$SqlSelection;
+    .local v18, "fullSelection":Lcom/android/providers/downloads/DownloadProvider$SqlSelection;
     invoke-direct/range {p0 .. p0}, Lcom/android/providers/downloads/DownloadProvider;->shouldRestrictVisibility()Z
 
     move-result v5
@@ -4293,15 +4277,15 @@
 
     move-result-object p2
 
-    .end local p2
+    .end local p2    # "projection":[Ljava/lang/String;
     check-cast p2, [Ljava/lang/String;
 
     .line 959
-    .restart local p2
+    .restart local p2    # "projection":[Ljava/lang/String;
     :cond_6
     const/16 v19, 0x0
 
-    .local v19, i:I
+    .local v19, "i":I
     :goto_1
     move-object/from16 v0, p2
 
@@ -4323,7 +4307,7 @@
     check-cast v21, Ljava/lang/String;
 
     .line 961
-    .local v21, newColumn:Ljava/lang/String;
+    .local v21, "newColumn":Ljava/lang/String;
     if-eqz v21, :cond_7
 
     .line 962
@@ -4336,12 +4320,12 @@
     goto :goto_1
 
     .line 950
-    .end local v19           #i:I
-    .end local v21           #newColumn:Ljava/lang/String;
+    .end local v19    # "i":I
+    .end local v21    # "newColumn":Ljava/lang/String;
     :cond_8
     const/16 v19, 0x0
 
-    .restart local v19       #i:I
+    .restart local v19    # "i":I
     :goto_2
     move-object/from16 v0, p2
 
@@ -4412,7 +4396,7 @@
     goto :goto_2
 
     .line 967
-    .end local v19           #i:I
+    .end local v19    # "i":I
     :cond_a
     sget-boolean v5, Lcom/android/providers/downloads/Constants;->LOGVV:Z
 
@@ -4456,7 +4440,7 @@
     move-result-object v22
 
     .line 974
-    .local v22, ret:Landroid/database/Cursor;
+    .local v22, "ret":Landroid/database/Cursor;
     if-eqz v22, :cond_c
 
     .line 975
@@ -4538,10 +4522,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 11
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     const/4 v3, 0x0

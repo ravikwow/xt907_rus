@@ -34,8 +34,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
@@ -44,9 +42,9 @@
 
     .prologue
     .line 134
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$TerminalEntry;,"Lcom/google/common/collect/RegularImmutableMap$TerminalEntry<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$TerminalEntry;, "Lcom/google/common/collect/RegularImmutableMap$TerminalEntry<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ImmutableEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 135
@@ -67,7 +65,7 @@
 
     .prologue
     .line 138
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap$TerminalEntry;,"Lcom/google/common/collect/RegularImmutableMap$TerminalEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap$TerminalEntry;, "Lcom/google/common/collect/RegularImmutableMap$TerminalEntry<TK;TV;>;"
     const/4 v0, 0x0
 
     return-object v0

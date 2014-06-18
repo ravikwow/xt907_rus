@@ -28,9 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/ui/TrampolineActivity$PausedDialogFragment;Landroid/app/DownloadManager;J)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
 
     .prologue
     .line 142
@@ -40,7 +37,7 @@
 
     iput-wide p3, p0, Lcom/android/providers/downloads/ui/TrampolineActivity$PausedDialogFragment$1;->val$id:J
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -49,8 +46,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .parameter "dialog"
-    .parameter "which"
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
+    .param p2, "which"    # I
 
     .prologue
     .line 145

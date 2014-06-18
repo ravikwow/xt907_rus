@@ -1,4 +1,4 @@
-version: 1.5.2
+version: 2.0.0-Beta9
 apkFileName: DownloadProvider.apk
 isFrameworkApk: false
 usesFramework:
@@ -8,6 +8,8 @@ sdkInfo:
   minSdkVersion: '19'
   targetSdkVersion: '19'
 packageInfo:
-  cur_package: com.android.providers.downloads
-  orig_package: com.android.providers.downloads
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '19'
+  versionName: 4.4.2-10
 compressionType: false

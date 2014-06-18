@@ -35,8 +35,7 @@
 # direct methods
 .method private constructor <init>(Ljava/util/Collection;Ljava/lang/Object;)V
     .locals 0
-    .parameter
-    .parameter "mutex"
+    .param p2, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,8 +48,8 @@
 
     .prologue
     .line 104
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, delegate:Ljava/util/Collection;,"Ljava/util/Collection<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "delegate":Ljava/util/Collection;, "Ljava/util/Collection<TE;>;"
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedObject;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 105
@@ -59,13 +58,13 @@
 
 .method synthetic constructor <init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
+    .param p1, "x0"    # Ljava/util/Collection;
+    .param p2, "x1"    # Ljava/lang/Object;
+    .param p3, "x2"    # Lcom/google/common/collect/Synchronized$1;
 
     .prologue
     .line 100
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V
 
     return-void
@@ -75,7 +74,6 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
@@ -84,9 +82,9 @@
 
     .prologue
     .line 114
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, e:Ljava/lang/Object;,"TE;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "e":Ljava/lang/Object;, "TE;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -117,7 +115,6 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -128,9 +125,9 @@
 
     .prologue
     .line 121
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<+TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<+TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -164,8 +161,8 @@
 
     .prologue
     .line 128
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -196,12 +193,12 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 135
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -232,7 +229,6 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -243,9 +239,9 @@
 
     .prologue
     .line 142
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -279,7 +275,7 @@
 
     .prologue
     .line 100
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -299,7 +295,7 @@
 
     .prologue
     .line 109
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedObject;->delegate()Ljava/lang/Object;
 
     move-result-object v0
@@ -314,8 +310,8 @@
 
     .prologue
     .line 149
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -356,7 +352,7 @@
 
     .prologue
     .line 156
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -370,12 +366,12 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 161
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -406,7 +402,6 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -417,9 +412,9 @@
 
     .prologue
     .line 168
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -450,7 +445,6 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -461,9 +455,9 @@
 
     .prologue
     .line 175
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, c:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "c":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -497,8 +491,8 @@
 
     .prologue
     .line 182
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -532,8 +526,8 @@
 
     .prologue
     .line 189
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -564,7 +558,6 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -575,9 +568,9 @@
 
     .prologue
     .line 196
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedCollection;,"Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
-    .local p1, a:[Ljava/lang/Object;,"[TT;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedCollection;, "Lcom/google/common/collect/Synchronized$SynchronizedCollection<TE;>;"
+    .local p1, "a":[Ljava/lang/Object;, "[TT;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 

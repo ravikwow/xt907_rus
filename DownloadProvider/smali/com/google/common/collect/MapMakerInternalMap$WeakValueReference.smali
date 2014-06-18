@@ -45,9 +45,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,10 +57,10 @@
 
     .prologue
     .line 1743
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
-    .local p1, queue:Ljava/lang/ref/ReferenceQueue;,"Ljava/lang/ref/ReferenceQueue<TV;>;"
-    .local p2, referent:Ljava/lang/Object;,"TV;"
-    .local p3, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p1, "queue":Ljava/lang/ref/ReferenceQueue;, "Ljava/lang/ref/ReferenceQueue<TV;>;"
+    .local p2, "referent":Ljava/lang/Object;, "TV;"
+    .local p3, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     invoke-direct {p0, p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
     .line 1744
@@ -77,7 +74,6 @@
 # virtual methods
 .method public clear(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
     .locals 0
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,8 +84,8 @@
 
     .prologue
     .line 1754
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
-    .local p1, newValue:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p1, "newValue":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;->clear()V
 
     .line 1755
@@ -98,8 +94,6 @@
 
 .method public copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,9 +108,9 @@
 
     .prologue
     .line 1760
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
-    .local p1, queue:Ljava/lang/ref/ReferenceQueue;,"Ljava/lang/ref/ReferenceQueue<TV;>;"
-    .local p2, entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p1, "queue":Ljava/lang/ref/ReferenceQueue;, "Ljava/lang/ref/ReferenceQueue<TV;>;"
+    .local p2, "entry":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;->get()Ljava/lang/Object;
@@ -140,7 +134,7 @@
 
     .prologue
     .line 1749
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;->entry:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     return-object v0
@@ -151,7 +145,7 @@
 
     .prologue
     .line 1765
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -167,7 +161,7 @@
 
     .prologue
     .line 1770
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;->get()Ljava/lang/Object;
 
     move-result-object v0

@@ -24,10 +24,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -40,10 +36,10 @@
 
     .prologue
     .line 857
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$RandomAccessWrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.RandomAccessWrappedList;"
-    .local p2, key:Ljava/lang/Object;,"TK;"
-    .local p3, delegate:Ljava/util/List;,"Ljava/util/List<TV;>;"
-    .local p4, ancestor:Lcom/google/common/collect/AbstractMultimap$WrappedCollection;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$RandomAccessWrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.RandomAccessWrappedList;"
+    .local p2, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "delegate":Ljava/util/List;, "Ljava/util/List<TV;>;"
+    .local p4, "ancestor":Lcom/google/common/collect/AbstractMultimap$WrappedCollection;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$RandomAccessWrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     .line 858

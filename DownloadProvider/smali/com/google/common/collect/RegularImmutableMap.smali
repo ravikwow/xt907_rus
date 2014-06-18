@@ -90,7 +90,6 @@
 # direct methods
 .method varargs constructor <init>([Ljava/util/Map$Entry;)V
     .locals 14
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -101,15 +100,15 @@
 
     .prologue
     .line 48
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
-    .local p1, immutableEntries:[Ljava/util/Map$Entry;,"[Ljava/util/Map$Entry<**>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p1, "immutableEntries":[Ljava/util/Map$Entry;, "[Ljava/util/Map$Entry<**>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap;-><init>()V
 
     .line 49
     array-length v7, p1
 
     .line 50
-    .local v7, size:I
+    .local v7, "size":I
     invoke-direct {p0, v7}, Lcom/google/common/collect/RegularImmutableMap;->createEntryArray(I)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     move-result-object v10
@@ -122,7 +121,7 @@
     move-result v9
 
     .line 53
-    .local v9, tableSize:I
+    .local v9, "tableSize":I
     invoke-direct {p0, v9}, Lcom/google/common/collect/RegularImmutableMap;->createEntryArray(I)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     move-result-object v10
@@ -138,10 +137,10 @@
     const/4 v5, 0x0
 
     .line 57
-    .local v5, keySetHashCodeMutable:I
+    .local v5, "keySetHashCodeMutable":I
     const/4 v1, 0x0
 
-    .local v1, entryIndex:I
+    .local v1, "entryIndex":I
     :goto_0
     if-ge v1, v7, :cond_2
 
@@ -149,19 +148,19 @@
     aget-object v0, p1, v1
 
     .line 61
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     .line 62
-    .local v3, key:Ljava/lang/Object;,"TK;"
+    .local v3, "key":Ljava/lang/Object;, "TK;"
     invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
     move-result v4
 
     .line 63
-    .local v4, keyHashCode:I
+    .local v4, "keyHashCode":I
     add-int/2addr v5, v4
 
     .line 64
@@ -174,13 +173,13 @@
     and-int v8, v10, v11
 
     .line 65
-    .local v8, tableIndex:I
+    .local v8, "tableIndex":I
     iget-object v10, p0, Lcom/google/common/collect/RegularImmutableMap;->table:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     aget-object v2, v10, v8
 
     .line 67
-    .local v2, existing:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .local v2, "existing":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v10
@@ -190,7 +189,7 @@
     move-result-object v6
 
     .line 69
-    .local v6, linkedEntry:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .local v6, "linkedEntry":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
     iget-object v10, p0, Lcom/google/common/collect/RegularImmutableMap;->table:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     aput-object v6, v10, v8
@@ -250,12 +249,12 @@
     goto :goto_0
 
     .line 76
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
-    .end local v2           #existing:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
-    .end local v3           #key:Ljava/lang/Object;,"TK;"
-    .end local v4           #keyHashCode:I
-    .end local v6           #linkedEntry:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
-    .end local v8           #tableIndex:I
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
+    .end local v2    # "existing":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .end local v3    # "key":Ljava/lang/Object;, "TK;"
+    .end local v4    # "keyHashCode":I
+    .end local v6    # "linkedEntry":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .end local v8    # "tableIndex":I
     :cond_2
     iput v5, p0, Lcom/google/common/collect/RegularImmutableMap;->keySetHashCode:I
 
@@ -265,7 +264,7 @@
 
 .method static synthetic access$000(Lcom/google/common/collect/RegularImmutableMap;)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/google/common/collect/RegularImmutableMap;
 
     .prologue
     .line 36
@@ -276,7 +275,7 @@
 
 .method static synthetic access$100(Lcom/google/common/collect/RegularImmutableMap;)I
     .locals 1
-    .parameter "x0"
+    .param p0, "x0"    # Lcom/google/common/collect/RegularImmutableMap;
 
     .prologue
     .line 36
@@ -287,7 +286,7 @@
 
 .method private static chooseTableSize(I)I
     .locals 6
-    .parameter "size"
+    .param p0, "size"    # I
 
     .prologue
     const/4 v2, 0x1
@@ -302,7 +301,7 @@
     shl-int/lit8 v0, v1, 0x1
 
     .line 82
-    .local v0, tableSize:I
+    .local v0, "tableSize":I
     if-lez v0, :cond_0
 
     move v1, v2
@@ -332,7 +331,7 @@
 
 .method private createEntryArray(I)[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     .locals 1
-    .parameter "size"
+    .param p1, "size"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)[",
@@ -343,7 +342,7 @@
 
     .prologue
     .line 93
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     new-array v0, p1, [Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     return-object v0
@@ -351,9 +350,6 @@
 
 .method private static newLinkedEntry(Ljava/lang/Object;Ljava/lang/Object;Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;)Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     .locals 1
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -370,9 +366,9 @@
 
     .prologue
     .line 98
-    .local p0, key:Ljava/lang/Object;,"TK;"
-    .local p1, value:Ljava/lang/Object;,"TV;"
-    .local p2, next:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .local p0, "key":Ljava/lang/Object;, "TK;"
+    .local p1, "value":Ljava/lang/Object;, "TV;"
+    .local p2, "next":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
     if-nez p2, :cond_0
 
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap$TerminalEntry;
@@ -394,10 +390,10 @@
 # virtual methods
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 6
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     const/4 v4, 0x0
 
     .line 175
@@ -412,20 +408,20 @@
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
-    .local v0, arr$:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
+    .local v0, "arr$":[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
     array-length v3, v0
 
-    .local v3, len$:I
+    .local v3, "len$":I
     const/4 v2, 0x0
 
-    .local v2, i$:I
+    .local v2, "i$":I
     :goto_1
     if-ge v2, v3, :cond_0
 
     aget-object v1, v0, v2
 
     .line 179
-    .local v1, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local v1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -462,16 +458,16 @@
 
     .prologue
     .line 193
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->entrySet:Lcom/google/common/collect/ImmutableSet;
 
     .line 194
-    .local v0, es:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
+    .local v0, "es":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap$EntrySet;
 
-    .end local v0           #es:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
+    .end local v0    # "es":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularImmutableMap$EntrySet;-><init>(Lcom/google/common/collect/RegularImmutableMap;)V
 
     iput-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->entrySet:Lcom/google/common/collect/ImmutableSet;
@@ -485,7 +481,7 @@
 
     .prologue
     .line 35
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -495,7 +491,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -505,7 +501,7 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     const/4 v3, 0x0
 
     .line 143
@@ -531,13 +527,13 @@
     and-int v2, v4, v5
 
     .line 147
-    .local v2, index:I
+    .local v2, "index":I
     iget-object v4, p0, Lcom/google/common/collect/RegularImmutableMap;->table:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     aget-object v1, v4, v2
 
     .line 148
-    .local v1, entry:Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;,"Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
+    .local v1, "entry":Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;, "Lcom/google/common/collect/RegularImmutableMap$LinkedEntry<TK;TV;>;"
     :goto_1
     if-eqz v1, :cond_0
 
@@ -547,7 +543,7 @@
     move-result-object v0
 
     .line 158
-    .local v0, candidateKey:Ljava/lang/Object;,"TK;"
+    .local v0, "candidateKey":Ljava/lang/Object;, "TK;"
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -575,7 +571,7 @@
 
     .prologue
     .line 171
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -593,16 +589,16 @@
 
     .prologue
     .line 219
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->keySet:Lcom/google/common/collect/ImmutableSet;
 
     .line 220
-    .local v0, ks:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TK;>;"
+    .local v0, "ks":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TK;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap$KeySet;
 
-    .end local v0           #ks:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TK;>;"
+    .end local v0    # "ks":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TK;>;"
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularImmutableMap$KeySet;-><init>(Lcom/google/common/collect/RegularImmutableMap;)V
 
     iput-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->keySet:Lcom/google/common/collect/ImmutableSet;
@@ -616,7 +612,7 @@
 
     .prologue
     .line 35
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -629,7 +625,7 @@
 
     .prologue
     .line 167
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
 
     array-length v0, v0
@@ -642,7 +638,7 @@
 
     .prologue
     .line 284
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableMap;->size()I
 
     move-result v1
@@ -658,7 +654,7 @@
     move-result-object v0
 
     .line 286
-    .local v0, result:Ljava/lang/StringBuilder;
+    .local v0, "result":Ljava/lang/StringBuilder;
     sget-object v1, Lcom/google/common/collect/Collections2;->STANDARD_JOINER:Lcom/google/common/base/Joiner;
 
     iget-object v2, p0, Lcom/google/common/collect/RegularImmutableMap;->entries:[Lcom/google/common/collect/RegularImmutableMap$LinkedEntry;
@@ -691,16 +687,16 @@
 
     .prologue
     .line 249
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->values:Lcom/google/common/collect/ImmutableCollection;
 
     .line 250
-    .local v0, v:Lcom/google/common/collect/ImmutableCollection;,"Lcom/google/common/collect/ImmutableCollection<TV;>;"
+    .local v0, "v":Lcom/google/common/collect/ImmutableCollection;, "Lcom/google/common/collect/ImmutableCollection<TV;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap$Values;
 
-    .end local v0           #v:Lcom/google/common/collect/ImmutableCollection;,"Lcom/google/common/collect/ImmutableCollection<TV;>;"
+    .end local v0    # "v":Lcom/google/common/collect/ImmutableCollection;, "Lcom/google/common/collect/ImmutableCollection<TV;>;"
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularImmutableMap$Values;-><init>(Lcom/google/common/collect/RegularImmutableMap;)V
 
     iput-object v0, p0, Lcom/google/common/collect/RegularImmutableMap;->values:Lcom/google/common/collect/ImmutableCollection;
@@ -714,7 +710,7 @@
 
     .prologue
     .line 35
-    .local p0, this:Lcom/google/common/collect/RegularImmutableMap;,"Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableMap;, "Lcom/google/common/collect/RegularImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
 
     move-result-object v0

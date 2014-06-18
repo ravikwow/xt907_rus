@@ -39,10 +39,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -55,10 +51,10 @@
 
     .prologue
     .line 711
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
-    .local p2, key:Ljava/lang/Object;,"TK;"
-    .local p3, delegate:Ljava/util/List;,"Ljava/util/List<TV;>;"
-    .local p4, ancestor:Lcom/google/common/collect/AbstractMultimap$WrappedCollection;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p2, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "delegate":Ljava/util/List;, "Ljava/util/List<TV;>;"
+    .local p4, "ancestor":Lcom/google/common/collect/AbstractMultimap$WrappedCollection;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedCollection;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     .line 712
@@ -72,8 +68,7 @@
 # virtual methods
 .method public add(ILjava/lang/Object;)V
     .locals 2
-    .parameter "index"
-    .parameter
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITV;)V"
@@ -82,8 +77,8 @@
 
     .prologue
     .line 750
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
-    .local p2, element:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p2, "element":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 751
@@ -96,7 +91,7 @@
     move-result v0
 
     .line 752
-    .local v0, wasEmpty:Z
+    .local v0, "wasEmpty":Z
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->getListDelegate()Ljava/util/List;
 
     move-result-object v1
@@ -106,6 +101,7 @@
     .line 753
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
+    # operator++ for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v1}, Lcom/google/common/collect/AbstractMultimap;->access$208(Lcom/google/common/collect/AbstractMultimap;)I
 
     .line 754
@@ -121,8 +117,7 @@
 
 .method public addAll(ILjava/util/Collection;)Z
     .locals 5
-    .parameter "index"
-    .parameter
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -133,8 +128,8 @@
 
     .prologue
     .line 721
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
-    .local p2, c:Ljava/util/Collection;,"Ljava/util/Collection<+TV;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p2, "c":Ljava/util/Collection;, "Ljava/util/Collection<+TV;>;"
     invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v3
@@ -156,7 +151,7 @@
     move-result v2
 
     .line 725
-    .local v2, oldSize:I
+    .local v2, "oldSize":I
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->getListDelegate()Ljava/util/List;
 
     move-result-object v3
@@ -166,7 +161,7 @@
     move-result v0
 
     .line 726
-    .local v0, changed:Z
+    .local v0, "changed":Z
     if-eqz v0, :cond_0
 
     .line 727
@@ -179,11 +174,12 @@
     move-result v1
 
     .line 728
-    .local v1, newSize:I
+    .local v1, "newSize":I
     iget-object v3, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     sub-int v4, v1, v2
 
+    # += operator for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v3, v4}, Lcom/google/common/collect/AbstractMultimap;->access$212(Lcom/google/common/collect/AbstractMultimap;I)I
 
     .line 729
@@ -197,7 +193,7 @@
 
 .method public get(I)Ljava/lang/Object;
     .locals 1
-    .parameter "index"
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
@@ -206,7 +202,7 @@
 
     .prologue
     .line 738
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 739
@@ -233,7 +229,7 @@
 
     .prologue
     .line 716
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->getDelegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -245,11 +241,11 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 770
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 771
@@ -266,11 +262,11 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 776
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 777
@@ -297,7 +293,7 @@
 
     .prologue
     .line 782
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 783
@@ -310,7 +306,7 @@
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 1
-    .parameter "index"
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -321,7 +317,7 @@
 
     .prologue
     .line 788
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 789
@@ -334,7 +330,7 @@
 
 .method public remove(I)Ljava/lang/Object;
     .locals 2
-    .parameter "index"
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
@@ -343,7 +339,7 @@
 
     .prologue
     .line 761
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 762
@@ -356,9 +352,10 @@
     move-result-object v0
 
     .line 763
-    .local v0, value:Ljava/lang/Object;,"TV;"
+    .local v0, "value":Ljava/lang/Object;, "TV;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
+    # operator-- for: Lcom/google/common/collect/AbstractMultimap;->totalSize:I
     invoke-static {v1}, Lcom/google/common/collect/AbstractMultimap;->access$210(Lcom/google/common/collect/AbstractMultimap;)I
 
     .line 764
@@ -370,8 +367,7 @@
 
 .method public set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "index"
-    .parameter
+    .param p1, "index"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITV;)TV;"
@@ -380,8 +376,8 @@
 
     .prologue
     .line 744
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
-    .local p2, element:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p2, "element":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 745
@@ -398,8 +394,8 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 4
-    .parameter "fromIndex"
-    .parameter "toIndex"
+    .param p1, "fromIndex"    # I
+    .param p2, "toIndex"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -410,7 +406,7 @@
 
     .prologue
     .line 794
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->refreshIfEmpty()V
 
     .line 795
@@ -434,16 +430,16 @@
 
     if-nez v3, :cond_0
 
-    .end local p0           #this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .end local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     :goto_0
-    #calls: Lcom/google/common/collect/AbstractMultimap;->wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
+    # invokes: Lcom/google/common/collect/AbstractMultimap;->wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
     invoke-static {v0, v1, v2, p0}, Lcom/google/common/collect/AbstractMultimap;->access$300(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMultimap$WrappedCollection;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 
-    .restart local p0       #this:Lcom/google/common/collect/AbstractMultimap$WrappedList;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
+    .restart local p0    # "this":Lcom/google/common/collect/AbstractMultimap$WrappedList;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.WrappedList;"
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$WrappedList;->getAncestor()Lcom/google/common/collect/AbstractMultimap$WrappedCollection;
 

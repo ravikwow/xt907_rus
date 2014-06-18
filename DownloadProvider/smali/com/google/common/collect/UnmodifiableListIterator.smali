@@ -26,7 +26,7 @@
 
     .prologue
     .line 34
-    .local p0, this:Lcom/google/common/collect/UnmodifiableListIterator;,"Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/UnmodifiableListIterator;, "Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
     return-void
@@ -36,7 +36,6 @@
 # virtual methods
 .method public final add(Ljava/lang/Object;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
@@ -45,8 +44,8 @@
 
     .prologue
     .line 42
-    .local p0, this:Lcom/google/common/collect/UnmodifiableListIterator;,"Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
-    .local p1, e:Ljava/lang/Object;,"TE;"
+    .local p0, "this":Lcom/google/common/collect/UnmodifiableListIterator;, "Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
+    .local p1, "e":Ljava/lang/Object;, "TE;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -56,7 +55,6 @@
 
 .method public final set(Ljava/lang/Object;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
@@ -65,8 +63,8 @@
 
     .prologue
     .line 51
-    .local p0, this:Lcom/google/common/collect/UnmodifiableListIterator;,"Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
-    .local p1, e:Ljava/lang/Object;,"TE;"
+    .local p0, "this":Lcom/google/common/collect/UnmodifiableListIterator;, "Lcom/google/common/collect/UnmodifiableListIterator<TE;>;"
+    .local p1, "e":Ljava/lang/Object;, "TE;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

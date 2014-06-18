@@ -106,6 +106,7 @@
 
     .prologue
     .line 298
+    # getter for: Lcom/google/common/collect/ImmutableBiMap;->EMPTY_IMMUTABLE_BIMAP:Lcom/google/common/collect/ImmutableBiMap;
     invoke-static {}, Lcom/google/common/collect/ImmutableBiMap;->access$000()Lcom/google/common/collect/ImmutableBiMap;
 
     move-result-object v0

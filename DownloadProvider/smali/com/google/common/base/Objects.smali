@@ -18,15 +18,15 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static equal(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter "a"
-    .parameter "b"
+    .param p0, "a"    # Ljava/lang/Object;
+    .param p1, "b"    # Ljava/lang/Object;
 
     .prologue
     .line 51
@@ -54,8 +54,6 @@
 
 .method public static firstNonNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -66,15 +64,15 @@
 
     .prologue
     .line 174
-    .local p0, first:Ljava/lang/Object;,"TT;"
-    .local p1, second:Ljava/lang/Object;,"TT;"
+    .local p0, "first":Ljava/lang/Object;, "TT;"
+    .local p1, "second":Ljava/lang/Object;, "TT;"
     if-eqz p0, :cond_0
 
-    .end local p0           #first:Ljava/lang/Object;,"TT;"
+    .end local p0    # "first":Ljava/lang/Object;, "TT;"
     :goto_0
     return-object p0
 
-    .restart local p0       #first:Ljava/lang/Object;,"TT;"
+    .restart local p0    # "first":Ljava/lang/Object;, "TT;"
     :cond_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -85,7 +83,6 @@
 
 .method private static simpleName(Ljava/lang/Class;)Ljava/lang/String;
     .locals 4
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,13 +94,13 @@
 
     .prologue
     .line 140
-    .local p0, clazz:Ljava/lang/Class;,"Ljava/lang/Class<*>;"
+    .local p0, "clazz":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     .line 144
-    .local v0, name:Ljava/lang/String;
+    .local v0, "name":Ljava/lang/String;
     const-string v2, "\\$[0-9]+"
 
     const-string v3, "\\$"
@@ -120,7 +117,7 @@
     move-result v1
 
     .line 151
-    .local v1, start:I
+    .local v1, "start":I
     const/4 v2, -0x1
 
     if-ne v1, v2, :cond_0
@@ -145,7 +142,7 @@
 
 .method public static toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 3
-    .parameter "self"
+    .param p0, "self"    # Ljava/lang/Object;
 
     .prologue
     .line 106

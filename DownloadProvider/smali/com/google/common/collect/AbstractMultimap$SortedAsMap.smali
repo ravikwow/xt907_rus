@@ -44,8 +44,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;Ljava/util/SortedMap;)V
     .locals 0
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,8 +56,8 @@
 
     .prologue
     .line 1300
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
-    .local p2, submap:Ljava/util/SortedMap;,"Ljava/util/SortedMap<TK;Ljava/util/Collection<TV;>;>;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p2, "submap":Ljava/util/SortedMap;, "Ljava/util/SortedMap<TK;Ljava/util/Collection<TV;>;>;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     .line 1301
@@ -83,7 +81,7 @@
 
     .prologue
     .line 1310
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -105,7 +103,7 @@
 
     .prologue
     .line 1315
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -119,7 +117,6 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -132,8 +129,8 @@
 
     .prologue
     .line 1325
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
-    .local p1, toKey:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p1, "toKey":Ljava/lang/Object;, "TK;"
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
@@ -156,7 +153,7 @@
 
     .prologue
     .line 1298
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -176,16 +173,16 @@
 
     .prologue
     .line 1343
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->sortedKeySet:Ljava/util/SortedSet;
 
     .line 1344
-    .local v0, result:Ljava/util/SortedSet;,"Ljava/util/SortedSet<TK;>;"
+    .local v0, "result":Ljava/util/SortedSet;, "Ljava/util/SortedSet<TK;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$SortedKeySet;
 
-    .end local v0           #result:Ljava/util/SortedSet;,"Ljava/util/SortedSet<TK;>;"
+    .end local v0    # "result":Ljava/util/SortedSet;, "Ljava/util/SortedSet<TK;>;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
@@ -210,7 +207,7 @@
 
     .prologue
     .line 1320
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -236,8 +233,8 @@
 
     .prologue
     .line 1305
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
-    iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->submap:Ljava/util/Map;
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
 
     check-cast v0, Ljava/util/SortedMap;
 
@@ -246,8 +243,6 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 3
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -260,9 +255,9 @@
 
     .prologue
     .line 1330
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
-    .local p1, fromKey:Ljava/lang/Object;,"TK;"
-    .local p2, toKey:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p1, "fromKey":Ljava/lang/Object;, "TK;"
+    .local p2, "toKey":Ljava/lang/Object;, "TK;"
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
@@ -282,7 +277,6 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -295,8 +289,8 @@
 
     .prologue
     .line 1335
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$SortedAsMap;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
-    .local p1, fromKey:Ljava/lang/Object;,"TK;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$SortedAsMap;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.SortedAsMap;"
+    .local p1, "fromKey":Ljava/lang/Object;, "TK;"
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;

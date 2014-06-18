@@ -35,13 +35,12 @@
 # direct methods
 .method constructor <init>(Ljava/util/Collection;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 321
     iput-object p1, p0, Lcom/google/common/collect/Collections2$1;->val$collection:Ljava/util/Collection;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -50,7 +49,7 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "input"
+    .param p1, "input"    # Ljava/lang/Object;
 
     .prologue
     .line 323
@@ -60,7 +59,7 @@
 
     const-string p1, "(this Collection)"
 
-    .end local p1
+    .end local p1    # "input":Ljava/lang/Object;
     :cond_0
     return-object p1
 .end method

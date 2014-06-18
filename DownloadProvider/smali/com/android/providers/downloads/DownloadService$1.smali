@@ -24,13 +24,12 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/DownloadService;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 235
     iput-object p1, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -39,7 +38,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 7
-    .parameter "msg"
+    .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
     .line 238
@@ -51,10 +50,10 @@
     iget v3, p1, Landroid/os/Message;->arg1:I
 
     .line 251
-    .local v3, startId:I
+    .local v3, "startId":I
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #getter for: Lcom/android/providers/downloads/DownloadService;->mDownloads:Ljava/util/Map;
+    # getter for: Lcom/android/providers/downloads/DownloadService;->mDownloads:Ljava/util/Map;
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$100(Lcom/android/providers/downloads/DownloadService;)Ljava/util/Map;
 
     move-result-object v5
@@ -65,13 +64,13 @@
     :try_start_0
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #calls: Lcom/android/providers/downloads/DownloadService;->updateLocked()Z
+    # invokes: Lcom/android/providers/downloads/DownloadService;->updateLocked()Z
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$200(Lcom/android/providers/downloads/DownloadService;)Z
 
     move-result v2
 
     .line 253
-    .local v2, isActive:Z
+    .local v2, "isActive":Z
     monitor-exit v5
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -96,7 +95,7 @@
 
     move-result-object v1
 
-    .local v1, i$:Ljava/util/Iterator;
+    .local v1, "i$":Ljava/util/Iterator;
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -112,7 +111,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 259
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/Thread;[Ljava/lang/StackTraceElement;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Thread;[Ljava/lang/StackTraceElement;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -175,9 +174,9 @@
     goto :goto_0
 
     .line 253
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/Thread;[Ljava/lang/StackTraceElement;>;"
-    .end local v1           #i$:Ljava/util/Iterator;
-    .end local v2           #isActive:Z
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Thread;[Ljava/lang/StackTraceElement;>;"
+    .end local v1    # "i$":Ljava/util/Iterator;
+    .end local v2    # "isActive":Z
     :catchall_0
     move-exception v4
 
@@ -189,12 +188,12 @@
     throw v4
 
     .line 265
-    .restart local v1       #i$:Ljava/util/Iterator;
-    .restart local v2       #isActive:Z
+    .restart local v1    # "i$":Ljava/util/Iterator;
+    .restart local v2    # "isActive":Z
     :cond_1
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #getter for: Lcom/android/providers/downloads/DownloadService;->mNotifier:Lcom/android/providers/downloads/DownloadNotifier;
+    # getter for: Lcom/android/providers/downloads/DownloadService;->mNotifier:Lcom/android/providers/downloads/DownloadNotifier;
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$300(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadNotifier;
 
     move-result-object v4
@@ -231,14 +230,14 @@
     invoke-static {v4, v5}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 271
-    .end local v1           #i$:Ljava/util/Iterator;
+    .end local v1    # "i$":Ljava/util/Iterator;
     :cond_2
     if-eqz v2, :cond_4
 
     .line 277
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #calls: Lcom/android/providers/downloads/DownloadService;->enqueueFinalUpdate()V
+    # invokes: Lcom/android/providers/downloads/DownloadService;->enqueueFinalUpdate()V
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$400(Lcom/android/providers/downloads/DownloadService;)V
 
     .line 292
@@ -267,7 +266,7 @@
 
     iget-object v5, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #getter for: Lcom/android/providers/downloads/DownloadService;->mObserver:Lcom/android/providers/downloads/DownloadService$DownloadManagerContentObserver;
+    # getter for: Lcom/android/providers/downloads/DownloadService;->mObserver:Lcom/android/providers/downloads/DownloadService$DownloadManagerContentObserver;
     invoke-static {v5}, Lcom/android/providers/downloads/DownloadService;->access$500(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadService$DownloadManagerContentObserver;
 
     move-result-object v5
@@ -277,7 +276,7 @@
     .line 287
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #getter for: Lcom/android/providers/downloads/DownloadService;->mScanner:Lcom/android/providers/downloads/DownloadScanner;
+    # getter for: Lcom/android/providers/downloads/DownloadService;->mScanner:Lcom/android/providers/downloads/DownloadScanner;
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$600(Lcom/android/providers/downloads/DownloadService;)Lcom/android/providers/downloads/DownloadScanner;
 
     move-result-object v4
@@ -287,7 +286,7 @@
     .line 288
     iget-object v4, p0, Lcom/android/providers/downloads/DownloadService$1;->this$0:Lcom/android/providers/downloads/DownloadService;
 
-    #getter for: Lcom/android/providers/downloads/DownloadService;->mUpdateThread:Landroid/os/HandlerThread;
+    # getter for: Lcom/android/providers/downloads/DownloadService;->mUpdateThread:Landroid/os/HandlerThread;
     invoke-static {v4}, Lcom/android/providers/downloads/DownloadService;->access$700(Lcom/android/providers/downloads/DownloadService;)Landroid/os/HandlerThread;
 
     move-result-object v4

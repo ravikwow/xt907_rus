@@ -54,7 +54,7 @@
 
 .method synthetic constructor <init>(Lcom/google/common/collect/ImmutableCollection$1;)V
     .locals 0
-    .parameter "x0"
+    .param p1, "x0"    # Lcom/google/common/collect/ImmutableCollection$1;
 
     .prologue
     .line 173
@@ -67,7 +67,7 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 185
@@ -139,7 +139,6 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -150,7 +149,7 @@
 
     .prologue
     .line 199
-    .local p1, array:[Ljava/lang/Object;,"[TT;"
+    .local p1, "array":[Ljava/lang/Object;, "[TT;"
     array-length v0, p1
 
     if-lez v0, :cond_0

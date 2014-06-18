@@ -50,8 +50,8 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 6
-    .parameter "t"
-    .parameter "e"
+    .param p1, "t"    # Ljava/lang/Thread;
+    .param p2, "e"    # Ljava/lang/Throwable;
 
     .prologue
     const/4 v5, 0x1

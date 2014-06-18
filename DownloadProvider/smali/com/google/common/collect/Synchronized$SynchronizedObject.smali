@@ -30,12 +30,12 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
-    .parameter "delegate"
-    .parameter "mutex"
+    .param p1, "delegate"    # Ljava/lang/Object;
+    .param p2, "mutex"    # Ljava/lang/Object;
 
     .prologue
     .line 62
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 63
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -49,7 +49,7 @@
 
     move-object p2, p0
 
-    .end local p2
+    .end local p2    # "mutex":Ljava/lang/Object;
     :cond_0
     iput-object p2, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 2
-    .parameter "stream"
+    .param p1, "stream"    # Ljava/io/ObjectOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;Lcom/google/common/base/Function;)V
     .locals 0
-    .parameter
-    .parameter
 
     .prologue
     .line 706

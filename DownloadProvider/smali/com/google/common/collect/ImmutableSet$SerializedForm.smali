@@ -28,11 +28,11 @@
 # direct methods
 .method constructor <init>([Ljava/lang/Object;)V
     .locals 0
-    .parameter "elements"
+    .param p1, "elements"    # [Ljava/lang/Object;
 
     .prologue
     .line 514
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 515
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSet$SerializedForm;->elements:[Ljava/lang/Object;

@@ -26,7 +26,7 @@
 
 .method private sendRunningDownloadClickedBroadcast(J)V
     .locals 4
-    .parameter "id"
+    .param p1, "id"    # J
 
     .prologue
     .line 109
@@ -37,7 +37,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 110
-    .local v0, intent:Landroid/content/Intent;
+    .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.android.providers.downloads"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
@@ -66,7 +66,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .parameter "savedInstanceState"
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
     const/4 v7, 0x1
@@ -90,7 +90,7 @@
     move-result-wide v2
 
     .line 57
-    .local v2, id:J
+    .local v2, "id":J
     const-string v6, "download"
 
     invoke-virtual {p0, v6}, Lcom/android/providers/downloads/ui/TrampolineActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -100,7 +100,7 @@
     check-cast v1, Landroid/app/DownloadManager;
 
     .line 58
-    .local v1, dm:Landroid/app/DownloadManager;
+    .local v1, "dm":Landroid/app/DownloadManager;
     invoke-virtual {v1, v7}, Landroid/app/DownloadManager;->setAccessAllDownloads(Z)V
 
     .line 63
@@ -121,7 +121,7 @@
     move-result-object v0
 
     .line 65
-    .local v0, cursor:Landroid/database/Cursor;
+    .local v0, "cursor":Landroid/database/Cursor;
     :try_start_0
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -141,7 +141,7 @@
     move-result v5
 
     .line 67
-    .local v5, status:I
+    .local v5, "status":I
     const-string v6, "reason"
 
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -155,7 +155,7 @@
     move-result v4
 
     .line 74
-    .local v4, reason:I
+    .local v4, "reason":I
     invoke-static {v0}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
 
     .line 77
@@ -205,8 +205,8 @@
     sparse-switch v5, :sswitch_data_0
 
     .line 106
-    .end local v4           #reason:I
-    .end local v5           #status:I
+    .end local v4    # "reason":I
+    .end local v5    # "status":I
     :goto_0
     return-void
 
@@ -241,8 +241,8 @@
     throw v6
 
     .line 81
-    .restart local v4       #reason:I
-    .restart local v5       #status:I
+    .restart local v4    # "reason":I
+    .restart local v5    # "status":I
     :sswitch_0
     invoke-direct {p0, v2, v3}, Lcom/android/providers/downloads/ui/TrampolineActivity;->sendRunningDownloadClickedBroadcast(J)V
 

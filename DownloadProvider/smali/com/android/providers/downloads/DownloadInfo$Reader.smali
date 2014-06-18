@@ -23,12 +23,12 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/database/Cursor;)V
     .locals 0
-    .parameter "resolver"
-    .parameter "cursor"
+    .param p1, "resolver"    # Landroid/content/ContentResolver;
+    .param p2, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 58
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 59
     iput-object p1, p0, Lcom/android/providers/downloads/DownloadInfo$Reader;->mResolver:Landroid/content/ContentResolver;
@@ -42,13 +42,13 @@
 
 .method private addHeader(Lcom/android/providers/downloads/DownloadInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .parameter "info"
-    .parameter "header"
-    .parameter "value"
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
+    .param p2, "header"    # Ljava/lang/String;
+    .param p3, "value"    # Ljava/lang/String;
 
     .prologue
     .line 139
-    #getter for: Lcom/android/providers/downloads/DownloadInfo;->mRequestHeaders:Ljava/util/List;
+    # getter for: Lcom/android/providers/downloads/DownloadInfo;->mRequestHeaders:Ljava/util/List;
     invoke-static {p1}, Lcom/android/providers/downloads/DownloadInfo;->access$100(Lcom/android/providers/downloads/DownloadInfo;)Ljava/util/List;
 
     move-result-object v0
@@ -65,7 +65,7 @@
 
 .method private getInt(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 2
-    .parameter "column"
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 149
@@ -90,7 +90,7 @@
 
 .method private getLong(Ljava/lang/String;)Ljava/lang/Long;
     .locals 2
-    .parameter "column"
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 153
@@ -115,7 +115,7 @@
 
 .method private getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .parameter "column"
+    .param p1, "column"    # Ljava/lang/String;
 
     .prologue
     .line 143
@@ -126,7 +126,7 @@
     move-result v0
 
     .line 144
-    .local v0, index:I
+    .local v0, "index":I
     iget-object v2, p0, Lcom/android/providers/downloads/DownloadInfo$Reader;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -134,7 +134,7 @@
     move-result-object v1
 
     .line 145
-    .local v1, s:Ljava/lang/String;
+    .local v1, "s":Ljava/lang/String;
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -143,20 +143,20 @@
 
     const/4 v1, 0x0
 
-    .end local v1           #s:Ljava/lang/String;
+    .end local v1    # "s":Ljava/lang/String;
     :cond_0
     return-object v1
 .end method
 
 .method private readRequestHeaders(Lcom/android/providers/downloads/DownloadInfo;)V
     .locals 9
-    .parameter "info"
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     const/4 v2, 0x0
 
     .line 114
-    #getter for: Lcom/android/providers/downloads/DownloadInfo;->mRequestHeaders:Ljava/util/List;
+    # getter for: Lcom/android/providers/downloads/DownloadInfo;->mRequestHeaders:Ljava/util/List;
     invoke-static {p1}, Lcom/android/providers/downloads/DownloadInfo;->access$100(Lcom/android/providers/downloads/DownloadInfo;)Ljava/util/List;
 
     move-result-object v0
@@ -175,7 +175,7 @@
     move-result-object v1
 
     .line 117
-    .local v1, headerUri:Landroid/net/Uri;
+    .local v1, "headerUri":Landroid/net/Uri;
     iget-object v0, p0, Lcom/android/providers/downloads/DownloadInfo$Reader;->mResolver:Landroid/content/ContentResolver;
 
     move-object v3, v2
@@ -189,7 +189,7 @@
     move-result-object v6
 
     .line 119
-    .local v6, cursor:Landroid/database/Cursor;
+    .local v6, "cursor":Landroid/database/Cursor;
     :try_start_0
     const-string v0, "header"
 
@@ -198,7 +198,7 @@
     move-result v7
 
     .line 121
-    .local v7, headerIndex:I
+    .local v7, "headerIndex":I
     const-string v0, "value"
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -206,7 +206,7 @@
     move-result v8
 
     .line 123
-    .local v8, valueIndex:I
+    .local v8, "valueIndex":I
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
     :goto_0
@@ -235,8 +235,8 @@
     goto :goto_0
 
     .line 127
-    .end local v7           #headerIndex:I
-    .end local v8           #valueIndex:I
+    .end local v7    # "headerIndex":I
+    .end local v8    # "valueIndex":I
     :catchall_0
     move-exception v0
 
@@ -244,8 +244,8 @@
 
     throw v0
 
-    .restart local v7       #headerIndex:I
-    .restart local v8       #valueIndex:I
+    .restart local v7    # "headerIndex":I
+    .restart local v8    # "valueIndex":I
     :cond_0
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
@@ -283,10 +283,10 @@
 # virtual methods
 .method public newDownloadInfo(Landroid/content/Context;Lcom/android/providers/downloads/SystemFacade;Lcom/android/providers/downloads/StorageManager;Lcom/android/providers/downloads/DownloadNotifier;)Lcom/android/providers/downloads/DownloadInfo;
     .locals 6
-    .parameter "context"
-    .parameter "systemFacade"
-    .parameter "storageManager"
-    .parameter "notifier"
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "systemFacade"    # Lcom/android/providers/downloads/SystemFacade;
+    .param p3, "storageManager"    # Lcom/android/providers/downloads/StorageManager;
+    .param p4, "notifier"    # Lcom/android/providers/downloads/DownloadNotifier;
 
     .prologue
     .line 65
@@ -305,7 +305,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/android/providers/downloads/DownloadInfo;-><init>(Landroid/content/Context;Lcom/android/providers/downloads/SystemFacade;Lcom/android/providers/downloads/StorageManager;Lcom/android/providers/downloads/DownloadNotifier;Lcom/android/providers/downloads/DownloadInfo$1;)V
 
     .line 67
-    .local v0, info:Lcom/android/providers/downloads/DownloadInfo;
+    .local v0, "info":Lcom/android/providers/downloads/DownloadInfo;
     invoke-virtual {p0, v0}, Lcom/android/providers/downloads/DownloadInfo$Reader;->updateFromDatabase(Lcom/android/providers/downloads/DownloadInfo;)V
 
     .line 68
@@ -317,7 +317,7 @@
 
 .method public updateFromDatabase(Lcom/android/providers/downloads/DownloadInfo;)V
     .locals 6
-    .parameter "info"
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     const/4 v3, 0x0
@@ -455,7 +455,7 @@
     move-result v0
 
     .line 84
-    .local v0, retryRedirect:I
+    .local v0, "retryRedirect":I
     const v1, 0xfffffff
 
     and-int/2addr v1, v0
@@ -736,14 +736,14 @@
     .line 111
     return-void
 
-    .end local v0           #retryRedirect:I
+    .end local v0    # "retryRedirect":I
     :cond_0
     move v1, v3
 
     .line 75
     goto/16 :goto_0
 
-    .restart local v0       #retryRedirect:I
+    .restart local v0    # "retryRedirect":I
     :cond_1
     move v1, v3
 

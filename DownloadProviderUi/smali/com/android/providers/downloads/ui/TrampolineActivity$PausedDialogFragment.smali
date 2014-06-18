@@ -27,8 +27,8 @@
 
 .method public static show(Landroid/app/FragmentManager;J)V
     .locals 3
-    .parameter "fm"
-    .parameter "id"
+    .param p0, "fm"    # Landroid/app/FragmentManager;
+    .param p1, "id"    # J
 
     .prologue
     .line 117
@@ -37,13 +37,13 @@
     invoke-direct {v1}, Lcom/android/providers/downloads/ui/TrampolineActivity$PausedDialogFragment;-><init>()V
 
     .line 118
-    .local v1, dialog:Lcom/android/providers/downloads/ui/TrampolineActivity$PausedDialogFragment;
+    .local v1, "dialog":Lcom/android/providers/downloads/ui/TrampolineActivity$PausedDialogFragment;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 119
-    .local v0, args:Landroid/os/Bundle;
+    .local v0, "args":Landroid/os/Bundle;
     const-string v2, "id"
 
     invoke-virtual {v0, v2, p1, p2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
@@ -64,7 +64,7 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .parameter "savedInstanceState"
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
     .line 126
@@ -73,7 +73,7 @@
     move-result-object v1
 
     .line 128
-    .local v1, context:Landroid/content/Context;
+    .local v1, "context":Landroid/content/Context;
     const-string v5, "download"
 
     invoke-virtual {v1, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -83,7 +83,7 @@
     check-cast v2, Landroid/app/DownloadManager;
 
     .line 130
-    .local v2, dm:Landroid/app/DownloadManager;
+    .local v2, "dm":Landroid/app/DownloadManager;
     const/4 v5, 0x1
 
     invoke-virtual {v2, v5}, Landroid/app/DownloadManager;->setAccessAllDownloads(Z)V
@@ -100,7 +100,7 @@
     move-result-wide v3
 
     .line 134
-    .local v3, id:J
+    .local v3, "id":J
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     const/4 v5, 0x3
@@ -108,7 +108,7 @@
     invoke-direct {v0, v1, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 136
-    .local v0, builder:Landroid/app/AlertDialog$Builder;
+    .local v0, "builder":Landroid/app/AlertDialog$Builder;
     const v5, 0x7f07000d
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -144,7 +144,7 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .parameter "dialog"
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
     .line 154
@@ -156,7 +156,7 @@
     move-result-object v0
 
     .line 161
-    .local v0, activity:Landroid/app/Activity;
+    .local v0, "activity":Landroid/app/Activity;
     if-eqz v0, :cond_0
 
     .line 162

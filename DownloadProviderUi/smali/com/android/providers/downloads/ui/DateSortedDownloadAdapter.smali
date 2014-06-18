@@ -12,8 +12,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;Landroid/database/Cursor;)V
     .locals 1
-    .parameter "downloadList"
-    .parameter "cursor"
+    .param p1, "downloadList"    # Lcom/android/providers/downloads/ui/DownloadList;
+    .param p2, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     .line 36
@@ -43,11 +43,11 @@
 # virtual methods
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .parameter "groupPosition"
-    .parameter "childPosition"
-    .parameter "isLastChild"
-    .parameter "convertView"
-    .parameter "parent"
+    .param p1, "groupPosition"    # I
+    .param p2, "childPosition"    # I
+    .param p3, "isLastChild"    # Z
+    .param p4, "convertView"    # Landroid/view/View;
+    .param p5, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 46
@@ -94,7 +94,7 @@
     move-result v0
 
     .line 57
-    .local v0, pos:I
+    .local v0, "pos":I
     iget-object v1, p0, Lcom/android/providers/downloads/ui/DateSortedDownloadAdapter;->mDelegate:Lcom/android/providers/downloads/ui/DownloadAdapter;
 
     invoke-virtual {v1, p4, v0}, Lcom/android/providers/downloads/ui/DownloadAdapter;->bindView(Landroid/view/View;I)V

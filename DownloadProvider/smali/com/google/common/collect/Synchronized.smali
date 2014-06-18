@@ -22,15 +22,15 @@
 
     .prologue
     .line 56
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static synthetic access$500(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
-    .parameter "x0"
-    .parameter "x1"
+    .param p0, "x0"    # Ljava/util/Collection;
+    .param p1, "x1"    # Ljava/lang/Object;
 
     .prologue
     .line 55
@@ -43,8 +43,7 @@
 
 .method private static collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
-    .parameter
-    .parameter "mutex"
+    .param p1, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -61,7 +60,7 @@
 
     .prologue
     .line 97
-    .local p0, collection:Ljava/util/Collection;,"Ljava/util/Collection<TE;>;"
+    .local p0, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TE;>;"
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;
 
     const/4 v1, 0x0
@@ -73,8 +72,7 @@
 
 .method static map(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
-    .parameter
-    .parameter "mutex"
+    .param p1, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -93,7 +91,7 @@
 
     .prologue
     .line 914
-    .local p0, map:Ljava/util/Map;,"Ljava/util/Map<TK;TV;>;"
+    .local p0, "map":Ljava/util/Map;, "Ljava/util/Map<TK;TV;>;"
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedMap;-><init>(Ljava/util/Map;Ljava/lang/Object;)V
@@ -103,8 +101,7 @@
 
 .method static set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 1
-    .parameter
-    .parameter "mutex"
+    .param p1, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -121,7 +118,7 @@
 
     .prologue
     .line 205
-    .local p0, set:Ljava/util/Set;,"Ljava/util/Set<TE;>;"
+    .local p0, "set":Ljava/util/Set;, "Ljava/util/Set<TE;>;"
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V

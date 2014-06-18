@@ -17,14 +17,13 @@
 
     .prologue
     .line 61
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static getOnlyElement(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -37,7 +36,7 @@
 
     .prologue
     .line 268
-    .local p0, iterable:Ljava/lang/Iterable;,"Ljava/lang/Iterable<TT;>;"
+    .local p0, "iterable":Ljava/lang/Iterable;, "Ljava/lang/Iterable<TT;>;"
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -51,7 +50,6 @@
 
 .method public static toString(Ljava/lang/Iterable;)Ljava/lang/String;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,7 +61,7 @@
 
     .prologue
     .line 257
-    .local p0, iterable:Ljava/lang/Iterable;,"Ljava/lang/Iterable<*>;"
+    .local p0, "iterable":Ljava/lang/Iterable;, "Ljava/lang/Iterable<*>;"
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -77,8 +75,6 @@
 
 .method public static transform(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Ljava/lang/Iterable;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -97,8 +93,8 @@
 
     .prologue
     .line 704
-    .local p0, fromIterable:Ljava/lang/Iterable;,"Ljava/lang/Iterable<TF;>;"
-    .local p1, function:Lcom/google/common/base/Function;,"Lcom/google/common/base/Function<-TF;+TT;>;"
+    .local p0, "fromIterable":Ljava/lang/Iterable;, "Ljava/lang/Iterable<TF;>;"
+    .local p1, "function":Lcom/google/common/base/Function;, "Lcom/google/common/base/Function<-TF;+TT;>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 705

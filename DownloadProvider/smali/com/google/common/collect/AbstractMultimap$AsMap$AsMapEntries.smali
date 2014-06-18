@@ -30,11 +30,10 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap$AsMap;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 1244
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -46,11 +45,11 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 1257
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
 
     iget-object v0, v0, Lcom/google/common/collect/AbstractMultimap$AsMap;->submap:Ljava/util/Map;
@@ -82,7 +81,7 @@
 
     .prologue
     .line 1251
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
@@ -106,7 +105,7 @@
 
     .prologue
     .line 1247
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
 
     return-object v0
@@ -114,11 +113,11 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 1261
-    .local p0, this:Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;,"Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
+    .local p0, "this":Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;, "Lcom/google/common/collect/AbstractMultimap<TK;TV;>.AsMap.AsMapEntries;"
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->contains(Ljava/lang/Object;)Z
 
     move-result v1
@@ -139,7 +138,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 1265
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     iget-object v1, p0, Lcom/google/common/collect/AbstractMultimap$AsMap$AsMapEntries;->this$1:Lcom/google/common/collect/AbstractMultimap$AsMap;
 
     iget-object v1, v1, Lcom/google/common/collect/AbstractMultimap$AsMap;->this$0:Lcom/google/common/collect/AbstractMultimap;
@@ -148,7 +147,7 @@
 
     move-result-object v2
 
-    #calls: Lcom/google/common/collect/AbstractMultimap;->removeValuesForKey(Ljava/lang/Object;)I
+    # invokes: Lcom/google/common/collect/AbstractMultimap;->removeValuesForKey(Ljava/lang/Object;)I
     invoke-static {v1, v2}, Lcom/google/common/collect/AbstractMultimap;->access$500(Lcom/google/common/collect/AbstractMultimap;Ljava/lang/Object;)I
 
     .line 1266

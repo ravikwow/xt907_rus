@@ -63,9 +63,7 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
-    .parameter "hash"
-    .parameter
+    .param p2, "hash"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -76,10 +74,10 @@
 
     .prologue
     .line 969
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p3, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p3, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 1038
     invoke-static {}, Lcom/google/common/collect/MapMakerInternalMap;->unset()Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -108,7 +106,7 @@
 
     .prologue
     .line 984
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -121,7 +119,7 @@
 
     .prologue
     .line 1054
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     iget v0, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->hash:I
 
     return v0
@@ -137,7 +135,7 @@
 
     .prologue
     .line 977
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->key:Ljava/lang/Object;
 
     return-object v0
@@ -155,7 +153,7 @@
 
     .prologue
     .line 1059
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     return-object v0
@@ -173,7 +171,7 @@
 
     .prologue
     .line 1016
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -193,7 +191,7 @@
 
     .prologue
     .line 994
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -213,7 +211,7 @@
 
     .prologue
     .line 1026
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -233,7 +231,7 @@
 
     .prologue
     .line 1004
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -253,7 +251,7 @@
 
     .prologue
     .line 1042
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     return-object v0
@@ -261,11 +259,11 @@
 
 .method public setExpirationTime(J)V
     .locals 1
-    .parameter "time"
+    .param p1, "time"    # J
 
     .prologue
     .line 989
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -275,7 +273,6 @@
 
 .method public setNextEvictable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -286,8 +283,8 @@
 
     .prologue
     .line 1021
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -297,7 +294,6 @@
 
 .method public setNextExpirable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -308,8 +304,8 @@
 
     .prologue
     .line 999
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, next:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "next":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -319,7 +315,6 @@
 
 .method public setPreviousEvictable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -330,8 +325,8 @@
 
     .prologue
     .line 1031
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, previous:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "previous":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -341,7 +336,6 @@
 
 .method public setPreviousExpirable(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,8 +346,8 @@
 
     .prologue
     .line 1009
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, previous:Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;,"Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "previous":Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;, "Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry<TK;TV;>;"
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -363,7 +357,6 @@
 
 .method public setValueReference(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -374,12 +367,12 @@
 
     .prologue
     .line 1047
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;,"Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
-    .local p1, valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;, "Lcom/google/common/collect/MapMakerInternalMap$StrongEntry<TK;TV;>;"
+    .local p1, "valueReference":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     .line 1048
-    .local v0, previous:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;,"Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
+    .local v0, "previous":Lcom/google/common/collect/MapMakerInternalMap$ValueReference;, "Lcom/google/common/collect/MapMakerInternalMap$ValueReference<TK;TV;>;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$StrongEntry;->valueReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     .line 1049

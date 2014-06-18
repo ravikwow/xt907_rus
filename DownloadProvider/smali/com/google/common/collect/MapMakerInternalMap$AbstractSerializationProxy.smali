@@ -91,16 +91,12 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap$Strength;Lcom/google/common/collect/MapMakerInternalMap$Strength;Lcom/google/common/base/Equivalence;Lcom/google/common/base/Equivalence;JJIILcom/google/common/collect/MapMaker$RemovalListener;Ljava/util/concurrent/ConcurrentMap;)V
     .locals 0
-    .parameter "keyStrength"
-    .parameter "valueStrength"
-    .parameter
-    .parameter
-    .parameter "expireAfterWriteNanos"
-    .parameter "expireAfterAccessNanos"
-    .parameter "maximumSize"
-    .parameter "concurrencyLevel"
-    .parameter
-    .parameter
+    .param p1, "keyStrength"    # Lcom/google/common/collect/MapMakerInternalMap$Strength;
+    .param p2, "valueStrength"    # Lcom/google/common/collect/MapMakerInternalMap$Strength;
+    .param p5, "expireAfterWriteNanos"    # J
+    .param p7, "expireAfterAccessNanos"    # J
+    .param p9, "maximumSize"    # I
+    .param p10, "concurrencyLevel"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -123,11 +119,11 @@
 
     .prologue
     .line 3967
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
-    .local p3, keyEquivalence:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
-    .local p4, valueEquivalence:Lcom/google/common/base/Equivalence;,"Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
-    .local p11, removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;,"Lcom/google/common/collect/MapMaker$RemovalListener<-TK;-TV;>;"
-    .local p12, delegate:Ljava/util/concurrent/ConcurrentMap;,"Ljava/util/concurrent/ConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p3, "keyEquivalence":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
+    .local p4, "valueEquivalence":Lcom/google/common/base/Equivalence;, "Lcom/google/common/base/Equivalence<Ljava/lang/Object;>;"
+    .local p11, "removalListener":Lcom/google/common/collect/MapMaker$RemovalListener;, "Lcom/google/common/collect/MapMaker$RemovalListener<-TK;-TV;>;"
+    .local p12, "delegate":Ljava/util/concurrent/ConcurrentMap;, "Ljava/util/concurrent/ConcurrentMap<TK;TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;-><init>()V
 
     .line 3968
@@ -171,7 +167,7 @@
 
     .prologue
     .line 3947
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -184,7 +180,7 @@
 
     .prologue
     .line 3947
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -204,7 +200,7 @@
 
     .prologue
     .line 3982
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->delegate:Ljava/util/concurrent/ConcurrentMap;
 
     return-object v0
@@ -212,7 +208,7 @@
 
 .method readEntries(Ljava/io/ObjectInputStream;)V
     .locals 3
-    .parameter "in"
+    .param p1, "in"    # Ljava/io/ObjectInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -222,14 +218,14 @@
 
     .prologue
     .line 4020
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     :goto_0
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 4021
-    .local v0, key:Ljava/lang/Object;,"TK;"
+    .local v0, "key":Ljava/lang/Object;, "TK;"
     if-nez v0, :cond_0
 
     .line 4027
@@ -242,7 +238,7 @@
     move-result-object v1
 
     .line 4025
-    .local v1, value:Ljava/lang/Object;,"TV;"
+    .local v1, "value":Ljava/lang/Object;, "TV;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->delegate:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v2, v0, v1}, Ljava/util/concurrent/ConcurrentMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -252,7 +248,7 @@
 
 .method readMapMaker(Ljava/io/ObjectInputStream;)Lcom/google/common/collect/MapMaker;
     .locals 7
-    .parameter "in"
+    .param p1, "in"    # Ljava/io/ObjectInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -260,7 +256,7 @@
     .end annotation
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     const-wide/16 v5, 0x0
 
     .line 3996
@@ -269,7 +265,7 @@
     move-result v1
 
     .line 3997
-    .local v1, size:I
+    .local v1, "size":I
     new-instance v2, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v2}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -309,7 +305,7 @@
     move-result-object v0
 
     .line 4004
-    .local v0, mapMaker:Lcom/google/common/collect/MapMaker;
+    .local v0, "mapMaker":Lcom/google/common/collect/MapMaker;
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     invoke-virtual {v0, v2}, Lcom/google/common/collect/MapMaker;->removalListener(Lcom/google/common/collect/MapMaker$RemovalListener;)Lcom/google/common/collect/GenericMapMaker;
@@ -363,7 +359,7 @@
 
 .method writeMapTo(Ljava/io/ObjectOutputStream;)V
     .locals 3
-    .parameter "out"
+    .param p1, "out"    # Ljava/io/ObjectOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -372,7 +368,7 @@
 
     .prologue
     .line 3986
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;,"Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;, "Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy<TK;TV;>;"
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractSerializationProxy;->delegate:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v2}, Ljava/util/concurrent/ConcurrentMap;->size()I
@@ -392,7 +388,7 @@
 
     move-result-object v1
 
-    .local v1, i$:Ljava/util/Iterator;
+    .local v1, "i$":Ljava/util/Iterator;
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -407,7 +403,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 3988
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -424,7 +420,7 @@
     goto :goto_0
 
     .line 3991
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     :cond_0
     const/4 v2, 0x0
 

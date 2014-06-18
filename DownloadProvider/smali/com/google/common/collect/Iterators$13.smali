@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 1087

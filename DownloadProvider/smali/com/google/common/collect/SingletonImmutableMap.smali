@@ -82,7 +82,6 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map$Entry;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -93,8 +92,8 @@
 
     .prologue
     .line 45
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
-    .local p1, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap;-><init>()V
 
     .line 46
@@ -130,11 +129,11 @@
 
     .prologue
     .line 52
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->entry:Ljava/util/Map$Entry;
 
     .line 53
-    .local v0, e:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local v0, "e":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     if-nez v0, :cond_0
 
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
@@ -145,7 +144,7 @@
 
     move-result-object v0
 
-    .end local v0           #e:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .end local v0    # "e":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     iput-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->entry:Ljava/util/Map$Entry;
 
     :cond_0
@@ -156,11 +155,11 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 71
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -172,11 +171,11 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 75
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleValue:Ljava/lang/Object;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -200,11 +199,11 @@
 
     .prologue
     .line 85
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->entrySet:Lcom/google/common/collect/ImmutableSet;
 
     .line 86
-    .local v0, es:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
+    .local v0, "es":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
     if-nez v0, :cond_0
 
     invoke-direct {p0}, Lcom/google/common/collect/SingletonImmutableMap;->entry()Ljava/util/Map$Entry;
@@ -215,7 +214,7 @@
 
     move-result-object v0
 
-    .end local v0           #es:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
+    .end local v0    # "es":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;"
     iput-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->entrySet:Lcom/google/common/collect/ImmutableSet;
 
     :cond_0
@@ -227,7 +226,7 @@
 
     .prologue
     .line 31
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -237,10 +236,10 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     const/4 v2, 0x1
 
     const/4 v3, 0x0
@@ -265,7 +264,7 @@
     check-cast v1, Ljava/util/Map;
 
     .line 139
-    .local v1, that:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .local v1, "that":Ljava/util/Map;, "Ljava/util/Map<**>;"
     invoke-interface {v1}, Ljava/util/Map;->size()I
 
     move-result v4
@@ -294,7 +293,7 @@
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 143
-    .local v0, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
+    .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
     iget-object v4, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -324,8 +323,8 @@
 
     goto :goto_0
 
-    .end local v0           #entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<**>;"
-    .end local v1           #that:Ljava/util/Map;,"Ljava/util/Map<**>;"
+    .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<**>;"
+    .end local v1    # "that":Ljava/util/Map;, "Ljava/util/Map<**>;"
     :cond_4
     move v2, v3
 
@@ -335,7 +334,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -346,7 +345,7 @@
 
     .prologue
     .line 58
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -371,7 +370,7 @@
 
     .prologue
     .line 150
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -394,7 +393,7 @@
 
     .prologue
     .line 67
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     const/4 v0, 0x0
 
     return v0
@@ -412,11 +411,11 @@
 
     .prologue
     .line 92
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->keySet:Lcom/google/common/collect/ImmutableSet;
 
     .line 93
-    .local v0, ks:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TK;>;"
+    .local v0, "ks":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TK;>;"
     if-nez v0, :cond_0
 
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleKey:Ljava/lang/Object;
@@ -425,7 +424,7 @@
 
     move-result-object v0
 
-    .end local v0           #ks:Lcom/google/common/collect/ImmutableSet;,"Lcom/google/common/collect/ImmutableSet<TK;>;"
+    .end local v0    # "ks":Lcom/google/common/collect/ImmutableSet;, "Lcom/google/common/collect/ImmutableSet<TK;>;"
     iput-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->keySet:Lcom/google/common/collect/ImmutableSet;
 
     :cond_0
@@ -437,7 +436,7 @@
 
     .prologue
     .line 31
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -450,7 +449,7 @@
 
     .prologue
     .line 63
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     const/4 v0, 0x1
 
     return v0
@@ -461,7 +460,7 @@
 
     .prologue
     .line 154
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -523,16 +522,16 @@
 
     .prologue
     .line 99
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableMap;->values:Lcom/google/common/collect/ImmutableCollection;
 
     .line 100
-    .local v0, v:Lcom/google/common/collect/ImmutableCollection;,"Lcom/google/common/collect/ImmutableCollection<TV;>;"
+    .local v0, "v":Lcom/google/common/collect/ImmutableCollection;, "Lcom/google/common/collect/ImmutableCollection<TV;>;"
     if-nez v0, :cond_0
 
     new-instance v0, Lcom/google/common/collect/SingletonImmutableMap$Values;
 
-    .end local v0           #v:Lcom/google/common/collect/ImmutableCollection;,"Lcom/google/common/collect/ImmutableCollection<TV;>;"
+    .end local v0    # "v":Lcom/google/common/collect/ImmutableCollection;, "Lcom/google/common/collect/ImmutableCollection<TV;>;"
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableMap;->singleValue:Ljava/lang/Object;
 
     invoke-direct {v0, v1}, Lcom/google/common/collect/SingletonImmutableMap$Values;-><init>(Ljava/lang/Object;)V
@@ -548,7 +547,7 @@
 
     .prologue
     .line 31
-    .local p0, this:Lcom/google/common/collect/SingletonImmutableMap;,"Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/SingletonImmutableMap;, "Lcom/google/common/collect/SingletonImmutableMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
 
     move-result-object v0

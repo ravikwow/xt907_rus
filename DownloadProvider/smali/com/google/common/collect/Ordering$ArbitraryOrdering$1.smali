@@ -37,13 +37,12 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Ordering$ArbitraryOrdering;)V
     .locals 2
-    .parameter
 
     .prologue
     .line 212
     iput-object p1, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering$1;->this$0:Lcom/google/common/collect/Ordering$ArbitraryOrdering;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 213
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
@@ -61,7 +60,7 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Ljava/lang/Integer;
     .locals 1
-    .parameter "from"
+    .param p1, "from"    # Ljava/lang/Object;
 
     .prologue
     .line 216
@@ -80,7 +79,7 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 212

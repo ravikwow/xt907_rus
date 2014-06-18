@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/DownloadThread;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 928
@@ -36,7 +35,7 @@
 # virtual methods
 .method public onMeteredIfacesChanged([Ljava/lang/String;)V
     .locals 2
-    .parameter "meteredIfaces"
+    .param p1, "meteredIfaces"    # [Ljava/lang/String;
 
     .prologue
     .line 940
@@ -44,7 +43,7 @@
 
     const/4 v1, 0x1
 
-    #setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
+    # setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
     invoke-static {v0, v1}, Lcom/android/providers/downloads/DownloadThread;->access$102(Lcom/android/providers/downloads/DownloadThread;Z)Z
 
     .line 941
@@ -53,7 +52,7 @@
 
 .method public onRestrictBackgroundChanged(Z)V
     .locals 2
-    .parameter "restrictBackground"
+    .param p1, "restrictBackground"    # Z
 
     .prologue
     .line 946
@@ -61,7 +60,7 @@
 
     const/4 v1, 0x1
 
-    #setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
+    # setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
     invoke-static {v0, v1}, Lcom/android/providers/downloads/DownloadThread;->access$102(Lcom/android/providers/downloads/DownloadThread;Z)Z
 
     .line 947
@@ -70,14 +69,14 @@
 
 .method public onUidRulesChanged(II)V
     .locals 2
-    .parameter "uid"
-    .parameter "uidRules"
+    .param p1, "uid"    # I
+    .param p2, "uidRules"    # I
 
     .prologue
     .line 932
     iget-object v0, p0, Lcom/android/providers/downloads/DownloadThread$1;->this$0:Lcom/android/providers/downloads/DownloadThread;
 
-    #getter for: Lcom/android/providers/downloads/DownloadThread;->mInfo:Lcom/android/providers/downloads/DownloadInfo;
+    # getter for: Lcom/android/providers/downloads/DownloadThread;->mInfo:Lcom/android/providers/downloads/DownloadInfo;
     invoke-static {v0}, Lcom/android/providers/downloads/DownloadThread;->access$000(Lcom/android/providers/downloads/DownloadThread;)Lcom/android/providers/downloads/DownloadInfo;
 
     move-result-object v0
@@ -91,7 +90,7 @@
 
     const/4 v1, 0x1
 
-    #setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
+    # setter for: Lcom/android/providers/downloads/DownloadThread;->mPolicyDirty:Z
     invoke-static {v0, v1}, Lcom/android/providers/downloads/DownloadThread;->access$102(Lcom/android/providers/downloads/DownloadThread;Z)Z
 
     .line 935

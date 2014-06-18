@@ -59,7 +59,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/providers/downloads/DownloadInfo;)V
     .locals 5
-    .parameter "info"
+    .param p1, "info"    # Lcom/android/providers/downloads/DownloadInfo;
 
     .prologue
     const-wide/16 v3, -0x1
@@ -69,7 +69,7 @@
     const/4 v0, 0x0
 
     .line 152
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 127
     iput v0, p0, Lcom/android/providers/downloads/DownloadThread$State;->mRetryAfter:I

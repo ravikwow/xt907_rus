@@ -33,11 +33,10 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 3761
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.ValueIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.ValueIterator;"
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;-><init>(Lcom/google/common/collect/MapMakerInternalMap;)V
@@ -57,7 +56,7 @@
 
     .prologue
     .line 3765
-    .local p0, this:Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;,"Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.ValueIterator;"
+    .local p0, "this":Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;, "Lcom/google/common/collect/MapMakerInternalMap<TK;TV;>.ValueIterator;"
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$ValueIterator;->nextEntry()Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     move-result-object v0

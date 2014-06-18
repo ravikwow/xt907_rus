@@ -47,7 +47,7 @@
 
     .prologue
     .line 166
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable<TR;TC;TV;>;"
     invoke-super {p0}, Lcom/google/common/collect/RegularImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -69,7 +69,7 @@
 
     .prologue
     .line 246
-    .local p0, this:Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable;,"Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable<TR;TC;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable;, "Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable<TR;TC;TV;>;"
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$SparseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
     return-object v0

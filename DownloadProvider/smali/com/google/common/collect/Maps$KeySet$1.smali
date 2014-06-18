@@ -34,14 +34,13 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Maps$KeySet;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 2119
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet$1;,"Lcom/google/common/collect/Maps$KeySet.1;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet$1;, "Lcom/google/common/collect/Maps$KeySet.1;"
     iput-object p1, p0, Lcom/google/common/collect/Maps$KeySet$1;->this$0:Lcom/google/common/collect/Maps$KeySet;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -50,14 +49,14 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
+    .param p1, "x0"    # Ljava/lang/Object;
 
     .prologue
     .line 2119
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet$1;,"Lcom/google/common/collect/Maps$KeySet.1;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet$1;, "Lcom/google/common/collect/Maps$KeySet.1;"
     check-cast p1, Ljava/util/Map$Entry;
 
-    .end local p1
+    .end local p1    # "x0":Ljava/lang/Object;
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$KeySet$1;->apply(Ljava/util/Map$Entry;)Ljava/lang/Object;
 
     move-result-object v0
@@ -67,7 +66,6 @@
 
 .method public apply(Ljava/util/Map$Entry;)Ljava/lang/Object;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -78,8 +76,8 @@
 
     .prologue
     .line 2121
-    .local p0, this:Lcom/google/common/collect/Maps$KeySet$1;,"Lcom/google/common/collect/Maps$KeySet.1;"
-    .local p1, entry:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Maps$KeySet$1;, "Lcom/google/common/collect/Maps$KeySet.1;"
+    .local p1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<TK;TV;>;"
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0

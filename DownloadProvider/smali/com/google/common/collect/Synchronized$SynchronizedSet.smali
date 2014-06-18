@@ -36,8 +36,7 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;Ljava/lang/Object;)V
     .locals 1
-    .parameter
-    .parameter "mutex"
+    .param p2, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,8 +49,8 @@
 
     .prologue
     .line 212
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
-    .local p1, delegate:Ljava/util/Set;,"Ljava/util/Set<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    .local p1, "delegate":Ljava/util/Set;, "Ljava/util/Set<TE;>;"
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
@@ -67,7 +66,7 @@
 
     .prologue
     .line 208
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSet;->delegate()Ljava/util/Set;
 
     move-result-object v0
@@ -80,7 +79,7 @@
 
     .prologue
     .line 208
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSet;->delegate()Ljava/util/Set;
 
     move-result-object v0
@@ -100,7 +99,7 @@
 
     .prologue
     .line 216
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -112,11 +111,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 220
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
     if-ne p1, p0, :cond_0
 
     .line 221
@@ -128,7 +127,7 @@
 
     .line 223
     :cond_0
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedSet;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -162,8 +161,8 @@
 
     .prologue
     .line 229
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedSet;,"Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedSet;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedSet;, "Lcom/google/common/collect/Synchronized$SynchronizedSet<TE;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 

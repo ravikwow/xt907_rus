@@ -10,7 +10,7 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
-    .parameter "cause"
+    .param p1, "cause"    # Ljava/lang/Throwable;
 
     .prologue
     .line 33

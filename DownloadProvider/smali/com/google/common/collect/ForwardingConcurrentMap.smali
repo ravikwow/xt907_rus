@@ -28,7 +28,7 @@
 
     .prologue
     .line 37
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMap;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 
     .prologue
     .line 32
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -54,7 +54,7 @@
 
     .prologue
     .line 32
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -74,8 +74,6 @@
 
 .method public putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -84,9 +82,9 @@
 
     .prologue
     .line 43
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -100,12 +98,12 @@
 
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter "key"
-    .parameter "value"
+    .param p1, "key"    # Ljava/lang/Object;
+    .param p2, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 48
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -119,8 +117,6 @@
 
 .method public replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -129,9 +125,9 @@
 
     .prologue
     .line 53
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -145,9 +141,6 @@
 
 .method public replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .parameter
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;TV;)Z"
@@ -156,10 +149,10 @@
 
     .prologue
     .line 58
-    .local p0, this:Lcom/google/common/collect/ForwardingConcurrentMap;,"Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, oldValue:Ljava/lang/Object;,"TV;"
-    .local p3, newValue:Ljava/lang/Object;,"TV;"
+    .local p0, "this":Lcom/google/common/collect/ForwardingConcurrentMap;, "Lcom/google/common/collect/ForwardingConcurrentMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "oldValue":Ljava/lang/Object;, "TV;"
+    .local p3, "newValue":Ljava/lang/Object;, "TV;"
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0

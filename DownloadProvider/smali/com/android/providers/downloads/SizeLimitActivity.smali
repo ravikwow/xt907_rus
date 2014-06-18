@@ -65,7 +65,7 @@
 
 .method private showDialog(Landroid/database/Cursor;)V
     .locals 11
-    .parameter "cursor"
+    .param p1, "cursor"    # Landroid/database/Cursor;
 
     .prologue
     const/4 v10, 0x1
@@ -88,7 +88,7 @@
     move-result v3
 
     .line 93
-    .local v3, size:I
+    .local v3, "size":I
     int-to-long v5, v3
 
     invoke-static {p0, v5, v6}, Landroid/text/format/Formatter;->formatFileSize(Landroid/content/Context;J)Ljava/lang/String;
@@ -96,13 +96,13 @@
     move-result-object v4
 
     .line 94
-    .local v4, sizeString:Ljava/lang/String;
+    .local v4, "sizeString":Ljava/lang/String;
     invoke-virtual {p0, v8}, Lcom/android/providers/downloads/SizeLimitActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     .line 95
-    .local v2, queueText:Ljava/lang/String;
+    .local v2, "queueText":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/providers/downloads/SizeLimitActivity;->mCurrentIntent:Landroid/content/Intent;
 
     invoke-virtual {v5}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
@@ -116,13 +116,13 @@
     move-result v1
 
     .line 98
-    .local v1, isWifiRequired:Z
+    .local v1, "isWifiRequired":Z
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 99
-    .local v0, builder:Landroid/app/AlertDialog$Builder;
+    .local v0, "builder":Landroid/app/AlertDialog$Builder;
     if-eqz v1, :cond_0
 
     .line 100
@@ -275,7 +275,7 @@
     move-result-object v6
 
     .line 80
-    .local v6, cursor:Landroid/database/Cursor;
+    .local v6, "cursor":Landroid/database/Cursor;
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -341,7 +341,7 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .parameter "dialog"
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
     .line 115
@@ -353,8 +353,8 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .parameter "dialog"
-    .parameter "which"
+    .param p1, "dialog"    # Landroid/content/DialogInterface;
+    .param p2, "which"    # I
 
     .prologue
     const/4 v4, 0x0
@@ -373,7 +373,7 @@
     move-result v0
 
     .line 128
-    .local v0, isRequired:Z
+    .local v0, "isRequired":Z
     if-eqz v0, :cond_1
 
     const/4 v2, -0x2
@@ -411,7 +411,7 @@
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
     .line 132
-    .local v1, values:Landroid/content/ContentValues;
+    .local v1, "values":Landroid/content/ContentValues;
     const-string v2, "bypass_recommended_size_limit"
 
     const/4 v3, 0x1
@@ -436,7 +436,7 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .parameter "intent"
+    .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
     .line 48
@@ -462,7 +462,7 @@
     move-result-object v0
 
     .line 56
-    .local v0, intent:Landroid/content/Intent;
+    .local v0, "intent":Landroid/content/Intent;
     if-eqz v0, :cond_0
 
     .line 57

@@ -24,13 +24,12 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/downloads/ui/DownloadList;)V
     .locals 0
-    .parameter
 
     .prologue
     .line 225
     iput-object p1, p0, Lcom/android/providers/downloads/ui/DownloadList$1;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -39,7 +38,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .parameter "v"
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
     .line 229
@@ -47,7 +46,7 @@
 
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$1;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mIsSortedBySize:Z
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mIsSortedBySize:Z
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$400(Lcom/android/providers/downloads/ui/DownloadList;)Z
 
     move-result v0
@@ -57,13 +56,13 @@
     const/4 v0, 0x1
 
     :goto_0
-    #setter for: Lcom/android/providers/downloads/ui/DownloadList;->mIsSortedBySize:Z
+    # setter for: Lcom/android/providers/downloads/ui/DownloadList;->mIsSortedBySize:Z
     invoke-static {v1, v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$402(Lcom/android/providers/downloads/ui/DownloadList;Z)Z
 
     .line 231
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$1;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
+    # getter for: Lcom/android/providers/downloads/ui/DownloadList;->mSelectedIds:Ljava/util/Map;
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$100(Lcom/android/providers/downloads/ui/DownloadList;)Ljava/util/Map;
 
     move-result-object v0
@@ -73,7 +72,7 @@
     .line 232
     iget-object v0, p0, Lcom/android/providers/downloads/ui/DownloadList$1;->this$0:Lcom/android/providers/downloads/ui/DownloadList;
 
-    #calls: Lcom/android/providers/downloads/ui/DownloadList;->chooseListToShow()V
+    # invokes: Lcom/android/providers/downloads/ui/DownloadList;->chooseListToShow()V
     invoke-static {v0}, Lcom/android/providers/downloads/ui/DownloadList;->access$200(Lcom/android/providers/downloads/ui/DownloadList;)V
 
     .line 233

@@ -68,8 +68,7 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Ljava/lang/Object;)V
     .locals 0
-    .parameter
-    .parameter "mutex"
+    .param p2, "mutex"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -82,8 +81,8 @@
 
     .prologue
     .line 924
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    .local p1, delegate:Ljava/util/Map;,"Ljava/util/Map<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p1, "delegate":Ljava/util/Map;, "Ljava/util/Map<TK;TV;>;"
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedObject;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 925
@@ -97,8 +96,8 @@
 
     .prologue
     .line 934
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -129,12 +128,12 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
 
     .prologue
     .line 941
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -165,12 +164,12 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "value"
+    .param p1, "value"    # Ljava/lang/Object;
 
     .prologue
     .line 948
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -204,7 +203,7 @@
 
     .prologue
     .line 917
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMap;->delegate()Ljava/util/Map;
 
     move-result-object v0
@@ -224,7 +223,7 @@
 
     .prologue
     .line 929
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedObject;->delegate()Ljava/lang/Object;
 
     move-result-object v0
@@ -248,8 +247,8 @@
 
     .prologue
     .line 955
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -268,7 +267,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     invoke-static {v0, v2}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
@@ -297,11 +296,11 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "o"
+    .param p1, "o"    # Ljava/lang/Object;
 
     .prologue
     .line 1026
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
     if-ne p1, p0, :cond_0
 
     .line 1027
@@ -313,7 +312,7 @@
 
     .line 1029
     :cond_0
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -344,7 +343,7 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -355,8 +354,8 @@
 
     .prologue
     .line 965
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -390,8 +389,8 @@
 
     .prologue
     .line 1035
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -425,8 +424,8 @@
 
     .prologue
     .line 972
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -467,8 +466,8 @@
 
     .prologue
     .line 979
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -487,7 +486,7 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     invoke-static {v0, v2}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
@@ -516,8 +515,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
@@ -526,10 +523,10 @@
 
     .prologue
     .line 989
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    .local p1, key:Ljava/lang/Object;,"TK;"
-    .local p2, value:Ljava/lang/Object;,"TV;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p1, "key":Ljava/lang/Object;, "TK;"
+    .local p2, "value":Ljava/lang/Object;, "TV;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -560,7 +557,6 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -571,9 +567,9 @@
 
     .prologue
     .line 996
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    .local p1, map:Ljava/util/Map;,"Ljava/util/Map<+TK;+TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<+TK;+TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -604,7 +600,7 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .parameter "key"
+    .param p1, "key"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -615,8 +611,8 @@
 
     .prologue
     .line 1003
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -650,8 +646,8 @@
 
     .prologue
     .line 1010
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -692,8 +688,8 @@
 
     .prologue
     .line 1017
-    .local p0, this:Lcom/google/common/collect/Synchronized$SynchronizedMap;,"Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    .local p0, "this":Lcom/google/common/collect/Synchronized$SynchronizedMap;, "Lcom/google/common/collect/Synchronized$SynchronizedMap<TK;TV;>;"
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -712,9 +708,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedMap;->mutex:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
 
-    #calls: Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
+    # invokes: Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     invoke-static {v0, v2}, Lcom/google/common/collect/Synchronized;->access$500(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0

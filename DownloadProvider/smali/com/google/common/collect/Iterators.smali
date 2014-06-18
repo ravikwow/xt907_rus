@@ -54,14 +54,13 @@
 
     .prologue
     .line 61
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static clear(Ljava/util/Iterator;)V
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,7 +71,7 @@
 
     .prologue
     .line 1015
-    .local p0, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<*>;"
+    .local p0, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<*>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1016
@@ -98,8 +97,7 @@
 
 .method public static contains(Ljava/util/Iterator;Ljava/lang/Object;)Z
     .locals 2
-    .parameter
-    .parameter "element"
+    .param p1, "element"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,7 +109,7 @@
     .end annotation
 
     .prologue
-    .local p0, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<*>;"
+    .local p0, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<*>;"
     const/4 v0, 0x1
 
     .line 163
@@ -185,7 +183,6 @@
 
 .method public static varargs forArray([Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -198,7 +195,7 @@
 
     .prologue
     .line 1037
-    .local p0, array:[Ljava/lang/Object;,"[TT;"
+    .local p0, "array":[Ljava/lang/Object;, "[TT;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1038
@@ -213,7 +210,6 @@
 
 .method public static getOnlyElement(Ljava/util/Iterator;)Ljava/lang/Object;
     .locals 5
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -226,13 +222,13 @@
 
     .prologue
     .line 297
-    .local p0, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<TT;>;"
+    .local p0, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<TT;>;"
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 298
-    .local v0, first:Ljava/lang/Object;,"TT;"
+    .local v0, "first":Ljava/lang/Object;, "TT;"
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
@@ -249,7 +245,7 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 303
-    .local v2, sb:Ljava/lang/StringBuilder;
+    .local v2, "sb":Ljava/lang/StringBuilder;
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -273,7 +269,7 @@
     .line 304
     const/4 v1, 0x0
 
-    .local v1, i:I
+    .local v1, "i":I
     :goto_0
     const/4 v3, 0x4
 
@@ -348,7 +344,6 @@
 
 .method public static singletonIterator(Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -361,7 +356,7 @@
 
     .prologue
     .line 1087
-    .local p0, value:Ljava/lang/Object;,"TT;"
+    .local p0, "value":Ljava/lang/Object;, "TT;"
     new-instance v0, Lcom/google/common/collect/Iterators$13;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$13;-><init>(Ljava/lang/Object;)V
@@ -371,7 +366,6 @@
 
 .method public static toString(Ljava/util/Iterator;)Ljava/lang/String;
     .locals 3
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -383,7 +377,7 @@
 
     .prologue
     .line 278
-    .local p0, iterator:Ljava/util/Iterator;,"Ljava/util/Iterator<*>;"
+    .local p0, "iterator":Ljava/util/Iterator;, "Ljava/util/Iterator<*>;"
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -404,7 +398,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 282
-    .local v0, builder:Ljava/lang/StringBuilder;
+    .local v0, "builder":Ljava/lang/StringBuilder;
     const/16 v1, 0x5b
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -457,8 +451,6 @@
 
 .method public static transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
     .locals 1
-    .parameter
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -477,8 +469,8 @@
 
     .prologue
     .line 802
-    .local p0, fromIterator:Ljava/util/Iterator;,"Ljava/util/Iterator<TF;>;"
-    .local p1, function:Lcom/google/common/base/Function;,"Lcom/google/common/base/Function<-TF;+TT;>;"
+    .local p0, "fromIterator":Ljava/util/Iterator;, "Ljava/util/Iterator<TF;>;"
+    .local p1, "function":Lcom/google/common/base/Function;, "Lcom/google/common/base/Function<-TF;+TT;>;"
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 803

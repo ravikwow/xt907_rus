@@ -34,8 +34,6 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;Lcom/google/common/base/Function;)V
     .locals 0
-    .parameter
-    .parameter
 
     .prologue
     .line 804
@@ -43,7 +41,7 @@
 
     iput-object p2, p0, Lcom/google/common/collect/Iterators$8;->val$function:Lcom/google/common/base/Function;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -81,7 +79,7 @@
     move-result-object v0
 
     .line 812
-    .local v0, from:Ljava/lang/Object;,"TF;"
+    .local v0, "from":Ljava/lang/Object;, "TF;"
     iget-object v1, p0, Lcom/google/common/collect/Iterators$8;->val$function:Lcom/google/common/base/Function;
 
     invoke-interface {v1, v0}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;

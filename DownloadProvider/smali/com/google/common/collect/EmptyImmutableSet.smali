@@ -58,7 +58,7 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .parameter "target"
+    .param p1, "target"    # Ljava/lang/Object;
 
     .prologue
     .line 47
@@ -69,7 +69,6 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 1
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +79,7 @@
 
     .prologue
     .line 72
-    .local p1, targets:Ljava/util/Collection;,"Ljava/util/Collection<*>;"
+    .local p1, "targets":Ljava/util/Collection;, "Ljava/util/Collection<*>;"
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -90,7 +89,7 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .parameter "object"
+    .param p1, "object"    # Ljava/lang/Object;
 
     .prologue
     .line 76
@@ -104,13 +103,13 @@
     check-cast v0, Ljava/util/Set;
 
     .line 78
-    .local v0, that:Ljava/util/Set;,"Ljava/util/Set<*>;"
+    .local v0, "that":Ljava/util/Set;, "Ljava/util/Set<*>;"
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
     move-result v1
 
     .line 80
-    .end local v0           #that:Ljava/util/Set;,"Ljava/util/Set<*>;"
+    .end local v0    # "that":Ljava/util/Set;, "Ljava/util/Set<*>;"
     :goto_0
     return v1
 
@@ -215,7 +214,6 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .parameter
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -226,7 +224,7 @@
 
     .prologue
     .line 65
-    .local p1, a:[Ljava/lang/Object;,"[TT;"
+    .local p1, "a":[Ljava/lang/Object;, "[TT;"
     array-length v0, p1
 
     if-lez v0, :cond_0
