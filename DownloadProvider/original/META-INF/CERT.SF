@@ -1,0 +1,28 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: +yPn3xI5rQZqqOS8Bm3n12Adm0I=
+
+Name: AndroidManifest.xml
+SHA1-Digest: JeV+RcSIIlNTdnElaW3X8a1S/cg=
+
+Name: res/mipmap-mdpi/ic_launcher_download.png
+SHA1-Digest: Ndf9CC/JUa1stKoK0+TBh5gv9Z8=
+
+Name: res/mipmap-xxxhdpi/ic_launcher_download.png
+SHA1-Digest: 8YsHH+rKKTwPn0ZkEKCyQtQJz3I=
+
+Name: res/mipmap-xxhdpi/ic_launcher_download.png
+SHA1-Digest: TsjJF0+DQb8Z0DQSbSQx+QMDTuQ=
+
+Name: res/mipmap-hdpi/ic_launcher_download.png
+SHA1-Digest: +B1R99PN4FSahHWY810rT7JftUw=
+
+Name: res/mipmap-xhdpi/ic_launcher_download.png
+SHA1-Digest: SlQZj+dkyntFPU7wWeI948PKpNQ=
+
+Name: resources.arsc
+SHA1-Digest: M5Re5zKWxW+3PK+nwG41nwbhSmc=
+
+Name: classes.dex
+SHA1-Digest: chZq9PPthAYmmm6eyBnaMo7WS5I=
+
