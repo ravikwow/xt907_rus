@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Gerenciador de downloads</string>
+    <string name="permlab_downloadManager">Acessar o gerenciador de download.</string>
+    <string name="permdesc_downloadManager">Permite que o aplicativo acesse o gerenciador de downloads e o utilize para baixar arquivos. Vários aplicativos podem usar isso ´para atrapalhar downloads e acessar informações privadas.</string>
+    <string name="permlab_downloadManagerAdvanced">Funções avançadas do gerenciador de download.</string>
+    <string name="permdesc_downloadManagerAdvanced">Permite que o aplicativo acesse as funções avançadas do gerenciador de downloads. Vários aplicativos podem usar isso ´para atrapalhar downloads e acessar informações privadas.</string>
+    <string name="permlab_downloadCompletedIntent">Enviar notificações de download.</string>
+    <string name="permdesc_downloadCompletedIntent">Permite que o aplicativo envie notificações sobre downloads concluídos. Vários aplicativos podem usar isso ´para confundir outros aplicativos que baixam arquivos.</string>
+    <string name="permlab_seeAllExternal">Ver todos os downloads para o cartão SD</string>
+    <string name="permdesc_seeAllExternal">Permite que o aplicativo veja todos os downloads em um cartão SD, independentemente de qual aplicativo foi usado isso.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Reservar espaço no cache de download</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Permite que o aplicativo baixe arquivos para o armazenamento de downloads, que não pode ser excluído automaticamente quando o gerenciador necessitar de mais espaço.</string>
+    <string name="permlab_downloadWithoutNotification">baixar arquivos sem notificação</string>
+    <string name="permdesc_downloadWithoutNotification">Permite que o aplicativo baixe arquivos através do gerenciador de downloads sem que qualquer notificação seja exibida ao usuário.</string>
+    <string name="permlab_accessAllDownloads">Acessar todos os downloads do sistema</string>
+    <string name="permdesc_accessAllDownloads">Permite que o aplicativo veja e modifique todos os downloads iniciados por qualquer aplicativo no sistema.</string>
+    <string name="download_unknown_title">&lt;Sem título></string>
+    <string name="notification_download_complete">Download concluído.</string>
+    <string name="notification_download_failed">Falha no download.</string>
+    <string name="notification_need_wifi_for_size">O tamanho do download requer Wi-Fi.</string>
+    <string name="notification_paused_in_background">Interrompido em segundo plano.</string>
+    <string name="wifi_required_title">Download muito grande para a rede da operadora</string>
+    <string name="wifi_required_body" formatted="false">"Você deve usar o Wi-Fi para completar este download de%s. 
+
+Toque em%s para iniciar este download da próxima vez em que estiver conectado a uma rede Wi-Fi."</string>
+    <string name="wifi_recommended_title">Colocar em fila para download mais tarde?</string>
+    <string name="wifi_recommended_body" formatted="false">"Se este download de %s for iniciado agora, a duração da bateria pode ser reduzida e/ou haverá uso excessivo de dados móveis, que pode gerar taxas adicionais, dependendo do seu plano de dados.
+
+ Toque em %s para iniciar este download da próxima vez em que estiver conectado a uma rede Wi-Fi."</string>
+    <string name="button_queue_for_wifi">Fila</string>
+    <string name="button_cancel_download">Cancelar</string>
+    <string name="button_start_now">Iniciar agora</string>
+    <string name="download_percent">%d%%</string>
+    <string name="download_remaining">%s restante(s)</string>
+    <string name="download_no_application_title">Não é possível abrir o arquivo</string>
+    <string name="root_downloads">Downloads</string>
+    <string name="download_queued">Na fila</string>
+    <string name="download_running">Em andamento</string>
+    <string name="download_error">Falha</string>
+    <string name="download_running_percent">Em andamento, %d%%</string>
+</resources>
