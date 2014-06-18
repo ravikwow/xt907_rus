@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+
+Name: res/drawable-mdpi/app_icon.png
+SHA1-Digest: BcOY1u3rHO6ZW6d3DYKFm3D7eDI=
+
+Name: res/drawable-hdpi/app_icon.png
+SHA1-Digest: taDcjECir8KB3l4g0K17GUZOgeo=
+
+Name: AndroidManifest.xml
+SHA1-Digest: PlSR9leOoMpcRXipaF59QGAUdO8=
+
+Name: res/layout/contact_dump_activity.xml
+SHA1-Digest: ssFAxj8BNdlnQG0L1m/wTFq+kew=
+
+Name: resources.arsc
+SHA1-Digest: oKnSFdHrYlmD18Oo+d9vG0hVeeY=
+
+Name: classes.dex
+SHA1-Digest: Fz3Dfy+nhLPcQa1hfCxeD/Pju9o=
+
