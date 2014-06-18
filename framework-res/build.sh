@@ -1,5 +1,6 @@
 #!/bin/sh
 PKG=framework-res
+FOLDER=framework
 if [ -d "build" ]; then
     rm -R build
 fi
@@ -10,13 +11,13 @@ java -jar ../apktool.jar b ../$PKG
 cd original
 zip -r ../dist/$PKG.apk ./*
 cd ..
-if [ ! -d "../build" ]; then
-    mkdir ../build
+if [ ! -d "../build/$FOLDER" ]; then
+    mkdir -p ../build/$FOLDER
 fi
-if [ -f "../build/$PKG.apk" ]; then
-    rm ../build/$PKG.apk
+if [ -f "../build/$FOLDER/$PKG.apk" ]; then
+    rm ../build/$FOLDER/$PKG.apk
 fi
-mv dist/$PKG.apk ../build
+mv dist/$PKG.apk ../build/$FOLDER
 if [ -d "build" ]; then
     rm -R build
 fi
