@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_recents_interface_for_tablets">false</bool>
+    <bool name="config_recents_thumbnail_image_fits_to_xy">false</bool>
+    <bool name="config_hspa_data_distinguishable">true</bool>
+    <bool name="config_statusBarShowNumber">false</bool>
+    <bool name="config_showPhoneRSSIForData">false</bool>
+    <bool name="config_showMin3G">false</bool>
+    <bool name="config_showRotationLock">true</bool>
+    <bool name="config_dead_zone_flash">false</bool>
+    <bool name="quick_settings_show_rotation_lock">false</bool>
+    <bool name="quick_settings_rssi_tile_capitalization">true</bool>
+    <bool name="config_hasSettingsPanel">true</bool>
+    <bool name="config_hasFlipSettingsPanel">true</bool>
+    <bool name="config_show4GForLTE">true</bool>
+    <bool name="config_cdma_femto_icon_display">true</bool>
+    <bool name="config_hspap_data_distinguishable">true</bool>
+    <bool name="show_data_disabled_icon">false</bool>
+    <bool name="config_show_signal_bars_when_data_only_service">true</bool>
+    <bool name="config_show_network_type_when_voice_only_service">true</bool>
+    <bool name="config_show_emergency_calls_only_icon">false</bool>
+    <bool name="config_enable_carrier_custom_icons">true</bool>
+    <bool name="config_enable_carrier_custom_mappings">true</bool>
+    <bool name="config_enable_carrier_wide_icons">true</bool>
+    <bool name="config_enable_carrier_wide_icons_are_blue">false</bool>
+    <bool name="config_enable_narrow_colored_statusbar_icons">false</bool>
+    <bool name="config_disable_wide_colored_statusbar_icons">true</bool>
+    <bool name="config_disable_wide_activity_statusbar_icons">false</bool>
+    <bool name="config_allow_differentiated_inet_condition">false</bool>
+    <bool name="show_brazil_settings">false</bool>
+</resources>

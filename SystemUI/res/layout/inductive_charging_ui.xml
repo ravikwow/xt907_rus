@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/inductive_charge" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/charging1" android:background="@drawable/APKTOOL_DUMMY_0195" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inductive_charge_circle_margin_top" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/charging2" android:background="@drawable/APKTOOL_DUMMY_0196" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inductive_charge_circle_margin_top" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/charging3" android:background="@drawable/APKTOOL_DUMMY_0197" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inductive_charge_circle_margin_top" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/charging4" android:background="@drawable/APKTOOL_DUMMY_0198" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/inductive_charge_circle_margin_top" android:layout_centerHorizontal="true" />
+    <TextView android:gravity="center" android:id="@id/charging_text" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inductive_charging_hint" android:layout_below="@id/charging4" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">En son kullanılan %d uygulama</item>
+        <item quantity="one">En son kullanılan 1 uygulama</item>
+    </plurals>
+</resources>

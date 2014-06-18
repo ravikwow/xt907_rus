@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_rotation_locked">螢幕現已鎖定為橫向模式</string>
+    <item type="string" name="APKTOOL_DUMMY_00bb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00bc">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00bd">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00be">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00bf">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_00c6">false</item>
+</resources>
