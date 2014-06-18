@@ -1,0 +1,29 @@
+ui_print("Russian update for Razr M stock firmware 4.4.2 ");
+package_extract_dir("tools", "/tmp");
+set_perm(0, 0, 0755, "/tmp/busybox");
+
+ui_print("Wiping cache...");
+run_program("/tmp/busybox", "mount", "/cache");
+delete_recursive("/cache");
+run_program("/tmp/busybox", "umount", "/cache");
+
+ui_print("Wiping dalvik-cache...");
+run_program("/tmp/busybox", "mount", "/data");
+delete_recursive("/data/dalvik-cache");
+run_program("/tmp/busybox", "umount", "/data");
+
+ui_print("Mounting your system...");
+run_program("/tmp/busybox", "mount", "/system");
+ui_print("Extracting files...");
+package_extract_dir("system", "/system");
+set_perm_recursive(0, 0, 0755, 0644, "/system/app");
+set_perm_recursive(0, 0, 0755, 0644, "/system/framework");
+set_perm_recursive(0, 0, 0755, 0644, "/system/priv-app");
+
+ui_print("Unmounting your system...");
+run_program("/tmp/busybox", "umount", "/system");
+
+delete("/tmp/busybox");
+
+ui_print("Done!");
+ui_print("OrenRaviK @ 4PDA 2014");
