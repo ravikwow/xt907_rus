@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sd_singleItem" android:background="@drawable/dialpad_background" android:layout_width="fill_parent" android:layout_height="80.0sp" android:layout_marginLeft="@dimen/dialpad_outside_margin" android:layout_marginRight="@dimen/dialpad_outside_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sd_divider" android:background="?android:dividerVertical" android:visibility="gone" android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/sd_callerDetail" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/smart_dialer_detail_item" />
+    </RelativeLayout>
+</RelativeLayout>

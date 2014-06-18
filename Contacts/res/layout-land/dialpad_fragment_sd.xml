@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/dialpadChooser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:footerDividersEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center" android:id="@id/digits_container" android:background="@drawable/dialpad_background" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/dialpad_vertical_margin" android:layout_weight="@integer/dialpad_layout_weight_digits">
+            <com.android.contacts.dialpad.DigitsEditText android:textAppearance="@style/DialtactsDigitsTextAppearance" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:nextFocusRight="@id/overflow_menu" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageButton android:state_enabled="false" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/deleteButton" android:background="?android:selectableItemBackground" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_dial_action_delete" android:contentDescription="@string/description_delete_button" />
+        </LinearLayout>
+        <include layout="@layout/dialpad" />
+    </LinearLayout>
+    <View android:background="#66000000" android:layout_width="@dimen/dialpad_center_margin" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialButtonContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="#33000000" android:layout_width="fill_parent" android:layout_height="@dimen/dialpad_button_margin" />
+            <ImageButton android:state_enabled="false" android:id="@id/dialButton" android:background="@drawable/btn_call" android:layout_width="fill_parent" android:layout_height="@dimen/call_button_height" android:src="@drawable/ic_dial_action_call" android:contentDescription="@string/description_dial_button" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/sd_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sd_title" android:background="@drawable/dialpad_background" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentTop="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/sd_expandIcon" android:paddingLeft="@dimen/dialpad_sd_padding_horz" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/contact_browser_list_top_margin" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sd_title_header" android:paddingLeft="@dimen/dialpad_sd_padding_horz" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/contact_browser_list_top_margin" android:singleLine="true" android:layout_toRightOf="@id/sd_expandIcon" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/sd_title_divider" android:background="@color/sd_title_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dialpad_vertical_margin" android:layout_below="@id/sd_title_container" />
+        <FrameLayout android:background="@drawable/dialpad_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/dialButtonContainer" android:layout_below="@id/sd_title_divider">
+            <include layout="@layout/smart_dialer_single_item" />
+            <ListView android:id="@id/sd_list" android:visibility="gone" style="@style/list" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

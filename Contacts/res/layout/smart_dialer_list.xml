@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="80.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/sd_call_icon" android:background="?android:selectableItemBackground" android:layout_width="@dimen/call_log_call_action_width" android:layout_height="fill_parent" android:src="@drawable/ic_ab_dialer_holo_dark" android:scaleType="center" android:layout_alignParentRight="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/sd_divider" android:background="@drawable/ic_divider_dashed_holo_dark" android:layout_width="2.0dip" android:layout_height="@dimen/call_log_call_action_size" android:layout_toLeftOf="@id/sd_call_icon" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/sd_callerDetail" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/sd_divider" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true">
+        <include layout="@layout/smart_dialer_detail_item" />
+    </RelativeLayout>
+</RelativeLayout>

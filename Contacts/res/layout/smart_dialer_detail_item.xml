@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <QuickContactBadge android:layout_gravity="center_vertical" android:id="@id/sd_caller" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/sd_call_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/call_log_icon_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textColor="?call_log_primary_text_color" android:id="@id/sd_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/sd_call_type" android:layout_toRightOf="@id/sd_caller" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+    <TextView android:textSize="14.0sp" android:textColor="?call_log_secondary_text_color" android:id="@id/sd_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/sd_caller" android:layout_below="@id/sd_name" />
+    <TextView android:textSize="14.0sp" android:textColor="?call_log_secondary_text_color" android:gravity="right" android:id="@id/sd_call_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/sd_number" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</merge>
