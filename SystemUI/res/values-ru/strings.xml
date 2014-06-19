@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="config_statusBarComponent">com.android.systemui.statusbar.phone.PhoneStatusBar</string>
-    <string name="config_systemBarComponent">com.android.systemui.statusbar.tablet.TabletStatusBar</string>
     <string name="status_bar_date_formatter">"%1$s
 %2$s"</string>
     <string name="app_label">Графический интерфейс системы</string>
     <string name="status_bar_clear_all_button">Очистить</string>
-    <string name="status_bar_do_not_disturb_button">Не беспокоить</string>
-    <string name="status_bar_please_disturb_button">Показать уведомления</string>
     <string name="status_bar_recent_remove_item_title">Удаление из списка</string>
     <string name="status_bar_recent_inspect_item_title">О приложении</string>
     <string name="status_bar_no_recent_apps">Нет последних приложений</string>
@@ -48,8 +45,6 @@
     <string name="usb_debugging_always">Всегда разрешать отладку с этого компьютера</string>
     <string name="compat_mode_on">Подогнать по размерам экрана</string>
     <string name="compat_mode_off">Растянуть на весь экран</string>
-    <string name="compat_mode_help_header">Масштаб и совместимость</string>
-    <string name="compat_mode_help_body">Если приложение рассчитано на экран меньших размеров, рядом с часами появятся средства масштабирования.</string>
     <string name="screenshot_saving_ticker">Сохранение...</string>
     <string name="screenshot_saving_title">Сохранение...</string>
     <string name="screenshot_saving_text">Сохранение...</string>
@@ -155,10 +150,7 @@
     <string name="gps_notification_found_text">Координаты по GPS</string>
     <string name="accessibility_location_active">Есть активные запросы на определение местоположения</string>
     <string name="accessibility_clear_all">Удалить все уведомления</string>
-    <string name="dreams_dock_launcher">Активация заставки экрана</string>
     <string name="status_bar_notification_inspect_item_title">О приложении</string>
-    <string name="notifications_off_title">Уведомления отключены</string>
-    <string name="notifications_off_text">Нажмите здесь, чтобы снова включить уведомления.</string>
     <string name="accessibility_rotation_lock_off">Экран будет поворачиваться автоматически.</string>
     <string name="accessibility_rotation_lock_on_landscape">Выбрана только альбомная ориентация экрана.</string>
     <string name="accessibility_rotation_lock_on_portrait">Выбрана только книжная ориентация экрана.</string>
