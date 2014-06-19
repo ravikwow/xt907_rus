@@ -8,13 +8,17 @@ fi
 if [ ! -d "build" ]; then
     mkdir build
 fi
-cp -R build/* zip_data/system
 if [ -f "update.zip" ]; then
     rm update.zip
 fi
+mv build/* zip_data/system
 cd zip_data
 zip -r ../update.zip ./*
 cd ..
+mv zip_data/system/* build
+if [ -d "zip_data/system" ]; then
+    rm -R zip_data/system
+fi
 if [ -f "update_signed.zip" ]; then
     rm update_signed.zip
 fi
