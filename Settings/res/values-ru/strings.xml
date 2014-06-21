@@ -632,7 +632,7 @@ WPA2 Пароль: %1$s"</string>
     <string name="security_enable_widgets_title">Включить виджеты</string>
     <string name="security_enable_widgets_disabled_summary">Отключено администратором</string>
     <string name="owner_info_settings_summary" />
-    <string name="owner_info_settings_edit_text_hint">Type text to display on the lock screen</string>
+    <string name="owner_info_settings_edit_text_hint">Введите текст для показа на экране блокировки</string>
     <string name="show_user_info_on_lockscreen_label">Показывать введенный ниже текст на экране блокировки</string>
     <string name="user_info_settings_title">Сведения о пользователе</string>
     <string name="show_profile_info_on_lockscreen_label">Показывать информацию профиля на заблокированном экране</string>
