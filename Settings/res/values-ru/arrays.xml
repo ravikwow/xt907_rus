@@ -448,4 +448,17 @@
         <item>низкий</item>
         <item>очень низкий</item>
     </string-array>
+    <string-array name="wifi_p2p_device_limit">
+        <item>2 устройства</item>
+        <item>3 устройства</item>
+        <item>4 устройства</item>
+        <item>5 устройств</item>
+        <item>8 устройств</item>
+    </string-array>
+    <string-array name="wifi_p2p_device_inactivity_timeout">
+        <item>15 минут</item>
+        <item>30 минут</item>
+        <item>60 минут</item>
+        <item>Никогда не отключаться</item>
+    </string-array>
 </resources>
