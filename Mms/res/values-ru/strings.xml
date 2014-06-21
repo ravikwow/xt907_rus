@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_label">SMS/MMS</string>
+    <string name="app_label">Сообщения</string>
     <string name="new_message">Новое сообщение</string>
     <string name="menu_call_back">Вызов: %s</string>
     <string name="menu_send_email">Написать письмо пользователю %s</string>
     <string name="menu_compose_new">Новое сообщение</string>
     <string name="menu_preferences">Настройки</string>
     <string name="menu_add_address_to_contacts">Сохранить номер %s</string>
+    <string name="menu_share_info">Передать %s</string>
     <string name="menu_call">Позвонить</string>
     <string name="menu_search">Поиск</string>
     <string name="menu_delete_all">Удалить все цепочки</string>
@@ -150,6 +151,8 @@
     <string name="pref_title_notification_ringtone">Рингтон</string>
     <string name="pref_messages_to_save">Установить макс. кол-во сообщений в цепочке для хранения</string>
     <string name="silent_ringtone">Без звука</string>
+    <string name="prefDefault_vibrate_true">всегда</string>
+    <string name="prefDefault_vibrate_false">никогда</string>
     <string name="pref_title_mms_auto_retrieval">Автозагрузка</string>
     <string name="pref_summary_mms_auto_retrieval">Автоматически загружать MMS-сообщения</string>
     <string name="pref_title_mms_retrieval_during_roaming">Автозагрузка в роуминге</string>
@@ -214,6 +217,7 @@
     <string name="attach_sound">Аудио</string>
     <string name="attach_record_sound">Записать аудио</string>
     <string name="attach_slideshow">Слайд-шоу</string>
+    <string name="attach_location">Местоположение</string>
     <string name="select_bottom_text">Текст внизу</string>
     <string name="select_top_text">Текст вверху</string>
     <string name="delivery_toast_body">%s: сообщение доставлено</string>
@@ -282,7 +286,7 @@
     <string name="pick_too_many_recipients">Слишком много получателей</string>
     <string name="adding_recipients">Добавление получателей...</string>
     <string name="draft_separator">", "</string>
-    <string name="message_count_format"> %1$s</string>
+    <string name="message_count_format">%1$s</string>
     <string name="message_count_notification">Новые сообщения (%1$s)</string>
     <string name="error_state">Данные были изменены</string>
     <string name="error_state_text">Цепочки не соответствуют получателям. Сделайте снимок экрана и отправьте сообщение об ошибке через веб-сайт http://go/droidanizer</string>
@@ -295,13 +299,147 @@
     <string name="notification_separator">"  "</string>
     <string name="enumeration_comma">", "</string>
     <string name="message_timestamp_format">%1$s – %2$s</string>
+    <string name="priority_notifcation_prefix">[СРОЧНО]:</string>
+    <string name="reject">Отклонить</string>
+    <string name="cancel">Отмена</string>
+    <string name="pref_msg_signature_title">Подпись сообщения</string>
+    <string name="summary_signature_preference">Добавлять подпись в конце каждого сообщения</string>
+    <string name="Edit_signature">Изменить подпись</string>
     <string name="storage_warning_title">Недостаточно места</string>
     <string name="storage_warning_content">Вы не сможете получать новые SMS и MMS.</string>
     <string name="label_mms_send_outbox_msg">Отправка MMS</string>
     <string name="desc_mms_send_outbox_msg">Отправка всех MMS в исходящих</string>
+    <string name="attach_vcard">Имя карты</string>
+    <string name="type_vcard">Визитная карточка</string>
+    <string name="type_ical">Мероприятие</string>
+    <string name="type_vcard_location">расположение</string>
+    <string name="next">Далее</string>
     <string name="banner_sms_promo_title_initial">Приложение SMS/MMS не используется для обмена SMS-сообщениями.</string>
-    <string name="banner_sms_promo_title_application">Отправляйте SMS с помощью приложения \"%s\"</string>
+    <string name="banner_sms_promo_title_application">Попробуйте \"%s\" для SMS</string>
     <string name="banner_sms_promo_message">Этот параметр можно изменить в настройках</string>
+    <string name="organization_company_and_title">%2$s, %1$s</string>
+    <string name="phone_type_number">Телефон %1$s : %2$s</string>
+    <string name="email_type_number">Email %1$s : %2$s</string>
+    <string name="im_type_number">IM %1$s : %2$s</string>
+    <string name="address_type_number">Адрес %1$s : %2$s</string>
+    <string name="nickname_type">Ник:</string>
+    <string name="note_type">Примечания:</string>
+    <string name="website_type">Сайт:</string>
+    <string name="event_type">День рождения:</string>
+    <string name="permlab_message_settings_provider">Чтение/запись из/в хранилище настроек сообщений</string>
+    <string name="permdesc_message_settings_provider">Необходимы права для чтения/записи из/в хранилище настроек сообщений.</string>
+    <string name="set_priority">Установить приоритет</string>
+    <string name="SMS_AddrVcnt">Addr.Vcnt.</string>
+    <string name="SMS_AddrTrns">Addr.Trns.</string>
+    <string name="SMS_NtwkRes">Ntwk.Res.</string>
+    <string name="SMS_NtwkFail">Ntwk.Fail.</string>
+    <string name="SMS_InvldTID">Invld.T.ID</string>
+    <string name="SMS_OthrNtwk">Othr.Ntwk.</string>
+    <string name="SMS_OthrFst">Othr.Fst.</string>
+    <string name="SMS_OthrLst">Othr.Lst.</string>
+    <string name="SMS_NoPgRes">NoPg.Res.</string>
+    <string name="SMS_DstBusy">Dst.Busy</string>
+    <string name="SMS_NoAck">NoAck.</string>
+    <string name="SMS_DstRsSht">Dst.Rs.Sht</string>
+    <string name="SMS_SMSDlvPp">SMS Dlv.Pp</string>
+    <string name="SMS_DestNoLng">Dest.NoLng</string>
+    <string name="SMS_OthrTPrbl">OthrT.Prbl</string>
+    <string name="SMS_OthrTFst">OthrT.Fst</string>
+    <string name="SMS_OthrTLst">OthrT.Lst</string>
+    <string name="SMS_SMSDlvFt">SMS Dlv.Ft</string>
+    <string name="SMS_SMSDlvLt">SMS Dlv.Lt</string>
+    <string name="SMS_RdoIFRS">Rdo.IF.R.S</string>
+    <string name="SMS_RdoIFInc">Rdo.IF.Inc</string>
+    <string name="SMS_OthrRdoI">Othr.Rdo.I</string>
+    <string name="SMS_OthrRdoF">Othr.Rdo.F</string>
+    <string name="SMS_OthrRdoL">Othr.Rdo.L</string>
+    <string name="SMS_EncdPrbl">Encd.Prbl.</string>
+    <string name="SMS_SMSOrgD">SMS Org.D.</string>
+    <string name="SMS_SMSTrmD">SMS Trm.D.</string>
+    <string name="SMS_SupplSvc">Suppl.Svc.</string>
+    <string name="SMS_SMSNoSpt">SMS No.Spt</string>
+    <string name="SMS_Reserved">Reserved</string>
+    <string name="SMS_MssExptP">Mss.Expt.P</string>
+    <string name="SMS_MssMndtry">Mss.Mndtry</string>
+    <string name="SMS_UnrcgnzdP">Unrcgnzd.P</string>
+    <string name="SMS_UnexpctdP">Unexpctd.P</string>
+    <string name="SMS_UsrDrSE">Usr.Dr.S.E</string>
+    <string name="SMS_OthrGnrP">Othr.Gnr.P</string>
+    <string name="SMS_OtherGnrF">Other.Gnr.F</string>
+    <string name="SMS_OtherGnrL">Other.Gnr.L</string>
+    <string name="SMS_OKorMsgDlvd">OK or Msg Dlvd</string>
+    <string name="SMS_WaitTLAck">Wait TLAck</string>
+    <string name="SMS_OutofRsc">Outof_Rsc.</string>
+    <string name="SMS_AccssLrg">Accss.Lrg.</string>
+    <string name="SMS_DRCLrg">DRC Lrg.</string>
+    <string name="SMS_NtwkNoRdy">Ntwk.NoRdy</string>
+    <string name="SMS_PhonNoRdy">Phon.NoRdy</string>
+    <string name="SMS_NtAllwdA">Nt.Allwd.A</string>
+    <string name="SMS_NtSpprtd">Nt.Spprtd</string>
+    <string name="SMS_InvldTrnx">Invld.Trnx.</string>
+    <string name="SMS_MsgNoSnt">Msg.No.Snt</string>
+    <string name="SMS_MsgBgnSnt">MsgBgn.Snt</string>
+    <string name="MMS_Success">Успешно</string>
+    <string name="MMS_MessageDeliveryFailedORMessageReceiptFailed">Доставка сообщения не удалось или получение сообщения не удалось.</string>
+    <string name="MMS_InvalidDestinationAddressorInvalidMsgInfo">Неверный адрес получателя или ошибка в информации сообщения.</string>
+    <string name="MMS_NoServicePleaseresendlater">Сеть отсутствует. Пожалуйста, повторите позже.</string>
+    <string name="MMS_MessageDeliveryFailedUnsupportedContent">Доставка сообщения не удалась. Не поддерживаемый контент.</string>
+    <string name="MMS_MessageDeliveryFailedUnsupportedMessage">Доставка сообщения не удалась. Не поддерживаемое сообщение.</string>
+    <string name="MMS_MessageDeliveryFailedTransientFailure">Доставка сообщения не удалась. Временный сбой.</string>
+    <string name="MMS_MessageDeliveryFailedPartialSuccess">Доставка сообщения не удалась. Частичный успех.</string>
+    <string name="MMS_MessageDeliveryFailedPermanentFailure">Доставка сообщения не удалась. Постоянные сбои.</string>
+    <string name="MMS_MessageDeliveryFailedChargingLimitationsNotMet">Message delivery failed. Charging limitations not met.</string>
+    <string name="MMS_MessageDeliveryFailedChargingRequestNotAccepted">Message delivery failed. Charging request not accepted.</string>
+    <string name="MMS_MessageDeliveryFailedChargingForwardingDenied">Message delivery failed. Charging forwarding denied.</string>
+    <string name="MMS_MessageDeliveryFailedChargingNotSupported">Message delivery failed. Charging not supported.</string>
+    <string name="MMS_MessageDeliveryFailedAddressHidingUnsupported">Доставка сообщения не удалась. Скрытые адреса не поддерживаются.</string>
+    <string name="MMS_MessageDeliveryFailedLackOfPrepaid">Доставка сообщения не удалась. Отсутствуют средства на счету.</string>
+    <string name="MMS_None">Ни одного</string>
+    <string name="apm_title">Автономный режим</string>
+    <string name="apm_msg">Для отправки или получения сообщений, выключите режим полета.</string>
+    <string name="no_sim_card_title">Нет SIM-карты</string>
+    <string name="no_sim_card_msg">Для отправки или получения сообщения, вставьте SIM-карту.</string>
+    <string name="no_apn_connection_title">Подключение для передачи данных отсутствует</string>
+    <string name="no_apn_connection_msg">MMS сообщения не могут быть отправлены или получены, пока соединение данных не будет восстановлено. Проверьте конфигурацию MMS APN в настройках мобильной связи.</string>
+    <string name="data_disabled_title">Передача данных отключена</string>
+    <string name="data_disabled_msg">MMS сообщения не могут быть отправлены или получены, пока доступ к передаче данных не будет снова включен. Пожалуйста, проверьте настройки передачи данных для подключения к сети.</string>
+    <string name="image_needs_resize">Размер изображения должен быть изменен для отправки</string>
+    <string name="image_resized">Размер изображения был изменен для отправки</string>
+    <string name="unable_to_send_msg_title">Невозможно отправить сообщение!</string>
+    <string name="retry_sending">Повторить отправку?</string>
+    <string name="sending_failed_for">Отправка не удалась:</string>
+    <string name="cause_code">Причина код:</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="dialog_message_group_type_title_verizon_overlay">Групповые сообщения</string>
+    <string name="dialog_message_group_type_message_verizon_overlay">"All messages are billed per recipient at your plan's standard rates.
+
+Group Conversation (Reply All):
+Like email, all recipients with compatible phones can see everyone on the \"To\" list and reply to everyone. Sent as multimedia messages.
+
+Individual Messages: Like an email \"Bcc\" list, recipients can't see anyone on the list and can reply only to you.
+
+"</string>
+    <string name="dialog_message_individual_type_message_verizon_overlay">"All messages are billed per recipient at your plan's standard rates.
+
+Group Conversation (Reply All):
+Like email, all recipients with compatible phones can see everyone on the \"To\" list and reply to everyone. Sent as multimedia messages.
+
+Individual Messages: Like an email \"Bcc\" list, recipients can't see anyone on the list and can reply only to you.
+
+"</string>
+    <string name="dont_show_reminder_again">Не показывать это сообщение снова.</string>
+    <string name="dialog_message_group_type_title">Тип группового сообщения</string>
+    <string name="dialog_message_group_type_message">Ваш исходящий типсообщений установлен на Групповую беседу. Зайдите в опции меню или настройки, чтобы перейти к индивидуальным беседам.</string>
+    <string name="dialog_message_individual_type_message">Ваш исходящий типсообщений установлен на Групповую беседу. Зайдите в опции меню или настройки, чтобы перейти к индивидуальным беседам.</string>
+    <string name="pref_title_notification_vibe_pattern">Шаблон вибрации</string>
+    <string name="permdesc_message_status">Предоставить разрешение принимать отчеты о состоянии MSG</string>
+    <string name="permdesc_message_sendmsg">Предоставить разрешение на отправку сообщений</string>
+    <string name="no_app_intent">Невозможно найти приложение для завершения действия.</string>
+    <string name="pref_title_location_card">Отправить местоположение на карте</string>
+    <string name="pref_summary_location_card">Используйте MMS для отравки местоположения</string>
+    <string name="application_not_found_title">Приложение не найдено</string>
+    <string name="application_not_found_body">Невозможно найти приложение для завершения действия.</string>
+    <string name="modify_recipients">Изменить получателей</string>
     <string name="more_string">ещё %1$s</string>
     <string name="copy_email">Скопировать адрес эл. почты</string>
     <string name="copy_number">Скопировать номер телефона</string>
