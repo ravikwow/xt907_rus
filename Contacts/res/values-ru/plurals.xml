@@ -13,8 +13,8 @@
         <item quantity="one">1 найден</item>
     </plurals>
     <plurals name="searchFoundContacts">
-  <item quantity="other">Найдено: %d</item> 
-  <item quantity="one">Найдено: 1</item> 
+        <item quantity="other">Найдено: %d</item>
+        <item quantity="one">Найдено: 1</item>
     </plurals>
     <plurals name="mins">
         <item quantity="other">мин.</item>
