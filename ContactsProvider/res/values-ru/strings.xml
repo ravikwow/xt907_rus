@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="sharedUserLabel">Основные приложения Android</string>
-	<string name="app_label">Хранилище контактов</string>
-	<string name="provider_label">Контакты</string>
-	<string name="upgrade_msg">Обновление базы данных контактов.</string>
-	<string name="upgrade_out_of_memory_notification_ticker">Для обновления контактов требуется больше памяти.</string>
-	<string name="upgrade_out_of_memory_notification_title">Обновление хранилища контаков</string>
-	<string name="upgrade_out_of_memory_notification_text">Коснитесь для завершения обновления.</string>
-	<string name="default_directory">Контакты</string>
-	<string name="local_invisible_directory">Другие</string>
-	<string name="read_write_all_voicemail_label">Доступ ко всем голосовым сообщениям</string>
-	<string name="read_write_all_voicemail_description">Позволяет приложениям хранить и извлекать все голосовые сообщения, к которым это устройство может получить доступ.</string>
-	<string name="voicemail_from_column">&quot;Голосовая почта &quot;</string>
-	<string name="debug_dump_title">Копировать базу данных контактов</string>
-	<string name="debug_dump_database_message">Вы собираетесь 1) сделать копию базы данных, которая включает все контакты, связанную информацию и журнал вызовов во встроенную память, и 2) с помощью электронной почты. Не забудьте удалить копию, как только вы успешно скопировали его с устройства или получили электронную почту.</string>
-	<string name="debug_dump_delete_button">&quot;Удалить сейчас&quot;</string>
-	<string name="debug_dump_start_button">Пуск</string>
-	<string name="debug_dump_email_sender_picker">Выбрать программу для отправки файла</string>
-	<string name="debug_dump_email_subject">Контакты Db прилагаются</string>
-	<string name="debug_dump_email_body">Прикрепленная моя база данных контактов с всей моей контактной информацией. Обращаться с осторожностью.</string>
+    <string name="sharedUserLabel">Основные приложения Android</string>
+    <string name="app_label">Хранилище контактов</string>
+    <string name="provider_label">Контакты</string>
+    <string name="upgrade_msg">Обновление базы данных контактов.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">Для обновления контактов требуется больше памяти.</string>
+    <string name="upgrade_out_of_memory_notification_title">Обновление хранилища контаков</string>
+    <string name="upgrade_out_of_memory_notification_text">Коснитесь для завершения обновления.</string>
+    <string name="default_directory">Контакты</string>
+    <string name="local_invisible_directory">Другие</string>
+    <string name="read_write_all_voicemail_label">Доступ ко всем голосовым сообщениям</string>
+    <string name="read_write_all_voicemail_description">Позволяет приложениям хранить и извлекать все голосовые сообщения, к которым это устройство может получить доступ.</string>
+    <string name="voicemail_from_column">"Голосовая почта "</string>
+    <string name="debug_dump_title">Копировать базу данных контактов</string>
+    <string name="debug_dump_database_message">Вы собираетесь 1) сделать копию базы данных, которая включает все контакты, связанную информацию и журнал вызовов во встроенную память, и 2) с помощью электронной почты. Не забудьте удалить копию, как только вы успешно скопировали его с устройства или получили электронную почту.</string>
+    <string name="debug_dump_delete_button">Удалить сейчас</string>
+    <string name="debug_dump_start_button">Пуск</string>
+    <string name="debug_dump_email_sender_picker">Выбрать программу для отправки файла</string>
+    <string name="debug_dump_email_subject">Контакты Db прилагаются</string>
+    <string name="debug_dump_email_body">Прикрепленная моя база данных контактов с всей моей контактной информацией. Обращаться с осторожностью.</string>
 </resources>
