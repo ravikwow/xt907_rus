@@ -33,8 +33,8 @@
         <item quantity="one">Приложений с доступом к уведомлениям: %d</item>
     </plurals>
     <plurals name="wrong_pin_code">
-        <item quantity="other">Неверный PIN-код. Осталось попыток: %d.</item>
-        <item quantity="one">Неверный PIN-код. Осталось попыток: %d. После этого SIM-карта будет заблокирована и вам придется обратиться к оператору связи.</item>
+        <item quantity="other">Неверный PIN-код SIM-карты. Осталось %d попытки.</item>
+        <item quantity="one">Неверный PIN SIM-карты. Осталась %d попытка, затем необходимо будет обратиться к оператору для разблокировки устройства.</item>
     </plurals>
     <plurals name="print_search_result_count_utterance">
         <item quantity="other">Найдено несколько принтеров (%1$s)</item>
