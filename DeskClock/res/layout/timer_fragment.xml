@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:paddingTop="?android:actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/timers_list_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.deskclock.widget.sgv.StaggeredGridView android:id="@id/timers_list" android:paddingBottom="88.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="@dimen/timer_divider_height" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/timer_footer" android:background="@drawable/footer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center" android:id="@id/timer_add_timer" android:background="@drawable/main_button_normal" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_add" android:contentDescription="@string/timer_add_timer" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/button" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.android.deskclock.TimerSetupView android:id="@id/timer_setup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+</FrameLayout>
