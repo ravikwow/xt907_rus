@@ -18,7 +18,7 @@
 .method public abstract setIsAirplaneMode(ZI)V
 .end method
 
-.method public abstract setMobileDataIndicators(ZIIIIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public abstract setMobileDataIndicators(ZIIIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 .end method
 
 .method public abstract setWifiIndicators(ZIILjava/lang/String;)V

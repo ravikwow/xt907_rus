@@ -23,9 +23,9 @@
     </string-array>
     <string-array name="phoneTypes">
         <item>Domicile</item>
-        <item>Mobile</item>
-        <item>Professionnel</item>
-        <item>Fax pro</item>
+        <item>Portable</item>
+        <item>Bureau</item>
+        <item>Fax bureau</item>
         <item>Fax domicile</item>
         <item>Téléavertisseur</item>
         <item>Autre</item>

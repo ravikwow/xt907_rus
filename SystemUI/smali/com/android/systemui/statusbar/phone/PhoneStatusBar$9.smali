@@ -3,12 +3,12 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->makeStatusBarView()Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1246
+    .line 828
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$9;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -36,26 +36,16 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 2
+.method public onClick(Landroid/view/View;)V
+    .locals 1
     .param p1, "v"    # Landroid/view/View;
-    .param p2, "left"    # I
-    .param p3, "top"    # I
-    .param p4, "right"    # I
-    .param p5, "bottom"    # I
-    .param p6, "oldLeft"    # I
-    .param p7, "oldTop"    # I
-    .param p8, "oldRight"    # I
-    .param p9, "oldBottom"    # I
 
     .prologue
-    .line 1252
+    .line 830
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$9;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->toggleRecentApps()V
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
-
-    .line 1253
+    .line 831
     return-void
 .end method

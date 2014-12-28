@@ -1,6 +1,6 @@
 #!/bin/sh
 PKG=SystemUI
-FOLDER=priv-app
+FOLDER=app
 if [ -d "build" ]; then
     rm -R build
 fi

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 600
+    .line 467
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -40,49 +40,83 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 603
+    const/4 v1, 0x0
+
+    .line 469
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 631
+    .line 503
     :cond_0
     :goto_0
     return-void
 
-    .line 605
+    .line 472
     :pswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->toggleRecentsActivity()V
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    if-eqz v0, :cond_0
+
+    .line 473
+    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0, v2, v1}, Lcom/android/systemui/recent/RecentsPanelView;->show(ZZ)V
 
     goto :goto_0
 
-    .line 608
+    .line 478
     :pswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->closeRecents()V
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsPanelView;->isShowing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 479
+    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0, v1, v1}, Lcom/android/systemui/recent/RecentsPanelView;->show(ZZ)V
 
     goto :goto_0
 
-    .line 611
+    .line 484
     :pswitch_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->preloadRecentTasksList()V
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsPanelView;->preloadRecentTasksList()V
 
     goto :goto_0
 
-    .line 614
+    .line 488
     :pswitch_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->cancelPreloadingRecentTasksList()V
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsPanelView;->clearRecentTasksList()V
 
     goto :goto_0
 
-    .line 618
+    .line 492
     :pswitch_4
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -100,21 +134,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 619
+    .line 493
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mSearchPanelView:Lcom/android/systemui/SearchPanelView;
 
     invoke-virtual {v0, v2, v2}, Lcom/android/systemui/SearchPanelView;->show(ZZ)V
 
-    .line 620
-    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->onShowSearchPanel()V
-
     goto :goto_0
 
-    .line 625
+    .line 498
     :pswitch_5
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -132,23 +161,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 626
+    .line 499
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mSearchPanelView:Lcom/android/systemui/SearchPanelView;
 
-    const/4 v1, 0x0
-
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/SearchPanelView;->show(ZZ)V
-
-    .line 627
-    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->onHideSearchPanel()V
 
     goto :goto_0
 
-    .line 603
+    .line 469
     :pswitch_data_0
     .packed-switch 0x3fc
         :pswitch_0

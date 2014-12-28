@@ -17,7 +17,7 @@
 # instance fields
 .field key:Landroid/os/IBinder;
 
-.field notification:Landroid/service/notification/StatusBarNotification;
+.field notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
 .field final synthetic this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 76
+    .line 84
     iput-object p1, p0, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .param p2, "x1"    # Lcom/android/systemui/statusbar/CommandQueue$1;
 
     .prologue
-    .line 76
+    .line 84
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;-><init>(Lcom/android/systemui/statusbar/CommandQueue;)V
 
     return-void

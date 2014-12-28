@@ -37,7 +37,7 @@
 
 .field private mShadowPaint:Landroid/graphics/Paint;
 
-.field private final mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+.field private final mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
 .field private mSystemPaint:Landroid/graphics/Paint;
 
@@ -355,18 +355,18 @@
     iput v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mFH:I
 
     .line 153
-    new-instance v3, Lcom/android/systemui/LoadAverageService$CpuTracker;
+    new-instance v3, Lcom/android/systemui/LoadAverageService$Stats;
 
     iget-object v4, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mLoadPaint:Landroid/graphics/Paint;
 
-    invoke-direct {v3, v4}, Lcom/android/systemui/LoadAverageService$CpuTracker;-><init>(Landroid/graphics/Paint;)V
+    invoke-direct {v3, v4}, Lcom/android/systemui/LoadAverageService$Stats;-><init>(Landroid/graphics/Paint;)V
 
-    iput-object v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+    iput-object v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
     .line 154
-    iget-object v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+    iget-object v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
-    invoke-virtual {v3}, Lcom/android/systemui/LoadAverageService$CpuTracker;->init()V
+    invoke-virtual {v3}, Lcom/android/systemui/LoadAverageService$Stats;->init()V
 
     .line 155
     invoke-virtual {p0}, Lcom/android/systemui/LoadAverageService$LoadView;->updateDisplay()V
@@ -394,13 +394,13 @@
     goto/16 :goto_0
 .end method
 
-.method static synthetic access$000(Lcom/android/systemui/LoadAverageService$LoadView;)Lcom/android/systemui/LoadAverageService$CpuTracker;
+.method static synthetic access$000(Lcom/android/systemui/LoadAverageService$LoadView;)Lcom/android/systemui/LoadAverageService$Stats;
     .locals 1
     .param p0, "x0"    # Lcom/android/systemui/LoadAverageService$LoadView;
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+    iget-object v0, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
     return-object v0
 .end method
@@ -468,43 +468,43 @@
     .local v9, "RIGHT":I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+    iget-object v0, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
     move-object/from16 v20, v0
 
     .line 183
-    .local v20, "stats":Lcom/android/systemui/LoadAverageService$CpuTracker;
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastUserTime()I
+    .local v20, "stats":Lcom/android/systemui/LoadAverageService$Stats;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastUserTime()I
 
     move-result v25
 
     .line 184
     .local v25, "userTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastSystemTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastSystemTime()I
 
     move-result v21
 
     .line 185
     .local v21, "systemTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastIoWaitTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIoWaitTime()I
 
     move-result v14
 
     .line 186
     .local v14, "iowaitTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastIrqTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIrqTime()I
 
     move-result v15
 
     .line 187
     .local v15, "irqTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastSoftIrqTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastSoftIrqTime()I
 
     move-result v18
 
     .line 188
     .local v18, "softIrqTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getLastIdleTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIdleTime()I
 
     move-result v13
 
@@ -688,7 +688,7 @@
     .local v28, "y":I
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadText:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadText:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -698,7 +698,7 @@
 
     move-object/from16 v0, v20
 
-    iget v4, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v4, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     sub-int/2addr v3, v4
 
@@ -721,7 +721,7 @@
     .line 218
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadText:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadText:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -731,7 +731,7 @@
 
     move-object/from16 v0, v20
 
-    iget v4, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v4, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     sub-int/2addr v3, v4
 
@@ -754,7 +754,7 @@
     .line 220
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadText:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadText:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -764,7 +764,7 @@
 
     move-object/from16 v0, v20
 
-    iget v4, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v4, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     sub-int/2addr v3, v4
 
@@ -787,7 +787,7 @@
     .line 222
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadText:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadText:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -797,7 +797,7 @@
 
     move-object/from16 v0, v20
 
-    iget v4, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v4, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     sub-int/2addr v3, v4
 
@@ -820,7 +820,7 @@
     .line 224
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadText:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadText:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -830,7 +830,7 @@
 
     move-object/from16 v0, v20
 
-    iget v4, v0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v4, v0, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     sub-int/2addr v3, v4
 
@@ -849,7 +849,7 @@
     invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     .line 227
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$CpuTracker;->countWorkingStats()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->countWorkingStats()I
 
     move-result v8
 
@@ -864,12 +864,12 @@
     .line 229
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v12}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getWorkingStats(I)Lcom/android/internal/os/ProcessCpuTracker$Stats;
+    invoke-virtual {v0, v12}, Lcom/android/systemui/LoadAverageService$Stats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
 
     move-result-object v19
 
     .line 230
-    .local v19, "st":Lcom/android/internal/os/ProcessCpuTracker$Stats;
+    .local v19, "st":Lcom/android/internal/os/ProcessStats$Stats;
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mFH:I
@@ -893,7 +893,7 @@
     .line 234
     move-object/from16 v0, v19
 
-    iget v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->rel_utime:I
+    iget v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->rel_utime:I
 
     mul-int/2addr v2, v10
 
@@ -902,7 +902,7 @@
     .line 235
     move-object/from16 v0, v19
 
-    iget v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->rel_stime:I
+    iget v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->rel_stime:I
 
     mul-int/2addr v2, v10
 
@@ -978,7 +978,7 @@
     :cond_6
     move-object/from16 v0, v19
 
-    iget-object v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -988,7 +988,7 @@
 
     move-object/from16 v0, v19
 
-    iget v4, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v4, v0, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     sub-int/2addr v3, v4
 
@@ -1011,7 +1011,7 @@
     .line 248
     move-object/from16 v0, v19
 
-    iget-object v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1021,7 +1021,7 @@
 
     move-object/from16 v0, v19
 
-    iget v4, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v4, v0, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     sub-int/2addr v3, v4
 
@@ -1044,7 +1044,7 @@
     .line 250
     move-object/from16 v0, v19
 
-    iget-object v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1054,7 +1054,7 @@
 
     move-object/from16 v0, v19
 
-    iget v4, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v4, v0, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     sub-int/2addr v3, v4
 
@@ -1077,7 +1077,7 @@
     .line 252
     move-object/from16 v0, v19
 
-    iget-object v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1087,7 +1087,7 @@
 
     move-object/from16 v0, v19
 
-    iget v4, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v4, v0, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     sub-int/2addr v3, v4
 
@@ -1118,7 +1118,7 @@
     .local v17, "p":Landroid/graphics/Paint;
     move-object/from16 v0, v19
 
-    iget-boolean v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->added:Z
+    iget-boolean v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->added:Z
 
     if-eqz v2, :cond_7
 
@@ -1132,7 +1132,7 @@
     :cond_7
     move-object/from16 v0, v19
 
-    iget-boolean v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->removed:Z
+    iget-boolean v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->removed:Z
 
     if-eqz v2, :cond_8
 
@@ -1146,7 +1146,7 @@
     :cond_8
     move-object/from16 v0, v19
 
-    iget-object v2, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->name:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1156,7 +1156,7 @@
 
     move-object/from16 v0, v19
 
-    iget v4, v0, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v4, v0, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     sub-int/2addr v3, v4
 
@@ -1208,17 +1208,17 @@
 
     .prologue
     .line 262
-    iget-object v6, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
+    iget-object v6, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
     .line 263
-    .local v6, "stats":Lcom/android/systemui/LoadAverageService$CpuTracker;
-    invoke-virtual {v6}, Lcom/android/systemui/LoadAverageService$CpuTracker;->countWorkingStats()I
+    .local v6, "stats":Lcom/android/systemui/LoadAverageService$Stats;
+    invoke-virtual {v6}, Lcom/android/systemui/LoadAverageService$Stats;->countWorkingStats()I
 
     move-result v0
 
     .line 265
     .local v0, "NW":I
-    iget v2, v6, Lcom/android/systemui/LoadAverageService$CpuTracker;->mLoadWidth:I
+    iget v2, v6, Lcom/android/systemui/LoadAverageService$Stats;->mLoadWidth:I
 
     .line 266
     .local v2, "maxWidth":I
@@ -1229,18 +1229,18 @@
     if-ge v1, v0, :cond_1
 
     .line 267
-    invoke-virtual {v6, v1}, Lcom/android/systemui/LoadAverageService$CpuTracker;->getWorkingStats(I)Lcom/android/internal/os/ProcessCpuTracker$Stats;
+    invoke-virtual {v6, v1}, Lcom/android/systemui/LoadAverageService$Stats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
 
     move-result-object v5
 
     .line 268
-    .local v5, "st":Lcom/android/internal/os/ProcessCpuTracker$Stats;
-    iget v7, v5, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    .local v5, "st":Lcom/android/internal/os/ProcessStats$Stats;
+    iget v7, v5, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     if-le v7, v2, :cond_0
 
     .line 269
-    iget v2, v5, Lcom/android/internal/os/ProcessCpuTracker$Stats;->nameWidth:I
+    iget v2, v5, Lcom/android/internal/os/ProcessStats$Stats;->nameWidth:I
 
     .line 266
     :cond_0
@@ -1249,7 +1249,7 @@
     goto :goto_0
 
     .line 273
-    .end local v5    # "st":Lcom/android/internal/os/ProcessCpuTracker$Stats;
+    .end local v5    # "st":Lcom/android/internal/os/ProcessStats$Stats;
     :cond_1
     iget v7, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingLeft:I
 

@@ -15,8 +15,6 @@
 
 
 # static fields
-.field public static final DeadZone:[I
-
 .field public static final KeyButtonView:[I
 
 .field public static final NotificationLinearLayout:[I
@@ -37,25 +35,16 @@
 
     const/4 v2, 0x0
 
-    .line 2537
-    const/4 v0, 0x5
+    .line 1646
+    const/4 v0, 0x3
 
     new-array v0, v0, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/systemui/R$styleable;->DeadZone:[I
-
-    .line 2632
-    const/4 v0, 0x3
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_1
-
     sput-object v0, Lcom/android/systemui/R$styleable;->KeyButtonView:[I
 
-    .line 2689
+    .line 1703
     new-array v0, v3, [I
 
     const v1, 0x7f010004
@@ -64,7 +53,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationLinearLayout:[I
 
-    .line 2718
+    .line 1732
     new-array v0, v3, [I
 
     const v1, 0x7f010005
@@ -73,7 +62,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationRowLayout:[I
 
-    .line 2747
+    .line 1761
     new-array v0, v3, [I
 
     const v1, 0x7f010006
@@ -82,7 +71,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RecentsPanelView:[I
 
-    .line 2770
+    .line 1784
     new-array v0, v3, [I
 
     const v1, 0x7f010003
@@ -93,20 +82,10 @@
 
     return-void
 
-    .line 2537
+    .line 1646
     nop
 
     :array_0
-    .array-data 4
-        0x7f010007
-        0x7f010008
-        0x7f010009
-        0x7f01000a
-        0x7f01000b
-    .end array-data
-
-    .line 2632
-    :array_1
     .array-data 4
         0x7f010000
         0x7f010001
@@ -118,7 +97,7 @@
     .locals 0
 
     .prologue
-    .line 2518
+    .line 1631
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

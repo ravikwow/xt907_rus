@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 3064
+    .line 1418
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;-><init>(Lcom/android/systemui/statusbar/BaseStatusBar;)V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/systemui/statusbar/phone/PhoneStatusBar$1;
 
     .prologue
-    .line 3064
+    .line 1418
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;-><init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
 
     return-void
@@ -50,87 +50,72 @@
     .param p1, "m"    # Landroid/os/Message;
 
     .prologue
-    const/4 v1, 0x0
-
-    .line 3066
+    .line 1420
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->handleMessage(Landroid/os/Message;)V
 
-    .line 3067
+    .line 1421
     iget v0, p1, Landroid/os/Message;->what:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 3088
+    .line 1436
     :goto_0
     return-void
 
-    .line 3069
+    .line 1423
     :sswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateExpandNotificationsPanel()V
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateExpand()V
 
     goto :goto_0
 
-    .line 3072
+    .line 1426
     :sswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateExpandSettingsPanel()V
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateCollapse()V
 
     goto :goto_0
 
-    .line 3075
+    .line 1429
     :sswitch_2
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateCollapsePanels()V
-
-    goto :goto_0
-
-    .line 3078
-    :sswitch_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     const/4 v1, 0x1
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setHeadsUpVisibility(Z)V
-    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)V
+    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setIntruderAlertVisibility(Z)V
+    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$900(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)V
 
     goto :goto_0
 
-    .line 3081
-    :sswitch_4
+    .line 1432
+    :sswitch_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setHeadsUpVisibility(Z)V
-    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)V
+    const/4 v1, 0x0
+
+    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setIntruderAlertVisibility(Z)V
+    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$900(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)V
+
+    .line 1433
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    const/4 v1, 0x0
+
+    # setter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentlyIntrudingNotification:Lcom/android/internal/statusbar/StatusBarNotification;
+    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1002(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Lcom/android/internal/statusbar/StatusBarNotification;)Lcom/android/internal/statusbar/StatusBarNotification;
 
     goto :goto_0
 
-    .line 3084
-    :sswitch_5
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    .line 1421
+    nop
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->escalateHeadsUp()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2500(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
-
-    .line 3085
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setHeadsUpVisibility(Z)V
-    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)V
-
-    goto :goto_0
-
-    .line 3067
     :sswitch_data_0
     .sparse-switch
         0x3e8 -> :sswitch_0
-        0x3e9 -> :sswitch_2
-        0x3ea -> :sswitch_1
-        0x402 -> :sswitch_3
-        0x403 -> :sswitch_4
-        0x404 -> :sswitch_5
+        0x3e9 -> :sswitch_1
+        0x402 -> :sswitch_2
+        0x403 -> :sswitch_3
     .end sparse-switch
 .end method

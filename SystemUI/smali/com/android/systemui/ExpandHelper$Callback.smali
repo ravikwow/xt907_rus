@@ -24,8 +24,8 @@
 .method public abstract getChildAtRawPosition(FF)Landroid/view/View;
 .end method
 
-.method public abstract setUserExpandedChild(Landroid/view/View;Z)V
+.method public abstract setUserExpandedChild(Landroid/view/View;Z)Z
 .end method
 
-.method public abstract setUserLockedChild(Landroid/view/View;Z)V
+.method public abstract setUserLockedChild(Landroid/view/View;Z)Z
 .end method

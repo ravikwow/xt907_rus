@@ -3,7 +3,7 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1243
+    .line 680
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$8;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -36,11 +36,22 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 0
-    .param p1, "v"    # Landroid/view/View;
+.method public onSizeChanged(Landroid/view/View;IIII)V
+    .locals 2
+    .param p1, "view"    # Landroid/view/View;
+    .param p2, "w"    # I
+    .param p3, "h"    # I
+    .param p4, "oldw"    # I
+    .param p5, "oldh"    # I
 
     .prologue
-    .line 1244
+    .line 683
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$8;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
+
+    .line 684
     return-void
 .end method

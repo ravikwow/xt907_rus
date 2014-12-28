@@ -7,12 +7,4 @@
     <attr name="insetLeft" format="dimension" />
     <attr name="rowHeight" format="dimension" />
     <attr name="recentItemLayout" format="reference" />
-    <attr name="minSize" format="dimension" />
-    <attr name="maxSize" format="dimension" />
-    <attr name="holdTime" format="integer" />
-    <attr name="decayTime" format="integer" />
-    <attr name="orientation">
-        <enum name="horizontal" value="0" />
-        <enum name="vertical" value="1" />
-    </attr>
 </resources>

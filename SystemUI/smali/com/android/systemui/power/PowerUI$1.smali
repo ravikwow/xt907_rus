@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 121
+    .line 106
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -34,164 +34,162 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 12
+    .locals 13
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 124
+    const/4 v7, 0x0
+
+    const/4 v9, 0x1
+
+    .line 109
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 125
+    .line 110
     .local v0, "action":Ljava/lang/String;
-    const-string v9, "android.intent.action.BATTERY_CHANGED"
+    const-string v10, "android.intent.action.BATTERY_CHANGED"
 
-    invoke-virtual {v0, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v10
 
-    if-eqz v9, :cond_c
+    if-eqz v10, :cond_b
 
-    .line 126
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    .line 111
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v2, v9, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
+    iget v2, v10, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
 
-    .line 127
+    .line 112
     .local v2, "oldBatteryLevel":I
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    const-string v10, "level"
+    const-string v11, "level"
 
-    const/16 v11, 0x64
+    const/16 v12, 0x64
 
-    invoke-virtual {p2, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v11, v12}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v10
+    move-result v11
 
-    iput v10, v9, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
+    iput v11, v10, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
 
-    .line 128
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    .line 113
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v3, v9, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
+    iget v3, v10, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
 
-    .line 129
+    .line 114
     .local v3, "oldBatteryStatus":I
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    const-string v10, "status"
+    const-string v11, "status"
 
-    const/4 v11, 0x1
+    invoke-virtual {p2, v11, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    invoke-virtual {p2, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    move-result v11
 
-    move-result v10
+    iput v11, v10, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
 
-    iput v10, v9, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
+    .line 116
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    .line 131
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget v6, v10, Lcom/android/systemui/power/PowerUI;->mPlugType:I
 
-    iget v6, v9, Lcom/android/systemui/power/PowerUI;->mPlugType:I
-
-    .line 132
+    .line 117
     .local v6, "oldPlugType":I
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    const-string v10, "plugged"
+    const-string v11, "plugged"
 
-    const/4 v11, 0x1
+    invoke-virtual {p2, v11, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    invoke-virtual {p2, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    move-result v11
 
-    move-result v10
+    iput v11, v10, Lcom/android/systemui/power/PowerUI;->mPlugType:I
 
-    iput v10, v9, Lcom/android/systemui/power/PowerUI;->mPlugType:I
+    .line 118
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    .line 133
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget v5, v10, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
 
-    iget v5, v9, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
-
-    .line 134
+    .line 119
     .local v5, "oldInvalidCharger":I
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    const-string v10, "invalid_charger"
+    const-string v11, "invalid_charger"
 
-    const/4 v11, 0x0
+    invoke-virtual {p2, v11, v7}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    invoke-virtual {p2, v10, v11}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    move-result v11
 
-    move-result v10
+    iput v11, v10, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
 
-    iput v10, v9, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
+    .line 121
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    .line 136
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget v10, v10, Lcom/android/systemui/power/PowerUI;->mPlugType:I
 
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mPlugType:I
+    if-eqz v10, :cond_2
 
-    if-eqz v9, :cond_1
+    move v8, v9
 
-    const/4 v8, 0x1
-
-    .line 137
+    .line 122
     .local v8, "plugged":Z
     :goto_0
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_0
 
-    const/4 v7, 0x1
+    move v7, v9
 
-    .line 139
+    .line 124
     .local v7, "oldPlugged":Z
-    :goto_1
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    :cond_0
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     # invokes: Lcom/android/systemui/power/PowerUI;->findBatteryLevelBucket(I)I
-    invoke-static {v9, v2}, Lcom/android/systemui/power/PowerUI;->access$000(Lcom/android/systemui/power/PowerUI;I)I
+    invoke-static {v10, v2}, Lcom/android/systemui/power/PowerUI;->access$000(Lcom/android/systemui/power/PowerUI;I)I
 
     move-result v4
 
-    .line 140
+    .line 125
     .local v4, "oldBucket":I
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
     iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v10, v10, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
+    iget-object v11, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+
+    iget v11, v11, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
 
     # invokes: Lcom/android/systemui/power/PowerUI;->findBatteryLevelBucket(I)I
-    invoke-static {v9, v10}, Lcom/android/systemui/power/PowerUI;->access$000(Lcom/android/systemui/power/PowerUI;I)I
+    invoke-static {v10, v11}, Lcom/android/systemui/power/PowerUI;->access$000(Lcom/android/systemui/power/PowerUI;I)I
 
     move-result v1
 
-    .line 154
+    .line 139
     .local v1, "bucket":I
     if-nez v5, :cond_3
 
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
+    iget v10, v10, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
 
-    if-eqz v9, :cond_3
+    if-eqz v10, :cond_3
 
-    .line 155
+    .line 140
     const-string v9, "PowerUI"
 
     const-string v10, "showing invalid charger warning"
 
     invoke-static {v9, v10}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 156
+    .line 141
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->showInvalidChargerDialog()V
 
-    .line 196
+    .line 168
     .end local v1    # "bucket":I
     .end local v2    # "oldBatteryLevel":I
     .end local v3    # "oldBatteryStatus":I
@@ -200,154 +198,116 @@
     .end local v6    # "oldPlugType":I
     .end local v7    # "oldPlugged":Z
     .end local v8    # "plugged":Z
-    :cond_0
-    :goto_2
+    :cond_1
+    :goto_1
     return-void
 
-    .line 136
     .restart local v2    # "oldBatteryLevel":I
     .restart local v3    # "oldBatteryStatus":I
     .restart local v5    # "oldInvalidCharger":I
     .restart local v6    # "oldPlugType":I
-    :cond_1
-    const/4 v8, 0x0
+    :cond_2
+    move v8, v7
 
+    .line 121
     goto :goto_0
 
-    .line 137
-    .restart local v8    # "plugged":Z
-    :cond_2
-    const/4 v7, 0x0
-
-    goto :goto_1
-
-    .line 158
+    .line 143
     .restart local v1    # "bucket":I
     .restart local v4    # "oldBucket":I
     .restart local v7    # "oldPlugged":Z
+    .restart local v8    # "plugged":Z
     :cond_3
-    if-eqz v5, :cond_8
+    if-eqz v5, :cond_7
 
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
+    iget v10, v10, Lcom/android/systemui/power/PowerUI;->mInvalidCharger:I
 
-    if-nez v9, :cond_8
+    if-nez v10, :cond_7
 
-    .line 159
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    .line 144
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->dismissInvalidChargerDialog()V
+    invoke-virtual {v10}, Lcom/android/systemui/power/PowerUI;->dismissInvalidChargerDialog()V
 
-    .line 165
+    .line 150
     :cond_4
-    if-nez v8, :cond_9
+    if-nez v8, :cond_8
 
     if-lt v1, v4, :cond_5
 
-    if-eqz v7, :cond_9
+    if-eqz v7, :cond_8
 
     :cond_5
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
+    iget v10, v10, Lcom/android/systemui/power/PowerUI;->mBatteryStatus:I
 
-    const/4 v10, 0x1
+    if-eq v10, v9, :cond_8
 
-    if-eq v9, v10, :cond_9
+    if-gez v1, :cond_8
 
-    if-gez v1, :cond_9
-
-    .line 169
+    .line 154
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->showLowBatteryWarning()V
 
-    .line 172
+    .line 157
     if-ne v1, v4, :cond_6
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_1
 
-    .line 173
+    .line 158
     :cond_6
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->playLowBatterySound()V
 
-    .line 182
+    goto :goto_1
+
+    .line 145
     :cond_7
-    :goto_3
-    if-eqz v8, :cond_0
+    iget-object v10, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    const/4 v9, 0x4
+    iget-object v10, v10, Lcom/android/systemui/power/PowerUI;->mInvalidChargerDialog:Landroid/app/AlertDialog;
 
-    if-eq v6, v9, :cond_0
+    if-eqz v10, :cond_4
 
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mPlugType:I
-
-    const/4 v10, 0x4
-
-    if-ne v9, v10, :cond_0
-
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    iget v9, v9, Lcom/android/systemui/power/PowerUI;->mBatteryLevel:I
-
-    const/16 v10, 0x5f
-
-    if-gt v9, v10, :cond_0
-
-    .line 186
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->showInductiveCharingUI()V
-
-    goto :goto_2
+    goto :goto_1
 
     .line 160
     :cond_8
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
+    if-nez v8, :cond_9
 
-    iget-object v9, v9, Lcom/android/systemui/power/PowerUI;->mInvalidChargerDialog:Landroid/app/AlertDialog;
+    if-le v1, v4, :cond_a
 
-    if-eqz v9, :cond_4
+    if-lez v1, :cond_a
 
-    goto :goto_2
-
-    .line 175
+    .line 161
     :cond_9
-    if-nez v8, :cond_a
-
-    if-le v1, v4, :cond_b
-
-    if-lez v1, :cond_b
-
-    .line 176
-    :cond_a
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->dismissLowBatteryWarning()V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 177
-    :cond_b
+    .line 162
+    :cond_a
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iget-object v9, v9, Lcom/android/systemui/power/PowerUI;->mBatteryLevelTextView:Landroid/widget/TextView;
 
-    if-eqz v9, :cond_7
+    if-eqz v9, :cond_1
 
-    .line 178
+    .line 163
     iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v9}, Lcom/android/systemui/power/PowerUI;->showLowBatteryWarning()V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 189
+    .line 166
     .end local v1    # "bucket":I
     .end local v2    # "oldBatteryLevel":I
     .end local v3    # "oldBatteryStatus":I
@@ -356,49 +316,7 @@
     .end local v6    # "oldPlugType":I
     .end local v7    # "oldPlugged":Z
     .end local v8    # "plugged":Z
-    :cond_c
-    const-string v9, "android.intent.action.SCREEN_OFF"
-
-    invoke-virtual {v9, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_d
-
-    .line 190
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v10
-
-    # setter for: Lcom/android/systemui/power/PowerUI;->mScreenOffTime:J
-    invoke-static {v9, v10, v11}, Lcom/android/systemui/power/PowerUI;->access$102(Lcom/android/systemui/power/PowerUI;J)J
-
-    goto :goto_2
-
-    .line 191
-    :cond_d
-    const-string v9, "android.intent.action.SCREEN_ON"
-
-    invoke-virtual {v9, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_e
-
-    .line 192
-    iget-object v9, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    const-wide/16 v10, -0x1
-
-    # setter for: Lcom/android/systemui/power/PowerUI;->mScreenOffTime:J
-    invoke-static {v9, v10, v11}, Lcom/android/systemui/power/PowerUI;->access$102(Lcom/android/systemui/power/PowerUI;J)J
-
-    goto/16 :goto_2
-
-    .line 194
-    :cond_e
+    :cond_b
     const-string v9, "PowerUI"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -421,5 +339,5 @@
 
     invoke-static {v9, v10}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_2
+    goto :goto_1
 .end method

@@ -2,6 +2,8 @@
 <resources>
     <string name="app_label">IU système</string>
     <string name="status_bar_clear_all_button">Effacer</string>
+    <string name="status_bar_do_not_disturb_button">Ne pas déranger</string>
+    <string name="status_bar_please_disturb_button">Afficher les notifications</string>
     <string name="status_bar_recent_remove_item_title">Supprimer de la liste</string>
     <string name="status_bar_recent_inspect_item_title">"Informations sur l'application"</string>
     <string name="status_bar_no_recent_apps">Aucune application récente.</string>
@@ -34,12 +36,10 @@ Vous devez utiliser le chargeur fourni."</string>
     <string name="label_view">Afficher</string>
     <string name="always_use_device">Utiliser par défaut pour ce périphérique USB</string>
     <string name="always_use_accessory">Utiliser par défaut pour cet accessoire USB</string>
-    <string name="usb_debugging_title">Autoriser le débogage USB ?</string>
-    <string name="usb_debugging_message">"Empreinte numérique de la clé RSA de l'ordinateur : 
-%1$s"</string>
-    <string name="usb_debugging_always">Toujours autoriser sur cet ordinateur</string>
     <string name="compat_mode_on">Zoomer pour être en plein écran</string>
     <string name="compat_mode_off">Étirer pour afficher en plein écran</string>
+    <string name="compat_mode_help_header">Zoom de compatibilité</string>
+    <string name="compat_mode_help_body">"Si une application a été conçue pour un écran plus petit, une commande de zoom s'affiche à côté de l'horloge."</string>
     <string name="screenshot_saving_ticker">Enregistrement capture écran…</string>
     <string name="screenshot_saving_title">"Enregistrement de la capture d'écran…"</string>
     <string name="screenshot_saving_text">"Enregistrement de la capture d'écran en cours…"</string>
@@ -55,8 +55,6 @@ Vous devez utiliser le chargeur fourni."</string>
     <string name="accessibility_home">Accueil</string>
     <string name="accessibility_menu">Menu</string>
     <string name="accessibility_recent">Applications récentes</string>
-    <string name="accessibility_search_light">Rechercher</string>
-    <string name="accessibility_camera_button">Appareil photo</string>
     <string name="accessibility_ime_switch_button">Bouton \"Changer le mode de saisie\"</string>
     <string name="accessibility_compatibility_zoom_button">Bouton \"Zoom de compatibilité\"</string>
     <string name="accessibility_compatibility_zoom_example">"Zoom de compatibilité avec la taille de l'écran"</string>
@@ -77,10 +75,9 @@ Vous devez utiliser le chargeur fourni."</string>
     <string name="accessibility_data_two_bars">Signal moyen</string>
     <string name="accessibility_data_three_bars">Signal bon</string>
     <string name="accessibility_data_signal_full">Signal excellent</string>
-    <string name="accessibility_wifi_off">Wi-Fi désactivé</string>
-    <string name="accessibility_no_wifi">Wi-Fi déconnecté</string>
-    <string name="accessibility_wifi_one_bar">Signal Wi-Fi faible</string>
-    <string name="accessibility_wifi_two_bars">Signal Wi-Fi moyen</string>
+    <string name="accessibility_no_wifi">Aucun signal Wi-Fi</string>
+    <string name="accessibility_wifi_one_bar">Signal Wi-Fi très faible</string>
+    <string name="accessibility_wifi_two_bars">Signal Wi-Fi faible</string>
     <string name="accessibility_wifi_three_bars">Signal Wi-Fi bon</string>
     <string name="accessibility_wifi_signal_full">Signal Wi-Fi excellent</string>
     <string name="accessibility_no_wimax">Aucun signal WiMAX</string>
@@ -88,25 +85,11 @@ Vous devez utiliser le chargeur fourni."</string>
     <string name="accessibility_wimax_two_bars">Signal WiMAX : moyen</string>
     <string name="accessibility_wimax_three_bars">Signal WiMAX : bon</string>
     <string name="accessibility_wimax_signal_full">Signal WiMAX : excellent</string>
-    <string name="accessibility_no_signal">Aucun signal</string>
-    <string name="accessibility_not_connected">Non connecté</string>
-    <string name="accessibility_zero_bars">Aucun signal</string>
-    <string name="accessibility_one_bar">Signal faible</string>
-    <string name="accessibility_two_bars">Moyen</string>
-    <string name="accessibility_three_bars">Bon</string>
-    <string name="accessibility_signal_full">Signal excellent</string>
-    <string name="accessibility_desc_on">Activé</string>
-    <string name="accessibility_desc_off">Désactivé</string>
-    <string name="accessibility_desc_connected">Connecté</string>
     <string name="accessibility_data_connection_gprs">GPRS</string>
-    <string name="accessibility_data_connection_1x">1x</string>
-    <string name="accessibility_data_connection_hspa">HSPA</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3G+</string>
     <string name="accessibility_data_connection_4g">4G</string>
-    <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
-    <string name="accessibility_data_connection_roaming">Itinérance</string>
     <string name="accessibility_data_connection_edge">EDGE</string>
     <string name="accessibility_data_connection_wifi">Wi-Fi</string>
     <string name="accessibility_no_sim">Aucune carte SIM</string>
@@ -122,18 +105,6 @@ Vous devez utiliser le chargeur fourni."</string>
     <string name="accessibility_ringer_vibrate">Sonnerie en mode vibreur</string>
     <string name="accessibility_ringer_silent">Sonnerie en mode silencieux</string>
     <string name="accessibility_recents_item_dismissed">Application \"%s\" ignorée.</string>
-    <string name="accessibility_notification_dismissed">Notification masquée</string>
-    <string name="accessibility_desc_notification_shade">Volet des notifications</string>
-    <string name="accessibility_desc_quick_settings">Paramètres rapides</string>
-    <string name="accessibility_desc_recent_apps">Applications récentes</string>
-    <string name="accessibility_quick_settings_user">Utilisateur %s</string>
-    <string name="accessibility_quick_settings_wifi">%1$s, %2$s</string>
-    <string name="accessibility_quick_settings_mobile">Signal mobile : %1$s, %2$s, %3$s</string>
-    <string name="accessibility_quick_settings_battery">Batterie : %s</string>
-    <string name="accessibility_quick_settings_airplane">Mode Avion : %s</string>
-    <string name="accessibility_quick_settings_bluetooth">Bluetooth : %s</string>
-    <string name="accessibility_quick_settings_location">Localisation %s</string>
-    <string name="accessibility_quick_settings_alarm">Alarme réglée sur %s</string>
     <string name="data_usage_disabled_dialog_3g_title">Données 2G-3G désactivées</string>
     <string name="data_usage_disabled_dialog_4g_title">Données 4G désactivées</string>
     <string name="data_usage_disabled_dialog_mobile_title">Données mobiles désactivées</string>
@@ -146,50 +117,17 @@ Si vous utilisez des données supplémentaires, celles-ci pourront être factur�
     <string name="status_bar_settings_signal_meter_wifi_nossid">Connecté au Wi-Fi</string>
     <string name="gps_notification_searching_text">Recherche de GPS...</string>
     <string name="gps_notification_found_text">Position définie par GPS</string>
-    <string name="accessibility_location_active">Demandes de localisation actives</string>
     <string name="accessibility_clear_all">Supprimer toutes les notifications</string>
+    <string name="dreams_dock_launcher">"Activer l'économiseur d'écran"</string>
     <string name="status_bar_notification_inspect_item_title">"Informations sur l'application"</string>
+    <string name="notifications_off_title">Notifications désactivées</string>
+    <string name="notifications_off_text">Appuyez ici pour réactiver les notifications.</string>
     <string name="accessibility_rotation_lock_off">"L'écran pivote automatiquement."</string>
     <string name="accessibility_rotation_lock_on_landscape">"L'écran est verrouillé en mode paysage."</string>
     <string name="accessibility_rotation_lock_on_portrait">"L'écran est verrouillé en mode portrait."</string>
-    <string name="dessert_case">Vitrine des desserts</string>
-    <string name="start_dreams">Écran veille interactif</string>
-    <string name="ethernet_label">Ethernet</string>
-    <string name="quick_settings_airplane_mode_label">Mode avion</string>
-    <string name="quick_settings_battery_charging_label">En charge (%d%%)</string>
-    <string name="quick_settings_battery_charged_label">Chargée</string>
-    <string name="quick_settings_bluetooth_label">Bluetooth</string>
-    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d appareils)</string>
-    <string name="quick_settings_bluetooth_off_label">Bluetooth inactif</string>
-    <string name="quick_settings_brightness_label">Luminosité</string>
-    <string name="quick_settings_rotation_unlocked_label">Rotation auto</string>
-    <string name="quick_settings_rotation_locked_label">Rotation bloquée</string>
-    <string name="quick_settings_ime_label">Mode de saisie</string>
-    <string name="quick_settings_location_label">Localisation</string>
-    <string name="quick_settings_location_off_label">Localisation désactivée</string>
-    <string name="quick_settings_media_device_label">Appareil multimédia</string>
-    <string name="quick_settings_rssi_label">RSSI</string>
-    <string name="quick_settings_rssi_emergency_only">"Appels d'urgence"</string>
-    <string name="quick_settings_settings_label">Paramètres</string>
-    <string name="quick_settings_time_label">Heure</string>
-    <string name="quick_settings_user_label">Moi</string>
-    <string name="quick_settings_wifi_label">Wi-Fi</string>
-    <string name="quick_settings_wifi_not_connected">Non connecté</string>
-    <string name="quick_settings_wifi_no_network">Aucun réseau</string>
-    <string name="quick_settings_wifi_off_label">Wi-Fi désactivé</string>
-    <string name="quick_settings_remote_display_no_connection_label">"Écran sur lequel l'affichage est diffusé"</string>
-    <string name="quick_settings_brightness_dialog_title">Luminosité</string>
-    <string name="quick_settings_brightness_dialog_auto_brightness_label">AUTOMATIQUE</string>
-    <string name="ssl_ca_cert_warning">"Le réseau peut
-être surveillé."</string>
-    <string name="status_bar_help_title">Les notifications s’affichent ici</string>
-    <string name="status_bar_help_text">"Accédez-y à tout moment en faisant glisser le doigt vers le bas.
-Répétez l'opération pour accéder aux commandes du système."</string>
-    <string name="vibration_pattern_title">Schéma de vibration</string>
     <string name="zz_moto_accessibility_data_connection_4g_lte">4 G L T E</string>
     <string name="zz_moto_accessibility_data_connection_lte">L T E</string>
     <string name="zz_moto_accessibility_data_connection_3g_plus">3 G plus</string>
-    <string name="zz_moto_accessibility_data_connection_2g">2G</string>
     <string name="zz_moto_accessibility_data_connection_hplus">H plus</string>
     <string name="zz_moto_accessibility_data_four_bars">Données quatre barres.</string>
     <string name="zz_moto_accessibility_data_five_bars">Données cinq barres.</string>
@@ -215,8 +153,4 @@ Répétez l'opération pour accéder aux commandes du système."</string>
     <string name="zz_moto_accessibility_roaming_femtocell">En itinérance via femtocell.</string>
     <string name="zz_moto_accessibility_no_sim">Aucune carte SIM.</string>
     <string name="zz_moto_accessibility_corrupt_sim">Carte SIM non valide ou corrompue.</string>
-    <string name="quick_settings_wireless_display_label">Affichage sans fil</string>
-    <string name="inductive_charging_hint">"Chargeur sans fil détecté.
-Alignez cette icône avec l'indicateur sur
-votre socle de charge."</string>
 </resources>

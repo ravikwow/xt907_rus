@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/systemui/LoadAverageService$LoadView;,
-        Lcom/android/systemui/LoadAverageService$CpuTracker;
+        Lcom/android/systemui/LoadAverageService$Stats;
     }
 .end annotation
 
@@ -72,7 +72,7 @@
 
     .line 296
     .local v0, "params":Landroid/view/WindowManager$LayoutParams;
-    const v1, 0x800035
+    const/16 v1, 0x35
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 

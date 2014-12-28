@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 533
+    .line 471
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$4;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .prologue
     const v2, 0x3f1aca6b
 
-    .line 537
+    .line 475
     cmpg-float v0, p1, v2
 
     if-gtz v0, :cond_0
 
-    .line 538
+    .line 476
     const-wide v0, 0x400921fb54442d18L
 
     div-float v2, p1, v2
@@ -63,7 +63,7 @@
 
     double-to-float v0, v0
 
-    .line 540
+    .line 478
     :goto_0
     return v0
 

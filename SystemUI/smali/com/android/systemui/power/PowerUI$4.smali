@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 314
+    .line 270
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$4;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -43,16 +43,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 316
+    .line 272
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$4;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iput-object v1, v0, Lcom/android/systemui/power/PowerUI;->mInvalidChargerDialog:Landroid/app/AlertDialog;
 
-    .line 317
+    .line 273
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$4;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iput-object v1, v0, Lcom/android/systemui/power/PowerUI;->mBatteryLevelTextView:Landroid/widget/TextView;
 
-    .line 318
+    .line 274
     return-void
 .end method

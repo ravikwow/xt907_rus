@@ -1,844 +1,803 @@
 Manifest-Version: 1.0
-Created-By: 1.6.0_27 (Sun Microsystems Inc.)
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_hplus_wi
- de.png
-SHA1-Digest: J9arWO/UPHv0lXSs48koVN9nC+A=
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
 
 Name: res/drawable-hdpi/ic_notify_clear_normal.png
-SHA1-Digest: 4A7SJF+uTB8koyvU3rCQY5KcoEs=
+SHA1-Digest: 95j4C9hWrw7bzx3vJJRyXxMuBPY=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_3_fully.png
-SHA1-Digest: BcKTowymNp1J+EMEMmjZS7EGMCY=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_g_wave
+ s.png
+SHA1-Digest: EFXTFAIUwkD4YiXef2K/q7KUXAY=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_1x_wide.png
-SHA1-Digest: lnYicdTPch6JjXl11KphPC/w3ms=
+Name: res/drawable-mdpi/stat_sys_signal_0_fully.png
+SHA1-Digest: hecXrhR/3/KeOGETNpptz4vwu7Q=
 
-Name: res/drawable/zz_moto_ic_qs_data_full_in_waves_animation_wide.xml
-SHA1-Digest: WsDlTR8nga9L3fd/Z+5+xyP/X/w=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ e_waves.png
+SHA1-Digest: yB9z3CS8+sQCF4KZgKfoulURrUE=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_1x.png
+SHA1-Digest: nLAigSudIxfUWFbL9EFGVgSxFC8=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_g.png
+SHA1-Digest: gfUq9LYKzAkm6ZNSYBFL7Eug/yA=
+
+Name: res/drawable-hdpi/ic_sysbar_airplane_on.png
+SHA1-Digest: Nv/yftvUw4QytOMh6lup6Ic2ZBc=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_g.png
+SHA1-Digest: NQVD8hLZJsT1qYiiJhVLKdYdeY8=
 
 Name: res/drawable-hdpi/stat_sys_signal_flightmode.png
-SHA1-Digest: gBVT0c/3ghM4YQJ9/ierqScFGpI=
+SHA1-Digest: S3RxD0a1cYeO7phJHVsx497vYU8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_h_wide.png
-SHA1-Digest: 7OomPOnARSPPdbob3KwHktJHHz0=
+Name: res/drawable-hdpi/stat_sys_data_connected_roam.png
+SHA1-Digest: WPzD0jzo+ArVRwJctpn4cPGE0DU=
 
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_custom3_flash_wid
- e.xml
-SHA1-Digest: aZQr6pa4D1Tua02pShgJMZkyCPQ=
+Name: res/drawable-mdpi/stat_sys_data_bluetooth.png
+SHA1-Digest: Bi6nNUofO0RpEZwybIq0yTgSbO0=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_r_wide.png
-SHA1-Digest: 1FfYyiokNgqNCQo598mf2JmoHAE=
+Name: res/drawable-mdpi/stat_sys_data_connected_3g.png
+SHA1-Digest: iFW9UjgeZfX9jl19mQlFT3fUZu8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_lte_wide.pn
- g
-SHA1-Digest: L+tbUXJqwl9Yt3BE5hLIvRmjfpw=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_1_fully_wide.png
-SHA1-Digest: FgNEhsfKY9S1CqAryB65xi1mr/I=
-
-Name: res/layout/status_bar_recent_item.xml
-SHA1-Digest: C0Ck9EL3s3M8iHvrIU0JFLcWHNQ=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_out_wide.png
-SHA1-Digest: SDBkholj5qbUnj6ohbQ6Q7JXOYQ=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_custom3_flash_wide.xm
- l
-SHA1-Digest: jgRH4Pdc4rX7qTyP5V0bC9tc82I=
+Name: res/drawable-hdpi/status_bar_hr.9.png
+SHA1-Digest: 0HeQLmeaw5D/sBoU4pTVlWgEWoc=
 
 Name: res/anim/lights_out_in.xml
-SHA1-Digest: kgBYhJnP5HGtC7p3mh0aKD/ThCY=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_4_wide.png
-SHA1-Digest: 0cD7WYsYTyZPx/lRctOOhQPMlos=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_flash.xml
-SHA1-Digest: rFiV74X4h5gZoY72q3/VToI7xOA=
-
-Name: res/drawable/ic_qs_cast_connecting.xml
-SHA1-Digest: PjFVtnQ6IC6TvoVmz9f79O91AHc=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_1_bar_wid
- e.png
-SHA1-Digest: vjF7rsIRl0UV1OJxsLGm6DSRQ/8=
+SHA1-Digest: xCDUqYDlRhaia5n5Vn8ySfZCvdY=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_0.png
-SHA1-Digest: uRzVoJtkFE0TJud66rLBZmV3zdQ=
+SHA1-Digest: WVyo4VLtVKPT7dkYC5WKctfVFNg=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_3_fully.png
-SHA1-Digest: otsQIKVTRQ7GGAtmoyns0oy6lu0=
+SHA1-Digest: XaIICgtJVCqOZsyOimtSeICTl0s=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_signal_out_wide
- .png
-SHA1-Digest: aX0MNnj/dlY3/o3N+uX8MKQoMhc=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_3_fully.png
+SHA1-Digest: u41u0vvIYPbarMKsNkPJVkZDeHU=
+
+Name: res/drawable-mdpi/stat_sys_nfc_on.png
+SHA1-Digest: 0RcGlRtYAoCspNbYBtSjQSK4qjo=
 
 Name: res/layout/msim_signal_cluster_view.xml
-SHA1-Digest: Xfm2qiBQ66wV0HwZr9kapo696ZI=
+SHA1-Digest: vDsGxshPg4nSRMuH/sTfzSBxy9M=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_4_wide.png
-SHA1-Digest: Cre753FnBkMaFhYOBaQV/uu5WEM=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_g.png
+SHA1-Digest: 10PVV4dMHihUTNuyuf9VWuSjvn8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_3_wide.png
-SHA1-Digest: a3oXWlLMaHFFbVRTXGWsYlS6Dno=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_n
+ one.png
+SHA1-Digest: ENdHZ6fa4tGKp/ky50fnJqfQR3g=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_2_bars_wi
- de.png
-SHA1-Digest: ygxsWGJDaEzw5PLTZwRig96jBTY=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_hp
+ lus.png
+SHA1-Digest: EJWnUjMmgOFc/F+PSmTInQTjYYU=
 
-Name: res/drawable/qs_tile_background.xml
-SHA1-Digest: h08IGuJgAnA9qMEPu+t2cUO7BfI=
+Name: res/drawable-nodpi/jandycane.png
+SHA1-Digest: UJrnH8iFGiNgS6Aqg0XLBZuPQpM=
 
-Name: res/mipmap-mdpi/ic_launcher_dreams.png
-SHA1-Digest: DEvCNLHdGTcb+5JrjxTldkenZZw=
+Name: res/drawable-hdpi/btn_default_small_normal_disable.9.png
+SHA1-Digest: mjkaO2K2jegONwY6hdsCIJWwz9w=
 
-Name: res/layout/status_bar_search_panel.xml
-SHA1-Digest: 4p65xY8NiJbwcacwA8e+adiErGo=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_3.png
+SHA1-Digest: 1wbVe4WsySZR72DXZb6he9MfGE0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_roam_wid
- e.png
-SHA1-Digest: 1FfYyiokNgqNCQo598mf2JmoHAE=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_i
+ n.png
+SHA1-Digest: kWCcrhfp0F5qqEN/tbHEfhPor30=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_r_wide.png
-SHA1-Digest: cemfZKyMmLrNwnxH/qb/Nzdr3kI=
+Name: res/drawable-sw600dp-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_cust
+ om3.png
+SHA1-Digest: g+Y1sqM/5PiHiAkYEawoyYTd7j0=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_signal_i
- nout_wide.png
-SHA1-Digest: r10CXpqCA+ZxtcTj1k8zHuH8VOU=
+Name: res/drawable-hdpi/pocket_drag_pattern.png
+SHA1-Digest: rWve6koybx+KNW2CwhYr4UvGags=
 
-Name: res/drawable-hdpi/ic_qs_cast_connecting_2.png
-SHA1-Digest: e36H5ZRcUK0v1BrgbRVHXu6n1DE=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_inout.png
+SHA1-Digest: wFF+8Awm2ZcjRbCdig5QbWdOPCM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_custom3_wide.png
-SHA1-Digest: a+JpRvFHh4mFD1gQ7WYFL8kjbOk=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_hplus.png
+SHA1-Digest: IG4AcMc9DkGSVv1PZbUaKK7C7A4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_g_wide.png
-SHA1-Digest: 83fh6/rzYOrpIHEBWuh04SHhGRQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_lte.png
+SHA1-Digest: //1tZCC2BIRF4sz3D0VEfpIY3mU=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_lte.png
-SHA1-Digest: WN2xKN/vUxJKFYFSuK/F7EKUMPI=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_2.png
+SHA1-Digest: AnJWU3+4qyhU0yl22J+Wn8wQ1B8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_waves_none_wide
- .png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-sw600dp-mdpi/stat_sys_roaming_cdma_flash_anim0.png
+SHA1-Digest: op6q7FgRR3IFfMaw1FFsiPKzXOM=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_0_wide.png
-SHA1-Digest: ckf7DqrrYJgHrAagzJnh3XPEWmU=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_3_fully.png
+SHA1-Digest: yIfw8Noh8cawvF8+bzJgBRk3op4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_femtocell_
- anim0_wide.png
-SHA1-Digest: wbI5Qn/8e/RapAA3nG5LEPIdOpk=
+Name: res/drawable-mdpi/stat_sys_signal_1_fully.png
+SHA1-Digest: 02KSe03ZA+1S8nluhGXFFE0o1q8=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_ringer_vibrate.png
-SHA1-Digest: q+kgj+t26KSquYYXpC/1ke90T9Q=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_1.png
+SHA1-Digest: thFAY5oEvm2pBFmFu+LUy98wrs4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_roam_ful
- ly_wide.png
-SHA1-Digest: K8djUTRvBXOdDqUgHqzJq0E9P8I=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_0.png
+SHA1-Digest: QmJcDcP0xxox5WN48XjO5AXYQQY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_e_wide.png
-SHA1-Digest: FyQ08HF7GLc7PWjCkZvlkQdum3M=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_signal
+ _out.png
+SHA1-Digest: Sw8+sskRm+nBGNZVvB4OA2LBOtY=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_lte.png
-SHA1-Digest: REwHLGURkVDRIbLm8nNNkIkeECo=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_4.png
+SHA1-Digest: CmkEN+bQ2JYVfJyuB+jp8/GGJxk=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_3.png
-SHA1-Digest: +iTCByZMRGHKyWNh39uiAvG7+XA=
+Name: res/drawable/zz_moto_stat_sys_data_fully_out_waves_animation.xml
+SHA1-Digest: W8ULM1/TDg1pmyGBTKyZaQLyJTs=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_3_fully_wide.png
-SHA1-Digest: otsQIKVTRQ7GGAtmoyns0oy6lu0=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_4.png
+SHA1-Digest: 8bw+SzSE3kX9z8dwX4hgtRyyI5I=
 
-Name: res/drawable-ldrtl-hdpi/ic_sysbar_recent.png
-SHA1-Digest: p+6uyLV2KfRPz+SWEnKs6gAFc/0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_3_fully.png
+SHA1-Digest: aBJBty0Hsg5ca0J2TP8sUfzjv9E=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_2_bars_w
- ide.png
-SHA1-Digest: TKJpqJQnLR3xj2UG2En+Gpv1Q8Y=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_5.png
+SHA1-Digest: Wzyj1dgcyU1etcqHbD+68sWgzn4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_femtocell_
- anim1_wide.png
-SHA1-Digest: 3UM57UJ8DdlHNFi6UoKB6dxqLJo=
+Name: res/drawable-hdpi/stat_sys_battery_71.png
+SHA1-Digest: dPahQtPFqWK6KOWbAlKXtrzafEg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_bluetooth_on_wide.png
-SHA1-Digest: APKkb/JGDHp4q9L3AN0Gu6/+adw=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_inout.png
+SHA1-Digest: i5G78j3aMQ1bq23lET6a668tQsI=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_0_wide.png
-SHA1-Digest: uYvye3ibxmq2TlpppZW9q7aYEoQ=
+Name: res/drawable/zz_moto_stat_sys_data_out_waves_animation.xml
+SHA1-Digest: 6QRTckEQgNBwfn0x/KALo10Yuik=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_lte_wide
- .png
-SHA1-Digest: E2hRdkCFvCjx3+GfsrEETPI143w=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_0.png
+SHA1-Digest: 4UD20VaFHtraGDhKcZpsBq6mz48=
 
-Name: res/drawable-hdpi/stat_sys_device_access_location_found.png
-SHA1-Digest: 7gC9P4zovn7w8lXqKhx2TBeCUU0=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_0_fully.png
+SHA1-Digest: UZQwipXYYbz/5znk2GQUaCWZAhE=
 
-Name: res/drawable-ldrtl-hdpi/ic_notify_quicksettings_normal.png
-SHA1-Digest: 6dvPSmpa9e+VDwdTHjnpOf91mcE=
+Name: res/drawable-sw600dp-hdpi/ic_sysbar_ime_default.png
+SHA1-Digest: vBj8j+K2oyXlAPj5/ZnxToYm4+k=
 
-Name: res/drawable-hdpi/ic_qs_signal_1x.png
-SHA1-Digest: w4QZb5lI9LMsJP32pUuVUmjO9Ms=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_2g.png
+SHA1-Digest: iklh1gajX80nNsd+Got59z3m434=
 
-Name: res/drawable-hdpi/ic_sysbar_camera.png
-SHA1-Digest: jIzX+haY8bvXAHykM55fpgCss5k=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_in_waves_2_bars.
+ png
+SHA1-Digest: NdQurmHZnEwuAIrMtabn3n5CImI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_null_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ hplus.png
+SHA1-Digest: kYNi50OXdKqlxhBehL+7xPY+CVI=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_3.png
+SHA1-Digest: 35avQyL5UhovT22DCLYScm9Uizs=
+
+Name: res/drawable-hdpi/stat_sys_battery_28.png
+SHA1-Digest: v3l5DpyDFMmgBd2XbBWhOKm6mGg=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_1_bar.png
+SHA1-Digest: yBeWUtYuNMFDT6kaXTFcP3EM2r4=
 
 Name: res/layout-land/status_bar_recent_item.xml
-SHA1-Digest: qocrq7q0f1Q4fCSOVDQPvRG66Xg=
+SHA1-Digest: 3urKTkkjEQtPfXK9yshO8bAStKg=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_highlight.png
-SHA1-Digest: Rcvq8usrlXB4KIrsLPEc552+YvQ=
+SHA1-Digest: IfWPVaUeudURSRuX7W1zQbzoi6I=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_0_fully.png
+SHA1-Digest: 7naP9SsGCwY9TK5OEF0RuozGLmo=
 
 Name: res/anim/system_out.xml
 SHA1-Digest: x60C7ofL7bc4Y7hxb4caKXyM36w=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_g.png
-SHA1-Digest: Sx2TiJ1ZpmpgB/WN/Z4JG2/HacY=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_4g.png
+SHA1-Digest: onlRfmb/3UKDUsiXwmYwt3YrbRc=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_0.png
-SHA1-Digest: w4gwnhAPszVDl6M+4hSYE8jttQ8=
+Name: res/layout/system_bar_recent_panel.xml
+SHA1-Digest: jLfjxOV8gG5YJrMtAFJvwAGYk4Q=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_roam_wide.png
-SHA1-Digest: cemfZKyMmLrNwnxH/qb/Nzdr3kI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_e.png
+SHA1-Digest: obLYdLDxoLzlr6fkp0DVlMDJ0r4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_signal_n
- one_wide.png
-SHA1-Digest: MOPErfGmOODMP2+rgGo95n+8RCA=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_custom3_an
- im1_fully_wide.png
-SHA1-Digest: hpbpxFwU67RSaC2w6BZTktCxB6E=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_e_wide.png
-SHA1-Digest: RfmiV0T0DDcjMtHlGeTrmiVNGGM=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_3_wide.png
-SHA1-Digest: 5IdfuZB/JDT+/u5G8HWBxG2cVsY=
-
-Name: res/drawable-hdpi/ic_qs_signal_4.png
-SHA1-Digest: i3f0LgfKAlRDPal+gFQVK+93uno=
-
-Name: res/anim/recents_return_to_launcher_exit.xml
-SHA1-Digest: m9JhFkhcddnvSM9QhATpExGMP1E=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_lte_null_wide.png
-SHA1-Digest: p80ALXcXOLPYnc6TCWabarRvC0s=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_71.png
+SHA1-Digest: uTkLvL0+fQdFGEd7qdIqnnBMVUc=
 
 Name: res/anim/notification_icons_in.xml
 SHA1-Digest: ya/8qtd3gO26tg0I1A4r6rEyJr8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_roam_fully_wid
- e.png
-SHA1-Digest: K8djUTRvBXOdDqUgHqzJq0E9P8I=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_flightmode.png
+SHA1-Digest: S3RxD0a1cYeO7phJHVsx497vYU8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_hplus_wide.png
-SHA1-Digest: h1tYJbiI4U04WvaTGD1ZtfPkK/g=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_3.png
+SHA1-Digest: OWhbjRv/1VafrZUn44IkOivSFmg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_1_wide.png
-SHA1-Digest: FgNEhsfKY9S1CqAryB65xi1mr/I=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ signal_out.png
+SHA1-Digest: CChyeD6wA5TQJVccZ5HR7OoKzUU=
 
 Name: res/drawable-hdpi/ic_sysbar_lights_out_dot_small.png
-SHA1-Digest: goWUwIwKngazCVwrJOsqiocEfmw=
+SHA1-Digest: /OkwFalbodd5qhn4Hpt9wmaF8UM=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_2.png
-SHA1-Digest: yNlppt5RGisPJA/fi8ASXVF0pHM=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_5_fully.p
+ ng
+SHA1-Digest: eqJB2ViXqxoQE9UAn9vv2G9Jwy4=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_inout.png
-SHA1-Digest: 6PoXq4N8BbNdmryHL+kIPPlTqN4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_out_waves_1_bar.
+ png
+SHA1-Digest: RGzrMr49n0zWE3gtlQ7KIntVvrU=
 
-Name: res/drawable-hdpi/ic_qs_wifi_full_4.png
-SHA1-Digest: rg116vm1oD8oO/oQzY56bcvNCaI=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_2_fully.png
+SHA1-Digest: 9O0moWzrFp2OubUa08AgjP3FBTo=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_e_wide.png
-SHA1-Digest: 284ZT+uXdIWsxfKOYvLQPLmPkVk=
+Name: res/drawable-hdpi/status_bar_expand_default.png
+SHA1-Digest: 1AY0tCkXCAI9fD7PkM5wCzEacxc=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_4g_lte_wide.pn
- g
-SHA1-Digest: XFUyhcTl7kasxUUJvvfeoKeCspM=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_2g.png
+SHA1-Digest: oiVgF63XlPZzMsUiwLZTrpZpNfc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_1_wide.png
-SHA1-Digest: YcQer7eojTJNggvSZv5G/64NSS8=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_3g.png
+SHA1-Digest: Obe2FBYI2bVvlt6hs4LZ+16jGmI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_g_null_wide.png
-SHA1-Digest: 5j1y3m7/h56HN+8RMbAhL+oINWg=
+Name: res/drawable/zz_moto_stat_sys_data_bluetooth_battery_below_25_an
+ imation.xml
+SHA1-Digest: ipI65suM2RcoOWS1PMBJsOSQb9Q=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_3g_wide.png
-SHA1-Digest: GE5//TlYX/9VdCMyztvmtQyfiLk=
+Name: res/drawable-mdpi/stat_sys_roaming_cdma_flash_anim1.png
+SHA1-Digest: ZZfGDD+OBJ4DEBw9DrJpsg716+Q=
 
-Name: res/drawable-nodpi/dessert_dandroid.png
-SHA1-Digest: ZotvQlgIs5T04/QQuScCSHsPjsc=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_2.png
+SHA1-Digest: HA/CXmg9hA6z1S2Gre94kr+TGWY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_4g_lte_waves_w
- ide.png
-SHA1-Digest: 01d+9NpxrptYGKiSMSq40L7VcYs=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_2_fully.png
+SHA1-Digest: 6XmLtYQ2BXXJB3rAuZlzB5adlPQ=
 
 Name: res/drawable-hdpi/ic_sysbar_back.png
-SHA1-Digest: Om0NY+SN6/MdNcgtEh7HVFO1rC0=
+SHA1-Digest: iI38Xoy8IuWX6wm0VqW8g+MvJUw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_null_wide.png
-SHA1-Digest: uRzVoJtkFE0TJud66rLBZmV3zdQ=
+Name: res/layout-ar-sw600dp/status_bar_notification_panel_title.xml
+SHA1-Digest: KRVOj9goJwh9u6B/vi5Ub8UiR+s=
 
 Name: res/drawable-hdpi/bottom_divider_glow.png
-SHA1-Digest: TNAvuNl8YX1VCRGIiXvJBxPVDzs=
+SHA1-Digest: MJc3Ks0M5KvMSN1YZJYXak1d+Uo=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_inout_wide.png
-SHA1-Digest: r10CXpqCA+ZxtcTj1k8zHuH8VOU=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_lte_null.png
+SHA1-Digest: oJwn+O3JIukAiJwMWyzhBvCQK64=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_inout_wide.png
-SHA1-Digest: 9/MuklO0pS0OLj5XabbTZyX+U7c=
+Name: res/layout-sw720dp/status_bar_search_panel.xml
+SHA1-Digest: m7b0nqO0QK9ghQHi2ET0lBLTgFM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_out_wide.png
-SHA1-Digest: tRhA27b3raeC11pZ+vaRTrlICN4=
+Name: res/drawable-hdpi/stat_sys_wifi_signal_1.png
+SHA1-Digest: WxF+6xuv4LTUryfPbMqnLd6QnYw=
 
-Name: res/drawable-nodpi/dessert_android.png
-SHA1-Digest: i3KWKZudlN7NNNctZe2crSjDt5w=
+Name: res/drawable-hdpi/stat_sys_wifi_signal_4.png
+SHA1-Digest: aCDfREOSF9P1gW8irXUZF4Vvjpg=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_4g_lte
+ _waves.png
+SHA1-Digest: VGJJGeBD7blnVfhQpm4DCREKUbo=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_4g.png
+SHA1-Digest: JWtzGKxq1W7G7FNvcct+ocDf4lw=
+
+Name: res/drawable-hdpi/stat_sys_signal_out.png
+SHA1-Digest: Sk9pZDgKTtgpYYpGbcZfg/pcj9k=
 
 Name: res/layout/super_status_bar.xml
-SHA1-Digest: yJZMbDl6KpbFb2lDq77p3HDLDyA=
+SHA1-Digest: YAoxkLgbfdEfgMPzyKRXACEQR5k=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_4_wide.png
-SHA1-Digest: mwFRotPyzNrCGT4W8Nj8GK29obA=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_1.png
+SHA1-Digest: tTDBILamuIRZNO08+aPvOhC1tGw=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_g_wide.png
-SHA1-Digest: SALttKaeuylquiN4TjpP9Vk7wnw=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_3g.png
+SHA1-Digest: OUQWEdsqEdem7Zx8KK/rIGEzP4Q=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_4g_wide.png
-SHA1-Digest: 6xEup8vuGA0WEcCG+I+e1GEwWoA=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_3g.png
+SHA1-Digest: bBlgDls3/5hDwQvQJB3fvPVV7ZY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_i
- nout_wide.png
-SHA1-Digest: Vi8A2rsUVi4i1cHbI+Qw8YrU6cw=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_3_fully.png
+SHA1-Digest: SHsYTI7TXMHW5YvtDuYPcHOeaS0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_e_waves_wide.pn
- g
-SHA1-Digest: VxbZ/m0IED0ZI+wvE1Ph32dQvWQ=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_1.png
+SHA1-Digest: 4SnqUK1oaRvr7AEaa3dKFjNWPFc=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_3g_plus_wide.pn
- g
-SHA1-Digest: thhPk420bBSUxW2b51bFHVi9EEQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_in_waves_3
+ _bars.png
+SHA1-Digest: vWks4lk7Tw0Xbhi3HGhdgms9/vw=
 
-Name: res/layout/quick_settings.xml
-SHA1-Digest: 1YdWlXXR+7ttkYvekucly1ZTANs=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_1_wide.png
-SHA1-Digest: lNJZ4Icplp8G9+5zl84D6dcgR6E=
-
-Name: res/drawable-hdpi/ic_qs_rotation_locked.png
-SHA1-Digest: vUs5EIhwtWr2lFEC15Y4kO/zmX4=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_signal_none_wi
- de.png
-SHA1-Digest: ftd7JZborpfl9TqJUOiIHyl52GY=
-
-Name: res/mipmap-xhdpi/ic_launcher_dreams.png
-SHA1-Digest: 5opBTJoU1I5Rt0g1HJamq4LW2Lo=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_idle.png
+SHA1-Digest: iSBwks7IIEhDZi1fjmGkVwCOCCE=
 
 Name: res/layout/battery_low.xml
-SHA1-Digest: tDAEDQLpEwSXnfT3xHpVf16tld8=
+SHA1-Digest: FRkOm7ag/cZ1G18xqZJrrMYFFNU=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_3_wide.png
-SHA1-Digest: qf6+IrXgsKitH9os4YpKh9XYwbQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_5_fully.png
+SHA1-Digest: SB6o/kXTtNhhNPuCFAkirZ/JFPc=
 
 Name: res/drawable-mdpi/ic_notify_quicksettings_normal.png
-SHA1-Digest: TcuuT7A3g9wrPhEeU2DvOd91qB8=
+SHA1-Digest: eTF9rQp+SpjCNYmjt00vLLB/5gI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_femtoc
- ell_anim0_wide.png
-SHA1-Digest: wbI5Qn/8e/RapAA3nG5LEPIdOpk=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_e_waves.pn
+ g
+SHA1-Digest: 5Xd275EPgEe8Ra/AdcEyERmJqcY=
 
-Name: res/drawable/ic_notify_settings.xml
-SHA1-Digest: +uT3WQEPX/VaArSs8BKbGr0mKvk=
+Name: res/drawable-hdpi/ic_sysbar_quicksettings.png
+SHA1-Digest: 38346kC9BAPGsrvtlOwWWR0soS8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_no_sim.png
-SHA1-Digest: 1X9jUN+vW9Lh+xHVSCQlBWYWWNU=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_4_fully.png
+SHA1-Digest: htdZgieydziBIdE6fXGg5dQPGkQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_no_sim_wide.png
-SHA1-Digest: 1X9jUN+vW9Lh+xHVSCQlBWYWWNU=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_h.png
+SHA1-Digest: qCpv/avtria7Iveje5AwhlSIwMk=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_2_wide.png
-SHA1-Digest: vIczWA6JclSqF7/nwwuwvt1lRwU=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_inout.png
+SHA1-Digest: ZGWhqw+az61mkTDJYwofYIskZnI=
 
-Name: res/layout/quick_settings_tile_user.xml
-SHA1-Digest: VfAK0RyJPSbd+GPAA9Ac27Cx0o4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_lt
+ e.png
+SHA1-Digest: 1stq/Uf7CE9etwFPCzf3XMynpz4=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_signal_5bar_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_inout.png
+SHA1-Digest: DMPaMXFm3KkC8aeQHasZvuFGA7s=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_1x_wide.png
-SHA1-Digest: 3HeGKXH0JxIOblr2JxKua5eAixc=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_5.png
+SHA1-Digest: LRjJFv0i66u2bDl8bVgKRmgV3xg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_3_bars_w
- ide.png
-SHA1-Digest: kjkDxxAutld1yVrNmGaa8rMnI1s=
+Name: res/layout-sw600dp/status_bar_notification_panel_title.xml
+SHA1-Digest: RWxFUVHyYpCaxL1Ji2AJWBsyiac=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_1_wide.png
-SHA1-Digest: NGKBzanmjf/jUt8CtolGzxrZMVA=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_0_wide.png
-SHA1-Digest: K/+/UDfjn68FZ7eOuc8iVBLYpnw=
+Name: res/drawable-hdpi/btn_default_small_pressed.9.png
+SHA1-Digest: OBGUC01bxtIT933GimALfV3sfHI=
 
 Name: res/drawable-hdpi/stat_notify_more.png
 SHA1-Digest: X/b3vkg+7CthPA/LM8m3lnmRDdc=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_4_fully.png
-SHA1-Digest: 4OWMRyBc5i+Vp6ulEzgepWrCzRg=
-
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_flash_wide.xml
-SHA1-Digest: 51I16QRbREFI+KgGdVpuR3LO01o=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_e_wide.png
-SHA1-Digest: C0ZWM3SSKhXy9ofwvoZKfJl1cME=
-
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_flash.xml
-SHA1-Digest: Ip8zerliPQV4xlaDNCimItlZyEU=
-
-Name: res/drawable-ldrtl-sw600dp-hdpi/ic_sysbar_recent_land.png
-SHA1-Digest: fune3hQD27sb89ndwG2iNFGEWZ8=
+Name: res/drawable-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_custom3.png
+SHA1-Digest: lFHLF15EqOVeqvcWM8FrmFJ9pz0=
 
 Name: res/drawable-hdpi/ic_sysbar_menu_land.png
-SHA1-Digest: E3KgL0tzDkfR1H0V4gt2wPd9SD4=
+SHA1-Digest: L6XUQoQfSxjKgGB286b1v+GHIFI=
 
 Name: res/drawable-hdpi/stat_sys_no_sim.png
-SHA1-Digest: TL/NunbxUWcNFoall/knyGd/gdk=
+SHA1-Digest: WZUGf2nezQsPpaxuv+F4X4Q9wLQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_2_wide.png
-SHA1-Digest: vIczWA6JclSqF7/nwwuwvt1lRwU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_below_
+ 25.png
+SHA1-Digest: 8jHCxVkaY0mCT6DOoqTyhMfwO1c=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_in_wide.png
-SHA1-Digest: yscIHyOZkwZK11sfbln2XgZDNRs=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim71.png
+SHA1-Digest: olX+DOvbc3e0ee76rMUzG+YRjF4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_flightmode_wide.p
- ng
-SHA1-Digest: gBVT0c/3ghM4YQJ9/ierqScFGpI=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_waves_
+ none.png
+SHA1-Digest: Pwdjn+cioGhZ/VGHD7Z9wSni0GI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_3_fully_wid
- e.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-hdpi/stat_sys_battery_15.png
+SHA1-Digest: J47M8W3hQzYNwogI/AZn/twQDOI=
 
-Name: res/drawable/zz_moto_ic_qs_data_out_waves_animation_wide.xml
-SHA1-Digest: P6OA62L4UFOFJCSCuc8sh9belD0=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_e_waves.
+ png
+SHA1-Digest: yRtR6UbVHKs/fdvT+YDBdWEQuDk=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_signal_none_wid
- e.png
-SHA1-Digest: nnXa0nCg+bR6h7esdR+03W3/I/k=
+Name: res/drawable-mdpi/ic_notify_clear_pressed.png
+SHA1-Digest: ZsTeYC7XkIvSVsjHZUF2Af8bPHk=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_4g_lte_wide.pn
- g
-SHA1-Digest: rveNWU3lDLzmVCYheNBNYUVcpCg=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_3g_plu
+ s.png
+SHA1-Digest: ng6GxaNaq6ZLNjv4Tr/zeVsIrfk=
 
-Name: res/drawable-hdpi/ic_qs_location_off.png
-SHA1-Digest: cvsx/0cN1UPgOg7c6UcCeGibV5I=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_1_bar.png
+SHA1-Digest: oYDfRQkYEZEFieGYFCqKku3aIKg=
 
-Name: res/mipmap-hdpi/ic_daydreams.png
-SHA1-Digest: UuC99FxpSBiL+Dza/f1v6zBWDt0=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_4g
+ _lte_waves.png
+SHA1-Digest: k0EOSFsfDDJ5QRzSevEoyUqQf8A=
 
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_flash_femtoc
- ell.xml
-SHA1-Digest: GjT/dJMpyuiYBaSijV07EfbqK+I=
+Name: res/drawable-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flash_femtoc
+ ell_anim1.png
+SHA1-Digest: xB6O1sVQPupEf+QtM3hWt81yV08=
 
-Name: res/drawable-hdpi/heads_up_window_bg.9.png
-SHA1-Digest: 3rXvb3oLGUI76UgcBVWwW3U39PQ=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_bluetooth.png
+SHA1-Digest: 9NkMLSNOPq3RqEjGyKb8mgF0BaY=
 
-Name: res/layout/notification_adaptive_wrapper.xml
-SHA1-Digest: IHP1pfCtL4kf5d+vVr6nbOMm0hY=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_4.png
+SHA1-Digest: IxgOGKNpdVXHhhAQx/jpfLo0YY0=
 
-Name: res/layout/quick_settings_tile_basic.xml
-SHA1-Digest: dJN+IhLzOxrQHkBxO31g1QOwvWg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_in.png
+SHA1-Digest: ojE/7PvcRFKP6X1qQKVxK+1aNYI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_1x_null_wide.png
-SHA1-Digest: onpeOjUibGZbPidIPl0i+4NeC3I=
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_g.png
+SHA1-Digest: 2bCEBrXIEmMb1SPtGjqFEq1ZsVk=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_3g.png
-SHA1-Digest: dFoiQnQSTgcx/nuD3DNdCXAyheE=
-
-Name: res/drawable/status_bar_item_background.xml
-SHA1-Digest: UgYQ1ZS5yXMJnN1AXEg1hvhIthY=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_signal_none_wid
- e.png
-SHA1-Digest: ftd7JZborpfl9TqJUOiIHyl52GY=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_in_waves_1_bar_wide.pn
- g
-SHA1-Digest: vjF7rsIRl0UV1OJxsLGm6DSRQ/8=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_4_wide.png
-SHA1-Digest: l8gBXACEeRNkh8BSEPvmZziJ/9A=
-
-Name: res/drawable-hdpi/ic_qs_wifi_inout.png
-SHA1-Digest: nBcvEmT/JV8D10eBaJ2IbtmTAUU=
-
-Name: res/anim/recents_launch_from_launcher_enter.xml
-SHA1-Digest: G69GG+09p6EScaLb/tBjyv88iJQ=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_flightmode_wide.p
- ng
-SHA1-Digest: kwMTfkb5fsORzc1RH0meuay4kH0=
-
-Name: res/drawable-hdpi/ic_sysbar_recent.png
-SHA1-Digest: 3VpQuFQOCqJL9nROATw+DR3Hpy0=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_5_wide.png
-SHA1-Digest: xp4pOk789DBqdc/1zHfaMVix2ig=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_e_wide.png
-SHA1-Digest: FyQ08HF7GLc7PWjCkZvlkQdum3M=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_custom3_flash.xml
-SHA1-Digest: NJIVVPGWRzeqPvJhBeef7DeFKjY=
-
-Name: res/drawable-hdpi/ic_qs_wireless_display_notconnected.png
-SHA1-Digest: JKDE7qzsKuxaKGUCQENm15oJ8cM=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_emergency_only.png
+SHA1-Digest: 9QlMNAlk3D70jp4vUtskjuvqDrU=
 
 Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_o
- ut_wide.png
-SHA1-Digest: 7x75cE6XnAEYQFYOyKbV1qwu18g=
+ ut.png
+SHA1-Digest: BZpm8lbpL1QcvNzFEayfXZlA64k=
 
-Name: res/drawable-hdpi/ic_qs_signal_inout.png
-SHA1-Digest: nBcvEmT/JV8D10eBaJ2IbtmTAUU=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_in.png
+SHA1-Digest: 6FW8N3F+p4JiuLlAfG6WNVCrP4w=
 
-Name: res/drawable/zz_moto_ic_qs_data_in_waves_animation_wide.xml
-SHA1-Digest: 8zQweF2/A/ASakEukqOxhzg21DM=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_in_waves_2
+ _bars.png
+SHA1-Digest: nK146DTswgjzwjnpLS7hfurCCW0=
+
+Name: res/layout/system_bar_no_recent_apps.xml
+SHA1-Digest: kKCSFEsSnVM1BxsLEPgTckSIJAs=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_in_waves_1_bar.p
+ ng
+SHA1-Digest: z3jtzn1eEE+AX8Yu1QcDE1XS610=
+
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_3g.png
+SHA1-Digest: /WhkFTw8rQqKFQ7JmAldBAP+H64=
+
+Name: res/drawable/ic_sysbar_ime.xml
+SHA1-Digest: rMOrUEmrfX+rHEP5pl00DeOhYO0=
+
+Name: res/layout/notification_adaptive_wrapper.xml
+SHA1-Digest: 3Hi0jOxgcfyOJ5R1BE3uMYCp8f8=
+
+Name: res/layout/system_bar_recent_item.xml
+SHA1-Digest: q8/d8tkfVsCnGIGi7kkrBnHupug=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_100.png
+SHA1-Digest: qc5v0MvL0TU2GISEISe5fLdxnGU=
+
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_0.png
+SHA1-Digest: ZtwZsqvLwDSKssMBCD4SBTnPILU=
+
+Name: res/drawable/status_bar_item_background.xml
+SHA1-Digest: sB9ZD5F71WiDu7MhDJ9UkrT1NqI=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_0_fully.p
+ ng
+SHA1-Digest: 3FMeMQdwoQW+FedIRQzMTQLtJsA=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_signal
+ _inout.png
+SHA1-Digest: Vvit+3GEToHAutbXZm8XBlvtGL8=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_g_null.png
+SHA1-Digest: t5eQZdvcavqOTSutC7f9zTBb3k0=
+
+Name: res/drawable-hdpi/ic_sysbar_recent.png
+SHA1-Digest: lC880xD//5mf1Ib3tmEb0B/xZxs=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_e.
+ png
+SHA1-Digest: atdLrkngtOas5zl5tL8inqiU3Sg=
+
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_e.png
+SHA1-Digest: KZh7oMabdw8QGFs0nko2acYQASc=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_null.png
-SHA1-Digest: uRzVoJtkFE0TJud66rLBZmV3zdQ=
+SHA1-Digest: zUlarbwtmpGGe+Py6FjBfT8mK/k=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_4g_wide.png
-SHA1-Digest: OO7A2Ntkij3Rb4H20oGDhl0moLU=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_1x.png
+SHA1-Digest: dYXXrOsy4dAL8tUu+wJLWXqkqdI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_anim0_wide
- .png
-SHA1-Digest: BlH8gksl+57PuqGRHpk9KDBJ9t4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_wa
+ ves_none.png
+SHA1-Digest: Q8VlCCfqFoJ33wFuSjwoylbuBxM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_hplus_wide.png
-SHA1-Digest: h1tYJbiI4U04WvaTGD1ZtfPkK/g=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_4g.png
+SHA1-Digest: LF0oNz74eyQBh/x1GBXWP8h//jY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_1x_wide.png
-SHA1-Digest: 3HeGKXH0JxIOblr2JxKua5eAixc=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_null.png
+SHA1-Digest: +DwyG3kVVMu0mx5JiWTN5cclXh0=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_e.png
+SHA1-Digest: pujuWLYXgOGgM5ERoIQIdPBVXmk=
 
 Name: res/drawable-hdpi/ic_sysbar_home.png
-SHA1-Digest: SyFZR++5rhKEDW/LwBntRb2Kw/c=
+SHA1-Digest: QrcaZhr98LKDzoBfimtODsJH0iU=
 
 Name: res/drawable/status_bar_settings_slider_disabled.xml
-SHA1-Digest: gOQoIGepNg/6SScuGp4TqeSk0Bg=
+SHA1-Digest: JxjKhRBD9SG6qHlDOLOezgTMItM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_3g_plus_
- wide.png
-SHA1-Digest: itAqbkCQtnGjHhOL+zBu4b+4m10=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_e_
+ waves.png
+SHA1-Digest: buYaTaq/tkzYP0i5vXWHpRyLYys=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_3_wide.png
-SHA1-Digest: uukF22eTlBB9FeASdEb6WYUT7W8=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_null.png
+SHA1-Digest: 4pBzXk7fKDIk7PyR4ZDaXp7WbY4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_4g_lte_wide.png
-SHA1-Digest: XFUyhcTl7kasxUUJvvfeoKeCspM=
+Name: res/drawable-hdpi/stat_sys_wifi_signal_2.png
+SHA1-Digest: M2jZVlw1rHKvD1aA3JymuqwuApI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_3_wide.png
-SHA1-Digest: uukF22eTlBB9FeASdEb6WYUT7W8=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_2g.png
+SHA1-Digest: iWS/f9gblmKonWuPYzcYh3VLpgk=
 
-Name: res/drawable-nodpi/dessert_zombiegingerbread.png
-SHA1-Digest: jsN0naMDWiGiGEuWl/tENVs7W1w=
+Name: res/layout/system_bar_input_methods_panel.xml
+SHA1-Digest: jyH+aSXQduMVswd6Mq0wOfntbm4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_3_bars_wide.png
-SHA1-Digest: yY0/pe1ts17aDx5dGT4qt0/9qeM=
+Name: res/layout/system_bar_notification_peek.xml
+SHA1-Digest: QTxkm4qjqQloPyXVAIpn+3/qKCE=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_4g.png
-SHA1-Digest: LboVcLEocuQGOdJIU3IrE83M06w=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_si
+ gnal_out.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_lte_wide.png
-SHA1-Digest: P9LhNfZ7KL+tVxheUj1RPYWgNRU=
-
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_null.png
-SHA1-Digest: 86B9C8N6TNy7kPfwm9W2VjOduqE=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_3g_wide.png
-SHA1-Digest: Oe20D+QhUmx9iXrfLIwOrBozPls=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_i
- n_wide.png
-SHA1-Digest: KvArqo/HYpuxn2X0/DFtBaIuvQY=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_2_fully_wide.png
-SHA1-Digest: h9U310M55u2o38Lov1B+Vi0mvsI=
-
-Name: res/drawable-hdpi/ic_notify_settings_normal.png
-SHA1-Digest: 0kxoLoYIiD43kJdowVDI/CRg+kg=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim85.png
+SHA1-Digest: EhT2Y+M2xt8tH4klptE58ixLgV4=
 
 Name: res/drawable-hdpi/ic_menu_share.png
 SHA1-Digest: DAdIfsv9HHAU+tlQ34dtecz63oU=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_lte_wide.png
-SHA1-Digest: 8vI+BXnATHWANFc+8LpshUcJS0s=
+Name: res/drawable-hdpi/stat_sys_roaming_cdma_flash_anim1.png
+SHA1-Digest: gVjtX44HAGcBA8+13+AwejRgBfw=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_4g_lte_wide.png
-SHA1-Digest: DM+hWls+uWHtWKGOLCJH9oot21E=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_in_waves_3_bars.
+ png
+SHA1-Digest: kpbQMj8xjo/UPOw4gUwymJUxzYM=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_e_null_wide.png
-SHA1-Digest: Mm1LWfXBMS3V70cnyigKYQ8cyzU=
+Name: res/drawable-sw720dp-hdpi/ic_sysbar_zoom_pressed.png
+SHA1-Digest: g5KhbZsJSazqJZyXYXS/tWTGVGs=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_e_wide.p
- ng
-SHA1-Digest: 0t8CMVSaOjSmIX6x6yWp1EVByUE=
+Name: res/layout-iw/battery_low.xml
+SHA1-Digest: xPs5ZdM80/RLkN60QQvgtcB7X9Q=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_custom3_wide
- .png
-SHA1-Digest: a+JpRvFHh4mFD1gQ7WYFL8kjbOk=
+Name: res/drawable-mdpi/stat_sys_signal_in.png
+SHA1-Digest: yscIHyOZkwZK11sfbln2XgZDNRs=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_5_wide.png
-SHA1-Digest: wrHV1gBlrX3kTaRDXmyjUt6goFg=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_anim1_wide
- .png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_3g_wide.png
-SHA1-Digest: 3HeGKXH0JxIOblr2JxKua5eAixc=
-
-Name: res/drawable-hdpi/ic_qs_airplane_on.png
-SHA1-Digest: h1es4J/Xzp3KV8A4D/fU6Adjhn4=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_3_fully_wide.png
-SHA1-Digest: ieDxTo3uPC7NvWIE2igxlRc7Un0=
+Name: res/drawable/zz_moto_stat_sys_data_in_waves_animation.xml
+SHA1-Digest: 1rvTK/gZN+ot4Kog+XK5jCzks4o=
 
 Name: res/drawable-nodpi/notify_item_glow_bottom.png
 SHA1-Digest: i80setKJ6AORltNyCT5HmqPlsXU=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_1x_wide.
- png
-SHA1-Digest: lnYicdTPch6JjXl11KphPC/w3ms=
+Name: res/drawable-mdpi/stat_sys_signal_null.png
+SHA1-Digest: oenu4nk7UNL2sPsSbN17a0mo0mI=
 
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_custom3_flas
- h.xml
-SHA1-Digest: IDfHczpqidB4WhBVJ8ODWVEwLKc=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_4_fully.png
+SHA1-Digest: AFBjFPQ0JagTPFS2NuHGKXQkyAQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_1_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_bluetooth_connected.png
+SHA1-Digest: lCp2oG1h8zzyn79wZaXGkqoNF2k=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_h_null_wide.png
-SHA1-Digest: h8TdSIpdTjvKzzusHSpkbIt5Yj8=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_disconnected.png
+SHA1-Digest: qqharpAMj+WspRSaNIzpcjpNTsg=
 
-Name: res/drawable-hdpi/ic_qs_signal_in.png
-SHA1-Digest: HgY3mTKLt0eaD/sRI/bqeSzlK3M=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_57.png
+SHA1-Digest: BZzEbghYZqPmorZjaxHaeXCLf/8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_3g_wide.png
-SHA1-Digest: ZJkDEJGqpIG9c1zJM5+U16UvMGk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_4g_wav
+ es.png
+SHA1-Digest: h4pRN8cQgluXw2Cmwm6K/swb344=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_0_fully_wide.png
-SHA1-Digest: K/+/UDfjn68FZ7eOuc8iVBLYpnw=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_4.png
+SHA1-Digest: pWZ1zY/97o1nZ/XfvSrIOUpJWY4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_1_wide.png
-SHA1-Digest: oDnl+SiE7VXCUP+6HPwdM9j7oF4=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_out_wid
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
  e.png
-SHA1-Digest: tRhA27b3raeC11pZ+vaRTrlICN4=
+SHA1-Digest: Pt+Iy6I+Qyx5ugkkvjO7EHshD1E=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_4.png
+SHA1-Digest: 6jMq9Q9kPaYQ5IoSgSAa9JHvYjc=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_1.png
+SHA1-Digest: ide5fhT2sgBsOb3FVaeYkC2slb4=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_5.png
+SHA1-Digest: l960ZDFa2l29Qve5u3C+EvymTUs=
+
+Name: res/drawable-mdpi/stat_sys_no_sim.png
+SHA1-Digest: IQ8eFl5+fp4y0HmozaRan2w0e0c=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_e.png
+SHA1-Digest: pujuWLYXgOGgM5ERoIQIdPBVXmk=
+
+Name: res/drawable-hdpi/ic_notify_rotation_on_pressed.png
+SHA1-Digest: mKGq2LvA71EFjocJb2AJcX3b7Sk=
+
+Name: res/drawable-hdpi/recents_blue_glow.9.png
+SHA1-Digest: SQNWsbjaRI6ys6XwbTLBITTDWFA=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_3.png
+SHA1-Digest: ynj3O/z71cCAsWJc748mG6MsFPs=
 
 Name: res/drawable-hdpi/stat_sys_data_bluetooth.png
-SHA1-Digest: 4Du0aVN/rN06+2wWs4PUIb72qEs=
+SHA1-Digest: OnCeiX64Sx7kqC17g0kFw3vdgRM=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_r.png
-SHA1-Digest: 5XodXEE3G5el+vCCuj+iru3R0m0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_roam.png
+SHA1-Digest: DN35IVsPeLc3WgnSIoxSx641zEc=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_in_wide.png
-SHA1-Digest: AiA521ccmkwbq+Zfj2k/4yeG4nA=
+Name: res/drawable-hdpi/alert_bar_background_pressed.9.png
+SHA1-Digest: 5r9WE+HjgV6BY8dxJiYGhUva4jg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_out_waves_2_bars_wide.
- png
-SHA1-Digest: TKJpqJQnLR3xj2UG2En+Gpv1Q8Y=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_4_fully.png
+SHA1-Digest: yr5GTVV1MPO+Mfh5hinua391YS4=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_a
- nim1_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-nodpi/compat_mode_help_bg.png
+SHA1-Digest: Z/BNTYV0Tk3K33ksyq5w2hhpIvY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_e_wide.png
-SHA1-Digest: RfmiV0T0DDcjMtHlGeTrmiVNGGM=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_1x.png
+SHA1-Digest: yMHPmL8PM8S0a5n6c8m+3M9xipo=
 
-Name: res/drawable-hdpi/ic_qs_location_on.png
-SHA1-Digest: 29ueIPNjwvF+KK1z8dh2PLkf1Ns=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_out.png
+SHA1-Digest: H1vHohe5TuUrjbfB1C/thfyy/ms=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_3_wide.png
-SHA1-Digest: a3oXWlLMaHFFbVRTXGWsYlS6Dno=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ waves_none.png
+SHA1-Digest: Pwdjn+cioGhZ/VGHD7Z9wSni0GI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_in_wide.png
-SHA1-Digest: aeK5FAo9zChu1/WyBFKJrFVd+6o=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_15.png
+SHA1-Digest: rLsYlBpyuk5RtoMCC5A7gWsYt7c=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_0_wide.png
-SHA1-Digest: pE1+1ojImthze99QivwWeGbXkXk=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_4_fully.png
+SHA1-Digest: PfB1/D7tkn6DCpvJrs3eBlstt3o=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_3g_wide.png
-SHA1-Digest: Oe20D+QhUmx9iXrfLIwOrBozPls=
+Name: res/drawable/zz_moto_stat_sys_data_bluetooth_charging_100_25_ani
+ mation.xml
+SHA1-Digest: JOwUlmDuAdteIrtLtpJSHe8bn0g=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_null.png
+SHA1-Digest: P0Guxg1EPSgUbYkTA0WeTyl9gu0=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_4g_lte_null.png
+SHA1-Digest: SVUj/dSmvg/hCIk9+bDgJGsFPB0=
 
 Name: res/drawable/status_bar_ticker_background.xml
-SHA1-Digest: NrVxOkKuGhTHbp8KXNFC6+HZjMc=
+SHA1-Digest: nEEGgXZphqRo+o6aGE7hxB/RpS0=
 
-Name: res/drawable-hdpi/ic_qs_airplane_off.png
-SHA1-Digest: tSHBUgZpmdgZik/DH1E8cKW/L9U=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_waves_none.png
+SHA1-Digest: kBEn3RI4I3Pj+eCjM/Kwtqx/cFo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_2_bars_wide.png
-SHA1-Digest: bKeoDDC5EEBy/dYmSgnvUwwAaV0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_1.png
+SHA1-Digest: vGxHgpbtkzdiZvY9ZgV1zgtoe1A=
 
-Name: res/drawable-ldrtl-hdpi/ic_sysbar_back.png
-SHA1-Digest: uw7+uxA1heMs/kTmCSGUSJLR0kc=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_out.png
+SHA1-Digest: fErIifOKfmGQ6mvtlk9S5cjS9Ys=
 
-Name: res/drawable-hdpi/search_light_land.png
-SHA1-Digest: vas+9EBS/db+yL7Ykbd9BL1jI3g=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_1_fully.png
+SHA1-Digest: zdDWX4h73p6nvL2fpSep6U1PnyA=
 
-Name: res/drawable-hdpi/ic_qs_cast_connecting_0.png
-SHA1-Digest: qxvgrcnSzb0/bnyNbj/sXNh7E10=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim57.png
+SHA1-Digest: IWuc+BcWV74fp8KODG+pp9pWH3w=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_out_wide.png
-SHA1-Digest: h/b86VmQl139mopOQ77zeV1fYWc=
+Name: res/drawable-nodpi/redbean2.png
+SHA1-Digest: k4SBlJI3RUz38c4RER0WOHFRYaM=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_full_1_wide.png
-SHA1-Digest: XNvgplRWQm27QO2kJZ/ds6Hw7JM=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_3_fully.p
+ ng
+SHA1-Digest: htYOHJ2SqG6ojm5o7dOTk853lWY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_waves_none_wid
+Name: res/drawable-sw720dp-hdpi/ic_sysbar_zoom_default.png
+SHA1-Digest: Oly6xtTyej5b2ai5zT8a49gt2Bg=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_1.png
+SHA1-Digest: GF96tDmfL36++ceJwuPiUmqtdeo=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_4g.png
+SHA1-Digest: nmSqw40Xt10yOxD3nRBqpG+nBG8=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_flightmod
  e.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+SHA1-Digest: 83NXM6RArtrj6i/vWg3Sc+VFWpU=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_f
- emtocell_anim1_wide.png
-SHA1-Digest: hpbpxFwU67RSaC2w6BZTktCxB6E=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_6_fully.png
+SHA1-Digest: f1lUHfweh+XxQaYhWac2I4qfYk8=
 
-Name: res/drawable-hdpi/ic_qs_signal_4g.png
-SHA1-Digest: uIanfQfCA5/HDApHscf0plnoulU=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_out.png
-SHA1-Digest: h/b86VmQl139mopOQ77zeV1fYWc=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_e_null_wide.png
-SHA1-Digest: OubCH76vFatcWT1fDFuzArX8Ges=
+Name: res/drawable-sw600dp-mdpi/stat_sys_no_sim.png
+SHA1-Digest: DWagg4IR9fQWEdnk3STYLur/5Zs=
 
 Name: res/drawable-hdpi/ic_sysbar_highlight_land.png
 SHA1-Digest: SepJiW+8viJyx8oV+F+ahNpb0Vo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_g_waves_wide.p
- ng
-SHA1-Digest: cvS6+OwR/K3Y9tMn/E986epSV+o=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_g_waves.pn
+ g
+SHA1-Digest: QbAwoKUPJ2UjELcV6TpbE/ATY9s=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_0_wide.png
-SHA1-Digest: zqVi5XwhCtR5wsnAIbJKMhmYNAg=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_3.png
+SHA1-Digest: UBYbJWlnlaePqcKXzZT75DOzcw4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_1_fully_wide.png
-SHA1-Digest: YcQer7eojTJNggvSZv5G/64NSS8=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_lte.png
+SHA1-Digest: 36iM+E5jvbjC87yHGAVS+9RIvgY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_custom3_fully_wi
- de.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
+Name: res/drawable-hdpi/stat_sys_signal_in.png
+SHA1-Digest: yfQn9lihoSMqh8JwW4aHngEv57k=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_4g_lte_wide.png
-SHA1-Digest: L+tbUXJqwl9Yt3BE5hLIvRmjfpw=
+Name: res/layout/system_bar_settings_view.xml
+SHA1-Digest: JoY4BZGyk84PThEkJNMB20YT3jw=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_lte.png
-SHA1-Digest: sjzx+5YcnS7VuojfXdM4RYyXQps=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_g.png
+SHA1-Digest: Dhhz2hx3q6owZxkQNQvh5EOZRBs=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_in_waves_2_bars_wide.png
-SHA1-Digest: bKeoDDC5EEBy/dYmSgnvUwwAaV0=
+Name: res/drawable-sw600dp-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flas
+ h_femtocell_anim1.png
+SHA1-Digest: 454ZitaAsX8K54/GeMNsHqYDnK4=
 
-Name: res/drawable-hdpi/stat_sys_data_fully_connected_roam.png
-SHA1-Digest: K8djUTRvBXOdDqUgHqzJq0E9P8I=
+Name: res/drawable-mdpi/stat_sys_signal_inout.png
+SHA1-Digest: r10CXpqCA+ZxtcTj1k8zHuH8VOU=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_c
- ustom3_anim1_wide.png
-SHA1-Digest: hpbpxFwU67RSaC2w6BZTktCxB6E=
+Name: res/drawable-nodpi/redbeandroid.png
+SHA1-Digest: kH+Kt7iePxyjjV0c0Zqn3mMzyy0=
 
-Name: res/anim/heads_up_exit.xml
-SHA1-Digest: eud4nW+U9Aufq953uLfPmRto9Jk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_0.png
+SHA1-Digest: 33YO1qkgOsETBM35JYYlWoWC9jY=
+
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_0_fully.png
+SHA1-Digest: Drx8cwEtWR2GlsCj2AngGltYyeo=
 
 Name: res/drawable-hdpi/battery_low_battery.png
-SHA1-Digest: NBmArX5eUdv5f0rPFPzp0191wT8=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_4g_waves_wide.
- png
-SHA1-Digest: Sp+a+2Hjc02kz8fcz2hBZwNyHmw=
+SHA1-Digest: QLFTAYpxe3mWBxDS+ICwsAffzCQ=
 
 Name: res/layout/status_bar.xml
-SHA1-Digest: AS0cAYN497guOrCQmU+hiFxRSR4=
+SHA1-Digest: 5DjEEFBcDTCoBPIRTZ8logVe7vc=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_3_bars_wide.pn
- g
-SHA1-Digest: +vEN44DzujYxhKJwPVfe+TQ5Tx4=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_out.png
+SHA1-Digest: jPiYxgm7vJpwnQPT3EmmlV1tvr4=
 
-Name: res/layout/quick_settings_tile_battery.xml
-SHA1-Digest: Yo7mPkSuQntFsbfacPSLi3jz0Pw=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_0_fully.png
+SHA1-Digest: 4tiwClVn9XtlyfldGRfRNFYOXdY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_lte_wide.png
-SHA1-Digest: P9LhNfZ7KL+tVxheUj1RPYWgNRU=
+Name: res/drawable-hdpi/stat_sys_gps_acquiring.png
+SHA1-Digest: jnzl/15xQmfVCa0jRExViJDrj6s=
 
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_femtocell_flash.xml
-SHA1-Digest: sIUVwZek1cjBqdvOQf8jMptse7Y=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_4g_lte_wide.png
-SHA1-Digest: rveNWU3lDLzmVCYheNBNYUVcpCg=
-
-Name: res/drawable-hdpi/ic_qs_bluetooth_on.png
-SHA1-Digest: APKkb/JGDHp4q9L3AN0Gu6/+adw=
+Name: res/drawable/ic_notify_rotation.xml
+SHA1-Digest: njsfMI77bKBL6PeMGeEYzYZ4Zrs=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_recent.png
-SHA1-Digest: ID+cWYzaHHTFpt9hfV9cmKUTQbU=
+SHA1-Digest: HkaupXAD8fb+ib7Xm9qcDLBC5YQ=
 
-Name: res/layout/heads_up.xml
-SHA1-Digest: 9mksRzP8sqdnN4YbAtz5enXkgdQ=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_1x.png
+SHA1-Digest: ZbSoQwWrobtiDYgggl3H6NR+fBw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_4g_lte_wide.pn
- g
-SHA1-Digest: QSBooymqoevTXQNZdA3OxpD8368=
+Name: res/drawable-hdpi/hd_on.png
+SHA1-Digest: 5KmW9sFuDVv8HtrLsIxZncCmXCM=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_4g_wide.png
-SHA1-Digest: NEeKxPKyxMEKufR/4QWF73dC83Q=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_roam.png
+SHA1-Digest: guT8jVjICWAt46oVNGYvSgSP0rQ=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_no_signal.png
-SHA1-Digest: kkj6zVI8phl2FQV6M2Qxe6R0FS0=
-
-Name: res/drawable-ldrtl-sw600dp-hdpi/ic_sysbar_recent.png
-SHA1-Digest: h+HKThkrsIvT/f22E/F/3UM8kMg=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_1x_null.png
+SHA1-Digest: leIlS2vJdFwjSl9LM9oLjJhulvc=
 
 Name: res/drawable-hdpi/ic_notify_quicksettings_normal.png
-SHA1-Digest: Ip9vh0YKx0vhzwHE2jx0wJMFU1A=
+SHA1-Digest: JwOa2zGwr/4ovBgLpIvMEZIaUlQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_g_waves_wide.p
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_2_bars.p
  ng
-SHA1-Digest: olJ2KBYiyj3j4MdGMig8npj1jms=
+SHA1-Digest: Fvt5qfNPfTj3+dD464DVZC4TSpM=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_1x.png
-SHA1-Digest: x74FK+sa48sH4gN4haCkFGXapKw=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_0.png
+SHA1-Digest: xWh8sK2964rD2X9WfaxhVPoBQPs=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_e.png
-SHA1-Digest: FSTsTbhMmRONJFV/pG6bgpzfAfA=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_3g.png
+SHA1-Digest: wKAM0no8WBAc11MkRAyk9Tb0hIw=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_4_fully_wide.png
-SHA1-Digest: gwv0Z7xi0fZIMIjNbrol2yiCnlI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_1_bar.png
+SHA1-Digest: sOBSKd1uNbxrub5nQNdPff3NznU=
 
 Name: res/drawable-hdpi/ic_sysbar_back_land.png
-SHA1-Digest: 9GLQAr9Gyv2bibgIvzwR6g5pdTk=
+SHA1-Digest: uPMfGaQIKqOb7IXkFGIGLFZIvbg=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_no_network.png
-SHA1-Digest: cWG04w8ty1hk1AjjO3GxuiSo6DQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_h_null.png
+SHA1-Digest: A8aNOg2GTjW7kD6Bohewp5tfnkU=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_1.png
-SHA1-Digest: BpRqLQszbMqqJJJw+jnQLAExDyk=
+Name: res/drawable-hdpi/compat_mode_help_diagram.png
+SHA1-Digest: v/9WtU8+F1ZgncPwRFZjbn9ZSmc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_full_3_wide.png
-SHA1-Digest: GHBHUhkNzaixyakuPj49+cjGRJA=
+Name: res/drawable/notify_panel_clock_bg.xml
+SHA1-Digest: 4SXN9ndGQa7uYSf4QNkIlfWfpGg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_2g_wide.png
-SHA1-Digest: skA1uDJr8LWX33RKSf/VTXZ8SbM=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_null.png
+SHA1-Digest: 38J5l+f6sgqGbmy2xavF3nPdW/g=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_4g_wide.png
-SHA1-Digest: BY8h4PHY8HK4QuyJnVMLwHyWHnA=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_bluetooth.png
+SHA1-Digest: i3cbKRxx3Q14EbW0CpqvF6H9RNQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_2g_wide.png
-SHA1-Digest: BeOPCsi+blGwx9QbwqwCyl1UsHE=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_flightmode.png
+SHA1-Digest: bkvyXa60ZmZJF3HRRcTsxMc1BaA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_3g_plus_wide.pn
- g
-SHA1-Digest: A9s5+YT4LpTjRi6nYnsuNUBr3YQ=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_4_fully.png
+SHA1-Digest: 2rSIzMGcpc7QfpIs0nD/AFJj/J4=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_2.png
+SHA1-Digest: kPhl5QCw8I/3l2GjyioYFGGSvDY=
 
 Name: res/layout/signal_cluster_view.xml
-SHA1-Digest: waTUbtViMcRoER94edgtV9arFkY=
+SHA1-Digest: IcsD3vp3p+SjDL0m/0UPzr8pBkw=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_in_wide.png
-SHA1-Digest: KvArqo/HYpuxn2X0/DFtBaIuvQY=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_0_fully.png
+SHA1-Digest: nzouiBG8b1w2haoI8aBUvBNk9Q4=
 
 Name: res/drawable-hdpi/ic_sysbar_highlight.png
 SHA1-Digest: l2Yq3vQxBsQUUlTTxMrVEdEoaFI=
@@ -846,1893 +805,1642 @@ SHA1-Digest: l2Yq3vQxBsQUUlTTxMrVEdEoaFI=
 Name: res/anim/search_launch_enter.xml
 SHA1-Digest: aqQCDo9W+0yEiUhO6t5UlVFEkyQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_hplus_wide.png
-SHA1-Digest: 5rdE5r54E9ZPz797rU4K7agetIE=
+Name: res/layout/system_bar_compat_mode_panel.xml
+SHA1-Digest: 95rPp+EIzSQu0rpd3MVm7fZOrS8=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_2_wide.png
-SHA1-Digest: y5LLqrI/eIxGx9qUjY6q98QL4FI=
+Name: res/layout/system_bar_recent_panel_footer.xml
+SHA1-Digest: GTmgXFvp7mazDjxACzVS2oeZlHg=
 
-Name: res/drawable-hdpi/ic_qs_cast_connected.png
-SHA1-Digest: AsrVKus3/7Tl7pTM3CxFVdqx0DI=
-
-Name: res/layout/quick_settings_tile_media.xml
-SHA1-Digest: bYLBeFeUikcCplo16dvnbX1ZsJI=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_si
+ gnal_none.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_4_fully.png
-SHA1-Digest: l8gBXACEeRNkh8BSEPvmZziJ/9A=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_signal_6bar_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
-
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_flash_femtocell.x
- ml
-SHA1-Digest: 4yqfqpoCh5YyFypawEiHh67uNWI=
+SHA1-Digest: iE3rOVmCRtlVRCkyYViPP2dDdUk=
 
 Name: res/drawable-hdpi/recents_thumbnail_bg_normal.9.png
-SHA1-Digest: LQVdXfABtJrvyvkuIbRqnfnIb2k=
+SHA1-Digest: +sTOZXHGfKB03VNDE2Cdn7Tf3S4=
 
-Name: res/drawable-nodpi/dessert_jellybean.png
-SHA1-Digest: Z8LDHn93lFc03pUwzG2MutGOz60=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_2_fully_wide.png
-SHA1-Digest: 8qvtVlBxkY3SrA6Tw6WCLy+42tY=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_inout.png
-SHA1-Digest: nBcvEmT/JV8D10eBaJ2IbtmTAUU=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_waves_wide.
- png
-SHA1-Digest: wZ1hmRdoaQiWkW58KM9JRrt3qm0=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_1_wide.png
-SHA1-Digest: 34l6OghVcQeyq1HHKqF/r/UD6MA=
+Name: res/drawable-hdpi/ic_sysbar_wifi_on.png
+SHA1-Digest: vek74Ts93/51qqJoA9XeAWqfEBI=
 
 Name: res/drawable-hdpi/stat_sys_signal_1_fully.png
-SHA1-Digest: 8TnQ/8bXf1eRA04NxMFdSwbHe7w=
+SHA1-Digest: ET6X8zM8ioW5YzgKYOPzIvAauOQ=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_4g.png
-SHA1-Digest: whB4n2r0voWCrgNmzPIlJ35HQio=
+SHA1-Digest: FCbweAD8tH0ksJWLId8TaCmrMmw=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_1x.png
-SHA1-Digest: jPzP+MeUUKSjm6tmzkNFF/KESkw=
+Name: res/drawable-hdpi/compat_mode_help_divider_bottom.9.png
+SHA1-Digest: hHRqDlPIJk5PaxL/oSUn4LfVrrY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_1x_wide.png
-SHA1-Digest: y9S8rD80ZSknXjCOJzsgz9hlpZs=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_chargi
+ ng_5_24.png
+SHA1-Digest: b0K6bOZRnn6stGtSPEV/U0KVXzI=
 
-Name: res/mipmap-mdpi/ic_daydreams.png
-SHA1-Digest: gsNcD5j4oWoG9paBHLJ0H8T5Oho=
+Name: res/drawable-hdpi/stat_sys_wifi_out.png
+SHA1-Digest: jqJqa2UAEaiucgKrsJKHSTHy8gs=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_1_fully.png
-SHA1-Digest: wAOI0RFJcUbm3EWG4DpaookABkc=
+Name: res/drawable-sw720dp-hdpi/recents_bg_protect_tile.png
+SHA1-Digest: U4VCIxGDO1t4q14S3lMaG1myOPI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_hplus_wide.png
-SHA1-Digest: Jj/7/cMKXlmnPdTNc04ut64e2TM=
+Name: res/drawable-hdpi/stat_sys_battery_100.png
+SHA1-Digest: P8hksExZh6e6f/WxAJtJl5Lhap8=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_airplane_off_wide.png
-SHA1-Digest: tSHBUgZpmdgZik/DH1E8cKW/L9U=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_1_fully_wide.png
-SHA1-Digest: lNJZ4Icplp8G9+5zl84D6dcgR6E=
-
-Name: res/drawable-hdpi/ic_qs_settings.png
-SHA1-Digest: rjREhSx+ShfsHFPKqnrz3K/7LoQ=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_1_wide.png
-SHA1-Digest: oDnl+SiE7VXCUP+6HPwdM9j7oF4=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_in.png
+SHA1-Digest: +/BcnAQLRjt50h6dwU+q0Ynyi0g=
 
 Name: res/drawable-hdpi/stat_sys_signal_2_fully.png
-SHA1-Digest: vB/aNkp9Vokw2C+MjxrvbI/8Z4U=
+SHA1-Digest: Ru6+PBxh+ROC2Ao7Eb5p3JuDIFE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_1_wide.png
-SHA1-Digest: 5ZKpZXVyDyx8ZLNvwhNGEaCp2cU=
-
-Name: res/drawable-hdpi/ic_qs_cast_available.png
-SHA1-Digest: F3SYKUiS8kyyBLMk+43ixiNr1/Y=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_none_wi
- de.png
-SHA1-Digest: NcFxiBpFADR1qxMrxMDf7d+qZxs=
-
-Name: res/xml/signallevel.xml
-SHA1-Digest: 3ETYmwGgEYZFFZpbNZu64tDc+8k=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_4g_wide.png
-SHA1-Digest: XT3D7H4FQCPKjydKjZX+jZ2ELLo=
-
-Name: res/drawable-hdpi/ic_qs_wireless_display.png
-SHA1-Digest: VHCkePSt5kzLnSHhN0t+EKmD1Xk=
+Name: res/drawable-mdpi/stat_sys_signal_flightmode.png
+SHA1-Digest: h2e4SRFgMOZ1eNfdBANJH5Yqau0=
 
 Name: res/layout-land/status_bar_recent_panel.xml
-SHA1-Digest: h+O75IPH4ivu4yrnvW4qnUGX8HA=
+SHA1-Digest: cwVZPM/p5sfxemFcn167NiSfBec=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_e_wide.png
-SHA1-Digest: jju2GPtKdywsfCRGEnnFTHCZf+4=
+Name: res/drawable-hdpi/stat_sys_signal_2.png
+SHA1-Digest: 9Q3WulJPY+Z3V9nk6psD1bPSj5c=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_signal_out_wid
- e.png
-SHA1-Digest: aX0MNnj/dlY3/o3N+uX8MKQoMhc=
+Name: res/drawable-mdpi/stat_sys_data_connected_4g.png
+SHA1-Digest: sosnadgaeMnklXkNrMwA0AcqqIc=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_in.png
-SHA1-Digest: HgY3mTKLt0eaD/sRI/bqeSzlK3M=
+Name: res/drawable/zz_moto_stat_sys_data_fully_inandout_waves_animatio
+ n.xml
+SHA1-Digest: EhRAriyssEoMeZmUPlDBQXKVycg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_custom
- 3_anim0_wide.png
-SHA1-Digest: wbI5Qn/8e/RapAA3nG5LEPIdOpk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_3_fully.p
+ ng
+SHA1-Digest: uUZElfoEbLAHaLWWWQEI82XRoNU=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_3_wide.png
-SHA1-Digest: 185V4CwuLbb7oXhOMjJZGqfaHyw=
+Name: res/drawable-hdpi/stat_sys_wifi_signal_3.png
+SHA1-Digest: ra7Q9R/asiaSy1tQRG2bgETyZNY=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_none_wide.png
-SHA1-Digest: MOPErfGmOODMP2+rgGo95n+8RCA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_bluetooth_connected.png
+SHA1-Digest: WAx8TAnVYMdj2eMufezJZ+vvVsc=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_0_wide.png
-SHA1-Digest: VmUEpZcPVbWWSTMvR174C94X4ug=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_4_fully.png
+SHA1-Digest: yjRhz5TY3Aj5uAtE6hAmaZYjaiY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_out_wide.png
-SHA1-Digest: h/b86VmQl139mopOQ77zeV1fYWc=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_6_fully.p
+ ng
+SHA1-Digest: 2UJcGPD2xsk5mveggrO8Dwc4kcM=
 
-Name: res/drawable-hdpi/ic_qs_signal_0.png
-SHA1-Digest: hfAzkvAyP+nKHRJH74Bg4+NK2zk=
+Name: res/drawable/alert_bar_background.xml
+SHA1-Digest: s5oDbwU71qL+1M1SiehXhfPWXO8=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_0_wide.
+Name: res/anim/priority_alert_exit.xml
+SHA1-Digest: eud4nW+U9Aufq953uLfPmRto9Jk=
+
+Name: res/drawable-hdpi/btn_default_small_normal.9.png
+SHA1-Digest: 7K4Z35Mo+mUo9/WNUNTG3dw5rVU=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_lte_null.png
+SHA1-Digest: Rdez7VvyiT1wEzWyArIN6qfu7mw=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_4g_lte
+ .png
+SHA1-Digest: ztEfpoH5sROKxEba2ENK2inBqKI=
+
+Name: res/drawable-nodpi/redbean0.png
+SHA1-Digest: /PzWiGPWHd+qAJQF9WY6Z8bZsrA=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_h.
  png
-SHA1-Digest: nd85x/pZchVJOPCc4d0fh1XfU5I=
+SHA1-Digest: BF94o9XvJzd/OsGWDnudf/yeOPc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_hplus_wide.png
-SHA1-Digest: J9arWO/UPHv0lXSs48koVN9nC+A=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_g.png
+SHA1-Digest: nu6FXOlxD09wUAHEz01PCd0fs4Q=
 
-Name: res/drawable-nodpi/dessert_gingerbread.png
-SHA1-Digest: EZfflS4xFa8V2N/MESyKoGhzU+w=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_0.png
+SHA1-Digest: utbJ92Dofy8vjkDHMtOvW1atzhI=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_3g_plus_wide.png
-SHA1-Digest: uw+laqg6CqlUXE3s21pHQOhiiwg=
-
-Name: res/drawable/zz_moto_stat_sys_data_out_waves_animation_wide.xml
-SHA1-Digest: ++0+mQBvI/v1/FLf5AajFL3i6r8=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_airplane_on.png
-SHA1-Digest: L/kS1Q//mBqe0YuDadco3WKA/jo=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_custom3_flash_fully.x
- ml
-SHA1-Digest: UjOtdYGTHG3Bus+T5ICQClT+tgY=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_0_fully_wid
- e.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_3_wide.png
-SHA1-Digest: lM0U6Z07GmJgTMGMsj6gCCJAzwQ=
-
-Name: res/drawable/ic_notify_button_bg.xml
-SHA1-Digest: 5+S1Ot3k0ioPCiEWnHn9jNGyBWQ=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_signal_none_wi
- de.png
-SHA1-Digest: nnXa0nCg+bR6h7esdR+03W3/I/k=
-
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_flightmode.png
-SHA1-Digest: wU7+5rGUjy7WLzLn34XRJIaC/9g=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_3g_wide.png
-SHA1-Digest: Qoupml4SUprkABgbtT1lPaJGLYY=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_null_wide.png
-SHA1-Digest: 9YC7vMkilzY1M38tXqUz1FZ631c=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_0_wide.png
-SHA1-Digest: 9trVyTsrVqc9zEy4XU0Yc5ADh+E=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_1x_wide.png
-SHA1-Digest: DwoTc00xJGNELRKrkLGPcxtCSVw=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_1.png
+SHA1-Digest: 1+FEAJI0DVHC+gfXpJnhp/dvg3A=
 
 Name: res/drawable/ic_notify_clear.xml
-SHA1-Digest: uGLhEL0Cy8y6bReGFWJHVzH42ng=
+SHA1-Digest: 4455g6n7JEW9Ni/uY2hp4mefhMA=
 
-Name: res/layout/inductive_charging_ui.xml
-SHA1-Digest: aWnRjCwcizyuIx2Yrhl7sY50T9Q=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_1_fully.png
+SHA1-Digest: oy0nceVFyHqMiQItc4ijEABaV60=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_4g_waves_wide.p
- ng
-SHA1-Digest: Sp+a+2Hjc02kz8fcz2hBZwNyHmw=
+Name: res/drawable-sw720dp-hdpi/ic_sysbar_ime_default.png
+SHA1-Digest: Ay+mP4WlfHkYrid7cDuwCKgS3X4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_h_wide.png
-SHA1-Digest: vwCc9zsnKdYcSR4v0HeYVse4YTg=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_3_fully.png
+SHA1-Digest: JngJzxA9Yfw6+Gt4a5sXU9WwY+s=
 
-Name: res/drawable-hdpi/bg_protect.9.png
-SHA1-Digest: yqPe5uzTtcQLN/5dl+HQ1bhbdk4=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_3.png
+SHA1-Digest: SEVYNpPkNNJyf5DdN68zHlZMuis=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_g_wide.png
-SHA1-Digest: SALttKaeuylquiN4TjpP9Vk7wnw=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_1_fully.png
+SHA1-Digest: srTZE1P9NJjf2h2JzWBd44h2A9M=
 
-Name: res/drawable-hdpi/ic_qs_usb_device.png
-SHA1-Digest: uHlpyU8hoc/N1BGKLLOflqm7iUc=
+Name: res/drawable-hdpi/status_bar_bg_tile.png
+SHA1-Digest: pQu/fPL6w9kQ5gIPsVe7Ge33JKY=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_3g_wide.png
-SHA1-Digest: Cm057n5/F14UTs3oHJhfL7nSgeQ=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_g.png
+SHA1-Digest: Jzjtk3xZJxv3/UrGAp2CLdZpIK0=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_1x.png
-SHA1-Digest: IGsSLpQOVnZ67NPkcjnykG58kgI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_0_fully.png
+SHA1-Digest: mMe1PeIagTUI2fzWoU/J685/T4M=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_g_wide.png
-SHA1-Digest: iB9UtzH9v2beHPKbPFdQtOS9eDQ=
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_1x.png
+SHA1-Digest: m7l14fYCHImZiGEwQte4kmvDGmA=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_4_wide.png
-SHA1-Digest: DC7pUteP+grLtWMXV1V5xGUAxLo=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_1.png
+SHA1-Digest: yno8Yqo6QczpM+/iu+USGk+xo8c=
+
+Name: res/drawable/ic_sysbar_zoom.xml
+SHA1-Digest: zNzQjuNHbQLq0HA2Mr1x0DFFNUA=
 
 Name: res/drawable-hdpi/notification_panel_bg.9.png
 SHA1-Digest: mRsT9gKMEpvHdQN4sAG3Aw24EHk=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_out.png
-SHA1-Digest: zE4bkYJUV8+PAtxn/j27/Mejst0=
+Name: res/drawable-sw720dp-hdpi/ic_sysbar_ime_pressed.png
+SHA1-Digest: 2MJXakLfys6mClHmzkI00IZzhRM=
 
-Name: res/drawable-hdpi/ic_qs_wifi_in.png
-SHA1-Digest: HgY3mTKLt0eaD/sRI/bqeSzlK3M=
-
-Name: res/layout/menu_bar.xml
-SHA1-Digest: 6D2VGzRHCX19JuL85FJwtFg5xCM=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_0_wide.png
-SHA1-Digest: BlH8gksl+57PuqGRHpk9KDBJ9t4=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_2g_null_wide.png
-SHA1-Digest: cEhtuUk1xhpNlu/ZjB8Tp0o0RWE=
-
-Name: res/layout/carrier_label.xml
-SHA1-Digest: F4LMdQy+hq2bTan7vjQ0LV2R52s=
-
-Name: res/drawable-hdpi/ic_qs_signal_full_h.png
-SHA1-Digest: DKkqzDoWjq81CX9R31uudGFnyWk=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_out_waves_3_bars_wide.
- png
-SHA1-Digest: kjkDxxAutld1yVrNmGaa8rMnI1s=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_0_fully.png
+SHA1-Digest: OrW/4kmYKbB9/7eAO4OLbEwo7YI=
 
 Name: res/drawable/recents_thumbnail_fg.xml
-SHA1-Digest: rFnis3JJnsAPJ1D61Xsf2F1aD6k=
+SHA1-Digest: v1U1wcp01+a1XP1OHuk4CyW6avg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_4g_null_wide.png
-SHA1-Digest: VPD95Ly+LT9+VfaOjBpwc4cdK88=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_signal_non
+ e.png
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_3g_wide.
- png
-SHA1-Digest: Qoupml4SUprkABgbtT1lPaJGLYY=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_out_waves_2_bars
+ .png
+SHA1-Digest: uoRNyareKTOlFbSnaZEfmzbsx4U=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_3.png
-SHA1-Digest: 1xAqagyECQb/r10FK785la2gb6w=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_1_fully.p
+ ng
+SHA1-Digest: NiUYbfznylzLVard4Ye+915sF0o=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_0.png
-SHA1-Digest: w4gwnhAPszVDl6M+4hSYE8jttQ8=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_2.png
+SHA1-Digest: 3DOMG5FwJH7qK5dBo2BuZW1SLhg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_out_waves_1_bar_wide.png
-SHA1-Digest: HVCrxHEc6BkmLonAEcC7NZWNawY=
+Name: res/drawable-mdpi/stat_sys_wifi_out.png
+SHA1-Digest: ywB1wo3Y3OyeR66GjrRCyu3ptlA=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_sim_wide.png
-SHA1-Digest: 1X9jUN+vW9Lh+xHVSCQlBWYWWNU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_4g_null.png
+SHA1-Digest: ffozT3KQYb6pwYVcl+LMyKCNW3g=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_out_wide.png
-SHA1-Digest: lqvkEVtr+aVz1GP7NHcvAbK/y0w=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_waves.png
+SHA1-Digest: t4JmK82XyMQ0cPjk34CF++1wwtQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_3g_plus_null_wide.png
-SHA1-Digest: rFiYLFzIuanwAsaAFszT1aFPSko=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_h.png
+SHA1-Digest: 5G/ldEHSFyGvXswzc6PpI2uTLV0=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_0_wide.png
-SHA1-Digest: pE1+1ojImthze99QivwWeGbXkXk=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_disconnecte
+ d.png
+SHA1-Digest: mbDdLlkbQvy1zIiUtcIIlQC4p5g=
 
-Name: res/drawable-hdpi/ic_qs_wifi_full_1.png
-SHA1-Digest: XNvgplRWQm27QO2kJZ/ds6Hw7JM=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_4_fully.png
+SHA1-Digest: yHSSKElkkTVbnmwPD7oUMvLQ/3g=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_2_fully.png
-SHA1-Digest: HIhUif8y500Jd112LJB+Kyw1+wY=
+Name: res/drawable-hdpi/stat_sys_data_connected_e.png
+SHA1-Digest: QOhtg2lnKT8WPPaq7V3exfrZEVU=
 
-Name: res/drawable-hdpi/ic_qs_wifi_full_3.png
-SHA1-Digest: GHBHUhkNzaixyakuPj49+cjGRJA=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_signal
+ _in.png
+SHA1-Digest: FkESayuuMxX+2wBFKzjH6oQhZ7I=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_0_wide.png
-SHA1-Digest: uRzVoJtkFE0TJud66rLBZmV3zdQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_4g_lte.png
+SHA1-Digest: 7ezyvdhHUua8h9NgZ37xI60O4OY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_1x_wide.
- png
-SHA1-Digest: g8At4y2hqKM9Kr5W9aorq60RwNk=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_inout.p
+ ng
+SHA1-Digest: dtIjuSYrUVySzFsp90ZgdbS4AvM=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_3g_plus_null_wide.png
-SHA1-Digest: dj2bYbs4NHb4d+efhjMXw6d1rG4=
+Name: res/drawable-mdpi/stat_sys_wifi_in.png
+SHA1-Digest: oM46sXFPjn9k3ym6GG/k4zexono=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_signal_i
- n_wide.png
-SHA1-Digest: uXeMLaMncnFb7wSPi7oJGCyhCKk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ signal_none.png
+SHA1-Digest: 7jodHu6Ynf06w7WIiMqkz8slRjQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_g_null_wide.png
-SHA1-Digest: hdEoBvWsy4MB4Dr6r81xrJahPhQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_5_fully.png
+SHA1-Digest: swHEiXzSVl48akJQMyjA6dIIceQ=
 
-Name: res/layout/quick_settings_tile_wireless_display.xml
-SHA1-Digest: IuxSwH+wvTvoKoYA2KidcZidCBw=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_1_fully.png
+SHA1-Digest: bUSyj7hs2tWKk80g46bCzeVzIpU=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_flightmod
+ e.png
+SHA1-Digest: 83NXM6RArtrj6i/vWg3Sc+VFWpU=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_1.png
+SHA1-Digest: K+DZzoZn3cwfpRIRW288OBPcKSk=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_4g_lte_null.png
+SHA1-Digest: yctLAa+tzmMYm3CYXgRw8jrKW6c=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ g_waves.png
+SHA1-Digest: Zzt3Euq40M3pGVsVdNbWhgS5TBs=
 
 Name: res/drawable-hdpi/recents_thumbnail_bg_press.9.png
-SHA1-Digest: Sw5sRk/rZ+p8jea0xVfGv78lC+A=
+SHA1-Digest: QB2O/3r3Raq/mdZJ4zwI8Ms9Thc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_out_waves_2_bars_wide.png
-SHA1-Digest: y+P3V0fOrGNpd3QZD3U0JiqvNzw=
+Name: res/drawable-hdpi/stat_sys_nfc_on.png
+SHA1-Digest: gMc+gNM8XZgTSqQHpOWDLzEXXIM=
 
 Name: res/drawable-hdpi/ic_notification_overlay.9.png
-SHA1-Digest: hZr84H4rHqMRFQugsNjj3XjglQU=
+SHA1-Digest: TCg0X7r/m9PJwxPQhO+sAkawsXY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_null_wide.png
-SHA1-Digest: 5066NsX4mNoxOM/OqWbN6OKNACA=
+Name: res/drawable-sw720dp-hdpi/notify_panel_clock_bg_normal.9.png
+SHA1-Digest: UFUwN3zL5lkC9UNLq+6OKbV6tzM=
 
 Name: res/drawable/status_bar_recents_background.xml
-SHA1-Digest: WqykaeHi18+l+/w/2K7Bb9uLmNw=
+SHA1-Digest: 7Nh8hKF+Lc71CxgL821PybDUaVQ=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_1x.png
-SHA1-Digest: Pb88FKrg3xE4QziCfWyc4eARML8=
-
-Name: res/drawable-nodpi/dessert_froyo.png
-SHA1-Digest: 5k6WLgHBtC9ToESDBqmbgQzlnLg=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_femtocell_
- anim0_fully_wide.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_anim0_
- wide.png
-SHA1-Digest: BlH8gksl+57PuqGRHpk9KDBJ9t4=
+SHA1-Digest: hHI/T2DkPBAb3OX4XwwUn0bV/dU=
 
 Name: res/drawable-hdpi/stat_sys_sync.png
-SHA1-Digest: rFy5/PnsgK80LwuIjNrjCqW9uzE=
+SHA1-Digest: XtGZv5biIM8y/qk0BOI2b+Cx5cg=
 
-Name: res/drawable-hdpi/ic_qs_wifi_2.png
-SHA1-Digest: xITTjhyELUIChqmqL6g5GRz0Wd0=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_3.png
+SHA1-Digest: lGwNBxFBcMlj3P5Wkhv1xiUOBiI=
 
-Name: res/drawable-nodpi/dessert_cupcake.png
-SHA1-Digest: 0fkmZJrbpdRfwco4VzWdBJH6S8s=
+Name: assets/fonts/AndroidClock2.ttf
+SHA1-Digest: mVPloIXrVPYSW6DGyNqxb5xeuwQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_flightmode_wide.png
-SHA1-Digest: kwMTfkb5fsORzc1RH0meuay4kH0=
+Name: res/drawable-hdpi/ic_notify_clear_pressed.png
+SHA1-Digest: zhGjsGQelSh9wngez+sk63NKYSc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_in_wide.png
-SHA1-Digest: AiA521ccmkwbq+Zfj2k/4yeG4nA=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_3_fully.png
+SHA1-Digest: 6GgOBG/Q6zEKv+mlQJTAlyCUPXQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_4g_lte_null_wi
- de.png
-SHA1-Digest: lhWcA65gEsUhE948bBfebOl3INU=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_out.png
+SHA1-Digest: I8I/UgRR/7XeVaqDr0zmhLJcbGw=
 
 Name: res/layout/status_bar_notification_row.xml
-SHA1-Digest: TGuolYu1qMqJGQgIVlYSScHYGtM=
+SHA1-Digest: mJ/OSNOa0nLLM4PeMADDV+4GKtU=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_3g.png
-SHA1-Digest: Ra6Bhu12eVjbuf2JJFTnwZHPcSQ=
+Name: res/drawable-mdpi/zz_moto_stat_sys_signal_null.png
+SHA1-Digest: 336XhhjFWNAYtTLKcYEOzdOGNsA=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_in_wide.png
-SHA1-Digest: aagtdzbyaxLNU+mUAvC2YRPp+Yg=
+Name: res/drawable-mdpi/stat_sys_signal_2.png
+SHA1-Digest: Cvn6h6ebN8JMgyNrSRZLdeHUK3Q=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_1_fully_wide.png
-SHA1-Digest: kRsJvRL8/RXVbl28e0ukQqbQylQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_4g
+ _lte.png
+SHA1-Digest: MqwGyE/FGSn43aLdhUF+DqbW1VQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_4g_lte_null_wide.png
-SHA1-Digest: EXgzTe4tu3OAcY0PX2O2oaLzgUU=
+Name: res/drawable-sw600dp-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flas
+ h_custom3_anim1.png
+SHA1-Digest: kSdGP8rLBgnxaHpspYTrZyblAZ4=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_inout_wide.png
-SHA1-Digest: 9/MuklO0pS0OLj5XabbTZyX+U7c=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim15.png
+SHA1-Digest: Hqxh8fbWIGqha6TGaWBJXQKzF80=
 
-Name: res/drawable-hdpi/ic_qs_signal_1.png
-SHA1-Digest: 8/qvaYPjQdCXPbzoKftWmY9aHhg=
+Name: res/drawable-hdpi/stat_sys_signal_1.png
+SHA1-Digest: QqAyKQAdVf8gGRQYA3QlpPrlHKY=
 
-Name: res/drawable-hdpi/ic_qs_certificate_info.png
-SHA1-Digest: v/eSZqeQOMSAIGiyMOeqePQOnS8=
+Name: res/drawable-sw600dp-hdpi/stat_sys_roaming_cdma_flash_anim0.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_inout_wide.png
-SHA1-Digest: 4jR/p1KLvAtJl5vKi0DgU/MhYfA=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ lte.png
+SHA1-Digest: ggNwzlAtUb26NMVex+slMHN6ZgA=
 
-Name: res/drawable-hdpi/status_background.9.png
-SHA1-Digest: wvXGUMsrmVU92L1qH/HTFPS7n0E=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_1_bar_wide.png
-SHA1-Digest: HVCrxHEc6BkmLonAEcC7NZWNawY=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_full_2_wide.png
-SHA1-Digest: W6FQM0iTrGlss/oAe1mCnCkV3hE=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_in.png
-SHA1-Digest: aeK5FAo9zChu1/WyBFKJrFVd+6o=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_out_wide.png
-SHA1-Digest: 7x75cE6XnAEYQFYOyKbV1qwu18g=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_out.png
+SHA1-Digest: SWK9h07PjYIiACPtFYxvNmIIr/0=
 
 Name: res/layout/status_bar_no_recent_apps.xml
-SHA1-Digest: GMbz2j5qkIxib1Kx6Acn8b64y7c=
+SHA1-Digest: lFT5Jvzr7V67ejDaGWN88vf8Ha0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_hplus_null_wide.png
-SHA1-Digest: 32KEBCbZ07YWUQU7svRhy8dH8LU=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_2_fully.p
+ ng
+SHA1-Digest: 8S9MEpqvGWapjrsKxH4rMNpBsFE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_3g_wide.png
-SHA1-Digest: 3HeGKXH0JxIOblr2JxKua5eAixc=
+Name: res/drawable-sw600dp-hdpi/stat_sys_roaming_cdma_flash_anim1.png
+SHA1-Digest: kOBJVXIhSLlILEbW8glPflFvlkM=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_2.png
-SHA1-Digest: nhiZJVLAQgHGEmqXnbSvyGDjEb4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_2.png
+SHA1-Digest: +188s9nCQa6xgTr2+OM7tZ0cgVk=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_h.png
-SHA1-Digest: OeW8ojOQCqJq8wJAE3dAX3pb55Q=
+Name: res/drawable-hdpi/ic_notification_dnd.png
+SHA1-Digest: xWmH7ohOvip8i90BZuhwQzgmLhE=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_4g_lte_w
- ide.png
-SHA1-Digest: DM+hWls+uWHtWKGOLCJH9oot21E=
+Name: res/drawable/zz_moto_stat_sys_data_bluetooth_charging_low_animat
+ ion.xml
+SHA1-Digest: oaX7HMfuiEOux4+7hJh858iRvZA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_lte_wide.png
-SHA1-Digest: V4G4o35sxrPbiCE/fK0/4hvFC/Y=
+Name: res/layout/system_bar_notification_panel_title.xml
+SHA1-Digest: 17gqIitEMzQsHwoS6dhBtADiiC4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_3_fully_wide.png
-SHA1-Digest: kudvIkK5+kKmxez8eOVX2PW4J3o=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_null.png
+SHA1-Digest: KWyz6TmLBixcSYgsFMXFHTy+CIU=
 
-Name: res/drawable-hdpi/stat_sys_data_fully_connected_lte.png
-SHA1-Digest: aay02iiLJW/jgzNTzxDPHRuljqU=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_5_fully_wide.png
-SHA1-Digest: 6P9v2hBqHx7fX9ZgdIdQ07D2jiI=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_2_wide.png
-SHA1-Digest: Ay8GuomTEJyv2pi/qDHJr2bbTPM=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_g.png
-SHA1-Digest: coZLriyxFPeZrqEyQIt7yFMy2b4=
+Name: res/drawable/stat_sys_roaming_cdma_flash.xml
+SHA1-Digest: 2ADHqC0v6ooYelddUAOE0a6Vo+Q=
 
 Name: res/drawable-hdpi/status_bar_close_on.9.png
-SHA1-Digest: vkYgTy7gB4WDX6PntfsG4MzNu6A=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_3_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+SHA1-Digest: oW1bufaUl47cmN7DqFW0AnKAPj8=
 
 Name: res/layout/global_screenshot.xml
-SHA1-Digest: PNJ6CrTZsnmEzcahg8OdAik5vO0=
+SHA1-Digest: a8lRvqY4xQRyCZOwXQcKB/ZQqBE=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_6_wide.png
-SHA1-Digest: hVpXEOpAnU4XS+0aeHQFSzm1Gkc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_fully_charged.
+ png
+SHA1-Digest: 2B551TaKkjEt55ye2ayiUVlFmrQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_4_wide.png
-SHA1-Digest: MJenfJykM90vP/yZ/EEJuLUO2WI=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_4.png
+SHA1-Digest: huPwMXOQGgKzNNviu5NOxZgmmjk=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_corrupt_sim_wide.png
-SHA1-Digest: ehSermojaotDx67qoKlYlx9DSLg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_waves
+ .png
+SHA1-Digest: cNwpl/oL30F4OpY7D1QbxFVRe8Q=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_3g_plus_
- wide.png
-SHA1-Digest: uw+laqg6CqlUXE3s21pHQOhiiwg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_1_fully.png
+SHA1-Digest: spAkN1cxvZ900VOn/nTAk0Z2dWc=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_2_fully.png
+SHA1-Digest: qb9ZPF5PVSMKIjt1B0s3+gg1Mxw=
+
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_h.png
+SHA1-Digest: 1QC5b/oICaxi3VMp2AgFtYo5eVU=
 
 Name: res/drawable-hdpi/stat_sys_signal_3_fully.png
-SHA1-Digest: ILYjiZCLpyq0EW3iTQg8JzilUUE=
+SHA1-Digest: 6ckfjn7QuK2OSpn/6Ushu9et+uA=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_lights_out_dot_large.png
-SHA1-Digest: EuzunayIyRs6rTke7eTXXQtoY+U=
+SHA1-Digest: pqnv86FtXNqbrbpB36fWu1CGmAg=
 
 Name: res/drawable/system_bar_ticker_background.xml
-SHA1-Digest: NrVxOkKuGhTHbp8KXNFC6+HZjMc=
+SHA1-Digest: nEEGgXZphqRo+o6aGE7hxB/RpS0=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_4g_wide.
- png
-SHA1-Digest: OO7A2Ntkij3Rb4H20oGDhl0moLU=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_flightmode.png
+SHA1-Digest: IWIKIkkzmQ0OKbM0Vf0WX6fD8rw=
 
-Name: res/drawable-hdpi/ic_qs_wifi_1.png
-SHA1-Digest: 34l6OghVcQeyq1HHKqF/r/UD6MA=
-
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_0.png
-SHA1-Digest: ZhUw45dAeSrj8e2opx7C2ONhHrM=
-
-Name: res/drawable-hdpi/ic_qs_signal_2.png
-SHA1-Digest: NWhiDhat/MW77MuXkCbaqYM92MM=
+Name: res/anim/priority_alert_enter.xml
+SHA1-Digest: MOmXbHaGVL+/77WAFLOb/9TYvwg=
 
 Name: res/anim/notification_dnd_off.xml
-SHA1-Digest: ABIr1GHPXIfv/agbzbmOjz1nKD8=
+SHA1-Digest: cy20JwFaAdAxGg5ZSw3vbt14XZc=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_2_fully_wide.png
-SHA1-Digest: vIczWA6JclSqF7/nwwuwvt1lRwU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_5.png
+SHA1-Digest: 6yvhOsUdMIgjaNeGciMX2JcUo6g=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_in_waves_2_bars_wide.p
- ng
-SHA1-Digest: ygxsWGJDaEzw5PLTZwRig96jBTY=
+Name: res/drawable-mdpi/stat_sys_signal_3.png
+SHA1-Digest: ESZCze8QwXNYYtegRLv+uGtduJA=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_r_wide.png
-SHA1-Digest: cemfZKyMmLrNwnxH/qb/Nzdr3kI=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_in.png
+SHA1-Digest: L9RZPGcMcVxVyfiiN5NEm1dSE/Y=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_2_wide.png
-SHA1-Digest: /tg4rJZlg7PBX2gdvNM9vItwyiY=
+Name: res/layout-port/status_bar_search_panel.xml
+SHA1-Digest: 887R2Xr6hZYnu0MnK5LokNqLBng=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_inout_wide.png
-SHA1-Digest: 6PoXq4N8BbNdmryHL+kIPPlTqN4=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_2.png
+SHA1-Digest: FG9SJXfP0Zh7RPMpm6w1eBiVg+Q=
 
-Name: res/drawable-hdpi/ic_qs_cast_connecting_1.png
-SHA1-Digest: 4Add0k8AsAfVje458IW9/+Ls7S0=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_85.png
+SHA1-Digest: 4JrXqB8te9W1JuboUt2ZKPVn0nI=
 
-Name: res/drawable/recents_thumbnail_no_press.xml
-SHA1-Digest: xOLCRcQj6PHT4KjrQwot4S2dPJA=
+Name: res/drawable/status_bar_bg.xml
+SHA1-Digest: S/wGLvIjuxOTIToCM7jrf6+AWRE=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_out_wide.png
-SHA1-Digest: tRhA27b3raeC11pZ+vaRTrlICN4=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_4.png
+SHA1-Digest: Y52NpxlEvcKcuuA4FhJtFGPpIZo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_0_fully_wide.png
-SHA1-Digest: zqVi5XwhCtR5wsnAIbJKMhmYNAg=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_1_fully.png
+SHA1-Digest: sjrsMm/zWcWc8qTBxrGt0o+iXqE=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_roaming_cdma_flash_anim1_wide
- .png
-SHA1-Digest: 7aMLXW2vSaHBa/50SPlbLtz1QWk=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_28.png
+SHA1-Digest: h2JQSNrmw+xuqpHh8tAi5ckQFS4=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_roam.png
-SHA1-Digest: c9b5VI0j6yZ030PUFTtPAnlJRZI=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim0.png
+SHA1-Digest: aoJ14AgWAFu2GFaKQ4A/wbNsASI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_out_waves_1_bar_wide.p
- ng
-SHA1-Digest: FRal62fo73KaV/1zoZ1S+ra+o8c=
+Name: res/drawable-hdpi/alert_bar_background_normal.9.png
+SHA1-Digest: 0SOUqWSkfL6pvj02aBBP6RskipE=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_1_wide.png
-SHA1-Digest: c3AC6Zg6N6VyHPRCgsE690SUZgg=
+Name: res/layout/system_bar_ticker_panel.xml
+SHA1-Digest: ixkpYqv0XxdmT6B8hXSqazRpGM4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_0_fully_wide.png
-SHA1-Digest: pE1+1ojImthze99QivwWeGbXkXk=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim15.png
+SHA1-Digest: 8lMAyN+9Ajavu4/RyH/GrQdaFK4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_hplus_wide.png
-SHA1-Digest: /Ud0dOOAUYqey+bmg11JSVMGZ10=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_2.png
+SHA1-Digest: 904J+VpQ13X6YElOyJBIxDQ9B1M=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_lte_wide.png
-SHA1-Digest: OMXUEMJ4kCABXIoanvWZS5b32d0=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_3_wide.png
-SHA1-Digest: lM0U6Z07GmJgTMGMsj6gCCJAzwQ=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_out.png
-SHA1-Digest: h/b86VmQl139mopOQ77zeV1fYWc=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_airplane_off.png
-SHA1-Digest: aN3o4wSj+acQj5yHLXa8Uqi6OsY=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_43.png
+SHA1-Digest: LQXWWRNbOhiwuEtG6dvbaMO6z7k=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_2_fully.png
-SHA1-Digest: 8qvtVlBxkY3SrA6Tw6WCLy+42tY=
+SHA1-Digest: QkJ6yryODDhcWkQ8WcdQA9BYJZI=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_r.png
-SHA1-Digest: JnPfB9LPFpiz6KNS84pU8poZnWE=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_hplus.png
+SHA1-Digest: aPTYzc+Xca+JkvWO1rL99dVQmOs=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_out_waves_3_bars_wide.png
-SHA1-Digest: +vEN44DzujYxhKJwPVfe+TQ5Tx4=
+Name: res/drawable-hdpi/stat_sys_signal_inout.png
+SHA1-Digest: Yhj2WLq+/e4c+hAZlqR20ovyorA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_1_fully_wide.png
-SHA1-Digest: c3AC6Zg6N6VyHPRCgsE690SUZgg=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_6.png
+SHA1-Digest: X/u0RBHw2XTe9XVT8LDXwIprn9k=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_home_land.png
-SHA1-Digest: 3Gq/3Y9L5UBmrUEhGr9+jkWtMUk=
+SHA1-Digest: oucAbuv7s2ot74ivxf8G20W9uho=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_e.png
+SHA1-Digest: X7wFBNitIHi4s//dhiAS72jKyHA=
 
 Name: res/layout-land/status_bar_search_panel.xml
-SHA1-Digest: Gmzpq9vKeGoiW2GYRGU3acNstmU=
+SHA1-Digest: VJeg/GIfkeyfbSvlIIOb5GfWcto=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_hplus_wide.png
-SHA1-Digest: 5rdE5r54E9ZPz797rU4K7agetIE=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_1_fully.png
+SHA1-Digest: Bxie9fCqwmoCUyOmabMX+g6Jvxo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_1_bar_wide.png
-SHA1-Digest: WsrXFWafwaSqrBHTRzFb48u6Wxc=
+Name: res/drawable-mdpi/stat_sys_data_connected_e.png
+SHA1-Digest: L3ub9QADcGNxg4l8tbrAJendIVw=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_5_wide.png
-SHA1-Digest: j+88iWWTBQt0JtLdVEoEQ5wK+oc=
+Name: res/drawable-sw600dp/status_bar_recents_background.xml
+SHA1-Digest: chwtElss0bHldRZR5X6oYVHjrl8=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_1x_wide.png
-SHA1-Digest: ZFen/7HmCML8GDhClDE/b7Y8C9Y=
-
-Name: res/drawable-nodpi/dessert_kitkat.png
-SHA1-Digest: HeKGu5N/cmt4D4GAlLS69mhKufA=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_lte_wide.png
-SHA1-Digest: E2hRdkCFvCjx3+GfsrEETPI143w=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_2_wide.png
-SHA1-Digest: 5Ba05AyUTQh40XXQBqape751P/U=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_roaming_cdma_flash_anim0_wide
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_waves_none
  .png
-SHA1-Digest: uYvye3ibxmq2TlpppZW9q7aYEoQ=
+SHA1-Digest: ftd7JZborpfl9TqJUOiIHyl52GY=
 
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_flash_wide.x
- ml
-SHA1-Digest: D4+ZBmv8HhA/2/6HlN2CFRUvOG4=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_3g.png
+SHA1-Digest: 2HWRYQ37SWdUhY3HEi9NF+SasX0=
 
-Name: res/drawable-hdpi/ic_qs_wifi_out.png
-SHA1-Digest: zE4bkYJUV8+PAtxn/j27/Mejst0=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_1_fully.png
+SHA1-Digest: iP/mt+9PjrWY3QrlNwOJ+cNscAI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_3_wide.png
-SHA1-Digest: ayvwT1PKI28qqUa+yqQbfdhgPms=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_4g_lte_wav
+ es.png
+SHA1-Digest: 631EuV2hC18cR+hbmkP9YTQfuXk=
 
-Name: res/drawable-ldrtl-hdpi/ic_sysbar_back_land.png
-SHA1-Digest: phdQyCL9O5Pd2KiPvWpKGZ49sQA=
+Name: res/drawable-mdpi/stat_sys_wifi_inout.png
+SHA1-Digest: ZtqCv0Dnl9L2EBg1lvHVllAJwjc=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_3g.png
-SHA1-Digest: sD6SnuqV7JFJe76Op3CIJtId/10=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_idle.png
+SHA1-Digest: 3aJEuI6dlRoPZdbAGdqAGosTEyQ=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_2_fully.png
+SHA1-Digest: mh9Fp3JU/e7hCxkvYqcLg1l2ePw=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_signal_ino
+ ut.png
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_4g
+ _waves.png
+SHA1-Digest: SxEK7Yv6PnlcFIbezhubBUNMzTc=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_0.png
+SHA1-Digest: OrW/4kmYKbB9/7eAO4OLbEwo7YI=
+
+Name: res/drawable-hdpi/stat_sys_roaming_cdma_flash_anim0.png
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_3.png
+SHA1-Digest: aWco4ClYs6R33D0IxthDCgp9hdQ=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_1_fully.png
+SHA1-Digest: k0FI2Ob23RHp9oCJ6/UvyP3Ofp8=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_0_fully.png
+SHA1-Digest: j8IWjaDchDYLVNj3uomzNJiAdo4=
+
+Name: res/drawable-hdpi/stat_sys_wifi_in.png
+SHA1-Digest: Q3gPSvMOCZPbPiGbST0nIHfebMg=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_g_
+ waves.png
+SHA1-Digest: H5rOlUmQhZHa6+kKaxwxjyUG27E=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_in_waves_1
+ _bar.png
+SHA1-Digest: ESzSEmjQNW1i36b0uMT4H2NpD+0=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_e_null.png
+SHA1-Digest: Rzc2pK1U1eerBA5IzVFNfhkLTgY=
 
 Name: res/drawable-hdpi/ic_sysbar_home_land.png
-SHA1-Digest: vAceJfelad79GYm4m8P7gWWvEYM=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_4g_lte_waves_wi
- de.png
-SHA1-Digest: 01d+9NpxrptYGKiSMSq40L7VcYs=
+SHA1-Digest: mftEn5SUdX2kUjiMeSY5jxgIHDg=
 
 Name: res/layout/msim_super_status_bar.xml
-SHA1-Digest: 1KZIuRzc029aWF+0TJDwakfTIWw=
+SHA1-Digest: lY03k7Gk8Xe9sELdnSpDaykE/zo=
 
-Name: res/drawable-hdpi/ic_qs_signal_h.png
-SHA1-Digest: 6+n7eSX+/zzJgyNz0obUadaGdkM=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_signal
+ _none.png
+SHA1-Digest: 7jodHu6Ynf06w7WIiMqkz8slRjQ=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_1_wide.png
-SHA1-Digest: jFWBERA3l4BzYDTEd9ZC1bUSMc0=
+Name: res/drawable-mdpi/stat_sys_data_bluetooth_connected.png
+SHA1-Digest: 3M3f9L2DboJKHyFhYc7zew+Fy6M=
 
-Name: res/drawable-hdpi/ic_qs_wifi_no_network.png
-SHA1-Digest: 6ZR3IlYlbd1HrUPn9HXA4gRfIyA=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_flightmode.png
+SHA1-Digest: 83NXM6RArtrj6i/vWg3Sc+VFWpU=
 
-Name: res/drawable-nodpi/dessert_jandycane.png
-SHA1-Digest: lRQIWU4cHwz3Zc6EYmVRN/NLxFA=
+Name: res/drawable-hdpi/stat_sys_battery_0.png
+SHA1-Digest: 2viMmGrVQCTWv/Se5tsKHRhynIw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_connected_wide
- .png
-SHA1-Digest: GHo9vjy6pW0xwQnWW8zRtPWITJg=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_1_fully.png
+SHA1-Digest: qGa2QvcEGtojjGPkKY+fJSTg5a0=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_default_user.png
-SHA1-Digest: yWc3iS+A3O6wnlpO2CmUN5sGfX0=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_4.png
+SHA1-Digest: Nm1f5G1jNf2kjjHyGxbRoEfRlfM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_0_fully_wide.png
-SHA1-Digest: VmUEpZcPVbWWSTMvR174C94X4ug=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_0.png
+SHA1-Digest: CCzoUHdxGKNGbZ1+fO88r+b1n3E=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_lte_wide.png
-SHA1-Digest: g2mcGli49k3iSypya83Cp9A+l7I=
+Name: res/drawable-hdpi/stat_sys_signal_4.png
+SHA1-Digest: K7XbzuL1qEhzZQF/DIrhpI8PMoE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_1_fully_wid
- e.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-hdpi/recents_thumbnail_bg_dragging.9.png
+SHA1-Digest: gB+jgJgsCMsIHrMLj5I6m3sHBF8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_3g_plus_wide.p
- ng
-SHA1-Digest: thhPk420bBSUxW2b51bFHVi9EEQ=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_none_wide.png
-SHA1-Digest: NcFxiBpFADR1qxMrxMDf7d+qZxs=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_e_wide.png
-SHA1-Digest: C0ZWM3SSKhXy9ofwvoZKfJl1cME=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_femtocell_flash_wide.
- xml
-SHA1-Digest: 6DXhQ0GW7GngAqh12y5RNhz/y84=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_e_waves_wide.p
- ng
-SHA1-Digest: 7OAjcATt2ukqblSqSjLBDzvOdw4=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_e_wide.png
-SHA1-Digest: 0t8CMVSaOjSmIX6x6yWp1EVByUE=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_f
- emtocell_anim0_wide.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_none_wide.png
-SHA1-Digest: MOPErfGmOODMP2+rgGo95n+8RCA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_1x.png
+SHA1-Digest: tDhh4r8a/5IMCthAHd/SYOeX6+w=
 
 Name: res/drawable/status_bar_close.xml
-SHA1-Digest: WDgyaghs5kM/jIESwsRxXYTIHZ8=
-
-Name: res/drawable-nodpi/dessert_honeycomb.png
-SHA1-Digest: +IHQX5zVSDhl/3uRxcm8j8M6tgs=
-
-Name: res/drawable-hdpi/ic_qs_signal_no_network.png
-SHA1-Digest: LP7zP7KiH+hkhzxXdB40otx2yyw=
-
-Name: res/drawable-hdpi/ic_qs_signal_out.png
-SHA1-Digest: zE4bkYJUV8+PAtxn/j27/Mejst0=
+SHA1-Digest: 5+uduK9+cU4nAIKtuL6odNdlkiw=
 
 Name: res/anim/system_in.xml
 SHA1-Digest: ya/8qtd3gO26tg0I1A4r6rEyJr8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_lte_wide.png
-SHA1-Digest: OMXUEMJ4kCABXIoanvWZS5b32d0=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_g.png
+SHA1-Digest: 9FVEcTZ4zUhKjCXpNfAQZdtKAR4=
 
-Name: res/drawable-hdpi/ic_qs_wifi_full_2.png
-SHA1-Digest: W6FQM0iTrGlss/oAe1mCnCkV3hE=
+Name: res/drawable-hdpi/notification_header_bg.9.png
+SHA1-Digest: 5CKHEHGb8bVQn4kYT3TJSOUhGL8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_3g_plus_wide.p
- ng
-SHA1-Digest: Cbh5AJ3tSFkLYZXTD60mpB9SsUQ=
+Name: res/drawable/zz_moto_stat_sys_data_inandout_waves_animation.xml
+SHA1-Digest: GL+qWO1cbbUmLICIWUdsQpne5yo=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_roaming_cdma_0_wide.png
-SHA1-Digest: 7aMLXW2vSaHBa/50SPlbLtz1QWk=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_e.png
+SHA1-Digest: FKQ1SESfOQaRz4/MOLoaT9InIKE=
 
-Name: res/drawable/zz_moto_ic_qs_data_full_inandout_waves_animation_wi
- de.xml
-SHA1-Digest: eZTZYjJT4uFhqEdzH0EEL4WXHAE=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_flightmode_wide.p
- ng
-SHA1-Digest: iVLi7OX90bNPpmUwImB8gP15oec=
+Name: res/layout/system_bar.xml
+SHA1-Digest: Iv4LFb6X+hR60G4jATHqmTWWzak=
 
 Name: res/drawable-hdpi/stat_sys_signal_0.png
-SHA1-Digest: rBsQqAnf4FcCJFrpcRrMPuifDqU=
+SHA1-Digest: mMe1PeIagTUI2fzWoU/J685/T4M=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_femtocell_
- anim1_fully_wide.png
-SHA1-Digest: hpbpxFwU67RSaC2w6BZTktCxB6E=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_null.png
+SHA1-Digest: qTxrGL8JRaxtTkSGBGTmoawvqVQ=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_highlight_land.png
-SHA1-Digest: IT5fqRlGwjb4c+7pqMH53XxeDsg=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_custom3_flash_fully_w
- ide.xml
-SHA1-Digest: ojwAxwU8un7N8xNwkPtz0xFUENQ=
+SHA1-Digest: 1Jb8NLXhQv7PsoGZG1Q95YQq9oQ=
 
 Name: res/anim/recent_appear.xml
 SHA1-Digest: 9991MQ8pzdMeHRXaGnK8ZAvrs3E=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_0_fully_wide.png
-SHA1-Digest: uYvye3ibxmq2TlpppZW9q7aYEoQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_1_bar.pn
+ g
+SHA1-Digest: bbVRHcm+2vr8kRDuhbN0Uhz/9NU=
 
-Name: res/drawable-hdpi/ic_qs_signal_g.png
-SHA1-Digest: oK7BUZJDEWg8Kjo791vSX5+VIXs=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_e_wave
+ s.png
+SHA1-Digest: WQ1B5MrgogDJ5JsVCeNHFC08k10=
 
-Name: res/layout/quick_settings_tile.xml
-SHA1-Digest: qCFmG7UdSCh/TruVM/MuF4m8usg=
+Name: res/drawable-hdpi/status_bar_expand_pressed.png
+SHA1-Digest: ++DEveX9EyzmYmz/fI6MSAgOj5k=
 
-Name: res/layout/quick_settings_tile_rssi.xml
-SHA1-Digest: Wa/mBQLLawrKSWsk+h6Bi9lTCmc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_lte.png
+SHA1-Digest: k+XdNLfYLxlDOeBnXg5bCTAezcs=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_4_fully_wide.png
-SHA1-Digest: l8gBXACEeRNkh8BSEPvmZziJ/9A=
+Name: res/drawable-hdpi/stat_sys_battery_85.png
+SHA1-Digest: mua/wBsgBCI1znzmbQ+Kjl+lN5g=
 
-Name: res/drawable-nodpi/dessert_donutburger.png
-SHA1-Digest: 3YyCbgKkuhjmuGyMo6NHprNDf+k=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_custom3_an
- im0_wide.png
-SHA1-Digest: wbI5Qn/8e/RapAA3nG5LEPIdOpk=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_h_wide.p
- ng
-SHA1-Digest: ZLDIdhYbkWMerSDPM75XvoAmuMo=
-
-Name: res/drawable-hdpi/ic_qs_signal_full_e.png
-SHA1-Digest: 94Q1EelItQedXkZjo4nvbrGy+is=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_1x.png
+SHA1-Digest: BUOkm5WeNuxY5EOxk4rczXvOrak=
 
 Name: res/drawable-hdpi/stat_sys_wifi_signal_1_fully.png
-SHA1-Digest: FgNEhsfKY9S1CqAryB65xi1mr/I=
+SHA1-Digest: 9pSw0CZ1i6IXCaWpOSS77kBfUz4=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_menu.png
-SHA1-Digest: AzQQ6vAwR7SCsDLqKemv9mw73so=
+SHA1-Digest: 5BxT9sgsTCZt4oi7i+S2ehMP5Ik=
 
-Name: res/drawable-hdpi/ic_qs_bluetooth_not_connected.png
-SHA1-Digest: UW2E1B2NJb01JTU0SKJH6Ubdf68=
+Name: res/layout/intruder_alert.xml
+SHA1-Digest: HkIoFvVuYIeIuU+dEvk8kRebMBM=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_hplus_null.png
+SHA1-Digest: ENSBNemvZhLbdzNBgWW510ABxQA=
 
 Name: res/drawable-hdpi/stat_sys_signal_0_fully.png
-SHA1-Digest: rBsQqAnf4FcCJFrpcRrMPuifDqU=
+SHA1-Digest: mMe1PeIagTUI2fzWoU/J685/T4M=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_4g.png
-SHA1-Digest: 8ZV4GU7i88GHWOGLK0LvYpmMvvo=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_3_fully.png
+SHA1-Digest: 8QZIENVxuiJ2iTkvuSw/2cZQuRw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_waves
- _wide.png
-SHA1-Digest: /CV+ZuX2a7fKD+5idiaqXYrhZPE=
+Name: res/drawable-hdpi/ic_sysbar_rotate_on.png
+SHA1-Digest: TcMtEFfanMs18gp5Tsa0C6l5YwY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_lte_w
- aves_wide.png
-SHA1-Digest: vJTeD5Cy8KVM1jCaRUDRSzuRnN4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_4_fully.p
+ ng
+SHA1-Digest: r+MDFgD34Y+4OhXBaWSW0j/cVb0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_disconnecte
- d_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_inout.png
+SHA1-Digest: mStf/OJ0Siy2jwPC3/tScdLTbk4=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_4_wide.png
-SHA1-Digest: bSIxOeCqlMcZD0ZCM4lRUK80NqA=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_e.png
+SHA1-Digest: QOhtg2lnKT8WPPaq7V3exfrZEVU=
 
 Name: res/layout-sw600dp/status_bar_search_panel.xml
-SHA1-Digest: 41K2O77QDzrskpL3hVdSy2RQb/g=
+SHA1-Digest: fLEji2u5vAk9wIBwrhrNt2YUPOk=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_bluetooth_not_connected_wide.png
-SHA1-Digest: UW2E1B2NJb01JTU0SKJH6Ubdf68=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_g_null.png
+SHA1-Digest: x0cFq5xs/V7xfOaYXz12/WXiQdQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_signal_o
- ut_wide.png
-SHA1-Digest: 9HfhKNSiMaTsXG5uf/s8+O3c0A0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_fully_connected_e.png
+SHA1-Digest: Pt+Iy6I+Qyx5ugkkvjO7EHshD1E=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_4_fully_wide.png
-SHA1-Digest: bSIxOeCqlMcZD0ZCM4lRUK80NqA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_disconnecte
+ d.png
+SHA1-Digest: qT0z4NKpTyR5JRJdnTP2SU6ospY=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_4.png
-SHA1-Digest: M3BWFGacCvRSEmOI+UfKc/F/kPg=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim28.png
+SHA1-Digest: z8/Ov6mJZaMOidMLc4bWDWVZ1y0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_5_fully_wide.png
-SHA1-Digest: xp4pOk789DBqdc/1zHfaMVix2ig=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_lte.png
+SHA1-Digest: 51ImNaEGZvZTz9Cms8+IxRMucLg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_2_wide.png
-SHA1-Digest: /tg4rJZlg7PBX2gdvNM9vItwyiY=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_1.png
+SHA1-Digest: nhHTG5D1MhpEFNaTwwqQp7YmmcY=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_3.png
-SHA1-Digest: EWBH/NRC8Ohtqv23zhucz4NsYtk=
+Name: res/layout/status_bar_icon.xml
+SHA1-Digest: Xy0gbuNf5DK5vToyA0ZwdTcZ6JU=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_2.png
+SHA1-Digest: WPbV+dq7lpEARtkuunWIVziDMKs=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_inout.png
+SHA1-Digest: G85Shue1MAjlxi5eT9Eu6M0rGhw=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim43.png
+SHA1-Digest: VltHO4pj+U7kBt5GYxC1/diPUdw=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_out.png
+SHA1-Digest: Ph44kMGb0xDrmGZ5hy0UWH5O1DY=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_3g.png
-SHA1-Digest: 1Esow2MC+IZ+lp9A6coNPJUXMFA=
+SHA1-Digest: Fgz6zok/1qwUOJ97rTCkSdqsukM=
+
+Name: res/drawable-mdpi/ic_notify_quicksettings_pressed.png
+SHA1-Digest: +jzf4b8YiwF4oKKsoj7/dk3sRG8=
 
 Name: res/drawable/system_bar_notification_header_bg.xml
-SHA1-Digest: 5+S1Ot3k0ioPCiEWnHn9jNGyBWQ=
+SHA1-Digest: UOHmwUbo3FA44T47nb65Qtg1Nt0=
 
-Name: res/mipmap-xhdpi/ic_daydreams.png
-SHA1-Digest: YXhEj+ACcTGfW/Y4xIAdVW8zh6c=
+Name: res/layout/system_bar_ticker_compat.xml
+SHA1-Digest: xReN0e2UgCc6WinFfRLKW6BhnFk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_anim0_full
- y_wide.png
-SHA1-Digest: nd85x/pZchVJOPCc4d0fh1XfU5I=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim0.png
+SHA1-Digest: 5gmEtoLiMaVG656PihfpIrrfaE8=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_h_wide.png
-SHA1-Digest: 7OomPOnARSPPdbob3KwHktJHHz0=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_c
- ustom3_anim0_wide.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
+Name: res/drawable/stat_sys_gps_acquiring_anim.xml
+SHA1-Digest: agMMzERU2n2sMwPF5KDd9znc7PA=
 
 Name: res/drawable-hdpi/stat_sys_ringer_vibrate.png
-SHA1-Digest: 8B+wP+75NUDH1UQSjpNYxGrCfeE=
+SHA1-Digest: 7Ht6xvayG/L8Xv0VENrGlnhcVNk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_custom3_an
- im1_wide.png
-SHA1-Digest: 3UM57UJ8DdlHNFi6UoKB6dxqLJo=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_2_fully.png
+SHA1-Digest: a6TOuNuY47ItVzYFDYftQyeSJsQ=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_4.png
-SHA1-Digest: XVpOUyBsq28LMcPB9nS0tS7G6X8=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim85.png
+SHA1-Digest: epAdutvVc9iMwnISu2+0xMBGecQ=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_none.pn
+ g
+SHA1-Digest: ENdHZ6fa4tGKp/ky50fnJqfQR3g=
 
 Name: res/anim/notification_icons_out.xml
 SHA1-Digest: x60C7ofL7bc4Y7hxb4caKXyM36w=
 
-Name: res/drawable-nodpi/dessert_keylimepie.png
-SHA1-Digest: kb94X8jRUabPpAG/sDC9ls8YmBc=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ 4g_lte_waves.png
+SHA1-Digest: lQx7CdZf4fDbh3UCs/FXrE/Wrn0=
 
-Name: res/drawable-hdpi/ic_notify_open_normal.png
-SHA1-Digest: rQtOp00xgehClVQHQz/vAjQ6Wgk=
+Name: res/layout-sw600dp/compat_mode_help.xml
+SHA1-Digest: HpC+2Eb86LnG30HeBiZQqM9yTS4=
 
-Name: res/mipmap-hdpi/ic_launcher_dreams.png
-SHA1-Digest: Khio/V3sux6nGfbe+6h7WkeUbC4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_g.
+ png
+SHA1-Digest: RteNplluSTXpNeLmYhQpc2rd6ms=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_sim.png
-SHA1-Digest: 1X9jUN+vW9Lh+xHVSCQlBWYWWNU=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_4_wide.png
-SHA1-Digest: Cre753FnBkMaFhYOBaQV/uu5WEM=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_1.png
+SHA1-Digest: yVyhx2g44FF8me8rTZry+kekR1Q=
 
 Name: res/anim/notification_dnd_on.xml
-SHA1-Digest: 1QG/M3l0keqaODHyQJuB7XMgwtA=
+SHA1-Digest: TfvnKDcqoiiStNHRiHz7o+9LrdA=
 
-Name: res/layout/status_bar_recent_panel.xml
-SHA1-Digest: 0AI2mxKTuQED4GivUNvZO7qjcR8=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_1.png
+SHA1-Digest: k2qjh7nyew+yOhn/hofH9DPQZjs=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_lte_wide
- .png
-SHA1-Digest: g2mcGli49k3iSypya83Cp9A+l7I=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_0.png
+SHA1-Digest: mMe1PeIagTUI2fzWoU/J685/T4M=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_3_wide.png
-SHA1-Digest: ayvwT1PKI28qqUa+yqQbfdhgPms=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_waves_no
+ ne.png
+SHA1-Digest: kBEn3RI4I3Pj+eCjM/Kwtqx/cFo=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_3_wide.png
-SHA1-Digest: zASCl3IEEOg2ksuDgoX0atgnL7Y=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_2_fully.png
+SHA1-Digest: w4pDxYaxFx+e9FQhPb/N2wO2Z9A=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_0.png
-SHA1-Digest: hfAzkvAyP+nKHRJH74Bg4+NK2zk=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_2_bars.png
+SHA1-Digest: ldMqH0Oce+e4G5+FqBVHMRMy950=
+
+Name: res/layout-port/status_bar_recent_panel.xml
+SHA1-Digest: fGmbSlrITkJQrjc3PChcmYPCp+E=
 
 Name: res/drawable-hdpi/ic_sysbar_recent_land.png
-SHA1-Digest: XUbJTeCRYAD65kNbxCRJckbUg7U=
+SHA1-Digest: t6lo8qe6oro5QACao/1yVLLdC3c=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_5_wide.png
-SHA1-Digest: wrHV1gBlrX3kTaRDXmyjUt6goFg=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_2.png
+SHA1-Digest: 9xCVy5VWhQzIKZ0NQlJBG4TgkwA=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_h.png
-SHA1-Digest: a/DmAsC3WSmveW3eyDoyUcJ24qc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_2.png
+SHA1-Digest: XrUgJit+O5h6futBcHcj+u5rqIA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_4bar_flightmode_wide.p
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_3_bars.pn
+ g
+SHA1-Digest: rM6IcJZVmsPpjTSJFs46D9TjJIo=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_1_fully.p
  ng
-SHA1-Digest: gBVT0c/3ghM4YQJ9/ierqScFGpI=
+SHA1-Digest: AXkhEALQzorw2B4DKOgYpKS2GUY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_1x_wide.png
-SHA1-Digest: g8At4y2hqKM9Kr5W9aorq60RwNk=
+Name: res/drawable-mdpi/stat_sys_signal_4_fully.png
+SHA1-Digest: eluYgpmIvVMjs2+ocBf430aSzx8=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_e.png
-SHA1-Digest: Ruim98jSTDM6z2klS9gyQFDY15A=
-
-Name: res/drawable-ldrtl-sw600dp-hdpi/ic_sysbar_back_land.png
-SHA1-Digest: d30i7dCuaWYmqHkW3sCXtAGQhEc=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_0_fully_wide.png
-SHA1-Digest: uRzVoJtkFE0TJud66rLBZmV3zdQ=
-
-Name: res/drawable-hdpi/ic_qs_wifi_not_connected.png
-SHA1-Digest: ckf7DqrrYJgHrAagzJnh3XPEWmU=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_2_wide.png
-SHA1-Digest: w/50kWEVBrjwgSdQOJmenBlj2Nw=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_inout.png
-SHA1-Digest: 6PoXq4N8BbNdmryHL+kIPPlTqN4=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_2.png
+SHA1-Digest: bAy4nQ6t9HMQaITJfZTxBusf5Hs=
 
 Name: res/anim/notification_buttons_in.xml
 SHA1-Digest: ya/8qtd3gO26tg0I1A4r6rEyJr8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_1x_wide.png
-SHA1-Digest: ZFen/7HmCML8GDhClDE/b7Y8C9Y=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_2_fully.png
+SHA1-Digest: xaqE/8um0pea2hdOukHGtWW6k+0=
 
 Name: AndroidManifest.xml
-SHA1-Digest: pdZS5w/apOsOmX3ZGDRzBf5G3wU=
+SHA1-Digest: UMmF05wKWyrG8FAziDdExI0MXg4=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_g.png
-SHA1-Digest: 87kbXpWrqdZaSVLFW/q4cEc2+QM=
+Name: res/drawable-hdpi/stat_sys_battery_57.png
+SHA1-Digest: jOWLhhZwRl/Yo/NEw0W+ESHcNHs=
 
-Name: res/drawable/zz_moto_stat_sys_data_fully_inandout_waves_animatio
- n_wide.xml
-SHA1-Digest: /6p9W6pCaZLiCjLilsmodYVgyHA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_1.png
+SHA1-Digest: 27QzxEW/mptGPEiTRYQtlihPzJs=
 
 Name: res/drawable-mdpi/ic_notify_clear_normal.png
-SHA1-Digest: i+ZOjtqCUAUpqG83kExI9pSgWng=
+SHA1-Digest: 3idVawwMjYAFspUfCtkPEBMJjg8=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_null.png
+SHA1-Digest: sHnwVGkcYTZggBYpNwMzYl9dlSE=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_4_fully.p
+ ng
+SHA1-Digest: lhI5vO7Pzb8612J87UwvbViDwDc=
 
 Name: res/anim/hydraulic_brake_interpolator.xml
 SHA1-Digest: Lpm462Pv02e2v05Qg++89CA/dR4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_4_fully_wide.png
-SHA1-Digest: aagk7oEy6j7erZ6EWkxerDKzMok=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_4g.png
+SHA1-Digest: QEt7fRM0oyMZOyyi0zUQ2Mtw7tU=
 
-Name: res/layout/quick_settings_tile_ime.xml
-SHA1-Digest: pTQDUompI7p8cfEkpDWwvZhOseE=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim57.png
+SHA1-Digest: MPk7rkxEOq6pLkZjr69pyniWoio=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_anim1_
- wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/raw/carousel.bc
+SHA1-Digest: bz0oIdwvt9kv71m/JZfSH27tims=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_2_fully_wide.png
-SHA1-Digest: tkn5N6MgN3E2kznsNbNbdSLQ2l4=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_connected_g.png
+SHA1-Digest: 1Xa08KZs8srBCBjw+ywKbSfvs+Y=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_4g_wide.png
-SHA1-Digest: 6xEup8vuGA0WEcCG+I+e1GEwWoA=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_0_fully.png
+SHA1-Digest: RcBnJSPLXqplOIGUHPVJCp3y8ak=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_4_wide.png
-SHA1-Digest: ulOicPVkSfHpvPA09yovVAiIKTc=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim100.png
+SHA1-Digest: CHylrhNjwh+RxE4ipN/QnGJ6u2s=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_e_wide.png
-SHA1-Digest: 284ZT+uXdIWsxfKOYvLQPLmPkVk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_3.png
+SHA1-Digest: OEMd9H5iISWUmLyxPf8TY3RcS8Y=
 
-Name: classes.dex
-SHA1-Digest: uhG0lG5Ah2v5HFqqxA4QZEzosHc=
+Name: res/layout/system_bar_notification_panel.xml
+SHA1-Digest: 3lKq+TkNNyrL+YgGl6QZZlZmBAc=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_2_wide.png
-SHA1-Digest: tkn5N6MgN3E2kznsNbNbdSLQ2l4=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_3g_plus.png
+SHA1-Digest: X7/sse4iZvUvmniUDuFkyIrifjk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_h_wide.png
-SHA1-Digest: nhkZ2o89FGDa2LqSHlOuqkel27Y=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_3g_plus_null.png
+SHA1-Digest: me1t3qeS/cugT9dHMpObjZUgD+I=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_signal_none_wi
- de.png
-SHA1-Digest: MOPErfGmOODMP2+rgGo95n+8RCA=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_null.png
+SHA1-Digest: xsi9BguN/wUj9aKTbtaivWtme0g=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_wide.
- png
-SHA1-Digest: BY8h4PHY8HK4QuyJnVMLwHyWHnA=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_corrupt_sim.png
+SHA1-Digest: tP9GypAkVfmmTLfq3MLOyann9zI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_g_waves_wide.pn
- g
-SHA1-Digest: olJ2KBYiyj3j4MdGMig8npj1jms=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_3g_wide.png
-SHA1-Digest: GE5//TlYX/9VdCMyztvmtQyfiLk=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_bluetooth_off_wide.png
-SHA1-Digest: GvXcnALMh5+HXWPruEUKr9dRHwI=
-
-Name: res/drawable-hdpi/status_bar_close_off.9.png
-SHA1-Digest: wa/yHgfXKW5pMqZC+XWrbWeQh/4=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_2_fully.png
+SHA1-Digest: ZBj3y8Vba6v20G4ocn9PL1uv+DM=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_menu_land.png
-SHA1-Digest: ndZ4ZYNib71R38LKN/bCvbwv++E=
+SHA1-Digest: H3aQp8Pu60YHRW0FU7hKW3dsY3g=
 
-Name: res/layout-ldrtl/navigation_bar.xml
-SHA1-Digest: AAPQWKvVy1pEryfshHGqog4kPMk=
+Name: res/drawable-hdpi/status_bar_close_off.9.png
+SHA1-Digest: hRQPH2x9UfhqJ3JOhwTEZ34rKcE=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_4_wide.png
-SHA1-Digest: yRX7llStBHcon3ISCWIiMHE63+s=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ signal_inout.png
+SHA1-Digest: G85Shue1MAjlxi5eT9Eu6M0rGhw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_emergency_only_wide.pn
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim28.png
+SHA1-Digest: wZSFqpznUslCvtZX0Sa8Hc1Dtek=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_6.png
+SHA1-Digest: RxpYU4rYCEczX5NeIViYI36ZQ60=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_lte.pn
  g
-SHA1-Digest: +eL56oNYbVQaNN1Z/kMQIdBN/fY=
+SHA1-Digest: Vp2t2M2wethNjY5OZJgKUCv8YoE=
 
-Name: res/drawable/zz_moto_stat_sys_data_inandout_waves_animation_wide
- .xml
-SHA1-Digest: DP/DQo+yyMFSsFiB4+lTqJhhCnU=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_lte_waves_w
- ide.png
-SHA1-Digest: yo4suLi8LAopwXR5f864NqCHp0M=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_femtocell_flash_fully
- .xml
-SHA1-Digest: BQcNVxsHdcPF28lCGKJwkUZHWHc=
-
-Name: res/drawable-hdpi/ic_qs_wifi_3.png
-SHA1-Digest: OWyQut8sc51g2Yng7fVbZOYO21M=
-
-Name: res/anim/heads_up_enter.xml
-SHA1-Digest: M75tRRCxMTz/U79r2ZcDIJnPEXo=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_lte_wide.png
-SHA1-Digest: V4G4o35sxrPbiCE/fK0/4hvFC/Y=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_g_wide.p
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_3_bars.p
  ng
-SHA1-Digest: pZQvvrNgxrjZlHgGjMNUg2TxAzk=
+SHA1-Digest: 0VOXivMUA9uRDjCvXikbrne+lNc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_3g_plus_wide.png
-SHA1-Digest: itAqbkCQtnGjHhOL+zBu4b+4m10=
+Name: res/drawable-hdpi/stat_sys_signal_3.png
+SHA1-Digest: soElZsJkBMdsAGTta66EY/irmQk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_wide.png
-SHA1-Digest: 4Du0aVN/rN06+2wWs4PUIb72qEs=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_3g.png
+SHA1-Digest: j7qgStiCFbZhJJR3D98mKmfSqpU=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_4g_null_wide.png
-SHA1-Digest: Fa1vZ814ghs90cXtxlwpvm8Se0k=
+Name: res/drawable-sw600dp-mdpi/stat_sys_roaming_cdma_0.png
+SHA1-Digest: fEaJewKNc7VVSfGEGNHS4ofnDIA=
 
-Name: res/drawable-nodpi/bugdroid.png
-SHA1-Digest: X4MioChM6OKFlpkeBfPVPhLKvAs=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_h.png
+SHA1-Digest: IHrWkIgQcoRYvfRKbUFxYT65d74=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_r_wide.png
-SHA1-Digest: K8djUTRvBXOdDqUgHqzJq0E9P8I=
+Name: res/drawable-mdpi/stat_sys_signal_0.png
+SHA1-Digest: hecXrhR/3/KeOGETNpptz4vwu7Q=
 
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_flash_wide.xml
-SHA1-Digest: lkak5bM0V+B6XRhYybJb25+uytI=
+Name: res/drawable-hdpi/hd_off.png
+SHA1-Digest: wY47AMRfa3M24WDuL8s5Newmn8k=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_1_wide.png
-SHA1-Digest: kRsJvRL8/RXVbl28e0ukQqbQylQ=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_3g.png
+SHA1-Digest: T/w9vSp1WohoJnGsm06s1e0EZxU=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_h_wide.png
-SHA1-Digest: vwCc9zsnKdYcSR4v0HeYVse4YTg=
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim100.png
+SHA1-Digest: HtIqwXqy3nIQ6rISUYbQpeu1UNM=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_custom3
- _wide.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_hplus.pn
+ g
+SHA1-Digest: 0NYpYUtDWsdIbVVw1mzAKdo3zAU=
 
-Name: res/menu/recent_popup_menu.xml
-SHA1-Digest: TAvtJU6KRtuGm4dCvvmw8Ucpi84=
+Name: res/drawable/intruder_row_bg.xml
+SHA1-Digest: Qp0ISAPsZ8QHMynYDwpc+Ho43G4=
+
+Name: res/drawable-hdpi/stat_sys_data_connected_g.png
+SHA1-Digest: Dhhz2hx3q6owZxkQNQvh5EOZRBs=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_roaming_cdma_0.png
+SHA1-Digest: u6mNHIEw8vclve+GYdhWmbuB134=
 
 Name: res/drawable-hdpi/stat_sys_tty_mode.png
-SHA1-Digest: me1OnwNYRCJ0nlSE8H/ZBiqllX8=
+SHA1-Digest: nCjDijU1phNHaGX68dKY8zOmSMQ=
+
+Name: res/menu/recent_popup_menu.xml
+SHA1-Digest: povoNTZFeo9d2ragwirQ/nRAnjQ=
 
 Name: res/drawable/ic_notify_quicksettings.xml
-SHA1-Digest: zSBm+XIuQ+arHT5lX2B6mRDXvWU=
+SHA1-Digest: 3MkduoxxavnO61ZReSXkohsVo2M=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_3_bars_wi
- de.png
-SHA1-Digest: uwTAl3C3Oe7CqkhJSY8YkP2kO+E=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_out_waves_
+ 2_bars.png
+SHA1-Digest: uWHRpCEvkVuA6CxOIBLU247yFh4=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_in_wide.png
-SHA1-Digest: uXeMLaMncnFb7wSPi7oJGCyhCKk=
+Name: res/drawable/status_bar_expand.xml
+SHA1-Digest: 5suTjL++XYALwsjK80nq5B5mu1I=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_full_in_waves_3_bars_wide.p
- ng
-SHA1-Digest: uwTAl3C3Oe7CqkhJSY8YkP2kO+E=
+Name: res/drawable-hdpi/stat_sys_data_connected_4g.png
+SHA1-Digest: KhonkPob0aUzOVbonVcHV2nsOCg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_g_wide.png
-SHA1-Digest: 83fh6/rzYOrpIHEBWuh04SHhGRQ=
+Name: res/drawable-mdpi/stat_sys_data_fully_connected_4g.png
+SHA1-Digest: 5cpk7Ofda/15hPwdHYlIB8b8d4M=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_ringer_silent.png
-SHA1-Digest: WVpy7Q0t27xmKCjeklI55bytzcE=
+Name: res/drawable/stat_sys_battery_charge.xml
+SHA1-Digest: tzTWIjMzgI7I5VeVp2Cjr9MZZeI=
 
-Name: res/drawable/zz_moto_stat_sys_data_fully_in_waves_animation_wide
- .xml
-SHA1-Digest: 8wpPb3wbf1Ebef6FWikbIUWjhbc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_null.png
+SHA1-Digest: 8uJFqVVzu8WT5Toc6n7m3rvBGWY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_in_wide
- .png
-SHA1-Digest: AiA521ccmkwbq+Zfj2k/4yeG4nA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_3.png
+SHA1-Digest: 6VT8Q3hUIofPV7F8qAnu6VhDLp8=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_1_wide.png
-SHA1-Digest: Zuwj0kfDW5bQPSPE+qy/aKOauYs=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_2_fully.png
+SHA1-Digest: I5rYifaRHNMDuAbNv6F9S1P0cs4=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_lte.png
-SHA1-Digest: LPDGx08jYkWAPrzrDIzuo+8MnA0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_4.png
+SHA1-Digest: UekZ22vgUdbKfKJPKvk3fxC2a8w=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_3_wide.png
-SHA1-Digest: ieDxTo3uPC7NvWIE2igxlRc7Un0=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_5_wide.png
-SHA1-Digest: 6P9v2hBqHx7fX9ZgdIdQ07D2jiI=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_out_waves_1_bar_wi
- de.png
-SHA1-Digest: FRal62fo73KaV/1zoZ1S+ra+o8c=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_1_wide.png
-SHA1-Digest: bX7FscvCqjxpG+nxMNs0oQ0Ip6U=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_h_wide.png
-SHA1-Digest: ZLDIdhYbkWMerSDPM75XvoAmuMo=
-
-Name: res/drawable-hdpi/ic_qs_signal_3g.png
-SHA1-Digest: AmpZztThLAICbztaK2e2ukOQEyc=
-
-Name: res/layout/msim_status_bar.xml
-SHA1-Digest: 4C8ZVlRcWs0+2dWhL0u2RcdK9yE=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_null.png
+SHA1-Digest: FoU3ey0ME14yBBIxwRX5AeF476s=
 
 Name: res/drawable-hdpi/stat_sys_data_bluetooth_connected.png
-SHA1-Digest: GHo9vjy6pW0xwQnWW8zRtPWITJg=
+SHA1-Digest: SpWyVNiOgfkKQ69JpWu2rPg4wDU=
 
 Name: res/drawable/ticker_background.xml
-SHA1-Digest: zc5OHU6thKtMyKQPI4rzF8IWvmA=
+SHA1-Digest: kOjwKhbVrI0NyZiRidRyo3imXww=
 
-Name: res/drawable-hdpi/ic_qs_default_user.png
-SHA1-Digest: yWc3iS+A3O6wnlpO2CmUN5sGfX0=
+Name: res/layout/msim_status_bar.xml
+SHA1-Digest: pJ7xzEyVQpPeWEH/IACY6dgj2uc=
 
-Name: res/drawable-hdpi/ic_qs_signal_no_signal.png
-SHA1-Digest: aYl3g93HMxMW4Zb6akjuEHemgvk=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_4g_lte_wide.png
-SHA1-Digest: fhxZ9Env376Dq6Dt7JxOj5zY2iQ=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_5_wide.png
-SHA1-Digest: 6P9v2hBqHx7fX9ZgdIdQ07D2jiI=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_roam_wide.png
-SHA1-Digest: 1FfYyiokNgqNCQo598mf2JmoHAE=
+Name: res/drawable/btn_default_small.xml
+SHA1-Digest: Y2lXazU9amzw1NuIahVlEAAOPvY=
 
 Name: res/layout/status_bar_expanded.xml
-SHA1-Digest: QS6JBgIwT5MpXKe+FeCBXgH8LSU=
+SHA1-Digest: Relensg8LaFyFc7UcDqSCFyvj9g=
 
 Name: res/drawable/notification_row_legacy_bg.xml
-SHA1-Digest: 57RfB9ZNrlmSrrGDE7fGnuIP5aU=
+SHA1-Digest: 4T5rGEB6FnswZXhkIxPDqzlT5IQ=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_0_wide.png
-SHA1-Digest: VmUEpZcPVbWWSTMvR174C94X4ug=
+Name: res/layout-port/status_bar_recent_item.xml
+SHA1-Digest: zYCs5E504TPV5uBkt/DyXfuEF3w=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_3_fully_wide.png
-SHA1-Digest: zASCl3IEEOg2ksuDgoX0atgnL7Y=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_3_bars.png
+SHA1-Digest: 6zrMA1zNJih1zM0RFmtOruQk0X0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_3_fully_wide.png
-SHA1-Digest: lM0U6Z07GmJgTMGMsj6gCCJAzwQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_e_waves.png
+SHA1-Digest: dE3yf8ha1AWbYMgk9SEpKHaJNCk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_null_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_1x.png
+SHA1-Digest: y5hbvmnGxMgCDA9DeO4VDjadeMA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_null_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ signal_in.png
+SHA1-Digest: euYt4sXDYzwghmHl2JN+rU+deNg=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_hplus_null_wide.png
-SHA1-Digest: x4iTTMhTTXI5VjCBnFlnx1ULvBQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_3g
+ .png
+SHA1-Digest: Ng3w8YnbroXfaEkbNZEOgBcZ/1Y=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_5_wide.png
-SHA1-Digest: ScYf/l8dqfCJ4AdkEXIVbTFmnqc=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_0.png
+SHA1-Digest: j8IWjaDchDYLVNj3uomzNJiAdo4=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_r.png
-SHA1-Digest: YSoSjbI3qy4Ac7m3XEeWDr7ihW8=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ 4g_waves.png
+SHA1-Digest: wfhJ1YAOtstEfoytsPkMlmnBRc4=
 
-Name: res/layout/status_bar_search_panel_rotate_270.xml
-SHA1-Digest: gUzdKgGixCK7RQo1p9kevGvn0MI=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_h_null.png
+SHA1-Digest: Aae76BUVAy1Z8ibnBUEDsGX7j2U=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_home.png
-SHA1-Digest: ds47HWbmViiNtfKieG/KhQMHHdI=
+SHA1-Digest: 31JO7cr+vieDEKN4Po+qCdllxOQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_waves_none_wid
- e.png
-SHA1-Digest: Qkr3Eh8dKiI8nV7cNHddqKM6feY=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_3.png
+SHA1-Digest: rFWLgqxtVMw9O0k49/18i1F7Hj0=
+
+Name: res/anim/recent_app_enter.xml
+SHA1-Digest: yl+JYm/6MagDJKW35sgmRxYA7Qc=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ g.png
+SHA1-Digest: Yyp5+cliqC8xoNvOrN/kXKI3JRk=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_out_waves_3_bars
+ .png
+SHA1-Digest: Sczq8caYATF0BXPZxXFwpq/QSug=
 
 Name: res/drawable-hdpi/stat_notify_image_error.png
-SHA1-Digest: HAFGBO+ZwbGXrvvQd+Z/cNJObYQ=
+SHA1-Digest: HGgZm+yzkzVIS5oQ7S46Gkyo/3s=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_0_wide.png
-SHA1-Digest: VmUEpZcPVbWWSTMvR174C94X4ug=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_0.png
+SHA1-Digest: AGuK7KtUH4FJGVrEJdI4BPZefQY=
 
 Name: res/anim/lights_out_out.xml
-SHA1-Digest: dYau/i+T88SIamX6gktiVOjblcw=
+SHA1-Digest: kD9aNJ7ZTybyRaqWWS0nR4P4zQw=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_none_wide.png
-SHA1-Digest: NcFxiBpFADR1qxMrxMDf7d+qZxs=
+Name: res/drawable/zz_moto_stat_sys_data_fully_in_waves_animation.xml
+SHA1-Digest: 7amnNfjEGxQOL9rVxuX/JZdkYek=
 
-Name: res/layout/flip_settings.xml
-SHA1-Digest: EGKEUK33CiPVE1oD5rd4aQoYuiM=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_100_25
+ .png
+SHA1-Digest: Fj3dyFvD5aPzdr2ozZ8Sa4TC01g=
 
-Name: res/drawable-hdpi/ic_qs_wifi_4.png
-SHA1-Digest: ulOicPVkSfHpvPA09yovVAiIKTc=
+Name: res/drawable-hdpi/stat_sys_data_wimax_signal_0.png
+SHA1-Digest: pdC0lhGzvxZEpc/tyg6h0elkD18=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_flightmode_wide.png
-SHA1-Digest: iVLi7OX90bNPpmUwImB8gP15oec=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_2_fully.png
+SHA1-Digest: 1+CRP9LzgOT7NO9TQs8g2okTj3Q=
 
-Name: res/drawable/zz_moto_ic_qs_data_full_out_waves_animation_wide.xm
- l
-SHA1-Digest: zvVWrhcZj+M0cfwAL7MzC+VDnSg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_4_fully.png
+SHA1-Digest: XpnvjVrClto8PSgziWeuxf3UCkc=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_0_wide.png
-SHA1-Digest: p3Xdpzcg7MxW35Cy2T27Cjlu3R0=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_0_fully.p
+ ng
+SHA1-Digest: ZfUG2cgT1RcwX6zxuzP4hn8bBxw=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_inout_wide.png
-SHA1-Digest: r10CXpqCA+ZxtcTj1k8zHuH8VOU=
+Name: res/drawable-sw600dp-hdpi/stat_sys_no_sim.png
+SHA1-Digest: aTRIxw5dDOXtfWMVYTVX7V+D+k4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_5_fully_wide.png
-SHA1-Digest: j+88iWWTBQt0JtLdVEoEQ5wK+oc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_3.png
+SHA1-Digest: f9Pw2UIIyOxmGnZ8g4cKISYrTRU=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_e.png
-SHA1-Digest: QFWuImqbp+XnHe8G9vmvIfprXCA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_3_fully.png
+SHA1-Digest: acsnB2l5HS0lak8Y1lOyRfy6Uag=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_roaming_cdma_flash_a
- nim0_wide.png
-SHA1-Digest: nd85x/pZchVJOPCc4d0fh1XfU5I=
+Name: res/layout-ar/battery_low.xml
+SHA1-Digest: xPs5ZdM80/RLkN60QQvgtcB7X9Q=
 
-Name: res/layout-sw600dp/carrier_label.xml
-SHA1-Digest: yjNCqtzbNXhNo7JOpvnyRufpGPw=
+Name: res/drawable-sw720dp-hdpi/stat_sys_alarm.png
+SHA1-Digest: eoBrMbi1A3uHKtW/fr7l38OED30=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_not_connected_wide.png
-SHA1-Digest: ckf7DqrrYJgHrAagzJnh3XPEWmU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_chargi
+ ng_99_25.png
+SHA1-Digest: KInV5vTg0/7gv5lOj/ka90/ET2o=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_3g_null_wide.png
-SHA1-Digest: 7ICBQLpx2gqc1V8IiPCKoXDkZ1w=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_si
+ gnal_in.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_signal_wide.png
-SHA1-Digest: wz3EIC6ZlgiqjfxHJQa9fRgje3M=
+Name: res/drawable-mdpi/stat_sys_data_connected_roam.png
+SHA1-Digest: xDuoQ4FcmWuxon2NDRxCaSQ+xbs=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_in_waves_3_bars_wide.png
-SHA1-Digest: yY0/pe1ts17aDx5dGT4qt0/9qeM=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_3.png
+SHA1-Digest: cq/VJOgsAZKff4XkQHgy2L2yocE=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_3_wide.png
-SHA1-Digest: OWyQut8sc51g2Yng7fVbZOYO21M=
+Name: res/drawable-mdpi/stat_sys_roaming_cdma_flash_anim0.png
+SHA1-Digest: fkgCA3R8Hv4u3pevrtVAqmSk90k=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_n
- one_wide.png
-SHA1-Digest: NcFxiBpFADR1qxMrxMDf7d+qZxs=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_3.png
+SHA1-Digest: KQXMynxDcNBu4brU+JF1zpePEPo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_hplus_wide.png
-SHA1-Digest: Jj/7/cMKXlmnPdTNc04ut64e2TM=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_1x
+ .png
+SHA1-Digest: +9XxgKXadk3IGHp5p+ic3aQ9Jv0=
+
+Name: res/drawable-hdpi/stat_sys_wifi_inout.png
+SHA1-Digest: xzlA7ysW0DsrtCydxDhr8m8lpoI=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_3_fully.png
+SHA1-Digest: aBG/TqYYDLzhdCMtJiXSdlAjiVs=
 
 Name: res/layout/navigation_bar.xml
-SHA1-Digest: JrwWlE9EH+DCeHk9KOgamdX4McY=
+SHA1-Digest: 58Vtp6pKnCS/DDa/RV0ViVhl+aE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_lte_null_wi
- de.png
-SHA1-Digest: nub6NC5uQLdqxTYTBI5PjWDfywo=
+Name: res/drawable-hdpi/ic_launcher_settings.png
+SHA1-Digest: 8Mv/cEMltBs6aQL5guY+e860ni0=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_1x_wide.png
-SHA1-Digest: y9S8rD80ZSknXjCOJzsgz9hlpZs=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_2.png
+SHA1-Digest: E4As/AvMJ0FeDEmcDki9cnIw2s8=
 
-Name: res/layout/quick_settings_tile_alarm.xml
-SHA1-Digest: xlRl+7UrQUYQJXcpTgFdkFpU1Vs=
-
-Name: res/drawable-hdpi/ic_qs_signal_full_g.png
-SHA1-Digest: oQbHpn9Xi/2YqxkaQrqMNp4d+6s=
-
-Name: res/drawable-hdpi/ic_qs_brightness_auto_on.png
-SHA1-Digest: qA9Nde7kd8zT8duSyuVUcA4+B1Q=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_out_waves_
+ 1_bar.png
+SHA1-Digest: VQWMWlSWUJfV4AXy1YOSeXICmMA=
 
 Name: res/drawable-hdpi/ic_sysbar_back_ime.png
-SHA1-Digest: xz/eRMzgS2nkv81GaLYKhLXOAFw=
+SHA1-Digest: tjQJHXxwB7jtK+cb4lmYPau3F/M=
 
-Name: res/anim/recents_return_to_launcher_enter.xml
-SHA1-Digest: wD1tuCa6I4KdxWPearntP/OVF8E=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_bluetooth.png
+SHA1-Digest: yOZTTBDNrgN7ww/GHtgd6YRVU7M=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_4.png
-SHA1-Digest: roisSwlqnFheLUYdGq4/uOi19QQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ 3g_plus.png
+SHA1-Digest: xwYRcP3XP37jn1q9HoEM/eDV5LA=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_signal_inout_w
- ide.png
-SHA1-Digest: 4jR/p1KLvAtJl5vKi0DgU/MhYfA=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_3_fully.png
+SHA1-Digest: LjmETWbUM08iGKF8kp5H5Vk1aYE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_6_fully_wide.png
-SHA1-Digest: TwWA/wo0ncbmpnJtGCCD7CBqXcY=
+Name: res/drawable-hdpi/title_bar_shadow.9.png
+SHA1-Digest: vPhrGR5bVnXCJjwc/1DBbT1B30g=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_inout_wide.png
-SHA1-Digest: Vi8A2rsUVi4i1cHbI+Qw8YrU6cw=
+Name: res/drawable-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flash_femtoc
+ ell_anim0.png
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_3_wide.png
-SHA1-Digest: kudvIkK5+kKmxez8eOVX2PW4J3o=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_e.png
+SHA1-Digest: Xs32Xxqry0W0QjMdltBixJ1Yy3o=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_4_wide.png
-SHA1-Digest: mwFRotPyzNrCGT4W8Nj8GK29obA=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_fully_connected_4g.png
+SHA1-Digest: quqXgFn7RupBKbOv3H4JTYGVVcI=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_out_waves_
+ 3_bars.png
+SHA1-Digest: wJ5v9aCTWF5zcEk1vxj8gOb95kA=
+
+Name: res/drawable-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flash_custom
+ 3_anim1.png
+SHA1-Digest: C9ypxaGUkEOOjj79ZqapyG7YQwg=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_2.png
+SHA1-Digest: 6/C3yeiWCQSzO0y98VaSE/0lGJg=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_h.png
+SHA1-Digest: WvX95MSwzmQ47n0TEhIsL009HPw=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_e.png
+SHA1-Digest: X7wFBNitIHi4s//dhiAS72jKyHA=
 
 Name: res/drawable/status_bar_toggle_button.xml
-SHA1-Digest: tir/S42O9t5NtwdCn+fCeGwgyok=
+SHA1-Digest: pbbyTxt4SfUh9fDcjjdLWpGfP7k=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_5_fully.p
+ ng
+SHA1-Digest: pTxY5ZRfq9nynJ243lHBjXnp6Mo=
 
 Name: res/layout-sw600dp/navigation_bar.xml
-SHA1-Digest: LfnSRgz2kuczGJNsHJrdr9t2E2c=
+SHA1-Digest: vR8ARlppG1RkeSxjF9qDwguNawI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_4g_lte_waves_wide.pn
- g
-SHA1-Digest: vJTeD5Cy8KVM1jCaRUDRSzuRnN4=
+Name: res/drawable-mdpi/stat_sys_data_connected_g.png
+SHA1-Digest: a6QHn6UhHS8zBxgSOrgfqU87LVY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_g_wide.png
-SHA1-Digest: iB9UtzH9v2beHPKbPFdQtOS9eDQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_g_waves.
+ png
+SHA1-Digest: mJxejYQtN+XwpVKf/7eo2g3viFE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_g_wide.png
-SHA1-Digest: aR8xG5TjKI0ndj/jXwxcXXIrpZ4=
+Name: res/drawable-hdpi/ic_notify_rotation_off_normal.png
+SHA1-Digest: XI1M7TG3nPSMhuyo/6LRm0THMV4=
 
-Name: res/drawable-hdpi/ic_qs_auto_rotate.png
-SHA1-Digest: uL95D6xJnFIAyzlO9Ba5ezf18FE=
+Name: res/drawable-hdpi/stat_sys_sync_error.png
+SHA1-Digest: amZl8SOYlidvbqXNN3RTkWxWM5A=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_lte.p
+ ng
+SHA1-Digest: Swvx81ExlwaKadYTNvKUVxzQt8I=
+
+Name: res/drawable-mdpi/stat_sys_signal_out.png
+SHA1-Digest: lqvkEVtr+aVz1GP7NHcvAbK/y0w=
+
+Name: assets/fonts/AndroidClock.ttf
+SHA1-Digest: ZACgrFQV51yYlJuYHVfSCIfW5uE=
+
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_in.png
+SHA1-Digest: GAON+JLlrZod6afbpJ98e0iDWxo=
 
 Name: res/layout-sw600dp/super_status_bar.xml
-SHA1-Digest: siRoSCp1QCWcLhMeiVAamiyKcsk=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_2_fully_wide.png
-SHA1-Digest: aN4MAsG8lji/fDwAwCtFCuaik6k=
-
-Name: res/drawable-land-hdpi/bg_protect.9.png
-SHA1-Digest: zYkJnTX+ijDTzZEVRGlpOruSD3Y=
+SHA1-Digest: UTUhP6KzJgo12GET3wvAPgSpr8M=
 
 Name: res/drawable-sw600dp-hdpi/notification_panel_bg.9.png
 SHA1-Digest: 3Pzn5v5OFkZIsnEx9Xnci64tGeQ=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_3g_wide.
- png
-SHA1-Digest: Cm057n5/F14UTs3oHJhfL7nSgeQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_6bar_2.png
+SHA1-Digest: J7Rq0VMeDwdq93kNzQTUFyEOq58=
 
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_flash_fully_wide.xml
-SHA1-Digest: rOefY51b8/8azpOwKr2qzayn0rU=
+Name: res/drawable-hdpi/ic_sysbar_brightness.png
+SHA1-Digest: S9L5Vo1ADn5TRSedBEi7mSJeigQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_corrupt_sim.png
-SHA1-Digest: ehSermojaotDx67qoKlYlx9DSLg=
+Name: res/drawable/zz_moto_stat_sys_data_bluetooth_battery_low_animati
+ on.xml
+SHA1-Digest: cHgXzOI+olPmBWznBYNHhdQrAFA=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_e.png
-SHA1-Digest: PS0x+22ZZchIsXZaN+ZWD7U1k3Q=
+SHA1-Digest: obLYdLDxoLzlr6fkp0DVlMDJ0r4=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_out_waves_2_bars_wide.pn
- g
-SHA1-Digest: y+P3V0fOrGNpd3QZD3U0JiqvNzw=
+Name: res/drawable-hdpi/zz_moto_stat_sys_corrupt_sim.png
+SHA1-Digest: jUbtys0aCr8lWvvGTBZtN6QtLPU=
 
-Name: res/drawable-nodpi/dessert_donut.png
-SHA1-Digest: xzHux+gipGPUphJobvpe0g2bByQ=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_2_fully.png
+SHA1-Digest: IGimnpb1gC6t5jfoBJKqtP8tGfA=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_emergency_only_wide.pn
- g
-SHA1-Digest: TwbSUj+N2s6owPUNIwlHytCEVOY=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_3_fully.png
+SHA1-Digest: s9j+tQ2z4g3fAjfEdr5po1EBtmM=
+
+Name: res/drawable-mdpi/stat_sys_signal_3_fully.png
+SHA1-Digest: SNWvFVE/eivr7O/V92Jqs05vA+c=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_3_fully.png
+SHA1-Digest: j9TatU33Y7pN41Gm72YLVVvMRWA=
 
 Name: res/drawable-hdpi/stat_sys_alarm.png
-SHA1-Digest: cgGELgs1sJ++Arvgx8QIk++pHa4=
+SHA1-Digest: uOWjG9xgZaSQoyfo/FLgP7+7tKg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_lte_null_wide.png
-SHA1-Digest: q1i0yJUvYgiNoKA3YrL19uDgU1g=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_1x_null.png
+SHA1-Digest: aceoy0CKrexQaQAUgCYvyaaAFA0=
 
 Name: res/drawable-hdpi/recents_thumbnail_bg.9.png
 SHA1-Digest: +sTOZXHGfKB03VNDE2Cdn7Tf3S4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_4_fully_wide.png
-SHA1-Digest: 6FBZKqvD7I1fGNS1172nUT85t9g=
+Name: res/drawable-sw600dp-hdpi/ic_sysbar_brightness.png
+SHA1-Digest: 2D7hBNmJOmfnBEhNNpLoD3fayIQ=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_hplus_wide.png
-SHA1-Digest: /Ud0dOOAUYqey+bmg11JSVMGZ10=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_in.png
+SHA1-Digest: n+TgUBOU0dJDmVEr0nCIEun60gk=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_1x_wide.png
-SHA1-Digest: DwoTc00xJGNELRKrkLGPcxtCSVw=
+Name: res/drawable-mdpi/stat_sys_data_connected_1x.png
+SHA1-Digest: zCL0O5k/gqreBwu37RX/OZK2SiY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_lte_wide.png
-SHA1-Digest: 8vI+BXnATHWANFc+8LpshUcJS0s=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_null.png
+SHA1-Digest: CzDgmj83mtHlRVSIia9ascw2wQE=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_0_wide.png
-SHA1-Digest: p3Xdpzcg7MxW35Cy2T27Cjlu3R0=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_bluetooth_connected.png
+SHA1-Digest: 4xR15aDAVDa80SkJG4uWNwgqwps=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_h.png
-SHA1-Digest: +cyXIaTh2Q9En/3vrpRRynT3S18=
+Name: res/layout/system_bar_input_methods_item.xml
+SHA1-Digest: 98KrGeZdquObrgA5ghfTKtIlSCc=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_h_wide.p
- ng
-SHA1-Digest: 3x43Gn8pDTkMpfuq56yfogcIf6g=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_4g.png
+SHA1-Digest: h4S4SiLN+4Uh18WknwQV+SGGm6U=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_g_wide.png
-SHA1-Digest: pZQvvrNgxrjZlHgGjMNUg2TxAzk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_2g.png
+SHA1-Digest: wpubX7F7MaYP4+0mktHiUwK/KCg=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_0_wide.png
-SHA1-Digest: BlH8gksl+57PuqGRHpk9KDBJ9t4=
+Name: res/drawable-sw600dp-mdpi/stat_sys_roaming_cdma_flash_anim1.png
+SHA1-Digest: fEaJewKNc7VVSfGEGNHS4ofnDIA=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_1.png
-SHA1-Digest: qsUioi6Kl/oEIWMpT0MMVduFyJQ=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_2_wide.png
-SHA1-Digest: h9U310M55u2o38Lov1B+Vi0mvsI=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_2_wide.png
-SHA1-Digest: 8qvtVlBxkY3SrA6Tw6WCLy+42tY=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_corrupt_sim_wide.png
-SHA1-Digest: ehSermojaotDx67qoKlYlx9DSLg=
-
-Name: res/drawable-hdpi/ic_qs_signal_full_1.png
-SHA1-Digest: Jb2VJ1YcJoH3/QfXFo2RK6bQdYg=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_1_wide.png
-SHA1-Digest: 5ZKpZXVyDyx8ZLNvwhNGEaCp2cU=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_data_in_waves_1_bar_wide.png
-SHA1-Digest: WsrXFWafwaSqrBHTRzFb48u6Wxc=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_4_wide.png
-SHA1-Digest: DC7pUteP+grLtWMXV1V5xGUAxLo=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_4g_lte_wide.png
-SHA1-Digest: QSBooymqoevTXQNZdA3OxpD8368=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_3g_plus_wide.png
-SHA1-Digest: Cbh5AJ3tSFkLYZXTD60mpB9SsUQ=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_2g_wide.png
-SHA1-Digest: 7ZPpnHfVTKXaqu3bhbB1m1+CaZA=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_full_4_wide.png
-SHA1-Digest: rg116vm1oD8oO/oQzY56bcvNCaI=
-
-Name: res/drawable/ic_notifications.xml
-SHA1-Digest: zlt3Od2Ka5bTL6r53l8l+hDlLtw=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_suspended_h_wide.png
-SHA1-Digest: WPx5s5vB3GYE03FgNrhjzD/u2xg=
+Name: res/drawable/zz_moto_vzw_stat_sys_roaming_cdma_custom3_flash.xml
+SHA1-Digest: 8wK0AdcEuEKo4ENZucO5e18nlEs=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_back.png
-SHA1-Digest: 9IZOzP6oo7G1CiLrUYz6V/Z7dRc=
+SHA1-Digest: 81FEWDyO0yhjcptFDlT/wnzqmMA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_0_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_2g_null.png
+SHA1-Digest: AX5VCkO/LYgPxrAV3yej/k1Sxiw=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_idle_wide.p
- ng
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_roam.png
+SHA1-Digest: xuMSqiZAQrUie/+V57j1stKmMvo=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_0_wide.png
-SHA1-Digest: zqVi5XwhCtR5wsnAIbJKMhmYNAg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_low.pn
+ g
+SHA1-Digest: P8E9+IOAc4XmWNz/8w94RX9HI2Y=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_anim1_full
- y_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-hdpi/ic_sysbar_ime_default.png
+SHA1-Digest: qnwS8swJOdprEsrC8C6RB9GA9Vg=
 
-Name: res/drawable-hdpi/ic_qs_alarm_on.png
-SHA1-Digest: Bphsua/PJd1X1Z0MfQcmZfBP41A=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_2_fully.png
+SHA1-Digest: kZkx6gTFX+0NAbNG0uKRH/e2dFs=
 
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_custom3_flash.xml
-SHA1-Digest: SxwSpNOSOI4tzlxkLz70YXw6XB4=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_idle.png
+SHA1-Digest: 8gWPxr7tymt5M77ntvr5v9mIpYU=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_signal_inout_wi
- de.png
-SHA1-Digest: 9/MuklO0pS0OLj5XabbTZyX+U7c=
+Name: res/drawable-mdpi/stat_sys_wifi_signal_4_fully.png
+SHA1-Digest: MDaRP/BKg3LmOezOm75vH3FO3/Q=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_2_wide.png
-SHA1-Digest: Ay8GuomTEJyv2pi/qDHJr2bbTPM=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_2g_wide.png
-SHA1-Digest: BeOPCsi+blGwx9QbwqwCyl1UsHE=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_1_fully.png
+SHA1-Digest: P6VtNflyWh7ZWOE4L4ZdqowmR6g=
 
 Name: res/drawable-hdpi/stat_sys_signal_4_fully.png
-SHA1-Digest: GmWvECBsnBuphszDctKQTKiRdqo=
+SHA1-Digest: 9OW62LHlCnUHVj5mNYJGKgh88FY=
 
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_3g.png
-SHA1-Digest: THORVFwXL0uvjJikCRPadP/4ARQ=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ 2g.png
+SHA1-Digest: tbPd+Nfld5Jz4JshNACD4gxGLag=
+
+Name: res/drawable-sw720dp-hdpi/stat_sys_battery_charge_anim71.png
+SHA1-Digest: 4L9c9DXToNqGYng+qwEmZL+eSNs=
+
+Name: res/drawable-hdpi/stat_sys_data_connected_3g.png
+SHA1-Digest: uo+eNWbQqUxbX4KZsCGeXP82Ob4=
+
+Name: res/drawable/hd.xml
+SHA1-Digest: ghhm9WbPv8vKm97chDmyg65t0oc=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_flightmode.png
+SHA1-Digest: S3RxD0a1cYeO7phJHVsx497vYU8=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_back_land.png
-SHA1-Digest: mHOutmBYO4kv25U8Z4DMRQVE/GU=
+SHA1-Digest: pijFyfa/wfis7BQ3DrkEk7C0dUc=
 
-Name: res/drawable-nodpi/dessert_eclair.png
-SHA1-Digest: kdU7g3pL/3lwy4n9gSWxytmT454=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_3g_plus_null.png
+SHA1-Digest: gcFhHm/VrbKJOFXpmw80hWAHkE8=
 
-Name: res/drawable-hdpi/ic_qs_wifi_0.png
-SHA1-Digest: ckf7DqrrYJgHrAagzJnh3XPEWmU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_g_waves.png
+SHA1-Digest: kdnbnytSXk7e7iL5Lo6xgvw9xGc=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_4_wide.png
-SHA1-Digest: aagk7oEy6j7erZ6EWkxerDKzMok=
+Name: res/drawable-sw720dp-hdpi/notify_panel_clock_bg_pressed.9.png
+SHA1-Digest: IzjHCetzHyvbqX9MlqkFOjnbUzA=
 
 Name: res/drawable-hdpi/stat_sys_roaming_cdma_0.png
-SHA1-Digest: prIWHuSSj7ES7Sc4gwpflUughG0=
+SHA1-Digest: gVjtX44HAGcBA8+13+AwejRgBfw=
 
 Name: res/anim/notification_buttons_out.xml
 SHA1-Digest: x60C7ofL7bc4Y7hxb4caKXyM36w=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_0_fully_wide.png
-SHA1-Digest: nd85x/pZchVJOPCc4d0fh1XfU5I=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_3.png
+SHA1-Digest: O6+ZvI5Pi5idrsBVMXOTaL+cr/c=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_3g_plus_wide.p
- ng
-SHA1-Digest: A9s5+YT4LpTjRi6nYnsuNUBr3YQ=
+Name: res/drawable-hdpi/btn_default_small_normal_disable_focused.9.png
+SHA1-Digest: pplvBfslQHSLojuI2+umv2p+UMI=
 
-Name: res/drawable-hdpi/search_light.png
-SHA1-Digest: pumhnj1Nobwachx+GfuRyKQD5QE=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_fully_connected_
+ 4g_lte.png
+SHA1-Digest: jF7YrL9HMR8eIpcY+B+icWJ9bRw=
 
-Name: res/drawable-hdpi/ic_qs_brightness_auto_off.png
-SHA1-Digest: nk3Z0sWzRCsrcNUF5znQ4BgodSE=
+Name: res/drawable-sw720dp-hdpi/recents_blue_glow.9.png
+SHA1-Digest: v8u/eURXy4evUMRz269W4JcYFE8=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_4g_wide.png
-SHA1-Digest: NEeKxPKyxMEKufR/4QWF73dC83Q=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_si
+ gnal_inout.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_signal_inout_w
- ide.png
-SHA1-Digest: 9/MuklO0pS0OLj5XabbTZyX+U7c=
+Name: res/drawable-sw600dp-mdpi/stat_sys_wifi_signal_0_fully.png
+SHA1-Digest: 4UD20VaFHtraGDhKcZpsBq6mz48=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_4g_waves_wide.png
-SHA1-Digest: /CV+ZuX2a7fKD+5idiaqXYrhZPE=
+Name: res/drawable-sw600dp-hdpi/zz_moto_vzw_stat_sys_roaming_cdma_flas
+ h_femtocell_anim0.png
+SHA1-Digest: PSTJft8jgfxGw/GQiJu8FdIwluI=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_in.png
-SHA1-Digest: aeK5FAo9zChu1/WyBFKJrFVd+6o=
+Name: res/drawable-sw720dp-hdpi/stat_sys_signal_1_fully.png
+SHA1-Digest: 23vbZymsaBL95bwsbDPb2gF3VwU=
+
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_disconnected.png
+SHA1-Digest: hdEIJzOWD9w8hGlkxSSDIU2UyCU=
 
 Name: res/drawable/notification_list_shadow.xml
-SHA1-Digest: FBO7abjes+ToqWKMJkTSrxuoBi0=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_2g_wide.
- png
-SHA1-Digest: skA1uDJr8LWX33RKSf/VTXZ8SbM=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_signal_in_wide
- .png
-SHA1-Digest: FoiaKzpmvG5LYRzNqSv69f3dscc=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_wide.png
-SHA1-Digest: ByTRcXbOP5HZMll0o4JMp6OsN1I=
+SHA1-Digest: PIKQMoVHTgdUURn3FUQnwImJ1DM=
 
 Name: res/drawable-hdpi/stat_notify_image.png
-SHA1-Digest: sgKMvoUMayHXgaNa1Mb9+rKJy7M=
+SHA1-Digest: fQhJr1VFJo7KugvR4tQ3x+qvtGs=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_3g_plus_wide.png
-SHA1-Digest: p55As3ae4EObUGcDdrSBvOxmFTg=
+Name: res/drawable-hdpi/ic_notify_quicksettings_pressed.png
+SHA1-Digest: Rm9A6dHUS3kfXsyl81PB9VY7bsQ=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_recent_land.png
-SHA1-Digest: /zMo0xa4naQ3kqYqI1rC8hXK3rM=
+SHA1-Digest: Cx2yZkdWqKkn68pD2fXuYR9N+KM=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_2g_wide.png
-SHA1-Digest: 7ZPpnHfVTKXaqu3bhbB1m1+CaZA=
+Name: res/drawable-hdpi/stat_sys_data_connected_h.png
+SHA1-Digest: TrBhWzvfeqraaMeNi6e/ZQTfscs=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_inout_wide.png
-SHA1-Digest: 6PoXq4N8BbNdmryHL+kIPPlTqN4=
+Name: res/drawable-hdpi/compat_mode_help_icon.png
+SHA1-Digest: J2vH+UanHqLrCCYtrjQjxORzrpc=
 
-Name: res/anim/recents_launch_from_launcher_exit.xml
-SHA1-Digest: gZRO0+wVYY2Xl7Zh1TIWYrKkLc4=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_hplus.
+ png
+SHA1-Digest: texiCTkioiXZ1MdYzMSRgBGx0EA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_3g_plus_wide.p
- ng
-SHA1-Digest: p55As3ae4EObUGcDdrSBvOxmFTg=
+Name: res/drawable-hdpi/ic_notify_rotation_off_pressed.png
+SHA1-Digest: U7/c2n1GM/XNHGrRdre7QIyruFs=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_g.png
-SHA1-Digest: 4E5wkV1khhQlMCMsTJm510sDHA4=
+SHA1-Digest: gfUq9LYKzAkm6ZNSYBFL7Eug/yA=
 
-Name: res/drawable/zz_moto_ic_qs_signal_roaming_cdma_flash_femtocell_w
- ide.xml
-SHA1-Digest: ZlBSwygxMhnZpOMo3pfd1NyBzkI=
+Name: res/drawable-hdpi/btn_default_small_selected.9.png
+SHA1-Digest: hT2kOQxjzVcutrGa0VTK0nQF/zE=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_4g_wide.png
-SHA1-Digest: XT3D7H4FQCPKjydKjZX+jZ2ELLo=
+Name: res/anim/recent_app_leave.xml
+SHA1-Digest: +9TLhjIVIMUHQr8aLiyhW5DVRo0=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_custom
- 3_anim1_wide.png
-SHA1-Digest: 3UM57UJ8DdlHNFi6UoKB6dxqLJo=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_2_fully.p
+ ng
+SHA1-Digest: xKX5x4mdiy/aQYFjE9PZbE0c/2o=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_5_wide.png
-SHA1-Digest: W5ykqRCf3wFzpiyj7K1ncYFXhcI=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_3g
+ _plus.png
+SHA1-Digest: 6a6CwLs99KSGJajkrWqL9xVZyV0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_6_wide.png
-SHA1-Digest: hVpXEOpAnU4XS+0aeHQFSzm1Gkc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_4g_waves.p
+ ng
+SHA1-Digest: 2kKNlNhJbmU0OPqOdDmITQ5A7ZQ=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_2_wide.png
-SHA1-Digest: aN4MAsG8lji/fDwAwCtFCuaik6k=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_0.png
+SHA1-Digest: KjcyhUxtNX2zpezTXPKCTPHsNdQ=
 
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_femtocell_flash_fully
- _wide.xml
-SHA1-Digest: wIxONDjyWXY/hnFUg0zBmZkLrbo=
+Name: res/layout/compat_mode_help.xml
+SHA1-Digest: 86UfjpPIP2uV7Z45KLBlvP5stSY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_0_wide.png
-SHA1-Digest: 9trVyTsrVqc9zEy4XU0Yc5ADh+E=
+Name: res/drawable-mdpi/stat_sys_data_wimax_signal_1.png
+SHA1-Digest: 4de3gf/Wna5rIOM32YK/N63dlHY=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_g_waves_
- wide.png
-SHA1-Digest: f4zEKqNbzWnMnyOOoynu8iywQjo=
+Name: res/drawable-hdpi/compat_mode_help_divider_top.9.png
+SHA1-Digest: KB2p5lUeZfYnj+m8MUaVd4Kf5jI=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_roaming_cdma_flash_femtoc
- ell_anim1_wide.png
-SHA1-Digest: 3UM57UJ8DdlHNFi6UoKB6dxqLJo=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_1_fully.png
+SHA1-Digest: vHv25va5taAI/5ToJWRITTp2XQw=
 
 Name: res/anim/search_launch_exit.xml
 SHA1-Digest: /eDty1Vttwt3lRMqwyfYk/WxMMA=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_airplane_on_wide.png
-SHA1-Digest: h1es4J/Xzp3KV8A4D/fU6Adjhn4=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_idle.png
+SHA1-Digest: cNkZxRFFjzp3A80S6rqhsEKNgdw=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_emergency_only
+ .png
+SHA1-Digest: IR3tcH8fN2EGz0wNuhzaDkfIKV0=
+
+Name: res/drawable/zz_moto_stat_sys_data_bluetooth_charging_below_25_a
+ nimation.xml
+SHA1-Digest: wF+XkY1z9TDg/vpBcs6aqc/5XT8=
 
 Name: res/layout/status_bar_expanded_header.xml
-SHA1-Digest: 7IGUFdHrinkE+XCUZJTMMqIFOIc=
+SHA1-Digest: o0fjOzr6t6XKoel41+hdus2+nHE=
 
-Name: res/anim/wallpaper_recents_launch_from_launcher_enter.xml
-SHA1-Digest: +pRVRVDlJk9K7OdV8+JnukGLKRs=
+Name: res/drawable-sw720dp-hdpi/stat_sys_data_connected_g.png
+SHA1-Digest: b6iJaNakEoBdE7zAcHnLGAWRriY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_no_network_wide.png
-SHA1-Digest: 6ZR3IlYlbd1HrUPn9HXA4gRfIyA=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_connected_no_b
+ attery_report.png
+SHA1-Digest: Le9EYRhg0HWKb6WZD7oQ+xV76zE=
 
-Name: res/layout/quick_settings_tile_monitoring.xml
-SHA1-Digest: nvapN8j+cJpVyxU0FGmx4Z0hSPg=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_h_null_wide.png
-SHA1-Digest: KyUPviDlJPCrEbmv0hc1aykGEo0=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_attached_signal_in_wide.
- png
-SHA1-Digest: FoiaKzpmvG5LYRzNqSv69f3dscc=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_0.png
+SHA1-Digest: gdbuUwwCocvZ6OEafyeBAWQmK98=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_back_ime.png
-SHA1-Digest: EHn/D4gAYLaz9lbvLHbKE/dYMoM=
+SHA1-Digest: JezFkPa2/IGIPNuqx7P/pzXFpaw=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_signal_0_fully.png
-SHA1-Digest: ZhUw45dAeSrj8e2opx7C2ONhHrM=
+Name: res/drawable-nodpi/redbean1.png
+SHA1-Digest: HhkM1VkOf4Lm/j7RhJ4qq1vCE30=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_3g_wide.png
-SHA1-Digest: ZJkDEJGqpIG9c1zJM5+U16UvMGk=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_signal_5bar_4.png
+SHA1-Digest: 6aZaMj5aX9JafGGLEmWIvxuTRV0=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_roaming_cdma_flash_custom3_an
- im0_fully_wide.png
-SHA1-Digest: yTBLanOCI7TL0tkXOI1rZUKxHxo=
+Name: res/drawable/pocket_drag_bg.xml
+SHA1-Digest: 2f+0qN7NZ7msK3c9ddSTkwCv3Pc=
 
-Name: res/drawable/zz_moto_stat_sys_data_in_waves_animation_wide.xml
-SHA1-Digest: v/NgjCP0ZtR92VPGZFYC3fynSXs=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_3g_null.png
+SHA1-Digest: EMpkCd60N75CWE6EeRnen4V9uKA=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_g_wide.p
- ng
-SHA1-Digest: F5KDTUPAC8LK3eQUunDmV0ug8xI=
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_signal_3_fully.png
+SHA1-Digest: Uyk+icAuB2uXvFRBsMfFYVwXhOU=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_g_wide.png
-SHA1-Digest: F5KDTUPAC8LK3eQUunDmV0ug8xI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_in_waves_2_bars.pn
+ g
+SHA1-Digest: tWhNBpcwZ5YDaL9dYgCps8lKxzw=
 
 Name: resources.arsc
-SHA1-Digest: 9KMBmh82NLQNPtw7tNO1jDpi7uE=
+SHA1-Digest: HT/ruPR0tmyLaJDSkBAOQbMxTdc=
 
-Name: res/drawable-hdpi/ic_qs_signal_e.png
-SHA1-Digest: 8yTY+v9KhhklgV2Y1wkcfcIi2Ow=
+Name: res/drawable-hdpi/ic_notify_rotation_on_normal.png
+SHA1-Digest: OEUvDHOR0tUGh8E1wI5I3G0lIUc=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_full_4_wide.png
-SHA1-Digest: gwv0Z7xi0fZIMIjNbrol2yiCnlI=
+Name: res/drawable-hdpi/ic_notification_open.png
+SHA1-Digest: JfFFYpcVLWrOG49RT3N6WqQbCs0=
 
-Name: res/drawable-hdpi/ic_qs_signal_full_4g.png
-SHA1-Digest: 5CbZcrx8qmBMw1NtgJOYjO/TtFU=
+Name: res/drawable-hdpi/stat_sys_data_connected_1x.png
+SHA1-Digest: ruL27SrrzUKl3e8DIbB6iTozl7o=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_1_wide.png
-SHA1-Digest: lNJZ4Icplp8G9+5zl84D6dcgR6E=
+Name: res/drawable-mdpi/ic_sysbar_quicksettings.png
+SHA1-Digest: vRBlTQsSOm6F4TiNAqwpmbbqSYo=
 
-Name: res/drawable-hdpi/ic_qs_ime.png
-SHA1-Digest: mynRnm+0d40CqrBiQSuNY/nN/UY=
+Name: res/drawable-mdpi/stat_sys_signal_2_fully.png
+SHA1-Digest: 8SkiMKLRLoq3m/Y0G91ErL8jYmY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_2_wide.png
-SHA1-Digest: HGI/7RI3wQ0aUj+l0I986eTC8sw=
-
-Name: res/layout/quick_settings_tile_wifi.xml
-SHA1-Digest: fiGK757DIJE3ENQC6dzV+QEOoHo=
-
-Name: res/anim/wallpaper_recents_launch_from_launcher_exit.xml
-SHA1-Digest: NduFVTTm7s3UyZJteXE/zathSXc=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_1x_null_wide.png
-SHA1-Digest: JPda0XVfZat35N/CK+pnjvmeI+s=
+Name: res/drawable/navbar_search_handle.xml
+SHA1-Digest: +C46GRjPfN0oqAFOyl1rgrgX6cg=
 
 Name: res/drawable/zz_moto_stat_sys_roaming_cdma_flash_femtocell.xml
-SHA1-Digest: sIUVwZek1cjBqdvOQf8jMptse7Y=
+SHA1-Digest: pM/+iQsTAAk95S6yK7j4I9SEy/Q=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_out_wide.png
-SHA1-Digest: 9HfhKNSiMaTsXG5uf/s8+O3c0A0=
+Name: res/drawable/stat_sys_battery.xml
+SHA1-Digest: doeoB8JJWHGmY2HC0ZCPMHVZKro=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_lte_w
- ide.png
-SHA1-Digest: fhxZ9Env376Dq6Dt7JxOj5zY2iQ=
-
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_flash.xml
-SHA1-Digest: 2vFwKLpzq1m62pOzAC6lez2rxEE=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_5_wide.png
-SHA1-Digest: ScYf/l8dqfCJ4AdkEXIVbTFmnqc=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_2.png
-SHA1-Digest: 3TeM31nw224r9OcLAbh1Dpw/6Rg=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_2_fully_wid
- e.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_fully_connected_h.png
+SHA1-Digest: q1sccxnvFvY8DieHDUl7FT70GlQ=
 
 Name: res/drawable-sw600dp-hdpi/ic_sysbar_lights_out_dot_small.png
-SHA1-Digest: SS0ti7yRwcC/Gof2y00AIXW5dow=
+SHA1-Digest: K95lJeAO6WZLtdkxlbWeTZKv3AA=
 
 Name: res/layout/status_bar_toggle_slider.xml
-SHA1-Digest: +QuARpsodnAFu4RM5Pz19l8sy9o=
+SHA1-Digest: PiEK/n+FLH/TIiXfRa+Q6wRIQbU=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_3_wide.png
-SHA1-Digest: qf6+IrXgsKitH9os4YpKh9XYwbQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_2_bars.png
+SHA1-Digest: aEoZUwiMMBN2e7II2KTVcn14Vys=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_no_network_wide.png
-SHA1-Digest: LP7zP7KiH+hkhzxXdB40otx2yyw=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_in_waves_3_bars.png
+SHA1-Digest: EA68P3hFHLIMbf9AYBtTx0HP+G8=
 
-Name: res/drawable/zz_moto_stat_sys_data_fully_out_waves_animation_wid
- e.xml
-SHA1-Digest: 5xet8EMB/sO+UEY4wAeiQPFLUCM=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_signal_inout_w
- ide.png
-SHA1-Digest: 9/MuklO0pS0OLj5XabbTZyX+U7c=
-
-Name: res/drawable-ldrtl-hdpi/ic_qs_signal_full_4g.png
-SHA1-Digest: XjPh0zlHdfz/00r2TYL6/qA7cyw=
-
-Name: res/drawable-hdpi/ic_qs_wireless_display_connected.png
-SHA1-Digest: x9zFR8CLSrbB6gmn5xzGiGl3uGg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_connected_4g_lte_waves.p
+ ng
+SHA1-Digest: hHWWZ83mg37uqwrTQ8JwHvFTyXc=
 
 Name: res/drawable-hdpi/stat_sys_signal_null.png
-SHA1-Digest: /1tnRS5FHI5uOFuru4i5AFaHVdM=
+SHA1-Digest: Y65+yoAAijRFRegLXzP/Y+NmR7Y=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_g_wide.png
-SHA1-Digest: aR8xG5TjKI0ndj/jXwxcXXIrpZ4=
+Name: res/drawable/intruder_window_bg.9.png
+SHA1-Digest: jTKRufuwW69ua3Z4z6ELpY6JBwY=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_attached_h_wide.png
-SHA1-Digest: WPx5s5vB3GYE03FgNrhjzD/u2xg=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_2g_null.png
+SHA1-Digest: +JKD1gizP9ig8IvcTx9GysgeHZs=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_null_wide.png
-SHA1-Digest: wAawx92XXugFAOGEAKCLO/5xpyg=
+Name: res/drawable-mdpi/stat_sys_data_connected_h.png
+SHA1-Digest: Sm2BL9o0DN1mzEAB/tEtylV6A8A=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_e_waves_wide.p
- ng
-SHA1-Digest: VxbZ/m0IED0ZI+wvE1Ph32dQvWQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_3g_plus.pn
+ g
+SHA1-Digest: lU7o3hMxgJMlUkhZ7Quj5loI/z0=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_0_wide.png
-SHA1-Digest: pE1+1ojImthze99QivwWeGbXkXk=
+Name: res/drawable-sw720dp-hdpi/notification_panel_bg.9.png
+SHA1-Digest: 2N2iT3YatJrq1s16r1U6NZ6U3Lk=
 
-Name: res/drawable-nodpi/dessert_flan.png
-SHA1-Digest: SHGlL56DSvRKw4Ea9hTuDFJRIFg=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_signal_in.
+ png
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
 
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_flash_femtoc
- ell_wide.xml
-SHA1-Digest: AuLI9p6Zl/omPMncfKaUm+qScFE=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_e.png
+SHA1-Digest: cOIx3pJalLDwFZDxPnOznLshrsg=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_full_6_wide.png
-SHA1-Digest: TwWA/wo0ncbmpnJtGCCD7CBqXcY=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_2_fully_wide.png
-SHA1-Digest: 5Ba05AyUTQh40XXQBqape751P/U=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_1_wide.png
-SHA1-Digest: jFWBERA3l4BzYDTEd9ZC1bUSMc0=
+Name: res/layout/system_bar_pocket_panel.xml
+SHA1-Digest: CcuptKobTfBi3YvRpZQcRfUCU4k=
 
 Name: res/drawable-hdpi/ic_sysbar_menu.png
-SHA1-Digest: 9RdavoETOJtzrkiix0s0hE0L3kY=
+SHA1-Digest: nR1Nqn6LITfDGhBR1dZnas46UAY=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_2_wide.png
-SHA1-Digest: xITTjhyELUIChqmqL6g5GRz0Wd0=
+Name: res/drawable-sw720dp-hdpi/stat_sys_wifi_signal_4.png
+SHA1-Digest: 0iZiDwEgBEg1Fb4Xg8CgGliMpcw=
 
-Name: res/drawable-hdpi/nav_background.9.png
-SHA1-Digest: 90SkzOHGIZ8uijAXUuBfxfdJQfc=
-
-Name: res/drawable-ldrtl-hdpi/ic_notify_clear_normal.png
-SHA1-Digest: 1QVj30jhP/fur3N+HJoalMVwhko=
-
-Name: res/layout/quick_settings_brightness_dialog.xml
-SHA1-Digest: PCyvhdJOBdnDd/P5jJA4Yyjvh18=
-
-Name: res/drawable/zz_moto_ic_qs_data_inandout_waves_animation_wide.xm
- l
-SHA1-Digest: 62vCq2ZUDdHZWo4yYnYa55seHh0=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_6bar_4_fully_wide.png
-SHA1-Digest: 0cD7WYsYTyZPx/lRctOOhQPMlos=
-
-Name: res/drawable-nodpi/dessert_ics.png
-SHA1-Digest: RLTN+QBhzpzV5GLU6slFSnhmzMI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_hplus_null.png
+SHA1-Digest: xkNfRTqWmyphZAXREdmbhyZYOyc=
 
 Name: res/drawable-hdpi/top_divider_glow.png
-SHA1-Digest: PEMOW2dQKyRpgBKNrAC2qREqwwQ=
+SHA1-Digest: sK0WBsEE8/4eytuQUqjhuZ9M9Gk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_2_wide.png
-SHA1-Digest: HGI/7RI3wQ0aUj+l0I986eTC8sw=
+Name: res/drawable-hdpi/stat_sys_battery_charge_anim43.png
+SHA1-Digest: IUPDghxMoePW6II/F1GA5oGLrC8=
+
+Name: res/drawable-mdpi/stat_sys_signal_1.png
+SHA1-Digest: 9jedTshIm9ua0d0uCMYHUDBFJrk=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_2g
+ .png
+SHA1-Digest: Mt2wsC7EyDmBjCI3laminxoBO2E=
+
+Name: res/drawable-sw600dp-hdpi/stat_sys_wifi_out.png
+SHA1-Digest: UdWTffgJSHveGBXobYP9dZ0sv9Q=
 
 Name: res/drawable/navbar_search_outerring.xml
-SHA1-Digest: dqTRKgySbasQ/dppIAe4gp3JXXI=
+SHA1-Digest: l6u1OrgQSCZTjEKXNg2wi4GslLw=
 
 Name: res/drawable-hdpi/stat_sys_ringer_silent.png
-SHA1-Digest: HdSRWMvQLAfsYz5n2UkZ1PKeys0=
+SHA1-Digest: vmrYLwv/lg0mXkaML1RY/SeGy88=
 
-Name: res/drawable-ldrtl-sw600dp-hdpi/ic_sysbar_back.png
-SHA1-Digest: esBqXjK8S1OG995xLC3xtxQ7fgg=
+Name: res/drawable-mdpi/stat_sys_signal_4.png
+SHA1-Digest: zG2lJL2/CX59NNN6N1sidlwbbIM=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_signal_out_wid
- e.png
-SHA1-Digest: SDBkholj5qbUnj6ohbQ6Q7JXOYQ=
+Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_2_fully.png
+SHA1-Digest: McsKmTbs76FH1sQ6n+PlEaid2bE=
 
-Name: res/drawable-hdpi/ic_qs_bluetooth_off.png
-SHA1-Digest: GvXcnALMh5+HXWPruEUKr9dRHwI=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_signal_i
+ nout.png
+SHA1-Digest: Yhj2WLq+/e4c+hAZlqR20ovyorA=
 
-Name: res/drawable-hdpi/ic_qs_signal_3.png
-SHA1-Digest: m0R+84CGJ/WvXIwO4BoschVNinU=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_h.png
+SHA1-Digest: iH8Is6ssO9knKn0+i0m2C5vSueQ=
 
-Name: res/drawable-ldrtl-hdpi/stat_sys_data_fully_connected_1x.png
-SHA1-Digest: lJBktD4TSFRTiVKJjD2MYVcbHGo=
+Name: res/drawable-mdpi/stat_sys_roaming_cdma_0.png
+SHA1-Digest: ZZfGDD+OBJ4DEBw9DrJpsg716+Q=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_wifi_in_wide.png
-SHA1-Digest: aeK5FAo9zChu1/WyBFKJrFVd+6o=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_3_fully_wide.png
-SHA1-Digest: 185V4CwuLbb7oXhOMjJZGqfaHyw=
-
-Name: res/drawable-ldrtl-hdpi/ic_notify_open_normal.png
-SHA1-Digest: lM3ymndZRtGGXOO88bdBFqPyxk4=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_waves_no
- ne_wide.png
-SHA1-Digest: Qkr3Eh8dKiI8nV7cNHddqKM6feY=
-
-Name: res/drawable/zz_moto_stat_sys_roaming_cdma_flash_fully.xml
-SHA1-Digest: yk67ERU8fsAtnduOF1BIXD+Y0BY=
-
-Name: res/drawable-hdpi/ic_qs_signal_r.png
-SHA1-Digest: Di9y24TWXeLEn+z2H0FK4C71Z8w=
-
-Name: res/drawable-nodpi/dessert_petitfour.png
-SHA1-Digest: ubhWddnxWmyC7iW6bgIh+y+P2kY=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_6bar_4_wide.png
-SHA1-Digest: MJenfJykM90vP/yZ/EEJuLUO2WI=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_4_wide.png
-SHA1-Digest: 6FBZKqvD7I1fGNS1172nUT85t9g=
-
-Name: res/drawable-ldrtl-hdpi/ic_sysbar_recent_land.png
-SHA1-Digest: WXS1NpfH7hpTF9YdfFsyP1K0guo=
-
-Name: res/drawable/zz_moto_ic_qs_signal_full_roaming_cdma_custom3_flas
- h_wide.xml
-SHA1-Digest: RzCQP3lPsGlyVO9MAKXWy+rU7ow=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_suspended_h_wide.png
-SHA1-Digest: nhkZ2o89FGDa2LqSHlOuqkel27Y=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_3g_null_wide.png
-SHA1-Digest: A+eVUKr2/gv8t7vtmdwD5GFSKOM=
-
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_5bar_1_wide.png
-SHA1-Digest: NGKBzanmjf/jUt8CtolGzxrZMVA=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_corrupt_sim.png
-SHA1-Digest: ehSermojaotDx67qoKlYlx9DSLg=
+Name: res/drawable-sw600dp-hdpi/stat_sys_data_wimax_signal_1.png
+SHA1-Digest: +SBNW3SRdrNS7d3N+stIo3IvZ7w=
 
 Name: res/drawable-hdpi/ic_sysbar_lights_out_dot_large.png
-SHA1-Digest: 6XT6NrVf+VKfephLJoymvn81BHs=
+SHA1-Digest: iTq6ZnXZ10q+dViohUMLwlqJLi4=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_1_fully_wide.png
-SHA1-Digest: bX7FscvCqjxpG+nxMNs0oQ0Ip6U=
-
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_2_wide.png
-SHA1-Digest: w/50kWEVBrjwgSdQOJmenBlj2Nw=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_e_null.png
+SHA1-Digest: IlZF4N+knWNn9qUAwbdHxf6TPPI=
 
 Name: res/drawable-hdpi/stat_sys_data_fully_connected_h.png
-SHA1-Digest: emwmne7ok31op4sME/pj0Af1hTI=
+SHA1-Digest: WbMU70R/a2U2z1l8mbEPjgFftz8=
 
-Name: res/drawable-hdpi/ic_qs_signal_lte.png
-SHA1-Digest: nKJ+E3eKE9sBcgtIJcgWAFKjS8c=
-
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_wimax_signal_2_wide.png
-SHA1-Digest: ulb9rb+LUVz6OLeaekpQbXxTp9w=
-
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_4g_wide.png
-SHA1-Digest: ByTRcXbOP5HZMll0o4JMp6OsN1I=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_4g_null.png
+SHA1-Digest: mfaFvaBwubhQRGK/Hr4c7dQ3kok=
 
 Name: res/drawable-hdpi/screenshot_panel.9.png
-SHA1-Digest: e4POPyWA77Ou6gchUwOgAeWfs8M=
+SHA1-Digest: 5Cgul7iUnW8uaXqK61NTtF4FVY8=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_wifi_signal_3_wide.png
-SHA1-Digest: otsQIKVTRQ7GGAtmoyns0oy6lu0=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_in.png
+SHA1-Digest: +Pn2a2L2pyggmwqqsnF4jAKBB24=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_signal_5bar_null_wide.png
-SHA1-Digest: 5066NsX4mNoxOM/OqWbN6OKNACA=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_connected_g.png
+SHA1-Digest: 1Xa08KZs8srBCBjw+ywKbSfvs+Y=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_e_waves_
- wide.png
-SHA1-Digest: oADA4/HPFJ7DrKDPao4lSMkodGo=
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_bluetooth_battery_chargi
+ ng_0_4.png
+SHA1-Digest: +ufdSYOYmFIPHOOfu35pprA5pzk=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_5bar_full_0_wide.png
-SHA1-Digest: zqVi5XwhCtR5wsnAIbJKMhmYNAg=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_wimax_signal_0.png
+SHA1-Digest: pOlhPaPsX68Sq8vHjZCtfk9L0l0=
 
-Name: res/drawable-hdpi/zz_moto_ic_qs_signal_full_h_wide.png
-SHA1-Digest: 3x43Gn8pDTkMpfuq56yfogcIf6g=
+Name: res/drawable-sw600dp-hdpi/stat_sys_signal_2.png
+SHA1-Digest: C1bAPevCxYtg6hEiPl/727+MRTI=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_connected_signal_in_wide
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_not_connected_signal_out
  .png
-SHA1-Digest: aagtdzbyaxLNU+mUAvC2YRPp+Yg=
+SHA1-Digest: X7zstQAajds4PyZpt7LNOWAox8s=
+
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_3g_null.png
+SHA1-Digest: Z9Q/fYcsmZ+L/hRNvPFsq2ZPTtM=
 
 Name: res/menu/notification_popup_menu.xml
-SHA1-Digest: 5mM3XkidWFjFpEyRW4YRQGzoLFQ=
+SHA1-Digest: c4AXvXWLcATE0HCXpXAFCFVcxjs=
 
-Name: res/drawable-mdpi/zz_moto_stat_sys_data_fully_connected_hplus_wi
- de.png
-SHA1-Digest: 18Benz3nWcO1Meic05tVFctmZrw=
+Name: res/drawable-sw600dp-hdpi/zz_moto_stat_sys_data_not_connected_4g
+ .png
+SHA1-Digest: QqrHobaMd+CYdMxCBqKLYwu7xyc=
 
-Name: res/drawable/heads_up_notification_row_bg.xml
-SHA1-Digest: vtXCbzS768OmnXZ3HGX7jVxxHr8=
+Name: res/drawable-sw600dp-mdpi/stat_sys_data_connected_h.png
+SHA1-Digest: vPb5C70Kezlfuam8aw+tgu5nEOk=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_e_wide.p
- ng
-SHA1-Digest: jju2GPtKdywsfCRGEnnFTHCZf+4=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_null.png
+SHA1-Digest: xJcSnc7LUafR1uZwlsyReWmGGsk=
 
-Name: res/drawable-mdpi/zz_moto_ic_qs_signal_full_hplus_wide.png
-SHA1-Digest: 18Benz3nWcO1Meic05tVFctmZrw=
+Name: res/layout/system_bar_notification_area.xml
+SHA1-Digest: mv0TOa1ujtReOC9fFVSbRr8D2jQ=
 
-Name: res/drawable-hdpi/zz_moto_stat_sys_signal_5bar_4_wide.png
-SHA1-Digest: bSIxOeCqlMcZD0ZCM4lRUK80NqA=
+Name: res/drawable-sw600dp-mdpi/stat_sys_signal_0.png
+SHA1-Digest: nzouiBG8b1w2haoI8aBUvBNk9Q4=
+
+Name: res/drawable-hdpi/stat_sys_battery_43.png
+SHA1-Digest: 3bsouYNYDjEDLgyULWOpQzRJD7s=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_3g_plus.
+ png
+SHA1-Digest: aZHVNzMin2nHyEU2E1lLOwzxgQY=
+
+Name: res/drawable-hdpi/zz_moto_stat_sys_data_fully_connected_4g_lte_w
+ aves.png
+SHA1-Digest: Vp/LvDU9hwOnzUvgLA35RUwKac4=
+
+Name: res/drawable-sw600dp-mdpi/zz_moto_stat_sys_signal_null.png
+SHA1-Digest: BF7ykKebh+4roVI/blfqOACZgy0=
 

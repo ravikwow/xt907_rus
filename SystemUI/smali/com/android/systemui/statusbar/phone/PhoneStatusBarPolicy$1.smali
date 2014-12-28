@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 89
+    .line 153
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -39,12 +39,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 92
+    .line 156
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 93
+    .line 157
     .local v0, "action":Ljava/lang/String;
     const-string v1, "android.intent.action.ALARM_CHANGED"
 
@@ -54,18 +54,18 @@
 
     if-eqz v1, :cond_1
 
-    .line 94
+    .line 158
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateAlarm(Landroid/content/Intent;)V
     invoke-static {v1, p2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->access$000(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
 
-    .line 112
+    .line 181
     :cond_0
     :goto_0
     return-void
 
-    .line 96
+    .line 160
     :cond_1
     const-string v1, "android.intent.action.SYNC_STATE_CHANGED"
 
@@ -75,7 +75,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 97
+    .line 161
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateSyncState(Landroid/content/Intent;)V
@@ -83,7 +83,7 @@
 
     goto :goto_0
 
-    .line 99
+    .line 163
     :cond_2
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
@@ -99,9 +99,33 @@
 
     move-result v1
 
+    if-nez v1, :cond_3
+
+    const-string v1, "android.bluetooth.headset.profile.action.HFBATTERY_STATUS_CHANGED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "android.bluetooth.headset.profile.action.HFCHARGE_STATUS_CHANGED"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
     if-eqz v1, :cond_4
 
-    .line 101
+    .line 170
     :cond_3
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
@@ -110,7 +134,7 @@
 
     goto :goto_0
 
-    .line 103
+    .line 172
     :cond_4
     const-string v1, "android.media.RINGER_MODE_CHANGED"
 
@@ -120,7 +144,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 104
+    .line 173
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateVolume()V
@@ -128,7 +152,7 @@
 
     goto :goto_0
 
-    .line 106
+    .line 175
     :cond_5
     const-string v1, "android.intent.action.SIM_STATE_CHANGED"
 
@@ -138,7 +162,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 107
+    .line 176
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateSimState(Landroid/content/Intent;)V
@@ -146,7 +170,7 @@
 
     goto :goto_0
 
-    .line 109
+    .line 178
     :cond_6
     const-string v1, "com.android.internal.telephony.cdma.intent.action.TTY_ENABLED_CHANGE"
 
@@ -156,7 +180,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 110
+    .line 179
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy$1;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateTTY(Landroid/content/Intent;)V

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/brightness"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    <com.android.settings.BrightnessPreference android:title="@string/ambient_light" android:key="brightness" android:summary="@string/ambient_light_summary" android:dialogTitle="@string/ambient_light" />
-    <CheckBoxPreference android:title="@string/display_power_saver" android:key="power_saver" android:summary="@string/display_power_saver_summary" />
-</PreferenceScreen>

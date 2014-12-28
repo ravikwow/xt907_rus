@@ -98,7 +98,7 @@
 
     move-result-object v0
 
-    const v1, 0x1040400
+    const v1, 0x10403e2
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -117,7 +117,7 @@
     invoke-super/range {v0 .. v6}, Lcom/android/internal/app/ResolverActivity;->onCreate(Landroid/os/Bundle;Landroid/content/Intent;Ljava/lang/CharSequence;[Landroid/content/Intent;Ljava/util/List;Z)V
 
     .line 64
-    const v0, 0x102027d
+    const v0, 0x1020258
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/UsbResolverActivity;->findViewById(I)Landroid/view/View;
 
@@ -135,7 +135,7 @@
     if-nez v0, :cond_2
 
     .line 67
-    const v0, 0x7f0b0025
+    const v0, 0x7f090027
 
     invoke-virtual {v7, v0}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -170,7 +170,7 @@
 
     .line 69
     :cond_2
-    const v0, 0x7f0b0024
+    const v0, 0x7f090026
 
     invoke-virtual {v7, v0}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -241,173 +241,159 @@
 .end method
 
 .method protected onIntentSelected(Landroid/content/pm/ResolveInfo;Landroid/content/Intent;Z)V
-    .locals 7
+    .locals 6
     .param p1, "ri"    # Landroid/content/pm/ResolveInfo;
     .param p2, "intent"    # Landroid/content/Intent;
     .param p3, "alwaysCheck"    # Z
 
     .prologue
-    .line 98
+    .line 97
     :try_start_0
-    const-string v5, "usb"
+    const-string v4, "usb"
 
-    invoke-static {v5}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-static {v4}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 99
+    .line 98
     .local v0, "b":Landroid/os/IBinder;
     invoke-static {v0}, Landroid/hardware/usb/IUsbManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/hardware/usb/IUsbManager;
 
     move-result-object v2
 
-    .line 100
+    .line 99
     .local v2, "service":Landroid/hardware/usb/IUsbManager;
-    iget-object v5, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iget-object v4, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    iget v3, v5, Landroid/content/pm/ApplicationInfo;->uid:I
+    iget v3, v4, Landroid/content/pm/ApplicationInfo;->uid:I
 
     .line 101
     .local v3, "uid":I
-    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
 
-    move-result v4
+    if-eqz v4, :cond_2
 
     .line 103
-    .local v4, "userId":I
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
 
-    if-eqz v5, :cond_2
+    invoke-interface {v2, v4, v3}, Landroid/hardware/usb/IUsbManager;->grantDevicePermission(Landroid/hardware/usb/UsbDevice;I)V
 
     .line 105
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
-
-    invoke-interface {v2, v5, v3}, Landroid/hardware/usb/IUsbManager;->grantDevicePermission(Landroid/hardware/usb/UsbDevice;I)V
-
-    .line 107
     if-eqz p3, :cond_1
 
-    .line 108
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
+    .line 106
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
 
-    iget-object v6, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    iget-object v5, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v6, v6, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    invoke-interface {v2, v5, v6, v4}, Landroid/hardware/usb/IUsbManager;->setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;I)V
+    invoke-interface {v2, v4, v5}, Landroid/hardware/usb/IUsbManager;->setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 124
+    .line 122
     :cond_0
     :goto_0
     :try_start_1
-    new-instance v5, Landroid/os/UserHandle;
-
-    invoke-direct {v5, v4}, Landroid/os/UserHandle;-><init>(I)V
-
-    invoke-virtual {p0, p2, v5}, Lcom/android/systemui/usb/UsbResolverActivity;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
+    invoke-virtual {p0, p2}, Lcom/android/systemui/usb/UsbResolverActivity;->startActivity(Landroid/content/Intent;)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 131
+    .line 129
     .end local v0    # "b":Landroid/os/IBinder;
     .end local v2    # "service":Landroid/hardware/usb/IUsbManager;
     .end local v3    # "uid":I
-    .end local v4    # "userId":I
     :goto_1
     return-void
 
-    .line 110
+    .line 108
     .restart local v0    # "b":Landroid/os/IBinder;
     .restart local v2    # "service":Landroid/hardware/usb/IUsbManager;
     .restart local v3    # "uid":I
-    .restart local v4    # "userId":I
     :cond_1
     :try_start_2
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mDevice:Landroid/hardware/usb/UsbDevice;
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    invoke-interface {v2, v5, v6, v4}, Landroid/hardware/usb/IUsbManager;->setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;I)V
+    invoke-interface {v2, v4, v5}, Landroid/hardware/usb/IUsbManager;->setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)V
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
 
     goto :goto_0
 
-    .line 128
+    .line 126
     .end local v0    # "b":Landroid/os/IBinder;
     .end local v2    # "service":Landroid/hardware/usb/IUsbManager;
     .end local v3    # "uid":I
-    .end local v4    # "userId":I
     :catch_0
     move-exception v1
 
-    .line 129
+    .line 127
     .local v1, "e":Landroid/os/RemoteException;
-    const-string v5, "UsbResolverActivity"
+    const-string v4, "UsbResolverActivity"
 
-    const-string v6, "onIntentSelected failed"
+    const-string v5, "onIntentSelected failed"
 
-    invoke-static {v5, v6, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v4, v5, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_1
 
-    .line 112
+    .line 110
     .end local v1    # "e":Landroid/os/RemoteException;
     .restart local v0    # "b":Landroid/os/IBinder;
     .restart local v2    # "service":Landroid/hardware/usb/IUsbManager;
     .restart local v3    # "uid":I
-    .restart local v4    # "userId":I
     :cond_2
     :try_start_3
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
+
+    .line 112
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
+
+    invoke-interface {v2, v4, v3}, Landroid/hardware/usb/IUsbManager;->grantAccessoryPermission(Landroid/hardware/usb/UsbAccessory;I)V
 
     .line 114
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
-
-    invoke-interface {v2, v5, v3}, Landroid/hardware/usb/IUsbManager;->grantAccessoryPermission(Landroid/hardware/usb/UsbAccessory;I)V
-
-    .line 116
     if-eqz p3, :cond_3
 
+    .line 115
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
+
+    iget-object v5, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    invoke-interface {v2, v4, v5}, Landroid/hardware/usb/IUsbManager;->setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;)V
+
+    goto :goto_0
+
     .line 117
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
-
-    iget-object v6, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v6, v6, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
-
-    invoke-interface {v2, v5, v6, v4}, Landroid/hardware/usb/IUsbManager;->setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;I)V
-
-    goto :goto_0
-
-    .line 119
     :cond_3
-    iget-object v5, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
+    iget-object v4, p0, Lcom/android/systemui/usb/UsbResolverActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    invoke-interface {v2, v5, v6, v4}, Landroid/hardware/usb/IUsbManager;->setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;I)V
+    invoke-interface {v2, v4, v5}, Landroid/hardware/usb/IUsbManager;->setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 125
+    .line 123
     :catch_1
     move-exception v1
 
-    .line 126
+    .line 124
     .local v1, "e":Landroid/content/ActivityNotFoundException;
-    const-string v5, "UsbResolverActivity"
+    const-string v4, "UsbResolverActivity"
 
-    const-string v6, "startActivity failed"
+    const-string v5, "startActivity failed"
 
-    invoke-static {v5, v6, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v4, v5, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_3
     .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_0
 

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 9403
+    .line 5227
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/systemui/statusbar/policy/NetworkController$1;
 
     .prologue
-    .line 9403
+    .line 5227
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;-><init>(Lcom/android/systemui/statusbar/policy/NetworkController;)V
 
     return-void
@@ -50,70 +50,47 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 9406
+    .line 5230
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 9439
-    :cond_0
+    .line 5247
     :goto_0
     return-void
 
-    .line 9412
+    .line 5233
     :pswitch_0
-    sget-boolean v0, Lcom/android/systemui/statusbar/policy/NetworkController;->CHATTY:Z
-
-    if-eqz v0, :cond_1
-
-    .line 9413
-    const-string v0, "SBar.NetworkController"
-
-    const-string v1, "StatusBarHandler: Smoothing: EVENT_SIG_STRENGTH"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 9418
-    :cond_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->refreshViews()V
+    # invokes: Lcom/android/systemui/statusbar/policy/NetworkController;->updateTelephonySignalStrength()V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$1000(Lcom/android/systemui/statusbar/policy/NetworkController;)V
 
     goto :goto_0
 
-    .line 9430
+    .line 5241
     :pswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
-    # getter for: Lcom/android/systemui/statusbar/policy/NetworkController;->mSoundAlertForVerizonWireless:Z
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$500(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 9431
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
-
     # getter for: Lcom/android/systemui/statusbar/policy/NetworkController;->mLock:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$1300(Lcom/android/systemui/statusbar/policy/NetworkController;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$1100(Lcom/android/systemui/statusbar/policy/NetworkController;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 9432
+    .line 5242
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     # getter for: Lcom/android/systemui/statusbar/policy/NetworkController;->mEri:Lcom/motorola/android/systemui/statusbar/VzwEri;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$800(Lcom/android/systemui/statusbar/policy/NetworkController;)Lcom/motorola/android/systemui/statusbar/VzwEri;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$700(Lcom/android/systemui/statusbar/policy/NetworkController;)Lcom/motorola/android/systemui/statusbar/VzwEri;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/motorola/android/systemui/statusbar/VzwEri;->playEriAlertAfterBoot()V
 
-    .line 9433
+    .line 5243
     monitor-exit v1
 
     goto :goto_0
@@ -127,7 +104,9 @@
 
     throw v0
 
-    .line 9406
+    .line 5230
+    nop
+
     :pswitch_data_0
     .packed-switch 0x8
         :pswitch_0

@@ -19,17 +19,15 @@
 
 .field public expanded:Landroid/view/View;
 
-.field private expandedBig:Landroid/view/View;
+.field protected expandedLarge:Landroid/view/View;
 
 .field public icon:Lcom/android/systemui/statusbar/StatusBarIconView;
 
-.field private interruption:Z
-
 .field public key:Landroid/os/IBinder;
 
-.field public notification:Landroid/service/notification/StatusBarNotification;
+.field public notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
-.field public row:Lcom/android/systemui/statusbar/ExpandableNotificationRow;
+.field public row:Landroid/view/View;
 
 
 # direct methods
@@ -43,10 +41,10 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;Lcom/android/systemui/statusbar/StatusBarIconView;)V
+.method public constructor <init>(Landroid/os/IBinder;Lcom/android/internal/statusbar/StatusBarNotification;Lcom/android/systemui/statusbar/StatusBarIconView;)V
     .locals 0
     .param p1, "key"    # Landroid/os/IBinder;
-    .param p2, "n"    # Landroid/service/notification/StatusBarNotification;
+    .param p2, "n"    # Lcom/android/internal/statusbar/StatusBarNotification;
     .param p3, "ic"    # Lcom/android/systemui/statusbar/StatusBarIconView;
 
     .prologue
@@ -57,7 +55,7 @@
     iput-object p1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->key:Landroid/os/IBinder;
 
     .line 46
-    iput-object p2, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Landroid/service/notification/StatusBarNotification;
+    iput-object p2, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
     .line 47
     iput-object p3, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->icon:Lcom/android/systemui/statusbar/StatusBarIconView;
@@ -66,46 +64,51 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
+
+# virtual methods
+.method public expandable()Z
     .locals 1
-    .param p0, "x0"    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     .prologue
-    .line 33
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
+    .line 60
+    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Landroid/view/View;
+
+    invoke-static {v0}, Lcom/android/systemui/statusbar/NotificationData;->getIsExpandable(Landroid/view/View;)Z
+
+    move-result v0
 
     return v0
 .end method
 
-
-# virtual methods
-.method public getBigContentView()Landroid/view/View;
+.method public getLargeView()Landroid/view/View;
     .locals 1
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expandedBig:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expandedLarge:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method public setBigContentView(Landroid/view/View;)V
-    .locals 2
-    .param p1, "bigContentView"    # Landroid/view/View;
+.method public setLargeView(Landroid/view/View;)V
+    .locals 3
+    .param p1, "expandedLarge"    # Landroid/view/View;
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expandedBig:Landroid/view/View;
+    iput-object p1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expandedLarge:Landroid/view/View;
 
     .line 51
-    iget-object v1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Lcom/android/systemui/statusbar/ExpandableNotificationRow;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Landroid/view/View;
+
+    const/high16 v2, 0x7f0c0000
 
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->setExpandable(Z)V
+    invoke-static {v1, v2, v0}, Lcom/android/systemui/statusbar/NotificationData;->writeBooleanTag(Landroid/view/View;IZ)Z
 
     .line 52
     return-void
@@ -117,15 +120,45 @@
     goto :goto_0
 .end method
 
-.method public setInterruption()V
+.method public setUserExpanded(Z)Z
+    .locals 1
+    .param p1, "userExpanded"    # Z
+
+    .prologue
+    .line 72
+    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Landroid/view/View;
+
+    invoke-static {v0, p1}, Lcom/android/systemui/statusbar/NotificationData;->setUserExpanded(Landroid/view/View;Z)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public userExpanded()Z
     .locals 1
 
     .prologue
-    .line 64
-    const/4 v0, 0x1
+    .line 66
+    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Landroid/view/View;
 
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
+    invoke-static {v0}, Lcom/android/systemui/statusbar/NotificationData;->getUserExpanded(Landroid/view/View;)Z
 
-    .line 65
-    return-void
+    move-result v0
+
+    return v0
+.end method
+
+.method public userLocked()Z
+    .locals 1
+
+    .prologue
+    .line 78
+    iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Landroid/view/View;
+
+    invoke-static {v0}, Lcom/android/systemui/statusbar/NotificationData;->getUserLocked(Landroid/view/View;)Z
+
+    move-result v0
+
+    return v0
 .end method

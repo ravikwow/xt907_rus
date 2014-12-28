@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->flipToNotifications()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 3283
+    .line 2818
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$23;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +40,21 @@
     .locals 2
 
     .prologue
-    .line 3285
+    .line 2820
+    invoke-static {}, Landroid/os/Debug;->stopMethodTracing()V
+
+    .line 2821
+    const-string v0, "PhoneStatusBar"
+
+    const-string v1, "stopTracing"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2822
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$23;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->vibrate()V
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
-
-    .line 3286
+    .line 2823
     return-void
 .end method

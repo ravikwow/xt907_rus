@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 610
+    .line 477
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$6;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p2, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 613
+    .line 480
     const/4 v0, 0x1
 
     return v0

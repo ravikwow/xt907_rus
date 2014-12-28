@@ -1,19 +1,12 @@
 .class public Lcom/android/systemui/usb/StorageNotification;
-.super Lcom/android/systemui/SystemUI;
+.super Landroid/os/storage/StorageEventListener;
 .source "StorageNotification.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/systemui/usb/StorageNotification$1;,
-        Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;
-    }
-.end annotation
 
 
 # instance fields
 .field private mAsyncEventHandler:Landroid/os/Handler;
+
+.field private mContext:Landroid/content/Context;
 
 .field private mMediaStorageNotification:Landroid/app/Notification;
 
@@ -25,14 +18,95 @@
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 7
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 36
-    invoke-direct {p0}, Lcom/android/systemui/SystemUI;-><init>()V
+    .line 68
+    invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
-    .line 67
+    .line 69
+    iput-object p1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+
+    .line 71
+    const-string v2, "storage"
+
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/os/storage/StorageManager;
+
+    iput-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+
+    .line 72
+    iget-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+
+    invoke-virtual {v2}, Landroid/os/storage/StorageManager;->isUsbMassStorageConnected()Z
+
+    move-result v0
+
+    .line 73
+    .local v0, "connected":Z
+    const-string v2, "StorageNotification"
+
+    const-string v3, "Startup with UMS connection %s (media state %s)"
+
+    const/4 v4, 0x2
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    const/4 v5, 0x0
+
+    iget-boolean v6, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
+
+    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v6
+
+    aput-object v6, v4, v5
+
+    const/4 v5, 0x1
+
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v6
+
+    aput-object v6, v4, v5
+
+    invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 76
+    new-instance v1, Landroid/os/HandlerThread;
+
+    const-string v2, "SystemUI StorageNotification"
+
+    invoke-direct {v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+
+    .line 77
+    .local v1, "thr":Landroid/os/HandlerThread;
+    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
+
+    .line 78
+    new-instance v2, Landroid/os/Handler;
+
+    invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
+
+    .line 80
+    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->onUsbMassStorageConnectionChanged(Z)V
+
+    .line 81
     return-void
 .end method
 
@@ -42,24 +116,13 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 36
+    .line 34
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/StorageNotification;->onUsbMassStorageConnectionChangedAsync(Z)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/systemui/usb/StorageNotification;)Landroid/os/Handler;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/systemui/usb/StorageNotification;
-
-    .prologue
-    .line 36
-    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
-
-    return-object v0
-.end method
-
-.method static synthetic access$200(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic access$100(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/systemui/usb/StorageNotification;
     .param p1, "x1"    # Ljava/lang/String;
@@ -67,7 +130,7 @@
     .param p3, "x3"    # Ljava/lang/String;
 
     .prologue
-    .line 36
+    .line 34
     invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/usb/StorageNotification;->onStorageStateChangedAsync(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -77,29 +140,114 @@
     .locals 7
 
     .prologue
-    .line 128
-    const-string v0, "shared"
+    .line 131
+    const-string v0, "StorageNotification"
 
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const-string v1, "Media {%s} state changed from {%s} -> {%s}"
 
-    move-result v0
+    const/4 v2, 0x3
 
-    if-eqz v0, :cond_0
+    new-array v2, v2, [Ljava/lang/Object;
 
-    .line 133
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 v3, 0x1
+
+    aput-object p2, v2, v3
+
+    const/4 v3, 0x2
+
+    aput-object p3, v2, v3
+
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 135
+    const/4 v1, 0x0
+
+    .line 136
+    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+
+    invoke-virtual {v0}, Landroid/os/storage/StorageManager;->getVolumeList()[Landroid/os/storage/StorageVolume;
+
+    move-result-object v3
+
+    .line 137
+    array-length v4, v3
+
+    const/4 v0, 0x0
+
+    move v2, v0
+
+    :goto_0
+    if-ge v2, v4, :cond_f
+
+    aget-object v0, v3, v2
+
+    .line 138
+    invoke-virtual {v0}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 143
+    :goto_1
+    if-nez v0, :cond_2
+
+    .line 277
+    :cond_0
+    :goto_2
+    return-void
+
+    .line 137
+    :cond_1
+    add-int/lit8 v0, v2, 0x1
+
+    move v2, v0
+
+    goto :goto_0
+
+    .line 145
+    :cond_2
+    invoke-virtual {v0}, Landroid/os/storage/StorageVolume;->isEmulated()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 148
+    const-string v1, "shared"
+
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 153
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 134
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 154
+    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 135
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 155
+    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -109,10 +257,10 @@
 
     move-result-object v6
 
-    .line 136
-    const v1, 0x104046d
+    .line 156
+    const v1, 0x1040447
 
-    const v2, 0x104046e
+    const v2, 0x1040448
 
     const v3, 0x108008a
 
@@ -124,24 +272,22 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setUsbStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 249
-    :goto_0
-    return-void
+    goto :goto_2
 
-    .line 140
-    :cond_0
-    const-string v0, "checking"
+    .line 160
+    :cond_3
+    const-string v1, "checking"
 
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_4
 
-    .line 145
-    const v1, 0x104048b
+    .line 165
+    const v1, 0x1040465
 
-    const v2, 0x104048c
+    const v2, 0x1040466
 
     const v3, 0x10800ab
 
@@ -155,111 +301,111 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 149
+    .line 169
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto :goto_0
-
-    .line 150
-    :cond_1
-    const-string v0, "mounted"
-
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 155
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
-
-    .line 156
-    iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
-
-    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
-
-    goto :goto_0
-
-    .line 157
-    :cond_2
-    const-string v0, "unmounted"
-
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    .line 163
-    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
-
-    invoke-virtual {v0}, Landroid/os/storage/StorageManager;->isUsbMassStorageEnabled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    .line 164
-    const-string v0, "shared"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 169
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
+    goto :goto_2
 
     .line 170
+    :cond_4
+    const-string v1, "mounted"
+
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 175
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
+
+    .line 176
     iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 176
-    :cond_3
-    invoke-static {}, Landroid/os/Environment;->isExternalStorageRemovable()Z
+    .line 177
+    :cond_5
+    const-string v1, "unmounted"
+
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_9
+
+    .line 183
+    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+
+    invoke-virtual {v1}, Landroid/os/storage/StorageManager;->isUsbMassStorageEnabled()Z
+
+    move-result v1
+
+    if-nez v1, :cond_8
+
+    .line 184
+    const-string v1, "shared"
+
+    invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    .line 189
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
+
+    .line 190
+    iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
+
+    goto/16 :goto_2
+
+    .line 196
+    :cond_6
+    invoke-virtual {v0}, Landroid/os/storage/StorageVolume;->isRemovable()Z
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_7
 
-    .line 177
-    const v1, 0x1040493
+    .line 197
+    const v1, 0x104046d
 
-    const v2, 0x1040494
+    const v2, 0x104046e
 
     const v3, 0x108007a
 
@@ -273,16 +419,16 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 186
-    :goto_1
+    .line 206
+    :goto_3
     iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto :goto_0
+    goto/16 :goto_2
 
-    .line 184
-    :cond_4
+    .line 204
+    :cond_7
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -299,10 +445,10 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    goto :goto_1
+    goto :goto_3
 
-    .line 193
-    :cond_5
+    .line 213
+    :cond_8
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -319,105 +465,55 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 194
+    .line 214
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto/16 :goto_0
-
-    .line 196
-    :cond_6
-    const-string v0, "nofs"
-
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    .line 201
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
-
-    .line 202
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
-
-    const-class v2, Lcom/android/internal/app/ExternalMediaFormatActivity;
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
-
-    .line 203
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-static {v1, v2, v0, v3}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
-
-    move-result-object v6
-
-    .line 205
-    const v1, 0x104048d
-
-    const v2, 0x104048e
-
-    const v3, 0x108007b
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
-
-    .line 209
-    iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
-
-    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
-
-    goto/16 :goto_0
-
-    .line 210
-    :cond_7
-    const-string v0, "unmountable"
-
-    invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_8
-
-    .line 215
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    goto/16 :goto_2
 
     .line 216
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    :cond_9
+    const-string v1, "nofs"
 
-    const-class v2, Lcom/android/internal/app/ExternalMediaFormatActivity;
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    move-result v1
 
-    .line 217
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    if-eqz v1, :cond_a
+
+    .line 221
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    .line 222
+    iget-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+
+    const-class v3, Lcom/android/internal/app/ExternalMediaFormatActivity;
+
+    invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    .line 223
+    const-string v2, "storage_volume"
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 224
+    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v2, v0, v3}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    invoke-static {v0, v2, v1, v3}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v6
 
-    .line 219
-    const v1, 0x104048f
+    .line 226
+    const v1, 0x1040467
 
-    const v2, 0x1040490
+    const v2, 0x1040468
 
     const v3, 0x108007b
 
@@ -429,27 +525,102 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 223
+    .line 230
     iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto/16 :goto_0
+    goto/16 :goto_2
 
-    .line 224
-    :cond_8
+    .line 231
+    :cond_a
+    const-string v1, "unmountable"
+
+    invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_b
+
+    .line 236
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    .line 237
+    iget-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+
+    const-class v3, Lcom/android/internal/app/ExternalMediaFormatActivity;
+
+    invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    .line 238
+    const-string v2, "storage_volume"
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 239
+    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-static {v0, v2, v1, v3}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v6
+
+    .line 241
+    const v1, 0x1040469
+
+    const v2, 0x104046a
+
+    const v3, 0x108007b
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
+
+    .line 245
+    iget-boolean v0, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
+
+    goto/16 :goto_2
+
+    .line 246
+    :cond_b
     const-string v0, "removed"
 
     invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_d
 
-    .line 229
-    const v1, 0x1040495
+    .line 249
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
-    const v2, 0x1040496
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_c
+
+    .line 254
+    const v1, 0x104046f
+
+    const v2, 0x1040470
 
     const v3, 0x108007b
 
@@ -463,27 +634,48 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 234
+    .line 262
+    :goto_4
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto/16 :goto_0
+    goto/16 :goto_2
 
-    .line 235
-    :cond_9
+    .line 260
+    :cond_c
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
+
+    goto :goto_4
+
+    .line 263
+    :cond_d
     const-string v0, "bad_removal"
 
     invoke-virtual {p3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_e
 
-    .line 240
-    const v1, 0x1040491
+    .line 268
+    const v1, 0x104046b
 
-    const v2, 0x1040492
+    const v2, 0x104046c
 
     const v3, 0x108008a
 
@@ -497,15 +689,15 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 245
+    .line 273
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    goto/16 :goto_0
+    goto/16 :goto_2
 
-    .line 247
-    :cond_a
+    .line 275
+    :cond_e
     const-string v0, "StorageNotification"
 
     const-string v1, "Ignoring unknown state {%s}"
@@ -522,26 +714,58 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_0
+    goto/16 :goto_2
+
+    :cond_f
+    move-object v0, v1
+
+    goto/16 :goto_1
 .end method
 
 .method private onUsbMassStorageConnectionChangedAsync(Z)V
-    .locals 2
+    .locals 6
     .param p1, "connected"    # Z
 
     .prologue
-    .line 105
+    .line 97
     iput-boolean p1, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
 
-    .line 110
+    .line 102
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 115
+    .line 104
     .local v0, "st":Ljava/lang/String;
+    const-string v1, "StorageNotification"
+
+    const-string v2, "UMS connection changed to %s (media state %s)"
+
+    const/4 v3, 0x2
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    const/4 v4, 0x0
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    aput-object v5, v3, v4
+
+    const/4 v4, 0x1
+
+    aput-object v0, v3, v4
+
+    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 106
     if-eqz p1, :cond_1
 
     const-string v1, "removed"
@@ -560,20 +784,20 @@
 
     if-eqz v1, :cond_1
 
-    .line 120
+    .line 111
     :cond_0
     const/4 p1, 0x0
 
-    .line 122
+    .line 113
     :cond_1
     invoke-virtual {p0, p1}, Lcom/android/systemui/usb/StorageNotification;->updateUsbMassStorageNotification(Z)V
 
-    .line 123
+    .line 114
     return-void
 .end method
 
 .method private declared-synchronized setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;)V
-    .locals 11
+    .locals 9
     .param p1, "titleId"    # I
     .param p2, "messageId"    # I
     .param p3, "icon"    # I
@@ -582,230 +806,218 @@
     .param p6, "pi"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 359
+    .line 385
     monitor-enter p0
 
     if-nez p4, :cond_1
 
     :try_start_0
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-nez v7, :cond_1
+    if-nez v6, :cond_1
 
-    .line 415
+    .line 439
     :cond_0
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 363
+    .line 389
     :cond_1
     :try_start_1
-    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
-    const-string v8, "notification"
+    const-string v7, "notification"
 
-    invoke-virtual {v7, v8}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v6, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Landroid/app/NotificationManager;
+    check-cast v3, Landroid/app/NotificationManager;
 
-    .line 366
-    .local v4, "notificationManager":Landroid/app/NotificationManager;
-    if-eqz v4, :cond_0
+    .line 392
+    .local v3, "notificationManager":Landroid/app/NotificationManager;
+    if-eqz v3, :cond_0
 
-    .line 370
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    .line 396
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    if-eqz v7, :cond_2
+    if-eqz v6, :cond_2
 
     if-eqz p4, :cond_2
 
-    .line 375
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    .line 401
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget v3, v7, Landroid/app/Notification;->icon:I
+    iget v2, v6, Landroid/app/Notification;->icon:I
 
-    .line 376
-    .local v3, "notificationId":I
-    invoke-virtual {v4, v3}, Landroid/app/NotificationManager;->cancel(I)V
+    .line 402
+    .local v2, "notificationId":I
+    invoke-virtual {v3, v2}, Landroid/app/NotificationManager;->cancel(I)V
 
-    .line 379
-    .end local v3    # "notificationId":I
+    .line 405
+    .end local v2    # "notificationId":I
     :cond_2
     if-eqz p4, :cond_5
 
-    .line 380
+    .line 406
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    .line 407
+    .local v4, "r":Landroid/content/res/Resources;
+    invoke-virtual {v4, p1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
-    .line 381
-    .local v5, "r":Landroid/content/res/Resources;
-    invoke-virtual {v5, p1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+    .line 408
+    .local v5, "title":Ljava/lang/CharSequence;
+    invoke-virtual {v4, p2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v1
 
-    .line 382
-    .local v6, "title":Ljava/lang/CharSequence;
-    invoke-virtual {v5, p2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+    .line 410
+    .local v1, "message":Ljava/lang/CharSequence;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    move-result-object v2
+    if-nez v6, :cond_3
 
-    .line 384
-    .local v2, "message":Ljava/lang/CharSequence;
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    .line 411
+    new-instance v6, Landroid/app/Notification;
 
-    if-nez v7, :cond_3
+    invoke-direct {v6}, Landroid/app/Notification;-><init>()V
 
-    .line 385
-    new-instance v7, Landroid/app/Notification;
+    iput-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    invoke-direct {v7}, Landroid/app/Notification;-><init>()V
+    .line 412
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iput-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    const-wide/16 v7, 0x0
 
-    .line 386
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iput-wide v7, v6, Landroid/app/Notification;->when:J
 
-    const-wide/16 v8, 0x0
-
-    iput-wide v8, v7, Landroid/app/Notification;->when:J
-
-    .line 389
+    .line 415
     :cond_3
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget v8, v7, Landroid/app/Notification;->defaults:I
+    iget v7, v6, Landroid/app/Notification;->defaults:I
 
-    and-int/lit8 v8, v8, -0x2
+    and-int/lit8 v7, v7, -0x2
 
-    iput v8, v7, Landroid/app/Notification;->defaults:I
+    iput v7, v6, Landroid/app/Notification;->defaults:I
 
-    .line 391
+    .line 417
     if-eqz p5, :cond_6
 
-    .line 392
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    .line 418
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    const/16 v8, 0x10
+    const/16 v7, 0x10
 
-    iput v8, v7, Landroid/app/Notification;->flags:I
+    iput v7, v6, Landroid/app/Notification;->flags:I
 
-    .line 397
+    .line 423
     :goto_1
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iput-object v6, v7, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
+    iput-object v5, v6, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
-    .line 398
+    .line 424
     if-nez p6, :cond_4
 
-    .line 399
-    new-instance v1, Landroid/content/Intent;
+    .line 425
+    new-instance v0, Landroid/content/Intent;
 
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 400
-    .local v1, "intent":Landroid/content/Intent;
-    iget-object v7, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 426
+    .local v0, "intent":Landroid/content/Intent;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
+
+    const/4 v7, 0x0
 
     const/4 v8, 0x0
 
-    const/4 v9, 0x0
-
-    sget-object v10, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
-
-    invoke-static {v7, v8, v1, v9, v10}, Landroid/app/PendingIntent;->getBroadcastAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/UserHandle;)Landroid/app/PendingIntent;
+    invoke-static {v6, v7, v0, v8}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object p6
 
-    .line 404
-    .end local v1    # "intent":Landroid/content/Intent;
+    .line 429
+    .end local v0    # "intent":Landroid/content/Intent;
     :cond_4
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iput p3, v7, Landroid/app/Notification;->icon:I
+    iput p3, v6, Landroid/app/Notification;->icon:I
 
-    .line 405
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    .line 430
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
-    move-object/from16 v0, p6
+    invoke-virtual {v6, v7, v5, v1, p6}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
-    invoke-virtual {v7, v8, v6, v2, v0}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
-
-    .line 408
-    .end local v2    # "message":Ljava/lang/CharSequence;
-    .end local v5    # "r":Landroid/content/res/Resources;
-    .end local v6    # "title":Ljava/lang/CharSequence;
+    .line 433
+    .end local v1    # "message":Ljava/lang/CharSequence;
+    .end local v4    # "r":Landroid/content/res/Resources;
+    .end local v5    # "title":Ljava/lang/CharSequence;
     :cond_5
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget v3, v7, Landroid/app/Notification;->icon:I
+    iget v2, v6, Landroid/app/Notification;->icon:I
 
-    .line 409
-    .restart local v3    # "notificationId":I
+    .line 434
+    .restart local v2    # "notificationId":I
     if-eqz p4, :cond_7
 
-    .line 410
-    const/4 v7, 0x0
+    .line 435
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
-
-    sget-object v9, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    invoke-virtual {v4, v7, v3, v8, v9}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
+    invoke-virtual {v3, v2, v6}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
-    .line 359
-    .end local v3    # "notificationId":I
-    .end local v4    # "notificationManager":Landroid/app/NotificationManager;
+    .line 385
+    .end local v2    # "notificationId":I
+    .end local v3    # "notificationManager":Landroid/app/NotificationManager;
     :catchall_0
-    move-exception v7
+    move-exception v6
 
     monitor-exit p0
 
-    throw v7
+    throw v6
 
-    .line 394
-    .restart local v2    # "message":Ljava/lang/CharSequence;
-    .restart local v4    # "notificationManager":Landroid/app/NotificationManager;
-    .restart local v5    # "r":Landroid/content/res/Resources;
-    .restart local v6    # "title":Ljava/lang/CharSequence;
+    .line 420
+    .restart local v1    # "message":Ljava/lang/CharSequence;
+    .restart local v3    # "notificationManager":Landroid/app/NotificationManager;
+    .restart local v4    # "r":Landroid/content/res/Resources;
+    .restart local v5    # "title":Ljava/lang/CharSequence;
     :cond_6
     :try_start_2
-    iget-object v7, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
+    iget-object v6, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
-    const/4 v8, 0x2
+    const/4 v7, 0x2
 
-    iput v8, v7, Landroid/app/Notification;->flags:I
+    iput v7, v6, Landroid/app/Notification;->flags:I
 
     goto :goto_1
 
-    .line 413
-    .end local v2    # "message":Ljava/lang/CharSequence;
-    .end local v5    # "r":Landroid/content/res/Resources;
-    .end local v6    # "title":Ljava/lang/CharSequence;
-    .restart local v3    # "notificationId":I
+    .line 437
+    .end local v1    # "message":Ljava/lang/CharSequence;
+    .end local v4    # "r":Landroid/content/res/Resources;
+    .end local v5    # "title":Ljava/lang/CharSequence;
+    .restart local v2    # "notificationId":I
     :cond_7
-    const/4 v7, 0x0
-
-    sget-object v8, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    invoke-virtual {v4, v7, v3, v8}, Landroid/app/NotificationManager;->cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V
+    invoke-virtual {v3, v2}, Landroid/app/NotificationManager;->cancel(I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto/16 :goto_0
+    goto :goto_0
 .end method
 
 .method private declared-synchronized setUsbStorageNotification(IIIZZLandroid/app/PendingIntent;)V
@@ -818,7 +1030,7 @@
     .param p6, "pi"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 278
+    .line 306
     monitor-enter p0
 
     if-nez p5, :cond_1
@@ -830,17 +1042,17 @@
 
     if-nez v8, :cond_1
 
-    .line 342
+    .line 368
     :cond_0
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 282
+    .line 310
     :cond_1
     :try_start_1
-    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const-string v9, "notification"
 
@@ -850,60 +1062,60 @@
 
     check-cast v5, Landroid/app/NotificationManager;
 
-    .line 285
+    .line 313
     .local v5, "notificationManager":Landroid/app/NotificationManager;
     if-eqz v5, :cond_0
 
-    .line 289
+    .line 317
     if-eqz p5, :cond_4
 
-    .line 290
+    .line 318
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    .line 291
+    .line 319
     .local v6, "r":Landroid/content/res/Resources;
     invoke-virtual {v6, p1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
-    .line 292
+    .line 320
     .local v7, "title":Ljava/lang/CharSequence;
     invoke-virtual {v6, p2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    .line 294
+    .line 322
     .local v3, "message":Ljava/lang/CharSequence;
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     if-nez v8, :cond_2
 
-    .line 295
+    .line 323
     new-instance v8, Landroid/app/Notification;
 
     invoke-direct {v8}, Landroid/app/Notification;-><init>()V
 
     iput-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
-    .line 296
+    .line 324
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     iput p3, v8, Landroid/app/Notification;->icon:I
 
-    .line 297
+    .line 325
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     const-wide/16 v9, 0x0
 
     iput-wide v9, v8, Landroid/app/Notification;->when:J
 
-    .line 300
+    .line 328
     :cond_2
     if-eqz p4, :cond_5
 
-    .line 301
+    .line 329
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     iget v9, v8, Landroid/app/Notification;->defaults:I
@@ -912,7 +1124,7 @@
 
     iput v9, v8, Landroid/app/Notification;->defaults:I
 
-    .line 306
+    .line 334
     :goto_1
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
@@ -920,48 +1132,46 @@
 
     iput v9, v8, Landroid/app/Notification;->flags:I
 
-    .line 308
+    .line 336
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     iput-object v7, v8, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
-    .line 309
+    .line 337
     if-nez p6, :cond_3
 
-    .line 310
+    .line 338
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 311
+    .line 339
     .local v2, "intent":Landroid/content/Intent;
-    iget-object v8, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const/4 v9, 0x0
 
     const/4 v10, 0x0
 
-    sget-object v11, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
-
-    invoke-static {v8, v9, v2, v10, v11}, Landroid/app/PendingIntent;->getBroadcastAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/UserHandle;)Landroid/app/PendingIntent;
+    invoke-static {v8, v9, v2, v10}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object p6
 
-    .line 315
+    .line 342
     .end local v2    # "intent":Landroid/content/Intent;
     :cond_3
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
-    iget-object v9, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     move-object/from16 v0, p6
 
     invoke-virtual {v8, v9, v7, v3, v0}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
-    .line 316
+    .line 343
     const/4 v8, 0x1
 
-    iget-object v9, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    iget-object v9, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     invoke-virtual {v9}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -971,7 +1181,7 @@
 
     const/4 v11, 0x0
 
-    invoke-static {v9, v10, v11}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v9, v10, v11}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v9
 
@@ -979,19 +1189,19 @@
 
     const/4 v1, 0x1
 
-    .line 321
+    .line 348
     .local v1, "adbOn":Z
     :goto_2
     if-nez v1, :cond_4
 
-    .line 331
+    .line 358
     iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
     move-object/from16 v0, p6
 
     iput-object v0, v8, Landroid/app/Notification;->fullScreenIntent:Landroid/app/PendingIntent;
 
-    .line 335
+    .line 362
     .end local v1    # "adbOn":Z
     .end local v3    # "message":Ljava/lang/CharSequence;
     .end local v6    # "r":Landroid/content/res/Resources;
@@ -1001,24 +1211,20 @@
 
     iget v4, v8, Landroid/app/Notification;->icon:I
 
-    .line 336
+    .line 363
     .local v4, "notificationId":I
     if-eqz p5, :cond_7
 
-    .line 337
-    const/4 v8, 0x0
+    .line 364
+    iget-object v8, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
 
-    iget-object v9, p0, Lcom/android/systemui/usb/StorageNotification;->mUsbStorageNotification:Landroid/app/Notification;
-
-    sget-object v10, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    invoke-virtual {v5, v8, v4, v9, v10}, Landroid/app/NotificationManager;->notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
+    invoke-virtual {v5, v4, v8}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 278
+    .line 306
     .end local v4    # "notificationId":I
     .end local v5    # "notificationManager":Landroid/app/NotificationManager;
     :catchall_0
@@ -1028,7 +1234,7 @@
 
     throw v8
 
-    .line 303
+    .line 331
     .restart local v3    # "message":Ljava/lang/CharSequence;
     .restart local v5    # "notificationManager":Landroid/app/NotificationManager;
     .restart local v6    # "r":Landroid/content/res/Resources;
@@ -1045,23 +1251,19 @@
 
     goto :goto_1
 
-    .line 316
+    .line 343
     :cond_6
     const/4 v1, 0x0
 
     goto :goto_2
 
-    .line 340
+    .line 366
     .end local v3    # "message":Ljava/lang/CharSequence;
     .end local v6    # "r":Landroid/content/res/Resources;
     .end local v7    # "title":Ljava/lang/CharSequence;
     .restart local v4    # "notificationId":I
     :cond_7
-    const/4 v8, 0x0
-
-    sget-object v9, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
-
-    invoke-virtual {v5, v8, v4, v9}, Landroid/app/NotificationManager;->cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V
+    invoke-virtual {v5, v4}, Landroid/app/NotificationManager;->cancel(I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1070,70 +1272,41 @@
 
 
 # virtual methods
-.method public start()V
-    .locals 5
+.method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+    .param p1, "path"    # Ljava/lang/String;
+    .param p2, "oldState"    # Ljava/lang/String;
+    .param p3, "newState"    # Ljava/lang/String;
 
     .prologue
-    .line 90
-    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 121
+    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
 
-    const-string v4, "storage"
+    new-instance v1, Lcom/android/systemui/usb/StorageNotification$2;
 
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-direct {v1, p0, p1, p2, p3}, Lcom/android/systemui/usb/StorageNotification$2;-><init>(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    check-cast v3, Landroid/os/storage/StorageManager;
+    .line 128
+    return-void
+.end method
 
-    iput-object v3, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+.method public onUsbMassStorageConnectionChanged(Z)V
+    .locals 2
+    .param p1, "connected"    # Z
 
-    .line 91
-    iget-object v3, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
+    .prologue
+    .line 88
+    iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
 
-    invoke-virtual {v3}, Landroid/os/storage/StorageManager;->isUsbMassStorageConnected()Z
+    new-instance v1, Lcom/android/systemui/usb/StorageNotification$1;
 
-    move-result v0
+    invoke-direct {v1, p0, p1}, Lcom/android/systemui/usb/StorageNotification$1;-><init>(Lcom/android/systemui/usb/StorageNotification;Z)V
 
-    .line 95
-    .local v0, "connected":Z
-    new-instance v2, Landroid/os/HandlerThread;
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    const-string v3, "SystemUI StorageNotification"
-
-    invoke-direct {v2, v3}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
-
-    .line 96
-    .local v2, "thr":Landroid/os/HandlerThread;
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->start()V
-
-    .line 97
-    new-instance v3, Landroid/os/Handler;
-
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v4
-
-    invoke-direct {v3, v4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    iput-object v3, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
-
-    .line 99
-    new-instance v1, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;
-
-    const/4 v3, 0x0
-
-    invoke-direct {v1, p0, v3}, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;-><init>(Lcom/android/systemui/usb/StorageNotification;Lcom/android/systemui/usb/StorageNotification$1;)V
-
-    .line 100
-    .local v1, "listener":Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;
-    invoke-virtual {v1, v0}, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;->onUsbMassStorageConnectionChanged(Z)V
-
-    .line 101
-    iget-object v3, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageManager:Landroid/os/storage/StorageManager;
-
-    invoke-virtual {v3, v1}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
-
-    .line 102
+    .line 94
     return-void
 .end method
 
@@ -1143,39 +1316,39 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 256
+    .line 284
     if-eqz p1, :cond_0
 
-    .line 257
+    .line 285
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 258
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 286
+    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     const-class v2, Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 259
+    .line 287
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 261
-    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    .line 289
+    iget-object v1, p0, Lcom/android/systemui/usb/StorageNotification;->mContext:Landroid/content/Context;
 
     invoke-static {v1, v4, v0, v4}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v6
 
-    .line 262
-    const v1, 0x104046b
+    .line 290
+    const v1, 0x1040445
 
-    const v2, 0x104046c
+    const v2, 0x1040446
 
-    const v3, 0x10805ae
+    const v3, 0x1080535
 
     const/4 v5, 0x1
 
@@ -1183,11 +1356,11 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/systemui/usb/StorageNotification;->setUsbStorageNotification(IIIZZLandroid/app/PendingIntent;)V
 
-    .line 270
+    .line 298
     :goto_0
     return-void
 
-    .line 268
+    .line 296
     :cond_0
     const/4 v9, 0x0
 

@@ -20,14 +20,18 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
+.field final synthetic val$observer:Landroid/view/ViewTreeObserver;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)V
+.method constructor <init>(Lcom/android/systemui/recent/RecentsHorizontalScrollView;Landroid/view/ViewTreeObserver;)V
     .locals 0
 
     .prologue
-    .line 162
+    .line 155
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
+
+    iput-object p2, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->val$observer:Landroid/view/ViewTreeObserver;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,51 +41,47 @@
 
 # virtual methods
 .method public onGlobalLayout()V
-    .locals 4
+    .locals 3
 
     .prologue
-    .line 164
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
+    .line 157
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
+    iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     # invokes: Lcom/android/systemui/recent/RecentsHorizontalScrollView;->scrollPositionOfMostRecent()I
-    invoke-static {v2}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->access$100(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)I
-
-    move-result v2
-
-    iput v2, v1, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLastScrollPosition:I
-
-    .line 165
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
-
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
-
-    iget v2, v2, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLastScrollPosition:I
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v2, v3}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->scrollTo(II)V
-
-    .line 166
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
-
-    invoke-virtual {v1}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v0
-
-    .line 167
-    .local v0, "observer":Landroid/view/ViewTreeObserver;
-    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+    invoke-static {v1}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->access$100(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)I
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    iput v1, v0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLastScrollPosition:I
 
-    .line 168
+    .line 158
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
+
+    iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
+
+    iget v1, v1, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLastScrollPosition:I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->scrollTo(II)V
+
+    .line 159
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->val$observer:Landroid/view/ViewTreeObserver;
+
+    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 160
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$5;->val$observer:Landroid/view/ViewTreeObserver;
+
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 170
+    .line 162
     :cond_0
     return-void
 .end method

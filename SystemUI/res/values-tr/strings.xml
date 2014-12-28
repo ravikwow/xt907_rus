@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="status_bar_date_formatter">"%2$s
+%1$s"</string>
     <string name="app_label">Sist Arayüzü</string>
     <string name="status_bar_clear_all_button">Temizle</string>
+    <string name="status_bar_do_not_disturb_button">Rahatsız etmeyin</string>
+    <string name="status_bar_please_disturb_button">Bildirimleri göster</string>
     <string name="status_bar_recent_remove_item_title">Listeden kaldır</string>
     <string name="status_bar_recent_inspect_item_title">Uygulama bilgileri</string>
     <string name="status_bar_no_recent_apps">En son kullanılan uygulama yok</string>
@@ -9,7 +13,7 @@
     <string name="status_bar_no_notifications_title">Bildirim yok</string>
     <string name="status_bar_ongoing_events_title">Sürüyor</string>
     <string name="status_bar_latest_events_title">Bildirimler</string>
-    <string name="battery_low_title">Şarj cihazını takın</string>
+    <string name="battery_low_title">Şarj cihazını bağlayın</string>
     <string name="battery_low_subtitle">Pil azalıyor.</string>
     <string name="battery_low_percent_format">%%%d kaldı</string>
     <string name="invalid_charger">"USB üzerinden şarj desteklenmiyor.
@@ -34,12 +38,10 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="label_view">Görüntüle</string>
     <string name="always_use_device">Bu USB cihazı için varsayılan olarak kullan</string>
     <string name="always_use_accessory">Bu USB aksesuar için varsayılan olarak kullan</string>
-    <string name="usb_debugging_title">USB hata ayıklamasına izin verilsin mi?</string>
-    <string name="usb_debugging_message">"Bilgisayarın RSA anahtarı parmak izi:
-%1$s"</string>
-    <string name="usb_debugging_always">Bu bilgisayardan her zaman izin ver</string>
     <string name="compat_mode_on">Zum yap (ekranı kaplasın)</string>
     <string name="compat_mode_off">Genişlet (ekranı kaplasın)</string>
+    <string name="compat_mode_help_header">Uyumlu zum</string>
+    <string name="compat_mode_help_body">Uygulama küçük bir ekran için tasarlanmışsa saatin yanında bir zum denetimi görünür.</string>
     <string name="screenshot_saving_ticker">Ekran görüntüsü kaydediliyor...</string>
     <string name="screenshot_saving_title">Ekran görüntüsü kaydediliyor...</string>
     <string name="screenshot_saving_text">Ekran görüntüsü kaydediliyor.</string>
@@ -55,8 +57,6 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="accessibility_home">Ana sayfa</string>
     <string name="accessibility_menu">Menü</string>
     <string name="accessibility_recent">Son uygulamalar</string>
-    <string name="accessibility_search_light">Ara</string>
-    <string name="accessibility_camera_button">Kamera</string>
     <string name="accessibility_ime_switch_button">Giriş yöntemini değiştirme düğmesi.</string>
     <string name="accessibility_compatibility_zoom_button">Uyumluluk zum düğmesi.</string>
     <string name="accessibility_compatibility_zoom_example">Küçük uygulamayı büyük ekrana zum yap.</string>
@@ -77,36 +77,21 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="accessibility_data_two_bars">Veri sinyali iki çubuk.</string>
     <string name="accessibility_data_three_bars">Veri sinyali üç çubuk.</string>
     <string name="accessibility_data_signal_full">Veri sinyali tam.</string>
-    <string name="accessibility_wifi_off">Kablosuz kapalı.</string>
-    <string name="accessibility_no_wifi">Kablosuz bağlantı kesildi.</string>
-    <string name="accessibility_wifi_one_bar">Kablosuz sinyali bir çubuk.</string>
-    <string name="accessibility_wifi_two_bars">Kablosuz sinyali iki çubuk.</string>
-    <string name="accessibility_wifi_three_bars">Kablosuz sinyali üç çubuk.</string>
+    <string name="accessibility_no_wifi">Kablosuz yok.</string>
+    <string name="accessibility_wifi_one_bar">Kablosuz gücü tek çubukta.</string>
+    <string name="accessibility_wifi_two_bars">Kablosuz sinyal gücü iki çubuk.</string>
+    <string name="accessibility_wifi_three_bars">Kablosuz sinyal gücü üç çubuk.</string>
     <string name="accessibility_wifi_signal_full">Kablosuz sinyali tam.</string>
     <string name="accessibility_no_wimax">WiMAX yok.</string>
     <string name="accessibility_wimax_one_bar">WiMAX tek çubuk.</string>
     <string name="accessibility_wimax_two_bars">WiMAX iki çubuk.</string>
     <string name="accessibility_wimax_three_bars">WiMAX üç çubuk.</string>
     <string name="accessibility_wimax_signal_full">WiMAX sinyali tam.</string>
-    <string name="accessibility_no_signal">Sinyal yok.</string>
-    <string name="accessibility_not_connected">Bağlanmadı.</string>
-    <string name="accessibility_zero_bars">Sıfır çubuk.</string>
-    <string name="accessibility_one_bar">Tek çubuk.</string>
-    <string name="accessibility_two_bars">İki çubuk.</string>
-    <string name="accessibility_three_bars">Üç çubuk.</string>
-    <string name="accessibility_signal_full">Sinyal tam.</string>
-    <string name="accessibility_desc_on">Açık.</string>
-    <string name="accessibility_desc_off">Kapalı.</string>
-    <string name="accessibility_desc_connected">Bağlandı.</string>
     <string name="accessibility_data_connection_gprs">GPRS</string>
-    <string name="accessibility_data_connection_1x">1 X</string>
-    <string name="accessibility_data_connection_hspa">HSPA</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
-    <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
-    <string name="accessibility_data_connection_roaming">Dolaşımda</string>
     <string name="accessibility_data_connection_edge">Edge</string>
     <string name="accessibility_data_connection_wifi">Kablosuz</string>
     <string name="accessibility_no_sim">SIM kart yok.</string>
@@ -122,18 +107,6 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="accessibility_ringer_vibrate">Telefon zili titreşim.</string>
     <string name="accessibility_ringer_silent">Telefon zili sessiz.</string>
     <string name="accessibility_recents_item_dismissed">%s kaldırıldı.</string>
-    <string name="accessibility_notification_dismissed">Bildirim kapatıldı.</string>
-    <string name="accessibility_desc_notification_shade">Bildirim gölgesi.</string>
-    <string name="accessibility_desc_quick_settings">Hızlı ayarlar.</string>
-    <string name="accessibility_desc_recent_apps">Son uygulamalar.</string>
-    <string name="accessibility_quick_settings_user">Kullanıcı: %s.</string>
-    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
-    <string name="accessibility_quick_settings_mobile">Mobil %1$s. %2$s. %3$s.</string>
-    <string name="accessibility_quick_settings_battery">Pil %s.</string>
-    <string name="accessibility_quick_settings_airplane">Uçak Modu %s.</string>
-    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
-    <string name="accessibility_quick_settings_location">Konum: %s.</string>
-    <string name="accessibility_quick_settings_alarm">Alarm saati: %s.</string>
     <string name="data_usage_disabled_dialog_3g_title">2G-3G verileri devre dışı bırakıldı</string>
     <string name="data_usage_disabled_dialog_4g_title">4G verileri devre dışı</string>
     <string name="data_usage_disabled_dialog_mobile_title">Mobil veriler devre dışı</string>
@@ -146,50 +119,17 @@ Verileri yeniden etkinleştirirseniz, operatör sizden ücret talep edebilir."</
     <string name="status_bar_settings_signal_meter_wifi_nossid">Kablosuz bağlandı</string>
     <string name="gps_notification_searching_text">GPS aranıyor</string>
     <string name="gps_notification_found_text">Konum GPS ile belirlendi</string>
-    <string name="accessibility_location_active">Konum bilgisi istekleri etkin</string>
     <string name="accessibility_clear_all">Tüm bildirimleri temizle</string>
+    <string name="dreams_dock_launcher">Ekran koruyucuyu etkinleştir</string>
     <string name="status_bar_notification_inspect_item_title">Uygulama bilgileri</string>
+    <string name="notifications_off_title">Bildirimler kapalı</string>
+    <string name="notifications_off_text">Bildirimleri tekrar açmak için buraya hafifçe vurun.</string>
     <string name="accessibility_rotation_lock_off">Ekran otomatik olarak dönecektir.</string>
     <string name="accessibility_rotation_lock_on_landscape">Ekran yatay yönde kilitlendi.</string>
     <string name="accessibility_rotation_lock_on_portrait">Ekran dikey yönde kilitlendi.</string>
-    <string name="dessert_case">Tatlı Kutusu</string>
-    <string name="start_dreams">Hafif uyku</string>
-    <string name="ethernet_label">Ethernet</string>
-    <string name="quick_settings_airplane_mode_label">Uçak modu</string>
-    <string name="quick_settings_battery_charging_label">Şarj oluyor, %%%d</string>
-    <string name="quick_settings_battery_charged_label">Şarj oldu</string>
-    <string name="quick_settings_bluetooth_label">Bluetooth</string>
-    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d Cihaz)</string>
-    <string name="quick_settings_bluetooth_off_label">Bluetooth Kapalı</string>
-    <string name="quick_settings_brightness_label">Parlaklık</string>
-    <string name="quick_settings_rotation_unlocked_label">Otomatik Döndür</string>
-    <string name="quick_settings_rotation_locked_label">Dönme Kilitlendi</string>
-    <string name="quick_settings_ime_label">Giriş Yöntemi</string>
-    <string name="quick_settings_location_label">Konum</string>
-    <string name="quick_settings_location_off_label">Konum Bilgisi Kapalı</string>
-    <string name="quick_settings_media_device_label">Medya cihazı</string>
-    <string name="quick_settings_rssi_label">RSSI</string>
-    <string name="quick_settings_rssi_emergency_only">Yalnızca Acil Çağrılar İçin</string>
-    <string name="quick_settings_settings_label">Ayarlar</string>
-    <string name="quick_settings_time_label">Saat</string>
-    <string name="quick_settings_user_label">Ben</string>
-    <string name="quick_settings_wifi_label">Kablosuz</string>
-    <string name="quick_settings_wifi_not_connected">Bağlı Değil</string>
-    <string name="quick_settings_wifi_no_network">Ağ yok</string>
-    <string name="quick_settings_wifi_off_label">Kablosuz Kapalı</string>
-    <string name="quick_settings_remote_display_no_connection_label">Ekranı Yayımla</string>
-    <string name="quick_settings_brightness_dialog_title">Parlaklık</string>
-    <string name="quick_settings_brightness_dialog_auto_brightness_label">OTOMATİK</string>
-    <string name="ssl_ca_cert_warning">"Ağ izleniyor
-olabilir"</string>
-    <string name="status_bar_help_title">Bildirimler burada görünür</string>
-    <string name="status_bar_help_text">"Aşağıya hızlıca kaydırarak bunlara istediğiniz zaman erişebilirsiniz.
-Sistem denetimleri için tekrar hızlıca aşağı kaydırın."</string>
-    <string name="vibration_pattern_title">Titreşim düzeni</string>
     <string name="zz_moto_accessibility_data_connection_4g_lte">4 G L T E</string>
     <string name="zz_moto_accessibility_data_connection_lte">L T E</string>
     <string name="zz_moto_accessibility_data_connection_3g_plus">3 G plus</string>
-    <string name="zz_moto_accessibility_data_connection_2g">2 G</string>
     <string name="zz_moto_accessibility_data_connection_hplus">H plus</string>
     <string name="zz_moto_accessibility_data_four_bars">Veri dört çubuk.</string>
     <string name="zz_moto_accessibility_data_five_bars">Veri beş çubuk.</string>
@@ -215,10 +155,4 @@ Sistem denetimleri için tekrar hızlıca aşağı kaydırın."</string>
     <string name="zz_moto_accessibility_roaming_femtocell">Femtocell kullanarak dolaşımda.</string>
     <string name="zz_moto_accessibility_no_sim">SIM kart yok.</string>
     <string name="zz_moto_accessibility_corrupt_sim">SIM kartı geçersiz veya bozuk.</string>
-    <string name="quick_settings_wireless_display_label">Kablosuz Ekran</string>
-    <string name="inductive_charging_hint">"Kablosuz şarj cihazı algılandı.
-Bu simgeyi şarj pedinizdeki
-göstergeyle hizalayın."</string>
-    <string name="status_bar_date_formatter">"%2$s
-%1$s"</string>
 </resources>

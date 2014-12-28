@@ -4,17 +4,9 @@
 
 
 # instance fields
-.field private final SERVICES:[Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[",
-            "Ljava/lang/Class",
-            "<*>;"
-        }
-    .end annotation
-.end field
+.field final SERVICES:[Ljava/lang/Object;
 
-.field private final mServices:[Lcom/android/systemui/SystemUI;
+.field mServices:[Lcom/android/systemui/SystemUI;
 
 
 # direct methods
@@ -22,62 +14,131 @@
     .locals 3
 
     .prologue
-    .line 29
-    invoke-direct {p0}, Landroid/app/Service;-><init>()V
+    const/4 v2, 0x0
 
     .line 35
-    const/4 v0, 0x6
+    invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    new-array v0, v0, [Ljava/lang/Class;
+    .line 41
+    const/4 v0, 0x3
 
-    const/4 v1, 0x0
+    new-array v0, v0, [Ljava/lang/Object;
 
-    const-class v2, Lcom/android/systemui/recent/Recents;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    aput-object v2, v0, v1
+    move-result-object v1
+
+    aput-object v1, v0, v2
 
     const/4 v1, 0x1
-
-    const-class v2, Lcom/android/systemui/statusbar/SystemBars;
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
-
-    const-class v2, Lcom/android/systemui/usb/StorageNotification;
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x3
 
     const-class v2, Lcom/android/systemui/power/PowerUI;
 
     aput-object v2, v0, v1
 
-    const/4 v1, 0x4
+    const/4 v1, 0x2
 
     const-class v2, Lcom/android/systemui/media/RingtonePlayer;
 
     aput-object v2, v0, v1
 
-    const/4 v1, 0x5
-
-    const-class v2, Lcom/android/systemui/settings/SettingsUI;
-
-    aput-object v2, v0, v1
-
-    iput-object v0, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Class;
-
-    .line 47
-    iget-object v0, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Class;
-
-    array-length v0, v0
-
-    new-array v0, v0, [Lcom/android/systemui/SystemUI;
-
-    iput-object v0, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+    iput-object v0, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Object;
 
     return-void
+.end method
+
+.method private chooseClass(Ljava/lang/Object;)Ljava/lang/Class;
+    .locals 5
+    .param p1, "o"    # Ljava/lang/Object;
+
+    .prologue
+    .line 53
+    instance-of v2, p1, Ljava/lang/Integer;
+
+    if-eqz v2, :cond_0
+
+    .line 54
+    check-cast p1, Ljava/lang/Integer;
+
+    .end local p1    # "o":Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Lcom/android/systemui/SystemUIService;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 56
+    .local v0, "cl":Ljava/lang/String;
+    :try_start_0
+    invoke-virtual {p0}, Lcom/android/systemui/SystemUIService;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object p1
+
+    .line 61
+    .end local v0    # "cl":Ljava/lang/String;
+    :goto_0
+    return-object p1
+
+    .line 57
+    .restart local v0    # "cl":Ljava/lang/String;
+    :catch_0
+    move-exception v1
+
+    .line 58
+    .local v1, "ex":Ljava/lang/ClassNotFoundException;
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    invoke-direct {v2, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v2
+
+    .line 60
+    .end local v0    # "cl":Ljava/lang/String;
+    .end local v1    # "ex":Ljava/lang/ClassNotFoundException;
+    .restart local p1    # "o":Ljava/lang/Object;
+    :cond_0
+    instance-of v2, p1, Ljava/lang/Class;
+
+    if-eqz v2, :cond_1
+
+    .line 61
+    check-cast p1, Ljava/lang/Class;
+
+    goto :goto_0
+
+    .line 63
+    :cond_1
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Unknown system ui service: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v2
 .end method
 
 
@@ -89,14 +150,14 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 87
+    .line 115
     if-eqz p3, :cond_0
 
     array-length v6, p3
 
     if-nez v6, :cond_1
 
-    .line 88
+    .line 116
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
 
@@ -112,7 +173,7 @@
 
     aget-object v5, v0, v1
 
-    .line 89
+    .line 117
     .local v5, "ui":Lcom/android/systemui/SystemUI;
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -142,15 +203,15 @@
 
     invoke-virtual {p2, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 90
+    .line 118
     invoke-virtual {v5, p1, p2, p3}, Lcom/android/systemui/SystemUI;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
-    .line 88
+    .line 116
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 93
+    .line 121
     .end local v0    # "arr$":[Lcom/android/systemui/SystemUI;
     .end local v1    # "i$":I
     .end local v2    # "len$":I
@@ -160,7 +221,7 @@
 
     aget-object v4, p3, v6
 
-    .line 94
+    .line 122
     .local v4, "svc":Ljava/lang/String;
     iget-object v0, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
 
@@ -176,7 +237,7 @@
 
     aget-object v5, v0, v1
 
-    .line 95
+    .line 123
     .restart local v5    # "ui":Lcom/android/systemui/SystemUI;
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -186,7 +247,7 @@
 
     move-result-object v3
 
-    .line 96
+    .line 124
     .local v3, "name":Ljava/lang/String;
     invoke-virtual {v3, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -194,16 +255,16 @@
 
     if-eqz v6, :cond_2
 
-    .line 97
+    .line 125
     invoke-virtual {v5, p1, p2, p3}, Lcom/android/systemui/SystemUI;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
-    .line 94
+    .line 122
     :cond_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 101
+    .line 129
     .end local v3    # "name":Ljava/lang/String;
     .end local v4    # "svc":Ljava/lang/String;
     .end local v5    # "ui":Lcom/android/systemui/SystemUI;
@@ -216,7 +277,7 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 82
+    .line 110
     const/4 v0, 0x0
 
     return-object v0
@@ -227,7 +288,7 @@
     .param p1, "newConfig"    # Landroid/content/res/Configuration;
 
     .prologue
-    .line 72
+    .line 100
     iget-object v0, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
 
     .local v0, "arr$":[Lcom/android/systemui/SystemUI;
@@ -242,169 +303,228 @@
 
     aget-object v3, v0, v1
 
-    .line 73
+    .line 101
     .local v3, "ui":Lcom/android/systemui/SystemUI;
     invoke-virtual {v3, p1}, Lcom/android/systemui/SystemUI;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 72
+    .line 100
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 75
+    .line 103
     .end local v3    # "ui":Lcom/android/systemui/SystemUI;
     :cond_0
     return-void
 .end method
 
 .method public onCreate()V
-    .locals 8
+    .locals 9
 
     .prologue
-    .line 51
-    new-instance v2, Ljava/util/HashMap;
+    .line 70
+    const-string v6, "window"
 
-    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
-
-    .line 52
-    .local v2, "components":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Class<*>;Ljava/lang/Object;>;"
-    iget-object v5, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Class;
-
-    array-length v0, v5
-
-    .line 53
-    .local v0, "N":I
-    const/4 v4, 0x0
-
-    .local v4, "i":I
-    :goto_0
-    if-ge v4, v0, :cond_0
-
-    .line 54
-    iget-object v5, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Class;
-
-    aget-object v1, v5, v4
-
-    .line 55
-    .local v1, "cl":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    const-string v5, "SystemUIService"
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "loading: "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v6}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v6
 
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 57
-    :try_start_0
-    iget-object v6, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
-
-    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+    invoke-static {v6}, Landroid/view/IWindowManager$Stub;->asInterface(Landroid/os/IBinder;)Landroid/view/IWindowManager;
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/systemui/SystemUI;
+    .line 73
+    .local v5, "wm":Landroid/view/IWindowManager;
+    :try_start_0
+    iget-object v7, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Object;
 
-    aput-object v5, v6, v4
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
+    const/4 v8, 0x0
 
-    .line 63
-    iget-object v5, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+    invoke-interface {v5}, Landroid/view/IWindowManager;->hasSystemNavBar()Z
 
-    aget-object v5, v5, v4
+    move-result v6
 
-    iput-object p0, v5, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
+    if-eqz v6, :cond_0
 
-    .line 64
-    iget-object v5, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+    const v6, 0x7f090001
 
-    aget-object v5, v5, v4
-
-    iput-object v2, v5, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
-
-    .line 65
-    const-string v5, "SystemUIService"
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "running: "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_0
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
+    aput-object v6, v7, v8
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 80
+    :goto_1
+    iget-object v6, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Object;
+
+    array-length v0, v6
+
+    .line 81
+    .local v0, "N":I
+    new-array v6, v0, [Lcom/android/systemui/SystemUI;
+
+    iput-object v6, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+
+    .line 82
+    const/4 v4, 0x0
+
+    .local v4, "i":I
+    :goto_2
+    if-ge v4, v0, :cond_1
+
+    .line 83
+    iget-object v6, p0, Lcom/android/systemui/SystemUIService;->SERVICES:[Ljava/lang/Object;
+
+    aget-object v6, v6, v4
+
+    invoke-direct {p0, v6}, Lcom/android/systemui/SystemUIService;->chooseClass(Ljava/lang/Object;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    .line 84
+    .local v1, "cl":Ljava/lang/Class;
+    const-string v6, "SystemUIService"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "loading: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 86
+    :try_start_1
     iget-object v7, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
 
-    aget-object v7, v7, v4
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    check-cast v6, Lcom/android/systemui/SystemUI;
 
-    move-result-object v6
+    aput-object v6, v7, v4
+    :try_end_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_2
 
-    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .line 92
+    iget-object v6, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
 
-    .line 66
-    iget-object v5, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+    aget-object v6, v6, v4
 
-    aget-object v5, v5, v4
+    iput-object p0, v6, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v5}, Lcom/android/systemui/SystemUI;->start()V
+    .line 93
+    const-string v6, "SystemUIService"
 
-    .line 53
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "running: "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget-object v8, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+
+    aget-object v8, v8, v4
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 94
+    iget-object v6, p0, Lcom/android/systemui/SystemUIService;->mServices:[Lcom/android/systemui/SystemUI;
+
+    aget-object v6, v6, v4
+
+    invoke-virtual {v6}, Lcom/android/systemui/SystemUI;->start()V
+
+    .line 82
     add-int/lit8 v4, v4, 0x1
+
+    goto :goto_2
+
+    .line 73
+    .end local v0    # "N":I
+    .end local v1    # "cl":Ljava/lang/Class;
+    .end local v4    # "i":I
+    :cond_0
+    const/high16 v6, 0x7f090000
 
     goto :goto_0
 
-    .line 58
+    .line 76
     :catch_0
-    move-exception v3
+    move-exception v2
 
-    .line 59
-    .local v3, "ex":Ljava/lang/IllegalAccessException;
-    new-instance v5, Ljava/lang/RuntimeException;
+    .line 77
+    .local v2, "e":Landroid/os/RemoteException;
+    const-string v6, "SystemUIService"
 
-    invoke-direct {v5, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    const-string v7, "Failing checking whether status bar can hide"
 
-    throw v5
+    invoke-static {v6, v7, v2}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 60
-    .end local v3    # "ex":Ljava/lang/IllegalAccessException;
+    goto :goto_1
+
+    .line 87
+    .end local v2    # "e":Landroid/os/RemoteException;
+    .restart local v0    # "N":I
+    .restart local v1    # "cl":Ljava/lang/Class;
+    .restart local v4    # "i":I
     :catch_1
     move-exception v3
 
-    .line 61
+    .line 88
+    .local v3, "ex":Ljava/lang/IllegalAccessException;
+    new-instance v6, Ljava/lang/RuntimeException;
+
+    invoke-direct {v6, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v6
+
+    .line 89
+    .end local v3    # "ex":Ljava/lang/IllegalAccessException;
+    :catch_2
+    move-exception v3
+
+    .line 90
     .local v3, "ex":Ljava/lang/InstantiationException;
-    new-instance v5, Ljava/lang/RuntimeException;
+    new-instance v6, Ljava/lang/RuntimeException;
 
-    invoke-direct {v5, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v6, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-    throw v5
+    throw v6
 
-    .line 68
-    .end local v1    # "cl":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    .line 96
+    .end local v1    # "cl":Ljava/lang/Class;
     .end local v3    # "ex":Ljava/lang/InstantiationException;
-    :cond_0
+    :cond_1
     return-void
 .end method

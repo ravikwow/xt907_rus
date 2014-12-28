@@ -25,7 +25,7 @@
     .locals 0
 
     .prologue
-    .line 141
+    .line 114
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->this$0:Lcom/android/systemui/ExpandHelper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -39,7 +39,7 @@
     .locals 2
 
     .prologue
-    .line 153
+    .line 126
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -48,18 +48,18 @@
 
     iget v0, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 154
+    .line 127
     .local v0, "height":I
     if-gez v0, :cond_0
 
-    .line 155
+    .line 128
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v0
 
-    .line 157
+    .line 130
     :cond_0
     int-to-float v1, v0
 
@@ -71,29 +71,29 @@
     .param p1, "maximum"    # I
 
     .prologue
-    .line 160
+    .line 133
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 163
+    .line 136
     .local v0, "lp":Landroid/view/ViewGroup$LayoutParams;
     iget v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 164
+    .line 137
     .local v1, "oldHeight":I
     const/4 v2, -0x2
 
     iput v2, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 165
+    .line 138
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 166
+    .line 139
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     iget-object v3, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
@@ -116,15 +116,15 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/view/View;->measure(II)V
 
-    .line 171
+    .line 144
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 172
+    .line 145
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 173
+    .line 146
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
@@ -139,30 +139,30 @@
     .param p1, "h"    # F
 
     .prologue
-    .line 147
+    .line 120
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 148
+    .line 121
     .local v0, "lp":Landroid/view/ViewGroup$LayoutParams;
     float-to-int v1, p1
 
     iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 149
+    .line 122
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 150
+    .line 123
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->requestLayout()V
 
-    .line 151
+    .line 124
     return-void
 .end method
 
@@ -171,9 +171,9 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 143
+    .line 116
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
-    .line 144
+    .line 117
     return-void
 .end method

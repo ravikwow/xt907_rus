@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 68
+    .line 88
     iput-object p1, p0, Lcom/android/systemui/statusbar/NotificationData$1;->this$0:Lcom/android/systemui/statusbar/NotificationData;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -52,85 +52,42 @@
     .param p2, "b"    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     .prologue
-    .line 71
-    iget-object v1, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Landroid/service/notification/StatusBarNotification;
+    .line 91
+    iget-object v1, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
-    .line 72
-    .local v1, "na":Landroid/service/notification/StatusBarNotification;
-    iget-object v2, p2, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Landroid/service/notification/StatusBarNotification;
+    .line 92
+    .local v1, "na":Lcom/android/internal/statusbar/StatusBarNotification;
+    iget-object v2, p2, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
-    .line 73
-    .local v2, "nb":Landroid/service/notification/StatusBarNotification;
-    invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getScore()I
+    .line 93
+    .local v2, "nb":Lcom/android/internal/statusbar/StatusBarNotification;
+    iget v3, v1, Lcom/android/internal/statusbar/StatusBarNotification;->score:I
 
-    move-result v3
-
-    invoke-virtual {v2}, Landroid/service/notification/StatusBarNotification;->getScore()I
-
-    move-result v4
+    iget v4, v2, Lcom/android/internal/statusbar/StatusBarNotification;->score:I
 
     sub-int v0, v3, v4
 
-    .line 74
+    .line 94
     .local v0, "d":I
-    # getter for: Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
-    invoke-static {p1}, Lcom/android/systemui/statusbar/NotificationData$Entry;->access$000(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
+    if-eqz v0, :cond_0
 
-    move-result v3
-
-    # getter for: Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
-    invoke-static {p2}, Lcom/android/systemui/statusbar/NotificationData$Entry;->access$000(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
-
-    move-result v4
-
-    if-eq v3, v4, :cond_1
-
-    .line 75
-    # getter for: Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
-    invoke-static {p1}, Lcom/android/systemui/statusbar/NotificationData$Entry;->access$000(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    const/4 v3, 0x1
-
-    .line 79
+    .end local v0    # "d":I
     :goto_0
-    return v3
+    return v0
 
-    .line 75
+    .restart local v0    # "d":I
     :cond_0
-    const/4 v3, -0x1
-
-    goto :goto_0
-
-    .line 76
-    :cond_1
-    if-eqz v0, :cond_2
-
-    move v3, v0
-
-    .line 77
-    goto :goto_0
-
-    .line 79
-    :cond_2
-    invoke-virtual {v1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
-
-    move-result-object v3
+    iget-object v3, v1, Lcom/android/internal/statusbar/StatusBarNotification;->notification:Landroid/app/Notification;
 
     iget-wide v3, v3, Landroid/app/Notification;->when:J
 
-    invoke-virtual {v2}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
-
-    move-result-object v5
+    iget-object v5, v2, Lcom/android/internal/statusbar/StatusBarNotification;->notification:Landroid/app/Notification;
 
     iget-wide v5, v5, Landroid/app/Notification;->when:J
 
     sub-long/2addr v3, v5
 
-    long-to-int v3, v3
+    long-to-int v0, v3
 
     goto :goto_0
 .end method
@@ -141,7 +98,7 @@
     .param p2, "x1"    # Ljava/lang/Object;
 
     .prologue
-    .line 68
+    .line 88
     check-cast p1, Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     .end local p1    # "x0":Ljava/lang/Object;

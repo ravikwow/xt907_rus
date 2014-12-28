@@ -3,7 +3,7 @@
 .source "RecentsPanelView.java"
 
 # interfaces
-.implements Landroid/widget/PopupMenu$OnDismissListener;
+.implements Landroid/widget/PopupMenu$OnMenuItemClickListener;
 
 
 # annotations
@@ -20,7 +20,7 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
-.field final synthetic val$thumbnailView:Landroid/view/View;
+.field final synthetic val$selectedView:Landroid/view/View;
 
 
 # direct methods
@@ -28,10 +28,10 @@
     .locals 0
 
     .prologue
-    .line 817
+    .line 890
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
-    iput-object p2, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$thumbnailView:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$selectedView:Landroid/view/View;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,60 +40,114 @@
 
 
 # virtual methods
-.method public onDismiss(Landroid/widget/PopupMenu;)V
-    .locals 2
-    .param p1, "menu"    # Landroid/widget/PopupMenu;
+.method public onMenuItemClick(Landroid/view/MenuItem;)Z
+    .locals 5
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
-    .line 819
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$thumbnailView:Landroid/view/View;
+    const/4 v2, 0x0
 
-    const/4 v1, 0x0
+    .line 892
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
+    move-result v3
 
-    .line 820
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+    const v4, 0x7f0c00ae
 
-    const/4 v1, 0x0
+    if-ne v3, v4, :cond_1
 
-    # setter for: Lcom/android/systemui/recent/RecentsPanelView;->mPopup:Landroid/widget/PopupMenu;
-    invoke-static {v0, v1}, Lcom/android/systemui/recent/RecentsPanelView;->access$1102(Lcom/android/systemui/recent/RecentsPanelView;Landroid/widget/PopupMenu;)Landroid/widget/PopupMenu;
+    .line 893
+    iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
-    .line 822
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
+    invoke-static {v2}, Lcom/android/systemui/recent/RecentsPanelView;->access$800(Lcom/android/systemui/recent/RecentsPanelView;)Landroid/view/ViewGroup;
 
-    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mPopupList:Ljava/util/ArrayList;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsPanelView;->access$1200(Lcom/android/systemui/recent/RecentsPanelView;)Ljava/util/ArrayList;
+    move-result-object v2
 
-    move-result-object v0
+    iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$selectedView:Landroid/view/View;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->removeViewInLayout(Landroid/view/View;)V
 
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+    .line 906
+    :goto_0
+    const/4 v2, 0x1
 
-    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mPopupList:Ljava/util/ArrayList;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsPanelView;->access$1200(Lcom/android/systemui/recent/RecentsPanelView;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 823
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
-
-    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mPopupList:Ljava/util/ArrayList;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsPanelView;->access$1200(Lcom/android/systemui/recent/RecentsPanelView;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    .line 826
     :cond_0
-    return-void
+    return v2
+
+    .line 894
+    :cond_1
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
+
+    move-result v3
+
+    const v4, 0x7f0c00af
+
+    if-ne v3, v4, :cond_0
+
+    .line 895
+    iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$selectedView:Landroid/view/View;
+
+    invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
+
+    .line 896
+    .local v1, "viewHolder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
+    if-eqz v1, :cond_2
+
+    .line 897
+    iget-object v0, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->taskDescription:Lcom/android/systemui/recent/TaskDescription;
+
+    .line 898
+    .local v0, "ad":Lcom/android/systemui/recent/TaskDescription;
+    iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+
+    iget-object v4, v0, Lcom/android/systemui/recent/TaskDescription;->packageName:Ljava/lang/String;
+
+    # invokes: Lcom/android/systemui/recent/RecentsPanelView;->startApplicationDetailsActivity(Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lcom/android/systemui/recent/RecentsPanelView;->access$900(Lcom/android/systemui/recent/RecentsPanelView;Ljava/lang/String;)V
+
+    .line 899
+    iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+
+    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
+    invoke-static {v3}, Lcom/android/systemui/recent/RecentsPanelView;->access$1000(Lcom/android/systemui/recent/RecentsPanelView;)Lcom/android/systemui/statusbar/BaseStatusBar;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapse(I)V
+
+    goto :goto_0
+
+    .line 901
+    .end local v0    # "ad":Lcom/android/systemui/recent/TaskDescription;
+    :cond_2
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Oops, no tag on view "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget-object v4, p0, Lcom/android/systemui/recent/RecentsPanelView$3;->val$selectedView:Landroid/view/View;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v2
 .end method

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="N11Number" />
-    <array name="N11Name" />
     <string-array name="emailAddressTypes">
         <item>Home</item>
         <item>Work</item>
@@ -40,7 +38,7 @@
         <item>Custom</item>
     </string-array>
     <array name="preloaded_drawables">
-        <item>@drawable/toast_frame</item>
+        <item>@drawable/toast_frame_holo</item>
         <item>@drawable/btn_check_on_pressed_holo_light</item>
         <item>@drawable/btn_check_on_pressed_holo_dark</item>
         <item>@drawable/btn_check_on_holo_light</item>
@@ -159,12 +157,12 @@
         <item>@drawable/menu_submenu_background</item>
         <item>@drawable/menu_dropdown_panel_holo_light</item>
         <item>@drawable/menu_dropdown_panel_holo_dark</item>
-        <item>@drawable/menu_popup_panel_holo_light</item>
-        <item>@drawable/menu_popup_panel_holo_dark</item>
-        <item>@drawable/menu_panel_holo_light</item>
-        <item>@drawable/menu_panel_holo_dark</item>
         <item>@drawable/overscroll_edge</item>
         <item>@drawable/overscroll_glow</item>
+        <item>@drawable/popup_inline_error_above_holo_dark</item>
+        <item>@drawable/popup_inline_error_above_holo_light</item>
+        <item>@drawable/popup_inline_error_holo_dark</item>
+        <item>@drawable/popup_inline_error_holo_light</item>
         <item>@drawable/spinner_16_outer_holo</item>
         <item>@drawable/spinner_16_inner_holo</item>
         <item>@drawable/spinner_48_outer_holo</item>
@@ -260,6 +258,8 @@
         <item>@drawable/list_divider_holo_dark</item>
         <item>@drawable/list_divider_holo_light</item>
         <item>@drawable/list_divider_holo_light</item>
+        <item>@drawable/ic_lockscreen_chevron_left</item>
+        <item>@drawable/ic_lockscreen_chevron_right</item>
         <item>@drawable/ab_transparent_dark_holo</item>
         <item>@drawable/ab_stacked_transparent_dark_holo</item>
         <item>@drawable/ab_bottom_transparent_dark_holo</item>
@@ -275,6 +275,8 @@
         <item>@drawable/ab_solid_shadow_holo</item>
         <item>@drawable/item_background_holo_dark</item>
         <item>@drawable/item_background_holo_light</item>
+        <item>@drawable/ic_ab_back_holo_dark</item>
+        <item>@drawable/ic_ab_back_holo_light</item>
         <item>@drawable/fastscroll_thumb_holo</item>
         <item>@drawable/fastscroll_thumb_pressed_holo</item>
         <item>@drawable/fastscroll_thumb_default_holo</item>
@@ -356,11 +358,59 @@
         <item>中文 (简体)</item>
         <item>中文 (繁體)</item>
     </string-array>
+    <array name="lockscreen_targets_when_silent">
+        <item>@drawable/ic_lockscreen_unlock</item>
+        <item>@drawable/ic_action_assist_generic</item>
+        <item>@drawable/ic_lockscreen_soundon</item>
+        <item>@null</item>
+    </array>
+    <string-array name="lockscreen_target_descriptions_when_silent">
+        <item>@string/description_target_unlock</item>
+        <item>@string/description_target_search</item>
+        <item>@string/description_target_soundon</item>
+        <item>@null</item>
+    </string-array>
+    <string-array name="lockscreen_direction_descriptions">
+        <item>@string/description_direction_right</item>
+        <item>@string/description_direction_up</item>
+        <item>@string/description_direction_left</item>
+        <item>@null</item>
+    </string-array>
+    <array name="lockscreen_targets_when_soundon">
+        <item>@drawable/ic_lockscreen_unlock</item>
+        <item>@drawable/ic_action_assist_generic</item>
+        <item>@drawable/ic_lockscreen_silent</item>
+        <item>@null</item>
+    </array>
+    <string-array name="lockscreen_target_descriptions_when_soundon">
+        <item>@string/description_target_unlock</item>
+        <item>@string/description_target_search</item>
+        <item>@string/description_target_silent</item>
+        <item>@null</item>
+    </string-array>
+    <array name="lockscreen_targets_with_camera">
+        <item>@drawable/ic_lockscreen_unlock</item>
+        <item>@drawable/ic_action_assist_generic</item>
+        <item>@drawable/ic_lockscreen_camera</item>
+        <item>@null</item>
+    </array>
+    <string-array name="lockscreen_target_descriptions_with_camera">
+        <item>@string/description_target_unlock</item>
+        <item>@string/description_target_search</item>
+        <item>@string/description_target_camera</item>
+        <item>@null</item>
+    </string-array>
+    <array name="lockscreen_chevron_drawables">
+        <item>@drawable/ic_lockscreen_chevron_right</item>
+        <item>@null</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
     <string-array name="config_statusBarIcons">
         <item>ime</item>
         <item>sync_failing</item>
         <item>sync_active</item>
-        <item>location</item>
+        <item>gps</item>
         <item>bluetooth</item>
         <item>nfc</item>
         <item>tty</item>
@@ -369,6 +419,7 @@
         <item>volume</item>
         <item>wifi</item>
         <item>cdma_eri</item>
+        <item>phone_signal_second_sub</item>
         <item>data_connection</item>
         <item>phone_evdo_signal</item>
         <item>phone_signal</item>
@@ -403,7 +454,6 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
-        <item>14</item>
     </integer-array>
     <string-array name="radioAttributes">
         <item>1,1</item>
@@ -416,7 +466,10 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>36</item>
+        <item>5</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </integer-array>
     <string-array name="config_tether_usb_regexs">
         <item>rndis\\d</item>
@@ -427,16 +480,13 @@
     <array name="config_tether_wimax_regexs" />
     <string-array name="config_tether_bluetooth_regexs">
         <item>bnep\\d</item>
-        <item>bt-pan</item>
     </string-array>
     <array name="config_tether_dhcp_range" />
-    <string-array name="config_mobile_hotspot_provision_app">
-        <item>com.motorola.service.vzw.entitlement</item>
-        <item>com.motorola.service.vzw.entitlement.EntitlementDialogActivity</item>
-    </string-array>
+    <array name="config_mobile_hotspot_provision_app" />
     <integer-array name="config_tether_upstream_types">
+        <item>0</item>
         <item>1</item>
-        <item>4</item>
+        <item>5</item>
         <item>7</item>
     </integer-array>
     <array name="config_cdma_dun_supported_types" />
@@ -469,22 +519,18 @@
         <item>50</item>
     </integer-array>
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>
-        <item>30</item>
-        <item>60</item>
+        <item>5</item>
+        <item>50</item>
         <item>100</item>
-        <item>150</item>
-        <item>210</item>
-        <item>255</item>
+        <item>3000</item>
+        <item>8000</item>
     </integer-array>
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>10</item>
-        <item>20</item>
-        <item>40</item>
-        <item>70</item>
-        <item>110</item>
-        <item>160</item>
-        <item>200</item>
+        <item>25</item>
+        <item>42</item>
+        <item>68</item>
+        <item>127</item>
+        <item>178</item>
         <item>255</item>
     </integer-array>
     <integer-array name="config_autoBrightnessButtonBacklightValues">
@@ -496,58 +542,42 @@
         <item>0</item>
     </integer-array>
     <array name="config_autoBrightnessKeyboardBacklightValues" />
-    <string-array name="config_locationProviderPackageNames">
-        <item>com.google.android.gms</item>
-        <item>com.android.location.fused</item>
-    </string-array>
     <array name="config_twoDigitNumberPattern" />
-    <array name="config_sms_enabled_single_shift_tables" />
-    <array name="config_sms_enabled_locking_shift_tables" />
-    <string-array name="config_oemUsbModeOverride">
-        <item>bp-tools:mtp:diag,serial_smd,serial_tty,rmnet,usbnet</item>
-        <item>bp-tools:mtp,adb:diag,serial_smd,serial_tty,rmnet,usbnet,adb</item>
-        <item>bp-tools:ptp:diag,serial_smd,serial_tty,rmnet,usbnet</item>
-        <item>bp-tools:ptp,adb:diag,serial_smd,serial_tty,rmnet,usbnet,adb</item>
-        <item>bp-tools:rndis:rndis,diag,serial_smd,serial_tty,rmnet,usbnet</item>
-        <item>bp-tools:rndis,adb:rndis,diag,serial_smd,serial_tty,rmnet,usbnet,adb</item>
-    </string-array>
-    <integer-array name="config_onlySingleDcAllowed">
+    <integer-array name="config_sms_enabled_single_shift_tables">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
         <item>7</item>
         <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
         <item>12</item>
+        <item>13</item>
     </integer-array>
-    <integer-array name="config_defaultNotificationVibePattern">
-        <item>0</item>
-        <item>350</item>
-        <item>250</item>
-        <item>350</item>
+    <integer-array name="config_sms_enabled_locking_shift_tables">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
     </integer-array>
-    <integer-array name="config_notificationFallbackVibePattern">
-        <item>0</item>
-        <item>100</item>
-        <item>150</item>
-        <item>100</item>
-    </integer-array>
-    <string-array name="config_disabledUntilUsedPreinstalledImes">
-        <item>com.android.inputmethod.latin</item>
-    </string-array>
-    <string-array name="config_notificationScorers">
-        <item>com.android.internal.notification.DemoContactNotificationScorer</item>
-    </string-array>
-    <array name="config_operatorConsideredNonRoaming" />
-    <array name="config_sameNamedOperatorConsideredRoaming" />
-    <string-array name="config_callBarringMMI">
-        <item>33</item>
-        <item>331</item>
-        <item>332</item>
-        <item>35</item>
-        <item>351</item>
-        <item>330</item>
-        <item>333</item>
-        <item>353</item>
+    <string-array name="config_oemUsbModeOverride">
+        <item>bp-tools:mtp:diag,serial_smd,serial_tty,rmnet,usbnet</item>
+        <item>bp-tools:mtp,adb:diag,serial_smd,serial_tty,rmnet,usbnet,adb</item>
+        <item>bp-tools:ptp:diag,serial_smd,serial_tty,rmnet,usbnet</item>
+        <item>bp-tools:ptp,adb:diag,serial_smd,serial_tty,rmnet,usbnet,adb</item>
     </string-array>
     <integer-array name="maps_starting_lat_lng">
         <item>36149777</item>
@@ -557,6 +587,7 @@
         <item>3</item>
     </integer-array>
     <array name="common_nicknames" />
+    <array name="config_layout" />
     <string-array name="imAddressTypes">
         <item>Home</item>
         <item>Work</item>
@@ -572,6 +603,7 @@
         <item>93</item>
         <item>255</item>
     </integer-array>
+    <array name="restrict_background_whitelist" />
     <integer-array name="config_displayTempThresholdValues">
         <item>500</item>
     </integer-array>
@@ -583,47 +615,4 @@
         <item>0</item>
         <item>40</item>
     </integer-array>
-    <string-array name="config_vcard_export_charset_by_version">
-        <item>UTF-8</item>
-        <item>UTF-8</item>
-        <item>UTF-8</item>
-    </string-array>
-    <string-array name="vibration_pattern_names">
-        <item>@string/vibration_pattern_knock</item>
-        <item>@string/vibration_pattern_simple</item>
-        <item>@string/vibration_pattern_insistent</item>
-        <item>@string/vibration_pattern_pulse</item>
-        <item>@string/vibration_pattern_stumbling</item>
-    </string-array>
-    <string-array name="vibration_pattern_data">
-        <item>0,100,100,100,100,100,400,100,100,100,100,100</item>
-        <item>0,100,20,75,10,100</item>
-        <item>0,100,60,50,60,100,60,50,60,100</item>
-        <item>0,40,60,200,160,40,60,200</item>
-        <item>0,120,60,40,60,200</item>
-    </string-array>
-    <integer-array name="config_screenlock_vibrate_pattern">
-        <item>0</item>
-        <item>30</item>
-    </integer-array>
-    <string-array name="broker_mnc_mcc">
-        <item>21407</item>
-        <item>21402</item>
-        <item>22201</item>
-    </string-array>
-    <array name="config_operatorConsideredMustRoaming" />
-    <string-array name="config_sms_priority_filter_list">
-        <item>bynumber;900080002021;com.motorola.vvm;com.motorola.vvm.transaction.VvmReceiver</item>
-        <item>6250;com.motorola.motoemail;com.motorola.hux.sncclient.services.SncReceiver</item>
-    </string-array>
-    <string-array name="restrict_background_whitelist">
-        <item>com.fusionone.android.sync.service</item>
-        <item>com.motorola.android.server.ims</item>
-        <item>com.motorola.blur.service.blur</item>
-    </string-array>
-    <array name="config_sms_short_code_exception_list" />
-    <string-array name="config_sms_write_message_filter_list">
-        <item>bynumber;900080006200</item>
-        <item>bynumber;87902</item>
-    </string-array>
 </resources>

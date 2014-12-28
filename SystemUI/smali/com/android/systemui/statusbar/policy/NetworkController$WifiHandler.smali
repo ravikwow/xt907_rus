@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 7210
+    .line 3487
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,23 +38,23 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 7213
+    .line 3490
     iget v0, p1, Landroid/os/Message;->what:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 7232
+    .line 3509
     :cond_0
     :goto_0
     return-void
 
-    .line 7215
+    .line 3492
     :sswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     if-nez v0, :cond_1
 
-    .line 7216
+    .line 3493
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
@@ -69,17 +69,17 @@
 
     goto :goto_0
 
-    .line 7219
+    .line 3496
     :cond_1
     const-string v0, "SBar.NetworkController"
 
     const-string v1, "Failed to connect to wifi"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 7223
+    .line 3500
     :sswitch_1
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -89,21 +89,21 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 7224
+    .line 3501
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
-    .line 7225
+    .line 3502
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->refreshViews()V
 
     goto :goto_0
 
-    .line 7213
+    .line 3490
     nop
 
     :sswitch_data_0

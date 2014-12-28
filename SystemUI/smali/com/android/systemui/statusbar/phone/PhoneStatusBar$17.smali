@@ -3,7 +3,7 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Landroid/view/animation/Animation$AnimationListener;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1827
+    .line 2208
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -36,114 +36,37 @@
 
 
 # virtual methods
-.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 4
-    .param p1, "v"    # Landroid/view/View;
-    .param p2, "event"    # Landroid/view/MotionEvent;
+.method public onAnimationEnd(Landroid/view/animation/Animation;)V
+    .locals 2
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1829
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
-
-    move-result v0
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 1843
-    :cond_0
-    :goto_0
-    :pswitch_0
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 1831
-    :pswitch_1
+    .line 2210
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->shouldDisableNavbarGestures()Z
+    const/4 v1, 0x0
 
-    move-result v0
+    # setter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mTicking:Z
+    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1302(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)Z
 
-    if-nez v0, :cond_0
+    .line 2211
+    return-void
+.end method
 
-    .line 1832
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
+    .locals 0
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
-    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2000(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
+    .prologue
+    .line 2213
+    return-void
+.end method
 
-    move-result-object v0
+.method public onAnimationStart(Landroid/view/animation/Animation;)V
+    .locals 0
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mShowSearchPanel:Ljava/lang/Runnable;
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    .line 1833
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2100(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mShowSearchPanel:Ljava/lang/Runnable;
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mShowSearchHoldoff:I
-    invoke-static {v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1800(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)I
-
-    move-result v2
-
-    int-to-long v2, v2
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    goto :goto_0
-
-    .line 1839
-    :pswitch_2
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$2200(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mShowSearchPanel:Ljava/lang/Runnable;
-    invoke-static {v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    .line 1840
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->awakenDreams()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1200(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
-
-    goto :goto_0
-
-    .line 1829
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_0
-        :pswitch_2
-    .end packed-switch
+    .prologue
+    .line 2215
+    return-void
 .end method

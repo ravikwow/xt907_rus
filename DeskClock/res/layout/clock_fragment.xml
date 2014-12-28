@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingTop="?android:actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/cities" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/footer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageButton android:layout_gravity="center_horizontal" android:id="@id/cities_button" android:background="@drawable/main_button_normal" android:layout_width="@dimen/footer_button_size" android:layout_height="@dimen/footer_button_size" android:layout_marginLeft="@dimen/footer_button_layout_margin" android:layout_marginTop="@dimen/footer_button_layout_margin" android:layout_marginRight="@dimen/footer_button_layout_margin" android:layout_marginBottom="@dimen/footer_button_layout_margin" android:src="@drawable/ic_globe" android:onClick="clockButtonsOnClick" android:contentDescription="@string/button_cities" android:layout_marginStart="@dimen/footer_button_layout_margin" android:layout_marginEnd="@dimen/footer_button_layout_margin" style="@style/button" />
-        <ImageButton android:layout_gravity="end|center" android:id="@id/menu_button" android:background="@drawable/item_background" android:layout_width="@dimen/footer_button_size" android:layout_height="@dimen/footer_button_size" android:contentDescription="@string/button_menu" style="?android:attr/actionOverflowButtonStyle" />
-    </FrameLayout>
-</FrameLayout>

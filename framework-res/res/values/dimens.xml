@@ -9,8 +9,6 @@
     <dimen name="notification_large_icon_height">64.0dip</dimen>
     <dimen name="config_prefDialogWidth">320.0dip</dimen>
     <dimen name="config_viewConfigurationTouchSlop">16.0dip</dimen>
-    <dimen name="config_minScalingSpan">27.0mm</dimen>
-    <dimen name="config_minScalingTouchMajor">48.0dip</dimen>
     <dimen name="toast_y_offset">64.0dip</dimen>
     <dimen name="status_bar_height">25.0dip</dimen>
     <dimen name="navigation_bar_height">48.0dip</dimen>
@@ -22,8 +20,6 @@
     <dimen name="system_bar_icon_size">32.0dip</dimen>
     <dimen name="status_bar_edge_ignore">5.0dip</dimen>
     <dimen name="fastscroll_overlay_size">104.0dip</dimen>
-    <dimen name="fastscroll_overlay_text_size">52.0sp</dimen>
-    <dimen name="fastscroll_overlay_padding">16.0dip</dimen>
     <dimen name="fastscroll_thumb_width">64.0dip</dimen>
     <dimen name="fastscroll_thumb_height">52.0dip</dimen>
     <dimen name="min_xlarge_screen_width">800.0dip</dimen>
@@ -49,7 +45,7 @@
     <dimen name="preference_icon_minWidth">0.0dip</dimen>
     <dimen name="dialog_fixed_width_major">320.0dip</dimen>
     <dimen name="dialog_fixed_width_minor">320.0dip</dimen>
-    <item type="dimen" name="dialog_fixed_height_major">79.99999%</item>
+    <item type="dimen" name="dialog_fixed_height_major">80.00001%</item>
     <item type="dimen" name="dialog_fixed_height_minor">100.0%</item>
     <dimen name="preference_screen_header_vertical_padding">0.0dip</dimen>
     <dimen name="preference_screen_header_padding_side">16.0dip</dimen>
@@ -72,7 +68,6 @@
     <dimen name="keyguard_lockscreen_status_line_clockfont_top_margin">22.0dip</dimen>
     <dimen name="keyguard_lockscreen_status_line_clockfont_bottom_margin">12.0dip</dimen>
     <dimen name="keyguard_lockscreen_pin_margin_left">40.0dip</dimen>
-    <dimen name="face_unlock_height">330.0dip</dimen>
     <dimen name="activity_chooser_popup_min_width">200.0dip</dimen>
     <dimen name="default_gap">8.0dip</dimen>
     <dimen name="dropdownitem_text_padding_left">8.0dip</dimen>
@@ -90,42 +85,24 @@
     <dimen name="notification_text_size">14.0dip</dimen>
     <dimen name="notification_title_text_size">18.0dip</dimen>
     <dimen name="notification_subtext_size">12.0dip</dimen>
-    <dimen name="kg_security_panel_height">600.0dip</dimen>
-    <dimen name="kg_security_view_height">480.0dip</dimen>
-    <dimen name="kg_widget_view_width">0.0dip</dimen>
-    <dimen name="kg_widget_view_height">0.0dip</dimen>
-    <dimen name="kg_status_clock_font_size">75.0dip</dimen>
-    <dimen name="kg_status_date_font_size">15.0dip</dimen>
-    <dimen name="kg_status_line_font_size">13.0dip</dimen>
-    <dimen name="kg_status_line_font_right_margin">16.0dip</dimen>
-    <dimen name="kg_clock_top_margin">-16.0dip</dimen>
-    <dimen name="kg_key_horizontal_gap">0.0dip</dimen>
-    <dimen name="kg_key_vertical_gap">0.0dip</dimen>
-    <dimen name="kg_pin_key_height">60.0dip</dimen>
-    <dimen name="kg_secure_padding_height">46.0dip</dimen>
-    <dimen name="kg_runway_lights_height">7.0dip</dimen>
-    <dimen name="kg_runway_lights_vertical_padding">2.0dip</dimen>
-    <dimen name="kg_widget_pager_horizontal_padding">16.0dip</dimen>
-    <dimen name="kg_widget_pager_top_padding">0.0dip</dimen>
-    <dimen name="kg_widget_pager_bottom_padding">64.0dip</dimen>
-    <dimen name="kg_runway_lights_top_margin">0.0dip</dimen>
-    <dimen name="accessibility_touch_slop">80.0dip</dimen>
-    <dimen name="keyguard_security_width">320.0dip</dimen>
-    <dimen name="keyguard_security_height">400.0dip</dimen>
-    <dimen name="keyguard_security_view_margin">8.0dip</dimen>
-    <dimen name="keyguard_muliuser_selector_margin">8.0dip</dimen>
-    <dimen name="keyguard_avatar_frame_stroke_width">2.0dip</dimen>
-    <dimen name="keyguard_avatar_frame_shadow_radius">1.0dip</dimen>
-    <dimen name="keyguard_avatar_size">66.0dip</dimen>
-    <dimen name="keyguard_avatar_name_size">10.0sp</dimen>
-    <dimen name="kg_edge_swipe_region_size">24.0dip</dimen>
-    <dimen name="kg_squashed_layout_threshold">600.0dip</dimen>
-    <dimen name="kg_small_widget_height">160.0dip</dimen>
-    <dimen name="subtitle_corner_radius">2.0dip</dimen>
-    <dimen name="subtitle_shadow_radius">2.0dip</dimen>
-    <dimen name="subtitle_shadow_offset">2.0dip</dimen>
-    <dimen name="subtitle_outline_width">2.0dip</dimen>
-    <dimen name="immersive_mode_cling_width">-1.0px</dimen>
-    <dimen name="webviewchromium_link_preview_overlay_radius">7.0dip</dimen>
-    <dimen name="webviewchromium_color_picker_gradient_margin">14.5dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_0055">false</item>
+    <dimen name="LockScreenSD_fchMarginPort">-6.0dip</dimen>
+    <dimen name="LockScreenSD_fcMarginPort">10.0dip</dimen>
+    <dimen name="LockScreenSD_mstClosedOffsetPort">0.0dip</dimen>
+    <dimen name="LockScreenSD_mstOpenOffsetPort">52.0dip</dimen>
+    <dimen name="LockScreenSD_mstSoundMarginPort">52.0dip</dimen>
+    <dimen name="LockScreenSD_mstMuteMarginPort">0.0dip</dimen>
+    <dimen name="LockScreenSD_doorClosedOffsetPort">0.0dip</dimen>
+    <dimen name="LockScreenSD_doorOpenOffsetPort">370.0dip</dimen>
+    <dimen name="LockScreenSD_hanldeClosedOffsetPort">0.0dip</dimen>
+    <dimen name="LockScreenSD_handleOpenOffsetPort">370.0dip</dimen>
+    <dimen name="zz_moto_keyguard_lockscreen_status_line_font_right_margin">15.0dip</dimen>
+    <dimen name="secured_lockscreen_status_side_margin">14.0dip</dimen>
+    <dimen name="secured_lockscreen_status_bottom_margin">6.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_clock_font_size">72.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_clock_font_size_landscape">50.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_statusview_height">32.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_statusview_textsize">16.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_carrier_emergency_textsize">14.0dip</dimen>
+    <dimen name="moto_keyguard_lockscreen_emergencybutton_height">48.0dip</dimen>
 </resources>

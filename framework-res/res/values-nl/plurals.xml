@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="pinpuk_attempts">
-        <item quantity="other">U heeft nog %d pogingen over voordat de simkaart wordt vergrendeld.</item>
-        <item quantity="one">U heeft nog %d poging over voordat de simkaart wordt vergrendeld.</item>
-    </plurals>
     <plurals name="num_seconds_ago">
         <item quantity="other">%d seconden geleden</item>
         <item quantity="one">1 seconde geleden</item>
@@ -71,18 +67,6 @@
         <item quantity="other">over %d dagen</item>
         <item quantity="one">morgen</item>
     </plurals>
-    <plurals name="duration_seconds">
-        <item quantity="other">%d seconden</item>
-        <item quantity="one">1 seconde</item>
-    </plurals>
-    <plurals name="duration_minutes">
-        <item quantity="other">%d minuten</item>
-        <item quantity="one">1 minuut</item>
-    </plurals>
-    <plurals name="duration_hours">
-        <item quantity="other">%d uur</item>
-        <item quantity="one">1 uur</item>
-    </plurals>
     <plurals name="wifi_available">
         <item quantity="other">Wi-Fi-netwerken beschikbaar</item>
         <item quantity="one">Wi-Fi-netwerk beschikbaar</item>
@@ -94,9 +78,5 @@
     <plurals name="matches_found">
         <item quantity="other">%1$d van %2$d</item>
         <item quantity="one">1 overeenkomst</item>
-    </plurals>
-    <plurals name="restr_pin_countdown">
-        <item quantity="other">Probeer het over %d seconden opnieuw</item>
-        <item quantity="one">Probeer het over één seconde opnieuw</item>
     </plurals>
 </resources>

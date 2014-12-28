@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 458
+    .line 518
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,14 +37,32 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 461
+    .line 523
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
-    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsPanelView;->invalidate()V
+    # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mShowing:Z
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsPanelView;->access$600(Lcom/android/systemui/recent/RecentsPanelView;)Z
 
-    .line 462
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 524
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/recent/RecentsPanelView;->setVisibility(I)V
+
+    .line 525
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
+
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsPanelView;->refreshRecentTasksList()V
+
+    .line 527
+    :cond_0
     return-void
 .end method

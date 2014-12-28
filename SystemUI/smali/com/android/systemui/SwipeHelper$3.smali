@@ -26,16 +26,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/SwipeHelper;Landroid/view/View;Z)V
+.method constructor <init>(Lcom/android/systemui/SwipeHelper;ZLandroid/view/View;)V
     .locals 0
 
     .prologue
-    .line 307
+    .line 291
     iput-object p1, p0, Lcom/android/systemui/SwipeHelper$3;->this$0:Lcom/android/systemui/SwipeHelper;
 
-    iput-object p2, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
+    iput-boolean p2, p0, Lcom/android/systemui/SwipeHelper$3;->val$canAnimViewBeDismissed:Z
 
-    iput-boolean p3, p0, Lcom/android/systemui/SwipeHelper$3;->val$canAnimViewBeDismissed:Z
+    iput-object p3, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,16 +49,31 @@
     .param p1, "animation"    # Landroid/animation/ValueAnimator;
 
     .prologue
-    .line 309
-    iget-object v0, p0, Lcom/android/systemui/SwipeHelper$3;->this$0:Lcom/android/systemui/SwipeHelper;
+    .line 293
+    iget-boolean v0, p0, Lcom/android/systemui/SwipeHelper$3;->val$canAnimViewBeDismissed:Z
 
-    iget-object v1, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
+    if-eqz v0, :cond_0
 
-    iget-boolean v2, p0, Lcom/android/systemui/SwipeHelper$3;->val$canAnimViewBeDismissed:Z
+    .line 294
+    iget-object v0, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
 
-    # invokes: Lcom/android/systemui/SwipeHelper;->updateAlphaFromOffset(Landroid/view/View;Z)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/SwipeHelper;->access$400(Lcom/android/systemui/SwipeHelper;Landroid/view/View;Z)V
+    iget-object v1, p0, Lcom/android/systemui/SwipeHelper$3;->this$0:Lcom/android/systemui/SwipeHelper;
 
-    .line 310
+    iget-object v2, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
+
+    # invokes: Lcom/android/systemui/SwipeHelper;->getAlphaForOffset(Landroid/view/View;)F
+    invoke-static {v1, v2}, Lcom/android/systemui/SwipeHelper;->access$400(Lcom/android/systemui/SwipeHelper;Landroid/view/View;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
+
+    .line 296
+    :cond_0
+    iget-object v0, p0, Lcom/android/systemui/SwipeHelper$3;->val$animView:Landroid/view/View;
+
+    invoke-static {v0}, Lcom/android/systemui/SwipeHelper;->invalidateGlobalRegion(Landroid/view/View;)V
+
+    .line 297
     return-void
 .end method

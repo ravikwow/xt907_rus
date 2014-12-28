@@ -1,11 +1,11 @@
 .class Lcom/android/systemui/ExpandHelper$1;
-.super Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "ExpandHelper.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/ExpandHelper;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/systemui/ExpandHelper;-><init>(Landroid/content/Context;Lcom/android/systemui/ExpandHelper$Callback;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,81 +23,86 @@
     .locals 0
 
     .prologue
-    .line 113
+    .line 173
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
 
-    invoke-direct {p0}, Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onScale(Landroid/view/ScaleGestureDetector;)Z
-    .locals 1
-    .param p1, "detector"    # Landroid/view/ScaleGestureDetector;
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 3
+    .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 130
-    const/4 v0, 0x1
+    .line 184
+    check-cast p1, Landroid/animation/ObjectAnimator;
 
-    return v0
-.end method
+    .end local p1    # "animation":Landroid/animation/Animator;
+    invoke-virtual {p1}, Landroid/animation/ObjectAnimator;->getTarget()Ljava/lang/Object;
 
-.method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
-    .locals 5
-    .param p1, "detector"    # Landroid/view/ScaleGestureDetector;
+    move-result-object v0
 
-    .prologue
-    .line 117
-    invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusX()F
+    check-cast v0, Landroid/view/View;
 
-    move-result v0
-
-    .line 118
-    .local v0, "focusX":F
-    invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusY()F
+    .line 185
+    .local v0, "target":Landroid/view/View;
+    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
 
     move-result v1
 
-    .line 120
-    .local v1, "focusY":F
-    iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
+    const/4 v2, 0x0
 
-    # invokes: Lcom/android/systemui/ExpandHelper;->findView(FF)Landroid/view/View;
-    invoke-static {v3, v0, v1}, Lcom/android/systemui/ExpandHelper;->access$000(Lcom/android/systemui/ExpandHelper;FF)Landroid/view/View;
+    cmpg-float v1, v1, v2
 
-    move-result-object v2
+    if-gtz v1, :cond_0
 
-    .line 121
-    .local v2, "underFocus":Landroid/view/View;
-    if-eqz v2, :cond_0
+    .line 186
+    const/4 v1, 0x4
 
-    .line 122
-    iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    const/4 v4, 0x4
-
-    # invokes: Lcom/android/systemui/ExpandHelper;->startExpanding(Landroid/view/View;I)V
-    invoke-static {v3, v2, v4}, Lcom/android/systemui/ExpandHelper;->access$100(Lcom/android/systemui/ExpandHelper;Landroid/view/View;I)V
-
-    .line 124
+    .line 188
     :cond_0
-    iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
-
-    # getter for: Lcom/android/systemui/ExpandHelper;->mExpanding:Z
-    invoke-static {v3}, Lcom/android/systemui/ExpandHelper;->access$200(Lcom/android/systemui/ExpandHelper;)Z
-
-    move-result v3
-
-    return v3
+    return-void
 .end method
 
-.method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
-    .locals 0
-    .param p1, "detector"    # Landroid/view/ScaleGestureDetector;
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 3
+    .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 135
+    .line 176
+    check-cast p1, Landroid/animation/ObjectAnimator;
+
+    .end local p1    # "animation":Landroid/animation/Animator;
+    invoke-virtual {p1}, Landroid/animation/ObjectAnimator;->getTarget()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/View;
+
+    .line 177
+    .local v0, "target":Landroid/view/View;
+    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    cmpg-float v1, v1, v2
+
+    if-gtz v1, :cond_0
+
+    .line 178
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 180
+    :cond_0
     return-void
 .end method

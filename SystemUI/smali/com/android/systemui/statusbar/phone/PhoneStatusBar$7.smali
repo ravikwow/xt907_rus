@@ -3,7 +3,7 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 661
+    .line 652
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -36,20 +36,26 @@
 
 
 # virtual methods
-.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 1
+.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 2
     .param p1, "v"    # Landroid/view/View;
-    .param p2, "event"    # Landroid/view/MotionEvent;
+    .param p2, "left"    # I
+    .param p3, "top"    # I
+    .param p4, "right"    # I
+    .param p5, "bottom"    # I
+    .param p6, "oldLeft"    # I
+    .param p7, "oldTop"    # I
+    .param p8, "oldRight"    # I
+    .param p9, "oldBottom"    # I
 
     .prologue
-    .line 664
+    .line 656
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$7;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->checkUserAutohide(Landroid/view/View;Landroid/view/MotionEvent;)V
-    invoke-static {v0, p1, p2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1100(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/view/View;Landroid/view/MotionEvent;)V
+    const/4 v1, 0x0
 
-    .line 665
-    const/4 v0, 0x0
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
 
-    return v0
+    .line 657
+    return-void
 .end method

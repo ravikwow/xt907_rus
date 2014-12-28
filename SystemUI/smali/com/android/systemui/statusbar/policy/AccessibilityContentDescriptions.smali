@@ -18,35 +18,31 @@
     .locals 2
 
     .prologue
-    const/16 v1, 0x8
+    const/4 v1, 0x5
 
-    .line 13
+    .line 14
     new-array v0, v1, [I
 
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/AccessibilityContentDescriptions;->PHONE_SIGNAL_STRENGTH:[I
 
-    .line 26
+    .line 22
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/AccessibilityContentDescriptions;->DATA_CONNECTION_STRENGTH:[I
 
-    .line 39
-    const/4 v0, 0x5
-
-    new-array v0, v0, [I
+    .line 30
+    new-array v0, v1, [I
 
     fill-array-data v0, :array_2
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/AccessibilityContentDescriptions;->WIFI_CONNECTION_STRENGTH:[I
 
-    .line 46
-    const/4 v0, 0x7
-
-    new-array v0, v0, [I
+    .line 37
+    new-array v0, v1, [I
 
     fill-array-data v0, :array_3
 
@@ -54,54 +50,44 @@
 
     return-void
 
-    .line 13
-    nop
-
+    .line 14
     :array_0
     .array-data 4
-        0x7f0b0046
-        0x7f0b0047
-        0x7f0b0048
-        0x7f0b0049
-        0x7f0b00cf
-        0x7f0b00d0
-        0x7f0b00d1
-        0x7f0b004a
+        0x7f090045
+        0x7f090046
+        0x7f090047
+        0x7f090048
+        0x7f090049
     .end array-data
 
-    .line 26
+    .line 22
     :array_1
     .array-data 4
-        0x7f0b004b
-        0x7f0b004c
-        0x7f0b004d
-        0x7f0b004e
-        0x7f0b00cc
-        0x7f0b00cd
-        0x7f0b00ce
-        0x7f0b004f
+        0x7f09004a
+        0x7f09004b
+        0x7f09004c
+        0x7f09004d
+        0x7f09004e
     .end array-data
 
-    .line 39
+    .line 30
     :array_2
     .array-data 4
-        0x7f0b0051
-        0x7f0b0052
-        0x7f0b0053
-        0x7f0b0054
-        0x7f0b0055
+        0x7f09004f
+        0x7f090050
+        0x7f090051
+        0x7f090052
+        0x7f090053
     .end array-data
 
-    .line 46
+    .line 37
     :array_3
     .array-data 4
-        0x7f0b00d6
-        0x7f0b00d7
-        0x7f0b00d8
-        0x7f0b00d9
-        0x7f0b00da
-        0x7f0b00db
-        0x7f0b00dc
+        0x7f090054
+        0x7f090055
+        0x7f090056
+        0x7f090057
+        0x7f090058
     .end array-data
 .end method
 

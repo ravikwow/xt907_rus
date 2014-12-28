@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1803
+    .line 1446
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,20 +37,22 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 3
 
     .prologue
-    .line 1805
+    .line 1449
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->showSearchPanel()V
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    .line 1806
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mChoreographer:Landroid/view/Choreographer;
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->awakenDreams()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1200(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
+    invoke-virtual {v1}, Landroid/view/Choreographer;->getFrameTimeNanos()J
 
-    .line 1807
+    move-result-wide v1
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->doRevealAnimation(J)V
+
+    .line 1450
     return-void
 .end method

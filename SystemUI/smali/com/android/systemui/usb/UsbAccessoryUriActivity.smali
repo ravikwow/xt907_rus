@@ -17,7 +17,7 @@
     .locals 0
 
     .prologue
-    .line 40
+    .line 42
     invoke-direct {p0}, Lcom/android/internal/app/AlertActivity;-><init>()V
 
     return-void
@@ -31,12 +31,12 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 85
+    .line 87
     const/4 v2, -0x1
 
     if-ne p2, v2, :cond_0
 
-    .line 87
+    .line 89
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
@@ -45,40 +45,38 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 88
+    .line 90
     .local v1, "intent":Landroid/content/Intent;
     const-string v2, "android.intent.category.BROWSABLE"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 89
+    .line 91
     const/high16 v2, 0x10000000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 91
+    .line 93
     :try_start_0
-    sget-object v2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
-
-    invoke-virtual {p0, v1, v2}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
+    invoke-virtual {p0, v1}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 96
+    .line 98
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->finish()V
 
-    .line 97
+    .line 99
     return-void
 
-    .line 92
+    .line 94
     .restart local v1    # "intent":Landroid/content/Intent;
     :catch_0
     move-exception v0
 
-    .line 93
+    .line 95
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     const-string v2, "UsbAccessoryUriActivity"
 
@@ -112,15 +110,15 @@
     .param p1, "icicle"    # Landroid/os/Bundle;
 
     .prologue
-    .line 50
+    .line 52
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 52
+    .line 54
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 53
+    .line 55
     .local v1, "intent":Landroid/content/Intent;
     const-string v4, "accessory"
 
@@ -132,14 +130,14 @@
 
     iput-object v4, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
 
-    .line 54
+    .line 56
     const-string v4, "uri"
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 55
+    .line 57
     .local v3, "uriString":Ljava/lang/String;
     if-nez v3, :cond_0
 
@@ -148,12 +146,12 @@
     :goto_0
     iput-object v4, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mUri:Landroid/net/Uri;
 
-    .line 58
+    .line 60
     iget-object v4, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mUri:Landroid/net/Uri;
 
     if-nez v4, :cond_1
 
-    .line 59
+    .line 61
     const-string v4, "UsbAccessoryUriActivity"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -176,14 +174,14 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 60
+    .line 62
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->finish()V
 
-    .line 82
+    .line 84
     :goto_1
     return-void
 
-    .line 55
+    .line 57
     :cond_0
     invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -191,7 +189,7 @@
 
     goto :goto_0
 
-    .line 63
+    .line 65
     :cond_1
     iget-object v4, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mUri:Landroid/net/Uri;
 
@@ -199,7 +197,7 @@
 
     move-result-object v2
 
-    .line 64
+    .line 66
     .local v2, "scheme":Ljava/lang/String;
     const-string v4, "http"
 
@@ -217,7 +215,7 @@
 
     if-nez v4, :cond_2
 
-    .line 65
+    .line 67
     const-string v4, "UsbAccessoryUriActivity"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -242,16 +240,16 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 66
+    .line 68
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->finish()V
 
     goto :goto_1
 
-    .line 70
+    .line 72
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    .line 71
+    .line 73
     .local v0, "ap":Lcom/android/internal/app/AlertController$AlertParams;
     iget-object v4, p0, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->mAccessory:Landroid/hardware/usb/UsbAccessory;
 
@@ -261,7 +259,7 @@
 
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 72
+    .line 74
     iget-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
     if-eqz v4, :cond_3
@@ -274,9 +272,9 @@
 
     if-nez v4, :cond_4
 
-    .line 73
+    .line 75
     :cond_3
-    const v4, 0x7f0b0022
+    const v4, 0x7f090024
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getString(I)Ljava/lang/String;
 
@@ -284,9 +282,9 @@
 
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    .line 75
+    .line 77
     :cond_4
-    const v4, 0x7f0b0021
+    const v4, 0x7f090023
 
     const/4 v5, 0x1
 
@@ -304,8 +302,8 @@
 
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    .line 76
-    const v4, 0x7f0b0023
+    .line 78
+    const v4, 0x7f090025
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getString(I)Ljava/lang/String;
 
@@ -313,7 +311,7 @@
 
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    .line 77
+    .line 79
     const/high16 v4, 0x1040000
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getString(I)Ljava/lang/String;
@@ -322,13 +320,13 @@
 
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
-    .line 78
+    .line 80
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 79
+    .line 81
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 81
+    .line 83
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->setupAlert()V
 
     goto/16 :goto_1

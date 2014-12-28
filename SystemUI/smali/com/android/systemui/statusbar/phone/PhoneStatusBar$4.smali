@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 479
+    .line 361
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -37,33 +37,30 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 4
 
     .prologue
-    .line 482
+    .line 364
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSystemUiVisibility:I
+    iget v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mFlingY:I
 
-    const v2, -0xc000001
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    and-int v0, v1, v2
+    iget v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mViewDelta:I
 
-    .line 483
-    .local v0, "requested":I
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    add-int/2addr v1, v2
 
-    iget v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSystemUiVisibility:I
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    if-eq v1, v0, :cond_0
+    iget v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mFlingVelocity:F
 
-    .line 484
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$4;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    const/4 v3, 0x0
 
-    # invokes: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->notifyUiVisibilityChanged(I)V
-    invoke-static {v1, v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1000(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;I)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->performFling(IFZ)V
 
-    .line 486
-    :cond_0
+    .line 365
     return-void
 .end method

@@ -1,14 +1,11 @@
 .class Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "PhoneStatusBar.java"
-
-# interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->makeStatusBarView()Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setAreThereNotifications()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,36 +23,80 @@
     .locals 0
 
     .prologue
-    .line 1409
+    .line 1252
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
+.method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1, "v"    # Landroid/view/View;
-    .param p2, "left"    # I
-    .param p3, "top"    # I
-    .param p4, "right"    # I
-    .param p5, "bottom"    # I
-    .param p6, "oldLeft"    # I
-    .param p7, "oldTop"    # I
-    .param p8, "oldRight"    # I
-    .param p9, "oldBottom"    # I
+    .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1415
+    .line 1255
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
+
+    move-result v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
+    cmpg-float v0, v0, v1
 
-    .line 1416
+    if-gtz v0, :cond_0
+
+    .line 1256
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1258
+    :cond_0
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 2
+    .param p1, "animation"    # Landroid/animation/Animator;
+
+    .prologue
+    .line 1262
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    cmpg-float v0, v0, v1
+
+    if-gtz v0, :cond_0
+
+    .line 1263
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$12;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1265
+    :cond_0
     return-void
 .end method

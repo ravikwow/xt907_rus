@@ -14,7 +14,7 @@
 
 .field private mLoaded:Z
 
-.field private mThumbnail:Landroid/graphics/drawable/Drawable;
+.field private mThumbnail:Landroid/graphics/Bitmap;
 
 .field final packageName:Ljava/lang/String;
 
@@ -116,12 +116,12 @@
     return-object v0
 .end method
 
-.method public getThumbnail()Landroid/graphics/drawable/Drawable;
+.method public getThumbnail()Landroid/graphics/Bitmap;
     .locals 1
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/android/systemui/recent/TaskDescription;->mThumbnail:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/systemui/recent/TaskDescription;->mThumbnail:Landroid/graphics/Bitmap;
 
     return-object v0
 .end method
@@ -192,13 +192,13 @@
     return-void
 .end method
 
-.method public setThumbnail(Landroid/graphics/drawable/Drawable;)V
+.method public setThumbnail(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1, "thumbnail"    # Landroid/graphics/drawable/Drawable;
+    .param p1, "thumbnail"    # Landroid/graphics/Bitmap;
 
     .prologue
     .line 89
-    iput-object p1, p0, Lcom/android/systemui/recent/TaskDescription;->mThumbnail:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/android/systemui/recent/TaskDescription;->mThumbnail:Landroid/graphics/Bitmap;
 
     .line 90
     return-void

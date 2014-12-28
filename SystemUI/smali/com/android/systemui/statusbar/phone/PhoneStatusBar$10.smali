@@ -3,12 +3,12 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->makeStatusBarView()Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1323
+    .line 835
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$10;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -36,22 +36,15 @@
 
 
 # virtual methods
-.method public onSizeChanged(Landroid/view/View;IIII)V
-    .locals 2
-    .param p1, "view"    # Landroid/view/View;
-    .param p2, "w"    # I
-    .param p3, "h"    # I
-    .param p4, "oldw"    # I
-    .param p5, "oldh"    # I
+.method public run()V
+    .locals 1
 
     .prologue
-    .line 1328
+    .line 837
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$10;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->showSearchPanel()V
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
-
-    .line 1329
+    .line 838
     return-void
 .end method

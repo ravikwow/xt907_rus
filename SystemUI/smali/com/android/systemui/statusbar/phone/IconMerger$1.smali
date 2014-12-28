@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 75
+    .line 80
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/IconMerger$1;->this$0:Lcom/android/systemui/statusbar/phone/IconMerger;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/IconMerger$1;->val$moreRequired:Z
@@ -44,7 +44,7 @@
     .locals 2
 
     .prologue
-    .line 78
+    .line 83
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/IconMerger$1;->this$0:Lcom/android/systemui/statusbar/phone/IconMerger;
 
     # getter for: Lcom/android/systemui/statusbar/phone/IconMerger;->mMoreView:Landroid/view/View;
@@ -61,10 +61,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 79
+    .line 84
     return-void
 
-    .line 78
+    .line 83
     :cond_0
     const/16 v0, 0x8
 

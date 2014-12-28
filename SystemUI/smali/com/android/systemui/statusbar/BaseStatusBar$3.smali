@@ -1,11 +1,14 @@
 .class Lcom/android/systemui/statusbar/BaseStatusBar$3;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "BaseStatusBar.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/statusbar/BaseStatusBar;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/systemui/statusbar/BaseStatusBar;->updateNotificationVetoButton(Landroid/view/View;Lcom/android/internal/statusbar/StatusBarNotification;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,99 +20,62 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
+.field final synthetic val$_id:I
+
+.field final synthetic val$_pkg:Ljava/lang/String;
+
+.field final synthetic val$_tag:Ljava/lang/String;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/BaseStatusBar;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/BaseStatusBar;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
 
     .prologue
-    .line 206
+    .line 266
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_pkg:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_tag:Ljava/lang/String;
+
+    iput p4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_id:I
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1, "context"    # Landroid/content/Context;
-    .param p2, "intent"    # Landroid/content/Intent;
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 209
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    .line 269
+    :try_start_0
+    iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    move-result-object v0
+    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
-    .line 210
-    .local v0, "action":Ljava/lang/String;
-    const-string v1, "android.intent.action.USER_SWITCHED"
+    iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_pkg:Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_tag:Ljava/lang/String;
 
-    move-result v1
+    iget v3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_id:I
 
-    if-eqz v1, :cond_0
+    invoke-interface {v0, v1, v2, v3}, Lcom/android/internal/statusbar/IStatusBarService;->onNotificationClear(Ljava/lang/String;Ljava/lang/String;I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 211
-    iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    const-string v2, "android.intent.extra.user_handle"
-
-    const/4 v3, -0x1
-
-    invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v2
-
-    iput v2, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentUserId:I
-
-    .line 212
-    const-string v1, "StatusBar"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "userId "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    iget v3, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentUserId:I
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " is in the house"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 213
-    iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
-
-    iget v2, v2, Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentUserId:I
-
-    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->userSwitched(I)V
-
-    .line 215
-    :cond_0
+    .line 273
+    :goto_0
     return-void
+
+    .line 270
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
 .end method

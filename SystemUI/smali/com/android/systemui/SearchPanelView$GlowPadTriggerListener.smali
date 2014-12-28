@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 142
+    .line 90
     iput-object p1, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .locals 0
 
     .prologue
-    .line 175
+    .line 117
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .param p2, "handle"    # I
 
     .prologue
-    .line 146
+    .line 94
     return-void
 .end method
 
@@ -62,34 +62,24 @@
     .param p2, "handle"    # I
 
     .prologue
-    .line 153
+    .line 100
     iget-boolean v0, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->mWaitingForLaunch:Z
 
     if-nez v0, :cond_0
 
     if-nez p2, :cond_0
 
-    .line 156
-    iget-object v0, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
-
-    # getter for: Lcom/android/systemui/SearchPanelView;->mHasTSBFeature:Z
-    invoke-static {v0}, Lcom/android/systemui/SearchPanelView;->access$000(Lcom/android/systemui/SearchPanelView;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 157
+    .line 101
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
 
     # getter for: Lcom/android/systemui/SearchPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
-    invoke-static {v0}, Lcom/android/systemui/SearchPanelView;->access$100(Lcom/android/systemui/SearchPanelView;)Lcom/android/systemui/statusbar/BaseStatusBar;
+    invoke-static {v0}, Lcom/android/systemui/SearchPanelView;->access$000(Lcom/android/systemui/SearchPanelView;)Lcom/android/systemui/statusbar/BaseStatusBar;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->hideSearchPanel()V
 
-    .line 161
+    .line 103
     :cond_0
     return-void
 .end method
@@ -100,7 +90,7 @@
     .param p2, "handle"    # I
 
     .prologue
-    .line 149
+    .line 97
     return-void
 .end method
 
@@ -110,11 +100,11 @@
     .param p2, "target"    # I
 
     .prologue
-    .line 164
+    .line 106
     iget-object v1, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
 
     # getter for: Lcom/android/systemui/SearchPanelView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
-    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$200(Lcom/android/systemui/SearchPanelView;)Lcom/android/internal/widget/multiwaveview/GlowPadView;
+    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$100(Lcom/android/systemui/SearchPanelView;)Lcom/android/internal/widget/multiwaveview/GlowPadView;
 
     move-result-object v1
 
@@ -122,37 +112,37 @@
 
     move-result v0
 
-    .line 165
+    .line 107
     .local v0, "resId":I
     packed-switch v0, :pswitch_data_0
 
-    .line 172
+    .line 114
     :goto_0
     return-void
 
-    .line 167
+    .line 109
     :pswitch_0
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->mWaitingForLaunch:Z
 
-    .line 168
+    .line 110
     iget-object v1, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
 
     # invokes: Lcom/android/systemui/SearchPanelView;->startAssistActivity()V
-    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$300(Lcom/android/systemui/SearchPanelView;)V
+    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$200(Lcom/android/systemui/SearchPanelView;)V
 
-    .line 169
+    .line 111
     iget-object v1, p0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->this$0:Lcom/android/systemui/SearchPanelView;
 
     # invokes: Lcom/android/systemui/SearchPanelView;->vibrate()V
-    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$400(Lcom/android/systemui/SearchPanelView;)V
+    invoke-static {v1}, Lcom/android/systemui/SearchPanelView;->access$300(Lcom/android/systemui/SearchPanelView;)V
 
     goto :goto_0
 
-    .line 165
+    .line 107
     :pswitch_data_0
-    .packed-switch 0x1080298
+    .packed-switch 0x1080294
         :pswitch_0
     .end packed-switch
 .end method

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 174
+    .line 158
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$2;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Landroid/widget/RemoteViews$OnClickHandler;-><init>()V
@@ -42,16 +42,16 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 180
+    .line 161
     invoke-virtual {p2}, Landroid/app/PendingIntent;->isActivity()Z
 
     move-result v1
 
-    .line 181
+    .line 162
     .local v1, "isActivity":Z
     if-eqz v1, :cond_0
 
-    .line 187
+    .line 168
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -59,7 +59,7 @@
 
     invoke-interface {v2}, Landroid/app/IActivityManager;->resumeAppSwitches()V
 
-    .line 190
+    .line 171
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v2
@@ -68,34 +68,34 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 195
+    .line 176
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2, p3}, Landroid/widget/RemoteViews$OnClickHandler;->onClickHandler(Landroid/view/View;Landroid/app/PendingIntent;Landroid/content/Intent;)Z
 
     move-result v0
 
-    .line 197
+    .line 178
     .local v0, "handled":Z
     if-eqz v1, :cond_1
 
     if-eqz v0, :cond_1
 
-    .line 199
+    .line 180
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$2;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapsePanels(I)V
+    invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapse(I)V
 
-    .line 200
+    .line 181
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$2;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar;->visibilityChanged(Z)V
 
-    .line 202
+    .line 183
     :cond_1
     return v0
 
-    .line 191
+    .line 172
     .end local v0    # "handled":Z
     :catch_0
     move-exception v2

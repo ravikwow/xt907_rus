@@ -4,19 +4,6 @@
 
 
 # instance fields
-.field public mComponents:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/Class",
-            "<*>;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public mContext:Landroid/content/Context;
 
 
@@ -25,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 26
+    .line 25
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,42 +27,8 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 36
+    .line 34
     return-void
-.end method
-
-.method public getComponent(Ljava/lang/Class;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class",
-            "<TT;>;)TT;"
-        }
-    .end annotation
-
-    .prologue
-    .line 40
-    .local p1, "interfaceType":Ljava/lang/Class;, "Ljava/lang/Class<TT;>;"
-    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
@@ -83,37 +36,7 @@
     .param p1, "newConfig"    # Landroid/content/res/Configuration;
 
     .prologue
-    .line 33
-    return-void
-.end method
-
-.method public putComponent(Ljava/lang/Class;Ljava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            "C:TT;>(",
-            "Ljava/lang/Class",
-            "<TT;>;TC;)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 44
-    .local p1, "interfaceType":Ljava/lang/Class;, "Ljava/lang/Class<TT;>;"
-    .local p2, "component":Ljava/lang/Object;, "TC;"
-    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
-
-    if-eqz v0, :cond_0
-
-    .line 45
-    iget-object v0, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
-
-    invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 47
-    :cond_0
+    .line 31
     return-void
 .end method
 

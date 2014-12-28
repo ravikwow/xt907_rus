@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field calloutLine:Landroid/view/View;
-
 .field descriptionView:Landroid/widget/TextView;
 
 .field iconView:Landroid/widget/ImageView;
@@ -29,9 +27,9 @@
 
 .field thumbnailView:Landroid/view/View;
 
-.field thumbnailViewDrawable:Landroid/graphics/drawable/Drawable;
-
 .field thumbnailViewImage:Landroid/widget/ImageView;
+
+.field thumbnailViewImageBitmap:Landroid/graphics/Bitmap;
 
 
 # direct methods
@@ -39,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 119
+    .line 129
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 236
+    .line 238
     iput-object p1, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     iput p2, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
@@ -44,7 +44,7 @@
     .locals 2
 
     .prologue
-    .line 239
+    .line 241
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     # getter for: Lcom/android/systemui/usb/UsbStorageActivity;->mDestroyed:Z
@@ -54,21 +54,21 @@
 
     if-nez v0, :cond_0
 
-    .line 240
+    .line 242
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget v1, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->removeDialog(I)V
 
-    .line 241
+    .line 243
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget v1, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->showDialog(I)V
 
-    .line 243
+    .line 245
     :cond_0
     return-void
 .end method
