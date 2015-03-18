@@ -61,12 +61,12 @@
     <item type="id" name="onsText">false</item>
     <item type="id" name="signal_cluster">false</item>
     <item type="id" name="notification_panel">false</item>
-    <item type="id" name="emergency_calls_only">false</item>
-    <item type="id" name="scroll">false</item>
-    <item type="id" name="latestItems">false</item>
     <item type="id" name="carrier_label_group">false</item>
     <item type="id" name="carrier_label">false</item>
     <item type="id" name="cellbroadcastLabel">false</item>
+    <item type="id" name="emergency_calls_only">false</item>
+    <item type="id" name="scroll">false</item>
+    <item type="id" name="latestItems">false</item>
     <item type="id" name="close">false</item>
     <item type="id" name="date">false</item>
     <item type="id" name="rotation_lock_button">false</item>

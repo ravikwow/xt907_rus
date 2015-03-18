@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 5227
+    .line 4535
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/systemui/statusbar/policy/NetworkController$1;
 
     .prologue
-    .line 5227
+    .line 4535
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;-><init>(Lcom/android/systemui/statusbar/policy/NetworkController;)V
 
     return-void
@@ -50,47 +50,47 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 5230
+    .line 4538
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 5247
+    .line 4555
     :goto_0
     return-void
 
-    .line 5233
+    .line 4541
     :pswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     # invokes: Lcom/android/systemui/statusbar/policy/NetworkController;->updateTelephonySignalStrength()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$1000(Lcom/android/systemui/statusbar/policy/NetworkController;)V
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$300(Lcom/android/systemui/statusbar/policy/NetworkController;)V
 
     goto :goto_0
 
-    .line 5241
+    .line 4549
     :pswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     # getter for: Lcom/android/systemui/statusbar/policy/NetworkController;->mLock:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$1100(Lcom/android/systemui/statusbar/policy/NetworkController;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$900(Lcom/android/systemui/statusbar/policy/NetworkController;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 5242
+    .line 4550
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$StatusBarHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     # getter for: Lcom/android/systemui/statusbar/policy/NetworkController;->mEri:Lcom/motorola/android/systemui/statusbar/VzwEri;
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$700(Lcom/android/systemui/statusbar/policy/NetworkController;)Lcom/motorola/android/systemui/statusbar/VzwEri;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->access$800(Lcom/android/systemui/statusbar/policy/NetworkController;)Lcom/motorola/android/systemui/statusbar/VzwEri;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/motorola/android/systemui/statusbar/VzwEri;->playEriAlertAfterBoot()V
 
-    .line 5243
+    .line 4551
     monitor-exit v1
 
     goto :goto_0
@@ -104,7 +104,7 @@
 
     throw v0
 
-    .line 5230
+    .line 4538
     nop
 
     :pswitch_data_0

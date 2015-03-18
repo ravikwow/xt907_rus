@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="config_shortAnimTime">150</integer>
-    <integer name="config_mediumAnimTime">200</integer>
+    <integer name="config_mediumAnimTime">300</integer>
     <integer name="config_longAnimTime">400</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <integer name="config_soundEffectVolumeDb">-6</integer>
@@ -49,7 +49,7 @@
     <integer name="config_downloadDataDirLowSpaceThreshold">10</integer>
     <integer name="config_cursorWindowSize">2048</integer>
     <integer name="config_ntpTimeout">20000</integer>
-    <integer name="config_networkPolicyDefaultWarning">2048</integer>
+    <integer name="config_networkPolicyDefaultWarning">-1</integer>
     <integer name="config_maxResolverActivityColumns">2</integer>
     <integer name="max_action_buttons">2</integer>
     <integer name="preferences_left_pane_weight">4</integer>
@@ -65,7 +65,7 @@
     <integer name="config_row_num">0</integer>
     <integer name="config_column_num">0</integer>
     <integer name="config_roaming_spn_display_rule">0</integer>
-    <integer name="mobile_interface_mtu">1410</integer>
+    <integer name="mobile_interface_mtu">1428</integer>
     <integer name="socket_operation_timeout">60000</integer>
     <integer name="mot_nv_ims_epma_supported">42</integer>
     <integer name="rde_nv_ehrpd_enabled">43</integer>
@@ -93,5 +93,4 @@
     <integer name="config_tempMarginThresholdDelay">0</integer>
     <integer name="config_displayTempDebounceDelay">360</integer>
     <integer name="config_backlightAnimationSteps">15</integer>
-    <integer name="eap_preloaded_ssid_retry_count">0</integer>
 </resources>

@@ -99,7 +99,7 @@
     const/4 v5, 0x0
 
     .line 159
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 77
     iput v5, p0, Lcom/android/systemui/ExpandHelper;->mExpansionStyle:I
@@ -168,7 +168,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0030
+    const v3, 0x7f0c0030
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -183,7 +183,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0004
+    const v3, 0x7f0b0004
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -198,7 +198,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0031
+    const v3, 0x7f0c0031
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -228,7 +228,7 @@
     .line 192
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper;->mGlowTopAnimation:Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {v2, v1}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v2, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 193
     const-string v2, "alpha"
@@ -246,7 +246,7 @@
     .line 194
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper;->mGlowBottomAnimation:Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {v2, v1}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v2, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 195
     new-instance v2, Landroid/animation/AnimatorSet;
@@ -677,7 +677,7 @@
     :goto_2
     iget-object v4, p0, Lcom/android/systemui/ExpandHelper;->mScaleAnimation:Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {v4}, Landroid/animation/ObjectAnimator;->isRunning()Z
+    invoke-virtual {v4}, Landroid/animation/ValueAnimator;->isRunning()Z
 
     move-result v4
 
@@ -686,7 +686,7 @@
     .line 528
     iget-object v4, p0, Lcom/android/systemui/ExpandHelper;->mScaleAnimation:Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {v4}, Landroid/animation/ObjectAnimator;->cancel()V
+    invoke-virtual {v4}, Landroid/animation/ValueAnimator;->cancel()V
 
     .line 530
     :cond_2
@@ -1016,18 +1016,18 @@
 
     .line 555
     .local v0, "g":Landroid/view/ViewGroup;
-    const v1, 0x7f0c0055
+    const v1, 0x7f0d0055
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/systemui/ExpandHelper;->mCurrViewTopGlow:Landroid/view/View;
 
     .line 556
-    const v1, 0x7f0c0059
+    const v1, 0x7f0d0059
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 

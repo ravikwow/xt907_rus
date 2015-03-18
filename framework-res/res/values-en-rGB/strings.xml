@@ -182,7 +182,7 @@
     <string name="serviceEnabledFor">Service was enabled for:</string>
     <string name="serviceDisabled">Service has been disabled.</string>
     <string name="serviceRegistered">Registration was successful.</string>
-    <string name="serviceErased">Successfully erased.</string>
+    <string name="serviceErased">Erase successful.</string>
     <string name="passwordIncorrect">Incorrect password.</string>
     <string name="mmiComplete">MMI complete.</string>
     <string name="badPin">The old PIN that you typed is incorrect.</string>
@@ -578,7 +578,7 @@ Attempts remaining: "</string>
     <string name="permlab_authenticateAccounts">create accounts and set passwords</string>
     <string name="permdesc_authenticateAccounts">Allows the app to use the account authenticator capabilities of the Account Manager, including creating accounts and getting and setting their passwords.</string>
     <string name="permlab_manageAccounts">add or remove accounts</string>
-    <string name="permdesc_manageAccounts">Allows the app to perform operations such as adding and removing accounts, and deleting their password.</string>
+    <string name="permdesc_manageAccounts">Allows the app to perform operations like adding and removing accounts, and deleting their password.</string>
     <string name="permlab_useCredentials">use accounts on the device</string>
     <string name="permdesc_useCredentials">Allows the app to request authentication tokens.</string>
     <string name="permlab_accessNetworkState">view network connections</string>
@@ -593,9 +593,9 @@ Attempts remaining: "</string>
     <string name="permdesc_changeTetherState">Allows the app to change the state of tethered network connectivity.</string>
     <string name="permlab_changeBackgroundDataSetting">change background data usage setting</string>
     <string name="permdesc_changeBackgroundDataSetting">Allows the app to change the background data usage setting.</string>
-    <string name="permlab_accessWifiState">view Wi-Fi connections</string>
-    <string name="permdesc_accessWifiState">Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-FI devices.</string>
-    <string name="permlab_changeWifiState">connect and disconnect from Wi-Fi</string>
+    <string name="permlab_accessWifiState">view WiFi connections</string>
+    <string name="permdesc_accessWifiState">Allows the app to view information about Wi-FI networking, such as whether Wi-FI is enabled and name of connected Wi-FI devices.</string>
+    <string name="permlab_changeWifiState">connect and disconnect from WiFi</string>
     <string name="permdesc_changeWifiState">Allows the app to connect to and disconnect from Wi-FI access points and to make changes to device configuration for Wi-FI networks.</string>
     <string name="permlab_changeWifiMulticastState">allow Wi-Fi Multicast reception</string>
     <string name="permdesc_changeWifiMulticastState">Allows the app to receive packets sent to all devices on a Wi-FI network using multicast addresses, not just your phone. It uses more power than the non-multicast mode.</string>
@@ -644,7 +644,7 @@ Attempts remaining: "</string>
     <string name="policylab_limitPassword">Set password rules</string>
     <string name="policydesc_limitPassword">Control the length and the characters allowed in screen unlock passwords.</string>
     <string name="policylab_watchLogin">Monitor screen unlock attempts</string>
-    <string name="policydesc_watchLogin">"Monitor the number of incorrect attempts to enter a password when unlocking the screen and lock the phone or erase all the phone's data if too many incorrect attempts are made."</string>
+    <string name="policydesc_watchLogin">"Monitor the number of incorrect passwords typed when unlocking the screen and lock the phone or erase all the phone's data if too many incorrect passwords are typed."</string>
     <string name="policylab_resetPassword">Change the screen unlock password</string>
     <string name="policydesc_resetPassword">Change the screen unlock password.</string>
     <string name="policylab_forceLock">Lock the screen</string>
@@ -729,16 +729,16 @@ Attempts remaining: "</string>
     <string name="sipAddressTypeHome">Home</string>
     <string name="sipAddressTypeWork">Work</string>
     <string name="sipAddressTypeOther">Other</string>
-    <string name="keyguard_password_enter_pin_code">Enter PIN</string>
-    <string name="keyguard_password_enter_puk_code">Enter PUK code and new PIN</string>
+    <string name="keyguard_password_enter_pin_code">Type PIN code</string>
+    <string name="keyguard_password_enter_puk_code">Type PUK and new PIN code</string>
     <string name="keyguard_password_enter_pin_code_for_subscription">Enter PIN for subscription</string>
     <string name="keyguard_password_enter_puk_code_for_subscription">Enter PUK and new PIN for subscription</string>
     <string name="keyguard_password_enter_puk_prompt">PUK code</string>
-    <string name="keyguard_password_enter_pin_prompt">New PIN</string>
+    <string name="keyguard_password_enter_pin_prompt">New PIN Code</string>
     <string name="keyguard_password_entry_touch_hint"><font size="17">Touch to type password</font></string>
     <string name="keyguard_password_enter_password_code">Type password to unlock</string>
     <string name="keyguard_password_enter_pin_password_code">Type PIN to unlock</string>
-    <string name="keyguard_password_wrong_pin_code">Incorrect PIN.</string>
+    <string name="keyguard_password_wrong_pin_code">Incorrect PIN code.</string>
     <string name="keyguard_password_wrong_puk_code">Incorrect PUK code.</string>
     <string name="keyguard_password_pin_failed">PIN operation failed.</string>
     <string name="keyguard_password_puk_failed">PUK operation failed.</string>
@@ -760,7 +760,7 @@ Attempts remaining: "</string>
     <string name="lockscreen_charged">Charged.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Connect your charger.</string>
-    <string name="lockscreen_missing_sim_message_short">No SIM card</string>
+    <string name="lockscreen_missing_sim_message_short">No SIM card.</string>
     <string name="lockscreen_missing_sim_message">No SIM card in phone.</string>
     <string name="lockscreen_missing_sim_instructions">Insert a SIM card.</string>
     <string name="lockscreen_missing_sim_instructions_long">The SIM card is missing or not readable. Insert a SIM card.</string>
@@ -776,29 +776,29 @@ Attempts remaining: "</string>
     <string name="lockscreen_sim_error_message_short">Invalid card.</string>
     <string name="lockscreen_sim_error_message">SIM card is invalid.</string>
     <string name="lockscreen_network_locked_message">Network locked</string>
-    <string name="lockscreen_perso_locked_message">SIM is Perso locked</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM is Perso locked</string>
     <string name="lockscreen_sim_puk_locked_message">SIM card is PUK-locked.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 blocked. Enter PUK1.
 or
 Please see the User Guide/contact Customer Care."</string>
-    <string name="lockscreen_sim_locked_message">SIM card is locked</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM card is locked.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Unlocking SIM card…</string>
-    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"You have drawn your unlock pattern incorrectly %d times. 
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times. 
 
 Try again in %d seconds."</string>
-    <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"You have entered your password incorrectly %d times. 
+    <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"You have incorrectly typed your password %d times. 
 
 Try again in %d seconds."</string>
     <string name="lockscreen_sim_pin_blocked">PIN1 blocked. Enter PUK1 code to unblock PIN1.</string>
     <string name="lockscreen_ruim_pin_blocked">PIN1 blocked. Enter PUK1 code to unblock PIN1.</string>
-    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have entered your PIN incorrectly %d times. 
+    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have incorrectly typed your PIN %d times. 
 
 Try again in %d seconds."</string>
     <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"You have drawn your unlock pattern incorrectly %d times. After %d more unsuccessful attempts, you will be asked to unlock your phone using your Google sign-in.
 
- Try again in %d seconds."</string>
-    <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">You have attempted to unlock the phone unsuccessfully %d times. After %d more unsuccessful attempts, the phone will be reset to factory default and all user data will be lost.</string>
-    <string name="lockscreen_failed_attempts_now_wiping">You have attempted to unlock the phone unsuccessfully %d times. The phone will now be reset to factory defaults.</string>
+ Please try again in %d seconds."</string>
+    <string name="lockscreen_failed_attempts_almost_at_wipe" formatted="false">You have incorrectly attempted to unlock the phone %d times. After %d more unsuccessful attempts, the phone will be reset to factory default and all user data will be lost.</string>
+    <string name="lockscreen_failed_attempts_now_wiping">You have incorrectly attempted to unlock the phone %d times. The phone will now be reset to factory defaults.</string>
     <string name="lockscreen_too_many_failed_attempts_countdown">Try again in %d seconds.</string>
     <string name="lockscreen_forgot_pattern_button_text">Forgotten pattern?</string>
     <string name="lockscreen_glogin_forgot_pattern">Account unlock</string>
@@ -808,7 +808,7 @@ Try again in %d seconds."</string>
     <string name="lockscreen_glogin_password_hint">Password</string>
     <string name="lockscreen_glogin_submit_button">Sign in</string>
     <string name="lockscreen_glogin_invalid_input">Invalid username or password.</string>
-    <string name="lockscreen_glogin_account_recovery_hint">"Forgotten your username or password?
+    <string name="lockscreen_glogin_account_recovery_hint">"Forgot your username or password?
 Visit "<b>google.co.uk/accounts/recovery</b>.</string>
     <string name="lockscreen_glogin_checking_password">Checking…</string>
     <string name="lockscreen_unlock_label">Unlock</string>
@@ -825,8 +825,8 @@ Visit "<b>google.co.uk/accounts/recovery</b>.</string>
     <string name="granularity_label_word">word</string>
     <string name="granularity_label_link">link</string>
     <string name="granularity_label_line">line</string>
-    <string name="hour_ampm" formatted="false">%-l %p</string>
-    <string name="hour_cap_ampm" formatted="false">%-l %p</string>
+    <string name="hour_ampm" formatted="false">%-l%p</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">Factory test failed</string>
     <string name="factorytest_not_system">The FACTORY_TEST action is only supported for packages installed in /system/app.</string>
     <string name="factorytest_no_action">No package was found that provides the FACTORY_TEST action.</string>
@@ -1260,12 +1260,6 @@ for account %s."</string>
     <string name="default_audio_route_category_name">System</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth audio</string>
     <string name="media_route_chooser_grouping_done">Done</string>
-    <string name="wispr_login_success">Login success</string>
-    <string name="wispr_login_failed">Login failed</string>
-    <string name="wispr_login_header">AT&amp;T Wi-Fi Hotspot status</string>
-    <string name="wispr_login_failed_credential">Unable to confirm eligibility, please call Customer Services on 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Authentication failed</string>
-    <string name="wispr_insert_sim">Unable to confirm eligibility, please call Customer Services on 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1329,8 +1323,8 @@ for account %s."</string>
     <string name="policylab_simplepassword">Allow simple password</string>
     <string name="policydesc_simplepassword">Allow a simple password on the device.</string>
     <string name="title_policy_enforcement_notification">Security policy</string>
-    <string name="policylab_allowbluetooth">Enable/disable Bluetooth</string>
-    <string name="policydesc_allowbluetooth">Allow administrator to enable or disable Bluetooth.</string>
+    <string name="policylab_allowbluetooth">Allow Bluetooth</string>
+    <string name="policydesc_allowbluetooth">Perform to allow IT administrators to enable or disable Bluetooth on the phones.</string>
     <string name="msg_disable_bluetooth_notification">Bluetooth disabled</string>
     <string name="msg_enable_bluetooth_notification">Bluetooth enabled</string>
     <string name="policylab_allowwifi">Enable/disable Wi-Fi</string>
@@ -1398,14 +1392,7 @@ for account %s."</string>
     <string name="password_recovery_dialog_title">Forgotten your password?</string>
     <string name="password_recovery_dialog_message">Please contact your IT department and ask for the \"Recovery password\". Entering this password will allow you to reset your existing password and define a new one.</string>
     <string name="lockscreen_charged_rmdunplug">Fully charged. Unplug your charger from the outlet to conserve energy.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network extender</string>
-    <string name="moto_eritext_extended_network">Extended network</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">USB disk</string>
-    <string name="sim_pin_technical_problem">A technical problem occurred. Please try again.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Confirm new PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Try again in %d second.</string>
     <string name="msg_disable_consumer_email_notification">Consumer email disabled.</string>
     <string name="msg_enable_consumer_email_notification">Consumer email enabled.</string>
     <string name="msg_disable_browser_notification">Browser disabled.</string>
@@ -1424,5 +1411,4 @@ for account %s."</string>
     <string name="msg_app_control_notification">Disabled applications list updated.</string>
     <string name="policylab_appcontrol">Disable applications</string>
     <string name="policydesc_appcontrol">Allow administrator to enable or disable applications in the device.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN unblocked</string>
 </resources>

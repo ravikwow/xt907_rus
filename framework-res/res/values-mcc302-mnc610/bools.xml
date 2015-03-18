@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="config_feature_34563_ons_support">true</bool>
-    <bool name="config_show_expanded_names">true</bool>
-    <bool name="config_show_both_plmn_and_spn_in_curtain">false</bool>
-    <bool name="config_spn_priority_over_plmn">false</bool>
-    <bool name="disp_no_svc_text">false</bool>
-</resources>

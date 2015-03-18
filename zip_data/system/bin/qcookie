@@ -1,0 +1,60 @@
+#!/system/bin/sh
+
+# This script is responsible for updating debug cookies in SECONDARY_STORAGE
+# according to their related system properties.  This is done to give control
+# over the cookies at build-time, and also provide a way for a Java-level
+# system app to control them (system apps cannot read/write SECONDARY_STORAGE
+# directly).  The script is setup to run as a oneshot init service on bootup
+# to ensure the build settings for the properites are honored.  It also runs
+# whenever one of the properties is changed.
+
+doesCookieRootExist() {
+    touch $SECONDARY_STORAGE
+    case $? in
+        0) return 1;;
+        *) return 0;;
+    esac
+}
+
+addCookie() {
+    log -p v -t $tag "Adding $1"
+    touch $1
+}
+
+rmCookie() {
+    log -p v -t $tag "Removing $1"
+    rm $1
+}
+
+updateCookies() {
+    log -p v -t $tag "Updating cookies"
+    case $dloadOn in
+        1) addCookie $dlcookiePath;;
+        *) rmCookie $dlcookiePath;;
+    esac
+    case $rdumpOn in
+        1) addCookie $rdcookiePath;;
+        *) rmCookie $rdcookiePath;;
+    esac
+}
+
+tag="qcookie"
+dlcookiePath="$SECONDARY_STORAGE/dlcookie.txt"
+rdcookiePath="$SECONDARY_STORAGE/rdcookie.txt"
+dloadOn=$(getprop persist.sys.qc.dload.on)
+rdumpOn=$(getprop persist.sys.qc.rdump.on)
+
+i=1
+while true; do
+    doesCookieRootExist
+    case $? in 1) updateCookies; exit 0;; esac
+    # Powerup with clean userdata can result in a long time before the
+    # SECONDARY_STORAGE is mounted, so retry up to 10 minutes.
+    case $i in 21) break;; esac
+    log -p v -t $tag "Sleeping 30 seconds before retry $i"
+    sleep 30
+    log -p v -t $tag "Doing retry $i"
+    let i=$i+1
+done
+
+log -p v -t $tag "No ext storage; giving up"

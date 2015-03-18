@@ -8,5 +8,5 @@
     <bool name="config_showMin3G">false</bool>
     <bool name="config_showRotationLock">true</bool>
     <bool name="config_hspap_data_distinguishable">true</bool>
-    <bool name="config_cdma_femto_icon_display">false</bool>
+    <bool name="config_cdma_femto_icon_display">true</bool>
 </resources>

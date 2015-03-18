@@ -164,7 +164,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/tablet/TabletTicker;->mWindow:Landroid/view/ViewGroup;
 
-    invoke-virtual {v3}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
@@ -181,7 +181,7 @@
     .line 185
     const-wide/16 v1, 0x1388
 
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
     .line 192
     :cond_3
@@ -335,7 +335,7 @@
     if-eqz v2, :cond_0
 
     .line 262
-    const v16, 0x7f0c00ab
+    const v16, 0x7f0d00ab
 
     .line 266
     .local v16, "iconId":I
@@ -363,9 +363,9 @@
 
     .line 268
     .local v14, "group":Landroid/view/ViewGroup;
-    const v2, 0x7f0c00ac
+    const v2, 0x7f0d00ac
 
-    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -476,7 +476,7 @@
     .end local v14    # "group":Landroid/view/ViewGroup;
     .end local v16    # "iconId":I
     :cond_0
-    const v16, 0x7f0c00a9
+    const v16, 0x7f0d00a9
 
     .restart local v16    # "iconId":I
     goto :goto_0
@@ -520,9 +520,9 @@
     .end local v13    # "expanded":Landroid/view/View;
     .end local v21    # "lp":Landroid/widget/FrameLayout$LayoutParams;
     :goto_3
-    const v2, 0x7f0c00a8
+    const v2, 0x7f0d00a8
 
-    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v20
 
@@ -553,7 +553,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 303
-    invoke-virtual/range {v20 .. v20}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual/range {v20 .. v20}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v21
 
@@ -590,7 +590,7 @@
 
     .line 312
     :goto_4
-    invoke-virtual/range {v20 .. v21}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 316
     .end local v21    # "lp":Landroid/view/ViewGroup$LayoutParams;
@@ -623,7 +623,7 @@
 
     iget v5, v0, Lcom/android/internal/statusbar/StatusBarNotification;->id:I
 
-    invoke-virtual {v2, v10, v3, v4, v5}, Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->makeClicker(Landroid/app/PendingIntent;Ljava/lang/String;Ljava/lang/String;I)Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;
+    invoke-virtual {v2, v10, v3, v4, v5}, Lcom/android/systemui/statusbar/BaseStatusBar;->makeClicker(Landroid/app/PendingIntent;Ljava/lang/String;Ljava/lang/String;I)Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;
 
     move-result-object v8
 
@@ -635,7 +635,7 @@
 
     invoke-direct {v2, v0, v8}, Lcom/android/systemui/statusbar/tablet/TabletTicker$1;-><init>(Lcom/android/systemui/statusbar/tablet/TabletTicker;Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v14, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .end local v8    # "clicker":Landroid/view/View$OnClickListener;
     :goto_5
@@ -712,7 +712,7 @@
     .local v15, "icon":Landroid/graphics/drawable/Drawable;
     move/from16 v0, v16
 
-    invoke-virtual {v14, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v14, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -732,9 +732,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 294
-    const v2, 0x7f0c00aa
+    const v2, 0x7f0d00aa
 
-    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v24
 
@@ -789,7 +789,7 @@
     :cond_6
     const/4 v2, 0x0
 
-    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v14, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_5
 .end method
@@ -815,7 +815,7 @@
 
     .line 216
     .local v7, "view":Landroid/widget/FrameLayout;
-    const v2, 0x7f0b003b
+    const v2, 0x7f0c003b
 
     invoke-virtual {v6, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -861,7 +861,7 @@
     .line 233
     iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/TabletTicker;->mLayoutTransition:Landroid/animation/LayoutTransition;
 
-    invoke-virtual {v7, v2}, Landroid/widget/FrameLayout;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
+    invoke-virtual {v7, v2}, Landroid/view/ViewGroup;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
     .line 234
     const-string v2, "NotificationTicker"
@@ -869,7 +869,7 @@
     invoke-virtual {v0, v2}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 235
-    invoke-virtual {v7, v0}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v7, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 236
     return-object v7
@@ -914,7 +914,7 @@
     .line 105
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 108
     :cond_0
@@ -987,7 +987,7 @@
     const/4 v2, 0x1
 
     .line 144
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->removeMessages(I)V
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 145
     iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/TabletTicker;->mCurrentView:Landroid/view/View;
@@ -1030,7 +1030,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/tablet/TabletTicker;->mQueuePos:I
 
     .line 151
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 153
     .end local v0    # "i":I
@@ -1100,10 +1100,10 @@
     if-eqz p2, :cond_0
 
     .line 121
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->removeMessages(I)V
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 122
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/tablet/TabletTicker;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 141
     :cond_0

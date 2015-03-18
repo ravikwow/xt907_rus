@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$4;->val$thumbnailView:Landroid/view/View;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     .line 137
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$4;->val$view:Landroid/view/View;
 
-    const v2, 0x7f0c005f
+    const v2, 0x7f0d005f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

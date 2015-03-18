@@ -285,7 +285,7 @@
 
     const v5, 0x7f04000f
 
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getHandler()Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v6
 
@@ -356,7 +356,7 @@
 
     .prologue
     .line 182
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -393,7 +393,7 @@
 
     .line 187
     .local v2, "vibrator":Landroid/os/Vibrator;
-    const v3, 0x7f0a0003
+    const v3, 0x7f0b0003
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -436,7 +436,7 @@
     .local v1, "y":I
     if-ltz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -444,14 +444,14 @@
 
     if-ltz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
     if-ge v1, v2, :cond_0
 
     .line 243
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
@@ -553,7 +553,7 @@
 
     const-wide/16 v1, 0x0
 
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/systemui/SearchPanelView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 129
     return-void
@@ -564,7 +564,7 @@
 
     .prologue
     .line 133
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 134
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView;->mContext:Landroid/content/Context;
@@ -574,18 +574,18 @@
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 135
-    const v0, 0x7f0c0068
+    const v0, 0x7f0d0068
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/systemui/SearchPanelView;->mSearchTargetsContainer:Landroid/view/View;
 
     .line 136
-    const v0, 0x7f0c0095
+    const v0, 0x7f0d0095
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -594,9 +594,9 @@
     iput-object v0, p0, Lcom/android/systemui/SearchPanelView;->mStatusBarTouchProxy:Lcom/android/systemui/recent/StatusBarTouchProxy;
 
     .line 138
-    const v0, 0x7f0c006a
+    const v0, 0x7f0d006a
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -702,7 +702,7 @@
     invoke-direct {p0}, Lcom/android/systemui/SearchPanelView;->maybeSwapSearchIcon()V
 
     .line 199
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result v1
 
@@ -711,7 +711,7 @@
     .line 200
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/SearchPanelView;->setVisibility(I)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 203
     iget-object v1, p0, Lcom/android/systemui/SearchPanelView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
@@ -724,7 +724,7 @@
     invoke-virtual {v1}, Lcom/android/internal/widget/multiwaveview/GlowPadView;->ping()V
 
     .line 205
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v1
 
@@ -737,13 +737,13 @@
 
     .line 208
     :cond_1
-    invoke-virtual {p0, v3}, Lcom/android/systemui/SearchPanelView;->setFocusable(Z)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setFocusable(Z)V
 
     .line 209
-    invoke-virtual {p0, v3}, Lcom/android/systemui/SearchPanelView;->setFocusableInTouchMode(Z)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 210
-    invoke-virtual {p0}, Lcom/android/systemui/SearchPanelView;->requestFocus()Z
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     .line 214
     :goto_1
@@ -759,7 +759,7 @@
     :cond_3
     const/4 v1, 0x4
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/SearchPanelView;->setVisibility(I)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_1
 .end method

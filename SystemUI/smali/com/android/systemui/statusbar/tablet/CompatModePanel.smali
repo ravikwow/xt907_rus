@@ -98,7 +98,7 @@
     :goto_1
     iget-object v4, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOnButton:Landroid/widget/RadioButton;
 
-    invoke-virtual {v4, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v4, v1}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     .line 132
     iget-object v4, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOffButton:Landroid/widget/RadioButton;
@@ -106,7 +106,7 @@
     if-nez v1, :cond_3
 
     :goto_2
-    invoke-virtual {v4, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v4, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     goto :goto_0
 
@@ -134,7 +134,7 @@
     .line 118
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 119
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mTrigger:Landroid/view/View;
@@ -176,7 +176,7 @@
     .local v1, "y":I
     if-ltz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -184,14 +184,14 @@
 
     if-ltz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
     if-ge v1, v2, :cond_0
 
     .line 102
-    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
@@ -222,7 +222,7 @@
 
     .prologue
     .line 74
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 75
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mAttached:Z
@@ -282,7 +282,7 @@
 
     .prologue
     .line 66
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 67
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mAttached:Z
@@ -304,9 +304,9 @@
 
     .prologue
     .line 56
-    const v0, 0x7f0c007b
+    const v0, 0x7f0d007b
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -315,9 +315,9 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOnButton:Landroid/widget/RadioButton;
 
     .line 57
-    const v0, 0x7f0c007a
+    const v0, 0x7f0d007a
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -328,12 +328,12 @@
     .line 58
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOnButton:Landroid/widget/RadioButton;
 
-    invoke-virtual {v0, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 59
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOffButton:Landroid/widget/RadioButton;
 
-    invoke-virtual {v0, p0}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 61
     invoke-direct {p0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->refresh()V
@@ -349,7 +349,7 @@
     .line 112
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 113
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mTrigger:Landroid/view/View;

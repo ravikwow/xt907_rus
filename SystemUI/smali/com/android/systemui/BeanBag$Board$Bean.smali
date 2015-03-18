@@ -101,7 +101,7 @@
 
     .line 172
     :cond_0
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board$Bean;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
@@ -137,7 +137,7 @@
     iput v7, p0, Lcom/android/systemui/BeanBag$Board$Bean;->w:I
 
     .line 180
-    invoke-virtual {p0, v2}, Lcom/android/systemui/BeanBag$Board$Bean;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 182
     new-instance v6, Landroid/graphics/Paint;
@@ -224,7 +224,7 @@
 
     .end local v6    # "pt":Landroid/graphics/Paint;
     :cond_1
-    invoke-virtual {p0, v7, v6}, Lcom/android/systemui/BeanBag$Board$Bean;->setLayerType(ILandroid/graphics/Paint;)V
+    invoke-virtual {p0, v7, v6}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     .line 192
     return-void
@@ -439,9 +439,9 @@
 
     .line 198
     .local v2, "scale":F
-    invoke-virtual {p0, v2}, Lcom/android/systemui/BeanBag$Board$Bean;->setScaleX(F)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setScaleX(F)V
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/BeanBag$Board$Bean;->setScaleY(F)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setScaleY(F)V
 
     .line 200
     const v3, 0x3e99999a
@@ -672,7 +672,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board$Bean;->getX()F
+    invoke-virtual {p0}, Landroid/view/View;->getX()F
 
     move-result v3
 
@@ -684,7 +684,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board$Bean;->getY()F
+    invoke-virtual {p0}, Landroid/view/View;->getY()F
 
     move-result v3
 
@@ -696,7 +696,7 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board$Bean;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
@@ -708,7 +708,7 @@
 
     const/4 v2, 0x3
 
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board$Bean;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v3
 

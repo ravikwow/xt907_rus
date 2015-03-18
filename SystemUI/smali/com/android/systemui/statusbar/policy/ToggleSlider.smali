@@ -89,9 +89,9 @@
 
     .line 65
     .local v0, "a":Landroid/content/res/TypedArray;
-    const v2, 0x7f0c006b
+    const v2, 0x7f0d006b
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/ToggleSlider;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -107,18 +107,18 @@
     .line 67
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mToggle:Landroid/widget/CompoundButton;
 
-    const v3, 0x7f0200bc
+    const v3, 0x7f0200bb
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/widget/CompoundButton;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 69
-    const v2, 0x7f0c006c
+    const v2, 0x7f0d006c
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/ToggleSlider;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -132,9 +132,9 @@
     invoke-virtual {v2, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
     .line 72
-    const v2, 0x7f0c006d
+    const v2, 0x7f0d006d
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/ToggleSlider;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -167,7 +167,7 @@
 
     .prologue
     .line 81
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/ToggleSlider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -188,7 +188,7 @@
 
     .line 85
     .local v2, "thumb":Landroid/graphics/drawable/Drawable;
-    const v3, 0x7f0200ba
+    const v3, 0x7f0200b9
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -199,12 +199,12 @@
     :goto_0
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v3, v2}, Landroid/widget/SeekBar;->setThumb(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v3, v2}, Landroid/widget/AbsSeekBar;->setThumb(Landroid/graphics/drawable/Drawable;)V
 
     .line 94
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v3, v1}, Landroid/widget/SeekBar;->setProgressDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v3, v1}, Landroid/widget/ProgressBar;->setProgressDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 96
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mListener:Lcom/android/systemui/statusbar/policy/ToggleSlider$Listener;
@@ -218,7 +218,7 @@
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v5}, Landroid/widget/SeekBar;->getProgress()I
+    invoke-virtual {v5}, Landroid/widget/ProgressBar;->getProgress()I
 
     move-result v5
 
@@ -308,7 +308,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v3}, Landroid/widget/SeekBar;->getProgress()I
+    invoke-virtual {v3}, Landroid/widget/ProgressBar;->getProgress()I
 
     move-result v3
 
@@ -354,7 +354,7 @@
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v3}, Landroid/widget/SeekBar;->getProgress()I
+    invoke-virtual {v3}, Landroid/widget/ProgressBar;->getProgress()I
 
     move-result v3
 
@@ -387,7 +387,7 @@
     .line 135
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v0, p1}, Landroid/widget/SeekBar;->setMax(I)V
+    invoke-virtual {v0, p1}, Landroid/widget/AbsSeekBar;->setMax(I)V
 
     .line 136
     return-void
@@ -413,7 +413,7 @@
     .line 139
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
-    invoke-virtual {v0, p1}, Landroid/widget/SeekBar;->setProgress(I)V
+    invoke-virtual {v0, p1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 140
     return-void

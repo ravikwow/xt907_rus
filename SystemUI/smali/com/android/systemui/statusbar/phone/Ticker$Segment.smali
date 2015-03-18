@@ -41,7 +41,7 @@
     .line 133
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/Ticker$Segment;->this$0:Lcom/android/systemui/statusbar/phone/Ticker;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 134
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/Ticker$Segment;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
@@ -194,7 +194,7 @@
 
     .line 117
     .local v7, "start":I
-    invoke-virtual {v3, v1}, Landroid/text/StaticLayout;->getLineEnd(I)I
+    invoke-virtual {v3, v1}, Landroid/text/Layout;->getLineEnd(I)I
 
     move-result v0
 
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextSwitcher;->getWidth()I
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
@@ -283,7 +283,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/TextSwitcher;->getPaddingLeft()I
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
 
@@ -296,7 +296,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/TextSwitcher;->getPaddingRight()I
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingRight()I
 
     move-result v1
 
@@ -391,7 +391,7 @@
 
     .line 90
     .local v3, "start":I
-    invoke-virtual {v1, v8}, Landroid/text/StaticLayout;->getLineEnd(I)I
+    invoke-virtual {v1, v8}, Landroid/text/Layout;->getLineEnd(I)I
 
     move-result v0
 

@@ -92,7 +92,7 @@ Utilizza solo il caricatore in dotazione."</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_edge">Edge</string>
     <string name="accessibility_data_connection_wifi">Wi-Fi</string>
-    <string name="accessibility_no_sim">Nessuna SIM.</string>
+    <string name="accessibility_no_sim">Nessuna SIM presente.</string>
     <string name="accessibility_bluetooth_tether">Tethering Bluetooth.</string>
     <string name="accessibility_airplane_mode">Modalità aereo.</string>
     <string name="accessibility_battery_level">Batteria al %d percento.</string>

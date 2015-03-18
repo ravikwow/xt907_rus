@@ -162,11 +162,11 @@
     <string name="abbrev_wday_month_day_no_year">EEE d MMMM</string>
     <string name="abbrev_wday_month_day_year">EEE d MMM yyyy</string>
     <string name="byteShort">o</string>
-    <string name="kilobyteShort">" Ko"</string>
-    <string name="megabyteShort">" Mo"</string>
-    <string name="gigabyteShort">" Go"</string>
-    <string name="terabyteShort">" To"</string>
-    <string name="petabyteShort">" Po"</string>
+    <string name="kilobyteShort">Ko</string>
+    <string name="megabyteShort">Mo</string>
+    <string name="gigabyteShort">Go</string>
+    <string name="terabyteShort">To</string>
+    <string name="petabyteShort">Po</string>
     <string name="fileSizeSuffix">%1$s %2$s</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">‥</string>
@@ -677,7 +677,7 @@ Tentatives restantes : "</string>
     <string name="phoneTypeTelex">Télex</string>
     <string name="phoneTypeTtyTdd">TTY/TTD (malentendants)</string>
     <string name="phoneTypeWorkMobile">Mobile (professionnel)</string>
-    <string name="phoneTypeWorkPager">Téléavertisseur (pro.)</string>
+    <string name="phoneTypeWorkPager">Téléavertisseur (professionnel)</string>
     <string name="phoneTypeAssistant">Assistant</string>
     <string name="phoneTypeMms">MMS</string>
     <string name="eventTypeCustom">Personnalisé</string>
@@ -760,7 +760,7 @@ Tentatives restantes : "</string>
     <string name="lockscreen_charged">Chargé</string>
     <string name="lockscreen_battery_short">%d %%</string>
     <string name="lockscreen_low_battery">Branchez votre chargeur.</string>
-    <string name="lockscreen_missing_sim_message_short">Aucune carte SIM</string>
+    <string name="lockscreen_missing_sim_message_short">"Aucune carte SIM n'a été trouvée."</string>
     <string name="lockscreen_missing_sim_message">"Aucune carte SIM n'est insérée dans le téléphone."</string>
     <string name="lockscreen_missing_sim_instructions">Insérez une carte SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">Carte SIM absente ou illisible. Insérez une carte SIM.</string>
@@ -776,12 +776,12 @@ Tentatives restantes : "</string>
     <string name="lockscreen_sim_error_message_short">Carte inval.</string>
     <string name="lockscreen_sim_error_message">Carte SIM non valide.</string>
     <string name="lockscreen_network_locked_message">Réseau verrouillé</string>
-    <string name="lockscreen_perso_locked_message">La carte SIM est verrouillée.</string>
+    <string name="lockscreen_perso_locked_message">La carte SIM/RUIM est verrouillée.</string>
     <string name="lockscreen_sim_puk_locked_message">La carte SIM est verrouillée par clé PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 bloqué. Saisissez PUK1.
 ou
 Veuillez consulter le guide d'utilisation/contacter l'assistance clientèle."</string>
-    <string name="lockscreen_sim_locked_message">La carte SIM est verrouillée.</string>
+    <string name="lockscreen_sim_locked_message">La carte SIM/RUIM est verrouillée.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Déblocage de la carte SIM...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Vous avez dessiné un schéma de déverrouillage incorrect à %d reprises.
 
@@ -899,7 +899,7 @@ Appuyez sur \"OK\" pour continuer ou \"Annuler\" pour rester sur la page actuell
     <string name="oneMonthDurationPast">Il y a 1 mois</string>
     <string name="beforeOneMonthDurationPast">"Il y a plus d'un mois"</string>
     <string name="last_month">Le mois dernier</string>
-    <string name="older">Précédents</string>
+    <string name="older">Préc.</string>
     <string name="preposition_for_date">le %s</string>
     <string name="preposition_for_time">à %s</string>
     <string name="preposition_for_year">en %s</string>
@@ -1055,7 +1055,7 @@ Voulez-vous la fermer ?"</string>
     <string name="dlg_confirm_kill_storage_users_text">"Si vous activez la mémoire de stockage USB, certaines applications en cours d'utilisation vont être fermées et risquent de rester indisponibles jusqu'à ce que la mémoire de stockage USB soit désactivée."</string>
     <string name="dlg_error_title">Échec du fonctionnement de la mémoire de stockage USB.</string>
     <string name="dlg_ok">OK</string>
-    <string name="usb_mtp_notification_title">Connecté comme app. multimédia</string>
+    <string name="usb_mtp_notification_title">Connecté comme appareil multimédia</string>
     <string name="usb_ptp_notification_title">Connecté comme appareil photo</string>
     <string name="usb_cd_installer_notification_title">"Connecté comme programme d'installation"</string>
     <string name="usb_accessory_notification_title">Connecté à un accessoire USB</string>
@@ -1082,7 +1082,7 @@ Voulez-vous la fermer ?"</string>
     <string name="ext_media_unmountable_notification_message">La carte SD est endommagée. Veuillez tenter de la reformater.</string>
     <string name="ext_media_badremoval_notification_title">Carte SD retirée inopinément</string>
     <string name="ext_media_badremoval_notification_message">Désinstaller la carte SD avant de la retirer pour éviter toute perte de données.</string>
-    <string name="ext_media_safe_unmount_notification_title">Retrait possible de carte SD</string>
+    <string name="ext_media_safe_unmount_notification_title">La carte SD peut être retirée en toute sécurité</string>
     <string name="ext_media_safe_unmount_notification_message">Vous pouvez retirer la carte SD en toute sécurité.</string>
     <string name="ext_media_nomedia_notification_title">Carte SD retirée</string>
     <string name="ext_media_nomedia_notification_message">La carte SD a été retirée. Insérez-en une autre.</string>
@@ -1133,7 +1133,7 @@ pour le compte \"%s\""</string>
     <string name="submit">Envoyer</string>
     <string name="car_mode_disable_notification_title">Mode Voiture activé</string>
     <string name="car_mode_disable_notification_message">Appuyez ici pour quitter le mode Voiture.</string>
-    <string name="tethered_notification_title">Partage connex/pt accès mob. activé</string>
+    <string name="tethered_notification_title">"Partage de connexion ou point d'accès sans fil activé"</string>
     <string name="tethered_notification_message">Appuyez pour configurer.</string>
     <string name="back_button_label">Retour</string>
     <string name="next_button_label">Suivant</string>
@@ -1143,7 +1143,7 @@ pour le compte \"%s\""</string>
     <string name="throttled_notification_title">"Quota d'utilisation des données mobiles dépassé"</string>
     <string name="throttled_notification_message">Appuyez ici pour en savoir plus sur la consommation des données mobiles.</string>
     <string name="no_matches">Aucune correspondance</string>
-    <string name="find_on_page">Chercher sur la page</string>
+    <string name="find_on_page">Rechercher sur la page</string>
     <string name="action_mode_done">OK</string>
     <string name="progress_unmounting">Désinstallation de la carte SD en cours…</string>
     <string name="progress_erasing">Effacement de la carte SD en cours…</string>
@@ -1260,30 +1260,10 @@ pour le compte \"%s\""</string>
     <string name="default_audio_route_category_name">Système</string>
     <string name="bluetooth_a2dp_audio_route_name">Audio Bluetooth</string>
     <string name="media_route_chooser_grouping_done">OK</string>
-    <string name="wispr_login_success">Connexion réussie</string>
-    <string name="wispr_login_failed">Échec de la connexion</string>
-    <string name="wispr_login_header">"État du point d'accès Wi-Fi AT&amp;T"</string>
-    <string name="wispr_login_failed_credential">"Impossible de confirmer l'éligibilité : appelez le service client au 1-800-331-0500"</string>
-    <string name="wispr_login_failed_network">"Échec de l'authentification"</string>
-    <string name="wispr_insert_sim">"Impossible de confirmer l'éligibilité : appelez le service client au 1-800-331-0500"</string>
-    <string name="dt_day_format">%-e</string>
-    <string name="dt_month_format">%B</string>
-    <string name="dt_year_format">%Y</string>
-    <string name="dt_numeric_day_format">%-d</string>
-    <string name="dt_numeric_month_format">%m</string>
-    <string name="dt_numeric_year_format">%Y</string>
-    <string name="same_abbrev_month_md1_md2">du %3$s au %8$s %2$s</string>
-    <string name="same_abbrev_month_wday1_md1_wday2_md2">%1$s, %2$s %3$s – %6$s, %7$s %8$s</string>
-    <string name="same_abbrev_month_mdy1_mdy2">du %1$s %3$s %2$s au %6$s %8$s %7$s</string>
-    <string name="same_abbrev_month_wday1_mdy1_wday2_mdy2">du %1$s %3$s %2$s %4$s au %6$s %8$s %7$s %9$s</string>
-    <string name="same_abbrev_month_md1_time1_md2_time2">du %3$s %2$s à %5$s au %8$s %7$s à %10$s</string>
-    <string name="same_abbrev_month_wday1_md1_time1_wday2_md2_time2">du %1$s %3$s %2$s à %5$s au %6$s %8$s %7$s à %10$s</string>
-    <string name="same_abbrev_month_mdy1_time1_mdy2_time2">du %3$s %2$s %4$s à %5$s au %8$s %7$s %9$s à %10$s</string>
-    <string name="same_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">du %1$s %3$s %2$s %4$s à %5$s au %6$s %8$s %7$s %9$s à %10$s</string>
     <string name="cipheringIndicator">"Le cryptage n'est pas disponible sur votre réseau. Les appels et/ou les données cellulaires ne seront pas chiffrés."</string>
     <string name="sim_retry_left">"Nombre d'essais restants : %d"</string>
     <string name="vzw_disable_we_gsm_cf">"La fonction de transfert d'appel est désactivée en dehors du réseau sans fil Verizon."</string>
-    <string name="unsupportedMmiCode">"Le code IHM composé n'est pas pris en charge."</string>
+    <string name="unsupportedMmiCode">"Le code MMI composé n'est pas pris en charge."</string>
     <string name="sim_lock_failed_num_retry">"Impossible de déverrouiller la carte SIM en raison d'une saisie de code PIN erronée. Nombre d'essais restants %s"</string>
     <string name="sim_lock_failed_num_retry2">"Impossible de déverrouiller la carte SIM en raison d'une saisie de code PIN2 erronée. Nombre d'essais restants %s"</string>
     <string name="tether_authen_check_notification_title">Validation du partage de connexion via USB</string>
@@ -1323,7 +1303,7 @@ pour le compte \"%s\""</string>
     <string name="policylab_encrypt">"Chiffrer les données sur l'appareil ou la carte SD"</string>
     <string name="policydesc_encrypt">"Effectuer le cryptage des données utilisateur sur l'appareil ou la carte SD."</string>
     <string name="policylab_datasync">Définir le mode de synchronisation des données en itinérance</string>
-    <string name="policydesc_datasync">Définir la méthode de synchronisation des données sur Manuelle ou Automatique en itinérance</string>
+    <string name="policydesc_datasync">Définissez la méthode de synchronisation des données sur Manuelle ou Automatique en mode Itinérance.</string>
     <string name="policy_lab_limit_vpn">Restreindre le VPN</string>
     <string name="policy_desc_limit_vpn">Restreindre la fonctionnalité VPN</string>
     <string name="policylab_simplepassword">Autoriser mot de passe unique</string>
@@ -1410,14 +1390,7 @@ Toutes les données et tous les paramètres sont enregistrés.
     <string name="password_recovery_dialog_title">Vous avez oublié votre mot de passe ?</string>
     <string name="password_recovery_dialog_message">"Veuillez contacter votre service informatique et demander le \"Mot de passe de secours\". Celui-ci vous permettra de réinitialiser votre mot de passe et d'en définir un nouveau."</string>
     <string name="lockscreen_charged_rmdunplug">"Batterie chargée. Débranchez votre chargeur de la prise afin de conserver de l'énergie."</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Prolongement du réseau</string>
-    <string name="moto_eritext_extended_network">Réseau étendu</string>
-    <string name="moto_eritext_roaming">Itinérance</string>
     <string name="storage_usb_disk">Lecteur USB</string>
-    <string name="sim_pin_technical_problem">"Un problème technique s'est produit. Veuillez réessayer."</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Confirmer le nouveau code PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Réessayez dans %d seconde.</string>
     <string name="msg_disable_consumer_email_notification">Messagerie client désactivée.</string>
     <string name="msg_enable_consumer_email_notification">Messagerie client activée.</string>
     <string name="msg_disable_browser_notification">Navigateur désactivé.</string>
@@ -1436,5 +1409,4 @@ Toutes les données et tous les paramètres sont enregistrés.
     <string name="msg_app_control_notification">La liste des applications désactivées a été mise à jour.</string>
     <string name="policylab_appcontrol">Désactiver des applications</string>
     <string name="policydesc_appcontrol">"Permet à l'administrateur d'activer ou de désactiver des applications sur l'appareil."</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN débloqué</string>
 </resources>

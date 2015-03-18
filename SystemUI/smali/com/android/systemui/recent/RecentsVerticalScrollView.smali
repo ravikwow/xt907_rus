@@ -47,7 +47,7 @@
     invoke-direct {p0, p1, p2, v3}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -59,7 +59,7 @@
 
     .line 63
     .local v0, "densityScale":F
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
@@ -178,11 +178,11 @@
     .line 75
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getHeight()I
+    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
@@ -216,7 +216,7 @@
 
     move-object/from16 v17, v0
 
-    invoke-virtual/range {v17 .. v17}, Landroid/widget/LinearLayout;->getChildCount()I
+    invoke-virtual/range {v17 .. v17}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v17
 
@@ -233,7 +233,7 @@
 
     move-object/from16 v0, v17
 
-    invoke-virtual {v0, v5}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v15
 
@@ -262,7 +262,7 @@
     .line 90
     .end local v15    # "v":Landroid/view/View;
     :cond_0
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getLayoutTransition()Landroid/animation/LayoutTransition;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getLayoutTransition()Landroid/animation/LayoutTransition;
 
     move-result-object v13
 
@@ -283,7 +283,7 @@
 
     move-object/from16 v17, v0
 
-    invoke-virtual/range {v17 .. v17}, Landroid/widget/LinearLayout;->removeAllViews()V
+    invoke-virtual/range {v17 .. v17}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 98
     move-object/from16 v0, p0
@@ -461,7 +461,7 @@
     invoke-virtual {v12, v7}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     .line 149
-    const v17, 0x7f0c005e
+    const v17, 0x7f0d005e
 
     invoke-virtual/range {v16 .. v17}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -479,7 +479,7 @@
     invoke-virtual {v2, v8}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 152
-    const v17, 0x7f0c0060
+    const v17, 0x7f0d0060
 
     invoke-virtual/range {v16 .. v17}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -500,7 +500,7 @@
 
     move-object/from16 v1, v16
 
-    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 99
     add-int/lit8 v5, v5, 0x1
@@ -523,7 +523,7 @@
     invoke-virtual {v0, v13}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
     .line 160
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v9
 
@@ -588,11 +588,11 @@
     if-eqz v0, :cond_2
 
     .line 242
-    iget v13, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mPaddingLeft:I
+    iget v13, p0, Landroid/view/View;->mPaddingLeft:I
 
     .line 243
     .local v13, "paddingLeft":I
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->isPaddingOffsetRequired()Z
+    invoke-virtual {p0}, Landroid/view/View;->isPaddingOffsetRequired()Z
 
     move-result v12
 
@@ -601,7 +601,7 @@
     if-eqz v12, :cond_0
 
     .line 245
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getLeftPaddingOffset()I
+    invoke-virtual {p0}, Landroid/view/View;->getLeftPaddingOffset()I
 
     move-result v0
 
@@ -609,21 +609,21 @@
 
     .line 248
     :cond_0
-    iget v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mScrollX:I
+    iget v0, p0, Landroid/view/View;->mScrollX:I
 
     add-int v2, v0, v13
 
     .line 249
     .local v2, "left":I
-    iget v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mRight:I
+    iget v0, p0, Landroid/view/View;->mRight:I
 
     add-int/2addr v0, v2
 
-    iget v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLeft:I
+    iget v1, p0, Landroid/view/View;->mLeft:I
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mPaddingRight:I
+    iget v1, p0, Landroid/view/View;->mPaddingRight:I
 
     sub-int/2addr v0, v1
 
@@ -631,9 +631,9 @@
 
     .line 250
     .local v3, "right":I
-    iget v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mScrollY:I
+    iget v0, p0, Landroid/view/View;->mScrollY:I
 
-    invoke-virtual {p0, v12}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getFadeTop(Z)I
+    invoke-virtual {p0, v12}, Landroid/view/View;->getFadeTop(Z)I
 
     move-result v1
 
@@ -641,7 +641,7 @@
 
     .line 251
     .local v4, "top":I
-    invoke-virtual {p0, v12}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getFadeHeight(Z)I
+    invoke-virtual {p0, v12}, Landroid/view/View;->getFadeHeight(Z)I
 
     move-result v0
 
@@ -652,14 +652,14 @@
     if-eqz v12, :cond_1
 
     .line 254
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getRightPaddingOffset()I
+    invoke-virtual {p0}, Landroid/view/View;->getRightPaddingOffset()I
 
     move-result v0
 
     add-int/2addr v3, v0
 
     .line 255
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getBottomPaddingOffset()I
+    invoke-virtual {p0}, Landroid/view/View;->getBottomPaddingOffset()I
 
     move-result v0
 
@@ -669,15 +669,15 @@
     :cond_1
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mPerformanceHelper:Lcom/android/systemui/recent/RecentsScrollViewPerformanceHelper;
 
-    iget v6, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mScrollX:I
+    iget v6, p0, Landroid/view/View;->mScrollX:I
 
-    iget v7, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mScrollY:I
+    iget v7, p0, Landroid/view/View;->mScrollY:I
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getTopFadingEdgeStrength()F
+    invoke-virtual {p0}, Landroid/widget/ScrollView;->getTopFadingEdgeStrength()F
 
     move-result v8
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getBottomFadingEdgeStrength()F
+    invoke-virtual {p0}, Landroid/widget/ScrollView;->getBottomFadingEdgeStrength()F
 
     move-result v9
 
@@ -708,7 +708,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getScrollX()I
+    invoke-virtual {p0}, Landroid/view/View;->getScrollX()I
 
     move-result v5
 
@@ -722,7 +722,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getScrollY()I
+    invoke-virtual {p0}, Landroid/view/View;->getScrollY()I
 
     move-result v5
 
@@ -738,7 +738,7 @@
     :goto_0
     iget-object v4, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4}, Landroid/widget/LinearLayout;->getChildCount()I
+    invoke-virtual {v4}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v4
 
@@ -747,7 +747,7 @@
     .line 223
     iget-object v4, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4, v0}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v4, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -825,7 +825,7 @@
 
     .prologue
     .line 234
-    const v0, 0x7f0c005a
+    const v0, 0x7f0d005a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -855,7 +855,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0}, Landroid/widget/ScrollView;->getHorizontalFadingEdgeLength()I
+    invoke-super {p0}, Landroid/view/View;->getHorizontalFadingEdgeLength()I
 
     move-result v0
 
@@ -883,7 +883,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0}, Landroid/widget/ScrollView;->getVerticalFadingEdgeLength()I
+    invoke-super {p0}, Landroid/view/View;->getVerticalFadingEdgeLength()I
 
     move-result v0
 
@@ -916,7 +916,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->isHardwareAccelerated()Z
+    invoke-virtual {p0}, Landroid/view/View;->isHardwareAccelerated()Z
 
     move-result v3
 
@@ -935,7 +935,7 @@
     .line 213
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->requestDisallowInterceptTouchEvent(Z)V
+    invoke-virtual {p0, v0}, Landroid/widget/ScrollView;->requestDisallowInterceptTouchEvent(Z)V
 
     .line 214
     return-void
@@ -952,7 +952,7 @@
     .line 201
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, p1}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
+    invoke-virtual {v1, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 202
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mCallback:Lcom/android/systemui/recent/RecentsCallback;
@@ -985,10 +985,10 @@
 
     .prologue
     .line 302
-    invoke-super {p0, p1}, Landroid/widget/ScrollView;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 303
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -1005,7 +1005,7 @@
     invoke-virtual {v2, v0}, Lcom/android/systemui/SwipeHelper;->setDensityScale(F)V
 
     .line 305
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
@@ -1041,17 +1041,17 @@
 
     .prologue
     .line 284
-    invoke-super {p0}, Landroid/widget/ScrollView;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     .line 285
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->setScrollbarFadingEnabled(Z)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setScrollbarFadingEnabled(Z)V
 
     .line 286
-    const v1, 0x7f0c0066
+    const v1, 0x7f0d0066
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1060,13 +1060,13 @@
     iput-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
     .line 287
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f0b0032
+    const v2, 0x7f0c0032
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -1128,7 +1128,7 @@
     .line 319
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getLayoutTransition()Landroid/animation/LayoutTransition;
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->getLayoutTransition()Landroid/animation/LayoutTransition;
 
     move-result-object v0
 
@@ -1159,7 +1159,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView$6;-><init>(Lcom/android/systemui/recent/RecentsVerticalScrollView;)V
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method
@@ -1203,7 +1203,7 @@
 
     .prologue
     .line 342
-    invoke-super {p0, p1, p2}, Landroid/widget/ScrollView;->onVisibilityChanged(Landroid/view/View;I)V
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
     .line 344
     if-nez p2, :cond_0
@@ -1215,7 +1215,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView$7;-><init>(Lcom/android/systemui/recent/RecentsVerticalScrollView;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 351
     :cond_0
@@ -1251,10 +1251,10 @@
 
     invoke-direct {v6, p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView$8;-><init>(Lcom/android/systemui/recent/RecentsVerticalScrollView;)V
 
-    invoke-virtual {v5, v6}, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
+    invoke-virtual {v5, v6}, Landroid/widget/BaseAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 365
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1368,7 +1368,7 @@
     .line 388
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->setLayoutTransition(Landroid/animation/LayoutTransition;)V
 
     .line 389
     return-void

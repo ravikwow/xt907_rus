@@ -1,0 +1,403 @@
+#!/system/bin/sh
+#==============================================================================
+#
+#   File Name: bug2go-bugreport
+#
+#   General Description: This file is used to collect logs for Bug2Go app
+#
+#==============================================================================
+#               Motorola Mobility Confidential Proprietary
+#        (c) Copyright Motorola Mobility 2011, All Rights Reserved
+
+init(){
+    # We cannot get millisecond precision, because Android's date utility
+    # doesn't support it.
+    timestamp="$(date +'%Y-%m-%d_%H-%M-%S.000%z')"
+    # Update the version whenever a change is made to this script that changes
+    # the interface to Java, or the behaviors that Java expects.
+    version=2
+    timeout_am=10
+    timeout_dumpstate=120
+    timeout_df=10
+    timeout_screencap=10
+    fileExists "/system/bin/timedexec"
+    useTimedexec=$?
+
+    # Set defaults for storage locations if not already set.
+    case $ANDROID_DATA in "") ANDROID_DATA="/data";; esac
+    case $EXTERNAL_STORAGE in "") EXTERNAL_STORAGE="/sdcard";; esac
+    # SECONDARY_STORAGE was introduced into core Android recently.  Motorola
+    # created EXTERNAL_ALT_STORAGE in its absence.  All newer products should
+    # be using SECONDARY_STORAGE.  For backwards compatibility, look for both.
+    # Don't set a fallback value here, because there may not be a secondary
+    # storage for the device.
+    case $SECONDARY_STORAGE in "") SECONDARY_STORAGE=$EXTERNAL_ALT_STORAGE;; esac
+}
+
+#Description:
+# $1 : log level.
+# $2 : log message
+b2glog(){
+    log -p $1 -t Bug2Go $2
+}
+
+#Description:
+# $1 : The elapsed time limit in seconds after which the command is terminated.
+# $2 : the command to be executed
+runTimedCommand(){
+    case $useTimedexec in
+        1)
+            output=$(timedexec $1 $2)
+            ;;
+        0)
+            output=$($2)
+            ;;
+    esac
+}
+
+#$1 : am command and args
+b2gam(){
+    runTimedCommand $timeout_am "/system/bin/am $1"
+}
+
+#$1 : options
+b2gdumpstate(){
+    runTimedCommand $timeout_dumpstate "/system/bin/dumpstate $1"
+}
+
+#$1 : path
+b2gdf(){
+    runTimedCommand $timeout_df "/system/bin/df $1"
+}
+
+#$1 : path
+b2gscreencap(){
+    runTimedCommand $timeout_screencap "/system/bin/screencap $1"
+}
+
+isBug2GoInstalled(){
+    # We used to use 'pm list packages' for this, but that took a really
+    # long time to run.  We can simply check for the existence of the apk,
+    # which will work in all cases except where it's installed but disabled.
+    # We don't care about that corner case, because any user with it installed
+    # at all is certainly not a typical end-user.
+    b2glog v "isBug2GoInstalled()"
+    fileExists "/system/app/Bug2Go*.apk"
+    case $? in 1) return 1;; esac
+    fileExists "$ANDROID_DATA/app/Bug2Go*.apk"
+    case $? in 1) return 1;; esac
+    return 0
+}
+
+#A shell function checking if a file exists
+fileExists(){
+    for line in $(/system/bin/ls -l $1)
+    do
+        return 1
+    done
+    return 0
+}
+
+#returns the size required to store the bugreport and associated files
+getRequiredSize(){
+    local requiredSize=$(/system/bin/getprop ro.bug2go.bugreport.size.max)
+    case $requiredSize in
+        "") requiredSize=50;;
+    esac
+    return $requiredSize
+}
+
+#returns the available size of a directory in Mb
+getAvailableSize(){
+    b2gdf $1
+    case $? in
+        0) ;;
+        *) b2glog e "b2gdf $1 failed; status=$?"; return 0;;
+    esac
+    dflines=$output
+    count=0
+    for line in $dflines
+    do
+        count=$(($count + 1))
+        case "$count" in
+            #if the first line starts with /data/data, then the available size
+            #info should also be in this line.
+            "1")
+                case "$line" in "$1:")
+                    dfline=${dflines% available*}
+                    availsize=${dfline#* used, }
+                    break;
+                ;;
+                esac
+            ;;
+            #if the first line doesn't start with /data/data, then the
+            #available size info should be the 4th column in the second line
+            "9")
+                availsize=$line
+                break;
+            ;;
+        esac
+    done
+
+    case "$availsize" in
+        *G) availsize=${availsize%G}
+            availsize=$(($availsize * 1024))
+            ;;
+        *M) availsize=${availsize%M};;
+        *K) availsize=${availsize%K}
+            availsize=$(($availsize / 1024))
+            ;;
+    esac
+    return $availsize
+}
+
+isSpaceEnough(){
+    b2glog v "isSpaceEnough() $1 $2"
+    getAvailableSize $1
+    availsize=$?
+
+    b2glog d "required: $2 M, available: $availsize M in $1"
+    result=$(($availsize - $2))
+    case "$result" in
+        -*) return 0
+        ;;
+    esac
+
+    return 1
+}
+
+createOutputPaths(){
+    b2glog v "createOutputPaths() $1"
+    rootOutputPath="$1"
+    logFilePath="$rootOutputPath/user@$timestamp"
+    screenshotPath="$rootOutputPath/screenshots"
+    /system/bin/mkdir $rootOutputPath
+    /system/bin/mkdir $logFilePath
+    /system/bin/mkdir $screenshotPath
+    # Don't validate the screenshotPath is writable.  If for some strange reason
+    # it isn't, but $rootOutputPath & $logFilePath are, we still want to try to
+    # collect the bugreport.
+    /system/bin/touch $logFilePath && /system/bin/touch $rootOutputPath && return 0
+    b2glog w "$logFilePath not writable"
+    return 1
+}
+
+findAndCreateOutputPaths(){
+    b2glog v "findAndCreateOutputPaths() $1"
+
+    # SECONDARY_STORAGE can be empty, so check for that first.
+    case $SECONDARY_STORAGE in
+    "")
+        # Fall through
+        ;;
+    *)
+        isSpaceEnough "$SECONDARY_STORAGE" $1
+        case $? in
+        1)
+            createOutputPaths "$SECONDARY_STORAGE/bug2go" && return 0
+            # We get to here if we cannot create the paths
+            ;;
+        esac
+        ;;
+    esac
+
+    isSpaceEnough "$EXTERNAL_STORAGE" $1
+    case $? in
+    1)
+        createOutputPaths "$EXTERNAL_STORAGE/bug2go" && return 0
+        # We get to here if we cannot create the paths
+        ;;
+    esac
+
+    b2glog e "No available storage"
+    return 1
+}
+
+#Parameter description:
+# $1 : the full path of the source file, can not be empty
+# $2 : the destination file name containing no full path, can be empty.
+copyFileIfExists(){
+    fileExists $1
+    case $? in
+        "1")
+            /system/bin/cp $1 $logFilePath/$2
+        ;;
+    esac
+}
+
+collectAplogd(){
+    case $(getprop persist.log.aplogd.enable) in
+    1)
+        # Continue
+    ;;
+    *)
+        return
+    ;;
+    esac
+
+    #Grab the AOL log files.  Make sure to grab the last two sets of overflow
+    #logs too.  After the logs rotate, the most recent always goes to index 0,
+    #and all others are shifted up by 1.  So, the last two sets of overflow are
+    #always at 0 and 1.
+    local aolFiles="\
+        log.radio.txt  backup.0.log.radio.txt.gz  backup.1.log.radio.txt.gz\
+        log.events.txt backup.0.log.events.txt.gz backup.1.log.events.txt.gz\
+        log.system.txt backup.0.log.system.txt.gz backup.1.log.system.txt.gz\
+        log.kernel.txt backup.0.log.kernel.txt.gz backup.1.log.kernel.txt.gz\
+        log.main.txt   backup.0.log.main.txt.gz   backup.1.log.main.txt.gz"
+
+    #The AOL logs can move around, depending on the USB Mass Storage state and
+    #whether the user has an external SD Card inserted or not.  Make sure we
+    #look everywhere.
+    for file in $aolFiles; do
+        case $SECONDARY_STORAGE in
+        "")
+            # Fall through
+            ;;
+        *)
+            copyFileIfExists "$SECONDARY_STORAGE/logger/${file}" "sdcard-ext_logger_${file}"
+            ;;
+        esac
+        copyFileIfExists "$EXTERNAL_STORAGE/logger/${file}" "sdcard_logger_${file}"
+        copyFileIfExists "$ANDROID_DATA/logger/${file}" "data_logger_${file}"
+    done
+}
+
+collectBatteryTracer(){
+    local battTracerLocs="\
+        $EXTERNAL_STORAGE/batterytracer/databases/current\
+        $EXTERNAL_STORAGE/batterytracer/databases/backup0"
+    for loc in $battTracerLocs; do
+        for file in $(/system/bin/ls $loc/*.btd); do
+            copyFileIfExists $file
+        done
+    done
+}
+
+collectLogs(){
+    b2glog v "collectLogs()"
+    # Capture the dumpstate (AP state snapshot + log buffers)
+    b2gdumpstate "-o $logFilePath/bugreport_$timestamp"
+
+    collectAplogd
+
+    collectBatteryTracer
+
+    #AP panic log files
+    for file in $(/system/bin/ls $ANDROID_DATA/dontpanic/)
+    do
+        copyFileIfExists "$ANDROID_DATA/dontpanic/$file"
+    done
+
+    #SBCM log files
+    copyFileIfExists "$ANDROID_DATA/battd/SBCM_logfile.bin"
+    copyFileIfExists "$ANDROID_DATA/battd/SBCM_logfile_old.bin"
+
+    #Power Supply Logger files
+    copyFileIfExists "$ANDROID_DATA/power_supply_logger/power_supply_info.bin"
+
+    #MSM8960 BP Log files
+    #Grab the last 100 MB of logs if the logger is active
+    case $(getprop persist.sys.diag_mdlog.on) in
+    1)
+        /system/bin/diag_mdlog-getlogs -o $logFilePath -b 104857600
+    ;;
+    esac
+}
+
+startBug2Go(){
+    b2glog v "startBug2Go()"
+
+    # The path calculation and screenshot take time, so we need to let the user
+    # know the report was triggered.
+    # The path for triggering the vibrator is known to change across chipsets,
+    # so this may not work on some platforms.
+    echo 150 > /sys/class/timed_output/vibrator/enable
+
+    getRequiredSize
+    # This sets $rootOutputPath, $logFilePath, & $screenshotPath
+    findAndCreateOutputPaths $?
+    case $? in
+        1)
+            b2glog e "Not enough space"
+            #Show error info
+            b2gam "startservice -a motorola.intent.action.BUG2GO.BUGREPORT.ERR -t text/plain --ei version $version -e errortype nostorage -e id $timestamp"
+            return 1
+        ;;
+    esac
+    b2glog d "Root Output Path: $rootOutputPath"
+    b2glog d "Report Path: $logFilePath"
+    b2glog d "Screenshot Path: $screenshotPath"
+
+    #capture the current screenshot
+    b2gscreencap "-p $screenshotPath/screenshot-$timestamp.png"
+
+    #Start the Bug2Go App
+    b2gam "startservice -a motorola.intent.action.BUG2GO.BUGREPORT.START -t text/plain --ei version $version -e id $timestamp -e log_path $logFilePath"
+
+    collectLogs
+
+    #Save the report info into a temporary file so that the APK can create
+    #report with the info in the file at any time it detects this file. The
+    #APK should remove this file once it creates a report for it.
+    #Parameters:
+    #save_path : the directory where to save the compressed log files
+    #files : the log files that should be included into this report, can be
+    #        directories. separated by space if there are 2 or more files
+    #files_to_remove : the files that should be removed after the report is
+    #        created, can be directories, separated by space if there are 2
+    #        or more files
+    infoPath="$rootOutputPath/user@$timestamp.info"
+    info="save_path=$rootOutputPath\n"
+    info="$info""files=$logFilePath\n"
+    info="$info""screenshot=$screenshotPath/screenshot-$timestamp.png\n"
+    info="$info""files_to_remove=$infoPath\n"
+    info="$info""timestamp=$timestamp\n"
+    info="$info""version=$version"
+    echo -e "$info" > $infoPath
+    b2glog d "Saved info to $infoPath"
+
+    #Forward info to the Bug2Go app
+    b2gam "startservice -a motorola.intent.action.BUG2GO.BUGREPORT.END -t text/plain --ei version $version -e report_info $infoPath -e id $timestamp"
+}
+
+shouldRun(){
+    case $(/system/bin/getprop ro.debuggable) in
+        1)
+            # We always run on debuggable (eng & userdebug) builds.
+            b2glog v "DebuggableBuild=Y"
+            return 1
+        ;;
+        *)
+            # On non-debuggable builds (user), we will run if "USB Debugging"
+            # is enabled, or if the Bug2Go app is installed.
+            case $(/system/bin/getprop init.svc.adbd) in
+                running)
+                    b2glog v "USBDebug=Y"
+                    return 1
+                ;;
+                *)
+                    isBug2GoInstalled
+                    case $? in
+                        1)
+                            b2glog v "Bug2Go.apk=Y"
+                            return 1
+                        ;;
+                    esac
+                ;;
+            esac
+        ;;
+    esac
+
+    b2glog v "DebuggableBuild=N; USBDebug=N; Bug2Go.apk=N"
+    return 0
+}
+
+main(){
+    b2glog d "bug2go-bugreport started"
+    init
+    shouldRun
+    case $? in 1) startBug2Go;; esac
+}
+
+main

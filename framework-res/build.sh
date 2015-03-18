@@ -1,6 +1,6 @@
 #!/bin/sh
 PKG=framework-res
-FOLDER=framework
+FOLDER=system/framework
 if [ -d "build" ]; then
     rm -R build
 fi

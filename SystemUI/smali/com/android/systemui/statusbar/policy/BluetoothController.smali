@@ -170,7 +170,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconId:I
 
     .line 84
-    const v1, 0x7f09003e
+    const v1, 0x7f0a003e
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mContentDescriptionId:I
 
@@ -193,7 +193,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconId:I
 
     .line 87
-    const v1, 0x7f09003f
+    const v1, 0x7f0a003f
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mContentDescriptionId:I
 
@@ -316,7 +316,7 @@
     const/4 v3, 0x0
 
     :goto_2
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 93
     add-int/lit8 v1, v1, 0x1

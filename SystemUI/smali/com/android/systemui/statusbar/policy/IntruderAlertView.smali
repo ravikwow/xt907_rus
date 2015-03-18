@@ -56,7 +56,7 @@
     .line 67
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->setOrientation(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 68
     return-void
@@ -95,19 +95,19 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->setX(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setX(F)V
 
     .line 158
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->mContentHolder:Landroid/view/ViewGroup;
 
-    invoke-virtual {v2, v6}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
 
     .line 159
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->mContentHolder:Landroid/view/ViewGroup;
 
     const/high16 v3, 0x3f800000
 
-    invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->setAlpha(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 160
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->mContentHolder:Landroid/view/ViewGroup;
@@ -115,7 +115,7 @@
     invoke-virtual {v2}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -133,7 +133,7 @@
     invoke-virtual {v1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 166
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -220,7 +220,7 @@
 
     .prologue
     .line 72
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -232,7 +232,7 @@
 
     .line 73
     .local v0, "densityScale":F
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -257,9 +257,9 @@
     iput-object v2, p0, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
     .line 76
-    const v2, 0x7f0c000f
+    const v2, 0x7f0d000f
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -320,10 +320,10 @@
 
     .prologue
     .line 126
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -340,7 +340,7 @@
     invoke-virtual {v2, v0}, Lcom/android/systemui/SwipeHelper;->setDensityScale(F)V
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/IntruderAlertView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -374,7 +374,7 @@
 
     const/high16 v1, 0x3f800000
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setAlpha(F)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
     .line 114
     return-void
@@ -406,7 +406,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
@@ -438,7 +438,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 

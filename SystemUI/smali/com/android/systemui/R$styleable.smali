@@ -35,7 +35,7 @@
 
     const/4 v2, 0x0
 
-    .line 1646
+    .line 1820
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -44,7 +44,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->KeyButtonView:[I
 
-    .line 1703
+    .line 1877
     new-array v0, v3, [I
 
     const v1, 0x7f010004
@@ -53,7 +53,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationLinearLayout:[I
 
-    .line 1732
+    .line 1906
     new-array v0, v3, [I
 
     const v1, 0x7f010005
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationRowLayout:[I
 
-    .line 1761
+    .line 1935
     new-array v0, v3, [I
 
     const v1, 0x7f010006
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RecentsPanelView:[I
 
-    .line 1784
+    .line 1958
     new-array v0, v3, [I
 
     const v1, 0x7f010003
@@ -82,7 +82,7 @@
 
     return-void
 
-    .line 1646
+    .line 1820
     nop
 
     :array_0
@@ -97,8 +97,8 @@
     .locals 0
 
     .prologue
-    .line 1631
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    .line 1805
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

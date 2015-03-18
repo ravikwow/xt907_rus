@@ -37,7 +37,7 @@
 
     .prologue
     .line 53
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
     const/16 v0, 0xc8
@@ -137,7 +137,7 @@
     invoke-direct {v14, v15}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
 
     :goto_2
-    invoke-virtual {v9, v14}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    invoke-virtual {v9, v14}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 82
     if-eqz p1, :cond_7
@@ -145,7 +145,7 @@
     const-wide/16 v14, 0x88
 
     :goto_3
-    invoke-virtual {v9, v14, v15}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    invoke-virtual {v9, v14, v15}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/Animator;
 
     .line 84
     move-object/from16 v0, p0
@@ -198,7 +198,7 @@
     invoke-direct {v14, v15}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
 
     :goto_5
-    invoke-virtual {v6, v14}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    invoke-virtual {v6, v14}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 89
     if-eqz p1, :cond_a
@@ -206,7 +206,7 @@
     const-wide/16 v14, 0x88
 
     :goto_6
-    invoke-virtual {v6, v14, v15}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    invoke-virtual {v6, v14, v15}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/Animator;
 
     .line 91
     const/4 v8, 0x0
@@ -279,7 +279,7 @@
     invoke-direct {v14, v15}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
 
     :goto_8
-    invoke-virtual {v8, v14}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    invoke-virtual {v8, v14}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 99
     if-eqz p1, :cond_d
@@ -287,7 +287,7 @@
     const-wide/16 v14, 0x88
 
     :goto_9
-    invoke-virtual {v8, v14, v15}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    invoke-virtual {v8, v14, v15}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/Animator;
 
     .line 102
     :cond_0
@@ -376,7 +376,7 @@
     const-wide/16 v14, 0x190
 
     :goto_c
-    invoke-virtual {v2, v14, v15}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    invoke-virtual {v2, v14, v15}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/Animator;
 
     .line 115
     invoke-virtual {v4, v2}, Landroid/animation/AnimatorSet$Builder;->with(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
@@ -392,7 +392,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v14, v0}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v14, v0}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 133
     move-object/from16 v0, p0
@@ -410,7 +410,7 @@
 
     iget-object v15, v0, Lcom/android/systemui/recent/Choreographer;->mListener:Landroid/animation/Animator$AnimatorListener;
 
-    invoke-virtual {v14, v15}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+    invoke-virtual {v14, v15}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 136
     :cond_3
@@ -530,13 +530,13 @@
 
     iget-object v14, v0, Lcom/android/systemui/recent/Choreographer;->mRootView:Lcom/android/systemui/recent/RecentsPanelView;
 
-    invoke-virtual {v14}, Lcom/android/systemui/recent/RecentsPanelView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v14}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v11
 
     .line 119
     .local v11, "res":Landroid/content/res/Resources;
-    const/high16 v14, 0x7f080000
+    const/high16 v14, 0x7f090000
 
     invoke-virtual {v11, v14}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -551,9 +551,9 @@
 
     iget-object v14, v0, Lcom/android/systemui/recent/Choreographer;->mRootView:Lcom/android/systemui/recent/RecentsPanelView;
 
-    const v15, 0x7f0c0062
+    const v15, 0x7f0d0062
 
-    invoke-virtual {v14, v15}, Lcom/android/systemui/recent/RecentsPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v14, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v10
 
@@ -591,7 +591,7 @@
     .restart local v2    # "bgAnim":Landroid/animation/Animator;
     const-wide/16 v14, 0xe6
 
-    invoke-virtual {v2, v14, v15}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+    invoke-virtual {v2, v14, v15}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/Animator;
 
     .line 128
     new-instance v14, Landroid/view/animation/AccelerateInterpolator;
@@ -600,7 +600,7 @@
 
     invoke-direct {v14, v15}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
 
-    invoke-virtual {v2, v14}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    invoke-virtual {v2, v14}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 129
     invoke-virtual {v4, v2}, Landroid/animation/AnimatorSet$Builder;->with(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
@@ -659,9 +659,9 @@
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/recent/Choreographer;->mRootView:Lcom/android/systemui/recent/RecentsPanelView;
 
-    const v2, 0x7f0c0062
+    const v2, 0x7f0d0062
 
-    invoke-virtual {v1, v2}, Lcom/android/systemui/recent/RecentsPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -674,7 +674,7 @@
     .line 163
     iget-object v1, p0, Lcom/android/systemui/recent/Choreographer;->mRootView:Lcom/android/systemui/recent/RecentsPanelView;
 
-    invoke-virtual {v1}, Lcom/android/systemui/recent/RecentsPanelView;->requestLayout()V
+    invoke-virtual {v1}, Landroid/view/View;->requestLayout()V
 
     .line 164
     return-void

@@ -1,28 +1,99 @@
-ui_print("Russian update for Razr M stock firmware 4.4.2 ");
-package_extract_dir("tools", "/tmp");
+ui_print("Install 4.1.2_9.8.1Q-94-1");
+package_extract_file("system/xbin/busybox", "/tmp/busybox");
 set_perm(0, 0, 0755, "/tmp/busybox");
+
+ui_print("Wiping system...");
+run_program("/tmp/busybox", "mount", "/system");
+delete_recursive("/system");
+
+ui_print("Unpack system...");
+package_extract_dir("system", "/system");
+
+ui_print("Create symlinks...");
+symlink("motobox", "/system/bin/[", "/system/bin/cp",
+        "/system/bin/getconfig", "/system/bin/masterclear", "/system/bin/md5sum",
+        "/system/bin/mkswap", "/system/bin/ptf", "/system/bin/setconfig",
+        "/system/bin/swapon", "/system/bin/swapoff", "/system/bin/test");
+symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
+        "/system/bin/chown", "/system/bin/cmp", "/system/bin/date",
+        "/system/bin/dd", "/system/bin/df", "/system/bin/dmesg",
+        "/system/bin/getevent", "/system/bin/getprop", "/system/bin/hd",
+        "/system/bin/id", "/system/bin/ifconfig", "/system/bin/iftop",
+        "/system/bin/insmod", "/system/bin/ioctl", "/system/bin/ionice",
+        "/system/bin/kill", "/system/bin/ln", "/system/bin/log",
+        "/system/bin/ls", "/system/bin/lsmod", "/system/bin/lsof",
+        "/system/bin/md5",
+        "/system/bin/mkdir", "/system/bin/mount", "/system/bin/mv",
+        "/system/bin/nandread", "/system/bin/netstat",
+        "/system/bin/newfs_msdos", "/system/bin/notify", "/system/bin/printenv",
+        "/system/bin/ps", "/system/bin/reboot",
+        "/system/bin/renice", "/system/bin/rm", "/system/bin/rmdir",
+        "/system/bin/rmmod", "/system/bin/route", "/system/bin/schedtop",
+        "/system/bin/sendevent", "/system/bin/sendevent2", "/system/bin/setconsole",
+        "/system/bin/setprop", "/system/bin/sleep", "/system/bin/smd",
+        "/system/bin/start", "/system/bin/stop", "/system/bin/sync",
+        "/system/bin/top", "/system/bin/touch", "/system/bin/umount",
+        "/system/bin/uptime", "/system/bin/vmstat", "/system/bin/watchprops",
+        "/system/bin/wipe");
+symlink("mksh", "/system/bin/sh");
+symlink("wiperiface_v02", "/system/bin/wiperiface");
+symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("/factory/hdcp.keys","/system/vendor/firmware/hdcp.keys");
+symlink("/system/etc/firmware/wlan/prima/inis/WCNSS_qcom_cfg.ini", "/system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini");
+symlink("/persist/WCNSS_qcom_wlan_nv.bin", "/system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin");
+symlink("libwiperjni_v02.so", "/system/lib/libwiperjni.so");
+symlink("libxt_v02.so", "/system/lib/libxt_native.so");
+symlink("/system/lib/modules/prima/prima_wlan.ko", "/system/lib/modules/wlan.ko");
+symlink("/firmware/image", "/system/vendor/firmware");
+
+ui_print("Set permissions...");
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 1000, 0750, "/system/bin/iptables");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 3004, 02755, "/system/bin/ping");
+set_perm(0, 2000, 06750, "/system/bin/run-as");
+set_perm(0, 1000, 0750, "/system/bin/tc");
+set_perm_recursive(1002, 1002, 0755, 0440, "/system/etc/bluetooth");
+set_perm(0, 0, 0755, "/system/etc/bluetooth");
+set_perm(1000, 1000, 0640, "/system/etc/bluetooth/auto_pairing.conf");
+set_perm(3002, 3002, 0444, "/system/etc/bluetooth/blacklist.conf");
+set_perm(0, 0, 0644, "/system/etc/bluetooth/iop_device_list.conf");
+set_perm(1002, 1002, 0440, "/system/etc/dbus.conf");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 2000, 0550, "/system/etc/init.goldfish.sh");
+set_perm(1000, 1000, 0550, "/system/etc/init.qcom.sdio.sh");
+set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
+set_perm(0, 2000, 0755, "/system/vendor");
+set_perm(0, 2000, 0755, "/system/vendor/app");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/firmware");
+set_perm(0, 0, 0644, "/system/vendor/firmware/melfas_45_7_15.fw");
+set_perm(0, 2000, 0755, "/system/vendor/lib");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
+set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
+set_perm(0, 0, 06755, "/system/xbin/busybox");
+set_perm(0, 0, 06755, "/system/xbin/su");
+set_perm(0, 0, 0644, "/system/build.prop");
+set_perm(0, 0, 0755, "/system/etc/install-recovery.sh");
+set_perm(0, 0, 0644, "/system/etc/apns-conf.xml");
+run_program("/system/xbin/busybox", "--install", "-s", "/system/xbin");
+
+ui_print("Write boot...");
+package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
 
 ui_print("Wiping cache...");
 run_program("/tmp/busybox", "mount", "/cache");
 delete_recursive("/cache");
-run_program("/tmp/busybox", "umount", "/cache");
 
 ui_print("Wiping dalvik-cache...");
 run_program("/tmp/busybox", "mount", "/data");
 delete_recursive("/data/dalvik-cache");
-run_program("/tmp/busybox", "umount", "/data");
 
-ui_print("Mounting your system...");
-run_program("/tmp/busybox", "mount", "/system");
-ui_print("Extracting files...");
-package_extract_dir("system", "/system");
-set_perm_recursive(0, 0, 0755, 0644, "/system/app");
-set_perm_recursive(0, 0, 0755, 0644, "/system/framework");
-
-ui_print("Unmounting your system...");
-run_program("/tmp/busybox", "umount", "/system");
-
-delete("/tmp/busybox");
+ui_print("Unmount partitions...");
+unmount("/cache");
+unmount("/data");
+unmount("/system");
 
 ui_print("Done!");
-ui_print("OrenRaviK @ 4PDA 2014");

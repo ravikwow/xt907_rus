@@ -33,7 +33,7 @@
 
     iput-boolean p2, p0, Lcom/android/systemui/usb/UsbStorageActivity$3;->val$usbStorageInUse:Z
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

@@ -101,7 +101,7 @@
 
     .line 73
     .local v9, "iconId":I
-    const v11, 0x7f090076
+    const v11, 0x7f0a0076
 
     .line 74
     .local v11, "textResId":I
@@ -255,7 +255,7 @@
 
     .line 82
     .restart local v9    # "iconId":I
-    const v11, 0x7f090075
+    const v11, 0x7f0a0075
 
     .line 83
     .restart local v11    # "textResId":I

@@ -41,7 +41,7 @@
 
     .prologue
     .line 33
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 87
     new-instance v0, Ljava/util/ArrayList;
@@ -65,8 +65,8 @@
     .param p0, "row"    # Landroid/view/View;
 
     .prologue
-    .line 218
-    const/high16 v0, 0x7f0c0000
+    .line 196
+    const/high16 v0, 0x7f0d0000
 
     invoke-static {p0, v0}, Lcom/android/systemui/statusbar/NotificationData;->readBooleanTag(Landroid/view/View;I)Z
 
@@ -80,8 +80,8 @@
     .param p0, "row"    # Landroid/view/View;
 
     .prologue
-    .line 225
-    const v0, 0x7f0c0001
+    .line 203
+    const v0, 0x7f0d0001
 
     invoke-static {p0, v0}, Lcom/android/systemui/statusbar/NotificationData;->readBooleanTag(Landroid/view/View;I)Z
 
@@ -95,8 +95,8 @@
     .param p0, "row"    # Landroid/view/View;
 
     .prologue
-    .line 239
-    const v0, 0x7f0c0002
+    .line 217
+    const v0, 0x7f0d0002
 
     invoke-static {p0, v0}, Lcom/android/systemui/statusbar/NotificationData;->readBooleanTag(Landroid/view/View;I)Z
 
@@ -113,15 +113,15 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 199
+    .line 177
     if-eqz p0, :cond_0
 
-    .line 200
+    .line 178
     invoke-virtual {p0, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 201
+    .line 179
     .local v0, "value":Ljava/lang/Object;
     if-eqz v0, :cond_0
 
@@ -140,7 +140,7 @@
 
     const/4 v1, 0x1
 
-    .line 203
+    .line 181
     :cond_0
     return v1
 .end method
@@ -151,8 +151,8 @@
     .param p1, "userExpanded"    # Z
 
     .prologue
-    .line 232
-    const v0, 0x7f0c0001
+    .line 210
+    const v0, 0x7f0d0001
 
     invoke-static {p0, v0, p1}, Lcom/android/systemui/statusbar/NotificationData;->writeBooleanTag(Landroid/view/View;IZ)Z
 
@@ -167,8 +167,8 @@
     .param p1, "userLocked"    # Z
 
     .prologue
-    .line 246
-    const v0, 0x7f0c0002
+    .line 224
+    const v0, 0x7f0d0002
 
     invoke-static {p0, v0, p1}, Lcom/android/systemui/statusbar/NotificationData;->writeBooleanTag(Landroid/view/View;IZ)Z
 
@@ -184,17 +184,17 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 207
+    .line 185
     if-eqz p0, :cond_0
 
-    .line 208
+    .line 186
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     invoke-virtual {p0, p1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 211
+    .line 189
     .end local p2    # "value":Z
     :goto_0
     return p2
@@ -213,14 +213,14 @@
     .param p1, "entry"    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     .prologue
-    .line 141
+    .line 119
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 142
+    .line 120
     .local v0, "N":I
     const/4 v1, 0x0
 
@@ -228,7 +228,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 143
+    .line 121
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntryCmp:Ljava/util/Comparator;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
@@ -243,16 +243,16 @@
 
     if-lez v2, :cond_1
 
-    .line 147
+    .line 125
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1, p1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 148
+    .line 126
     return v1
 
-    .line 142
+    .line 120
     :cond_1
     add-int/lit8 v1, v1, 0x1
 
@@ -323,7 +323,7 @@
     .locals 3
 
     .prologue
-    .line 188
+    .line 166
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -344,13 +344,13 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/NotificationData$Entry;
 
-    .line 189
+    .line 167
     .local v0, "e":Lcom/android/systemui/statusbar/NotificationData$Entry;
     iget-object v2, v0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expanded:Landroid/view/View;
 
     if-eqz v2, :cond_0
 
-    .line 190
+    .line 168
     iget-object v2, v0, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
 
     invoke-virtual {v2}, Lcom/android/internal/statusbar/StatusBarNotification;->isClearable()Z
@@ -359,10 +359,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 191
+    .line 169
     const/4 v2, 0x1
 
-    .line 195
+    .line 173
     .end local v0    # "e":Lcom/android/systemui/statusbar/NotificationData$Entry;
     :goto_0
     return v2
@@ -373,112 +373,26 @@
     goto :goto_0
 .end method
 
-.method public isOrderUnchanged(Lcom/android/systemui/statusbar/NotificationData$Entry;Lcom/android/internal/statusbar/StatusBarNotification;)Z
-    .locals 6
-    .param p1, "entry"    # Lcom/android/systemui/statusbar/NotificationData$Entry;
-    .param p2, "newNotification"    # Lcom/android/internal/statusbar/StatusBarNotification;
-
-    .prologue
-    .line 122
-    const/4 v1, 0x1
-
-    .line 123
-    .local v1, "result":Z
-    iget-object v3, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
-
-    move-result v0
-
-    .line 124
-    .local v0, "i":I
-    iget-object v2, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
-
-    .line 125
-    .local v2, "saved":Lcom/android/internal/statusbar/StatusBarNotification;
-    iput-object p2, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
-
-    .line 127
-    if-lez v0, :cond_0
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntryCmp:Ljava/util/Comparator;
-
-    iget-object v4, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
-
-    add-int/lit8 v5, v0, -0x1
-
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v3, v4, p1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v3
-
-    if-lez v3, :cond_0
-
-    .line 128
-    const/4 v1, 0x0
-
-    .line 131
-    :cond_0
-    iget-object v3, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    add-int/lit8 v3, v3, -0x1
-
-    if-ge v0, v3, :cond_1
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntryCmp:Ljava/util/Comparator;
-
-    iget-object v4, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
-
-    add-int/lit8 v5, v0, 0x1
-
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v3, p1, v4}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v3
-
-    if-lez v3, :cond_1
-
-    .line 132
-    const/4 v1, 0x0
-
-    .line 134
-    :cond_1
-    iput-object v2, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Lcom/android/internal/statusbar/StatusBarNotification;
-
-    .line 135
-    return v1
-.end method
-
 .method public remove(Landroid/os/IBinder;)Lcom/android/systemui/statusbar/NotificationData$Entry;
     .locals 2
     .param p1, "key"    # Landroid/os/IBinder;
 
     .prologue
-    .line 165
+    .line 143
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/NotificationData;->findByKey(Landroid/os/IBinder;)Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     move-result-object v0
 
-    .line 166
+    .line 144
     .local v0, "e":Lcom/android/systemui/statusbar/NotificationData$Entry;
     if-eqz v0, :cond_0
 
-    .line 167
+    .line 145
     iget-object v1, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 169
+    .line 147
     :cond_0
     return-object v0
 .end method

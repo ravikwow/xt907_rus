@@ -76,24 +76,16 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
-
-    const-string v1, "android.intent.action.LOCALE_CHANGED"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
     if-eqz v1, :cond_1
 
-    .line 54
+    .line 52
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/DateView$1;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
 
     # invokes: Lcom/android/systemui/statusbar/policy/DateView;->updateClock()V
     invoke-static {v1}, Lcom/android/systemui/statusbar/policy/DateView;->access$000(Lcom/android/systemui/statusbar/policy/DateView;)V
 
-    .line 56
+    .line 54
     :cond_1
     return-void
 .end method

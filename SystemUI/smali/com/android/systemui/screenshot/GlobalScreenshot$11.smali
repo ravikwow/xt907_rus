@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$finalPos:Landroid/graphics/PointF;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -102,7 +102,7 @@
 
     mul-float/2addr v3, v4
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 589
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -120,7 +120,7 @@
 
     sub-float v3, v5, v3
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 590
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -130,7 +130,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleX(F)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setScaleX(F)V
 
     .line 591
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -140,7 +140,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleY(F)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setScaleY(F)V
 
     .line 592
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -156,7 +156,7 @@
 
     mul-float/2addr v3, v1
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setTranslationX(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setTranslationX(F)V
 
     .line 593
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -172,7 +172,7 @@
 
     mul-float/2addr v3, v1
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setTranslationY(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setTranslationY(F)V
 
     .line 594
     return-void

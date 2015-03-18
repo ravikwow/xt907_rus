@@ -36,7 +36,7 @@
     .line 43
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/CompatModeButton;->setClickable(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setClickable(Z)V
 
     .line 45
     const-string v0, "activity"
@@ -99,7 +99,7 @@
     if-eqz v1, :cond_2
 
     :goto_2
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/CompatModeButton;->setVisibility(I)V
+    invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 

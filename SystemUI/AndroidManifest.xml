@@ -10,8 +10,6 @@
     <uses-permission android:name="android.permission.STATUS_BAR"/>
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
     <uses-permission android:name="android.permission.REMOTE_AUDIO_PLAYBACK"/>
-    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT"/>
-    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -38,7 +36,6 @@
     <uses-permission android:name="android.permission.MANAGE_APP_TOKENS"/>
     <uses-permission android:name="android.permission.SET_ORIENTATION"/>
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="true" android:icon="@android:drawable/platlogo" android:label="@string/app_label" android:persistent="true">
         <service android:exported="true" android:name="SystemUIService"/>
         <service android:exported="false" android:name=".screenshot.TakeScreenshotService" android:process=":screenshot"/>

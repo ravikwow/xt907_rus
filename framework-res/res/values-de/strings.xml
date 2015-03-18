@@ -100,8 +100,8 @@
     <string name="day_of_week_shortest_thursday">D</string>
     <string name="day_of_week_shortest_friday">F</string>
     <string name="day_of_week_shortest_saturday">S</string>
-    <string name="am">AM</string>
-    <string name="pm">PM</string>
+    <string name="am">vorm.</string>
+    <string name="pm">nachm.</string>
     <string name="yesterday">Gestern</string>
     <string name="today">Heute</string>
     <string name="tomorrow">Morgen</string>
@@ -167,7 +167,7 @@
     <string name="gigabyteShort">" GB"</string>
     <string name="terabyteShort">" TB"</string>
     <string name="petabyteShort">" PB"</string>
-    <string name="fileSizeSuffix">%1$s%2$s</string>
+    <string name="fileSizeSuffix">%1$s %2$s</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">‥</string>
     <string name="mmiError">Verbindungsproblem oder ungültiger MMI-Code.</string>
@@ -188,7 +188,7 @@
     <string name="badPin">Die von Ihnen eingegebene alte PIN ist nicht korrekt.</string>
     <string name="badPuk">Der von Ihnen eingegebene PUK ist nicht korrekt.</string>
     <string name="mismatchPin">Die von Ihnen eingegebenen PIN-Nummern stimmen nicht überein.</string>
-    <string name="invalidPin">PIN mit 4 bis 8 Ziffern eingeben</string>
+    <string name="invalidPin">Geben Sie eine PIN aus 4 bis 8 Ziffern ein.</string>
     <string name="invalidPuk">Geben Sie einen mindestens achtstelligen PUK ein.</string>
     <string name="needPuk">Ihre SIM-Karte ist mit einem PUK gesperrt. Geben Sie zum Entsperren den PUK-Code ein.</string>
     <string name="needPuk2">Geben Sie zum Entsperren der SIM-Karte den PUK2 ein.</string>
@@ -249,7 +249,7 @@ Versuche übrig: "</string>
     <string name="roamingTextSearching">Suche nach Dienst</string>
     <string name="cfTemplateNotForwarded">{0}: Nicht weitergeleitet</string>
     <string name="cfTemplateForwarded">{0}: {1}</string>
-    <string name="cfTemplateForwardedTime">{0}: {1} nach {2} Sekunden.</string>
+    <string name="cfTemplateForwardedTime">{0}{1} nach {2} Sekunden.</string>
     <string name="cfTemplateRegistered">{0}: Nicht weitergeleitet</string>
     <string name="cfTemplateRegisteredTime">{0}: Nicht weitergeleitet</string>
     <string name="fcComplete">Funktionscode abgeschlossen</string>
@@ -654,7 +654,7 @@ Versuche übrig: "</string>
     <string name="policylab_setGlobalProxy">Den globalen Proxy des Geräts festlegen</string>
     <string name="policydesc_setGlobalProxy">Den bei aktivierter Richtlinie zu verwendenden globalen Proxy des Geräts festlegen. Nur der erste Geräteadministrator kann den gültigen globalen Proxy festlegen.</string>
     <string name="policylab_expirePassword">Ablauf des Passworts für die Displaysperre einstellen</string>
-    <string name="policydesc_expirePassword">Festlegen, wie häufig das Passwort zum Sperren des Bildschirms geändert werden muss.</string>
+    <string name="policydesc_expirePassword">Legen Sie fest, wie häufig das Passwort zum Sperren des Bildschirms geändert werden muss.</string>
     <string name="policylab_encryptedStorage">Speicherverschlüsselung</string>
     <string name="policydesc_encryptedStorage">Anforderung, dass gespeicherte App-Daten verschlüsselt werden</string>
     <string name="policylab_disableCamera">Kameras deaktivieren</string>
@@ -738,7 +738,7 @@ Versuche übrig: "</string>
     <string name="keyguard_password_entry_touch_hint"><font size="17">Zur Passworteingabe berühren</font></string>
     <string name="keyguard_password_enter_password_code">Passwort zum Entsperren eingeben</string>
     <string name="keyguard_password_enter_pin_password_code">PIN zum Entsperren eingeben</string>
-    <string name="keyguard_password_wrong_pin_code">Falsche PIN.</string>
+    <string name="keyguard_password_wrong_pin_code">Falscher PIN-Code</string>
     <string name="keyguard_password_wrong_puk_code">Falscher PUK!</string>
     <string name="keyguard_password_pin_failed">PIN-Vorgang fehlgeschlagen.</string>
     <string name="keyguard_password_puk_failed">PUK-Vorgang fehlgeschlagen.</string>
@@ -760,15 +760,15 @@ Versuche übrig: "</string>
     <string name="lockscreen_charged">Aufgeladen</string>
     <string name="lockscreen_battery_short">%d %%</string>
     <string name="lockscreen_low_battery">Bitte Ladegerät anschließen</string>
-    <string name="lockscreen_missing_sim_message_short">SIM-Karte fehlt</string>
+    <string name="lockscreen_missing_sim_message_short">Keine SIM-Karte</string>
     <string name="lockscreen_missing_sim_message">Keine SIM-Karte im Telefon</string>
     <string name="lockscreen_missing_sim_instructions">Legen Sie eine SIM-Karte ein.</string>
     <string name="lockscreen_missing_sim_instructions_long">SIM-Karte fehlt oder ist nicht lesbar. Bitte legen Sie eine SIM-Karte ein.</string>
     <string name="lockscreen_permanent_disabled_sim_message_short">SIM-Karte unbrauchbar</string>
     <string name="lockscreen_permanent_disabled_sim_instructions">"Ihre SIM-Karte wurde dauerhaft deaktiviert.
  Wenden Sie sich an Ihren Mobilfunkanbieter, um eine andere SIM-Karte zu erhalten."</string>
-    <string name="lockscreen_transport_prev_description">Schaltfläche für vorherigen Titel</string>
-    <string name="lockscreen_transport_next_description">Schaltfläche für nächsten Titel</string>
+    <string name="lockscreen_transport_prev_description">Schaltfläche für vorherigen Track</string>
+    <string name="lockscreen_transport_next_description">Schaltfläche für nächsten Track</string>
     <string name="lockscreen_transport_pause_description">Schaltfläche für Pause</string>
     <string name="lockscreen_transport_play_description">Schaltfläche für Wiedergabe</string>
     <string name="lockscreen_transport_stop_description">Schaltfläche für Stopp</string>
@@ -776,12 +776,12 @@ Versuche übrig: "</string>
     <string name="lockscreen_sim_error_message_short">Karte ungültig.</string>
     <string name="lockscreen_sim_error_message">Die SIM-Karte ist ungültig.</string>
     <string name="lockscreen_network_locked_message">Netzwerk gesperrt</string>
-    <string name="lockscreen_perso_locked_message">Die SIM-Karte ist Perso-gesperrt.</string>
+    <string name="lockscreen_perso_locked_message">Die SIM-/RUIM-Karte ist Perso-gesperrt.</string>
     <string name="lockscreen_sim_puk_locked_message">PUK-Sperre auf SIM</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 gesperrt. Geben Sie PUK1 ein.
 ODER
 Lesen Sie die Bedienungsanleitungenden Sie sich an den Kundendienst."</string>
-    <string name="lockscreen_sim_locked_message">Die SIM-Karte ist gesperrt.</string>
+    <string name="lockscreen_sim_locked_message">SIM-/RUIM-Karte ist gesperrt.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">SIM-Karte wird entsperrt...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Sie haben Ihr Entsperrungsmuster %d-mal falsch gezeichnet. 
 
@@ -791,7 +791,7 @@ Bitte versuchen Sie es in %d Sekunden noch einmal."</string>
 Bitte versuchen Sie es in %d Sekunden noch einmal."</string>
     <string name="lockscreen_sim_pin_blocked">PIN1 gesperrt! Geben Sie PUK1 ein, um PIN1 zu entsperren.</string>
     <string name="lockscreen_ruim_pin_blocked">PIN1 gesperrt! Geben Sie PUK1 ein, um PIN1 zu entsperren.</string>
-    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"Sie haben Ihre PIN %d-mal falsch eingegeben.
+    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"Sie haben Ihr Passwort %d-mal falsch eingegeben.
 
 Bitte versuchen Sie es in %d Sekunden noch einmal."</string>
     <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"Sie haben Ihr Entsperrungsmuster %d-mal falsch gezeichnet. Nach %d weiteren erfolglosen Versuchen werden Sie aufgefordert, Ihr Telefon mithilfe Ihrer Google-Anmeldeinformationen zu entsperren.
@@ -825,7 +825,7 @@ Besuchen Sie "<b>google.com/accounts/recovery</b>.</string>
     <string name="granularity_label_word">Wort</string>
     <string name="granularity_label_link">Link</string>
     <string name="granularity_label_line">Zeile</string>
-    <string name="hour_ampm" formatted="false">%-l %p</string>
+    <string name="hour_ampm" formatted="false">%-l %P</string>
     <string name="hour_cap_ampm" formatted="false">%-l %p</string>
     <string name="factorytest_failed">Werkstest fehlgeschlagen</string>
     <string name="factorytest_not_system">Die Aktion FACTORY_TEST wird nur für unter \"/system/app\" gespeicherte Pakete unterstützt.</string>
@@ -1260,26 +1260,12 @@ für Konto %s"</string>
     <string name="default_audio_route_category_name">System</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth-Audio</string>
     <string name="media_route_chooser_grouping_done">Fertig</string>
-    <string name="wispr_login_success">Anmeldung erfolgreich</string>
-    <string name="wispr_login_failed">Anmeldung fehlgeschlagen</string>
-    <string name="wispr_login_header">AT&amp;T WLAN-Hotspot Status</string>
-    <string name="wispr_login_failed_credential">Ihre Legitimation war nicht erfolgreich, bitte wenden Sie sich an den Kundendienst unter 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Authentifizierung fehlgeschlagen</string>
-    <string name="wispr_insert_sim">Ihre Legitimation war nicht erfolgreich, bitte wenden Sie sich an den Kundendienst unter 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
     <string name="dt_numeric_day_format">%d</string>
     <string name="dt_numeric_month_format">%m</string>
     <string name="dt_numeric_year_format">%Y</string>
-    <string name="same_abbrev_month_md1_md2">%3$s. - %8$s. %2$s</string>
-    <string name="same_abbrev_month_wday1_md1_wday2_md2">%1$s, %3$s. %2$s - %6$s, %8$s. %7$s</string>
-    <string name="same_abbrev_month_mdy1_mdy2">%3$s. - %8$s. %2$s %9$s</string>
-    <string name="same_abbrev_month_wday1_mdy1_wday2_mdy2">%1$s, %3$s. %2$s %4$s - %6$s, %8$s. %7$s %9$s</string>
-    <string name="same_abbrev_month_md1_time1_md2_time2">%3$s. %2$s, %5$s - %8$s. %7$s, %10$s</string>
-    <string name="same_abbrev_month_wday1_md1_time1_wday2_md2_time2">%1$s, %3$s. %2$s, %5$s - %6$s, %8$s. %7$s, %10$s</string>
-    <string name="same_abbrev_month_mdy1_time1_mdy2_time2">%3$s. %2$s %4$s, %5$s - %8$s. %7$s %9$s, %10$s</string>
-    <string name="same_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">%1$s, %3$s. %2$s %4$s, %5$s - %6$s, %8$s. %7$s %9$s, %10$s</string>
     <string name="cipheringIndicator">Verschlüsselung ist in Ihrem Netzwerk nicht verfügbar. Telefonanrufe und/oder Mobilfunkdaten sind nicht verschlüsselt.</string>
     <string name="sim_retry_left">Verbleibende Versuche: %d</string>
     <string name="vzw_disable_we_gsm_cf">Anrufweiterleitung ist außerhalb des Verizon Wireless-Netzes deaktiviert.</string>
@@ -1296,17 +1282,17 @@ für Konto %s"</string>
     <string name="tether_authen_error_notification_message">Besuchen Sie zur Aktivierung att.com/mywireless oder wählen Sie 611</string>
     <string name="tether_connect_error_notification_title">USB-Tethering-Fehler</string>
     <string name="tether_connect_error_notification_message">USB-Kabel nochmal anschließen und erneut versuchen</string>
-    <string name="wifi_authen_check_notification_title">Mobiler Hotspot wird validiert</string>
+    <string name="wifi_authen_check_notification_title">Mobile Hotspot wird validiert</string>
     <string name="wifi_authen_check_notification_message">Kontostatus wird verifiziert</string>
-    <string name="wifi_connecting_notification_title">Mobiler Hotspot wird aktiviert</string>
+    <string name="wifi_connecting_notification_title">Mobile Hotspot wird aktiviert</string>
     <string name="wifi_connecting_notification_message">Datenverbindung wird eingerichtet</string>
-    <string name="wifi_connected_notification_title">Mobiler Hotspot verbunden</string>
+    <string name="wifi_connected_notification_title">Mobile Hotspot verbunden</string>
     <string name="wifi_connected_notification_message">Datenverbindung ist nun eingerichtet</string>
-    <string name="wifi_authen_error_notification_title">Konto nicht für \"Mobiler Hotspot\" eingerichtet</string>
+    <string name="wifi_authen_error_notification_title">Konto nicht für Mobile Hotspot eingerichtet</string>
     <string name="wifi_authen_error_notification_message">Besuchen Sie zur Aktivierung att.com/mywireless oder wählen Sie 611</string>
-    <string name="wifi_connect_error_notification_title">Fehler beim mobilen Hotspot</string>
+    <string name="wifi_connect_error_notification_title">Fehler bei Mobile Hotspot</string>
     <string name="wifi_connect_error_notification_message">WLAN deaktivieren und erneut versuchen</string>
-    <string name="wifi_disconnect_notification_title">Mobiler Hotspot getrennt</string>
+    <string name="wifi_disconnect_notification_title">Mobile Hotspot getrennt</string>
     <string name="bt_authen_check_notification_title">Bluetooth-Tethering wird validiert</string>
     <string name="bt_authen_check_notification_message">Kontostatus wird verifiziert.</string>
     <string name="bt_authen_success_notification_title">Konto für Bluetooth-Tethering eingerichtet</string>
@@ -1322,8 +1308,7 @@ für Konto %s"</string>
     <string name="msg_enable_sdcard_notification">SD-Karte aktiviert</string>
     <string name="policylab_encrypt">Daten auf dem Gerät oder der SD-Karte verschlüsseln</string>
     <string name="policydesc_encrypt">Verschlüsselung der Benutzerdaten auf dem Gerät oder der SD-Karte aktivieren</string>
-    <string name="policylab_datasync">"Datensynchronisierungs- 
-methode für Roaming festlegen"</string>
+    <string name="policylab_datasync">Datensynchronisierungsmethode für Roaming festlegen</string>
     <string name="policydesc_datasync">Datensynchronisierungsmethode beim Roaming als manuell oder automatisch einstellen</string>
     <string name="policy_lab_limit_vpn">VPN beschränken</string>
     <string name="policy_desc_limit_vpn">VPN-Funktion beschränken</string>
@@ -1411,14 +1396,7 @@ Alle Daten oder Einstellungen werden gespeichert.
     <string name="password_recovery_dialog_title">Haben Sie Ihr Passwort vergessen?</string>
     <string name="password_recovery_dialog_message">Wenden Sie sich an Ihre IT-Abteilung und fragen Sie nach dem \"Recovery-Passwort\". Nach der Eingabe dieses Passworts können Sie Ihr altes Passwort zurücksetzen und ein neues festlegen.</string>
     <string name="lockscreen_charged_rmdunplug">Vollständig aufgeladen. Ziehen Sie das Ladegerät aus der Steckdose, um Energie zu sparen.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network Extender</string>
-    <string name="moto_eritext_extended_network">Erweitertes Netzwerk</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">USB-Datenträger</string>
-    <string name="sim_pin_technical_problem">Ein technisches Problem ist aufgetreten. Versuchen Sie es erneut.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Neuen PIN-Code bestätigen</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Versuchen Sie es in %d Sekunden erneut.</string>
     <string name="msg_disable_consumer_email_notification">Nutzer-E-Mail deaktiviert.</string>
     <string name="msg_enable_consumer_email_notification">Nutzer-E-Mail aktiviert.</string>
     <string name="msg_disable_browser_notification">Browser deaktiviert.</string>
@@ -1437,5 +1415,4 @@ Alle Daten oder Einstellungen werden gespeichert.
     <string name="msg_app_control_notification">Liste deaktivierter Anwendungen aktualisiert.</string>
     <string name="policylab_appcontrol">Deaktivieren von Anwendungen</string>
     <string name="policydesc_appcontrol">Einem Administrator erlauben, Anwendungen für das Gerät zu aktivieren bzw. deaktivieren.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN entsperrt</string>
 </resources>

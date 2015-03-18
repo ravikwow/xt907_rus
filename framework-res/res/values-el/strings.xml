@@ -167,7 +167,7 @@
     <string name="gigabyteShort">GB</string>
     <string name="terabyteShort">TB</string>
     <string name="petabyteShort">PB</string>
-    <string name="fileSizeSuffix">%1$s %2$s</string>
+    <string name="fileSizeSuffix">%1$s%2$s</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">‥</string>
     <string name="mmiError">Πρόβλημα σύνδεσης ή μη έγκυρος κώδικας MMI.</string>
@@ -229,8 +229,8 @@
     <string name="serviceClassData">Δεδομένα</string>
     <string name="serviceClassFAX">ΦΑΞ</string>
     <string name="serviceClassSMS">SMS</string>
-    <string name="serviceClassDataAsync">Ασύγχρονα</string>
-    <string name="serviceClassDataSync">Σύγχρονα</string>
+    <string name="serviceClassDataAsync">Μη συγχρονισμένα</string>
+    <string name="serviceClassDataSync">Συγχρονισμός</string>
     <string name="serviceClassPacket">Πακέτο</string>
     <string name="serviceClassPAD">PAD</string>
     <string name="roamingText0">Ενεργή ένδειξη περιαγωγής</string>
@@ -601,7 +601,7 @@
     <string name="permdesc_changeWifiMulticastState">Επιτρέπει στην εφαρμογή τη λήψη πακέτων που αποστέλλονται σε όλες τις συσκευές σε ένα δίκτυο Wi-Fi, με χρήση διευθύνσεων πολλαπλής διανομής και όχι απλώς στο τηλέφωνό σας. Χρησιμοποιεί περισσότερη ενέργεια σε σχέση με τη λειτουργία χωρίς πολλαπλή διανομή.</string>
     <string name="permlab_bluetoothAdmin">πρόσβαση στις ρυθμίσεις Bluetooth</string>
     <string name="permdesc_bluetoothAdmin">Επιτρέπει στην εφαρμογή τη διαμόρφωση του τοπικού tablet Bluetooth, τον εντοπισμό και τη σύζευξη με απομακρυσμένες συσκευές.</string>
-    <string name="permlab_accessWimaxState">προβολή συνδέσεων WiMAX</string>
+    <string name="permlab_accessWimaxState">Προβολή συνδέσεων WiMAX</string>
     <string name="permdesc_accessWimaxState">Επιτρέπει στην εφαρμογή να προσδιορίζει εάν το WiMAX είναι ενεργοποιημένο και πληροφορίες σχετικά με τυχόν δίκτυα WiMAX που είναι συνδεδεμένα.</string>
     <string name="permlab_changeWimaxState">Αλλαγή κατάστασης WiMAX</string>
     <string name="permdesc_changeWimaxState">Επιτρέπει στην εφαρμογή τη σύνδεση στο τηλέφωνο και την αποσύνδεση από αυτό, από δίκτυα WiMAX.</string>
@@ -650,14 +650,14 @@
     <string name="policylab_forceLock">Κλείδωμα οθόνης</string>
     <string name="policydesc_forceLock">Έλεγχος του τρόπου και του χρόνου κλειδώματος της οθόνης.</string>
     <string name="policylab_wipeData">Διαγραφή όλων των δεδομένων</string>
-    <string name="policydesc_wipeData">Διαγραφή των δεδομένων του τηλεφώνου χωρίς προειδοποίηση με επαναφορά των εργοστασιακών δεδομένων.</string>
+    <string name="policydesc_wipeData">Διαγραφή των δεδομένων του τηλεφώνου χωρίς προειδοποίηση με επαναφορά των εργοστασιακών ρυθμίσεων.</string>
     <string name="policylab_setGlobalProxy">Ρύθμιση του γενικού διακομιστή μεσολάβησης της συσκευής</string>
     <string name="policydesc_setGlobalProxy">Ορίστε το γενικό διακομιστή μεσολάβησης της συσκευής που θα χρησιμοποιείται όταν είναι ενεργοποιημένη η πολιτική. Μόνο ο πρώτος διαχειριστής της συσκευής ορίζει τον ισχύοντα γενικό διακομιστή μεσολάβησης.</string>
     <string name="policylab_expirePassword">Λήξη κωδικού πρόσβασης κλειδώματος οθόνης</string>
     <string name="policydesc_expirePassword">Έλεγχος της συχνότητας αλλαγής του κωδικού πρόσβασης κλειδώματος οθόνης.</string>
     <string name="policylab_encryptedStorage">Κρυπτογράφηση χώρου αποθήκευσης</string>
     <string name="policydesc_encryptedStorage">Να απαιτείται η κρυπτογράφηση των αποθηκευμένων δεδομένων εφαρμογής</string>
-    <string name="policylab_disableCamera">Απενεργοποίηση καμερών</string>
+    <string name="policylab_disableCamera">Απενεργοποίηση κάμερας</string>
     <string name="policydesc_disableCamera">Να αποτρέπεται η χρήση των καμερών της συσκευής.</string>
     <string name="phoneTypeCustom">Προσαρμοσμένο</string>
     <string name="phoneTypeHome">Οικία</string>
@@ -760,7 +760,7 @@
     <string name="lockscreen_charged">Φορτίστηκε.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Συνδέστε τον φορτιστή.</string>
-    <string name="lockscreen_missing_sim_message_short">Δεν υπάρχει κάρτα SIM</string>
+    <string name="lockscreen_missing_sim_message_short">Δεν υπάρχει κάρτα SIM.</string>
     <string name="lockscreen_missing_sim_message">Δεν υπάρχει κάρτα SIM στο τηλέφωνο.</string>
     <string name="lockscreen_missing_sim_instructions">Τοποθετήστε μια κάρτα SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">Η κάρτα SIM δεν υπάρχει ή δεν είναι δυνατή η ανάγνωσή της. Τοποθετήστε μια κάρτα SIM.</string>
@@ -776,12 +776,12 @@
     <string name="lockscreen_sim_error_message_short">Μη έγκυρη κάρτα</string>
     <string name="lockscreen_sim_error_message">Η κάρτα SIM δεν είναι έγκυρη.</string>
     <string name="lockscreen_network_locked_message">Το δίκτυο κλειδώθηκε</string>
-    <string name="lockscreen_perso_locked_message">Η κάρτα SIM διαθέτει κλείδωμα Perso</string>
+    <string name="lockscreen_perso_locked_message">Η κάρτα SIM/RUIM διαθέτει προσαρμοσμένο κλείδωμα</string>
     <string name="lockscreen_sim_puk_locked_message">Η κάρτα SIM είναι κλειδωμένη με κωδικό PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"Κλείδωμα PIN1! Εισαγάγετε το PUK1.
 ή
 Ανατρέξτε στον οδηγό χρήσης/επικοινωνήστε με την εξυπηρέτηση πελατών."</string>
-    <string name="lockscreen_sim_locked_message">Η κάρτα SIM είναι κλειδωμένη</string>
+    <string name="lockscreen_sim_locked_message">Η κάρτα SIM/RUIM είναι κλειδωμένη.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Ξεκλείδωμα κάρτας SIM...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Σχεδιάσατε εσφαλμένα το μοτίβο ξεκλειδώματος %d φορές. 
 
@@ -825,8 +825,8 @@
     <string name="granularity_label_word">λέξη</string>
     <string name="granularity_label_link">σύνδεσμος</string>
     <string name="granularity_label_line">γραμμή</string>
-    <string name="hour_ampm" formatted="false">%-l %P</string>
-    <string name="hour_cap_ampm" formatted="false">%-l %p</string>
+    <string name="hour_ampm" formatted="false">%-l%P</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">Η εργοστασιακή δοκιμή απέτυχε</string>
     <string name="factorytest_not_system">Η ενέργεια FACTORY_TEST υποστηρίζεται μόνο για πακέτα που είναι εγκατεστημένα στον κατάλογο /system/app.</string>
     <string name="factorytest_no_action">Δεν βρέθηκε πακέτο που να παρέχει την ενέργεια FACTORY_TEST.</string>
@@ -895,7 +895,7 @@
     <string name="searchview_description_submit">Υποβολή ερωτήματος</string>
     <string name="searchview_description_voice">Φωνητική αναζήτηση</string>
     <string name="enable_explore_by_touch_warning_title">Ενεργοποίηση Αναζήτησης μέσω αφής;</string>
-    <string name="enable_explore_by_touch_warning_message">Η υπηρεσία %1$s απαιτεί ενεργοποίηση της Εξερεύνησης μέσω αφής. Όταν είναι ενεργοποιημένη η Εξερεύνηση μέσω αφής, μπορείτε να δείτε ή να ακούσετε περιγραφές για τις επιλογές που βρίσκονται κάτω από το δάκτυλό σας ή να κάνετε κινήσεις αλληλεπίδρασης με το τηλέφωνό σας.</string>
+    <string name="enable_explore_by_touch_warning_message">Η υπηρεσία %1$s απαιτεί ενεργοποίηση της Εξερεύνησης μέσω αφής. Όταν είναι ενεργοποιημένη η Εξερεύνηση μέσω αφής, μπορείτε να δείτε ή να ακούσετε περιγραφές για τις επιλογές που βρίσκονται κάτω από το δάχτυλό σας ή να κάνετε κινήσεις αλληλεπίδρασης με το τηλέφωνό σας.</string>
     <string name="oneMonthDurationPast">πριν από 1 μήνα</string>
     <string name="beforeOneMonthDurationPast">Παλαιότερα από 1 μήνα</string>
     <string name="last_month">Τελευταίος μήνας</string>
@@ -1145,7 +1145,7 @@
     <string name="no_matches">Δεν υπάρχουν αποτελέσματα</string>
     <string name="find_on_page">Εύρεση στη σελίδα</string>
     <string name="action_mode_done">Τέλος</string>
-    <string name="progress_unmounting">Αποσύνδεση κάρτας SD...</string>
+    <string name="progress_unmounting">Αφαίρεση κάρτας SD...</string>
     <string name="progress_erasing">Διαγραφή κάρτας SD...</string>
     <string name="format_error">Δεν ήταν δυνατή η διαγραφή της κάρτας SD.</string>
     <string name="media_bad_removal">Η κάρτα SD αφαιρέθηκε πριν να αποσυνδεθεί.</string>
@@ -1153,7 +1153,7 @@
     <string name="media_removed">Η κάρτα SD έχει αφαιρεθεί.</string>
     <string name="media_shared">Αυτή τη στιγμή η κάρτα SD χρησιμοποιείται από κάποιον υπολογιστή.</string>
     <string name="media_unknown_state">Το εξωτερικό μέσο είναι σε άγνωστη κατάσταση.</string>
-    <string name="share">Κοινοποίηση</string>
+    <string name="share">Κοινή χρ.</string>
     <string name="find">Εύρεση</string>
     <string name="websearch">Αναζήτηση στον Ιστό</string>
     <string name="gpsNotifTicker">Αίτημα τοποθεσίας από %s</string>
@@ -1260,12 +1260,6 @@
     <string name="default_audio_route_category_name">Σύστημα</string>
     <string name="bluetooth_a2dp_audio_route_name">Ήχος Bluetooth</string>
     <string name="media_route_chooser_grouping_done">Τέλος</string>
-    <string name="wispr_login_success">Επιτυχής σύνδεση</string>
-    <string name="wispr_login_failed">Αποτυχία σύνδεσης</string>
-    <string name="wispr_login_header">Κατάσταση ενεργού σημείου Wi-Fi AT&amp;T</string>
-    <string name="wispr_login_failed_credential">Δεν είναι δυνατή η επιβεβαίωση της καταλληλότητας, καλέστε την εξυπηρέτηση πελατών στο τηλέφωνο 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Ο έλεγχος ταυτότητας απέτυχε</string>
-    <string name="wispr_insert_sim">Δεν είναι δυνατή η επιβεβαίωση της καταλληλότητας, καλέστε την εξυπηρέτηση πελατών στο τηλέφωνο 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1398,14 +1392,7 @@
     <string name="password_recovery_dialog_title">Ξεχάσατε τον κωδικό πρόσβασης;</string>
     <string name="password_recovery_dialog_message">Επικοινωνήστε με το τμήμα πληροφορικής και ζητήστε τον \"Κωδικό πρόσβασης επαναφοράς\". Η εισαγωγή αυτού του κωδικού πρόσβασης επιτρέπει την επαναφορά του τρέχοντος κωδικού πρόσβασης και τον ορισμό ενός νέου κωδικού.</string>
     <string name="lockscreen_charged_rmdunplug">Πλήρης φόρτιση. Αποσυνδέστε το φορτιστή από την πρίζα για εξοικονόμηση ενέργειας.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Επέκταση δικτύου</string>
-    <string name="moto_eritext_extended_network">Εκτεταμένο δίκτυο</string>
-    <string name="moto_eritext_roaming">Περιαγωγή</string>
     <string name="storage_usb_disk">Δίσκος USB</string>
-    <string name="sim_pin_technical_problem">Παρουσιάστηκε τεχνικό πρόβλημα. Προσπαθήστε ξανά.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Επιβεβ. νέου κωδικού PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Προσπαθήστε ξανά σε %d δευτερόλεπτο.</string>
     <string name="msg_disable_consumer_email_notification">Τα διαφημιστικά email απενεργοποιήθηκαν.</string>
     <string name="msg_enable_consumer_email_notification">Τα διαφημιστικά email ενεργοποιήθηκαν.</string>
     <string name="msg_disable_browser_notification">Το πρόγραμμα περιήγησης είναι απενεργοποιημένο.</string>
@@ -1424,5 +1411,4 @@
     <string name="msg_app_control_notification">Ενημερωμένη λίστα ανενεργών εφαρμογών.</string>
     <string name="policylab_appcontrol">Απενεργοποίηση εφαρμογών</string>
     <string name="policydesc_appcontrol">Να επιτρέπεται στο διαχειριστή η ενεργοποίηση/απενεργοποίηση εφαρμογών στη συσκευή.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">Άρση αποκλεισμού κωδικού PIN</string>
 </resources>

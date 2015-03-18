@@ -91,7 +91,7 @@
     iput-boolean v2, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mVisible:Z
 
     .line 160
-    invoke-virtual {p0, v2}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->setFixedSizeAllowed(Z)V
+    invoke-virtual {p0, v2}, Landroid/service/wallpaper/WallpaperService$Engine;->setFixedSizeAllowed(Z)V
 
     .line 161
     return-void
@@ -638,7 +638,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v7}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v3, v7}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 462
     return-object v1
@@ -989,7 +989,7 @@
     :cond_2
     const/4 v7, 0x0
 
-    invoke-virtual {v11, v7}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v11, v7}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 430
     const/4 v7, 0x3
@@ -1005,7 +1005,7 @@
     .line 433
     const/4 v7, 0x3
 
-    invoke-virtual {v11, v7}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {v11, v7}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 434
     const/4 v13, 0x3
@@ -1636,7 +1636,7 @@
 
     .line 297
     :cond_5
-    invoke-virtual {p0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->getSurfaceHolder()Landroid/view/SurfaceHolder;
+    invoke-virtual {p0}, Landroid/service/wallpaper/WallpaperService$Engine;->getSurfaceHolder()Landroid/view/SurfaceHolder;
 
     move-result-object v1
 
@@ -1829,7 +1829,7 @@
     .line 179
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->setOffsetNotificationsEnabled(Z)V
+    invoke-virtual {p0, v0}, Landroid/service/wallpaper/WallpaperService$Engine;->setOffsetNotificationsEnabled(Z)V
 
     .line 180
     return-void
@@ -1845,7 +1845,7 @@
     invoke-super {p0, p1, p2}, Landroid/service/wallpaper/WallpaperService$Engine;->onDesiredSizeChanged(II)V
 
     .line 193
-    invoke-virtual {p0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->getSurfaceHolder()Landroid/view/SurfaceHolder;
+    invoke-virtual {p0}, Landroid/service/wallpaper/WallpaperService$Engine;->getSurfaceHolder()Landroid/view/SurfaceHolder;
 
     move-result-object v0
 
@@ -1878,7 +1878,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mReceiver:Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/ImageWallpaper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 188
     :cond_0
@@ -2047,11 +2047,11 @@
 
     .prologue
     .line 204
-    invoke-virtual {p0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->getDesiredMinimumWidth()I
+    invoke-virtual {p0}, Landroid/service/wallpaper/WallpaperService$Engine;->getDesiredMinimumWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->getDesiredMinimumHeight()I
+    invoke-virtual {p0}, Landroid/service/wallpaper/WallpaperService$Engine;->getDesiredMinimumHeight()I
 
     move-result v1
 

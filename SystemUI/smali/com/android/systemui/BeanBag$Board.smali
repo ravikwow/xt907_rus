@@ -154,10 +154,10 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 271
-    invoke-virtual {p0, v0}, Lcom/android/systemui/BeanBag$Board;->setSystemUiVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     .line 273
-    invoke-virtual {p0, v0}, Lcom/android/systemui/BeanBag$Board;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 274
     return-void
@@ -366,7 +366,7 @@
     const/4 v5, 0x0
 
     .line 278
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board;->removeAllViews()V
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 280
     new-instance v2, Landroid/view/ViewGroup$LayoutParams;
@@ -386,7 +386,7 @@
     .line 285
     new-instance v1, Lcom/android/systemui/BeanBag$Board$Bean;
 
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -396,7 +396,7 @@
 
     .line 286
     .local v1, "nv":Lcom/android/systemui/BeanBag$Board$Bean;
-    invoke-virtual {p0, v1, v2}, Lcom/android/systemui/BeanBag$Board;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 287
     int-to-float v3, v0
@@ -458,7 +458,7 @@
     .line 295
     iget-object v3, p0, Lcom/android/systemui/BeanBag$Board;->mAnim:Landroid/animation/TimeAnimator;
 
-    invoke-virtual {v3}, Landroid/animation/TimeAnimator;->cancel()V
+    invoke-virtual {v3}, Landroid/animation/ValueAnimator;->cancel()V
 
     .line 297
     :cond_1
@@ -498,7 +498,7 @@
 
     .prologue
     .line 365
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 366
     invoke-virtual {p0}, Lcom/android/systemui/BeanBag$Board;->stopAnimation()V
@@ -554,7 +554,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/systemui/BeanBag$Board$2;-><init>(Lcom/android/systemui/BeanBag$Board;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/BeanBag$Board;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 357
     :goto_0
@@ -564,7 +564,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/BeanBag$Board;->mAnim:Landroid/animation/TimeAnimator;
 
-    invoke-virtual {v0}, Landroid/animation/TimeAnimator;->start()V
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_0
 .end method
@@ -580,7 +580,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/BeanBag$Board;->mAnim:Landroid/animation/TimeAnimator;
 
-    invoke-virtual {v0}, Landroid/animation/TimeAnimator;->cancel()V
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
     .line 361
     :cond_0

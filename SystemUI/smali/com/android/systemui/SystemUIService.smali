@@ -65,14 +65,14 @@
 
     move-result v2
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/SystemUIService;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     .line 56
     .local v0, "cl":Ljava/lang/String;
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/systemui/SystemUIService;->getClassLoader()Ljava/lang/ClassLoader;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v2
 
@@ -346,7 +346,7 @@
 
     if-eqz v6, :cond_0
 
-    const v6, 0x7f090001
+    const v6, 0x7f0a0001
 
     :goto_0
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -475,7 +475,7 @@
     .end local v1    # "cl":Ljava/lang/Class;
     .end local v4    # "i":I
     :cond_0
-    const/high16 v6, 0x7f090000
+    const/high16 v6, 0x7f0a0000
 
     goto :goto_0
 

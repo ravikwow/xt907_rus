@@ -86,7 +86,7 @@
 
     .line 332
     :goto_0
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentTasksLoader$2;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v3
 
@@ -154,7 +154,7 @@
 
     aput-object v2, v3, v4
 
-    invoke-virtual {p0, v3}, Lcom/android/systemui/recent/RecentTasksLoader$2;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {p0, v3}, Landroid/os/AsyncTask;->publishProgress([Ljava/lang/Object;)V
 
     .line 348
     monitor-exit v2
@@ -183,7 +183,7 @@
 
     .prologue
     .line 321
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentTasksLoader$2;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v1
 

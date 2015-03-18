@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1690
+    .line 1675
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$7;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -41,12 +41,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1692
+    .line 1677
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1693
+    .line 1678
     .local v0, "action":Ljava/lang/String;
     const-string v3, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
@@ -64,11 +64,11 @@
 
     if-eqz v3, :cond_3
 
-    .line 1695
+    .line 1680
     :cond_0
     const/4 v1, 0x0
 
-    .line 1696
+    .line 1681
     .local v1, "flags":I
     const-string v3, "android.intent.action.CLOSE_SYSTEM_DIALOGS"
 
@@ -78,14 +78,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 1697
+    .line 1682
     const-string v3, "reason"
 
     invoke-virtual {p2, v3}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1698
+    .line 1683
     .local v2, "reason":Ljava/lang/String;
     if-eqz v2, :cond_1
 
@@ -97,10 +97,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 1699
+    .line 1684
     or-int/lit8 v1, v1, 0x2
 
-    .line 1702
+    .line 1687
     .end local v2    # "reason":Ljava/lang/String;
     :cond_1
     const-string v3, "android.intent.action.SCREEN_OFF"
@@ -111,7 +111,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 1707
+    .line 1692
     iget-object v3, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$7;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     # getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
@@ -121,16 +121,16 @@
 
     invoke-virtual {v3, v4, v4}, Lcom/android/systemui/recent/RecentsPanelView;->show(ZZ)V
 
-    .line 1708
+    .line 1693
     or-int/lit8 v1, v1, 0x2
 
-    .line 1710
+    .line 1695
     :cond_2
     iget-object v3, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$7;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     invoke-virtual {v3, v1}, Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->animateCollapse(I)V
 
-    .line 1712
+    .line 1697
     .end local v1    # "flags":I
     :cond_3
     return-void

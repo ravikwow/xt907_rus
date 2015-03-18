@@ -57,12 +57,12 @@
 
     .prologue
     .line 27
-    invoke-super {p0}, Landroid/widget/CompoundButton;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     .line 28
     new-instance v0, Lcom/android/systemui/statusbar/policy/AutoRotateController;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/RotationToggle;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 33
-    invoke-super {p0}, Landroid/widget/CompoundButton;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/widget/TextView;->onDetachedFromWindow()V
 
     .line 34
     iget-object v0, p0, Lcom/android/systemui/statusbar/RotationToggle;->mRotater:Lcom/android/systemui/statusbar/policy/AutoRotateController;
@@ -112,7 +112,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/RotationToggle;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 43
     return-void

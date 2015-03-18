@@ -12,7 +12,7 @@
     <string name="no">Cancelar</string>
     <string name="ok">OK</string>
     <string name="paste">Colar</string>
-    <string name="search_go">Buscar</string>
+    <string name="search_go">Pesquisar</string>
     <string name="selectAll">Marcar todos(as)</string>
     <string name="unknownName">(Desconhecido)</string>
     <string name="untitled">&lt;Sem título></string>
@@ -185,11 +185,11 @@
     <string name="serviceErased">Exclusão concluída.</string>
     <string name="passwordIncorrect">Senha incorreta.</string>
     <string name="mmiComplete">MMI concluído.</string>
-    <string name="badPin">O PIN antigo inserido está incorreto.</string>
-    <string name="badPuk">O PUK inserido está incorreto.</string>
-    <string name="mismatchPin">Os PINs inseridos não coincidem.</string>
+    <string name="badPin">O PIN antigo digitado está incorreto.</string>
+    <string name="badPuk">O PUK digitado está incorreto.</string>
+    <string name="mismatchPin">Os PINs digitados não correspondem.</string>
     <string name="invalidPin">Insira um PIN de 4 a 8 números.</string>
-    <string name="invalidPuk">Insira o PUK de 8 números.</string>
+    <string name="invalidPuk">Insira o PUK de 8 ou mais números.</string>
     <string name="needPuk">O seu cartão SIM está bloqueado por um PUK. Insira o código PUK para desbloqueá-lo.</string>
     <string name="needPuk2">Insira o PUK2 para desbloquear o cartão SIM.</string>
     <string name="enablePin">Falhou. Ative o bloqueio de SIM/RUIM.</string>
@@ -197,7 +197,7 @@
 Tentativa(s) restante(s):"</string>
     <string name="imei">IMEI</string>
     <string name="meid">MEID</string>
-    <string name="ClipMmi">ID de chamada recebida</string>
+    <string name="ClipMmi">ID do chamada de entrada</string>
     <string name="ClirMmi">Restrição de ID ao fazer ligações</string>
     <string name="CfMmi">Desvio de ligação</string>
     <string name="CwMmi">Ligação em espera</string>
@@ -247,11 +247,11 @@ Tentativa(s) restante(s):"</string>
     <string name="roamingText11">Banner de roaming ativado</string>
     <string name="roamingText12">Banner de roaming desativado</string>
     <string name="roamingTextSearching">Buscando serviço</string>
-    <string name="cfTemplateNotForwarded">{0}: Não desviado</string>
+    <string name="cfTemplateNotForwarded">{0}: Não encaminhado</string>
     <string name="cfTemplateForwarded">{0}: {1}</string>
     <string name="cfTemplateForwardedTime">{0}: {1} após {2} segundos</string>
-    <string name="cfTemplateRegistered">{0}: Não desviado</string>
-    <string name="cfTemplateRegisteredTime">{0}: Não desviado</string>
+    <string name="cfTemplateRegistered">{0}: Não encaminhado</string>
+    <string name="cfTemplateRegisteredTime">{0}: Não encaminhado</string>
     <string name="fcComplete">Código de recurso concluído.</string>
     <string name="fcError">Problema de conexão ou código de recurso inválido.</string>
     <string name="httpErrorOk">OK</string>
@@ -306,7 +306,7 @@ Tentativa(s) restante(s):"</string>
     <string name="permgrouplab_messages">Suas mensagens</string>
     <string name="permgroupdesc_messages">Ler e gravar mensagens SMS, e-mails e outras mensagens.</string>
     <string name="permgrouplab_personalInfo">Suas informações pessoais</string>
-    <string name="permgroupdesc_personalInfo">Acessa diretamente os seus contatos e agendas armazenados no telefone.</string>
+    <string name="permgroupdesc_personalInfo">Acessa diretamente os seus contatos e agenda armazenados no telefone.</string>
     <string name="permgrouplab_location">Seu local</string>
     <string name="permgroupdesc_location">Monitore seu local físico.</string>
     <string name="permgrouplab_network">Comunicação da rede</string>
@@ -329,16 +329,16 @@ Tentativa(s) restante(s):"</string>
     <string name="permdesc_statusBarService">Permite que o aplicativo seja a barra de status.</string>
     <string name="permlab_expandStatusBar">expandir/recolher barra de status</string>
     <string name="permdesc_expandStatusBar">Permite que o aplicativo expanda ou recolha a barra de status.</string>
-    <string name="permlab_processOutgoingCalls">redirecionar as ligações feitas</string>
-    <string name="permdesc_processOutgoingCalls">Permite que o aplicativo processe as ligações feitas e altere o número a ser discado. Esta permissão autoriza o aplicativo a monitorar, redirecionar ou evitar ligação de saída.</string>
+    <string name="permlab_processOutgoingCalls">redirecionar as chamadas efetuadas</string>
+    <string name="permdesc_processOutgoingCalls">Permite que o aplicativo processe as chamadas de saída e altere o número a ser discado. Esta permissão autoriza o aplicativo a monitorar, redirecionar ou evitar chamadas de saída.</string>
     <string name="permlab_receiveSms">receber mensagens de texto (SMS)</string>
     <string name="permdesc_receiveSms">Permite que o aplicativo receba e processe mensagens SMS. Isso significa que o aplicativo pode monitorar ou excluir mensagens enviadas para o dispositivo sem mostrá-las para você.</string>
     <string name="permlab_receiveMms">receber mensagens de texto (MMS)</string>
     <string name="permdesc_receiveMms">Permite que o aplicativo receba e processe mensagens MMS. Isso significa que o aplicativo pode monitorar ou excluir as mensagens enviadas para o dispositivo sem mostrá-las para você.</string>
     <string name="permlab_receiveEmergencyBroadcast">receber transmissões de emergência</string>
     <string name="permdesc_receiveEmergencyBroadcast">Permite que o aplicativo receba e processe mensagens de transmissão de emergência. Esta permissão só está disponível para aplicativos do sistema.</string>
-    <string name="permlab_readCellBroadcasts">ler mensagens de cell broadcast</string>
-    <string name="permdesc_readCellBroadcasts">Permite que o aplicativo leia mensagens de cell broadcast recebidas por seu dispositivo. Alertas de cell broadcast são recebidos em alguns locais para avisar você de situações de emergência. Aplicativos maliciosos podem interferir no desempenho ou funcionamento de seu dispositivo quando uma cell broadcast de emergência é recebida.</string>
+    <string name="permlab_readCellBroadcasts">ler mensagens de difusão celular</string>
+    <string name="permdesc_readCellBroadcasts">Permite que o aplicativo leia mensagens de difusão celular recebidas por seu dispositivo. Alertas de difusão celular são recebidos em alguns locais para avisar você de situações de emergência. Aplicativos maliciosos podem interferir no desempenho ou funcionamento de seu dispositivo quando uma difusão celular de emergência é recebida.</string>
     <string name="permlab_sendSms">enviar mensagens SMS</string>
     <string name="permdesc_sendSms">Permite que o aplicativo envie mensagens SMS. Isso pode resultar em cobranças inesperadas. Aplicativos maliciosos podem gerar custos através do envio de mensagens sem sua confirmação.</string>
     <string name="permlab_sendSmsNoConfirmation">enviar mensagens SMS sem confirmação</string>
@@ -474,11 +474,11 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_readContacts">ler seus contatos</string>
     <string name="permdesc_readContacts">Permite que o aplicativo leia dados dos contatos armazenados no telefone, incluindo a frequência com que você chamou, enviou e-mails ou se comunicou de qualquer outra forma com indivíduos específicos. Esta permissão autoriza o aplicativo a salvar seus dados de contato, e aplicativos maliciosos podem compartilhar esses dados de contato sem seu conhecimento.</string>
     <string name="permlab_writeContacts">modificar seus contatos</string>
-    <string name="permdesc_writeContacts">Permite que o aplicativo modifique os dados dos contatos armazenados no telefone, incluindo a frequência com que você fez ligações, enviou e-mails ou se comunicou de outras formas com contatos específicos. Esta permissão autoriza o aplicativo a excluir dados de contatos.</string>
-    <string name="permlab_readCallLog">ler registro de ligações</string>
-    <string name="permdesc_readCallLog">Permite que o aplicativo leia o histórico de ligações do telefone, incluindo dados de ligações recebidas e realizadas. Esta permissão autoriza o aplicativo a salvar os dados de seu histórico de ligações, e aplicativos maliciosos podem compartilhar os dados de seu histórico de ligações sem seu conhecimento.</string>
-    <string name="permlab_writeCallLog">salvar no registo de ligações</string>
-    <string name="permdesc_writeCallLog">Permite que o aplicativo modifique o registro de ligações de seu telefone, incluindo dados sobre ligações recebidas e efetuadas. Aplicativos maliciosos podem usar esta permissão para apagar ou modificar seu registro de ligações.</string>
+    <string name="permdesc_writeContacts">Permite que o aplicativo modifique os dados dos contatos armazenados no telefone, incluindo a frequência com que você fez chamadas, enviou e-mails ou se comunicou de outras formas com contatos específicos. Esta permissão autoriza o aplicativo a excluir dados de contatos.</string>
+    <string name="permlab_readCallLog">ler registro de chamadas</string>
+    <string name="permdesc_readCallLog">Permite que o aplicativo leia o histórico de chamadas do telefone, incluindo dados de chamadas recebidas e realizadas. Esta permissão autoriza o aplicativo a salvar os dados de seu histórico de chamadas, e aplicativos maliciosos podem compartilhar os dados de seu histórico de chamadas sem seu conhecimento.</string>
+    <string name="permlab_writeCallLog">salvar no registo de chamadas</string>
+    <string name="permdesc_writeCallLog">Permite que o aplicativo modifique o registro de chamadas de seu telefone, incluindo dados sobre chamadas recebidas e efetuadas. Aplicativos maliciosos podem usar esta permissão para apagar ou modificar seu registro de chamadas.</string>
     <string name="permlab_readProfile">ler próprio cartão de contato</string>
     <string name="permdesc_readProfile">Permite que o aplicativo leia informações de perfil pessoal armazenadas no dispositivo, como seu nome e dados de contato. Isso significa que o aplicativo poderá identificá-lo e enviar suas informações de perfil para terceiros.</string>
     <string name="permlab_writeProfile">mod. próprio cartão contato</string>
@@ -488,9 +488,9 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_writeSocialStream">escrever para trans. social</string>
     <string name="permdesc_writeSocialStream">Permite que o aplicativo exiba atualizações sociais de seus amigos. Tenha cuidado ao compartilhar informações: isto permite que o aplicativo produza mensagens aparentemente enviadas por amigos. Observação: pode não ser aplicável a todas as redes sociais.</string>
     <string name="permlab_readCalendar">ler compromissos e informações confidenciais</string>
-    <string name="permdesc_readCalendar">Permite que o aplicativo leia todos os eventos da agenda armazenados no telefone, incluindo os de amigos ou colegas de trabalho. Pode permitir que o aplicativo compartilhe ou salve os dados da agenda, independentemente de sua confidencialidade.</string>
+    <string name="permdesc_readCalendar">Permite que o aplicativo leia todos os eventos do calendário armazenados no telefone, incluindo os de amigos ou colegas de trabalho. Pode permitir que o aplicativo compartilhe ou salve os dados do calendário, independentemente de sua confidencialidade.</string>
     <string name="permlab_writeCalendar">adicionar ou modificar compromissos e enviar e-mail para os convidados sem o conhecimento dos donos</string>
-    <string name="permdesc_writeCalendar">Permite que o aplicativo adicione, remova e altere eventos que você pode modificar em seu telefone, incluindo os de amigos e colegas de trabalho. Isso pode permitir que o aplicativo envie mensagens que parecem ser de autoria do proprietário da agendas, ou modifique eventos sem conhecimento do proprietário.</string>
+    <string name="permdesc_writeCalendar">Permite que o aplicativo adicione, remova e altere eventos que você pode modificar em seu telefone, incluindo os de amigos e colegas de trabalho. Isso pode permitir que o aplicativo envie mensagens que parecem ser de autoria do proprietário do calendário, ou modifique eventos sem conhecimento do proprietário.</string>
     <string name="permlab_accessMockLocation">fontes de locais fictícios para teste</string>
     <string name="permdesc_accessMockLocation">Criar fontes de localização simuladas para testar ou instalar um novo provedor de localização. Isso permite que o aplicativo substitua a localização e/ou o status retornado por outras fontes de localização, como o GPS ou provedores de localização.</string>
     <string name="permlab_accessLocationExtraCommands">acessar comandos extras do provedor de localização</string>
@@ -540,9 +540,9 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_hardware_test">testar hardware</string>
     <string name="permdesc_hardware_test">Permite que o aplicativo controle diversos periféricos para teste do hardware.</string>
     <string name="permlab_callPhone">ligar diretamente os números de telefone</string>
-    <string name="permdesc_callPhone">Permite que o aplicativo ligue para números de telefone sem sua intervenção. Isso pode resultar em cobranças ou ligações inesperadas. Esta opção não permite que o aplicativo ligue para números de emergência. Aplicativos maliciosos podem gerar custos com ligações feitas sem sua confirmação.</string>
+    <string name="permdesc_callPhone">Permite que o aplicativo ligue para números de telefone sem sua intervenção. Isso pode resultar em cobranças ou chamadas inesperadas. Esta opção não permite que o aplicativo ligue para números de emergência. Aplicativos maliciosos podem gerar custos com chamadas feitas sem sua confirmação.</string>
     <string name="permlab_callPrivileged">ligar diretamente quaisquer números de telefone</string>
-    <string name="permdesc_callPrivileged">Permite que o aplicativo chame qualquer número de telefone, incluindo números de emergência, sem sua intervenção. Aplicativos maliciosos podem fazer ligações desnecessárias e ilegais para os serviços de emergência.</string>
+    <string name="permdesc_callPrivileged">Permite que o aplicativo chame qualquer número de telefone, incluindo números de emergência, sem sua intervenção. Aplicativos maliciosos podem fazer chamadas desnecessárias e ilegais para os serviços de emergência.</string>
     <string name="permlab_performCdmaProvisioning">iniciar a configuração do telefone CDMA diretamente</string>
     <string name="permdesc_performCdmaProvisioning">Permite que o aplicativo inicie o provisionamento CDMA. Aplicativos maliciosos podem iniciar o provisionamento CDMA de maneira desnecessária.</string>
     <string name="permlab_locationUpdates">controlar as notificações de atualização do local</string>
@@ -554,7 +554,7 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_modifyPhoneState">modificar estado do telefone</string>
     <string name="permdesc_modifyPhoneState">Permite que o aplicativo controle os recursos de telefone do dispositivo. Um aplicativo com essa permissão pode alternar entre redes, ligar e desligar o rádio do telefone e assim por diante, sem nunca notificá-lo.</string>
     <string name="permlab_readPhoneState">ler status e identidade do telefone</string>
-    <string name="permdesc_readPhoneState">Permite que o aplicativo acesse os recursos de telefonia do dispositivo. Esta permissão autoriza o aplicativo a determinar o número de telefone e IDs de dispositivo, quando uma ligação está ativa, e o número remoto conectado a uma ligação.</string>
+    <string name="permdesc_readPhoneState">Permite que o aplicativo acesse os recursos de telefonia do dispositivo. Esta permissão autoriza o aplicativo a determinar o número de telefone e IDs de dispositivo, quando uma chamada está ativa, e o número remoto conectado a uma chamada.</string>
     <string name="permlab_wakeLock">impedir modo de inatividade do telefone</string>
     <string name="permdesc_wakeLock">Permite que o aplicativo impeça o telefone de entrar no modo de inatividade.</string>
     <string name="permlab_devicePower">ligar ou desligar o telefone</string>
@@ -572,7 +572,7 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_setTimeZone">definir fuso horário</string>
     <string name="permdesc_setTimeZone">Permite que o aplicativo altera o fuso horário do telefone.</string>
     <string name="permlab_accountManagerService">agir como AccountManagerService</string>
-    <string name="permdesc_accountManagerService">Permite que o aplicativo faça ligações para AccountAuthenticators.</string>
+    <string name="permdesc_accountManagerService">Permite que o aplicativo faça chamadas para AccountAuthenticators.</string>
     <string name="permlab_getAccounts">encontrar contas no dispositivo</string>
     <string name="permdesc_getAccounts">Permite que o aplicativo obtenha a lista de contas conhecidas pelo telefone. Isso pode incluir todas as contas criadas pelos aplicativos instalados.</string>
     <string name="permlab_authenticateAccounts">criar contas e definir senhas</string>
@@ -610,7 +610,7 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_nfc">controlar a comunicação a curta distância</string>
     <string name="permdesc_nfc">Permite que o aplicativo se comunique com leitores, cartões e etiqueta NFC (Comunicação a curta distância).</string>
     <string name="permlab_disableKeyguard">desativar o bloqueio de tela</string>
-    <string name="permdesc_disableKeyguard">Permite que o aplicativo desative o bloqueio de teclas e qualquer segurança por senha associada. Por exemplo, o telefone desativa o bloqueio de telas ao receber uma ligação e o reativa quando a ligação é finalizada.</string>
+    <string name="permdesc_disableKeyguard">Permite que o aplicativo desative o bloqueio de teclas e qualquer segurança por senha associada. Por exemplo, o telefone desativa o bloqueio de telas ao receber uma chamada e o reativa quando a chamada é finalizada.</string>
     <string name="permlab_readSyncSettings">ler as configurações de sincronização</string>
     <string name="permdesc_readSyncSettings">Permite que o aplicativo leia as configurações de sincronização de uma conta. Por exemplo, pode determinar se o aplicativo People está sincronizado com uma conta.</string>
     <string name="permlab_writeSyncSettings">ativar e desativar sincronização</string>
@@ -634,7 +634,7 @@ Tentativa(s) restante(s):"</string>
     <string name="permlab_cache_filesystem">acessar o sistema de arquivos de cache</string>
     <string name="permdesc_cache_filesystem">Permite que o aplicativo leia e grave o sistema de arquivos cache.</string>
     <string name="permlab_use_sip">fazer/receber ligações pela internet</string>
-    <string name="permdesc_use_sip">Permite que o aplicativo use o serviço SIP para fazer/receber ligações pela Internet.</string>
+    <string name="permdesc_use_sip">Permite que o aplicativo use o serviço SIP para fazer/receber chamadas pela Internet.</string>
     <string name="permlab_readNetworkUsageHistory">ler histórico de uso da rede</string>
     <string name="permdesc_readNetworkUsageHistory">Permite que o aplicativo leia o histórico de uso da rede para redes e aplicativos específicos.</string>
     <string name="permlab_manageNetworkPolicy">gerenciar a política de rede</string>
@@ -730,15 +730,15 @@ Tentativa(s) restante(s):"</string>
     <string name="sipAddressTypeWork">Trabalho</string>
     <string name="sipAddressTypeOther">Outro</string>
     <string name="keyguard_password_enter_pin_code">Insira o código PIN</string>
-    <string name="keyguard_password_enter_puk_code">Insira o PUK e o novo PIN</string>
-    <string name="keyguard_password_enter_pin_code_for_subscription">Insira o novo PIN para assinatura</string>
-    <string name="keyguard_password_enter_puk_code_for_subscription">Insira PUK e o novo PIN para assinatura</string>
+    <string name="keyguard_password_enter_puk_code">Insira o PUK e o novo código PIN</string>
+    <string name="keyguard_password_enter_pin_code_for_subscription">Insira o novo código PIN para assinatura</string>
+    <string name="keyguard_password_enter_puk_code_for_subscription">Insira PUK e o novo código PIN para assinatura</string>
     <string name="keyguard_password_enter_puk_prompt">PUK</string>
-    <string name="keyguard_password_enter_pin_prompt">Novo PIN</string>
+    <string name="keyguard_password_enter_pin_prompt">Novo código PIN</string>
     <string name="keyguard_password_entry_touch_hint"><font size="17">Toque para inserir a senha</font></string>
     <string name="keyguard_password_enter_password_code">Digite a senha para desbloquear</string>
     <string name="keyguard_password_enter_pin_password_code">Insira o PIN para desbloquear</string>
-    <string name="keyguard_password_wrong_pin_code">PIN incorreto.</string>
+    <string name="keyguard_password_wrong_pin_code">Código PIN incorreto.</string>
     <string name="keyguard_password_wrong_puk_code">Código PUK incorreto.</string>
     <string name="keyguard_password_pin_failed">A operação PIN falhou.</string>
     <string name="keyguard_password_puk_failed">A operação PUK falhou.</string>
@@ -760,7 +760,7 @@ Tentativa(s) restante(s):"</string>
     <string name="lockscreen_charged">Carregado.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Conecte o seu carregador.</string>
-    <string name="lockscreen_missing_sim_message_short">Sem cartão SIM</string>
+    <string name="lockscreen_missing_sim_message_short">Sem cartão SIM.</string>
     <string name="lockscreen_missing_sim_message">Não há um cartão SIM no telefone.</string>
     <string name="lockscreen_missing_sim_instructions">Insera um cartão SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">O cartão SIM não foi inserido ou não é possível lê-lo. Insira um cartão SIM.</string>
@@ -776,12 +776,12 @@ Entre em contato com seu provedor de serviços sem fio para obter outro cartão 
     <string name="lockscreen_sim_error_message_short">Cartão inválido.</string>
     <string name="lockscreen_sim_error_message">O cartão SIM é inválido.</string>
     <string name="lockscreen_network_locked_message">Rede bloqueada</string>
-    <string name="lockscreen_perso_locked_message">O cartão SIM está com bloqueio pessoal.</string>
-    <string name="lockscreen_sim_puk_locked_message">Cartão SIM bloqueado por PUK.</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM está com bloqueio pessoal</string>
+    <string name="lockscreen_sim_puk_locked_message">O cartão SIM está bloqueado pelo PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"Bloqueado por PIN1. Insira o PUK1.
 ou
 Consulte o Guia do Usuário/entre em contato com a sua operadora."</string>
-    <string name="lockscreen_sim_locked_message">O cartão SIM está bloqueado.</string>
+    <string name="lockscreen_sim_locked_message">O cartão SIM/RUIM está bloqueado.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Desbloqueando o cartão SIM…</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Você desenhou sua sequência de desbloqueio incorretamente %d vezes. 
 
@@ -825,8 +825,8 @@ Acesse "<b>google.com.br/accounts/recovery</b>.</string>
     <string name="granularity_label_word">palavra</string>
     <string name="granularity_label_link">link</string>
     <string name="granularity_label_line">linha</string>
-    <string name="hour_ampm" formatted="false">%-l %p</string>
-    <string name="hour_cap_ampm" formatted="false">%-l %p</string>
+    <string name="hour_ampm" formatted="false">%-l%p</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">Falha no teste de fábrica</string>
     <string name="factorytest_not_system">A ação FACTORY_TEST é suportada apenas para pacotes instalados em /system/app.</string>
     <string name="factorytest_no_action">Nenhum pacote que forneça a ação FACTORY_TEST foi encontrado.</string>
@@ -889,7 +889,7 @@ Selecione OK para continuar ou Cancelar para permanecer na página atual."</stri
     <string name="menu_space_shortcut_label">espaço</string>
     <string name="menu_enter_shortcut_label">enter</string>
     <string name="menu_delete_shortcut_label">excluir</string>
-    <string name="searchview_description_search">Buscar</string>
+    <string name="searchview_description_search">Pesquisar</string>
     <string name="searchview_description_query">Consulta de pesquisa</string>
     <string name="searchview_description_clear">Limpar consulta</string>
     <string name="searchview_description_submit">Enviar consulta</string>
@@ -1080,8 +1080,8 @@ Deseja fechá-la?"</string>
     <string name="ext_media_nofs_notification_message">O cartão SD está vazio ou possui sistema de arquivos incompatível.</string>
     <string name="ext_media_unmountable_notification_title">Cartão SD danificado</string>
     <string name="ext_media_unmountable_notification_message">O cartão SD está danificado. Tente reformatá-lo.</string>
-    <string name="ext_media_badremoval_notification_title">Cartão SD removido subitamente</string>
-    <string name="ext_media_badremoval_notification_message">Desative-o antes para evitar a perda de dados.</string>
+    <string name="ext_media_badremoval_notification_title">Cartão SD removido.</string>
+    <string name="ext_media_badremoval_notification_message">Desative o cartão SD antes da remoção para evitar a perda de dados.</string>
     <string name="ext_media_safe_unmount_notification_title">O cartão SD pode ser removido</string>
     <string name="ext_media_safe_unmount_notification_message">O cartão SD já pode ser removido.</string>
     <string name="ext_media_nomedia_notification_title">Cartão SD removido</string>
@@ -1096,7 +1096,7 @@ Deseja fechá-la?"</string>
     <string name="tutorial_double_tap_to_zoom_message_short">Toque duas vezes para controlar o zoom</string>
     <string name="gadget_host_error_inflating">Não foi possível adicionar widget.</string>
     <string name="ime_action_go">Ir</string>
-    <string name="ime_action_search">Buscar</string>
+    <string name="ime_action_search">Pesquisar</string>
     <string name="ime_action_send">Enviar</string>
     <string name="ime_action_next">Próxima</string>
     <string name="ime_action_done">Concluído</string>
@@ -1142,10 +1142,10 @@ para a conta %s."</string>
     <string name="throttle_warning_notification_message">Toque para saber mais sobre uso dos dados móveis.</string>
     <string name="throttled_notification_title">Limite de dados do celular excedido</string>
     <string name="throttled_notification_message">Toque para saber mais sobre uso dos dados móveis.</string>
-    <string name="no_matches">Nenhum resultado</string>
+    <string name="no_matches">Não encontrado</string>
     <string name="find_on_page">Buscar na página</string>
     <string name="action_mode_done">Concluído</string>
-    <string name="progress_unmounting">Desativando cartão SD...</string>
+    <string name="progress_unmounting">Desconectando cartão SD...</string>
     <string name="progress_erasing">Apagando cartão SD...</string>
     <string name="format_error">Não foi possível apagar o cartão SD.</string>
     <string name="media_bad_removal">O cartão SD foi removido antes de ser desconectado.</string>
@@ -1204,11 +1204,11 @@ para a conta %s."</string>
     <string name="description_target_camera">Câmera</string>
     <string name="description_target_silent">Silencioso</string>
     <string name="description_target_soundon">Som ativado</string>
-    <string name="description_target_search">Buscar</string>
+    <string name="description_target_search">Pesquisar</string>
     <string name="description_target_unlock_tablet">Toque para desbloquear.</string>
     <string name="keyboard_headset_required_to_hear_password">Conecte um fone de ouvido para ouvir as teclas da senha.</string>
     <string name="keyboard_password_character_no_headset">Ponto final.</string>
-    <string name="action_bar_home_description">Navegar na tela inicial</string>
+    <string name="action_bar_home_description">Navegar na página inicial</string>
     <string name="action_bar_up_description">Navegar para cima</string>
     <string name="action_menu_overflow_description">Mais opções</string>
     <string name="storage_internal">Armazenamento interno</string>
@@ -1250,9 +1250,9 @@ para a conta %s."</string>
     <string name="list_delimeter">", "</string>
     <string name="sending">Enviando...</string>
     <string name="launchBrowserDefault">Iniciar o navegador?</string>
-    <string name="SetupCallDefault">Aceitar ligação?</string>
+    <string name="SetupCallDefault">Aceitar chamada?</string>
     <string name="activity_resolver_use_always">Sempre</string>
-    <string name="activity_resolver_use_once">Desta vez</string>
+    <string name="activity_resolver_use_once">Só uma vez</string>
     <string name="default_audio_route_name">Telefone</string>
     <string name="default_audio_route_name_headphones">Fones de ouvido</string>
     <string name="default_audio_route_name_dock_speakers">Alto-falantes do dock</string>
@@ -1260,12 +1260,6 @@ para a conta %s."</string>
     <string name="default_audio_route_category_name">Sistema</string>
     <string name="bluetooth_a2dp_audio_route_name">Áudio Bluetooth</string>
     <string name="media_route_chooser_grouping_done">Concluído</string>
-    <string name="wispr_login_success">Login concluído</string>
-    <string name="wispr_login_failed">Falha no login</string>
-    <string name="wispr_login_header">Status de pontos de Wi-Fi da AT&amp;T</string>
-    <string name="wispr_login_failed_credential">Não é possível comprovar elegibilidade. Entre em contato com o Atendimento ao consumidor no 1-800-331-0500.</string>
-    <string name="wispr_login_failed_network">Falha da autenticação</string>
-    <string name="wispr_insert_sim">Não é possível comprovar elegibilidade. Entre em contato com o Atendimento ao consumidor no 1-800-331-0500.</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1292,7 +1286,7 @@ para a conta %s."</string>
     <string name="tether_connecting_notification_message">Configurando link de dados</string>
     <string name="tether_connected_notification_title">Conexão USB estabelecida</string>
     <string name="tether_connected_notification_message">Conexão de dados configurada.</string>
-    <string name="tether_authen_error_notification_title">Conta sem conexão USB</string>
+    <string name="tether_authen_error_notification_title">Conta não configurada para conexão USB.</string>
     <string name="tether_authen_error_notification_message">Para ativá-la, visite att.com/mywireless ou disque 611.</string>
     <string name="tether_connect_error_notification_title">Erro de tethering por USB</string>
     <string name="tether_connect_error_notification_message">Reconecte o cabo USB e tente novamente.</string>
@@ -1302,7 +1296,7 @@ para a conta %s."</string>
     <string name="wifi_connecting_notification_message">Configurando link de dados</string>
     <string name="wifi_connected_notification_title">Ponto de rede móvel conectado</string>
     <string name="wifi_connected_notification_message">O link de dados está configurado.</string>
-    <string name="wifi_authen_error_notification_title">Conta sem roteador Wi-Fi</string>
+    <string name="wifi_authen_error_notification_title">Conta não configurada para roteador Wi-Fi</string>
     <string name="wifi_authen_error_notification_message">Para ativá-la, visite att.com/mywireless ou disque 611.</string>
     <string name="wifi_connect_error_notification_title">Erro no ponto de rede móvel</string>
     <string name="wifi_connect_error_notification_message">Desligue o Wi-Fi e tente novamente.</string>
@@ -1311,7 +1305,7 @@ para a conta %s."</string>
     <string name="bt_authen_check_notification_message">Verificando status da conta...</string>
     <string name="bt_authen_success_notification_title">Conta configurada para vínculo tethering Bluetooth</string>
     <string name="bt_authen_success_notification_message">Validação concluída</string>
-    <string name="bt_authen_error_notification_title">Conta sem vínculo tethering Bluetooth</string>
+    <string name="bt_authen_error_notification_title">Conta não configurada para vínculo tethering Bluetooth</string>
     <string name="bt_authen_error_notification_message">Para ativá-lo, visite att.com/mywireless ou disque 611.</string>
     <string name="permlab_accessWifiAutonomous">Modo autônomo de acesso ao Wi-Fi</string>
     <string name="permdesc_accessWifiAutonomous">Permitir acesso ao Modo autônomo para que os aplicativos possam encontrar (com permissão) conexão mesmo quando o Wi-Fi estiver desligado.</string>
@@ -1330,7 +1324,7 @@ para a conta %s."</string>
     <string name="policydesc_simplepassword">Permita uma senha simples no dispositivo.</string>
     <string name="title_policy_enforcement_notification">Política de segurança</string>
     <string name="policylab_allowbluetooth">Permitir Bluetooth</string>
-    <string name="policydesc_allowbluetooth">Permita que administradores de TI ativem e desativem o Bluetooth nos telefones.</string>
+    <string name="policydesc_allowbluetooth">Permita que administradores do TI ativem e desativem o Bluetooth nos telefones.</string>
     <string name="msg_disable_bluetooth_notification">Bluetooth desativado</string>
     <string name="msg_enable_bluetooth_notification">Bluetooth ativado</string>
     <string name="policylab_allowwifi">Permitir Wi-Fi</string>
@@ -1398,14 +1392,7 @@ para a conta %s."</string>
     <string name="password_recovery_dialog_title">Esqueceu sua senha?</string>
     <string name="password_recovery_dialog_message">Entre em contato com o departamento de TI e solicite a \"Senha de redefinição\". Ao inserir esta senha, será possível restaurar sua senha exisitente e definir uma nova.</string>
     <string name="lockscreen_charged_rmdunplug">Carga completa. Tire seu carregador da tomada para economizar energia.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon sem fio</string>
-    <string name="moto_eritext_network_extender">Extensor de rede</string>
-    <string name="moto_eritext_extended_network">Rede estendida</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">Disco USB</string>
-    <string name="sim_pin_technical_problem">Ocorreu um problema técnico. Tente novamente.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Confirmar novo PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Tente novamente em %d segundo.</string>
     <string name="msg_disable_consumer_email_notification">E-mail do cliente desativado.</string>
     <string name="msg_enable_consumer_email_notification">E-mail do cliente ativado.</string>
     <string name="msg_disable_browser_notification">Navegador desativado.</string>
@@ -1416,13 +1403,12 @@ para a conta %s."</string>
     <string name="policydesc_allowbrowser">Permita que o administrador ative ou desative o navegador.</string>
     <string name="policylab_allowtextmessage">Permitir mensagem de texto</string>
     <string name="policydesc_allowtextmessage">Permita que o administrador ative ou desative SMS/MMS. A desativação implica em não ser possível abrir aplicativos SMS/MMS. Não será possível ler, enviar ou receber mensagens de texto.</string>
-    <string name="policylab_allowConsumerEmail">Permitir e-mail do cliente</string>
-    <string name="policydesc_allowConsumerEmail">Permita que administradores de TI ativem e desativem e-mail do cliente nos telefones.</string>
+    <string name="policylab_allowConsumerEmail">Permita e-mail do cliente</string>
+    <string name="policydesc_allowConsumerEmail">Permita que administradores do TI ativem e desativem e-mail do cliente nos telefones.</string>
     <string name="msg_app_black_listed_notification">Seu administrador bloqueou o uso de alguns aplicativos.</string>
     <string name="policylab_appblacklist">Lista de aplicativos bloqueados</string>
     <string name="policydesc_appblacklist">Permite ao administrador bloquear aplicativos no telefone.</string>
     <string name="msg_app_control_notification">Desativa a lista de aplicativos atualizada.</string>
     <string name="policylab_appcontrol">Desativar aplicativos</string>
     <string name="policydesc_appcontrol">Permite ao administrador ativar ou desativar aplicativos no dispositivo.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN desbloqueado</string>
 </resources>

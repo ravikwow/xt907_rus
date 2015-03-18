@@ -3,7 +3,7 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
+.implements Landroid/view/View$OnFocusChangeListener;
 
 
 # annotations
@@ -26,47 +26,25 @@
     .locals 0
 
     .prologue
-    .line 2208
+    .line 1347
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
-    .locals 2
-    .param p1, "animation"    # Landroid/view/animation/Animation;
-
-    .prologue
-    .line 2210
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$17;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    const/4 v1, 0x0
-
-    # setter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mTicking:Z
-    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1302(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)Z
-
-    .line 2211
-    return-void
-.end method
-
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
+.method public onFocusChange(Landroid/view/View;Z)V
     .locals 0
-    .param p1, "animation"    # Landroid/view/animation/Animation;
+    .param p1, "v"    # Landroid/view/View;
+    .param p2, "hasFocus"    # Z
 
     .prologue
-    .line 2213
-    return-void
-.end method
+    .line 1351
+    invoke-virtual {p1, p2}, Landroid/view/View;->setSelected(Z)V
 
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
-    .param p1, "animation"    # Landroid/view/animation/Animation;
-
-    .prologue
-    .line 2215
+    .line 1352
     return-void
 .end method

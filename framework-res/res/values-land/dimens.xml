@@ -11,4 +11,5 @@
     <dimen name="action_bar_subtitle_top_margin">-2.0dip</dimen>
     <dimen name="action_bar_subtitle_bottom_margin">4.0dip</dimen>
     <dimen name="keyguard_lockscreen_clock_font_size">70.0sp</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_0055">false</item>
 </resources>

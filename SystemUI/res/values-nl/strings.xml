@@ -109,7 +109,7 @@ Gebruik alleen de bijgeleverde lader."</string>
     <string name="data_usage_disabled_dialog_4g_title">4G-gegevens uitgeschakeld</string>
     <string name="data_usage_disabled_dialog_mobile_title">Mobiele gegevens uitgeschakeld</string>
     <string name="data_usage_disabled_dialog_title">Gegevens uitgeschakeld</string>
-    <string name="data_usage_disabled_dialog">"U heeft de gestelde limiet voor gegevensgebruik bereikt.
+    <string name="data_usage_disabled_dialog">"U heeft de gestelde limiet voor gegevensverbruik bereikt.
 
 Als u gegevens opnieuw inschakelt, kunnen er kosten in rekening worden gebracht door uw provider."</string>
     <string name="data_usage_disabled_dialog_enable">Gegevens opnieuw inschakelen</string>

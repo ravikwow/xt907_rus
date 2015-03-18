@@ -790,7 +790,7 @@ Attempts Remaining :"</string>
     <string name="lockscreen_charged">Charged.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Connect your charger.</string>
-    <string name="lockscreen_missing_sim_message_short">No SIM card</string>
+    <string name="lockscreen_missing_sim_message_short">No SIM card.</string>
     <string name="lockscreen_missing_sim_message">No SIM card in phone.</string>
     <string name="lockscreen_missing_sim_instructions">Insert a SIM card.</string>
     <string name="lockscreen_missing_sim_instructions_long">The SIM card is missing or not readable. Insert a SIM card.</string>
@@ -806,12 +806,12 @@ Attempts Remaining :"</string>
     <string name="lockscreen_sim_error_message_short">Invalid Card.</string>
     <string name="lockscreen_sim_error_message">SIM card is Invalid.</string>
     <string name="lockscreen_network_locked_message">Network locked</string>
-    <string name="lockscreen_perso_locked_message">SIM is Perso locked</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM is Perso locked</string>
     <string name="lockscreen_sim_puk_locked_message">SIM card is PUK-locked.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 Blocked. Enter PUK1.
 or
 Please see the User Guide/contact Customer Care."</string>
-    <string name="lockscreen_sim_locked_message">SIM card is locked</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM card is locked.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Unlocking SIM card…</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times. 
 
@@ -1337,13 +1337,7 @@ for account %s."</string>
     <string name="default_audio_route_category_name">System</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth audio</string>
     <string name="media_route_chooser_grouping_done">Done</string>
-    <string name="wispr_login_success">Login Success</string>
-    <string name="wispr_login_failed">Login Failed</string>
-    <string name="wispr_login_header">AT&amp;T Wi-Fi Hot Spot Status</string>
-    <string name="wispr_login_failed_credential">Unable to confirm eligibility, please call Customer CARE at 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Authentication Failed</string>
-    <string name="wispr_insert_sim">Unable to confirm eligibility, please call Customer CARE at 1-800-331-0500</string>
-    <string name="config_cbs_operator_name">@null</string>
+    <string name="config_cbs_operator_name">vzw</string>
     <string name="config_actionDirectedSMSReceived">verizon.intent.action.DIRECTED_SMS_RECEIVED</string>
     <string name="config_adsPermissionPackage">com.verizon.permissions.appdirectedsms</string>
     <string name="config_keyAppPrefix">com.verizon.directedAppSMS</string>
@@ -1378,16 +1372,11 @@ for account %s."</string>
     <string name="httpStatusCode507Desc">Insufficient Storage</string>
     <string name="httpStatusCodeError">Error: Problem with request</string>
     <string name="httpStatusReason"><body><html>%1$s : %2$s</html></body></string>
-    <string name="config_cbs_multiple_apn_permission_package">@null</string>
-    <string name="config_cbs_multiple_apn_metadata">@null</string>
+    <string name="config_cbs_multiple_apn_permission_package">com.verizon.permissions.vzwappapn</string>
+    <string name="config_cbs_multiple_apn_metadata">com.verizon.VZWAPPAPN</string>
     <string name="config_tempMarginReportingPath">/sys/class/graphics/fb0/elvss_tth_status</string>
-    <string name="wifi_mhs_ssid_model_num">RAZR M</string>
-    <string name="config_wifi_hotspot_mask_ssid">AT&amp;T Wi-Fi</string>
-    <string name="config_wifi_hotspot_ssid_1">Wayport_Access</string>
-    <string name="config_wifi_hotspot_ssid_2">attmetrowifi</string>
-    <string name="config_wifi_hotspot_ssid_3">attwifi</string>
-    <string name="wifi_eap_operator_id_realm">@null</string>
-    <string name="config_eap_supported_methods">AKA SIM</string>
+    <string name="wifi_mhs_ssid_model_num">DROID RAZR M</string>
+    <string name="config_default_vm_number">*86</string>
     <string name="dt_day_format">%-d</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1402,15 +1391,6 @@ for account %s."</string>
     <string name="same_abbrev_month_wday1_md1_time1_wday2_md2_time2">%1$s, %2$s %3$s, %5$s – %6$s, %7$s %8$s, %10$s</string>
     <string name="same_abbrev_month_mdy1_time1_mdy2_time2">%2$s %3$s, %4$s, %5$s – %7$s %8$s, %9$s, %10$s</string>
     <string name="same_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">%1$s, %2$s %3$s, %4$s, %5$s – %6$s, %7$s %8$s, %9$s, %10$s</string>
-    <string name="twelve_hour_short_time_format">h:mm</string>
-    <string name="same_year_abbrev_month_md1_md2">@string/same_year_md1_md2</string>
-    <string name="same_year_abbrev_month_wday1_md1_wday2_md2">@string/same_year_wday1_md1_wday2_md2</string>
-    <string name="same_year_abbrev_month_md1_time1_md2_time2">@string/same_year_md1_time1_md2_time2</string>
-    <string name="same_year_abbrev_month_wday1_md1_time1_wday2_md2_time2">@string/same_year_wday1_md1_time1_wday2_md2_time2</string>
-    <string name="same_year_abbrev_month_mdy1_time1_mdy2_time2">@string/same_year_mdy1_time1_mdy2_time2</string>
-    <string name="same_year_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">@string/same_year_wday1_mdy1_time1_wday2_mdy2_time2</string>
-    <string name="same_year_abbrev_month_mdy1_mdy2">@string/same_year_mdy1_mdy2</string>
-    <string name="same_year_abbrev_month_wday1_mdy1_wday2_mdy2">@string/same_year_wday1_mdy1_wday2_mdy2</string>
     <string name="cipheringIndicator">Ciphering is not available on your network. Phone calls and/or cellular data will be unencrypted.</string>
     <string name="sim_retry_left">Number of retries left: %d</string>
     <string name="vzw_disable_we_gsm_cf">Call forward is disabled outside Verizon Wireless network.</string>
@@ -1530,14 +1510,7 @@ for account %s."</string>
     <string name="password_recovery_dialog_title">Forget your password?</string>
     <string name="password_recovery_dialog_message">Please contact your IT department and ask for the \"Recovery Password\". Entering this password will allow you to reset your existing password and define a new one.</string>
     <string name="lockscreen_charged_rmdunplug">Fully charged. Unplug your charger from the outlet to conserve energy.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network Extender</string>
-    <string name="moto_eritext_extended_network">Extended Network</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">USB disk</string>
-    <string name="sim_pin_technical_problem">A technical problem occurred. Please try again.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Confirm New Pin Code</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Try again in %d second.</string>
     <string name="msg_disable_consumer_email_notification">Consumer Email disabled.</string>
     <string name="msg_enable_consumer_email_notification">Consumer Email enabled.</string>
     <string name="msg_disable_browser_notification">Browser disabled.</string>
@@ -1556,7 +1529,4 @@ for account %s."</string>
     <string name="msg_app_control_notification">Disabled applications list updated.</string>
     <string name="policylab_appcontrol">Disable applications</string>
     <string name="policydesc_appcontrol">Allow admnistrator to enabled or disable applications in the device.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN Unblocked</string>
-    <string name="config_default_input_method">com.android.inputmethod.latin/.LatinIME</string>
-    <string name="reboot">Reboot</string>
 </resources>

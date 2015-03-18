@@ -55,7 +55,7 @@
 
     .prologue
     .line 63
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 64
     iput-object p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mContext:Landroid/content/Context;
@@ -67,7 +67,7 @@
 
     .line 69
     .local v7, "res":Landroid/content/res/Resources;
-    const/high16 v10, 0x7f080000
+    const/high16 v10, 0x7f090000
 
     invoke-virtual {v7, v10}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -144,7 +144,7 @@
 
     .line 88
     .local v8, "thumbnailHeight":I
-    const v10, 0x7f02014b
+    const v10, 0x7f02014c
 
     invoke-virtual {v7, v10}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -256,7 +256,7 @@
     :try_start_0
     iget-object v3, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object v3, v3, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v3, v3, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {p2, v3}, Landroid/content/pm/PackageManager;->getResourcesForApplication(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/Resources;
     :try_end_0
@@ -272,7 +272,7 @@
     .line 204
     iget-object v3, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    invoke-virtual {v3}, Landroid/content/pm/ActivityInfo;->getIconResource()I
+    invoke-virtual {v3}, Landroid/content/pm/ComponentInfo;->getIconResource()I
 
     move-result v1
 
@@ -451,7 +451,7 @@
 
     move-object/from16 v0, p6
 
-    iget-object v2, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v2, v0, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v9}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -469,7 +469,7 @@
 
     move-object/from16 v0, p6
 
-    iget-object v2, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
+    iget-object v2, v0, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
     invoke-virtual {v9}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -524,7 +524,7 @@
 
     .line 141
     .local v8, "info":Landroid/content/pm/ActivityInfo;
-    invoke-virtual {v8, v10}, Landroid/content/pm/ActivityInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v8, v10}, Landroid/content/pm/ComponentInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -545,7 +545,7 @@
     .line 147
     new-instance v1, Lcom/android/systemui/recent/TaskDescription;
 
-    iget-object v6, v8, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v6, v8, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     move v2, p1
 

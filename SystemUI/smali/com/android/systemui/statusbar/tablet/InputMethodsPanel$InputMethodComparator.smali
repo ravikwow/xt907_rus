@@ -39,7 +39,7 @@
     .line 88
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel$InputMethodComparator;->this$0:Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -187,11 +187,11 @@
 
     .line 98
     .local v1, "imiId2":Ljava/lang/CharSequence;
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/String;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/String;->toString()Ljava/lang/String;
 
     move-result-object v3
 

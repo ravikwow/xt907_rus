@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 3487
+    .line 3077
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -38,23 +38,23 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 3490
+    .line 3080
     iget v0, p1, Landroid/os/Message;->what:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 3509
+    .line 3099
     :cond_0
     :goto_0
     return-void
 
-    .line 3492
+    .line 3082
     :sswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     if-nez v0, :cond_1
 
-    .line 3493
+    .line 3083
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
@@ -69,9 +69,9 @@
 
     goto :goto_0
 
-    .line 3496
+    .line 3086
     :cond_1
-    const-string v0, "SBar.NetworkController"
+    const-string v0, "StatusBar.NetworkController"
 
     const-string v1, "Failed to connect to wifi"
 
@@ -79,7 +79,7 @@
 
     goto :goto_0
 
-    .line 3500
+    .line 3090
     :sswitch_1
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -89,21 +89,21 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3501
+    .line 3091
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
-    .line 3502
+    .line 3092
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->refreshViews()V
 
     goto :goto_0
 
-    .line 3490
+    .line 3080
     nop
 
     :sswitch_data_0

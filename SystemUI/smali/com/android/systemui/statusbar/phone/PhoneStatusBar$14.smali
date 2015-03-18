@@ -1,14 +1,11 @@
 .class Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "PhoneStatusBar.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setAreThereNotifications()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,39 +17,38 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
+.field final synthetic val$nlo:Landroid/view/View;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/view/View;)V
     .locals 0
 
     .prologue
-    .line 1439
+    .line 1180
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->val$nlo:Landroid/view/View;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 2
+    .param p1, "_a"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1442
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    .line 1183
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->val$nlo:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    const/16 v1, 0x8
 
-    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mChoreographer:Landroid/view/Choreographer;
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v1}, Landroid/view/Choreographer;->getFrameTimeNanos()J
-
-    move-result-wide v1
-
-    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->doAnimation(J)V
-
-    .line 1443
+    .line 1184
     return-void
 .end method

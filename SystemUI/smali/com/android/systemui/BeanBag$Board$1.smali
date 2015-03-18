@@ -31,7 +31,7 @@
     .line 298
     iput-object p1, p0, Lcom/android/systemui/BeanBag$Board$1;->this$0:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 299
     const-wide/16 v0, 0x0
@@ -57,7 +57,7 @@
     :goto_0
     iget-object v6, p0, Lcom/android/systemui/BeanBag$Board$1;->this$0:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-virtual {v6}, Lcom/android/systemui/BeanBag$Board;->getChildCount()I
+    invoke-virtual {v6}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v6
 
@@ -66,7 +66,7 @@
     .line 309
     iget-object v6, p0, Lcom/android/systemui/BeanBag$Board$1;->this$0:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-virtual {v6, v0}, Lcom/android/systemui/BeanBag$Board;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v6, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -106,7 +106,7 @@
     :goto_2
     iget-object v6, p0, Lcom/android/systemui/BeanBag$Board$1;->this$0:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-virtual {v6}, Lcom/android/systemui/BeanBag$Board;->getChildCount()I
+    invoke-virtual {v6}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v6
 
@@ -115,7 +115,7 @@
     .line 315
     iget-object v6, p0, Lcom/android/systemui/BeanBag$Board$1;->this$0:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-virtual {v6, v1}, Lcom/android/systemui/BeanBag$Board;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v6, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
@@ -149,29 +149,29 @@
     :cond_3
     iget v6, v2, Lcom/android/systemui/BeanBag$Board$Bean;->a:F
 
-    invoke-virtual {v2, v6}, Lcom/android/systemui/BeanBag$Board$Bean;->setRotation(F)V
+    invoke-virtual {v2, v6}, Landroid/view/View;->setRotation(F)V
 
     .line 322
     iget v6, v2, Lcom/android/systemui/BeanBag$Board$Bean;->x:F
 
-    invoke-virtual {v2}, Lcom/android/systemui/BeanBag$Board$Bean;->getPivotX()F
+    invoke-virtual {v2}, Landroid/view/View;->getPivotX()F
 
     move-result v7
 
     sub-float/2addr v6, v7
 
-    invoke-virtual {v2, v6}, Lcom/android/systemui/BeanBag$Board$Bean;->setX(F)V
+    invoke-virtual {v2, v6}, Landroid/view/View;->setX(F)V
 
     .line 323
     iget v6, v2, Lcom/android/systemui/BeanBag$Board$Bean;->y:F
 
-    invoke-virtual {v2}, Lcom/android/systemui/BeanBag$Board$Bean;->getPivotY()F
+    invoke-virtual {v2}, Landroid/view/View;->getPivotY()F
 
     move-result v7
 
     sub-float/2addr v6, v7
 
-    invoke-virtual {v2, v6}, Lcom/android/systemui/BeanBag$Board$Bean;->setY(F)V
+    invoke-virtual {v2, v6}, Landroid/view/View;->setY(F)V
 
     .line 325
     iget v6, v2, Lcom/android/systemui/BeanBag$Board$Bean;->x:F

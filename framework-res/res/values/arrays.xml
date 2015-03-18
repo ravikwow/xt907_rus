@@ -466,10 +466,7 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
+        <item>36</item>
     </integer-array>
     <string-array name="config_tether_usb_regexs">
         <item>rndis\\d</item>
@@ -484,10 +481,8 @@
     <array name="config_tether_dhcp_range" />
     <array name="config_mobile_hotspot_provision_app" />
     <integer-array name="config_tether_upstream_types">
-        <item>0</item>
         <item>1</item>
-        <item>5</item>
-        <item>7</item>
+        <item>4</item>
     </integer-array>
     <array name="config_cdma_dun_supported_types" />
     <array name="config_usbHostBlacklist" />
@@ -603,7 +598,11 @@
         <item>93</item>
         <item>255</item>
     </integer-array>
-    <array name="restrict_background_whitelist" />
+    <string-array name="restrict_background_whitelist">
+        <item>com.fusionone.android.sync.service</item>
+        <item>com.motorola.android.server.ims</item>
+        <item>com.motorola.blur.service.blur</item>
+    </string-array>
     <integer-array name="config_displayTempThresholdValues">
         <item>500</item>
     </integer-array>
@@ -615,4 +614,10 @@
         <item>0</item>
         <item>40</item>
     </integer-array>
+    <string-array name="config_vmware_supported_vpns">
+        <item>com.cisco.anyconnect.vpn.android.avf</item>
+        <item>com.f5.edge.client_ics</item>
+        <item>net.juniper.junos.pulse.android</item>
+        <item>com.vmware.mvp</item>
+    </string-array>
 </resources>

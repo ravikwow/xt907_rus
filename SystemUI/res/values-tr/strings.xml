@@ -38,10 +38,10 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="label_view">Görüntüle</string>
     <string name="always_use_device">Bu USB cihazı için varsayılan olarak kullan</string>
     <string name="always_use_accessory">Bu USB aksesuar için varsayılan olarak kullan</string>
-    <string name="compat_mode_on">Zum yap (ekranı kaplasın)</string>
+    <string name="compat_mode_on">Yakınlaştır (ekranı kaplasın)</string>
     <string name="compat_mode_off">Genişlet (ekranı kaplasın)</string>
-    <string name="compat_mode_help_header">Uyumlu zum</string>
-    <string name="compat_mode_help_body">Uygulama küçük bir ekran için tasarlanmışsa saatin yanında bir zum denetimi görünür.</string>
+    <string name="compat_mode_help_header">Uyumlu yakınlaştırma</string>
+    <string name="compat_mode_help_body">Uygulama küçük bir ekran için tasarlanmışsa saatin yanında bir yakınlaştırma denetimi görünür.</string>
     <string name="screenshot_saving_ticker">Ekran görüntüsü kaydediliyor...</string>
     <string name="screenshot_saving_title">Ekran görüntüsü kaydediliyor...</string>
     <string name="screenshot_saving_text">Ekran görüntüsü kaydediliyor.</string>
@@ -59,7 +59,7 @@ Yalnızca ürünle birlikte verilen şarj cihazını kullanın."</string>
     <string name="accessibility_recent">Son uygulamalar</string>
     <string name="accessibility_ime_switch_button">Giriş yöntemini değiştirme düğmesi.</string>
     <string name="accessibility_compatibility_zoom_button">Uyumluluk zum düğmesi.</string>
-    <string name="accessibility_compatibility_zoom_example">Küçük uygulamayı büyük ekrana zum yap.</string>
+    <string name="accessibility_compatibility_zoom_example">Daha büyük ekrana daha küçük yakınlaştır.</string>
     <string name="accessibility_bluetooth_connected">Bluetooth bağlandı.</string>
     <string name="accessibility_bluetooth_disconnected">Bluetooth bağlantısı kesildi.</string>
     <string name="accessibility_no_battery">Pil yok.</string>

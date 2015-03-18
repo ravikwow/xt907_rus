@@ -194,7 +194,7 @@
     <string name="needPuk2">Voer de PUK2-code in om de SIM-kaart te ontgrendelen.</string>
     <string name="enablePin">Mislukt. Schakel SIM-/RUIM-vergrendeling in.</string>
     <string name="pinpuk_attempts">"
-Resterende pogingen: "</string>
+Resterende pogingen :"</string>
     <string name="imei">IMEI</string>
     <string name="meid">MEID</string>
     <string name="ClipMmi">Inkomende beller-id</string>
@@ -230,7 +230,7 @@ Resterende pogingen: "</string>
     <string name="serviceClassFAX">FAX</string>
     <string name="serviceClassSMS">Sms</string>
     <string name="serviceClassDataAsync">Asynchroon</string>
-    <string name="serviceClassDataSync">Synchroon</string>
+    <string name="serviceClassDataSync">Synchroniseren</string>
     <string name="serviceClassPacket">Pakket</string>
     <string name="serviceClassPAD">PAD</string>
     <string name="roamingText0">Roamingaanduiding aan</string>
@@ -745,7 +745,7 @@ Resterende pogingen: "</string>
     <string name="keyguard_pin_accepted">Code geaccepteerd</string>
     <string name="keyguard_label_text">"Druk op 'Menu' en vervolgens op 0 om te ontgrendelen."</string>
     <string name="emergency_call_dialog_number_for_display">Alarmnummer</string>
-    <string name="lockscreen_carrier_default">Geen service.</string>
+    <string name="lockscreen_carrier_default">Geen service</string>
     <string name="lockscreen_screen_locked">Scherm vergrendeld.</string>
     <string name="lockscreen_instructions_when_pattern_enabled">"Druk op 'Menu' om te ontgrendelen of noodoproep te plaatsen."</string>
     <string name="lockscreen_instructions_when_pattern_disabled">"Druk op 'Menu' om te ontgrendelen."</string>
@@ -760,7 +760,7 @@ Resterende pogingen: "</string>
     <string name="lockscreen_charged">Opgeladen.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Sluit de lader aan.</string>
-    <string name="lockscreen_missing_sim_message_short">Geen SIM-kaart</string>
+    <string name="lockscreen_missing_sim_message_short">Geen SIM-kaart.</string>
     <string name="lockscreen_missing_sim_message">Geen SIM-kaart in telefoon.</string>
     <string name="lockscreen_missing_sim_instructions">Plaats een SIM-kaart.</string>
     <string name="lockscreen_missing_sim_instructions_long">De SIM-kaart ontbreekt of kan niet worden gelezen. Plaats een SIM-kaart.</string>
@@ -776,12 +776,12 @@ Resterende pogingen: "</string>
     <string name="lockscreen_sim_error_message_short">Ongeldige kaart.</string>
     <string name="lockscreen_sim_error_message">SIM-kaart is ongeldig.</string>
     <string name="lockscreen_network_locked_message">Netwerk vergrendeld</string>
-    <string name="lockscreen_perso_locked_message">SIM heeft persoonsvergrendeling</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM is vergrendeld</string>
     <string name="lockscreen_sim_puk_locked_message">SIM-kaart is vergrendeld met PUK-code.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 geblokkeerd. Voer PUK1 in.
 of
 Raadpleeg de gebruikershandleiding of neem contact op met de klantenservice."</string>
-    <string name="lockscreen_sim_locked_message">SIM-kaart is vergrendeld</string>
+    <string name="lockscreen_sim_locked_message">SIM-/RUIM-kaart is vergrendeld.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">SIM-kaart ontgrendelen...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"U heeft uw ontgrendelingspatroon %d keer onjuist getekend. 
 
@@ -893,7 +893,7 @@ Kies 'OK' om door te gaan of 'Annuleren' om op de huidige pagina te blijven."</s
     <string name="searchview_description_query">Zoekopdracht</string>
     <string name="searchview_description_clear">Zoekopdracht wissen</string>
     <string name="searchview_description_submit">Zoekopdracht verzenden</string>
-    <string name="searchview_description_voice">Voice Search</string>
+    <string name="searchview_description_voice">Spraakgestuurd zoeken</string>
     <string name="enable_explore_by_touch_warning_title">"'Verkennen via aanraking' aan?"</string>
     <string name="enable_explore_by_touch_warning_message">"%1$s wil 'Verkennen via aanraking' inschakelen. Wanneer 'Verkennen via aanraking' is ingeschakeld, kunt u beschrijvingen beluisteren of bekijken van wat er onder uw vinger staat of aanraakbewerkingen uitvoeren op de telefoon."</string>
     <string name="oneMonthDurationPast">1 maand geleden</string>
@@ -1025,7 +1025,7 @@ Wilt u de pagina sluiten?"</string>
     <string name="sim_removed_title">SIM-kaart verwijderd</string>
     <string name="sim_removed_message">Het mobiele netwerk is niet beschikbaar totdat u het apparaat opnieuw start met een geldige SIM-kaart.</string>
     <string name="sim_done_button">Gereed</string>
-    <string name="sim_added_title">SIM-kaart geplaatst</string>
+    <string name="sim_added_title">SIM-kaart aangesloten</string>
     <string name="sim_added_message">Start uw apparaat opnieuw voor toegang tot het mobiele netwerk.</string>
     <string name="sim_restart_button">Opnieuw starten</string>
     <string name="time_picker_dialog_title">Tijd instellen</string>
@@ -1260,12 +1260,6 @@ voor account %s."</string>
     <string name="default_audio_route_category_name">Systeem</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth-audio</string>
     <string name="media_route_chooser_grouping_done">Gereed</string>
-    <string name="wispr_login_success">Aangemeld</string>
-    <string name="wispr_login_failed">Aanmelden mislukt</string>
-    <string name="wispr_login_header">AT&amp;T Wi-Fi Hot Spot-status</string>
-    <string name="wispr_login_failed_credential">Kan geschiktheid niet bevestigen. Neem contact op met de klantenservice via 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Verificatie mislukt</string>
-    <string name="wispr_insert_sim">Kan geschiktheid niet bevestigen. Neem contact op met de klantenservice via 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1398,14 +1392,7 @@ voor account %s."</string>
     <string name="password_recovery_dialog_title">Wachtwoord vergeten?</string>
     <string name="password_recovery_dialog_message">Neem contact op met uw IT-afdeling en vraag een herstelwachtwoord aan. Wanneer u dit wachtwoord invoert, kunt u uw bestaande wachtwoord herstellen en een nieuw wachtwoord definiëren.</string>
     <string name="lockscreen_charged_rmdunplug">Volledig opgeladen. Koppel uw lader los van het stopcontact om stroom te sparen.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Netwerkuitbreider</string>
-    <string name="moto_eritext_extended_network">Uitgebreid netwerk</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">USB-schijf</string>
-    <string name="sim_pin_technical_problem">Er is een technisch probleem opgetreden. Probeer het opnieuw.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Bevestig nieuwe PIN-code</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Probeer het over %d seconden opnieuw.</string>
     <string name="msg_disable_consumer_email_notification">E-mail voor consumenten uitgeschakeld.</string>
     <string name="msg_enable_consumer_email_notification">E-mail voor consumenten ingeschakeld.</string>
     <string name="msg_disable_browser_notification">Browser uitgeschakeld.</string>
@@ -1424,5 +1411,4 @@ voor account %s."</string>
     <string name="msg_app_control_notification">Lijst met uitgeschakelde apps bijgewerkt.</string>
     <string name="policylab_appcontrol">Apps uitschakelen</string>
     <string name="policydesc_appcontrol">Beheerder toestaan apps op het toestel in of uit te schakelen.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN-code gedeblokkeerd</string>
 </resources>

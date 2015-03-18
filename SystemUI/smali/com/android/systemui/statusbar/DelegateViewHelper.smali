@@ -34,7 +34,7 @@
     const/4 v1, 0x2
 
     .line 38
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
     new-array v0, v1, [I
@@ -659,7 +659,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0026
+    const v1, 0x7f0c0026
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 

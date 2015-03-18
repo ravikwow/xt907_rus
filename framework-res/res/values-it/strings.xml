@@ -249,7 +249,7 @@ Tentativi rimanenti: "</string>
     <string name="roamingTextSearching">Ricerca servizio</string>
     <string name="cfTemplateNotForwarded">{0}: inoltro non effettuato</string>
     <string name="cfTemplateForwarded">{0}: {1}</string>
-    <string name="cfTemplateForwardedTime">{0}: {1} dopo {2} secondi</string>
+    <string name="cfTemplateForwardedTime">{0}{1} dopo {2} secondi</string>
     <string name="cfTemplateRegistered">{0}: inoltro non effettuato</string>
     <string name="cfTemplateRegisteredTime">{0}: inoltro non effettuato</string>
     <string name="fcComplete">Codice funzione completo.</string>
@@ -304,7 +304,7 @@ Tentativi rimanenti: "</string>
     <string name="permgrouplab_costMoney">Servizi che prevedono un costo</string>
     <string name="permgroupdesc_costMoney">Svolgono operazioni che possono comportare un costo.</string>
     <string name="permgrouplab_messages">I tuoi messaggi</string>
-    <string name="permgroupdesc_messages">Consentono di leggere e scrivere SMS, e-mail e altri messaggi.</string>
+    <string name="permgroupdesc_messages">Consentono di leggere e scrivere SMS, email e altri messaggi.</string>
     <string name="permgrouplab_personalInfo">Informazioni personali</string>
     <string name="permgroupdesc_personalInfo">Accesso diretto ai contatti e al calendario memorizzati sul telefono.</string>
     <string name="permgrouplab_location">La tua posizione</string>
@@ -331,9 +331,9 @@ Tentativi rimanenti: "</string>
     <string name="permdesc_expandStatusBar">"Consente all'applicazione di espandere o comprimere la barra di stato."</string>
     <string name="permlab_processOutgoingCalls">reindirizzamento chiamate in uscita</string>
     <string name="permdesc_processOutgoingCalls">"Consente all'applicazione di elaborare le chiamate in uscita e di modificare il numero da comporre. Questa autorizzazione consente all'applicazione di monitorare, reindirizzare o impedire le chiamate in uscita."</string>
-    <string name="permlab_receiveSms">ricezione SMS</string>
+    <string name="permlab_receiveSms">ricezione messaggi di testo (SMS)</string>
     <string name="permdesc_receiveSms">"Consente all'applicazione di ricevere ed elaborare messaggi SMS. Significa che l'applicazione potrebbe monitorare o eliminare i messaggi inviati al tuo dispositivo senza mostrarteli."</string>
-    <string name="permlab_receiveMms">ricezione MMS</string>
+    <string name="permlab_receiveMms">ricezione messaggi di testo (MMS)</string>
     <string name="permdesc_receiveMms">"Consente all'applicazione di ricevere ed elaborare messaggi MMS. Significa che l'applicazione potrebbe monitorare o eliminare i messaggi inviati al tuo dispositivo senza mostrarteli."</string>
     <string name="permlab_receiveEmergencyBroadcast">ricezione di trasmissioni di emergenza</string>
     <string name="permdesc_receiveEmergencyBroadcast">"Consente all'applicazione di ricevere ed elaborare messaggi broadcast di emergenza. Questa autorizzazione è disponibile solo per applicazioni di sistema."</string>
@@ -343,11 +343,11 @@ Tentativi rimanenti: "</string>
     <string name="permdesc_sendSms">"Consente all'applicazione di inviare messaggi SMS. Ciò potrebbe comportare costi imprevisti. Applicazioni dannose potrebbero generare dei costi inviando messaggi senza la tua conferma."</string>
     <string name="permlab_sendSmsNoConfirmation">invio di messaggi SMS senza conferma</string>
     <string name="permdesc_sendSmsNoConfirmation">"Consente all'applicazione di inviare messaggi SMS. Ciò potrebbe comportare costi imprevisti. Applicazioni dannose potrebbero generare dei costi inviando messaggi senza la tua conferma."</string>
-    <string name="permlab_readSms">lettura SMS o MMS personali</string>
+    <string name="permlab_readSms">lettura messaggi di testo personali (SMS o MMS)</string>
     <string name="permdesc_readSms">"Consente all'applicazione di leggere i messaggi SMS memorizzati sul telefono o sulla scheda SIM. Ciò consente all'applicazione di leggere tutti i messaggi SMS, indipendentemente dai contenuti o dal livello di riservatezza."</string>
-    <string name="permlab_writeSms">modifica SMS o MMS personali</string>
+    <string name="permlab_writeSms">modifica dei messaggi di testo (SMS o MMS)</string>
     <string name="permdesc_writeSms">"Consente all'applicazione la scrittura nei messaggi SMS memorizzati sul telefono o sulla scheda SIM. Le applicazioni dannose potrebbero cancellare i tuoi messaggi."</string>
-    <string name="permlab_receiveWapPush">ricezione SMS/MMS (WAP)</string>
+    <string name="permlab_receiveWapPush">ricezione messaggi di testo (WAP)</string>
     <string name="permdesc_receiveWapPush">"Consente all'applicazione di ricevere ed elaborare messaggi WAP. Questa autorizzazione include la facoltà di monitorare o eliminare i messaggi che ti vengono inviati senza mostrarteli."</string>
     <string name="permlab_getTasks">recupero applicazioni in esecuzione</string>
     <string name="permdesc_getTasks">"Consente all'applicazione di recuperare informazioni sulle attività attualmente e recentemente in esecuzione. Ciò potrebbe consentire all'applicazione di scoprire informazioni sulle applicazioni in uso sul dispositivo."</string>
@@ -472,9 +472,9 @@ Tentativi rimanenti: "</string>
     <string name="permlab_broadcastSticky">invio broadcast permanenti</string>
     <string name="permdesc_broadcastSticky">"Consente all'applicazione di inviare broadcast permanenti, che permangono anche al termine del broadcast. Un uso eccessivo potrebbe rendere il telefono lento o instabile causando un uso eccessivo della memoria."</string>
     <string name="permlab_readContacts">lettura contatti personali</string>
-    <string name="permdesc_readContacts">"Consente all'applicazione di leggere i dati relativi ai tuoi contatti memorizzati sul telefono, inclusa la frequenza con cui hai effettuato chiamate, inviato e-mail o comunicato in altri modi con individui specifici. Questa autorizzazione consente alle applicazioni di salvare i dati dei tuoi contatti e applicazioni dannose potrebbero condividere i dati dei contatti a tua insaputa."</string>
+    <string name="permdesc_readContacts">"Consente all'applicazione di leggere i dati relativi ai tuoi contatti memorizzati sul telefono, inclusa la frequenza con cui hai effettuato chiamate, inviato email o comunicato in altri modi con individui specifici. Questa autorizzazione consente alle applicazioni di salvare i dati dei tuoi contatti e applicazioni dannose potrebbero condividere i dati dei contatti a tua insaputa."</string>
     <string name="permlab_writeContacts">modifica dei contatti personali</string>
-    <string name="permdesc_writeContacts">"Consente all'applicazione di modificare i dati relativi ai contatti memorizzati sul telefono, inclusa la frequenza con cui hai effettuato chiamate, inviato e-mail o comunicato in altri modi con contatti specifici. Questa autorizzazione consente alle applicazioni di eliminare i dati dei contatti."</string>
+    <string name="permdesc_writeContacts">"Consente all'applicazione di modificare i dati relativi ai contatti memorizzati sul telefono, inclusa la frequenza con cui hai effettuato chiamate, inviato email o comunicato in altri modi con contatti specifici. Questa autorizzazione consente alle applicazioni di eliminare i dati dei contatti."</string>
     <string name="permlab_readCallLog">lettura del registro chiamate</string>
     <string name="permdesc_readCallLog">"Consente all'applicazione di leggere il registro chiamate del telefono, inclusi i dati sulle chiamate in arrivo e in uscita. Questa autorizzazione consente alle applicazioni di salvare i dati del tuo registro chiamate e applicazioni dannose potrebbero condividere i dati del registro chiamate a tua insaputa."</string>
     <string name="permlab_writeCallLog">scrittura del registro chiamate</string>
@@ -489,7 +489,7 @@ Tentativi rimanenti: "</string>
     <string name="permdesc_writeSocialStream">"Consente all'applicazione di visualizzare gli aggiornamenti dei social network dai tuoi amici. Fai attenzione quando condividi informazioni: questa autorizzazione consente all'applicazione di produrre messaggi apparentemente provenienti da un amico. Nota. È possibile che questa autorizzazione non sia applicabile su tutti i social network."</string>
     <string name="permlab_readCalendar">lettura di eventi di calendario e di informazioni riservate</string>
     <string name="permdesc_readCalendar">"Consente all'applicazione di leggere tutti gli eventi di calendario memorizzati sul telefono, inclusi quelli di amici o colleghi. Ciò potrebbe consentire all'applicazione di condividere o salvare i dati del tuo calendario, a prescindere dal livello di riservatezza o privacy."</string>
-    <string name="permlab_writeCalendar">aggiunta o modifica di eventi di calendario e invio di e-mail agli invitati a insaputa dei proprietari</string>
+    <string name="permlab_writeCalendar">aggiunta o modifica di eventi di calendario e invio di e-mail agli ospiti a insaputa dei proprietari</string>
     <string name="permdesc_writeCalendar">"Consente all'applicazione di aggiungere, rimuovere, modificare gli eventi che puoi modificare sul telefono, inclusi quelli di amici o colleghi. Ciò potrebbe consentire all'applicazione di inviare messaggi apparentemente provenienti dai proprietari del calendario o di modificare eventi all'insaputa dei proprietari."</string>
     <string name="permlab_accessMockLocation">fonti di localizzazione fittizie per test</string>
     <string name="permdesc_accessMockLocation">"Crea fonti di localizzazione fittizie per i test o installa un nuovo fornitore di posizione. Ciò consente all'applicazione di ignorare la posizione e/o lo stato restituito da altre fonti di localizzazione, come il GPS o fornitori di posizione."</string>
@@ -717,7 +717,7 @@ Tentativi rimanenti: "</string>
     <string name="relationTypeDomesticPartner">Convivente</string>
     <string name="relationTypeFather">Padre</string>
     <string name="relationTypeFriend">Amico</string>
-    <string name="relationTypeManager">Tutore legale</string>
+    <string name="relationTypeManager">Dirigente</string>
     <string name="relationTypeMother">Madre</string>
     <string name="relationTypeParent">Genitore</string>
     <string name="relationTypePartner">Partner</string>
@@ -738,7 +738,7 @@ Tentativi rimanenti: "</string>
     <string name="keyguard_password_entry_touch_hint"><font size="17">Tocca per inserire la password</font></string>
     <string name="keyguard_password_enter_password_code">Inserisci password per sbloccare</string>
     <string name="keyguard_password_enter_pin_password_code">Inserisci PIN per sbloccare</string>
-    <string name="keyguard_password_wrong_pin_code">PIN errato.</string>
+    <string name="keyguard_password_wrong_pin_code">Codice PIN errato.</string>
     <string name="keyguard_password_wrong_puk_code">Codice PUK errato.</string>
     <string name="keyguard_password_pin_failed">Operazione PIN non riuscita</string>
     <string name="keyguard_password_puk_failed">Operazione PUK non riuscita</string>
@@ -760,7 +760,7 @@ Tentativi rimanenti: "</string>
     <string name="lockscreen_charged">Batteria carica</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Collegare il caricabatterie.</string>
-    <string name="lockscreen_missing_sim_message_short">Nessuna SIM</string>
+    <string name="lockscreen_missing_sim_message_short">Nessuna SIM presente.</string>
     <string name="lockscreen_missing_sim_message">Nessuna SIM presente nel telefono.</string>
     <string name="lockscreen_missing_sim_instructions">Inserisci una scheda SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">Scheda SIM mancante o non leggibile. Inserisci una scheda SIM.</string>
@@ -776,12 +776,12 @@ Tentativi rimanenti: "</string>
     <string name="lockscreen_sim_error_message_short">Scheda non valida.</string>
     <string name="lockscreen_sim_error_message">La scheda SIM non è valida.</string>
     <string name="lockscreen_network_locked_message">Rete bloccata</string>
-    <string name="lockscreen_perso_locked_message">Scheda SIM bloccata</string>
-    <string name="lockscreen_sim_puk_locked_message">SIM bloccata con PUK</string>
+    <string name="lockscreen_perso_locked_message">Scheda SIM/RUIM bloccata.</string>
+    <string name="lockscreen_sim_puk_locked_message">La SIM è bloccata con PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 bloccato. Inserisci PUK1.
 or
 Consulta il Manuale utente o contatta il servizio clienti."</string>
-    <string name="lockscreen_sim_locked_message">SIM bloccata</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM bloccata</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Sblocco SIM...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"%d tentativi errati di inserimento della sequenza di sblocco. 
 
@@ -825,8 +825,8 @@ Visita "<b>google.com/accounts/recovery</b>.</string>
     <string name="granularity_label_word">parola</string>
     <string name="granularity_label_link">link</string>
     <string name="granularity_label_line">linea</string>
-    <string name="hour_ampm" formatted="false">%-l %p</string>
-    <string name="hour_cap_ampm" formatted="false">%-l %p</string>
+    <string name="hour_ampm" formatted="false">%-l%P</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">Test di fabbrica non riuscito</string>
     <string name="factorytest_not_system">"L'azione FACTORY_TEST è supportata soltanto per i pacchetti installati in /system/app."</string>
     <string name="factorytest_no_action">"Nessun pacchetto trovato che fornisca l'azione FACTORY_TEST."</string>
@@ -1080,7 +1080,7 @@ Vuoi chiuderla?"</string>
     <string name="ext_media_nofs_notification_message">Scheda SD vuota o con filesystem non supportato.</string>
     <string name="ext_media_unmountable_notification_title">Scheda SD danneggiata</string>
     <string name="ext_media_unmountable_notification_message">Scheda SD danneggiata. Prova a riformattarla.</string>
-    <string name="ext_media_badremoval_notification_title">Rimozione imprevista scheda SD</string>
+    <string name="ext_media_badremoval_notification_title">Rimozione imprevista della scheda SD</string>
     <string name="ext_media_badremoval_notification_message">Smonta scheda SD prima della rimozione per evitare la perdita di dati.</string>
     <string name="ext_media_safe_unmount_notification_title">È possibile rimuovere la scheda SD</string>
     <string name="ext_media_safe_unmount_notification_message">Puoi rimuovere la scheda SD.</string>
@@ -1143,7 +1143,7 @@ per l'account %s."</string>
     <string name="throttled_notification_title">Limite dati cell. superato</string>
     <string name="throttled_notification_message">"Tocca per ulteriori informazioni sull'utilizzo dei dati del cellulare."</string>
     <string name="no_matches">Nessuna corrispondenza</string>
-    <string name="find_on_page">Trova in pagina</string>
+    <string name="find_on_page">Trova nella pagina</string>
     <string name="action_mode_done">Fine</string>
     <string name="progress_unmounting">Smontaggio scheda SD...</string>
     <string name="progress_erasing">Cancellazione scheda SD...</string>
@@ -1260,12 +1260,6 @@ per l'account %s."</string>
     <string name="default_audio_route_category_name">Sistema</string>
     <string name="bluetooth_a2dp_audio_route_name">Audio Bluetooth</string>
     <string name="media_route_chooser_grouping_done">Fine</string>
-    <string name="wispr_login_success">Accesso effettuato</string>
-    <string name="wispr_login_failed">Accesso non riuscito</string>
-    <string name="wispr_login_header">Stato hotspot Wi-Fi di AT&amp;T</string>
-    <string name="wispr_login_failed_credential">"Impossibile confermare l'idoneità. Chiama l'assistenza clienti al numero 1-800-331-0500."</string>
-    <string name="wispr_login_failed_network">Autenticazione non riuscita</string>
-    <string name="wispr_insert_sim">"Impossibile confermare l'idoneità. Chiama l'assistenza clienti al numero 1-800-331-0500."</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1281,7 +1275,7 @@ per l'account %s."</string>
     <string name="same_abbrev_month_mdy1_time1_mdy2_time2">%5$s %3$s %2$s %4$s - %10$s %8$s %7$s %9$s</string>
     <string name="same_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">%5$s %1$s %3$s %2$s %4$s - %10$s %6$s %8$s %7$s %9$s</string>
     <string name="cipheringIndicator">Cifratura non disponibile in rete. Le chiamate e/o i dati della rete cellulare non saranno crittografati.</string>
-    <string name="sim_retry_left">Tentativi rimanenti: %d</string>
+    <string name="sim_retry_left">Numero di tentativi rimanenti: %d</string>
     <string name="vzw_disable_we_gsm_cf">"L'inoltro chiamata è disabilitato al di fuori della rete Verizon Wireless."</string>
     <string name="unsupportedMmiCode">Il codice MMI composto non è supportato.</string>
     <string name="sim_lock_failed_num_retry">Impossibile modificare lo stato di blocco della scheda SIM per inserimento errato del PIN. Numero di tentativi rimanenti: %s</string>
@@ -1406,14 +1400,7 @@ Tutti i dati e le impostazioni verranno salvati.
     <string name="password_recovery_dialog_title">Password dimenticata?</string>
     <string name="password_recovery_dialog_message">Contatta il reparto IT e richiedi la \"password di ripristino\". Con tale password, puoi reimpostare quella esistente e definirne una nuova.</string>
     <string name="lockscreen_charged_rmdunplug">Carica completata. Scollega il caricabatterie dalla presa di rete per risparmiare energia.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network Extender</string>
-    <string name="moto_eritext_extended_network">Rete estesa</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">Disco USB</string>
-    <string name="sim_pin_technical_problem">Si è verificato un problema tecnico. Riprova.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Conferma nuovo codice PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Riprova tra %d secondi.</string>
     <string name="msg_disable_consumer_email_notification">E-mail cliente disattivato.</string>
     <string name="msg_enable_consumer_email_notification">E-mail cliente attivato.</string>
     <string name="msg_disable_browser_notification">Browser disattivato.</string>
@@ -1432,5 +1419,4 @@ Tutti i dati e le impostazioni verranno salvati.
     <string name="msg_app_control_notification">Elenco delle applicazioni disattivate aggiornato.</string>
     <string name="policylab_appcontrol">Disattiva applicazioni</string>
     <string name="policydesc_appcontrol">"Consenti all'amministratore di attivare o disattivare le applicazioni nel dispositivo."</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN sbloccato</string>
 </resources>

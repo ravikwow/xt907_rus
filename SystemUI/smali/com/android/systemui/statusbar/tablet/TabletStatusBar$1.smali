@@ -26,10 +26,10 @@
     .locals 0
 
     .prologue
-    .line 211
+    .line 203
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$1;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -40,11 +40,11 @@
     .locals 1
 
     .prologue
-    .line 213
+    .line 205
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$1;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->showSearchPanel()V
 
-    .line 214
+    .line 206
     return-void
 .end method

@@ -43,7 +43,7 @@
 
     .line 82
     .local v3, "res":Landroid/content/res/Resources;
-    const v5, 0x7f0b000d
+    const v5, 0x7f0c000d
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -51,7 +51,7 @@
 
     .line 83
     .local v2, "outerBounds":I
-    const v5, 0x7f0b0012
+    const v5, 0x7f0c0012
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -67,13 +67,13 @@
 
     .line 85
     .local v4, "scale":F
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/StatusBarIconView;->setScaleX(F)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setScaleX(F)V
 
     .line 86
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/StatusBarIconView;->setScaleY(F)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setScaleY(F)V
 
     .line 87
-    const v5, 0x7f0b0013
+    const v5, 0x7f0c0013
 
     invoke-virtual {v3, v5, v7, v7}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -81,7 +81,7 @@
 
     .line 88
     .local v0, "alpha":F
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/StatusBarIconView;->setAlpha(F)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
 
     .line 89
     return-void
@@ -125,7 +125,7 @@
     .line 59
     iget-object v5, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNumberPain:Landroid/graphics/Paint;
 
-    const v6, 0x7f020148
+    const v6, 0x7f020149
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -148,7 +148,7 @@
     if-eqz p3, :cond_0
 
     .line 67
-    const v5, 0x7f0b000d
+    const v5, 0x7f0c000d
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -156,7 +156,7 @@
 
     .line 68
     .local v2, "outerBounds":I
-    const v5, 0x7f0b0012
+    const v5, 0x7f0c0012
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -172,13 +172,13 @@
 
     .line 70
     .local v4, "scale":F
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/StatusBarIconView;->setScaleX(F)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setScaleX(F)V
 
     .line 71
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/StatusBarIconView;->setScaleY(F)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setScaleY(F)V
 
     .line 72
-    const v5, 0x7f0b0013
+    const v5, 0x7f0c0013
 
     invoke-virtual {v3, v5, v7, v7}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -186,7 +186,7 @@
 
     .line 73
     .local v0, "alpha":F
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/StatusBarIconView;->setAlpha(F)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
 
     .line 76
     .end local v0    # "alpha":F
@@ -196,7 +196,7 @@
     :cond_0
     sget-object v5, Landroid/widget/ImageView$ScaleType;->CENTER:Landroid/widget/ImageView$ScaleType;
 
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/StatusBarIconView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+    invoke-virtual {p0, v5}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 77
     return-void
@@ -375,7 +375,7 @@
 
     .prologue
     .line 152
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -406,7 +406,7 @@
     if-nez v1, :cond_0
 
     .line 266
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/StatusBarIconView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 269
     .end local v0    # "tickerText":Ljava/lang/CharSequence;
@@ -462,7 +462,7 @@
 
     .prologue
     .line 224
-    invoke-super {p0, p1}, Lcom/android/systemui/statusbar/AnimatedImageView;->debug(I)V
+    invoke-super {p0, p1}, Landroid/view/View;->debug(I)V
 
     .line 225
     const-string v0, "View"
@@ -540,7 +540,7 @@
 
     .prologue
     .line 214
-    invoke-super {p0, p1}, Lcom/android/systemui/statusbar/AnimatedImageView;->onDraw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 216
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNumberBackground:Landroid/graphics/drawable/Drawable;
@@ -578,7 +578,7 @@
 
     .prologue
     .line 198
-    invoke-super {p0, p1}, Lcom/android/systemui/statusbar/AnimatedImageView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1}, Landroid/widget/ImageView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 199
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNotification:Landroid/app/Notification;
@@ -588,7 +588,7 @@
     .line 200
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNotification:Landroid/app/Notification;
 
-    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setParcelableData(Landroid/os/Parcelable;)V
+    invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityRecord;->setParcelableData(Landroid/os/Parcelable;)V
 
     .line 202
     :cond_0
@@ -604,7 +604,7 @@
 
     .prologue
     .line 206
-    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/systemui/statusbar/AnimatedImageView;->onSizeChanged(IIII)V
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
     .line 207
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNumberBackground:Landroid/graphics/drawable/Drawable;
@@ -624,7 +624,7 @@
 
     .prologue
     .line 231
-    iget-object v10, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mContext:Landroid/content/Context;
+    iget-object v10, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -645,7 +645,7 @@
     if-le v10, v7, :cond_2
 
     .line 234
-    iget-object v10, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mContext:Landroid/content/Context;
+    iget-object v10, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -663,13 +663,13 @@
     iput-object v5, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mNumberText:Ljava/lang/String;
 
     .line 242
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v9
 
     .line 243
     .local v9, "w":I
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v3
 
@@ -947,7 +947,7 @@
     .line 118
     iget-object v7, p1, Lcom/android/internal/statusbar/StatusBarIcon;->contentDescription:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/StatusBarIconView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 119
     if-nez v1, :cond_5
@@ -1026,7 +1026,7 @@
     .restart local v0    # "drawable":Landroid/graphics/drawable/Drawable;
     .restart local v3    # "numberEquals":Z
     :cond_4
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/StatusBarIconView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/AnimatedImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 127
     .end local v0    # "drawable":Landroid/graphics/drawable/Drawable;
@@ -1036,7 +1036,7 @@
     .line 128
     iget v7, p1, Lcom/android/internal/statusbar/StatusBarIcon;->iconLevel:I
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/StatusBarIconView;->setImageLevel(I)V
+    invoke-virtual {p0, v7}, Landroid/widget/ImageView;->setImageLevel(I)V
 
     .line 131
     :cond_6
@@ -1047,13 +1047,13 @@
 
     if-lez v7, :cond_a
 
-    iget-object v7, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    const v8, 0x7f080003
+    const v8, 0x7f090003
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1067,7 +1067,7 @@
     if-nez v7, :cond_7
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
@@ -1089,7 +1089,7 @@
 
     .line 143
     :goto_5
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/StatusBarIconView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 145
     :cond_8
@@ -1101,7 +1101,7 @@
     if-eqz v7, :cond_b
 
     :goto_6
-    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/StatusBarIconView;->setVisibility(I)V
+    invoke-virtual {p0, v6}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :cond_9
     move v6, v5

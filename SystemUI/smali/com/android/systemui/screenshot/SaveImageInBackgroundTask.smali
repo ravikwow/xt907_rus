@@ -82,7 +82,7 @@
 
     invoke-direct/range {v18 .. v20}, Ljava/util/Date;-><init>(J)V
 
-    invoke-virtual/range {v17 .. v18}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual/range {v17 .. v18}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -358,7 +358,7 @@
 
     invoke-direct/range {v17 .. v17}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v19, 0x7f09002c
+    const v19, 0x7f0a002c
 
     move/from16 v0, v19
 
@@ -401,7 +401,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f09002d
+    const v18, 0x7f0a002d
 
     move/from16 v0, v18
 
@@ -413,7 +413,7 @@
 
     move-result-object v17
 
-    const v18, 0x7f09002e
+    const v18, 0x7f0a002e
 
     move/from16 v0, v18
 
@@ -945,7 +945,7 @@
     .line 236
     iget-object v3, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
 
-    const v4, 0x7f09002f
+    const v4, 0x7f0a002f
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -955,7 +955,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090030
+    const v4, 0x7f0a0030
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

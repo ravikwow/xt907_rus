@@ -178,7 +178,7 @@
     <string name="stkCcSsToDial">SS isteği ÇEVİR isteğine dönüştürüldü.</string>
     <string name="stkCcSsToUssd">SS isteği USSD isteğine dönüştürüldü.</string>
     <string name="stkCcSsToSs">SS isteği yeni SS isteğine dönüştürüldü.</string>
-    <string name="serviceEnabled">Hizmet etkinleştirildi.</string>
+    <string name="serviceEnabled">Hizmet etkindi.</string>
     <string name="serviceEnabledFor">Hizmet şunun için etkinleştirildi:</string>
     <string name="serviceDisabled">Hizmet devre dışı bırakıldı.</string>
     <string name="serviceRegistered">Kayıt işlemi başarılı oldu.</string>
@@ -227,7 +227,7 @@ Kalan deneme sayısı: "</string>
     <string name="RestrictedOnAll">Tüm Ses/Veri/SMS hizmetleri engellendi.</string>
     <string name="serviceClassVoice">Ses</string>
     <string name="serviceClassData">Veri</string>
-    <string name="serviceClassFAX">Faks</string>
+    <string name="serviceClassFAX">FAKS</string>
     <string name="serviceClassSMS">SMS</string>
     <string name="serviceClassDataAsync">Asenk.</string>
     <string name="serviceClassDataSync">Senk.</string>
@@ -247,11 +247,11 @@ Kalan deneme sayısı: "</string>
     <string name="roamingText11">Dolaşım Bilgisi Açık</string>
     <string name="roamingText12">Dolaşım Bilgisi Kapalı</string>
     <string name="roamingTextSearching">Hizmet Aranıyor</string>
-    <string name="cfTemplateNotForwarded">{0}: Yönlendirilmiyor</string>
+    <string name="cfTemplateNotForwarded">{0}: Yönlendirilmedi</string>
     <string name="cfTemplateForwarded">{0}: {1}</string>
     <string name="cfTemplateForwardedTime">{0}: {2} saniye sonra {1}</string>
-    <string name="cfTemplateRegistered">{0}: Yönlendirilmiyor</string>
-    <string name="cfTemplateRegisteredTime">{0}: Yönlendirilmiyor</string>
+    <string name="cfTemplateRegistered">{0}: Yönlendirilmedi</string>
+    <string name="cfTemplateRegisteredTime">{0}: Yönlendirilmedi</string>
     <string name="fcComplete">Özellik kodu tamamlandı.</string>
     <string name="fcError">Bağlantı sorunu veya geçersiz özellik kodu.</string>
     <string name="httpErrorOk">Tamam</string>
@@ -408,7 +408,7 @@ Kalan deneme sayısı: "</string>
     <string name="permlab_manageAppTokens">uygulama jetonlarını yönet</string>
     <string name="permdesc_manageAppTokens">Uygulamaya, kendi normal Z sıralamalarını atlayarak kendi jetonlarını oluşturma ve yönetme izni verir. Normal uygulamalar için gerekli değildir.</string>
     <string name="permlab_injectEvents">tuşlara bas ve düğmeleri denetle</string>
-    <string name="permdesc_injectEvents">Uygulamaya, kendi giriş işlemlerini (tuşa basma vb.) diğer uygulamalara gönderme izni verir. Kötü amaçlı uygulamalar telefonu ele geçirmek için bunu kullanabilir.</string>
+    <string name="permdesc_injectEvents">Uygulamaya, kendi giriş etkinliklerini (tuşa basma vb.) diğer uygulamalara gönderme izni verir. Kötü amaçlı uygulamalar telefonu ele geçirmek için bunu kullanabilir.</string>
     <string name="permlab_readInputState">yazdıklarınızı ve yaptığınız işlemleri kaydet</string>
     <string name="permdesc_readInputState">Uygulamaya, başka bir uygulama ile etkileşim halindeyken dahi (örneğin, şifre yazarken) bastığınız tuşları izleme izni verir. Normal uygulamalar için gerekli değildir.</string>
     <string name="permlab_bindInputMethod">bir giriş yöntemine bağla</string>
@@ -487,10 +487,10 @@ Kalan deneme sayısı: "</string>
     <string name="permdesc_readSocialStream">Uygulamaya size veya arkadaşlarınıza ait sosyal güncellemelere erişme ve bunları senkronize etme izni verir. Bilgi paylaşırken dikkatli olun. Bu izin, uygulamanın sosyal ağlarda sizinle arkadaşlarınız arasındaki iletişimi, gizliliğine bakılmaksızın okumasına olanak sağlar. Not: Bu izin tüm sosyal ağlar için geçerli olmayabilir.</string>
     <string name="permlab_writeSocialStream">sosyal akışıma yaz</string>
     <string name="permdesc_writeSocialStream">Uygulamaya arkadaşlarınızın sosyal güncellemelerini gösterme izni verir. Bilgi paylaşırken dikkatli olun -- Bu uygulama bir arkadaşınızdan geliyormuş gibi görünen mesajlar oluşturabilir. Not: Bu izin, tüm sosyal ağlarda geçerli olmayabilir.</string>
-    <string name="permlab_readCalendar">takvim olaylarını ve gizli bilgileri oku</string>
-    <string name="permdesc_readCalendar">Uygulamaya, arkadaşlarınızın ve iş arkadaşlarınızın etkinlikleri de dahil olmak üzere telefonunuzda depolanan tüm takvim olaylarını okuma izni verir. Bu izin, uygulamanın takvim verilerinizi gizliliğine ve hassaslığına bakmaksızın paylaşmasına ve kaydetmesine olanak sağlayabilir.</string>
-    <string name="permlab_writeCalendar">sahibinin bilgisi olmadan takvim olayları ekle veya mevcut olayları değiştir ve davetlilere e-posta gönder</string>
-    <string name="permdesc_writeCalendar">Uygulamaya, arkadaşlarınızın veya iş arkadaşlarınızın etkinlikleri de dahil olmak üzere telefonunuzda değiştirebileceğiniz olayları ekleme, kaldırma ve değiştirme izni verir. Bu izin, uygulamanın takvim sahiplerinden geliyormuş gibi görünen mesajlar göndermesine veya olayları sahibinden habersiz olarak değiştirmesine olanak sağlar.</string>
+    <string name="permlab_readCalendar">takvim etkinliklerini ve gizli bilgileri oku</string>
+    <string name="permdesc_readCalendar">Uygulamaya, arkadaşlarınızın ve iş arkadaşlarınızın etkinlikleri de dahil olmak üzere telefonunuzda depolanan tüm takvim etkinliklerini okuma izni verir. Bu izin, uygulamanın takvim verilerinizi gizliliğine ve hassaslığına bakmaksızın paylaşmasına ve kaydetmesine olanak sağlayabilir.</string>
+    <string name="permlab_writeCalendar">sahibinin bilgisi olmadan takvim etkinlikleri ekle veya mevcut etkinlikleri değiştir ve davetlilere e-posta gönder</string>
+    <string name="permdesc_writeCalendar">Uygulamaya, arkadaşlarınızın veya iş arkadaşlarınızın etkinlikleri de dahil olmak üzere telefonunuzda değiştirebileceğiniz etkinlikleri ekleme, kaldırma ve değiştirme izni verir. Bu izin, uygulamanın takvim sahiplerinden geliyormuş gibi görünen mesajlar göndermesine veya etkinlikleri sahibinden habersiz olarak değiştirmesine olanak sağlar.</string>
     <string name="permlab_accessMockLocation">test için sahte konum kaynakları</string>
     <string name="permdesc_accessMockLocation">Test amacıyla veya yeni bir konum sağlayıcı yüklemek için sahte konum kaynakları oluşturma. Bu izin, uygulamanın GPS veya konum sağlayıcıları gibi diğer konum kaynakları tarafından döndürülen konum ve/veya durum bilgisini geçersiz kılmasına olanak sağlar.</string>
     <string name="permlab_accessLocationExtraCommands">ek konum sağlayıcı komutlarına eriş</string>
@@ -616,7 +616,7 @@ Kalan deneme sayısı: "</string>
     <string name="permlab_writeSyncSettings">senkronizasyonu aç/kapat</string>
     <string name="permdesc_writeSyncSettings">Uygulamaya bir hesaba ait senkronizasyon ayarlarını değiştirme izni verir. Örneğin, bu izne sahip bir uygulama Kişiler uygulamasının bir hesapla senkronize edilmesini etkinleştirebilir.</string>
     <string name="permlab_readSyncStats">senk. istatistiklerini oku</string>
-    <string name="permdesc_readSyncStats">Uygulamaya bir hesaba ait senkronizasyon istatistiklerini okuma izni verir. Buna senkronizasyon olayları geçmişi ve senkronize edilen veri miktarı bilgileri de dahildir.</string>
+    <string name="permdesc_readSyncStats">Uygulamaya bir hesaba ait senkronizasyon istatistiklerini okuma izni verir. Buna senkronizasyon etkinlikleri geçmişi ve senkronize edilen veri miktarı bilgileri de dahildir.</string>
     <string name="permlab_subscribedFeedsRead">abone olunan yayınları oku</string>
     <string name="permdesc_subscribedFeedsRead">Uygulamaya, o anda senkronize olan özet akışları ile ilgili bilgi alma izni verir.</string>
     <string name="permlab_subscribedFeedsWrite">abone olunan yayınları yaz</string>
@@ -642,7 +642,7 @@ Kalan deneme sayısı: "</string>
     <string name="permlab_modifyNetworkAccounting">ağ kullanım hesaplamasını değiştir</string>
     <string name="permdesc_modifyNetworkAccounting">Uygulamaya, ağın uygulamalara göre nasıl kullanılacağını değiştirme izni verir. Normal uygulamalar tarafından kullanılmak için değildir.</string>
     <string name="policylab_limitPassword">Şifre kuralları ayarla</string>
-    <string name="policydesc_limitPassword">Ekran kilidini açma şifrelerinde izin verilen uzunluğu ve karakterleri denetler.</string>
+    <string name="policydesc_limitPassword">Ekran kilidini açma şifrelerinde izin verilen uzunluğu ve karakterleri denetleme.</string>
     <string name="policylab_watchLogin">Ekran kilidini açma denemelerini izle</string>
     <string name="policydesc_watchLogin">Ekran kilidini açarken yapılan yanlış şifre girişi denemelerini izler ve çok sayıda yanlış şifre girişi denemesi yapılmışsa telefonu kilitler veya telefondaki tüm verilerini siler.</string>
     <string name="policylab_resetPassword">Ekran kilidini açma şifresini değiştir</string>
@@ -676,8 +676,8 @@ Kalan deneme sayısı: "</string>
     <string name="phoneTypeRadio">Telsiz</string>
     <string name="phoneTypeTelex">Teleks</string>
     <string name="phoneTypeTtyTdd">TTY TDD</string>
-    <string name="phoneTypeWorkMobile">İş Cep Telefonu</string>
-    <string name="phoneTypeWorkPager">İş Çağrı Cihazı</string>
+    <string name="phoneTypeWorkMobile">İş Yeri Cep Telefonu</string>
+    <string name="phoneTypeWorkPager">İş Yeri Çağrı Cihazı</string>
     <string name="phoneTypeAssistant">Yardımcı</string>
     <string name="phoneTypeMms">MMS</string>
     <string name="eventTypeCustom">Özel</string>
@@ -699,7 +699,7 @@ Kalan deneme sayısı: "</string>
     <string name="imTypeOther">Diğer</string>
     <string name="imProtocolCustom">Özel</string>
     <string name="imProtocolAim">AIM</string>
-    <string name="imProtocolMsn">WINDOWS LIVE</string>
+    <string name="imProtocolMsn">Windows Live</string>
     <string name="imProtocolYahoo">Yahoo</string>
     <string name="imProtocolSkype">Skype</string>
     <string name="imProtocolQq">QQ</string>
@@ -760,7 +760,7 @@ Kalan deneme sayısı: "</string>
     <string name="lockscreen_charged">Şarj oldu.</string>
     <string name="lockscreen_battery_short">%%%d</string>
     <string name="lockscreen_low_battery">Şarj cihazınızı bağlayın.</string>
-    <string name="lockscreen_missing_sim_message_short">SIM kart yok</string>
+    <string name="lockscreen_missing_sim_message_short">SIM kart yok.</string>
     <string name="lockscreen_missing_sim_message">Telefonda SIM kart yok.</string>
     <string name="lockscreen_missing_sim_instructions">SIM kartı takın.</string>
     <string name="lockscreen_missing_sim_instructions_long">SIM kart yok veya okunamıyor. Bir SIM kart takın.</string>
@@ -776,12 +776,12 @@ Kalan deneme sayısı: "</string>
     <string name="lockscreen_sim_error_message_short">Geçersiz kart</string>
     <string name="lockscreen_sim_error_message">SIM kart Geçersiz.</string>
     <string name="lockscreen_network_locked_message">Ağ kilitli</string>
-    <string name="lockscreen_perso_locked_message">SIM Kişiselleştirme kilitli.</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM Kişiselleştirme kilitli.</string>
     <string name="lockscreen_sim_puk_locked_message">SIM kart PUK kilidi devrede.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 Kilitli. PUK1 girin.
 veya
 Lütfen Kullanıcı Rehberi'ne bakın/Müşteri Hizmetleri'ne başvurun."</string>
-    <string name="lockscreen_sim_locked_message">SIM kart kilitli.</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM kart kilitli.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">SIM kart kilidi açılıyor…</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Kilit açma deseninizi %d kez yanlış çizdiniz. 
 
@@ -980,7 +980,7 @@ Kapatmak ister misiniz?"</string>
     <string name="old_app_description">Yeni uygulamayı başlatmayın.</string>
     <string name="new_app_action">%1$s uygulamasını başlat</string>
     <string name="new_app_description">Kaydetmeden eski uygulamayı durdurun.</string>
-    <string name="sendText">Metin için bir işlem seçin</string>
+    <string name="sendText">Kısa mesaj için bir işlem seçin</string>
     <string name="volume_ringtone">Zil sesi düzeyi</string>
     <string name="volume_music">Medya ses düzeyi</string>
     <string name="volume_music_hint_playing_through_bluetooth">Bluetooth üzerinden çalıyor</string>
@@ -1005,7 +1005,7 @@ Kapatmak ister misiniz?"</string>
     <string name="wifi_watchdog_network_disabled">Kablosuz bağlantısı kurulamadı</string>
     <string name="wifi_watchdog_network_disabled_detailed">" İnternet bağlantısı zayıf."</string>
     <string name="wifi_p2p_dialog_title">Wi-Fi Direct</string>
-    <string name="wifi_p2p_turnon_message">"Wi-Fi Direct'i başlat. Bu işlem kablosuz istemciyi/hotspot'u kapatır."</string>
+    <string name="wifi_p2p_turnon_message">"Wi-Fi Direct'i başlat. Bu işlem kablosuz istemciyi/ortak erişim noktasını kapatır."</string>
     <string name="wifi_p2p_failed_message">Wi-Fi Direct başlatılamadı.</string>
     <string name="wifi_p2p_enabled_notification_title">Wi-Fi Direct özelliği açık</string>
     <string name="wifi_p2p_enabled_notification_message">Ayarlar için dokunun</string>
@@ -1080,7 +1080,7 @@ Kapatmak ister misiniz?"</string>
     <string name="ext_media_nofs_notification_message">SD kart boş veya desteklenmeyen dosya sistemi içeriyor.</string>
     <string name="ext_media_unmountable_notification_title">Hasarlı SD kart</string>
     <string name="ext_media_unmountable_notification_message">SD kart bozuk. Yeniden biçimlendirmeyi deneyin.</string>
-    <string name="ext_media_badremoval_notification_title">SD kart aniden çıkarıldı</string>
+    <string name="ext_media_badremoval_notification_title">SD kart beklenmedik biçimde çıkarıldı</string>
     <string name="ext_media_badremoval_notification_message">Veri kaybından kaçınmak için SD kartı çıkarmadan önce bağlantısını kesin.</string>
     <string name="ext_media_safe_unmount_notification_title">SD kart güvenle çıkarılabilir</string>
     <string name="ext_media_safe_unmount_notification_message">SD kartı güvenle çıkarabilirsiniz.</string>
@@ -1093,7 +1093,7 @@ Kapatmak ister misiniz?"</string>
     <string name="permdesc_copyProtectedData">Uygulamaya, içerik kopyalamak için varsayılan kapsayıcı hizmetini çağırma izni verir. Normal uygulamaların kullanımına yönelik değildir.</string>
     <string name="permlab_route_media_output">Medya çıktısını yönlendir</string>
     <string name="permdesc_route_media_output">Uygulamaya medya çıktısını başka harici cihazlara yönlendirme izni verir.</string>
-    <string name="tutorial_double_tap_to_zoom_message_short">Zum denetimi için iki kez dokunun</string>
+    <string name="tutorial_double_tap_to_zoom_message_short">Yakınlaştırma denetimi için iki kez dokunun</string>
     <string name="gadget_host_error_inflating">Widget eklenemedi.</string>
     <string name="ime_action_go">Git</string>
     <string name="ime_action_search">Ara</string>
@@ -1133,7 +1133,7 @@ izin isteğinde bulunuldu."</string>
     <string name="submit">Gönder</string>
     <string name="car_mode_disable_notification_title">Araba modu etkin</string>
     <string name="car_mode_disable_notification_message">Araba modundan çıkmak için dokunun.</string>
-    <string name="tethered_notification_title">Bağlantı paylaşımı/hotspot etkin</string>
+    <string name="tethered_notification_title">Doğrudan bağlantı veya ortak erişim noktası etkin</string>
     <string name="tethered_notification_message">Kurulum için dokunun.</string>
     <string name="back_button_label">Geri</string>
     <string name="next_button_label">İleri</string>
@@ -1260,12 +1260,6 @@ izin isteğinde bulunuldu."</string>
     <string name="default_audio_route_category_name">Sistem</string>
     <string name="bluetooth_a2dp_audio_route_name">Bluetooth ses</string>
     <string name="media_route_chooser_grouping_done">Tamamlandı</string>
-    <string name="wispr_login_success">Oturum açma başarılı</string>
-    <string name="wispr_login_failed">Oturum açma başarısız</string>
-    <string name="wispr_login_header">AT&amp;T Kablosuz Hizmet Noktası Durumu</string>
-    <string name="wispr_login_failed_credential">"Uygun olup olmadığınız belirlenemiyor, lütfen 1-800-331-0500'dan Müşteri Hizmetleri'ni arayın"</string>
-    <string name="wispr_login_failed_network">Kimlik Doğrulama Başarısız</string>
-    <string name="wispr_insert_sim">"Uygun olup olmadığınız belirlenemiyor, lütfen 1-800-331-0500'dan Müşteri Hizmetleri'ni arayın"</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1296,17 +1290,17 @@ izin isteğinde bulunuldu."</string>
     <string name="tether_authen_error_notification_message">Etkinleştirmek için att.com/mywireless adresine gidin veya 611 çevirin</string>
     <string name="tether_connect_error_notification_title">USB bağlantısı hatası</string>
     <string name="tether_connect_error_notification_message">USB kablosunu yeniden takın ve tekrar deneyin</string>
-    <string name="wifi_authen_check_notification_title">Mobil Hotspot doğrulanıyor</string>
+    <string name="wifi_authen_check_notification_title">Mobil ortak erişim noktası doğrulanıyor</string>
     <string name="wifi_authen_check_notification_message">Hesap durumu doğrulanıyor</string>
-    <string name="wifi_connecting_notification_title">Mobil Hotspot açılıyor</string>
+    <string name="wifi_connecting_notification_title">Mobil ortak erişim noktası açılıyor</string>
     <string name="wifi_connecting_notification_message">Veri bağlantısı ayarlanıyor</string>
-    <string name="wifi_connected_notification_title">Mobil Hotspot bağlı</string>
+    <string name="wifi_connected_notification_title">Mobil ortak erişim noktası bağlı</string>
     <string name="wifi_connected_notification_message">Veri bağlantısı kuruldu</string>
-    <string name="wifi_authen_error_notification_title">Hesap Mobil Hotspot için ayarlanmamış</string>
+    <string name="wifi_authen_error_notification_title">Hesap mobil ortak erişim noktası için ayarlanmamış</string>
     <string name="wifi_authen_error_notification_message">Etkinleştirmek için att.com/mywireless adresine gidin veya 611 çevirin</string>
-    <string name="wifi_connect_error_notification_title">Mobil Hotspot hatası</string>
+    <string name="wifi_connect_error_notification_title">Mobil ortak erişim noktası hatası</string>
     <string name="wifi_connect_error_notification_message">Kablosuzu kapatın ve tekrar deneyin</string>
-    <string name="wifi_disconnect_notification_title">Mobil Hotspot bağlantısı kesildi</string>
+    <string name="wifi_disconnect_notification_title">Mobil ortak erişim noktası bağlantısı kesildi</string>
     <string name="bt_authen_check_notification_title">Bluetooth bağlantı paylaşımı doğrulanıyor</string>
     <string name="bt_authen_check_notification_message">Hesap durumu doğrulanıyor</string>
     <string name="bt_authen_success_notification_title">Hesap, Bluetooth Bağlantı Paylaşımı için ayarlandı</string>
@@ -1356,7 +1350,7 @@ izin isteğinde bulunuldu."</string>
     <string name="msg_disable_InternetSharing_notification">Internet paylaşımı devre dışı bırakıldı</string>
     <string name="msg_enable_InternetSharing_notification">Internet paylaşımı etkinleştirildi</string>
     <string name="policylab_allowinternetsharing">Internet paylaşımına izin ver</string>
-    <string name="policydesc_allowinternetsharing">Yöneticinin Internet paylaşımını etkinleştirmesine veya devre dışı bırakmasına izin verir.</string>
+    <string name="policydesc_allowinternetsharing">Yöneticinin Internet paylaşımını etkinleştirmesine veya devre dışı bırakmasına izin ver</string>
     <string name="msg_disable_NFC_notification">NFC devre dışı</string>
     <string name="msg_enable_NFC_notification">NFC etkin</string>
     <string name="policylab_allowNfc">"NFC'ye izin ver"</string>
@@ -1375,7 +1369,7 @@ izin isteğinde bulunuldu."</string>
     <string name="policydesc_allowSilentAppInstall">Yöneticinin uygulamaları sessizce yüklemesine izin ver</string>
     <string name="policylab_allowSilentAppUninstall">Uygulamaların kaldırılmasına izin ver</string>
     <string name="policydesc_allowSilentAppUninstall">Yöneticinin uygulamaları sessizce kaldırmasına izin ver</string>
-    <string name="wifi_ap_pbc_client_connect_title">"Bir cihaz hotspot'unuza bağlanmaya çalışıyor"</string>
+    <string name="wifi_ap_pbc_client_connect_title">Bir cihaz ortak erişim noktanıza bağlanmaya çalışıyor</string>
     <string name="wifi_ap_pbc_client_connect_text">Bağlanmak için tıklatın</string>
     <string name="wifi_p2p_go_creation_failed">Grup oluşturma başarısız</string>
     <string name="wifi_p2p_overlap_detected">Başka bir WPS oturumu algılandı. Lütfen birkaç dakika sonra tekrar deneyin.</string>
@@ -1398,14 +1392,7 @@ izin isteğinde bulunuldu."</string>
     <string name="password_recovery_dialog_title">Şifrenizi mi unuttunuz?</string>
     <string name="password_recovery_dialog_message">Lütfen Bİ departmanınıza başvurarak \"Kurtarma Şifresi\"ni isteyin. Bu şifreyi girmeniz, mevcut şifrenizi sıfırlamanızı ve yeni bir şifre tanımlamanızı sağlar.</string>
     <string name="lockscreen_charged_rmdunplug">Tamamen dolu. Enerji tasarrufu yapmak için şarj cihazını prizden çekin.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Network Extender</string>
-    <string name="moto_eritext_extended_network">Genişletilmiş Ağ</string>
-    <string name="moto_eritext_roaming">Dolaşım</string>
     <string name="storage_usb_disk">USB diski</string>
-    <string name="sim_pin_technical_problem">Bir teknik sorun ortaya çıktı. Lütfen yeniden deneyin.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Yeni PIN Kodunu doğrula</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">%d saniye sonra yeniden deneyin.</string>
     <string name="msg_disable_consumer_email_notification">Tüketici E-postası devre dışı bırakıldı.</string>
     <string name="msg_enable_consumer_email_notification">Tüketici E-postası etkinleştirildi.</string>
     <string name="msg_disable_browser_notification">Tarayıcı devre dışı bırakıldı.</string>
@@ -1424,5 +1411,4 @@ izin isteğinde bulunuldu."</string>
     <string name="msg_app_control_notification">Devre dışı bırakılan uygulamaların listesi güncellendi.</string>
     <string name="policylab_appcontrol">Uygulamaları devre dışı bırak</string>
     <string name="policydesc_appcontrol">Yöneticinin cihazdaki uygulamaları etkinleştirmesine ve devre dışı bırakmasına izin verir.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN Kilidi Açıldı</string>
 </resources>

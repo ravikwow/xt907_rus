@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/secured_lockscreen_status_side_margin"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/zz_moto_keyguard_bottom_land" />
-</LinearLayout>

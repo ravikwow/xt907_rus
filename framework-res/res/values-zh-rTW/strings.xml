@@ -333,8 +333,8 @@
     <string name="permdesc_processOutgoingCalls">允許應用程式處理撥出電話及更改撥打的號碼。這項權限可讓應用程式監控、轉接或阻止撥出的電話。</string>
     <string name="permlab_receiveSms">接收簡訊 (SMS)</string>
     <string name="permdesc_receiveSms">允許應用程式接收和處理簡訊。這項設定可讓應用程式監控傳送至您裝置的訊息，或在您閱讀訊息前擅自刪除訊息。</string>
-    <string name="permlab_receiveMms">接收簡訊 (多媒體訊息)</string>
-    <string name="permdesc_receiveMms">允許應用程式接收和處理多媒體訊息。這項設定可讓應用程式監控傳送至您裝置的訊息，或在您閱讀訊息前擅自刪除訊息。</string>
+    <string name="permlab_receiveMms">接收簡訊 (MMS)</string>
+    <string name="permdesc_receiveMms">允許應用程式接收和處理 MMS 訊息。這項設定可讓應用程式監控傳送至您裝置的訊息，或在您閱讀訊息前擅自刪除訊息。</string>
     <string name="permlab_receiveEmergencyBroadcast">接收緊急廣播</string>
     <string name="permdesc_receiveEmergencyBroadcast">允許應用程式接收及處理緊急廣播訊息，只有系統應用程式可以具備這項權限。</string>
     <string name="permlab_readCellBroadcasts">讀取區域廣播訊息</string>
@@ -343,9 +343,9 @@
     <string name="permdesc_sendSms">允許應用程式傳送簡訊，但可能產生非預期的費用。惡意應用程式可能利用此功能擅自傳送簡訊，增加您不必要的額外支出。</string>
     <string name="permlab_sendSmsNoConfirmation">不需經過確認即傳送 SMS 訊息</string>
     <string name="permdesc_sendSmsNoConfirmation">允許應用程式傳送簡訊，但可能產生非預期的費用。惡意應用程式可能利用此功能擅自傳送簡訊，增加您不必要的額外支出。</string>
-    <string name="permlab_readSms">讀取您的簡訊 (SMS 或多媒體訊息)</string>
+    <string name="permlab_readSms">讀取您的簡訊 (SMS 或 MMS)</string>
     <string name="permdesc_readSms">允許應用程式讀取手機或 SIM 卡上儲存的簡訊。這項權限可讓應用程式讀取所有簡訊，包括各種內容及機密簡訊。</string>
-    <string name="permlab_writeSms">編輯簡訊 (SMS 或多媒體訊息)</string>
+    <string name="permlab_writeSms">編輯簡訊 (SMS 或 MMS)</string>
     <string name="permdesc_writeSms">允許應用程式寫入手機或 SIM 卡中儲存的 SMS 簡訊。請注意，惡意應用程式可能利用此功能刪除您的簡訊。</string>
     <string name="permlab_receiveWapPush">接收簡訊 (WAP)</string>
     <string name="permdesc_receiveWapPush">允許應用程式接收和處理 WAP 訊息。這項權限也能讓應用程式監控訊息，或在您閱讀訊息前擅自刪除訊息。</string>
@@ -388,7 +388,7 @@
     <string name="permlab_broadcastSmsReceived">傳送已接收 SMS 廣播</string>
     <string name="permdesc_broadcastSmsReceived">允許應用程式在收到 SMS 簡訊時發出通知。請注意，惡意應用程式可能利用此功能偽造外來的 SMS 簡訊。</string>
     <string name="permlab_broadcastWapPush">送出「WAP PUSH 已接收」廣播</string>
-    <string name="permdesc_broadcastWapPush">允許應用程式在收到 WAP PUSH 訊息時發送通知。請注意，惡意應用程式可能利用此功能偽造多媒體訊息回條，或私自將網頁內容更換為惡意陷阱。</string>
+    <string name="permdesc_broadcastWapPush">允許應用程式在收到 WAP PUSH 訊息時發送通知。請注意，惡意應用程式可能利用此功能偽造 MMS 簡訊回條，或私自將網頁內容更換為惡意陷阱。</string>
     <string name="permlab_setProcessLimit">執行程序限制數</string>
     <string name="permdesc_setProcessLimit">允許應用程式控制可執行程序的數量上限 (一般應用程式不需使用)。</string>
     <string name="permlab_setAlwaysFinish">強制關閉背景應用程式</string>
@@ -674,7 +674,7 @@
     <string name="phoneTypeMain">代表號</string>
     <string name="phoneTypeOtherFax">其他傳真</string>
     <string name="phoneTypeRadio">無線電</string>
-    <string name="phoneTypeTelex">電報</string>
+    <string name="phoneTypeTelex">Telex</string>
     <string name="phoneTypeTtyTdd">TTY/TDD</string>
     <string name="phoneTypeWorkMobile">公司行動電話</string>
     <string name="phoneTypeWorkPager">公司呼叫器</string>
@@ -760,7 +760,7 @@
     <string name="lockscreen_charged">充電完成。</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">請連接充電器。</string>
-    <string name="lockscreen_missing_sim_message_short">沒有 SIM 卡</string>
+    <string name="lockscreen_missing_sim_message_short">"沒有 SIM  卡。"</string>
     <string name="lockscreen_missing_sim_message">手機未插入 SIM 卡。</string>
     <string name="lockscreen_missing_sim_instructions">插入 SIM 卡。</string>
     <string name="lockscreen_missing_sim_instructions_long">找不到或無法讀取 SIM 卡。請插入 SIM 卡。</string>
@@ -776,12 +776,12 @@
     <string name="lockscreen_sim_error_message_short">無效的名片。</string>
     <string name="lockscreen_sim_error_message">SIM 卡無效。</string>
     <string name="lockscreen_network_locked_message">網路已鎖定</string>
-    <string name="lockscreen_perso_locked_message">SIM 已由 Perso 鎖定</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM 已由 Perso 鎖定</string>
     <string name="lockscreen_sim_puk_locked_message">SIM 的 PUK 已鎖定。</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN1 已封鎖。輸入 PUK1 碼。
 或者
 請參閱《使用者指南》/聯絡客戶服務中心。"</string>
-    <string name="lockscreen_sim_locked_message">SIM 卡已鎖定</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM 卡已鎖定。</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">解鎖 SIM 卡中...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"您的解鎖圖形已畫錯 %d 次。
 
@@ -825,8 +825,8 @@
     <string name="granularity_label_word">字詞</string>
     <string name="granularity_label_link">連結</string>
     <string name="granularity_label_line">行</string>
-    <string name="hour_ampm" formatted="false">%P %-l:00</string>
-    <string name="hour_cap_ampm" formatted="false">%p %-l:00</string>
+    <string name="hour_ampm" formatted="false">%-l%P</string>
+    <string name="hour_cap_ampm" formatted="false">%-l%p</string>
     <string name="factorytest_failed">出廠測試失敗</string>
     <string name="factorytest_not_system">只有安裝在 /system/app 裡的程式才能支援 FACTORY_TEST 操作。</string>
     <string name="factorytest_no_action">找不到提供 FACTORY_TEST 的程式。</string>
@@ -1260,12 +1260,6 @@
     <string name="default_audio_route_category_name">系統</string>
     <string name="bluetooth_a2dp_audio_route_name">藍牙音訊</string>
     <string name="media_route_chooser_grouping_done">完成</string>
-    <string name="wispr_login_success">登入成功</string>
-    <string name="wispr_login_failed">登入失敗</string>
-    <string name="wispr_login_header">AT&amp;T Wi-Fi 熱點狀態</string>
-    <string name="wispr_login_failed_credential">無法確認資格，請致電客戶服務中心：1-800-331-0500</string>
-    <string name="wispr_login_failed_network">驗證失敗</string>
-    <string name="wispr_insert_sim">無法確認資格，請致電客戶服務中心：1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%b</string>
     <string name="dt_year_format">%Y</string>
@@ -1397,14 +1391,7 @@
     <string name="password_recovery_dialog_title">忘記密碼？</string>
     <string name="password_recovery_dialog_message">請聯繫您的IT部門要求\"恢復密碼\"。輸入該密碼後即可重置新密碼。</string>
     <string name="lockscreen_charged_rmdunplug">充電完成。請將充電器從插座上拔出以節約能源。</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">網路延伸器</string>
-    <string name="moto_eritext_extended_network">延伸的網路</string>
-    <string name="moto_eritext_roaming">漫遊</string>
     <string name="storage_usb_disk">USB 磁碟</string>
-    <string name="sim_pin_technical_problem">" 發生技術問題。 請再試一次。 "</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">確認新 PIN 碼</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">請在 %d 秒後再試一次。</string>
     <string name="msg_disable_consumer_email_notification">已停用消費者電子郵件。</string>
     <string name="msg_enable_consumer_email_notification">已啟用消費者電子郵件。</string>
     <string name="msg_disable_browser_notification">已停用瀏覽器。</string>
@@ -1423,5 +1410,4 @@
     <string name="msg_app_control_notification">停用的應用程式清單已更新。</string>
     <string name="policylab_appcontrol">停用應用程式</string>
     <string name="policydesc_appcontrol">允許管理員啟用或停用裝置中的應用程式。</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN 碼已解鎖 </string>
 </resources>

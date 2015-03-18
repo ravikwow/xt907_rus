@@ -17,12 +17,12 @@
     <string name="invalid_charger">"O carregamento via USB não é suportado.
 Use apenas o carregador fornecido."</string>
     <string name="battery_low_why">Uso da bateria</string>
-    <string name="status_bar_settings_settings_button">Configurar</string>
+    <string name="status_bar_settings_settings_button">Configurações</string>
     <string name="status_bar_settings_wifi_button">Wi-Fi</string>
     <string name="status_bar_settings_airplane">Modo avião</string>
     <string name="status_bar_settings_auto_rotation">Rotação automática</string>
     <string name="status_bar_settings_mute_label">MUDO</string>
-    <string name="status_bar_settings_auto_brightness_label">AUTOMÁTICO</string>
+    <string name="status_bar_settings_auto_brightness_label">AUTO</string>
     <string name="status_bar_settings_notifications">Notificar</string>
     <string name="bluetooth_tethered">Bluetooth conectado</string>
     <string name="status_bar_input_method_settings_configure_input_methods">Definir métodos de entrada</string>
@@ -40,8 +40,8 @@ Use apenas o carregador fornecido."</string>
     <string name="compat_mode_off">Expandir para preencher a tela.</string>
     <string name="compat_mode_help_header">Zoom de compatibilidade</string>
     <string name="compat_mode_help_body">Quando um aplicativo é desenvolvido para uma tela menor, o controle do zoom aparecerá próximo ao relógio.</string>
-    <string name="screenshot_saving_ticker">Salvando captura de tela...</string>
-    <string name="screenshot_saving_title">Salvando captura de tela...</string>
+    <string name="screenshot_saving_ticker">Salvar captura de tela...</string>
+    <string name="screenshot_saving_title">Salvar captura de tela...</string>
     <string name="screenshot_saving_text">A captura de tela está sendo salva.</string>
     <string name="screenshot_saved_title">Captura de tela obtida.</string>
     <string name="screenshot_saved_text">Toque para visualizar a captura de tela.</string>
@@ -52,7 +52,7 @@ Use apenas o carregador fornecido."</string>
     <string name="use_ptp_button_title">Montar como uma câmera (PTP)</string>
     <string name="installer_cd_button_title">Instalar aplicativo de transferência de arquivos Android para Mac</string>
     <string name="accessibility_back">Voltar</string>
-    <string name="accessibility_home">Tela inicial</string>
+    <string name="accessibility_home">Página inicial</string>
     <string name="accessibility_menu">Menu</string>
     <string name="accessibility_recent">Aplicativos recentes</string>
     <string name="accessibility_ime_switch_button">Alterar botão do método de entrada.</string>

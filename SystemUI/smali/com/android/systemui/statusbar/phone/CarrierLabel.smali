@@ -92,9 +92,9 @@
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/CarrierLabel;->isONSSupported:Z
 
     .line 91
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/CarrierLabel;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f09001b
+    const v1, 0x7f0a001b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f060003
+    const v1, 0x7f070003
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -250,7 +250,7 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -258,7 +258,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getHandler()Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
     move-result-object v4
 
@@ -283,7 +283,7 @@
     if-eqz v0, :cond_0
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -326,7 +326,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 176
     :cond_0
@@ -563,7 +563,7 @@
     .line 364
     .end local v2    # "i":I
     :cond_1
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
 
@@ -575,7 +575,7 @@
 
     .line 378
     .local v12, "spn_priority":Z
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
 
@@ -587,7 +587,7 @@
 
     .line 380
     .local v9, "show_expanded":Z
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
 
@@ -599,7 +599,7 @@
 
     .line 382
     .local v8, "show_both_plmn_and_spn_in_expanded":Z
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->getContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v14
 
@@ -701,7 +701,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v14, v15}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
     .line 418
     move-object/from16 v0, p0
@@ -748,7 +748,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v14, v15}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
     .line 433
     move-object/from16 v0, p0
@@ -773,7 +773,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v14, v15}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
     .line 446
     move-object/from16 v0, p0
@@ -805,7 +805,7 @@
 
     const/16 v15, 0x8
 
-    invoke-virtual {v14, v15}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v14, v15}, Landroid/view/View;->setVisibility(I)V
 
     .line 460
     :cond_5
@@ -910,7 +910,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v14}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v14}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 557
     if-nez v11, :cond_f
@@ -942,7 +942,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v14}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->setText(I)V
+    invoke-virtual {v0, v14}, Landroid/widget/TextView;->setText(I)V
 
     .line 600
     :cond_f
@@ -1010,7 +1010,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v14}, Lcom/android/systemui/statusbar/phone/CarrierLabel;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v14}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_4
 .end method

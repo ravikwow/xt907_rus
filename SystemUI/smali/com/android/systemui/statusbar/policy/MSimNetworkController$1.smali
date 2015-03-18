@@ -53,7 +53,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v2, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -78,7 +78,7 @@
     .line 355
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$300(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)Z
@@ -90,7 +90,7 @@
     .line 356
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateTelephonySignalStrength(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -98,7 +98,7 @@
     .line 357
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
@@ -125,7 +125,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v2, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -152,14 +152,14 @@
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataActivity:[I
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     aput p1, v0, v1
 
     .line 381
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$200(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -167,7 +167,7 @@
     .line 382
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
@@ -194,7 +194,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v2, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -239,7 +239,7 @@
     .line 369
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataNetType(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$100(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -247,7 +247,7 @@
     .line 370
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$200(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -255,7 +255,7 @@
     .line 371
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
@@ -281,7 +281,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v2, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -312,14 +312,14 @@
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     aput-object p1, v0, v1
 
     .line 342
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateTelephonySignalStrength(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -327,7 +327,7 @@
     .line 343
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataNetType(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$100(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -335,7 +335,7 @@
     .line 344
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$200(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -343,7 +343,7 @@
     .line 345
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
@@ -369,7 +369,7 @@
 
     move-result-object v0
 
-    iget v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v2, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -405,14 +405,14 @@
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimSignalStrength:[Landroid/telephony/SignalStrength;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     aput-object p1, v0, v1
 
     .line 331
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateTelephonySignalStrength(I)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;I)V
@@ -420,7 +420,7 @@
     .line 332
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->mSubscription:I
+    iget v1, p0, Landroid/telephony/PhoneStateListener;->mSubscription:I
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 

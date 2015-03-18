@@ -29,7 +29,7 @@
     .line 157
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel$2;->this$0:Lcom/android/systemui/statusbar/tablet/NotificationPanel;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .line 160
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel$2;->this$0:Lcom/android/systemui/statusbar/tablet/NotificationPanel;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 

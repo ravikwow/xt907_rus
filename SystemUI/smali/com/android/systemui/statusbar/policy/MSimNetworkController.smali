@@ -264,7 +264,7 @@
     .line 162
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
 
-    const v3, 0x7f02009c
+    const v3, 0x7f02009b
 
     aput v3, v2, v0
 
@@ -618,32 +618,32 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 451
+    .line 447
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
     aget-object v0, v2, p1
 
-    .line 452
+    .line 448
     .local v0, "ss":Landroid/telephony/ServiceState;
     if-eqz v0, :cond_0
 
-    .line 453
+    .line 449
     invoke-virtual {v0}, Landroid/telephony/ServiceState;->getState()I
 
     move-result v2
 
     packed-switch v2, :pswitch_data_0
 
-    .line 458
+    .line 454
     :pswitch_0
     const/4 v1, 0x1
 
-    .line 461
+    .line 457
     :cond_0
     :pswitch_1
     return v1
 
-    .line 453
+    .line 449
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -657,7 +657,7 @@
     .param p1, "subscription"    # I
 
     .prologue
-    .line 446
+    .line 442
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimSignalStrength:[Landroid/telephony/SignalStrength;
 
     aget-object v0, v0, p1
@@ -698,7 +698,7 @@
 
     const/4 v8, 0x2
 
-    .line 673
+    .line 669
     const-string v5, "StatusBar.MSimNetworkController"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -721,14 +721,14 @@
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 674
+    .line 670
     const/4 v1, 0x0
 
-    .line 675
+    .line 671
     .local v1, "iconId":I
     const/4 v4, 0x1
 
-    .line 676
+    .line 672
     .local v4, "visible":Z
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
@@ -742,7 +742,7 @@
 
     move-result v0
 
-    .line 678
+    .line 674
     .local v0, "dataSub":I
     const-string v5, "StatusBar.MSimNetworkController"
 
@@ -766,21 +766,21 @@
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 680
+    .line 676
     if-eq p1, v0, :cond_0
 
-    .line 681
+    .line 677
     const-string v5, "StatusBar.MSimNetworkController"
 
     const-string v6, "updateDataIcon return"
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 756
+    .line 752
     :goto_0
     return-void
 
-    .line 685
+    .line 681
     :cond_0
     const-string v5, "StatusBar.MSimNetworkController"
 
@@ -808,21 +808,21 @@
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 686
+    .line 682
     iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataNetType:I
 
     if-nez v5, :cond_1
 
-    .line 688
+    .line 684
     const/4 v4, 0x0
 
-    .line 744
+    .line 740
     :goto_1
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 746
+    .line 742
     .local v2, "ident":J
     :try_start_0
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBatteryStats:Lcom/android/internal/app/IBatteryStats;
@@ -838,21 +838,21 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 750
+    .line 746
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 753
+    .line 749
     :goto_2
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
 
     aput v1, v5, p1
 
-    .line 754
+    .line 750
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataConnected:[Z
 
     aput-boolean v4, v5, p1
 
-    .line 755
+    .line 751
     const-string v5, "StatusBar.MSimNetworkController"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -881,7 +881,7 @@
 
     goto :goto_0
 
-    .line 689
+    .line 685
     .end local v2    # "ident":J
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
@@ -890,7 +890,7 @@
 
     if-nez v5, :cond_5
 
-    .line 690
+    .line 686
     const-string v5, "StatusBar.MSimNetworkController"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -917,7 +917,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 692
+    .line 688
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimState:[Lcom/android/internal/telephony/IccCard$State;
 
     aget-object v5, v5, p1
@@ -934,25 +934,25 @@
 
     if-ne v5, v6, :cond_4
 
-    .line 694
+    .line 690
     :cond_2
     iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataState:I
 
     if-ne v5, v8, :cond_3
 
-    .line 695
+    .line 691
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataActivity:[I
 
     aget v5, v5, p1
 
     packed-switch v5, :pswitch_data_0
 
-    .line 706
+    .line 702
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v9
 
-    .line 709
+    .line 705
     :goto_3
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
 
@@ -960,43 +960,43 @@
 
     goto :goto_1
 
-    .line 697
+    .line 693
     :pswitch_0
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v10
 
-    .line 698
+    .line 694
     goto :goto_3
 
-    .line 700
+    .line 696
     :pswitch_1
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v8
 
-    .line 701
+    .line 697
     goto :goto_3
 
-    .line 703
+    .line 699
     :pswitch_2
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v11
 
-    .line 704
+    .line 700
     goto :goto_3
 
-    .line 711
+    .line 707
     :cond_3
     const/4 v1, 0x0
 
-    .line 712
+    .line 708
     const/4 v4, 0x0
 
     goto/16 :goto_1
 
-    .line 715
+    .line 711
     :cond_4
     const-string v5, "StatusBar.MSimNetworkController"
 
@@ -1004,77 +1004,77 @@
 
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 716
-    const v1, 0x7f020088
+    .line 712
+    const v1, 0x7f020087
 
-    .line 717
+    .line 713
     const/4 v4, 0x0
 
     goto/16 :goto_1
 
-    .line 721
+    .line 717
     :cond_5
     iget v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataState:I
 
     if-ne v5, v8, :cond_6
 
-    .line 722
+    .line 718
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataActivity:[I
 
     aget v5, v5, p1
 
     packed-switch v5, :pswitch_data_1
 
-    .line 734
+    .line 730
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v9
 
-    .line 735
+    .line 731
     goto/16 :goto_1
 
-    .line 724
+    .line 720
     :pswitch_3
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v10
 
-    .line 725
+    .line 721
     goto/16 :goto_1
 
-    .line 727
+    .line 723
     :pswitch_4
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v8
 
-    .line 728
+    .line 724
     goto/16 :goto_1
 
-    .line 730
+    .line 726
     :pswitch_5
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
     aget v1, v5, v11
 
-    .line 731
+    .line 727
     goto/16 :goto_1
 
-    .line 738
+    .line 734
     :cond_6
     const/4 v1, 0x0
 
-    .line 739
+    .line 735
     const/4 v4, 0x0
 
     goto/16 :goto_1
 
-    .line 748
+    .line 744
     .restart local v2    # "ident":J
     :catch_0
     move-exception v5
 
-    .line 750
+    .line 746
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     goto/16 :goto_2
@@ -1086,7 +1086,7 @@
 
     throw v5
 
-    .line 695
+    .line 691
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1094,7 +1094,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 722
+    .line 718
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_3
@@ -1114,11 +1114,11 @@
 
     const/4 v5, 0x0
 
-    const v4, 0x7f09005a
+    const v4, 0x7f0a005a
 
     const v3, 0x7f02006f
 
-    .line 519
+    .line 515
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mIsWimaxEnabled:Z
 
     if-eqz v0, :cond_1
@@ -1127,7 +1127,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 522
+    .line 518
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_4G:[[I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
@@ -1136,17 +1136,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 523
+    .line 519
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v7, v0, p1
 
-    .line 524
+    .line 520
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005c
+    const v2, 0x7f0a005c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1154,7 +1154,7 @@
 
     aput-object v1, v0, p1
 
-    .line 637
+    .line 633
     :goto_0
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
 
@@ -1162,26 +1162,26 @@
 
     if-eqz v0, :cond_6
 
-    .line 638
+    .line 634
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdmaEri(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 639
+    .line 635
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     const v1, 0x7f020074
 
     aput v1, v0, p1
 
-    .line 644
+    .line 640
     :cond_0
     :goto_1
     return-void
 
-    .line 527
+    .line 523
     :cond_1
     const-string v0, "StatusBar.MSimNetworkController"
 
@@ -1217,12 +1217,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 529
+    .line 525
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataNetType:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 629
+    .line 625
     :pswitch_0
     const-string v0, "StatusBar.MSimNetworkController"
 
@@ -1248,17 +1248,17 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 631
+    .line 627
     iput v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataNetType:I
 
-    .line 632
+    .line 628
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v5, v0, p1
 
     goto :goto_0
 
-    .line 532
+    .line 528
     :pswitch_1
     const-string v0, "StatusBar.MSimNetworkController"
 
@@ -1266,12 +1266,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 534
+    .line 530
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mShowAtLeastThreeGees:Z
 
     if-nez v0, :cond_2
 
-    .line 536
+    .line 532
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_G:[[I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
@@ -1280,17 +1280,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 537
+    .line 533
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v5, v0, p1
 
-    .line 538
+    .line 534
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f090059
+    const v2, 0x7f0a0059
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1300,14 +1300,14 @@
 
     goto/16 :goto_0
 
-    .line 545
+    .line 541
     :cond_2
     :pswitch_2
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mShowAtLeastThreeGees:Z
 
     if-nez v0, :cond_3
 
-    .line 547
+    .line 543
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_E:[[I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
@@ -1316,19 +1316,19 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 548
+    .line 544
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     const v1, 0x7f020071
 
     aput v1, v0, p1
 
-    .line 549
+    .line 545
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005e
+    const v2, 0x7f0a005e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1338,7 +1338,7 @@
 
     goto/16 :goto_0
 
-    .line 557
+    .line 553
     :cond_3
     :pswitch_3
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_3G:[[I
@@ -1349,12 +1349,12 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 558
+    .line 554
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v3, v0, p1
 
-    .line 559
+    .line 555
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -1367,13 +1367,13 @@
 
     goto/16 :goto_0
 
-    .line 566
+    .line 562
     :pswitch_4
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHspaDataDistinguishable:Z
 
     if-eqz v0, :cond_4
 
-    .line 568
+    .line 564
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_H:[[I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
@@ -1382,19 +1382,19 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 569
+    .line 565
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     const v1, 0x7f020073
 
     aput v1, v0, p1
 
-    .line 570
+    .line 566
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005b
+    const v2, 0x7f0a005b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1404,7 +1404,7 @@
 
     goto/16 :goto_0
 
-    .line 574
+    .line 570
     :cond_4
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_3G:[[I
 
@@ -1414,12 +1414,12 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 575
+    .line 571
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v3, v0, p1
 
-    .line 576
+    .line 572
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -1432,7 +1432,7 @@
 
     goto/16 :goto_0
 
-    .line 583
+    .line 579
     :pswitch_5
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_1X:[[I
 
@@ -1442,17 +1442,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 584
+    .line 580
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v6, v0, p1
 
-    .line 585
+    .line 581
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005d
+    const v2, 0x7f0a005d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1462,7 +1462,7 @@
 
     goto/16 :goto_0
 
-    .line 590
+    .line 586
     :pswitch_6
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_1X:[[I
 
@@ -1472,17 +1472,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 591
+    .line 587
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v6, v0, p1
 
-    .line 592
+    .line 588
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005d
+    const v2, 0x7f0a005d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1492,7 +1492,7 @@
 
     goto/16 :goto_0
 
-    .line 600
+    .line 596
     :pswitch_7
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_3G:[[I
 
@@ -1502,12 +1502,12 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 601
+    .line 597
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v3, v0, p1
 
-    .line 602
+    .line 598
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -1520,7 +1520,7 @@
 
     goto/16 :goto_0
 
-    .line 607
+    .line 603
     :pswitch_8
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_4G:[[I
 
@@ -1530,17 +1530,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 608
+    .line 604
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v7, v0, p1
 
-    .line 609
+    .line 605
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f09005c
+    const v2, 0x7f0a005c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1550,13 +1550,13 @@
 
     goto/16 :goto_0
 
-    .line 613
+    .line 609
     :pswitch_9
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mShowAtLeastThreeGees:Z
 
     if-nez v0, :cond_5
 
-    .line 615
+    .line 611
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_G:[[I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
@@ -1565,19 +1565,19 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 616
+    .line 612
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     const v1, 0x7f020072
 
     aput v1, v0, p1
 
-    .line 617
+    .line 613
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f090059
+    const v2, 0x7f0a0059
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1587,7 +1587,7 @@
 
     goto/16 :goto_0
 
-    .line 621
+    .line 617
     :cond_5
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_3G:[[I
 
@@ -1597,12 +1597,12 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataIconList:[I
 
-    .line 622
+    .line 618
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v3, v0, p1
 
-    .line 623
+    .line 619
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -1615,7 +1615,7 @@
 
     goto/16 :goto_0
 
-    .line 641
+    .line 637
     :cond_6
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mPhone:Landroid/telephony/MSimTelephonyManager;
 
@@ -1625,7 +1625,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 642
+    .line 638
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     const v1, 0x7f020074
@@ -1634,7 +1634,7 @@
 
     goto/16 :goto_1
 
-    .line 529
+    .line 525
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -1661,7 +1661,7 @@
     .param p1, "cardIndex"    # I
 
     .prologue
-    .line 663
+    .line 659
     const-string v0, "StatusBar.MSimNetworkController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1698,7 +1698,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 664
+    .line 660
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimState:[Lcom/android/internal/telephony/IccCard$State;
 
     aget-object v0, v0, p1
@@ -1707,21 +1707,21 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 665
+    .line 661
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNoMSimIconId:[I
 
-    const v1, 0x7f020088
+    const v1, 0x7f020087
 
     aput v1, v0, p1
 
-    .line 669
+    .line 665
     :goto_0
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
-    .line 670
+    .line 666
     return-void
 
-    .line 667
+    .line 663
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNoMSimIconId:[I
 
@@ -1737,9 +1737,9 @@
     .param p1, "subscription"    # I
 
     .prologue
-    const v5, 0x7f02009c
+    const v5, 0x7f02009b
 
-    .line 466
+    .line 462
     const-string v2, "StatusBar.MSimNetworkController"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1762,7 +1762,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 467
+    .line 463
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->hasService(I)Z
 
     move-result v2
@@ -1775,28 +1775,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 469
+    .line 465
     const-string v2, "StatusBar.MSimNetworkController"
 
     const-string v3, " No service"
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 470
+    .line 466
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
 
     aput v5, v2, p1
 
-    .line 471
+    .line 467
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     aput v5, v2, p1
 
-    .line 516
+    .line 512
     :goto_0
     return-void
 
-    .line 473
+    .line 469
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimSignalStrength:[Landroid/telephony/SignalStrength;
 
@@ -1808,7 +1808,7 @@
 
     if-nez v2, :cond_2
 
-    .line 475
+    .line 471
     :cond_1
     const-string v2, "StatusBar.MSimNetworkController"
 
@@ -1850,17 +1850,17 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 479
+    .line 475
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
 
     aput v5, v2, p1
 
-    .line 480
+    .line 476
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     aput v5, v2, p1
 
-    .line 481
+    .line 477
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionPhoneSignal:[Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -1879,7 +1879,7 @@
 
     goto :goto_0
 
-    .line 486
+    .line 482
     :cond_2
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
 
@@ -1891,7 +1891,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 487
+    .line 483
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimSignalStrength:[Landroid/telephony/SignalStrength;
 
     aget-object v2, v2, p1
@@ -1903,7 +1903,7 @@
     .local v0, "iconLevel":I
     iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastSignalLevel:I
 
-    .line 488
+    .line 484
     const-string v2, "StatusBar.MSimNetworkController"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1964,7 +1964,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 498
+    .line 494
     :goto_1
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
 
@@ -1987,7 +1987,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 500
+    .line 496
     :cond_4
     sget-object v2, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_SIGNAL_STRENGTH_ROAMING:[[I
 
@@ -1995,7 +1995,7 @@
 
     aget-object v1, v2, v3
 
-    .line 505
+    .line 501
     .local v1, "iconList":[I
     :goto_2
     const-string v2, "StatusBar.MSimNetworkController"
@@ -2042,14 +2042,14 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 507
+    .line 503
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
 
     aget v3, v1, v0
 
     aput v3, v2, p1
 
-    .line 508
+    .line 504
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionPhoneSignal:[Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
@@ -2064,7 +2064,7 @@
 
     aput-object v3, v2, p1
 
-    .line 511
+    .line 507
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     sget-object v3, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_SIGNAL_STRENGTH:[[I
@@ -2079,7 +2079,7 @@
 
     goto/16 :goto_0
 
-    .line 493
+    .line 489
     .end local v0    # "iconLevel":I
     .end local v1    # "iconList":[I
     :cond_5
@@ -2096,7 +2096,7 @@
 
     goto :goto_1
 
-    .line 502
+    .line 498
     :cond_6
     sget-object v2, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_SIGNAL_STRENGTH:[[I
 
@@ -2191,12 +2191,12 @@
 
     const/4 v3, 0x0
 
-    .line 1240
+    .line 1236
     const-string v0, "NetworkController state:"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1241
+    .line 1237
     const-string v1, "  %s network type %d (%s)"
 
     const/4 v0, 0x3
@@ -2230,105 +2230,105 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1244
+    .line 1240
     const-string v0, "  - telephony ------"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1245
+    .line 1241
     const-string v0, "  hasService()="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1246
+    .line 1242
     invoke-direct {p0, p4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->hasService(I)Z
 
     move-result v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1247
+    .line 1243
     const-string v0, "  mHspaDataDistinguishable="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1248
+    .line 1244
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHspaDataDistinguishable:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1249
+    .line 1245
     const-string v0, "  mMSimDataConnected="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1250
+    .line 1246
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataConnected:[Z
 
     aget-boolean v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1251
+    .line 1247
     const-string v0, "  mMSimState="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1252
+    .line 1248
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimState:[Lcom/android/internal/telephony/IccCard$State;
 
     aget-object v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 1253
+    .line 1249
     const-string v0, "  mPhoneState="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1254
+    .line 1250
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPhoneState:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1255
+    .line 1251
     const-string v0, "  mDataState="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1256
+    .line 1252
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataState:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1257
+    .line 1253
     const-string v0, "  mMSimDataActivity="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1258
+    .line 1254
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataActivity:[I
 
     aget v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1259
+    .line 1255
     const-string v0, "  mDataNetType="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1260
+    .line 1256
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataNetType:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 1261
+    .line 1257
     const-string v0, "/"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1262
+    .line 1258
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataNetType:I
 
     invoke-static {v0}, Landroid/telephony/TelephonyManager;->getNetworkTypeName(I)Ljava/lang/String;
@@ -2337,68 +2337,68 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1263
+    .line 1259
     const-string v0, "  mMSimServiceState="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1264
+    .line 1260
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
     aget-object v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 1265
+    .line 1261
     const-string v0, "  mMSimSignalStrength="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1266
+    .line 1262
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimSignalStrength:[Landroid/telephony/SignalStrength;
 
     aget-object v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 1267
+    .line 1263
     const-string v0, "  mLastSignalLevel"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1268
+    .line 1264
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastSignalLevel:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1269
+    .line 1265
     const-string v0, "  mMSimNetworkName="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1270
+    .line 1266
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimNetworkName:[Ljava/lang/String;
 
     aget-object v0, v0, p4
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1271
+    .line 1267
     const-string v0, "  mNetworkNameDefault="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1272
+    .line 1268
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNetworkNameDefault:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1273
+    .line 1269
     const-string v0, "  mNetworkNameSeparator="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1274
+    .line 1270
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNetworkNameSeparator:Ljava/lang/String;
 
     const-string v1, "\n"
@@ -2411,13 +2411,45 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1275
+    .line 1271
     const-string v0, "  mMSimPhoneSignalIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1276
+    .line 1272
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
+
+    aget v0, v0, p4
+
+    invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1273
+    const-string v0, "/"
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1274
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
+
+    aget v0, v0, p4
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    .line 1275
+    const-string v0, "  mMSimDataDirectionIconId="
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1276
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
 
     aget v0, v0, p4
 
@@ -2433,23 +2465,23 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1278
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
 
     aget v0, v0, p4
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1279
-    const-string v0, "  mMSimDataDirectionIconId="
+    const-string v0, "  mMSimDataSignalIconId="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1280
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     aget v0, v0, p4
 
@@ -2465,23 +2497,23 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1282
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     aget v0, v0, p4
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1283
-    const-string v0, "  mMSimDataSignalIconId="
+    const-string v0, "  mMSimDataTypeIconId="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1284
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aget v0, v0, p4
 
@@ -2497,104 +2529,72 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1286
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aget v0, v0, p4
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    .line 1287
-    const-string v0, "  mMSimDataTypeIconId="
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1288
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
-
-    aget v0, v0, p4
-
-    invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 1289
-    const-string v0, "/"
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 1290
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
-
-    aget v0, v0, p4
-
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    .line 1292
     const-string v0, "  - wifi ------"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1293
+    .line 1289
     const-string v0, "  mWifiEnabled="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1294
+    .line 1290
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiEnabled:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1295
+    .line 1291
     const-string v0, "  mWifiConnected="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1296
+    .line 1292
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1297
+    .line 1293
     const-string v0, "  mWifiRssi="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1298
+    .line 1294
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiRssi:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1299
+    .line 1295
     const-string v0, "  mWifiLevel="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1300
+    .line 1296
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLevel:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1301
+    .line 1297
     const-string v0, "  mWifiSsid="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1302
+    .line 1298
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1303
+    .line 1299
     const-string v0, "  mWifiIconId=0x%08x/%s"
 
     new-array v1, v5, [Ljava/lang/Object;
@@ -2609,7 +2609,7 @@
 
     iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2621,27 +2621,27 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1305
+    .line 1301
     const-string v0, "  mWifiActivity="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1306
+    .line 1302
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1308
+    .line 1304
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1309
+    .line 1305
     const-string v0, "  - wimax ------"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1310
+    .line 1306
     const-string v0, "  mIsWimaxEnabled="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2650,7 +2650,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1311
+    .line 1307
     const-string v0, "  mWimaxConnected="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2659,7 +2659,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1312
+    .line 1308
     const-string v0, "  mWimaxIdle="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -2668,7 +2668,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1313
+    .line 1309
     const-string v0, "  mWimaxIconId=0x%08x/%s"
 
     new-array v1, v5, [Ljava/lang/Object;
@@ -2683,7 +2683,7 @@
 
     iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconId:I
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2695,7 +2695,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1315
+    .line 1311
     const-string v0, "  mWimaxSignal=%d"
 
     new-array v1, v4, [Ljava/lang/Object;
@@ -2714,7 +2714,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1316
+    .line 1312
     const-string v0, "  mWimaxState=%d"
 
     new-array v1, v4, [Ljava/lang/Object;
@@ -2733,7 +2733,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1317
+    .line 1313
     const-string v0, "  mWimaxExtraState=%d"
 
     new-array v1, v4, [Ljava/lang/Object;
@@ -2752,69 +2752,101 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1320
+    .line 1316
     :cond_0
     const-string v0, "  - Bluetooth ----"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1321
+    .line 1317
     const-string v0, "  mBtReverseTethered="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1322
+    .line 1318
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Z)V
 
-    .line 1325
+    .line 1321
     const-string v0, "  - connectivity ------"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1326
+    .line 1322
     const-string v0, "  mMobileInetCondition="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1327
+    .line 1323
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1328
+    .line 1324
     const-string v0, "  mWimaxInetCondition="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1329
+    .line 1325
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1330
+    .line 1326
     const-string v0, "  mWifiInetCondition="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1331
+    .line 1327
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 1334
+    .line 1330
     const-string v0, "  - icons ------"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1335
+    .line 1331
     const-string v0, "  mMSimLastPhoneSignalIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1336
+    .line 1332
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
+
+    aget v0, v0, p4
+
+    invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1333
+    const-string v0, "/"
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1334
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
+
+    aget v0, v0, p4
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    .line 1335
+    const-string v0, "  mMSimLastDataDirectionIconId=0x"
+
+    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
+
+    .line 1336
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
 
     aget v0, v0, p4
 
@@ -2830,25 +2862,23 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1338
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
 
     aget v0, v0, p4
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1339
-    const-string v0, "  mMSimLastDataDirectionIconId=0x"
+    const-string v0, "  mLastDataDirectionOverlayIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1340
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
-
-    aget v0, v0, p4
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -2862,23 +2892,21 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1342
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
 
-    aget v0, v0, p4
-
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1343
-    const-string v0, "  mLastDataDirectionOverlayIconId=0x"
+    const-string v0, "  mLastWifiIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1344
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -2892,21 +2920,23 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1346
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
+    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1347
-    const-string v0, "  mLastWifiIconId=0x"
+    const-string v0, "  mMSimLastCombinedSignalIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1348
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
+
+    aget v0, v0, p4
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -2920,21 +2950,23 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1350
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    aget v0, v0, p4
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1351
-    const-string v0, "  mMSimLastCombinedSignalIconId=0x"
+    const-string v0, "  mMSimLastDataTypeIconId=0x"
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1352
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
 
     aget v0, v0, p4
 
@@ -2950,67 +2982,35 @@
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 1354
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
+    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
 
     aget v0, v0, p4
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     .line 1355
-    const-string v0, "  mMSimLastDataTypeIconId=0x"
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 1356
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
-
-    aget v0, v0, p4
-
-    invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 1357
-    const-string v0, "/"
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 1358
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
-
-    aget v0, v0, p4
-
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    .line 1359
     const-string v0, "  mMSimLastCombinedLabel="
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1360
+    .line 1356
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastCombinedLabel:Ljava/lang/String;
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1361
+    .line 1357
     const-string v0, ""
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1362
+    .line 1358
     return-void
 
-    .line 1241
+    .line 1237
     :cond_1
     const-string v0, "DISCONNECTED"
 
@@ -3024,7 +3024,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 647
+    .line 643
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
     aget-object v3, v3, p1
@@ -3043,7 +3043,7 @@
 
     if-nez v3, :cond_2
 
-    .line 650
+    .line 646
     :cond_0
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
@@ -3053,11 +3053,11 @@
 
     move-result v0
 
-    .line 651
+    .line 647
     .local v0, "iconIndex":I
     if-eq v0, v2, :cond_2
 
-    .line 652
+    .line 648
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimServiceState:[Landroid/telephony/ServiceState;
 
     aget-object v3, v3, p1
@@ -3066,13 +3066,13 @@
 
     move-result v1
 
-    .line 653
+    .line 649
     .local v1, "iconMode":I
     if-eqz v1, :cond_1
 
     if-ne v1, v2, :cond_2
 
-    .line 659
+    .line 655
     .end local v0    # "iconIndex":I
     .end local v1    # "iconMode":I
     :cond_1
@@ -3126,7 +3126,7 @@
 
     .line 288
     :cond_0
-    invoke-virtual {p0, p2}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateWifiState(Landroid/content/Intent;)V
+    invoke-virtual {p0, p2}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateWifiState(Landroid/content/Intent;)V
 
     .line 289
     iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
@@ -3296,7 +3296,7 @@
     if-eqz v0, :cond_8
 
     .line 309
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateAirplaneMode()V
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateAirplaneMode()V
 
     .line 310
     iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
@@ -3333,7 +3333,7 @@
 
     .line 314
     :cond_9
-    invoke-virtual {p0, p2}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateWimaxState(Landroid/content/Intent;)V
+    invoke-virtual {p0, p2}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateWimaxState(Landroid/content/Intent;)V
 
     .line 315
     iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
@@ -3530,25 +3530,25 @@
     .prologue
     const v10, 0x7f020074
 
-    const v9, 0x7f090073
+    const v9, 0x7f0a0073
 
     const/16 v8, 0x8
 
     const/4 v4, 0x0
 
-    .line 879
+    .line 875
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    .line 881
+    .line 877
     const-string v1, ""
 
-    .line 882
+    .line 878
     const-string v0, ""
 
-    .line 883
+    .line 879
     const-string v0, ""
 
-    .line 885
+    .line 881
     const-string v0, "StatusBar.MSimNetworkController"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3585,7 +3585,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 887
+    .line 883
     const-string v0, "StatusBar.MSimNetworkController"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3612,12 +3612,12 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 888
+    .line 884
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHasMobileDataFeature:Z
 
     if-nez v0, :cond_5
 
-    .line 889
+    .line 885
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
@@ -3626,32 +3626,32 @@
 
     aput v4, v0, p1
 
-    .line 890
+    .line 886
     const-string v0, ""
 
-    .line 940
+    .line 936
     :cond_0
     :goto_0
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v2, :cond_a
 
-    .line 941
+    .line 937
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
     if-nez v1, :cond_9
 
-    .line 942
-    const v1, 0x7f090074
+    .line 938
+    const v1, 0x7f0a0074
 
     invoke-virtual {v5, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 944
+    .line 940
     iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
-    .line 966
+    .line 962
     :goto_1
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedActivityIconId:[I
 
@@ -3659,14 +3659,14 @@
 
     aput v3, v2, p1
 
-    .line 968
+    .line 964
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     aput v3, v2, p1
 
-    .line 969
+    .line 965
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
@@ -3675,34 +3675,34 @@
 
     move-object v2, v1
 
-    .line 979
+    .line 975
     :goto_2
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     if-eqz v3, :cond_1
 
-    .line 980
+    .line 976
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f09001c
+    const v3, 0x7f0a001c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 981
+    .line 977
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherIconId:I
 
     aput v6, v3, p1
 
-    .line 982
+    .line 978
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f090061
+    const v7, 0x7f0a0061
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3710,7 +3710,7 @@
 
     aput-object v6, v3, p1
 
-    .line 986
+    .line 982
     :cond_1
     iget v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
 
@@ -3720,14 +3720,14 @@
 
     const/4 v3, 0x1
 
-    .line 988
+    .line 984
     :goto_3
     if-eqz v3, :cond_2
 
-    .line 990
+    .line 986
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkTypeName:Ljava/lang/String;
 
-    .line 993
+    .line 989
     :cond_2
     iget-boolean v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
@@ -3755,13 +3755,13 @@
 
     if-nez v6, :cond_f
 
-    .line 999
+    .line 995
     :cond_3
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionPhoneSignal:[Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f090062
+    const v7, 0x7f0a0062
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3769,12 +3769,12 @@
 
     aput-object v6, v3, p1
 
-    .line 1001
-    const v3, 0x7f020099
+    .line 997
+    const v3, 0x7f020098
 
     iput v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneIconId:I
 
-    .line 1002
+    .line 998
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
 
     iget-object v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
@@ -3787,31 +3787,31 @@
 
     aput v4, v3, p1
 
-    .line 1004
+    .line 1000
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNoMSimIconId:[I
 
     aput v4, v3, p1
 
-    .line 1007
+    .line 1003
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiConnected:Z
 
     if-eqz v3, :cond_d
 
-    .line 1009
+    .line 1005
     const-string v0, ""
 
-    .line 1023
+    .line 1019
     :goto_4
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v4, v3, p1
 
-    .line 1024
+    .line 1020
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNoMSimIconId:[I
 
     aput v4, v3, p1
 
-    .line 1026
+    .line 1022
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
@@ -3824,7 +3824,7 @@
 
     move-object v2, v0
 
-    .line 1050
+    .line 1046
     :goto_5
     const-string v5, "StatusBar.MSimNetworkController"
 
@@ -3909,7 +3909,7 @@
 
     aget v6, v6, p1
 
-    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->getResourceName(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/policy/NetworkController;->getResourceName(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -4089,7 +4089,7 @@
 
     invoke-static {v5, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1076
+    .line 1072
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
 
     aget v0, v0, p1
@@ -4146,7 +4146,7 @@
 
     if-eq v0, v5, :cond_17
 
-    .line 1085
+    .line 1081
     :cond_4
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mSimSignalClusters:Ljava/util/ArrayList;
 
@@ -4167,12 +4167,12 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;
 
-    .line 1086
+    .line 1082
     invoke-virtual {p0, v0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshSignalCluster(Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;I)V
 
     goto :goto_9
 
-    .line 900
+    .line 896
     :cond_5
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataConnected:[Z
 
@@ -4180,12 +4180,12 @@
 
     if-eqz v0, :cond_6
 
-    .line 901
+    .line 897
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimNetworkName:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
-    .line 914
+    .line 910
     :goto_a
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataConnected:[Z
 
@@ -4193,7 +4193,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 915
+    .line 911
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
@@ -4202,19 +4202,19 @@
 
     aput v2, v1, p1
 
-    .line 916
+    .line 912
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataActivity:[I
 
     aget v1, v1, p1
 
     packed-switch v1, :pswitch_data_0
 
-    .line 927
+    .line 923
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
 
     aput v4, v1, p1
 
-    .line 932
+    .line 928
     :goto_b
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedActivityIconId:[I
 
@@ -4224,7 +4224,7 @@
 
     aput v2, v1, p1
 
-    .line 934
+    .line 930
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
@@ -4233,7 +4233,7 @@
 
     aput v2, v1, p1
 
-    .line 935
+    .line 931
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
@@ -4246,33 +4246,33 @@
 
     goto/16 :goto_0
 
-    .line 902
+    .line 898
     :cond_6
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnected:Z
 
     if-eqz v0, :cond_8
 
-    .line 903
+    .line 899
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->hasService(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    .line 904
+    .line 900
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimNetworkName:[Ljava/lang/String;
 
     aget-object v0, v0, p1
 
     goto :goto_a
 
-    .line 906
+    .line 902
     :cond_7
     const-string v0, ""
 
     goto :goto_a
 
-    .line 909
+    .line 905
     :cond_8
     invoke-virtual {v5, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4280,8 +4280,28 @@
 
     goto :goto_a
 
-    .line 918
+    .line 914
     :pswitch_0
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
+
+    const v2, 0x7f020099
+
+    aput v2, v1, p1
+
+    goto :goto_b
+
+    .line 917
+    :pswitch_1
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
+
+    const v2, 0x7f02009c
+
+    aput v2, v1, p1
+
+    goto :goto_b
+
+    .line 920
+    :pswitch_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
 
     const v2, 0x7f02009a
@@ -4290,31 +4310,11 @@
 
     goto :goto_b
 
-    .line 921
-    :pswitch_1
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
-
-    const v2, 0x7f02009d
-
-    aput v2, v1, p1
-
-    goto :goto_b
-
-    .line 924
-    :pswitch_2
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimMobileActivityIconId:[I
-
-    const v2, 0x7f02009b
-
-    aput v2, v1, p1
-
-    goto :goto_b
-
-    .line 946
+    .line 942
     :cond_9
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiSsid:Ljava/lang/String;
 
-    .line 948
+    .line 944
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -4333,50 +4333,50 @@
 
     move-result-object v1
 
-    .line 950
+    .line 946
     iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     packed-switch v2, :pswitch_data_1
 
     goto/16 :goto_1
 
-    .line 961
+    .line 957
     :pswitch_3
     iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     goto/16 :goto_1
 
-    .line 952
+    .line 948
     :pswitch_4
-    const v2, 0x7f0200a1
+    const v2, 0x7f0200a0
 
     iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     goto/16 :goto_1
 
-    .line 955
+    .line 951
     :pswitch_5
-    const v2, 0x7f0200a3
-
-    iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
-
-    goto/16 :goto_1
-
-    .line 958
-    :pswitch_6
     const v2, 0x7f0200a2
 
     iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
 
     goto/16 :goto_1
 
-    .line 971
+    .line 954
+    :pswitch_6
+    const v2, 0x7f0200a1
+
+    iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivityIconId:I
+
+    goto/16 :goto_1
+
+    .line 967
     :cond_a
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHasMobileDataFeature:Z
 
     if-eqz v2, :cond_b
 
-    .line 972
+    .line 968
     const-string v2, ""
 
     move-object v11, v2
@@ -4387,7 +4387,7 @@
 
     goto/16 :goto_2
 
-    .line 974
+    .line 970
     :cond_b
     invoke-virtual {v5, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4404,19 +4404,19 @@
     :cond_c
     move v3, v4
 
-    .line 986
+    .line 982
     goto/16 :goto_3
 
-    .line 1011
+    .line 1007
     :cond_d
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHasMobileDataFeature:Z
 
     if-eqz v1, :cond_e
 
-    .line 1013
+    .line 1009
     const-string v1, ""
 
-    .line 1019
+    .line 1015
     :goto_c
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
@@ -4424,7 +4424,7 @@
 
     aput-object v5, v3, p1
 
-    .line 1021
+    .line 1017
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataSignalIconId:[I
@@ -4435,7 +4435,7 @@
 
     goto/16 :goto_4
 
-    .line 1015
+    .line 1011
     :cond_e
     invoke-virtual {v5, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4443,10 +4443,10 @@
 
     move-object v2, v1
 
-    .line 1017
+    .line 1013
     goto :goto_c
 
-    .line 1028
+    .line 1024
     :cond_f
     iget-object v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataConnected:[Z
 
@@ -4468,12 +4468,12 @@
 
     if-nez v3, :cond_2b
 
-    .line 1032
+    .line 1028
     invoke-virtual {v5, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 1035
+    .line 1031
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHasMobileDataFeature:Z
@@ -4487,7 +4487,7 @@
     :goto_d
     aput v2, v5, p1
 
-    .line 1037
+    .line 1033
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHasMobileDataFeature:Z
@@ -4501,26 +4501,26 @@
     :goto_e
     aput-object v2, v5, p1
 
-    .line 1040
+    .line 1036
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v4, v2, p1
 
-    .line 1041
+    .line 1037
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdma(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_12
 
-    .line 1042
+    .line 1038
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->isCdmaEri(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_13
 
-    .line 1043
+    .line 1039
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v10, v2, p1
@@ -4529,19 +4529,19 @@
 
     goto/16 :goto_5
 
-    .line 1035
+    .line 1031
     :cond_10
     iget v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     goto :goto_d
 
-    .line 1037
+    .line 1033
     :cond_11
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
 
     goto :goto_e
 
-    .line 1045
+    .line 1041
     :cond_12
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mPhone:Landroid/telephony/MSimTelephonyManager;
 
@@ -4551,7 +4551,7 @@
 
     if-eqz v2, :cond_13
 
-    .line 1046
+    .line 1042
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aput v10, v2, p1
@@ -4561,7 +4561,7 @@
 
     goto/16 :goto_5
 
-    .line 1050
+    .line 1046
     :cond_14
     const-string v0, ""
 
@@ -4587,7 +4587,7 @@
 
     goto/16 :goto_8
 
-    .line 1090
+    .line 1086
     :cond_17
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastAirplaneMode:Z
 
@@ -4595,12 +4595,12 @@
 
     if-eq v0, v5, :cond_18
 
-    .line 1091
+    .line 1087
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mAirplaneMode:Z
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastAirplaneMode:Z
 
-    .line 1095
+    .line 1091
     :cond_18
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
 
@@ -4612,7 +4612,7 @@
 
     if-eq v0, v5, :cond_1a
 
-    .line 1096
+    .line 1092
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastPhoneSignalIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimPhoneSignalIconId:[I
@@ -4621,7 +4621,7 @@
 
     aput v5, v0, p1
 
-    .line 1097
+    .line 1093
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPhoneSignalIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4630,11 +4630,11 @@
 
     move v5, v4
 
-    .line 1098
+    .line 1094
     :goto_f
     if-ge v5, v6, :cond_1a
 
-    .line 1099
+    .line 1095
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPhoneSignalIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4643,15 +4643,15 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1100
+    .line 1096
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPhoneSignalIconId:I
 
     if-nez v7, :cond_19
 
-    .line 1101
+    .line 1097
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1098
+    .line 1094
     :goto_10
     add-int/lit8 v0, v5, 0x1
 
@@ -4659,23 +4659,23 @@
 
     goto :goto_f
 
-    .line 1103
+    .line 1099
     :cond_19
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1104
+    .line 1100
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPhoneSignalIconId:I
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1105
+    .line 1101
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionPhoneSignal:Ljava/lang/String;
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_10
 
-    .line 1111
+    .line 1107
     :cond_1a
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
 
@@ -4687,7 +4687,7 @@
 
     if-eq v0, v5, :cond_1b
 
-    .line 1112
+    .line 1108
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataDirectionIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
@@ -4696,7 +4696,7 @@
 
     aput v5, v0, p1
 
-    .line 1113
+    .line 1109
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataDirectionIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4705,11 +4705,11 @@
 
     move v5, v4
 
-    .line 1114
+    .line 1110
     :goto_11
     if-ge v5, v6, :cond_1b
 
-    .line 1115
+    .line 1111
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataDirectionIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4718,28 +4718,28 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1116
+    .line 1112
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataDirectionIconId:[I
 
     aget v7, v7, p1
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1117
+    .line 1113
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     aget-object v7, v7, p1
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 1114
+    .line 1110
     add-int/lit8 v0, v5, 0x1
 
     move v5, v0
 
     goto :goto_11
 
-    .line 1121
+    .line 1117
     :cond_1b
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastSimIconId:[I
 
@@ -4751,7 +4751,7 @@
 
     if-eq v0, v5, :cond_1c
 
-    .line 1122
+    .line 1118
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastSimIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNoMSimIconId:[I
@@ -4760,7 +4760,7 @@
 
     aput v5, v0, p1
 
-    .line 1126
+    .line 1122
     :cond_1c
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
@@ -4768,12 +4768,12 @@
 
     if-eq v0, v5, :cond_1e
 
-    .line 1127
+    .line 1123
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWifiIconId:I
 
-    .line 1128
+    .line 1124
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4782,11 +4782,11 @@
 
     move v5, v4
 
-    .line 1129
+    .line 1125
     :goto_12
     if-ge v5, v6, :cond_1e
 
-    .line 1130
+    .line 1126
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4795,15 +4795,15 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1131
+    .line 1127
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     if-nez v7, :cond_1d
 
-    .line 1132
+    .line 1128
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1129
+    .line 1125
     :goto_13
     add-int/lit8 v0, v5, 0x1
 
@@ -4811,23 +4811,23 @@
 
     goto :goto_12
 
-    .line 1134
+    .line 1130
     :cond_1d
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1135
+    .line 1131
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiIconId:I
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1136
+    .line 1132
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWifi:Ljava/lang/String;
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_13
 
-    .line 1142
+    .line 1138
     :cond_1e
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWimaxIconId:I
 
@@ -4835,12 +4835,12 @@
 
     if-eq v0, v5, :cond_20
 
-    .line 1143
+    .line 1139
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconId:I
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastWimaxIconId:I
 
-    .line 1144
+    .line 1140
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4849,11 +4849,11 @@
 
     move v5, v4
 
-    .line 1145
+    .line 1141
     :goto_14
     if-ge v5, v6, :cond_20
 
-    .line 1146
+    .line 1142
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4862,15 +4862,15 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1147
+    .line 1143
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconId:I
 
     if-nez v7, :cond_1f
 
-    .line 1148
+    .line 1144
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1145
+    .line 1141
     :goto_15
     add-int/lit8 v0, v5, 0x1
 
@@ -4878,23 +4878,23 @@
 
     goto :goto_14
 
-    .line 1150
+    .line 1146
     :cond_1f
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1151
+    .line 1147
     iget v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxIconId:I
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1152
+    .line 1148
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContentDescriptionWimax:Ljava/lang/String;
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_15
 
-    .line 1157
+    .line 1153
     :cond_20
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
 
@@ -4906,7 +4906,7 @@
 
     if-eq v0, v5, :cond_21
 
-    .line 1159
+    .line 1155
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastCombinedSignalIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
@@ -4915,7 +4915,7 @@
 
     aput v5, v0, p1
 
-    .line 1160
+    .line 1156
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCombinedSignalIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4924,11 +4924,11 @@
 
     move v5, v4
 
-    .line 1161
+    .line 1157
     :goto_16
     if-ge v5, v6, :cond_21
 
-    .line 1162
+    .line 1158
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCombinedSignalIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -4937,28 +4937,28 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1163
+    .line 1159
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedSignalIconId:[I
 
     aget v7, v7, p1
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1164
+    .line 1160
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionCombinedSignal:[Ljava/lang/String;
 
     aget-object v7, v7, p1
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 1161
+    .line 1157
     add-int/lit8 v0, v5, 0x1
 
     move v5, v0
 
     goto :goto_16
 
-    .line 1169
+    .line 1165
     :cond_21
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
 
@@ -4970,7 +4970,7 @@
 
     if-eq v0, v5, :cond_23
 
-    .line 1170
+    .line 1166
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimLastDataTypeIconId:[I
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
@@ -4979,7 +4979,7 @@
 
     aput v5, v0, p1
 
-    .line 1171
+    .line 1167
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataTypeIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -4988,11 +4988,11 @@
 
     move v5, v4
 
-    .line 1172
+    .line 1168
     :goto_17
     if-ge v5, v6, :cond_23
 
-    .line 1173
+    .line 1169
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataTypeIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5001,17 +5001,17 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1174
+    .line 1170
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aget v7, v7, p1
 
     if-nez v7, :cond_22
 
-    .line 1175
+    .line 1171
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1172
+    .line 1168
     :goto_18
     add-int/lit8 v0, v5, 0x1
 
@@ -5019,27 +5019,27 @@
 
     goto :goto_17
 
-    .line 1177
+    .line 1173
     :cond_22
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1178
+    .line 1174
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimDataTypeIconId:[I
 
     aget v7, v7, p1
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1179
+    .line 1175
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     aget-object v7, v7, p1
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_18
 
-    .line 1185
+    .line 1181
     :cond_23
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
 
@@ -5049,7 +5049,7 @@
 
     if-eq v0, v5, :cond_25
 
-    .line 1187
+    .line 1183
     const-string v0, "StatusBar.MSimNetworkController"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -5076,14 +5076,14 @@
 
     invoke-static {v0, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1190
+    .line 1186
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedActivityIconId:[I
 
     aget v0, v0, p1
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastDataDirectionOverlayIconId:I
 
-    .line 1191
+    .line 1187
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataDirectionOverlayIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -5092,11 +5092,11 @@
 
     move v5, v4
 
-    .line 1192
+    .line 1188
     :goto_19
     if-ge v5, v6, :cond_25
 
-    .line 1193
+    .line 1189
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataDirectionOverlayIconViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5105,17 +5105,17 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    .line 1194
+    .line 1190
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedActivityIconId:[I
 
     aget v7, v7, p1
 
     if-nez v7, :cond_24
 
-    .line 1195
+    .line 1191
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1192
+    .line 1188
     :goto_1a
     add-int/lit8 v0, v5, 0x1
 
@@ -5123,27 +5123,27 @@
 
     goto :goto_19
 
-    .line 1197
+    .line 1193
     :cond_24
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 1198
+    .line 1194
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimcombinedActivityIconId:[I
 
     aget v7, v7, p1
 
     invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 1199
+    .line 1195
     iget-object v7, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimContentDescriptionDataType:[Ljava/lang/String;
 
     aget-object v7, v7, p1
 
-    invoke-virtual {v0, v7}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_1a
 
-    .line 1205
+    .line 1201
     :cond_25
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastCombinedLabel:Ljava/lang/String;
 
@@ -5153,10 +5153,10 @@
 
     if-nez v0, :cond_26
 
-    .line 1206
+    .line 1202
     iput-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastCombinedLabel:Ljava/lang/String;
 
-    .line 1207
+    .line 1203
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCombinedLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -5165,11 +5165,11 @@
 
     move v5, v4
 
-    .line 1208
+    .line 1204
     :goto_1b
     if-ge v5, v6, :cond_26
 
-    .line 1209
+    .line 1205
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCombinedLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5178,17 +5178,17 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1210
+    .line 1206
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1208
+    .line 1204
     add-int/lit8 v0, v5, 0x1
 
     move v5, v0
 
     goto :goto_1b
 
-    .line 1215
+    .line 1211
     :cond_26
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
 
@@ -5198,11 +5198,11 @@
 
     move v3, v4
 
-    .line 1216
+    .line 1212
     :goto_1c
     if-ge v3, v5, :cond_28
 
-    .line 1217
+    .line 1213
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5211,10 +5211,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1218
+    .line 1214
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1219
+    .line 1215
     const-string v6, ""
 
     invoke-virtual {v6, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5223,10 +5223,10 @@
 
     if-eqz v6, :cond_27
 
-    .line 1220
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
     .line 1216
+    invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1212
     :goto_1d
     add-int/lit8 v0, v3, 0x1
 
@@ -5234,13 +5234,13 @@
 
     goto :goto_1c
 
-    .line 1222
+    .line 1218
     :cond_27
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_1d
 
-    .line 1227
+    .line 1223
     :cond_28
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileLabelViews:Ljava/util/ArrayList;
 
@@ -5250,11 +5250,11 @@
 
     move v1, v4
 
-    .line 1228
+    .line 1224
     :goto_1e
     if-ge v1, v3, :cond_2a
 
-    .line 1229
+    .line 1225
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileLabelViews:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5263,10 +5263,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1230
+    .line 1226
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1231
+    .line 1227
     const-string v5, ""
 
     invoke-virtual {v5, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5275,10 +5275,10 @@
 
     if-eqz v5, :cond_29
 
-    .line 1232
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
     .line 1228
+    invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
+
+    .line 1224
     :goto_1f
     add-int/lit8 v0, v1, 0x1
 
@@ -5286,13 +5286,13 @@
 
     goto :goto_1e
 
-    .line 1234
+    .line 1230
     :cond_29
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_1f
 
-    .line 1237
+    .line 1233
     :cond_2a
     return-void
 
@@ -5303,7 +5303,7 @@
 
     goto/16 :goto_5
 
-    .line 916
+    .line 912
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -5311,7 +5311,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 950
+    .line 946
     :pswitch_data_1
     .packed-switch 0x0
         :pswitch_3
@@ -5390,340 +5390,349 @@
 .end method
 
 .method protected updateConnectivity(Landroid/content/Intent;)V
-    .locals 6
+    .locals 9
+    .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    const/4 v1, 0x1
+    const/4 v5, 0x1
 
-    const/4 v2, 0x0
+    const/4 v6, 0x0
 
-    .line 788
-    const-string v0, "StatusBar.MSimNetworkController"
+    .line 784
+    const-string v4, "StatusBar.MSimNetworkController"
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "updateConnectivity: intent="
+    const-string v8, "updateConnectivity: intent="
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-static {v0, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v7}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 791
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
+    .line 787
+    iget-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const-string v3, "connectivity"
+    const-string v7, "connectivity"
 
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v4, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 793
+    .line 789
+    .local v0, "connManager":Landroid/net/ConnectivityManager;
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v3
 
-    .line 796
+    .line 792
+    .local v3, "info":Landroid/net/NetworkInfo;
     if-eqz v3, :cond_0
 
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->isConnected()Z
 
-    move-result v0
+    move-result v4
 
-    if-eqz v0, :cond_0
+    if-eqz v4, :cond_0
 
-    move v0, v1
+    move v4, v5
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnected:Z
+    iput-boolean v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnected:Z
 
-    .line 797
-    iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnected:Z
+    .line 793
+    iget-boolean v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnected:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v4, :cond_1
 
-    .line 798
+    .line 794
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->getType()I
 
-    move-result v0
+    move-result v4
 
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
 
-    .line 799
+    .line 795
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v4
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkTypeName:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkTypeName:Ljava/lang/String;
 
-    .line 805
+    .line 801
     :goto_1
-    const-string v0, "inetCondition"
+    const-string v4, "inetCondition"
 
-    invoke-virtual {p1, v0, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p1, v4, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v0
+    move-result v1
 
-    .line 808
+    .line 804
+    .local v1, "connectionStatus":I
     const/16 v4, 0x32
 
-    if-le v0, v4, :cond_2
+    if-le v1, v4, :cond_2
 
-    .line 819
+    move v2, v5
+
+    .line 815
+    .local v2, "inetCondition":I
     :goto_2
-    const-string v0, "StatusBar.MSimNetworkController"
+    const-string v4, "StatusBar.MSimNetworkController"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "updateConnectivity: NetworkInfo: "
+    const-string v7, "updateConnectivity: NetworkInfo: "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    const-string v5, ", inetCondition= "
+    const-string v7, ", inetCondition= "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 824
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
+    .line 820
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
 
-    packed-switch v0, :pswitch_data_0
+    packed-switch v4, :pswitch_data_0
 
-    .line 862
+    .line 858
     :goto_3
     :pswitch_0
     if-eqz v3, :cond_6
 
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->getType()I
 
-    move-result v0
+    move-result v4
 
-    const/4 v1, 0x7
+    const/4 v5, 0x7
 
-    if-ne v0, v1, :cond_6
+    if-ne v4, v5, :cond_6
 
-    .line 863
+    .line 859
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->isConnected()Z
 
-    move-result v0
+    move-result v4
 
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
+    iput-boolean v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
+
+    .line 865
+    :goto_4
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
+
+    invoke-direct {p0, v4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataNetType(I)V
+
+    .line 866
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateWimaxIcons()V
+
+    .line 867
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
+
+    invoke-direct {p0, v4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
+
+    .line 868
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
+
+    invoke-direct {p0, v4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateTelephonySignalStrength(I)V
 
     .line 869
-    :goto_4
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
-
-    invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataNetType(I)V
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateWifiIcons()V
 
     .line 870
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateWimaxIcons()V
-
-    .line 871
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
-
-    invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
-
-    .line 872
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mDefaultSubscription:I
-
-    invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateTelephonySignalStrength(I)V
-
-    .line 873
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateWifiIcons()V
-
-    .line 874
     return-void
 
+    .end local v1    # "connectionStatus":I
+    .end local v2    # "inetCondition":I
     :cond_0
-    move v0, v2
+    move v4, v6
 
-    .line 796
+    .line 792
     goto :goto_0
 
-    .line 801
+    .line 797
     :cond_1
-    const/4 v0, -0x1
+    const/4 v4, -0x1
 
-    iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
+    iput v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkType:I
 
-    .line 802
-    const/4 v0, 0x0
+    .line 798
+    const/4 v4, 0x0
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkTypeName:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mConnectedNetworkTypeName:Ljava/lang/String;
 
     goto :goto_1
 
+    .restart local v1    # "connectionStatus":I
     :cond_2
-    move v1, v2
+    move v2, v6
 
-    .line 808
+    .line 804
     goto :goto_2
 
-    .line 827
+    .line 823
+    .restart local v2    # "inetCondition":I
     :pswitch_1
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
 
-    if-eq v0, v1, :cond_3
+    if-eq v4, v2, :cond_3
 
-    .line 828
-    const-string v0, "StatusBar.MSimNetworkController"
+    .line 824
+    const-string v4, "StatusBar.MSimNetworkController"
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "updateConnectivity:  Change mMobileInetCondition= "
+    const-string v7, "updateConnectivity:  Change mMobileInetCondition= "
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 831
+    .line 827
     :cond_3
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
-
-    goto :goto_3
-
-    .line 835
-    :pswitch_2
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
-
-    if-eq v0, v1, :cond_4
-
-    .line 836
-    const-string v0, "StatusBar.MSimNetworkController"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "updateConnectivity:  Change mWifiInetCondition= "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 839
-    :cond_4
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
-
-    goto :goto_3
-
-    .line 843
-    :pswitch_3
-    iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
-
-    if-eq v0, v1, :cond_5
-
-    .line 844
-    const-string v0, "StatusBar.MSimNetworkController"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "updateConnectivity:  Change mWimaxInetCondition= "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v0, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 847
-    :cond_5
-    iput v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
-
-    goto/16 :goto_3
-
-    .line 851
-    :pswitch_4
-    const-string v0, "StatusBar.MSimNetworkController"
-
-    const-string v1, "there is no connection, reset iNetCondition"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 853
     iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
 
-    .line 854
+    goto :goto_3
+
+    .line 831
+    :pswitch_2
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
+
+    if-eq v4, v2, :cond_4
+
+    .line 832
+    const-string v4, "StatusBar.MSimNetworkController"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "updateConnectivity:  Change mWifiInetCondition= "
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 835
+    :cond_4
     iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
 
-    .line 855
+    goto :goto_3
+
+    .line 839
+    :pswitch_3
+    iget v4, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
+
+    if-eq v4, v2, :cond_5
+
+    .line 840
+    const-string v4, "StatusBar.MSimNetworkController"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "updateConnectivity:  Change mWimaxInetCondition= "
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 843
+    :cond_5
     iput v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
 
     goto/16 :goto_3
 
-    .line 865
+    .line 847
+    :pswitch_4
+    const-string v4, "StatusBar.MSimNetworkController"
+
+    const-string v5, "there is no connection, reset iNetCondition"
+
+    invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 849
+    iput v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileInetCondition:I
+
+    .line 850
+    iput v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiInetCondition:I
+
+    .line 851
+    iput v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWimaxInetCondition:I
+
+    goto/16 :goto_3
+
+    .line 861
     :cond_6
-    iput-boolean v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
+    iput-boolean v6, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTethered:Z
 
     goto/16 :goto_4
 
-    .line 824
-    nop
-
+    .line 820
     :pswitch_data_0
     .packed-switch -0x1
         :pswitch_4
@@ -5746,53 +5755,53 @@
     .param p5, "subscription"    # I
 
     .prologue
-    .line 764
+    .line 760
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 765
+    .line 761
     .local v1, "str":Ljava/lang/StringBuilder;
     const/4 v0, 0x0
 
-    .line 766
+    .line 762
     .local v0, "something":Z
     if-eqz p3, :cond_0
 
     if-eqz p4, :cond_0
 
-    .line 767
+    .line 763
     invoke-virtual {v1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 768
+    .line 764
     const/4 v0, 0x1
 
-    .line 770
+    .line 766
     :cond_0
     if-eqz p1, :cond_2
 
     if-eqz p2, :cond_2
 
-    .line 771
+    .line 767
     if-eqz v0, :cond_1
 
-    .line 772
+    .line 768
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNetworkNameSeparator:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 774
+    .line 770
     :cond_1
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 775
+    .line 771
     const/4 v0, 0x1
 
-    .line 777
+    .line 773
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 778
+    .line 774
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimNetworkName:[Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -5801,11 +5810,11 @@
 
     aput-object v3, v2, p5
 
-    .line 782
+    .line 778
     :goto_0
     return-void
 
-    .line 780
+    .line 776
     :cond_3
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimNetworkName:[Ljava/lang/String;
 
@@ -5874,14 +5883,14 @@
     .line 416
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->ABSENT:Lcom/android/internal/telephony/IccCard$State;
 
-    .line 439
+    .line 435
     .local v1, "simState":Lcom/android/internal/telephony/IccCard$State;
     :goto_0
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mMSimState:[Lcom/android/internal/telephony/IccCard$State;
 
     aput-object v1, v4, v3
 
-    .line 440
+    .line 436
     const-string v4, "StatusBar.MSimNetworkController"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -5908,13 +5917,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 441
+    .line 437
     invoke-direct {p0, v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateSimIcon(I)V
 
-    .line 442
+    .line 438
     invoke-direct {p0, v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->updateDataIcon(I)V
 
-    .line 443
+    .line 439
     return-void
 
     .line 418
@@ -5926,50 +5935,33 @@
 
     move-result v4
 
-    if-nez v4, :cond_1
+    if-eqz v4, :cond_1
 
-    const-string v4, "IMSI"
-
-    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_1
-
-    const-string v4, "LOADED"
-
-    invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    .line 423
-    :cond_1
+    .line 419
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->READY:Lcom/android/internal/telephony/IccCard$State;
 
     .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
     goto :goto_0
 
-    .line 425
+    .line 421
     .end local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
-    :cond_2
+    :cond_1
     const-string v4, "LOCKED"
 
     invoke-virtual {v4, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_4
 
-    .line 426
+    .line 422
     const-string v4, "reason"
 
     invoke-virtual {p1, v4}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 427
+    .line 423
     .local v0, "lockedReason":Ljava/lang/String;
     const-string v4, "PIN"
 
@@ -5977,10 +5969,27 @@
 
     move-result v4
 
+    if-eqz v4, :cond_2
+
+    .line 424
+    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
+
+    .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
+    goto :goto_0
+
+    .line 426
+    .end local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
+    :cond_2
+    const-string v4, "PUK"
+
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
     if-eqz v4, :cond_3
 
-    .line 428
-    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
+    .line 427
+    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
 
     .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
     goto :goto_0
@@ -5988,32 +5997,15 @@
     .line 430
     .end local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
     :cond_3
-    const-string v4, "PUK"
-
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_4
-
-    .line 431
-    sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PUK_REQUIRED:Lcom/android/internal/telephony/IccCard$State;
-
-    .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
-    goto :goto_0
-
-    .line 434
-    .end local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
-    :cond_4
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->PERSO_LOCKED:Lcom/android/internal/telephony/IccCard$State;
 
     .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
     goto :goto_0
 
-    .line 437
+    .line 433
     .end local v0    # "lockedReason":Ljava/lang/String;
     .end local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;
-    :cond_5
+    :cond_4
     sget-object v1, Lcom/android/internal/telephony/IccCard$State;->UNKNOWN:Lcom/android/internal/telephony/IccCard$State;
 
     .restart local v1    # "simState":Lcom/android/internal/telephony/IccCard$State;

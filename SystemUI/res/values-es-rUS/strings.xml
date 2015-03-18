@@ -17,10 +17,10 @@
     <string name="invalid_charger">"No admite la carga USB.
 Usa sólo el cargador provisto."</string>
     <string name="battery_low_why">Uso de la batería</string>
-    <string name="status_bar_settings_settings_button">Configurar</string>
+    <string name="status_bar_settings_settings_button">Configuración</string>
     <string name="status_bar_settings_wifi_button">Wi-Fi</string>
     <string name="status_bar_settings_airplane">Modo avión</string>
-    <string name="status_bar_settings_auto_rotation">Auto-rotar pantalla</string>
+    <string name="status_bar_settings_auto_rotation">Rotar pantalla automáticamente</string>
     <string name="status_bar_settings_mute_label">SILENCIAR</string>
     <string name="status_bar_settings_auto_brightness_label">AUTO.</string>
     <string name="status_bar_settings_notifications">Notificaciones</string>
@@ -41,7 +41,7 @@ Usa sólo el cargador provisto."</string>
     <string name="compat_mode_help_header">Zoom de compatibilidad</string>
     <string name="compat_mode_help_body">Cuando una aplicación fue diseñada para una pantalla más pequeña, aparece un control de zoom junto al reloj.</string>
     <string name="screenshot_saving_ticker">Guardando captura de pantalla</string>
-    <string name="screenshot_saving_title">Guardar captura de pantalla...</string>
+    <string name="screenshot_saving_title">Guardando la captura de pantalla...</string>
     <string name="screenshot_saving_text">La captura de pantalla se está guardando.</string>
     <string name="screenshot_saved_title">Se guardó la captura de pantalla.</string>
     <string name="screenshot_saved_text">Toca para ver tu captura de pantalla.</string>
@@ -95,7 +95,7 @@ Usa sólo el cargador provisto."</string>
     <string name="accessibility_no_sim">No hay tarjeta SIM.</string>
     <string name="accessibility_bluetooth_tether">Conexión Bluetooth</string>
     <string name="accessibility_airplane_mode">Modo avión</string>
-    <string name="accessibility_battery_level">%d porciento de batería.</string>
+    <string name="accessibility_battery_level">" %d porciento de batería."</string>
     <string name="accessibility_settings_button">Configuración del sistema</string>
     <string name="accessibility_notifications_button">Notificaciones</string>
     <string name="accessibility_remove_notification">Borrar notificación</string>
@@ -124,7 +124,7 @@ Puede que tu operador te cobre por volver a activar datos."</string>
     <string name="notifications_off_text">Toca aquí para volver a activar las notificaciones.</string>
     <string name="accessibility_rotation_lock_off">La pantalla girará automáticamente.</string>
     <string name="accessibility_rotation_lock_on_landscape">La pantalla está bloqueada en modo horizontal.</string>
-    <string name="accessibility_rotation_lock_on_portrait">La pantalla está bloqueada en modo de retrato.</string>
+    <string name="accessibility_rotation_lock_on_portrait">La pantalla está bloqueada en modo vertical.</string>
     <string name="zz_moto_accessibility_data_connection_4g_lte">4 G L T E</string>
     <string name="zz_moto_accessibility_data_connection_lte">L T E</string>
     <string name="zz_moto_accessibility_data_connection_3g_plus">3 G plus</string>

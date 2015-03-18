@@ -53,18 +53,18 @@
     .line 22
     :array_0
     .array-data 4
-        0x7f0200a6
-        0x7f0200a8
-        0x7f0200aa
-        0x7f0200ac
+        0x7f0200a5
+        0x7f0200a7
+        0x7f0200a9
+        0x7f0200ab
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0200a7
-        0x7f0200a9
-        0x7f0200ab
-        0x7f0200ad
+        0x7f0200a6
+        0x7f0200a8
+        0x7f0200aa
+        0x7f0200ac
     .end array-data
 .end method
 
@@ -73,7 +73,7 @@
 
     .prologue
     .line 21
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

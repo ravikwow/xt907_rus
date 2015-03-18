@@ -33,7 +33,7 @@
 
     iput p2, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -59,14 +59,14 @@
 
     iget v1, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->removeDialog(I)V
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
 
     .line 243
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget v1, p0, Lcom/android/systemui/usb/UsbStorageActivity$6;->val$id:I
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/usb/UsbStorageActivity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
 
     .line 245
     :cond_0

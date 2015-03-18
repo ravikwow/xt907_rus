@@ -26,10 +26,10 @@
     .locals 0
 
     .prologue
-    .line 596
+    .line 581
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$3;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -44,14 +44,14 @@
     .param p4, "transitionType"    # I
 
     .prologue
-    .line 601
+    .line 586
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$3;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->mBarContents:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidate()V
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
-    .line 602
+    .line 587
     return-void
 .end method
 
@@ -63,6 +63,6 @@
     .param p4, "transitionType"    # I
 
     .prologue
-    .line 604
+    .line 589
     return-void
 .end method

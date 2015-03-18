@@ -53,7 +53,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/systemui/LoadAverageService$Stats;->update()V
+    invoke-virtual {v1}, Lcom/android/internal/os/ProcessStats;->update()V
 
     .line 66
     iget-object v1, p0, Lcom/android/systemui/LoadAverageService$LoadView$1;->this$1:Lcom/android/systemui/LoadAverageService$LoadView;
@@ -61,7 +61,7 @@
     invoke-virtual {v1}, Lcom/android/systemui/LoadAverageService$LoadView;->updateDisplay()V
 
     .line 67
-    invoke-virtual {p0, v2}, Lcom/android/systemui/LoadAverageService$LoadView$1;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
     .local v0, "m":Landroid/os/Message;
     const-wide/16 v1, 0x7d0
 
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/systemui/LoadAverageService$LoadView$1;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 70
     .end local v0    # "m":Landroid/os/Message;

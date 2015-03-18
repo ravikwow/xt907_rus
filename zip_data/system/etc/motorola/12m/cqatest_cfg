@@ -1,0 +1,18 @@
+<AUDIO SETTINGS>,LENGTH=5,SAMPLE_RATE=44100,START_FREQ=150,END_FREQ=1000,VOLUME=17000
+com.motorola.motocit.led.MetaKeyLed
+com.motorola.motocit.flip.FlipTest
+com.motorola.motocit.display.testPatterns.Dark
+com.motorola.motocit.display.testPatterns.Xtalk
+com.motorola.motocit.display.testPatterns.BlackWithWhiteBorder
+com.motorola.motocit.display.testPatterns.Focus
+com.motorola.motocit.display.testPatterns.BlackReverseOrientation
+com.motorola.motocit.display.testPatterns.WhiteBlackBorderReverseOrientation
+com.motorola.motocit.display.testPatterns.BlackWhiteBorderReverseOrientation
+com.motorola.motocit.display.Display_RedLineCapture
+com.motorola.motocit.temperature.AmbientTemperature
+com.motorola.motocit.touchscreen.Touch_MXT1386
+com.motorola.motocit.touchscreen.Touch_MXT1386_Short
+com.motorola.motocit.camera.SnapAllResolutions
+com.motorola.motocit.barometer.Barometer
+com.motorola.motocit.gyroscope.Gyroscope
+com.motorola.motocit.hdmi.HdmiInfo

@@ -458,7 +458,7 @@
     <string name="permlab_changeComponentState">启用或停用应用程序组件</string>
     <string name="permdesc_changeComponentState">允许应用程序启用或停用其他应用的组件。恶意应用程序可能借此停用重要的手机功能。请务必谨慎使用此权限，因为这可能导致某些应用组件进入无法使用、不一致或不稳定的状态。</string>
     <string name="permlab_grantRevokePermissions">授予或撤消权限</string>
-    <string name="permdesc_grantRevokePermissions">允许应用程序针对自身或其他应用授予或撤消特定权限。恶意应用程序可能会借此访问您未授权他们访问的功能。</string>
+    <string name="permdesc_grantRevokePermissions">允许应用程序针对自身或其他应用授予或撤消特定权限。恶意应用程序可能会借此访问您未授权它们访问的功能。</string>
     <string name="permlab_setPreferredApplications">设置首选应用程序</string>
     <string name="permdesc_setPreferredApplications">允许应用程序修改您的首选应用。恶意应用程序可能会在后台更改运行的应用，欺骗您现有的应用，以收集您的私人数据。</string>
     <string name="permlab_writeSettings">修改系统设置</string>
@@ -498,9 +498,9 @@
     <string name="permlab_installLocationProvider">允许安装位置信息提供程序</string>
     <string name="permdesc_installLocationProvider">创建用于测试的模拟位置源或安装新的位置提供程序。此权限可让该应用程序覆盖由其他位置源（如 GPS）或位置提供程序返回的位置和/或状态信息。</string>
     <string name="permlab_accessFineLocation">确切 (GPS) 位置</string>
-    <string name="permdesc_accessFineLocation">访问手机上的 GPS 等确切位置源。当定位服务可用且处于启用状态时，此权限可让该应用程序确定您的确切位置。</string>
+    <string name="permdesc_accessFineLocation">访问手机上的 GPS 等确切位置源。当位置服务可用且处于启用状态时，此权限可让该应用程序确定您的确切位置。</string>
     <string name="permlab_accessCoarseLocation">（基于网络的）大概位置</string>
-    <string name="permdesc_accessCoarseLocation">访问位置提供程序根据基站和 WLAN 等网络源确定的大概位置。当这些定位服务可用且处于启用状态时，此权限可让该应用程序确定您的大概位置。</string>
+    <string name="permdesc_accessCoarseLocation">访问位置提供程序根据基站和 WLAN 等网络源确定的大概位置。当这些位置服务可用且处于启用状态时，此权限可让该应用程序确定您的大概位置。</string>
     <string name="permlab_accessSurfaceFlinger">访问 SurfaceFlinger</string>
     <string name="permdesc_accessSurfaceFlinger">允许应用程序使用 SurfaceFlinger 低级功能。</string>
     <string name="permlab_readFrameBuffer">读取帧缓冲区</string>
@@ -682,7 +682,7 @@
     <string name="phoneTypeMms">彩信</string>
     <string name="eventTypeCustom">自定义</string>
     <string name="eventTypeBirthday">生日</string>
-    <string name="eventTypeAnniversary">周年纪念日</string>
+    <string name="eventTypeAnniversary">周年纪念</string>
     <string name="eventTypeOther">其他</string>
     <string name="emailTypeCustom">自定义</string>
     <string name="emailTypeHome">家用</string>
@@ -760,7 +760,7 @@
     <string name="lockscreen_charged">已充满。</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">连接您的充电器。</string>
-    <string name="lockscreen_missing_sim_message_short">无 SIM 卡</string>
+    <string name="lockscreen_missing_sim_message_short">没有 SIM 卡</string>
     <string name="lockscreen_missing_sim_message">手机中无 SIM 卡</string>
     <string name="lockscreen_missing_sim_instructions">请插入 SIM 卡</string>
     <string name="lockscreen_missing_sim_instructions_long">SIM 卡缺失或无法读取。请插入 SIM 卡。</string>
@@ -776,10 +776,10 @@
     <string name="lockscreen_sim_error_message_short">无效的名片。</string>
     <string name="lockscreen_sim_error_message">SIM 卡无效。</string>
     <string name="lockscreen_network_locked_message">网络已锁定</string>
-    <string name="lockscreen_perso_locked_message">SIM 卡已被 Perso 锁定</string>
+    <string name="lockscreen_perso_locked_message">SIM/RUIM 卡已被 Perso 锁定</string>
     <string name="lockscreen_sim_puk_locked_message">SIM 卡已用 PUK 码锁定</string>
     <string name="lockscreen_sim_puk_locked_instructions">PIN1 已锁定。输入 PUK1。请参阅《用户指南》/联系客服人员。</string>
-    <string name="lockscreen_sim_locked_message">SIM 卡已锁定</string>
+    <string name="lockscreen_sim_locked_message">SIM/RUIM 卡已锁定。</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">正在解锁 SIM 卡...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"您已经 %d 次错误地绘制了解锁图案。
 
@@ -823,8 +823,8 @@
     <string name="granularity_label_word">字</string>
     <string name="granularity_label_link">链接</string>
     <string name="granularity_label_line">行</string>
-    <string name="hour_ampm" formatted="false">%P %-l:00</string>
-    <string name="hour_cap_ampm" formatted="false">%p %-l:00</string>
+    <string name="hour_ampm" formatted="false">%P %-l</string>
+    <string name="hour_cap_ampm" formatted="false">%p %-l</string>
     <string name="factorytest_failed">出厂测试失败</string>
     <string name="factorytest_not_system">只有在 /system/app 中安装的包支持 FACTORY_TEST 操作。</string>
     <string name="factorytest_no_action">未发现支持 FACTORY_TEST 操作的包。</string>
@@ -1258,12 +1258,6 @@
     <string name="default_audio_route_category_name">系统</string>
     <string name="bluetooth_a2dp_audio_route_name">蓝牙音频</string>
     <string name="media_route_chooser_grouping_done">完成</string>
-    <string name="wispr_login_success">登录成功</string>
-    <string name="wispr_login_failed">登录失败</string>
-    <string name="wispr_login_header">AT&amp;T WLAN 热点状态</string>
-    <string name="wispr_login_failed_credential">无法确认资格，请拨打客服中心电话 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">验证失败</string>
-    <string name="wispr_insert_sim">无法确认资格，请拨打客服中心电话 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%b</string>
     <string name="dt_year_format">%Y</string>
@@ -1394,15 +1388,8 @@
     <string name="app_error_dialog_message">抱歉，发生错误，我们无法打开此应用程序。</string>
     <string name="password_recovery_dialog_title">忘记密码？</string>
     <string name="password_recovery_dialog_message">请联系您的 IT 部门，请求\"恢复密码\"。输入该密码后即可重新设置新密码。</string>
-    <string name="lockscreen_charged_rmdunplug">充电完成。请将充电器从插座上拔出以节约能源。</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">网络扩展器</string>
-    <string name="moto_eritext_extended_network">扩展网络</string>
-    <string name="moto_eritext_roaming">漫游</string>
+    <string name="lockscreen_charged_rmdunplug">充电完成.请将充电器从插座上拔出以节约能源.</string>
     <string name="storage_usb_disk">U 盘</string>
-    <string name="sim_pin_technical_problem">出现技术问题。请重试。</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">确认新 PIN 码</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">请在 %d 秒后重试。</string>
     <string name="msg_disable_consumer_email_notification">用户邮件已停用。</string>
     <string name="msg_enable_consumer_email_notification">用户邮件已启用。</string>
     <string name="msg_disable_browser_notification">已停用浏览器。</string>
@@ -1421,5 +1408,4 @@
     <string name="msg_app_control_notification">停用的应用程序列表已更新。</string>
     <string name="policylab_appcontrol">停用应用程序</string>
     <string name="policydesc_appcontrol">允许管理员启用或停用设备中的应用程序。</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN 码已解锁</string>
 </resources>

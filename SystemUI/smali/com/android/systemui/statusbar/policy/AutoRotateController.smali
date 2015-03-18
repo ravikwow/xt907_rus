@@ -35,7 +35,7 @@
 
     .prologue
     .line 40
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
     new-instance v0, Lcom/android/systemui/statusbar/policy/AutoRotateController$1;
@@ -122,7 +122,7 @@
     .line 69
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/AutoRotateController;->mCheckbox:Landroid/widget/CompoundButton;
 
-    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 70
     return-void

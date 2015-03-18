@@ -38,7 +38,7 @@
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->mScreenLocked:Z
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->getId()I
+    invoke-virtual {p0}, Landroid/view/View;->getId()I
 
     move-result v0
 
@@ -64,7 +64,7 @@
 
     .prologue
     .line 149
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -408,7 +408,7 @@
     .line 140
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 
@@ -416,7 +416,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 145
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->mIcon:Landroid/widget/ImageView;
@@ -437,7 +437,7 @@
     .line 66
     iget v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->mId:I
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

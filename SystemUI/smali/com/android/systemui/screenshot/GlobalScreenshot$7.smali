@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$7;->val$flashAlphaInterpolator:Landroid/view/animation/Interpolator;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -104,7 +104,7 @@
 
     mul-float/2addr v3, v4
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 520
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$7;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -114,7 +114,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v1}, Landroid/view/View;->setAlpha(F)V
 
     .line 521
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$7;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -124,7 +124,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleX(F)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setScaleX(F)V
 
     .line 522
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$7;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -134,7 +134,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleY(F)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setScaleY(F)V
 
     .line 523
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$7;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
@@ -150,7 +150,7 @@
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 524
     return-void

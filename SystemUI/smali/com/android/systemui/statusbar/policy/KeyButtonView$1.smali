@@ -29,7 +29,7 @@
     .line 61
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView$1;->this$0:Lcom/android/systemui/statusbar/policy/KeyButtonView;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .line 63
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView$1;->this$0:Lcom/android/systemui/statusbar/policy/KeyButtonView;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->isPressed()Z
+    invoke-virtual {v0}, Landroid/view/View;->isPressed()Z
 
     move-result v0
 
@@ -70,7 +70,7 @@
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->sendAccessibilityEvent(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     .line 73
     :cond_0
@@ -81,7 +81,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView$1;->this$0:Lcom/android/systemui/statusbar/policy/KeyButtonView;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->performLongClick()Z
+    invoke-virtual {v0}, Landroid/view/View;->performLongClick()Z
 
     goto :goto_0
 .end method

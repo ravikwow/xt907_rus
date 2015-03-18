@@ -59,7 +59,7 @@
     invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
     const/4 v5, 0x0
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->isShown()Z
+    invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
     move-result v9
 
@@ -89,13 +89,13 @@
 
     if-eqz v9, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v9
 
     if-lez v9, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v9
 
@@ -110,14 +110,14 @@
 
     .line 77
     .local v6, "loc":[I
-    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/policy/EventHole;->getLocationInWindow([I)V
+    invoke-virtual {p0, v6}, Landroid/view/View;->getLocationInWindow([I)V
 
     .line 78
     aget v1, v6, v5
 
     .line 79
     .local v1, "l":I
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v9
 
@@ -129,7 +129,7 @@
 
     .line 81
     .local v2, "t":I
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
@@ -229,7 +229,7 @@
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/EventHole;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 

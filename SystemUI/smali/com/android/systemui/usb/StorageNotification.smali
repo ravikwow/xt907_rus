@@ -90,7 +90,7 @@
 
     .line 77
     .local v1, "thr":Landroid/os/HandlerThread;
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
+    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
     .line 78
     new-instance v2, Landroid/os/Handler;

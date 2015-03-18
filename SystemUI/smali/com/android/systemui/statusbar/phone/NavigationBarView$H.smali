@@ -86,7 +86,7 @@
     .local v1, "how":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getWidth()I
+    invoke-virtual {v5}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -94,7 +94,7 @@
     .local v4, "w":I
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getHeight()I
+    invoke-virtual {v5}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
@@ -179,7 +179,7 @@
     .line 100
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->requestLayout()V
+    invoke-virtual {v5}, Landroid/view/View;->requestLayout()V
 
     goto :goto_0
 

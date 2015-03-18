@@ -29,7 +29,7 @@
     const/4 v1, 0x0
 
     .line 60
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
     iput-boolean v1, p0, Lcom/android/systemui/recent/RecentsScrollViewPerformanceHelper;->mSoftwareRendered:Z
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    const/high16 v2, 0x7f080000
+    const/high16 v2, 0x7f090000
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -138,12 +138,12 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setDrawingCacheEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setDrawingCacheEnabled(Z)V
 
     .line 84
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->buildDrawingCache()V
+    invoke-virtual {v1}, Landroid/view/View;->buildDrawingCache()V
 
     .line 86
     .end local v0    # "holder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;

@@ -188,7 +188,7 @@
     if-ge v12, v1, :cond_0
 
     .line 262
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/recent/RecentTasksLoader$1;->isCancelled()Z
+    invoke-virtual/range {p0 .. p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v1
 
@@ -196,7 +196,7 @@
 
     .line 289
     :cond_0
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/recent/RecentTasksLoader$1;->isCancelled()Z
+    invoke-virtual/range {p0 .. p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v1
 
@@ -213,7 +213,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/recent/RecentTasksLoader$1;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->publishProgress([Ljava/lang/Object;)V
 
     .line 291
     if-eqz v10, :cond_1
@@ -233,7 +233,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/recent/RecentTasksLoader$1;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->publishProgress([Ljava/lang/Object;)V
 
     .line 299
     :cond_1
@@ -348,7 +348,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/recent/RecentTasksLoader$1;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->publishProgress([Ljava/lang/Object;)V
 
     .line 281
     new-instance v19, Ljava/util/ArrayList;
@@ -416,7 +416,7 @@
     .prologue
     .line 233
     .local p1, "values":[Ljava/util/ArrayList;, "[Ljava/util/ArrayList<Lcom/android/systemui/recent/TaskDescription;>;"
-    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentTasksLoader$1;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v1
 

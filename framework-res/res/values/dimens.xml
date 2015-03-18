@@ -85,7 +85,7 @@
     <dimen name="notification_text_size">14.0dip</dimen>
     <dimen name="notification_title_text_size">18.0dip</dimen>
     <dimen name="notification_subtext_size">12.0dip</dimen>
-    <item type="dimen" name="APKTOOL_DUMMY_0055">false</item>
+    <dimen name="secured_lockscreen_status_side_margin">14.0dip</dimen>
     <dimen name="LockScreenSD_fchMarginPort">-6.0dip</dimen>
     <dimen name="LockScreenSD_fcMarginPort">10.0dip</dimen>
     <dimen name="LockScreenSD_mstClosedOffsetPort">0.0dip</dimen>
@@ -97,12 +97,4 @@
     <dimen name="LockScreenSD_hanldeClosedOffsetPort">0.0dip</dimen>
     <dimen name="LockScreenSD_handleOpenOffsetPort">370.0dip</dimen>
     <dimen name="zz_moto_keyguard_lockscreen_status_line_font_right_margin">15.0dip</dimen>
-    <dimen name="secured_lockscreen_status_side_margin">14.0dip</dimen>
-    <dimen name="secured_lockscreen_status_bottom_margin">6.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_clock_font_size">72.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_clock_font_size_landscape">50.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_statusview_height">32.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_statusview_textsize">16.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_carrier_emergency_textsize">14.0dip</dimen>
-    <dimen name="moto_keyguard_lockscreen_emergencybutton_height">48.0dip</dimen>
 </resources>

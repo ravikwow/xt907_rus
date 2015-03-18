@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4$1;->val$packageNameF:Ljava/lang/String;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     move-result v1
 
-    const v2, 0x7f0c00ad
+    const v2, 0x7f0d00ad
 
     if-ne v1, v2, :cond_0
 

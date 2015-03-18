@@ -84,7 +84,7 @@
 
     const/4 v6, 0x4
 
-    invoke-virtual {p0, v3, v4, v5, v6}, Lcom/android/systemui/LoadAverageService$LoadView;->setPadding(IIII)V
+    invoke-virtual {p0, v3, v4, v5, v6}, Landroid/view/View;->setPadding(IIII)V
 
     .line 99
     const/16 v2, 0xa
@@ -366,7 +366,7 @@
     .line 154
     iget-object v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$Stats;
 
-    invoke-virtual {v3}, Lcom/android/systemui/LoadAverageService$Stats;->init()V
+    invoke-virtual {v3}, Lcom/android/internal/os/ProcessStats;->init()V
 
     .line 155
     invoke-virtual {p0}, Lcom/android/systemui/LoadAverageService$LoadView;->updateDisplay()V
@@ -458,7 +458,7 @@
 
     .line 180
     .local v10, "W":I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/LoadAverageService$LoadView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -474,37 +474,37 @@
 
     .line 183
     .local v20, "stats":Lcom/android/systemui/LoadAverageService$Stats;
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastUserTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastUserTime()I
 
     move-result v25
 
     .line 184
     .local v25, "userTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastSystemTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastSystemTime()I
 
     move-result v21
 
     .line 185
     .local v21, "systemTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIoWaitTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastIoWaitTime()I
 
     move-result v14
 
     .line 186
     .local v14, "iowaitTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIrqTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastIrqTime()I
 
     move-result v15
 
     .line 187
     .local v15, "irqTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastSoftIrqTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastSoftIrqTime()I
 
     move-result v18
 
     .line 188
     .local v18, "softIrqTime":I
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->getLastIdleTime()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->getLastIdleTime()I
 
     move-result v13
 
@@ -554,7 +554,7 @@
     .local v16, "irqW":I
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v2, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v27, v9, v2
 
@@ -562,7 +562,7 @@
     .local v27, "x":I
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingTop:I
+    iget v2, v0, Landroid/view/View;->mPaddingTop:I
 
     add-int/lit8 v23, v2, 0x2
 
@@ -570,7 +570,7 @@
     .local v23, "top":I
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingTop:I
+    iget v2, v0, Landroid/view/View;->mPaddingTop:I
 
     move-object/from16 v0, p0
 
@@ -674,7 +674,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingTop:I
+    iget v2, v0, Landroid/view/View;->mPaddingTop:I
 
     move-object/from16 v0, p0
 
@@ -692,7 +692,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -725,7 +725,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -758,7 +758,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -791,7 +791,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -824,7 +824,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -849,7 +849,7 @@
     invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     .line 227
-    invoke-virtual/range {v20 .. v20}, Lcom/android/systemui/LoadAverageService$Stats;->countWorkingStats()I
+    invoke-virtual/range {v20 .. v20}, Lcom/android/internal/os/ProcessStats;->countWorkingStats()I
 
     move-result v8
 
@@ -864,7 +864,7 @@
     .line 229
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v12}, Lcom/android/systemui/LoadAverageService$Stats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
+    invoke-virtual {v0, v12}, Lcom/android/internal/os/ProcessStats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
 
     move-result-object v19
 
@@ -911,7 +911,7 @@
     .line 236
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v2, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v27, v9, v2
 
@@ -982,7 +982,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -1015,7 +1015,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -1048,7 +1048,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -1081,7 +1081,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -1150,7 +1150,7 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v3, v0, Landroid/view/View;->mPaddingRight:I
 
     sub-int v3, v9, v3
 
@@ -1197,7 +1197,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/systemui/LoadAverageService$LoadView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     .line 174
     return-void
@@ -1212,7 +1212,7 @@
 
     .line 263
     .local v6, "stats":Lcom/android/systemui/LoadAverageService$Stats;
-    invoke-virtual {v6}, Lcom/android/systemui/LoadAverageService$Stats;->countWorkingStats()I
+    invoke-virtual {v6}, Lcom/android/internal/os/ProcessStats;->countWorkingStats()I
 
     move-result v0
 
@@ -1229,7 +1229,7 @@
     if-ge v1, v0, :cond_1
 
     .line 267
-    invoke-virtual {v6, v1}, Lcom/android/systemui/LoadAverageService$Stats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
+    invoke-virtual {v6, v1}, Lcom/android/internal/os/ProcessStats;->getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
 
     move-result-object v5
 
@@ -1251,9 +1251,9 @@
     .line 273
     .end local v5    # "st":Lcom/android/internal/os/ProcessStats$Stats;
     :cond_1
-    iget v7, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingLeft:I
+    iget v7, p0, Landroid/view/View;->mPaddingLeft:I
 
-    iget v8, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingRight:I
+    iget v8, p0, Landroid/view/View;->mPaddingRight:I
 
     add-int/2addr v7, v8
 
@@ -1261,9 +1261,9 @@
 
     .line 274
     .local v4, "neededWidth":I
-    iget v7, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingTop:I
+    iget v7, p0, Landroid/view/View;->mPaddingTop:I
 
-    iget v8, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mPaddingBottom:I
+    iget v8, p0, Landroid/view/View;->mPaddingBottom:I
 
     add-int/2addr v7, v8
 
@@ -1293,7 +1293,7 @@
     iput v3, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mNeededHeight:I
 
     .line 278
-    invoke-virtual {p0}, Lcom/android/systemui/LoadAverageService$LoadView;->requestLayout()V
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     .line 282
     :goto_1
@@ -1301,7 +1301,7 @@
 
     .line 280
     :cond_3
-    invoke-virtual {p0}, Lcom/android/systemui/LoadAverageService$LoadView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_1
 .end method

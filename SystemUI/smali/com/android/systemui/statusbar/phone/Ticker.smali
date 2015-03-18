@@ -52,7 +52,7 @@
     const v6, 0x10a0031
 
     .line 148
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 48
     new-instance v4, Landroid/os/Handler;
@@ -85,7 +85,7 @@
 
     .line 151
     .local v2, "res":Landroid/content/res/Resources;
-    const v4, 0x7f0b000d
+    const v4, 0x7f0c000d
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -93,7 +93,7 @@
 
     .line 152
     .local v1, "outerBounds":I
-    const v4, 0x7f0b0012
+    const v4, 0x7f0c0012
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -110,7 +110,7 @@
     iput v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconScale:F
 
     .line 155
-    const v4, 0x7f0c002a
+    const v4, 0x7f0d002a
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
     iput-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTickerView:Landroid/view/View;
 
     .line 157
-    const v4, 0x7f0c002b
+    const v4, 0x7f0d002b
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -136,7 +136,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/widget/ImageSwitcher;->setInAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v4, v5}, Landroid/widget/ViewAnimator;->setInAnimation(Landroid/view/animation/Animation;)V
 
     .line 160
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
@@ -145,24 +145,24 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/widget/ImageSwitcher;->setOutAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v4, v5}, Landroid/widget/ViewAnimator;->setOutAnimation(Landroid/view/animation/Animation;)V
 
     .line 162
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
 
     iget v5, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconScale:F
 
-    invoke-virtual {v4, v5}, Landroid/widget/ImageSwitcher;->setScaleX(F)V
+    invoke-virtual {v4, v5}, Landroid/view/View;->setScaleX(F)V
 
     .line 163
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
 
     iget v5, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconScale:F
 
-    invoke-virtual {v4, v5}, Landroid/widget/ImageSwitcher;->setScaleY(F)V
+    invoke-virtual {v4, v5}, Landroid/view/View;->setScaleY(F)V
 
     .line 165
-    const v4, 0x7f0c002c
+    const v4, 0x7f0d002c
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -179,7 +179,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextSwitcher;->setInAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v4, v5}, Landroid/widget/ViewAnimator;->setInAnimation(Landroid/view/animation/Animation;)V
 
     .line 168
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;
@@ -188,14 +188,14 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextSwitcher;->setOutAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v4, v5}, Landroid/widget/ViewAnimator;->setOutAnimation(Landroid/view/animation/Animation;)V
 
     .line 172
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextSwitcher;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -508,12 +508,12 @@
     .line 214
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageSwitcher;->setAnimateFirstView(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/ViewAnimator;->setAnimateFirstView(Z)V
 
     .line 215
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
 
-    invoke-virtual {v0}, Landroid/widget/ImageSwitcher;->reset()V
+    invoke-virtual {v0}, Landroid/widget/ViewSwitcher;->reset()V
 
     .line 216
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
@@ -525,12 +525,12 @@
     .line 218
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;
 
-    invoke-virtual {v0, v4}, Landroid/widget/TextSwitcher;->setAnimateFirstView(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/ViewAnimator;->setAnimateFirstView(Z)V
 
     .line 219
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;
 
-    invoke-virtual {v0}, Landroid/widget/TextSwitcher;->reset()V
+    invoke-virtual {v0}, Landroid/widget/ViewSwitcher;->reset()V
 
     .line 220
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;

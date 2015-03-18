@@ -755,12 +755,12 @@ Dostępna liczba prób:"</string>
     <string name="lockscreen_pattern_correct">Poprawnie!</string>
     <string name="lockscreen_pattern_wrong">Spróbuj ponownie.</string>
     <string name="lockscreen_password_wrong">Spróbuj ponownie.</string>
-    <string name="faceunlock_multiple_failures">Przekroczono maks. liczbę prób odblokowania funkcją Rozpoznanie twarzy.</string>
+    <string name="faceunlock_multiple_failures">Przekroczono maksymalną liczbę prób odblokowania Face Unlock.</string>
     <string name="lockscreen_plugged_in">Ładowanie (%d%%)</string>
     <string name="lockscreen_charged">Naładowany.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Podłącz ładowarkę.</string>
-    <string name="lockscreen_missing_sim_message_short">Brak karty SIM</string>
+    <string name="lockscreen_missing_sim_message_short">Brak karty SIM.</string>
     <string name="lockscreen_missing_sim_message">Brak karty SIM w telefonie.</string>
     <string name="lockscreen_missing_sim_instructions">Włóż kartę SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">Brak karty SIM lub nie można jej odczytać. Włóż kartę SIM.</string>
@@ -776,10 +776,10 @@ Dostępna liczba prób:"</string>
     <string name="lockscreen_sim_error_message_short">Nieprawidłowa karta</string>
     <string name="lockscreen_sim_error_message">Karta SIM jest nieprawidłowa.</string>
     <string name="lockscreen_network_locked_message">Sieć zablokowana</string>
-    <string name="lockscreen_perso_locked_message">Karta SIM została zablokowana</string>
+    <string name="lockscreen_perso_locked_message">Karta SIM/RUIM została zablokowana.</string>
     <string name="lockscreen_sim_puk_locked_message">Karta SIM jest zablokowana kodem PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">Zapoznaj się z instrukcją obsługi lub skontaktuj się z działem obsługi klienta.</string>
-    <string name="lockscreen_sim_locked_message">Karta SIM jest zablokowana.</string>
+    <string name="lockscreen_sim_locked_message">Karta SIM / RUIM jest zablokowana.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Odblokowywanie karty SIM...</string>
     <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Wzór odblokowania został nieprawidłowo narysowany %d razy. 
 
@@ -1258,12 +1258,6 @@ dotyczące konta %s"</string>
     <string name="default_audio_route_category_name">System</string>
     <string name="bluetooth_a2dp_audio_route_name">Dźwięk Bluetooth</string>
     <string name="media_route_chooser_grouping_done">Gotowe</string>
-    <string name="wispr_login_success">Logowanie powiodło się</string>
-    <string name="wispr_login_failed">Błąd logowania</string>
-    <string name="wispr_login_header">Status punktu dostępu Wi-Fi w sieci AT&amp;T</string>
-    <string name="wispr_login_failed_credential">Brak możliwości potwierdzenia nieczytelności, proszę skontaktować się z działem obsługi klienta pod numerem 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Błąd uwierzytelniania</string>
-    <string name="wispr_insert_sim">Brak możliwości potwierdzenia nieczytelności, proszę skontaktować się z działem obsługi klienta pod numerem 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1396,14 +1390,7 @@ dotyczące konta %s"</string>
     <string name="password_recovery_dialog_title">Nie pamiętasz hasła?</string>
     <string name="password_recovery_dialog_message">Skontaktuj się z działem IT i poproś o hasło \"Hasło ratunkowe\". Wprowadzenie tego hasła umożliwi zresetowanie aktualnego hasła i określenie nowego.</string>
     <string name="lockscreen_charged_rmdunplug">Bateria w pełni naładowana. Wyjmij wtyczkę ładowarki z gniazda sieciowego, aby zaoszczędzić energię.</string>
-    <string name="moto_eritext_verizon_wireless">Bezprzewodowa sieć Verizon</string>
-    <string name="moto_eritext_network_extender">Ekstender sieci</string>
-    <string name="moto_eritext_extended_network">Sieć rozszerzona</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">Dysk USB</string>
-    <string name="sim_pin_technical_problem">Wystąpił problem techniczny. Spróbuj ponownie.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Potwierdź nowy kod PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Spróbuj ponownie za %d s</string>
     <string name="msg_disable_consumer_email_notification">Obsługa popularnych serwisów e-mail wyłączona.</string>
     <string name="msg_enable_consumer_email_notification">Obsługa popularnych serwisów e-mail włączona.</string>
     <string name="msg_disable_browser_notification">Wyłączono przeglądarkę.</string>
@@ -1422,5 +1409,4 @@ dotyczące konta %s"</string>
     <string name="msg_app_control_notification">Zaktualizowano listę wyłączonych aplikacji.</string>
     <string name="policylab_appcontrol">Wyłącz aplikacji</string>
     <string name="policydesc_appcontrol">Pozwól administratorowi na włączanie lub wyłączanie aplikacji w urządzeniu.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">Kod PIN został odblokowany</string>
 </resources>

@@ -3,7 +3,7 @@
 .source "PhoneStatusBar.java"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -26,25 +26,33 @@
     .locals 0
 
     .prologue
-    .line 1453
+    .line 1340
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$16;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onFocusChange(Landroid/view/View;Z)V
-    .locals 0
-    .param p1, "v"    # Landroid/view/View;
-    .param p2, "hasFocus"    # Z
+.method public run()V
+    .locals 3
 
     .prologue
-    .line 1457
-    invoke-virtual {p1, p2}, Landroid/view/View;->setSelected(Z)V
+    .line 1343
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$16;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    .line 1458
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$16;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mChoreographer:Landroid/view/Choreographer;
+
+    invoke-virtual {v1}, Landroid/view/Choreographer;->getFrameTimeNanos()J
+
+    move-result-wide v1
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->doRevealAnimation(J)V
+
+    .line 1344
     return-void
 .end method

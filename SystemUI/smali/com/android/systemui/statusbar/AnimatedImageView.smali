@@ -45,7 +45,7 @@
 
     .prologue
     .line 42
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/AnimatedImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/AnimatedImageView;->mAnim:Landroid/graphics/drawable/AnimationDrawable;
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
     move-result v1
 
@@ -117,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
     move-result v0
 
@@ -172,7 +172,7 @@
 
     .prologue
     .line 93
-    invoke-super {p0, p1, p2}, Landroid/widget/ImageView;->onVisibilityChanged(Landroid/view/View;I)V
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
     .line 94
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedImageView;->mAnim:Landroid/graphics/drawable/AnimationDrawable;
@@ -180,7 +180,7 @@
     if-eqz v0, :cond_0
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
     move-result v0
 

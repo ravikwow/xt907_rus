@@ -165,7 +165,7 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 99
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->setClickable(Z)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setClickable(Z)V
 
     .line 100
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -263,13 +263,13 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v5
 
     .line 108
     .local v5, "w":I
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v3
 
@@ -438,7 +438,7 @@
     .line 226
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mCheckLongPress:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v4}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 227
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mCheckLongPress:Ljava/lang/Runnable;
@@ -449,13 +449,13 @@
 
     int-to-long v6, v6
 
-    invoke-virtual {p0, v4, v6, v7}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v4, v6, v7}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_0
 
     .line 223
     :cond_1
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->performHapticFeedback(I)Z
+    invoke-virtual {p0, v5}, Landroid/view/View;->performHapticFeedback(I)Z
 
     goto :goto_1
 
@@ -483,7 +483,7 @@
 
     if-lt v2, v6, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v6
 
@@ -499,7 +499,7 @@
 
     if-lt v3, v6, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v6
 
@@ -539,13 +539,13 @@
     .line 244
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mCheckLongPress:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v4}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
     .line 248
     :pswitch_3
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->isPressed()Z
+    invoke-virtual {p0}, Landroid/view/View;->isPressed()Z
 
     move-result v1
 
@@ -565,10 +565,10 @@
     invoke-virtual {p0, v5, v4}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->sendEvent(II)V
 
     .line 253
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->sendAccessibilityEvent(I)V
+    invoke-virtual {p0, v5}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     .line 254
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->playSoundEffect(I)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->playSoundEffect(I)V
 
     .line 264
     :cond_4
@@ -580,7 +580,7 @@
     .line 265
     iget-object v4, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mCheckLongPress:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v4}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     goto/16 :goto_0
 
@@ -595,7 +595,7 @@
     if-eqz v1, :cond_4
 
     .line 261
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->performClick()Z
+    invoke-virtual {p0}, Landroid/view/View;->performClick()Z
 
     goto :goto_2
 
@@ -711,7 +711,7 @@
 
     float-to-int v0, v0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->setAlpha(I)V
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setAlpha(I)V
 
     .line 135
     iput p1, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mDrawingAlpha:F
@@ -738,7 +738,7 @@
     iput p1, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mGlowAlpha:F
 
     .line 146
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_0
 .end method
@@ -768,7 +768,7 @@
     iput p1, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mGlowScale:F
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -776,7 +776,7 @@
 
     .line 158
     .local v3, "w":F
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v4
 
@@ -802,7 +802,7 @@
     .local v2, "ry":F
     new-instance v4, Landroid/graphics/RectF;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getLeft()I
 
     move-result v5
 
@@ -810,7 +810,7 @@
 
     sub-float/2addr v5, v1
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getTop()I
 
     move-result v6
 
@@ -818,7 +818,7 @@
 
     sub-float/2addr v6, v2
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getRight()I
 
     move-result v7
 
@@ -826,7 +826,7 @@
 
     add-float/2addr v7, v1
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getBottom()I
 
     move-result v8
 
@@ -839,7 +839,7 @@
     invoke-static {p0, v4}, Lcom/android/systemui/SwipeHelper;->invalidateGlobalRegion(Landroid/view/View;Landroid/graphics/RectF;)V
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v4
 
@@ -871,7 +871,7 @@
     if-eqz v1, :cond_3
 
     .line 180
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/KeyButtonView;->isPressed()Z
+    invoke-virtual {p0}, Landroid/view/View;->isPressed()Z
 
     move-result v1
 
@@ -975,7 +975,7 @@
     .line 207
     .end local v0    # "as":Landroid/animation/AnimatorSet;
     :cond_3
-    invoke-super {p0, p1}, Landroid/widget/ImageView;->setPressed(Z)V
+    invoke-super {p0, p1}, Landroid/view/View;->setPressed(Z)V
 
     .line 208
     return-void

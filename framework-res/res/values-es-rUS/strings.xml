@@ -188,7 +188,7 @@
     <string name="badPin">El PIN anterior que escribiste no es correcto.</string>
     <string name="badPuk">El código PUK que escribiste no es correcto.</string>
     <string name="mismatchPin">Los PIN que ingresaste no coinciden.</string>
-    <string name="invalidPin">Ingresar PIN entre 4 y 8 números.</string>
+    <string name="invalidPin">Escribe un PIN que contenga entre 4 y 8 números.</string>
     <string name="invalidPuk">Ingresa un código PUK de 8 números o más.</string>
     <string name="needPuk">Tu tarjeta SIM está bloqueada con PUK. Escribe el código PUK para desbloquearla.</string>
     <string name="needPuk2">Escribir PUK2 para desbloquear la tarjeta SIM.</string>
@@ -650,7 +650,7 @@ Intentos restantes :"</string>
     <string name="policylab_forceLock">Bloquear la pantalla</string>
     <string name="policydesc_forceLock">Controlar cómo y cuándo se bloquea la pantalla</string>
     <string name="policylab_wipeData">Borrar todos los datos</string>
-    <string name="policydesc_wipeData">Borrar los datos del dispositivo sin avisar y restablecer la configuración de fábrica</string>
+    <string name="policydesc_wipeData">Eliminar los datos del dispositivo sin avisar y restablecer la configuración de fábrica</string>
     <string name="policylab_setGlobalProxy">Configura el proxy global de dispositivo</string>
     <string name="policydesc_setGlobalProxy">Configurar el proxy global del dispositivo que se utilizará mientras está habilitada la política. Sólo el primera administrador del dispositivo configura el proxy global efectivo.</string>
     <string name="policylab_expirePassword">Establecer expiración de la contraseña de bloqueo de pantalla</string>
@@ -738,7 +738,7 @@ Intentos restantes :"</string>
     <string name="keyguard_password_entry_touch_hint"><font size="17">Toca para ingresar la contraseña</font></string>
     <string name="keyguard_password_enter_password_code">Ingresar contraseña para desbloquear</string>
     <string name="keyguard_password_enter_pin_password_code">Ingresa el PIN para desbloquear</string>
-    <string name="keyguard_password_wrong_pin_code">PIN incorrecto</string>
+    <string name="keyguard_password_wrong_pin_code">Código PIN incorrecto</string>
     <string name="keyguard_password_wrong_puk_code">Código PUK incorrecto.</string>
     <string name="keyguard_password_pin_failed">Falla en operación PIN.</string>
     <string name="keyguard_password_puk_failed">Falla en operación PUK.</string>
@@ -754,13 +754,13 @@ Intentos restantes :"</string>
     <string name="lockscreen_return_to_call">Regresar a llamada</string>
     <string name="lockscreen_pattern_correct">Correcto</string>
     <string name="lockscreen_pattern_wrong">Vuelve a intentarlo.</string>
-    <string name="lockscreen_password_wrong">Vuelve a intentarlo</string>
+    <string name="lockscreen_password_wrong">Volver a intentarlo</string>
     <string name="faceunlock_multiple_failures">Se superó el máximo de intentos permitido para el desbloqueo facial del dispositivo.</string>
     <string name="lockscreen_plugged_in">Cargando %d%%</string>
-    <string name="lockscreen_charged">Cargada.</string>
+    <string name="lockscreen_charged">Cargado.</string>
     <string name="lockscreen_battery_short">%d%%</string>
     <string name="lockscreen_low_battery">Conecta tu cargador.</string>
-    <string name="lockscreen_missing_sim_message_short">No hay tarjeta SIM</string>
+    <string name="lockscreen_missing_sim_message_short">No hay tarjeta SIM.</string>
     <string name="lockscreen_missing_sim_message">No hay tarjeta SIM en el dispositivo.</string>
     <string name="lockscreen_missing_sim_instructions">Inserta una tarjeta SIM.</string>
     <string name="lockscreen_missing_sim_instructions_long">Falta la tarjeta SIM o no se puede leer. Introduce una tarjeta SIM.</string>
@@ -777,12 +777,12 @@ Intentos restantes :"</string>
     <string name="lockscreen_sim_error_message">Tarjeta SIM no válida.</string>
     <string name="lockscreen_network_locked_message">Red bloqueada</string>
     <string name="lockscreen_perso_locked_message">SIM/RUIM está bloqueado por Perso</string>
-    <string name="lockscreen_sim_puk_locked_message">SIM bloqueada con PUK.</string>
+    <string name="lockscreen_sim_puk_locked_message">La tarjeta SIM está bloqueada con PUK.</string>
     <string name="lockscreen_sim_puk_locked_instructions">"PIN 1 bloqueado. Ingresa el PUK1.
 ornrevisa la guía del usuario/contacta a servicio al cliente"</string>
-    <string name="lockscreen_sim_locked_message">SIM bloqueada</string>
+    <string name="lockscreen_sim_locked_message">La tarjeta SIM/RUIM está bloqueada.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Desbloqueando tarjeta SIM…</string>
-    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Dibujaste incorrectamente tu patrón de desbloqueo %d veces. 
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"Estableciste incorrectamente tu patrón de desbloqueo %d veces. 
 
 Vuelve a intentarlo en %d segundos."</string>
     <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"Escribiste incorrectamente tu contraseña %d veces. 
@@ -857,10 +857,10 @@ Toca Aceptar para continuar o Cancelar para permanecer en la página actual."</s
     <string name="autofill_parish">Circunscripción</string>
     <string name="autofill_area">Área</string>
     <string name="autofill_emirate">Emirato</string>
-    <string name="permlab_readHistoryBookmarks">leer tus favoritos web y el historial</string>
-    <string name="permdesc_readHistoryBookmarks">Permite que la aplicación consulte el historial de todas las URL visitadas por el navegador, y todos sus favoritos. Nota: Este permiso no puede ser utilizado por navegadores externos ni otras aplicaciones que tengan funciones de navegación por Internet.</string>
-    <string name="permlab_writeHistoryBookmarks">guardar favoritos web e historial</string>
-    <string name="permdesc_writeHistoryBookmarks">Permite que la aplicación modifique el historial o los favoritos del navegador almacenados en el dispositivo. La aplicación puede utilizar este permiso para borrar o modificar los datos del navegador. Nota: Este permiso no puede ser utilizado por navegadores externos ni otras aplicaciones que tengan funciones de navegación por Internet.</string>
+    <string name="permlab_readHistoryBookmarks">leer tus marcadores web y el historial</string>
+    <string name="permdesc_readHistoryBookmarks">Permite que la aplicación consulte el historial de todas las URL visitadas por el navegador, y todos sus marcadores. Nota: Este permiso no puede ser utilizado por navegadores externos ni otras aplicaciones que tengan funciones de navegación por Internet.</string>
+    <string name="permlab_writeHistoryBookmarks">escribir marcadores web e historial</string>
+    <string name="permdesc_writeHistoryBookmarks">Permite que la aplicación modifique el historial o los marcadores del navegador almacenados en el dispositivo. La aplicación puede utilizar este permiso para borrar o modificar los datos del navegador. Nota: Este permiso no puede ser utilizado por navegadores externos ni otras aplicaciones que tengan funciones de navegación por Internet.</string>
     <string name="permlab_setAlarm">programar una alarma</string>
     <string name="permdesc_setAlarm">Permite que la aplicación establezca una alarma en una aplicación de alarma instalada. Es posible que algunas aplicaciones de alarma no incluyan esta función.</string>
     <string name="permlab_addVoicemail">agregar correo de voz</string>
@@ -940,8 +940,8 @@ Toca Aceptar para continuar o Cancelar para permanecer en la página actual."</s
     <string name="chooseUsbActivity">Selecciona una aplicación para el dispositivo USB.</string>
     <string name="noApplications">Ninguna aplicación puede realizar esta acción.</string>
     <string name="aerr_title" />
-    <string name="aerr_application">Lo sentimos. La aplicación %1$s se detuvo.</string>
-    <string name="aerr_process">Lo sentimos. El proceso %1$s se detuvo.</string>
+    <string name="aerr_application">Lamentablemente, la aplicación %1$s se detuvo.</string>
+    <string name="aerr_process">Lamentablemente, el proceso %1$s se detuvo.</string>
     <string name="anr_title" />
     <string name="anr_activity_application">"%2$s no responde.
 
@@ -995,10 +995,10 @@ Toca Aceptar para continuar o Cancelar para permanecer en la página actual."</s
     <string name="volume_icon_description_media">Volumen de los medios</string>
     <string name="volume_icon_description_notification">Volumen de notificación</string>
     <string name="ringtone_default">Tono de timbre predeterminado</string>
-    <string name="ringtone_default_with_actual">Tono de timbre predeterminado (%1$s)</string>
+    <string name="ringtone_default_with_actual">Tono de llamada predeterminado (%1$s)</string>
     <string name="ringtone_silent">Silencioso</string>
     <string name="ringtone_picker_title">Tonos de timbre</string>
-    <string name="ringtone_unknown">Tono de timbre desconocido</string>
+    <string name="ringtone_unknown">Tono de llamada desconocido</string>
     <string name="wifi_available_sign_in">Accede a una red Wi-Fi.</string>
     <string name="wifi_available_sign_in_detailed">%1$s</string>
     <string name="wifi_watchdog_network_disabled">No se pudo conectar a la red Wi-Fi.</string>
@@ -1054,7 +1054,7 @@ Toca Aceptar para continuar o Cancelar para permanecer en la página actual."</s
     <string name="dlg_confirm_kill_storage_users_text">Si activas el almacenamiento USB, se detendrán algunas aplicaciones que estás usando y es posible que no estén disponibles hasta que lo desactives.</string>
     <string name="dlg_error_title">Error en el funcionamiento USB</string>
     <string name="dlg_ok">Aceptar</string>
-    <string name="usb_mtp_notification_title">Conectado como disp. de medios</string>
+    <string name="usb_mtp_notification_title">Conectado como un disp. de medios</string>
     <string name="usb_ptp_notification_title">Conectado como una cámara</string>
     <string name="usb_cd_installer_notification_title">Conectado como un instalador</string>
     <string name="usb_accessory_notification_title">Conectado a un accesorio USB</string>
@@ -1079,8 +1079,8 @@ Toca Aceptar para continuar o Cancelar para permanecer en la página actual."</s
     <string name="ext_media_nofs_notification_message">La tarjeta SD está vacía o su sistema de archivos es incompatible.</string>
     <string name="ext_media_unmountable_notification_title">Tarjeta SD dañada</string>
     <string name="ext_media_unmountable_notification_message">La tarjeta SD está dañada. Intenta formatearla de nuevo.</string>
-    <string name="ext_media_badremoval_notification_title">Tarjeta SD removida</string>
-    <string name="ext_media_badremoval_notification_message">Desmontarla para evitar pérdida de datos.</string>
+    <string name="ext_media_badremoval_notification_title">Tarjeta SD removida de forma imprevista</string>
+    <string name="ext_media_badremoval_notification_message">Desmontar la tarjeta SD antes de extraerla para evitar la pérdida de datos.</string>
     <string name="ext_media_safe_unmount_notification_title">Es seguro extraer la tarjeta SD</string>
     <string name="ext_media_safe_unmount_notification_message">Puedes extraer tarjeta SD de forma segura.</string>
     <string name="ext_media_nomedia_notification_title">Tarjeta SD extraída</string>
@@ -1132,7 +1132,7 @@ para la cuenta %s"</string>
     <string name="submit">Enviar</string>
     <string name="car_mode_disable_notification_title">Modo auto habilitado</string>
     <string name="car_mode_disable_notification_message">Toca para salir del modo auto.</string>
-    <string name="tethered_notification_title">Conex./pt. Wi-Fi móvil activo</string>
+    <string name="tethered_notification_title">Conexión o punto Wi-Fi móvil conectado</string>
     <string name="tethered_notification_message">Toca para configurar.</string>
     <string name="back_button_label">Atrás</string>
     <string name="next_button_label">Siguiente</string>
@@ -1259,12 +1259,6 @@ para la cuenta %s"</string>
     <string name="default_audio_route_category_name">Sistema</string>
     <string name="bluetooth_a2dp_audio_route_name">Audio Bluetooth</string>
     <string name="media_route_chooser_grouping_done">Listo</string>
-    <string name="wispr_login_success">Ingreso exitoso</string>
-    <string name="wispr_login_failed">Ingreso fallido</string>
-    <string name="wispr_login_header">Estado de punto móvil Wi-Fi de AT&amp;T</string>
-    <string name="wispr_login_failed_credential">No es posible confirmar la eligibilidad. Llama a Servicio al cliente al 1-800-331-0500</string>
-    <string name="wispr_login_failed_network">Error de autenticación</string>
-    <string name="wispr_insert_sim">No es posible confirmar la eligibilidad. Llama a Servicio al cliente al 1-800-331-0500</string>
     <string name="dt_day_format">%-e</string>
     <string name="dt_month_format">%B</string>
     <string name="dt_year_format">%Y</string>
@@ -1279,14 +1273,6 @@ para la cuenta %s"</string>
     <string name="same_abbrev_month_wday1_md1_time1_wday2_md2_time2">%1$s %3$s %2$s, %5$s - %6$s %8$s %7$s, %10$s</string>
     <string name="same_abbrev_month_mdy1_time1_mdy2_time2">%3$s/%2$s/%4$s, %5$s - %8$s/%7$s/%9$s, %10$s</string>
     <string name="same_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">%1$s %3$s/%2$s/%4$s, %5$s - %6$s %8$s/%7$s/%9$s, %10$s</string>
-    <string name="same_year_abbrev_month_md1_md2">%2$s %3$s - %7$s %8$s</string>
-    <string name="same_year_abbrev_month_wday1_md1_wday2_md2">%1$s %2$s %3$s - %6$s %7$s %8$s</string>
-    <string name="same_year_abbrev_month_md1_time1_md2_time2">%5$s %2$s %3$s - %10$s %7$s %8$s</string>
-    <string name="same_year_abbrev_month_wday1_md1_time1_wday2_md2_time2">%5$s %1$s %2$s %3$s - %10$s %6$s %7$s %8$s</string>
-    <string name="same_year_abbrev_month_mdy1_time1_mdy2_time2">%5$s %2$s %3$s, %4$s - %10$s %7$s %8$s, %9$s</string>
-    <string name="same_year_abbrev_month_wday1_mdy1_time1_wday2_mdy2_time2">%5$s %1$s %2$s %3$s, %4$s - %10$s %6$s %7$s %8$s, %9$s</string>
-    <string name="same_year_abbrev_month_mdy1_mdy2">%2$s %3$s - %7$s %8$s, %9$s</string>
-    <string name="same_year_abbrev_month_wday1_mdy1_wday2_mdy2">%1$s %2$s %3$s - %6$s %7$s %8$s, %9$s</string>
     <string name="cipheringIndicator">Ciphering no está disponible en tu red. Llamadas telefónicas y/o datos móviles serán decodificados</string>
     <string name="sim_retry_left">Intentos restantes %d</string>
     <string name="vzw_disable_we_gsm_cf">Desvío de llamadas inhabilitado fuera de la red inalámbrica de Verizon.</string>
@@ -1299,7 +1285,7 @@ para la cuenta %s"</string>
     <string name="tether_connecting_notification_message">Configurando vínculo de datos...</string>
     <string name="tether_connected_notification_title">Conexión USB activada</string>
     <string name="tether_connected_notification_message">El vínculo de datos está configurado.</string>
-    <string name="tether_authen_error_notification_title">Cuenta sin conexión USB</string>
+    <string name="tether_authen_error_notification_title">Cuenta no configurada para conexión USB</string>
     <string name="tether_authen_error_notification_message">Para habilitarla, ve a att.com/mywireless o marca 611</string>
     <string name="tether_connect_error_notification_title">Error de anclaje a USB</string>
     <string name="tether_connect_error_notification_message">Reconecta el cable USB e intenta de nuevo</string>
@@ -1309,7 +1295,7 @@ para la cuenta %s"</string>
     <string name="wifi_connecting_notification_message">Configurando vínculo de datos...</string>
     <string name="wifi_connected_notification_title">Punto Wi-Fi móvil conectado.</string>
     <string name="wifi_connected_notification_message">El vínculo de datos está configurado</string>
-    <string name="wifi_authen_error_notification_title">Cuenta sin Punto Wi-Fi móvil</string>
+    <string name="wifi_authen_error_notification_title">Cuenta no configurada para Punto Wi-Fi móvil</string>
     <string name="wifi_authen_error_notification_message">Para habilitarla, ve a att.com/mywireless o marca 611</string>
     <string name="wifi_connect_error_notification_title">Error de punto Wi-Fi móvil</string>
     <string name="wifi_connect_error_notification_message">Apaga el Wi-Fi e intenta de nuevo</string>
@@ -1405,14 +1391,7 @@ para la cuenta %s"</string>
     <string name="password_recovery_dialog_title">¿Olvidaste tu contraseña?</string>
     <string name="password_recovery_dialog_message">Contacta a tu departamento IT y solicita la \"Contraseña de respaldo\". Al ingresar esta contraseña podrás restablecer tu contraseña existente y definir una nueva.</string>
     <string name="lockscreen_charged_rmdunplug">Carga completa. Desconecta tu cargador de la toma para ahorrar energía.</string>
-    <string name="moto_eritext_verizon_wireless">Verizon Wireless</string>
-    <string name="moto_eritext_network_extender">Ampliador de red</string>
-    <string name="moto_eritext_extended_network">Red extendida</string>
-    <string name="moto_eritext_roaming">Roaming</string>
     <string name="storage_usb_disk">Disco USB</string>
-    <string name="sim_pin_technical_problem">Ocurrió un error. Reinténtalo.</string>
-    <string name="keyguard_password_enter_pin_confirm_prompt">Confirmar nuevo PIN</string>
-    <string name="lockscreen_too_many_failed_attempts_countdown_one_second">Vuelva a intentarlo en %d segundos.</string>
     <string name="msg_disable_consumer_email_notification">Correo del consumidor inhabilitado.</string>
     <string name="msg_enable_consumer_email_notification">Correo del consumidor habilitado.</string>
     <string name="msg_disable_browser_notification">Navegador inhabilitado.</string>
@@ -1431,5 +1410,4 @@ para la cuenta %s"</string>
     <string name="msg_app_control_notification">Actualización de la lista de aplicaciones desactivadas.</string>
     <string name="policylab_appcontrol">Desactivar aplicaciones</string>
     <string name="policydesc_appcontrol">Permite que el administrador active o desactive las aplicaciones en el dispositivo.</string>
-    <string name="keyguard_password_accepted_sim_pin_code">PIN desbloqueada</string>
 </resources>

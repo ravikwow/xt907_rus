@@ -304,7 +304,7 @@
 
     .line 229
     .local v9, "view":Landroid/view/View;
-    const v10, 0x7f0c007e
+    const v10, 0x7f0d007e
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -314,7 +314,7 @@
 
     .line 230
     .local v6, "subtypeIcon":Landroid/widget/ImageView;
-    const v10, 0x7f0c007f
+    const v10, 0x7f0d007f
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -324,7 +324,7 @@
 
     .line 231
     .local v3, "itemTitle":Landroid/widget/TextView;
-    const v10, 0x7f0c0080
+    const v10, 0x7f0d0080
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -334,7 +334,7 @@
 
     .line 232
     .local v2, "itemSubtitle":Landroid/widget/TextView;
-    const v10, 0x7f0c0082
+    const v10, 0x7f0d0082
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
 
     .line 233
     .local v5, "settingsIcon":Landroid/widget/ImageView;
-    const v10, 0x7f0c007c
+    const v10, 0x7f0d007c
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -360,7 +360,7 @@
     .line 236
     const/16 v10, 0x8
 
-    invoke-virtual {v2, v10}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v2, v10}, Landroid/view/View;->setVisibility(I)V
 
     .line 242
     :goto_1
@@ -371,7 +371,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v6, v10}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v10}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 244
     invoke-virtual {p1}, Landroid/view/inputmethod/InputMethodInfo;->getSettingsActivity()Ljava/lang/String;
@@ -391,7 +391,7 @@
 
     invoke-direct {v10, p0, p1, v4}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel$2;-><init>(Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;Landroid/view/inputmethod/InputMethodInfo;Ljava/lang/String;)V
 
-    invoke-virtual {v5, v10}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v5, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 263
     :goto_2
@@ -447,7 +447,7 @@
     .line 239
     const/4 v10, 0x0
 
-    invoke-virtual {v2, v10}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v2, v10}, Landroid/view/View;->setVisibility(I)V
 
     .line 240
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -457,7 +457,7 @@
     .line 260
     .restart local v4    # "settingsActivity":Ljava/lang/String;
     :cond_3
-    const v10, 0x7f0c0081
+    const v10, 0x7f0d0081
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -480,7 +480,7 @@
 
     .prologue
     .line 415
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -782,7 +782,7 @@
 
     move-result-object v4
 
-    iget-object v4, v4, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, v4, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -819,7 +819,7 @@
 
     move-result-object v4
 
-    iget-object v4, v4, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, v4, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -844,7 +844,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    invoke-virtual {v1, v2}, Landroid/content/pm/ApplicationInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, v2}, Landroid/content/pm/PackageItemInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -921,7 +921,7 @@
 
     move-result-object v2
 
-    iget-object v2, v2, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v2, v2, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     invoke-virtual {p2, v0, v1, v2}, Landroid/view/inputmethod/InputMethodSubtype;->getDisplayName(Landroid/content/Context;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
 
@@ -1030,7 +1030,7 @@
     .line 179
     iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v1}, Landroid/widget/Switch;->isChecked()Z
+    invoke-virtual {v1}, Landroid/widget/CompoundButton;->isChecked()Z
 
     move-result v0
 
@@ -1073,12 +1073,12 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 329
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
 
     move-result v0
 
@@ -1107,7 +1107,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -1175,7 +1175,7 @@
 
     .line 375
     .local v2, "radioView":Landroid/view/View;
-    const v4, 0x7f0c007d
+    const v4, 0x7f0d007d
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1244,7 +1244,7 @@
     :cond_3
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     goto :goto_1
 
@@ -1252,7 +1252,7 @@
     :cond_4
     const/4 v4, 0x0
 
-    invoke-virtual {v3, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     goto :goto_1
 .end method
@@ -1314,7 +1314,7 @@
 
     .line 343
     .local v2, "radioView":Landroid/view/View;
-    const v5, 0x7f0c007d
+    const v5, 0x7f0d007d
 
     invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1366,7 +1366,7 @@
     .line 353
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     goto :goto_0
 
@@ -1375,7 +1375,7 @@
     :cond_1
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
     goto :goto_0
 
@@ -1399,7 +1399,7 @@
     .line 281
     iget-object v7, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodMenuList:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v7}, Landroid/widget/LinearLayout;->removeAllViews()V
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 282
     iget-object v7, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mRadioViewAndImiMap:Ljava/util/HashMap;
@@ -1474,7 +1474,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -1506,7 +1506,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_1
 
@@ -1532,7 +1532,7 @@
     .line 197
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 198
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodSwitchButton:Lcom/android/systemui/statusbar/tablet/InputMethodButton;
@@ -1553,7 +1553,7 @@
     .line 202
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {p0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -1590,7 +1590,7 @@
     .local v1, "y":I
     if-ltz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
@@ -1598,14 +1598,14 @@
 
     if-ltz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
     if-ge v1, v2, :cond_0
 
     .line 172
-    invoke-super {p0, p1}, Landroid/widget/LinearLayout;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
@@ -1636,7 +1636,7 @@
 
     .prologue
     .line 132
-    invoke-super {p0}, Landroid/widget/LinearLayout;->onAttachedToWindow()V
+    invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
     .line 133
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mAttached:Z
@@ -1644,7 +1644,7 @@
     if-nez v0, :cond_0
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1692,7 +1692,7 @@
 
     .prologue
     .line 123
-    invoke-super {p0}, Landroid/widget/LinearLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 124
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mAttached:Z
@@ -1700,7 +1700,7 @@
     if-eqz v0, :cond_0
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1723,9 +1723,9 @@
 
     .prologue
     .line 141
-    const v0, 0x7f0c0087
+    const v0, 0x7f0d0087
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1734,9 +1734,9 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodMenuList:Landroid/widget/LinearLayout;
 
     .line 142
-    const v0, 0x7f0c0084
+    const v0, 0x7f0d0084
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1745,9 +1745,9 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSection:Landroid/widget/LinearLayout;
 
     .line 143
-    const v0, 0x7f0c0086
+    const v0, 0x7f0d0086
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1756,9 +1756,9 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSwitch:Landroid/widget/Switch;
 
     .line 144
-    const v0, 0x7f0c0088
+    const v0, 0x7f0d0088
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1783,7 +1783,7 @@
     .line 189
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 190
     invoke-direct {p0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->updateUiElements()V

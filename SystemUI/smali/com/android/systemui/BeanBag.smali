@@ -69,7 +69,7 @@
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
 
     .line 405
-    invoke-virtual {p0}, Lcom/android/systemui/BeanBag;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -89,7 +89,7 @@
     .line 410
     iget-object v0, p0, Lcom/android/systemui/BeanBag;->mBoard:Lcom/android/systemui/BeanBag$Board;
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/BeanBag;->setContentView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
 
     .line 411
     return-void

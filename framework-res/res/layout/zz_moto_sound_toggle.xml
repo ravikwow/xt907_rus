@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/fadingcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_visibleOnOpen="false" android:layout_visibleOnClose="true" android:layout_fades="true" android:layout_accelKoeff="3.0"
+<RelativeLayout android:id="@id/fadingcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="0.0dip" android:layout_visibleOnOpen="false" android:layout_visibleOnClose="true" android:layout_fades="true" android:layout_accelKoeff="3.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:id="@id/darkmute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
         <ImageView android:id="@id/darkvibrateimage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zz_moto_lockscreen_sd_darkvibrate" />

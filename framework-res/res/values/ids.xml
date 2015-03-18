@@ -165,36 +165,20 @@
     <item type="id" name="nextAlarmSpacer">false</item>
     <item type="id" name="screenLockedInfo">false</item>
     <item type="id" name="lockInstructions">false</item>
-    <item type="id" name="passwordEntryLayout">false</item>
+    <item type="id" name="root">false</item>
+    <item type="id" name="timeDisplayBackground">false</item>
+    <item type="id" name="timeDisplayForeground">false</item>
+    <item type="id" name="alarm_status">false</item>
+    <item type="id" name="status1">false</item>
+    <item type="id" name="carrier">false</item>
     <item type="id" name="passwordEntry">false</item>
     <item type="id" name="pinDel">false</item>
     <item type="id" name="switch_ime_button">false</item>
-    <item type="id" name="faceLockAreaView">false</item>
-    <item type="id" name="transport_bg_protect">false</item>
     <item type="id" name="transport">false</item>
+    <item type="id" name="faceLockAreaView">false</item>
     <item type="id" name="spotlightMask">false</item>
     <item type="id" name="cancel_button">false</item>
-    <item type="id" name="headerNormal">false</item>
-    <item type="id" name="timeDisplayBackground">false</item>
-    <item type="id" name="timeDisplayForeground">false</item>
-    <item type="id" name="am_pm">false</item>
-    <item type="id" name="fadingcontent">false</item>
-    <item type="id" name="darkmute">false</item>
-    <item type="id" name="darkvibrateimage">false</item>
-    <item type="id" name="darksilentimage">false</item>
-    <item type="id" name="darksound">false</item>
-    <item type="id" name="mutesoundswitch">false</item>
-    <item type="id" name="mutesoundtoggle">false</item>
-    <item type="id" name="toggleimage">false</item>
-    <item type="id" name="sound">false</item>
-    <item type="id" name="soundimage">false</item>
-    <item type="id" name="mute">false</item>
-    <item type="id" name="silentimage">false</item>
-    <item type="id" name="vibrateimage">false</item>
-    <item type="id" name="alarm_status">false</item>
-    <item type="id" name="retry_status">false</item>
-    <item type="id" name="status1">false</item>
-    <item type="id" name="carrier">false</item>
+    <item type="id" name="transport_bg_protect">false</item>
     <item type="id" name="headerText">false</item>
     <item type="id" name="pinDisplayGroup">false</item>
     <item type="id" name="pinDisplay">false</item>
@@ -207,13 +191,10 @@
     <item type="id" name="pukDisplay">false</item>
     <item type="id" name="pukDel">false</item>
     <item type="id" name="propertyOf">false</item>
-    <item type="id" name="root">false</item>
     <item type="id" name="screenLocked">false</item>
     <item type="id" name="unlock_widget">false</item>
-    <item type="id" name="lockPattern">false</item>
     <item type="id" name="forgotPatternButton">false</item>
-    <item type="id" name="forgotButton">false</item>
-    <item type="id" name="footerNormal">false</item>
+    <item type="id" name="lockPattern">false</item>
     <item type="id" name="transport_controls">false</item>
     <item type="id" name="albumart">false</item>
     <item type="id" name="btn_prev">false</item>
@@ -382,8 +363,6 @@
     <item type="id" name="zoomIn">false</item>
     <item type="id" name="zoomMagnify">false</item>
     <item type="id" name="batt_temp_countdown_t">false</item>
-    <item type="id" name="pinConfirmDisplay">false</item>
-    <item type="id" name="pinConfirmDel">false</item>
     <item type="id" name="lockscreen_bg">false</item>
     <item type="id" name="lockscreen_selected_default">false</item>
     <item type="id" name="lockscreen_key">false</item>
@@ -402,7 +381,19 @@
     <item type="id" name="lockscreen_ripple1">false</item>
     <item type="id" name="lockscreen_ripple2">false</item>
     <item type="id" name="lockscreen_ripple3">false</item>
-    <item type="id" name="statusDivider">false</item>
+    <item type="id" name="fadingcontent">false</item>
+    <item type="id" name="darkmute">false</item>
+    <item type="id" name="darkvibrateimage">false</item>
+    <item type="id" name="darksilentimage">false</item>
+    <item type="id" name="darksound">false</item>
+    <item type="id" name="mutesoundswitch">false</item>
+    <item type="id" name="mutesoundtoggle">false</item>
+    <item type="id" name="toggleimage">false</item>
+    <item type="id" name="sound">false</item>
+    <item type="id" name="soundimage">false</item>
+    <item type="id" name="mute">false</item>
+    <item type="id" name="silentimage">false</item>
+    <item type="id" name="vibrateimage">false</item>
     <item type="id" name="zz_moto_status_bar_ciphering_mode_txt">false</item>
     <item type="id" name="toastMessage">false</item>
     <item type="id" name="mode_normal">false</item>
