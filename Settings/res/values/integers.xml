@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_user_dictionary_word_length">48</integer>
+    <integer name="max_battery_threshold">0</integer>
+</resources>

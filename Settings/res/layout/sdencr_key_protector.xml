@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="22.0sp" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/key_protector_enter_password" />
+        <EditText android:textAppearance="?android:textAppearanceMedium" android:textSize="24.0sp" android:textStyle="normal" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/passwordEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="20.0dip" android:singleLine="true" android:editable="false" android:inputType="textPassword" />
+        <com.android.internal.widget.PasswordEntryKeyboardView android:id="@id/keyboard" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:keyBackground="@android:drawable/btn_keyboard_key_fulltrans" />
+        <LinearLayout android:gravity="center" android:id="@id/footerNormal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LockScreen_marginLeftRight" android:layout_marginTop="@dimen/LockScreen_marginBottomTop" android:layout_marginRight="@dimen/LockScreen_marginLeftRight" android:layout_marginBottom="@dimen/LockScreen_marginBottomTop">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/emergencyCall" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/emergencyCallIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/ic_emergency" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/emergencyCallText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscreen_emergency_call" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

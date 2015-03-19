@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/storage_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/total_storage" android:key="total_phone_storage">
+        <Preference android:title="@string/memory_size" android:key="memory_size" android:summary="@string/total_storage_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>
