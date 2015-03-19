@@ -20,8 +20,8 @@ ro.product.board=MSM8960
 ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
 ro.product.manufacturer=motorola
-ro.product.locale.language=en
-ro.product.locale.region=US
+ro.product.locale.language=ru
+ro.product.locale.region=RU
 ro.wifi.channels=
 ro.board.platform=msm8960
 # ro.build.product is obsolete; use ro.product.device
