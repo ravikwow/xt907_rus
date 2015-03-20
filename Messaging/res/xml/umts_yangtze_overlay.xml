@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="MmsVersion" value="mms_version_1_1" />
+    <setting type="string" name="mms_user_agent" value="motoxt885" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.motorola.com/phoneconfig/xt885/Profile/xt885_ird.rdf" />
+    <setting type="integer" name="mms_max_image_height" value="1936" />
+    <setting type="integer" name="mms_max_image_width" value="2592" />
+</settings>

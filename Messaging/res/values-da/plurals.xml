@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">De vedhæftede filer er gemt</item>
+        <item quantity="one">Den vedhæftede fil er gemt</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"De vedhæftede filer kan ikke gemmes, da SD-kortet mangler.
+
+Indsæt SD-kortet igen."</item>
+        <item quantity="one">"Den vedhæftede fil kan ikke gemmes, da SD-kortet mangler.
+
+Indsæt SD-kortet igen."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Der er ikke nok hukommelse til at gemme de vedhæftede filer.</item>
+        <item quantity="one">Der er ikke nok hukommelse til at gemme den vedhæftede fil.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">En eller flere af de vedhæftede filer kunne ikke gemmes.</item>
+        <item quantity="one">Den vedhæftede fil kunne ikke gemmes.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d beskeder slettes.</item>
+        <item quantity="one">1 besked slettes.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d beskeder beskyttes.</item>
+        <item quantity="one">1 besked beskyttes.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Beskyttelse fjernes fra %1$d beskeder.</item>
+        <item quantity="one">Beskyttelse fjernes fra 1 besked.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Du har opgave-påmindelser</item>
+        <item quantity="one">Du har en opgave-påmindelse</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d påmindelser)</item>
+        <item quantity="one">1 opgave at fuldføre</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d opgaver fundet</item>
+        <item quantity="zero">%d opgave fundet</item>
+        <item quantity="one">%d opgave fundet</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Udløbet</item>
+        <item quantity="one">Udløbet</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Hver %1$d. dag, når den enkelte opgave er fuldført</item>
+        <item quantity="one">Hver dag, når opgaven er fuldført</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Hver %1$d. uge, når den enkelte opgave er fuldført</item>
+        <item quantity="one">Hver uge, når opgaven er fuldført</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Hver %1$d. måned, når den enkelte opgave er fuldført</item>
+        <item quantity="one">Hver måned, når opgaven er fuldført</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Hvert %1$d. år, når den enkelte opgave er fuldført</item>
+        <item quantity="one">Hvert år, når opgaven er fuldført</item>
+    </plurals>
+</resources>

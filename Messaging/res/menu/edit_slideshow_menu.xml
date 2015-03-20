@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_ab_add" android:id="@id/menu_add_slide" android:title="@string/add_slide_hint" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_ab_preview" android:id="@id/menu_preview" android:title="@string/preview_hint" android:showAsAction="always" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="MmsUserAgentFormat" value="moto$model" />
+    <setting type="string" name="MmsUaprofFormat" value="http://uaprof.motorola.com/phoneconfig/moto$model/Profile/moto$model.rdf" />
+    <setting type="integer" name="mms_max_image_height" value="1936" />
+    <setting type="integer" name="mms_max_image_width" value="2592" />
+</settings>

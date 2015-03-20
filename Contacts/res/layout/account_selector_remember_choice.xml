@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="14.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <CheckBox android:id="@id/remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_storage_remember_choice" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/changeDefaultAccountSetting" android:paddingLeft="36.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_storage_remember_choice_summary" />
+</LinearLayout>

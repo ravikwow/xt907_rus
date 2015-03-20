@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/idle_led.png
+SHA1-Digest: x0JH8yJddGsjEg4gIyutmfp0VYM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: kuD2g5Q00IEu7cZh8Ixy/QyXjWs=
+
+Name: res/drawable-hdpi/recording_led.png
+SHA1-Digest: 7SvfqET59XG75ztXJZEi1qtLoSQ=
+
+Name: res/layout-port/main.xml
+SHA1-Digest: kgjni5gf/j7YTqJA6p5dN1gA4Ys=
+
+Name: res/drawable-hdpi/gradient_bg.png
+SHA1-Digest: wLA1lxbsSJLhSg2exX8rCPCpRD0=
+
+Name: res/drawable-hdpi/record.png
+SHA1-Digest: wUMYqfQryzrA0lVnHp0Md5z3S1w=
+
+Name: res/drawable-hdpi/vumeter.png
+SHA1-Digest: h+Y0GzRmiA0DQWyrGaxOYx569QI=
+
+Name: resources.arsc
+SHA1-Digest: 23H0s6B7eeXfq0qCBx2Wxps7JqI=
+
+Name: res/layout-land/main.xml
+SHA1-Digest: ZVnJ0D7cZegiJJbAptYF2WlkrsE=
+
+Name: res/drawable-hdpi/stop.png
+SHA1-Digest: IH41h7ABihzSS9KEjYxdnpeUuL0=
+
+Name: res/drawable-hdpi/play.png
+SHA1-Digest: 1vYXEVf2tuNd1HuJjUY0lhL1Hwg=
+
+Name: res/drawable-hdpi/ic_launcher_soundrecorder.png
+SHA1-Digest: F5YV10XvmadwscslE/CiDJ1Jcnc=
+

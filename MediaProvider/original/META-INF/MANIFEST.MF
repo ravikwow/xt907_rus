@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: 6JcDz0t1k4cXGVEx6QyqjIUQtiM=
+
+Name: res/drawable-hdpi/ic_search_category_music_album.png
+SHA1-Digest: ut2RGDGufwISyuVLR+KnPuWkBlU=
+
+Name: resources.arsc
+SHA1-Digest: 3SzukDNYDQLrURu/JGTfB66bhRQ=
+
+Name: res/drawable-hdpi/ic_search_category_music_artist.png
+SHA1-Digest: HwDnoSWh+6w8hFGJEqTWyS+wYF8=
+
+Name: res/drawable-hdpi/ic_search_category_music_song.png
+SHA1-Digest: 5HQXCMKtJc6Mnc9C593LRGxwJFc=
+

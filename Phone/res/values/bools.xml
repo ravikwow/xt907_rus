@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="ignore_sim_network_locked_events">false</bool>
+    <bool name="sim_network_unlock_allow_dismiss">true</bool>
+    <bool name="world_phone">false</bool>
+    <bool name="config_enable_dialer_key_vibration">true</bool>
+    <bool name="tty_enabled">true</bool>
+    <bool name="hac_enabled">true</bool>
+    <bool name="dtmf_type_enabled">true</bool>
+    <bool name="auto_retry_enabled">true</bool>
+    <bool name="allow_local_dtmf_tones">true</bool>
+    <bool name="config_show_onscreen_dial_button">true</bool>
+    <bool name="send_mic_mute_to_AudioManager">true</bool>
+    <bool name="has_in_call_noise_suppression">false</bool>
+    <bool name="allow_emergency_numbers_in_call_log">false</bool>
+    <bool name="csp_enabled">true</bool>
+    <bool name="config_voice_privacy_disable">false</bool>
+    <bool name="ftr_28651_assisted_dialing">true</bool>
+    <bool name="display_backlight_control_for_emergency_call">true</bool>
+    <bool name="support_ota_dan_from_emergency_dialer">true</bool>
+    <bool name="ftr_31934_auto_launch_dial_pad">true</bool>
+    <bool name="showCallDisconnectCause">true</bool>
+    <bool name="fid_34387_multimode">false</bool>
+    <bool name="display_nonetwork_notice">true</bool>
+    <bool name="ftr_35989_world_phone">true</bool>
+    <bool name="ftr_32533_caller_id_readout">true</bool>
+    <bool name="use_network_incall_tone_instead_of_local_tone">false</bool>
+    <bool name="enable_notification_alerts_during_call">true</bool>
+    <bool name="ftr_39325_hide_cdma_option">true</bool>
+    <bool name="ftr_34287_subsidy_lock_number_retries">false</bool>
+    <bool name="vzw_special_req_string">true</bool>
+    <bool name="display_networks_with_numeric">true</bool>
+    <bool name="mmi_imei_display">true</bool>
+    <bool name="support_gsm_call_waiting_for_gcf">true</bool>
+    <bool name="display_networks_with_rat">true</bool>
+    <bool name="ftr_37619_world_phone">false</bool>
+</resources>

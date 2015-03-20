@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mode de refroidissement</string>
+    <string name="batt_temp_cooldown_title">Mode de refroidissement</string>
+    <string name="batt_temp_cooldown_msg">"Votre appareil est maintenant en cours de refroidissement. Appels d'urgence uniquement."</string>
+    <string name="lockscreen_emergency_call">"Appel d'urgence"</string>
+</resources>

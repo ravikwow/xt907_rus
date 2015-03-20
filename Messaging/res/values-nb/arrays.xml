@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Feilaktig resultat ble returnert</item>
+        <item>Lagringen var vellykket</item>
+        <item>Ugyldige parametere</item>
+        <item>Målfilen finnes allerede</item>
+        <item>Kildefilen finnes ikke</item>
+        <item>Filstørrelsen er for liten</item>
+        <item>Ugyldig fil eller format som ikke støttes</item>
+        <item>Systembatteriet er kritisk lavt</item>
+        <item>Systemminnet er kritisk lavt</item>
+        <item>Oppstart mislyktes: Ukjent årsak</item>
+        <item>Lagring mislyktes: Ukjent I/O-feil</item>
+        <item>Lagring mislyktes: Kan ikke opprette bane</item>
+        <item>Lagring mislyktes: Kan ikke opprette fil</item>
+        <item>Lagring mislyktes: Lagringsplassen er kritisk lav</item>
+        <item>Lagring avbrutt</item>
+        <item>Oppstart mislyktes: Skjermstørrelsen støttes ikke</item>
+        <item>Kildefilen er modifisert</item>
+        <item>SD-kortet er fjernet</item>
+        <item>Beklager, du kan ikke legge ved denne videoen i meldingen din.</item>
+    </string-array>
+</resources>

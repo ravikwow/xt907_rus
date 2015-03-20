@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Unzulässiges Ergebnis erzielt</item>
+        <item>Speichern erfolgreich</item>
+        <item>Ungültige Parameter</item>
+        <item>Zieldatei existiert bereits</item>
+        <item>Quellendatei ist nicht vorhanden</item>
+        <item>Beschränkung der Dateigröße ist zu klein</item>
+        <item>Ungültige Datei oder nicht unterstütztes Format</item>
+        <item>Systemakku ist fast leer</item>
+        <item>Systemspeicher ist fast voll</item>
+        <item>Start fehlgeschlagen: Unbekannte Ursache</item>
+        <item>Speichern fehlgeschlagen: Unbekannter E/A-Fehler</item>
+        <item>Speichern fehlgeschlagen: Pfad konnte nicht erstellt werden</item>
+        <item>Speichern fehlgeschlagen: Datei konnte nicht erstellt werden</item>
+        <item>Speichern fehlgeschlagen: Speicherplatz ist fast voll</item>
+        <item>Speichern abgebrochen</item>
+        <item>Start fehlgeschlagen: Bildschirmgröße wird nicht unterstützt</item>
+        <item>Quellendatei geändert</item>
+        <item>SD-Karte entfernt</item>
+        <item>Leider kann dieses Video nicht zur Nachricht hinzugefügt werden.</item>
+    </string-array>
+</resources>

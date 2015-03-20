@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/congrats_screen_group" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="left" android:id="@id/congrats_title_view" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_topSpacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/congrats_title" style="@style/AccSetTextView" />
+            <TextView android:ellipsize="none" android:gravity="left" android:layout_gravity="left" android:id="@id/congrats_text_view" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_vspacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" style="@style/AccSetTextViewMedium" />
+            <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/congrats_text_view_carrier" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_vspacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AccSetTextViewMedium" />
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/welcome_privacy_text_size" android:textColor="@android:color/white" android:id="@id/privacy_text" android:paddingLeft="@dimen/content_area_left_padding" android:paddingRight="@dimen/content_area_right_padding" android:paddingBottom="@dimen/welcome_privacy_padding_bottum" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/privacy_policy" />
+    <LinearLayout android:id="@id/navigation_bar" style="@style/NavBar">
+        <Button android:id="@id/ecall_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/emergency_call" android:layout_weight="1.0" android:onClick="onClick" />
+        <Button android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done" android:layout_weight="1.0" android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

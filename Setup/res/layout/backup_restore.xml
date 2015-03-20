@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/b_screen_group" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="none" android:gravity="left" android:layout_gravity="left" android:id="@id/instruction_textview" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_vspacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/backup_restore_instruction" android:singleLine="false" style="?android:attr/textAppearanceMedium" />
+            <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/settings_textview" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_vspacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/backup_restore_setting" style="?android:attr/textAppearanceMedium" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/row1_id" android:paddingTop="@dimen/AccSet_v2spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/backup_id" android:paddingLeft="@dimen/content_area_left_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/backup_title" style="?android:attr/textAppearanceMedium" />
+                <CheckBox android:id="@id/backup_checkbox" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_v2spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/row2_id" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/restore_id" android:paddingLeft="@dimen/content_area_left_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/restore_title" style="?android:attr/textAppearanceMedium" />
+                <CheckBox android:id="@id/restore_checkbox" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_v2spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="14.0dip" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout style="@style/NavBar">
+        <Button android:id="@id/next_button_id" android:text="@string/next" style="@style/NavBarSqrButton" />
+    </LinearLayout>
+</LinearLayout>

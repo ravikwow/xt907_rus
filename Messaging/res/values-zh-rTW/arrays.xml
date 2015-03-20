@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>傳回的結果不正確</item>
+        <item>儲存成功</item>
+        <item>無效的參數</item>
+        <item>目標檔案已存在</item>
+        <item>原始檔案不存在</item>
+        <item>檔案大小限制太小</item>
+        <item>檔案無效或格式不受支援</item>
+        <item>系統電池電量過低</item>
+        <item>系統記憶體嚴重不足</item>
+        <item>啟動失敗：原因未知</item>
+        <item>儲存失敗：未知的 I/O 錯誤</item>
+        <item>儲存失敗：無法建立路徑</item>
+        <item>儲存失敗：無法建立檔案</item>
+        <item>儲存失敗：儲存空間嚴重不足</item>
+        <item>已取消儲存</item>
+        <item>啟動失敗：不支援的螢幕尺寸</item>
+        <item>原始檔案已修改</item>
+        <item>已移除 SD 卡</item>
+        <item>抱歉，無法在訊息中新增此段視訊。</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:paddingLeft="@dimen/content_area_left_padding" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restore_previous_device" style="@style/AccSetTextView.Title" />
+            </LinearLayout>
+            <TextView android:gravity="left" android:linksClickable="true" android:layout_gravity="left" android:id="@id/restore_details_text" android:paddingLeft="@dimen/content_area_left_padding" android:paddingRight="@dimen/content_area_right_padding" android:layout_marginTop="@dimen/AccSet_vspacing" android:text="@string/restore_details_string" android:layout_below="@id/title_layout" style="@style/AccSetTextViewMedium" />
+            <RadioGroup android:orientation="vertical" android:id="@id/restore_account_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/radio_button_padding" android:layout_marginTop="20.0dip" android:checkedButton="@id/restore_account_yes_button" android:layout_below="@id/restore_details_text">
+                <RadioButton android:id="@id/restore_account_yes_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes_restore" style="@style/AccSetTextViewMedium" />
+                <RadioButton android:id="@id/restore_account_no_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_restore" style="@style/AccSetTextViewMedium" />
+            </RadioGroup>
+            <TextView android:gravity="left" android:linksClickable="true" android:layout_gravity="left" android:id="@id/what_is_motorola_id" android:paddingLeft="@dimen/content_area_left_padding" android:paddingRight="@dimen/content_area_right_padding" android:layout_marginTop="@dimen/AccSet_vspacing" android:layout_below="@id/restore_account_radio_group" style="@style/AccSetTextViewMedium" />
+            <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/navigation_bar" style="@style/NavBar">
+        <Button android:id="@id/back_button" android:text="@string/back" android:onClick="onClick" style="@style/NavBarSqrButton" />
+        <Button android:id="@id/next_button" android:text="@string/next" android:onClick="onClick" style="@style/NavBarSqrButton" />
+    </LinearLayout>
+</LinearLayout>

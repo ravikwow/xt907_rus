@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_download_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download" />
+        <Button android:id="@id/btn_reject_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reject" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/label_downloading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/downloading" />
+</LinearLayout>

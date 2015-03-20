@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="integer" name="mms_maximum_message_size" value="1228800" />
+    <setting type="integer" name="mms_retry_timeout1" value="30000" />
+    <setting type="integer" name="mms_retry_timeout2" value="180000" />
+    <setting type="integer" name="mms_retry_timeout3" value="300000" />
+    <setting type="integer" name="mms_retry_timeout4" value="480000" />
+    <setting type="integer" name="MmsTransferTimeoutForVoiceCall" value="55000" />
+    <setting type="integer" name="MmsMaxPictureSizeForRetry" value="512000" />
+    <setting type="integer" name="MmsNoResponseTimeout" value="120000" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="string" name="ProprietaryHttpHeader" value="accept-charset: US-ASCII, ISO-8859-1, UTF-8|x-up-calling-line-id: $mdn|x-vzw-mdn: $mdn" />
+    <setting type="boolean" name="MmsVZWIPv6Enabled" value="false" />
+    <setting type="boolean" name="MmsOnlineAlbumEnabled" value="true" />
+    <setting type="string" name="mms_online_album" value="438749" />
+    <setting type="boolean" name="SmsMmsEnableAlias" value="true" />
+    <setting type="integer" name="sms_mms_threshold" value="7" />
+    <setting type="integer" name="MmsMaxVideoRecordingSeconds" value="60" />
+    <setting type="boolean" name="ErrorCodesEnable" value="true" />
+    <setting type="boolean" name="CallbackNumEnable" value="true" />
+    <setting type="boolean" name="sms_pref_key_to_email" value="true" />
+    <setting type="string" name="sms_pref_key_email_gateway_num" value="6245" />
+    <setting type="string" name="MmsDefaultApnName" value="CdmaNai" />
+    <setting type="boolean" name="MmsDisableRetryAfterServerTimeout" value="true" />
+    <setting type="boolean" name="MmsNotifyServerError" value="true" />
+    <setting type="integer" name="MaxNumRecipients" value="20" />
+    <setting type="boolean" name="MaxNumRecipientsEnable" value="true" />
+    <setting type="string" name="MmsMimeTypeBlackList" value="image/webp,audio/x-flac,audio/flac" />
+    <setting type="integer" name="MmsSubjectSizeLimit" value="80" />
+    <setting type="boolean" name="NotifyWapMmscEnable" value="true" />
+    <setting type="boolean" name="PriorityEnable" value="true" />
+    <setting type="boolean" name="SignatureEnable" value="true" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="159" />
+    <setting type="boolean" name="TransIdEnable" value="true" />
+    <setting type="string" name="UaprofTagName" value="profile" />
+    <setting type="boolean" name="WapRejectEnable" value="true" />
+    <setting type="integer" name="MmsFromFormat" value="1" />
+    <setting type="boolean" name="LocationVcardWarningEnabled" value="true" />
+    <setting type="boolean" name="IsLocationVCardMandatory" value="true" />
+    <setting type="integer" name="DefaultEncodingMethod" value="1" />
+    <setting type="boolean" name="ShowMessageGroupTypeWarningAvailable" value="true" />
+    <setting type="string" name="NetworkPrefixToRemove" value="*82" />
+    <setting type="boolean" name="ContactPickerEnabled" value="true" />
+</settings>

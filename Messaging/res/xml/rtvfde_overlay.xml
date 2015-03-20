@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="integer" name="mms_maximum_message_size" value="307200" />
+    <setting type="boolean" name="WapRejectEnable" value="true" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="159" />
+    <setting type="integer" name="sms_mms_threshold" value="6" />
+    <setting type="boolean" name="MsgDetailsEnable" value="false" />
+    <setting type="integer" name="MmsMaxVideoRecordingSeconds" value="60" />
+    <setting type="integer" name="MmsSubjectSizeLimit" value="80" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="boolean" name="RoamingAutoRetrieveEnabled" value="true" />
+    <setting type="integer" name="MaxNumRecipients" value="20" />
+    <setting type="boolean" name="MaxNumRecipientsEnable" value="true" />
+    <setting type="integer" name="OutgoingMessageTypeDefaultPref" value="1" />
+</settings>

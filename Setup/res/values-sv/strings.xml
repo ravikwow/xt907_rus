@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">Förbereder enhet</string>
+    <string name="cpu_idle_wait_msg">Vänta ...</string>
+    <string name="splash_screen_text">Välkommen till Motorola</string>
+    <string name="please_choose_a_language">Välj språk:</string>
+    <string name="welcome_to_motoblur">Välkommen till MOTOBLUR</string>
+    <string name="next">Nästa</string>
+    <string name="back">Tillbaka</string>
+    <string name="make_emergency_call_by_pressing_menu">Om du behöver ringa ett larmnummer under inställningen trycker du på knappen \"Meny\".</string>
+    <string name="sign_up_or_login_main_text">Du behöver ett MOTOBLUR-konto för att använda viktiga tjänster i telefonen samt MOTOBLUR-internetportalen.</string>
+    <string name="password_colon">Lösenord:</string>
+    <string name="forgot_password">Glömt ditt lösenord?</string>
+    <string name="forgot_password_title">Glömt lösenord</string>
+    <string name="enter_password">Ange lösenord</string>
+    <string name="motoblur_terms_of_service">MOTOBLUR tjänstevillkor</string>
+    <string name="moto_service_review_the_above">"När du markerar kryssrutan \"Jag accepterar\" innebär det att du accepterar villkoren i Motorolas programvarulicensavtal, tjänstevillkor och sekretesspolicy.
+
+Du måste acceptera villkoren för att kunna använda enheten."</string>
+    <string name="terms_and_conditions">Motorola-användarvillkor</string>
+    <string name="sharing_additional_information">Lämna mer information</string>
+    <string name="moto_service_agreement">Motorola-avtal</string>
+    <string name="terms_of_service_check_caption">Jag accepterar </string>
+    <string name="downloading_terms">Hämtar villkor …</string>
+    <string name="creating_your_blur_account">Skapar ditt MOTOBLUR-konto</string>
+    <string name="generic_carrier_contact_text">Ring kundtjänst för att få ett lösenord.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">Ej verifierat MOTOBLUR-konto</string>
+    <string name="cancel">Avbryt</string>
+    <string name="signin">Logga in</string>
+    <string name="checking_for_updates">Söker efter uppdateringar …</string>
+    <string name="downloading_updates">"Hämtar uppdatering.
+ 
+Vänta …"</string>
+    <string name="error_deleting_account">Fel när konto togs bort</string>
+    <string name="congrats_title_login">Du har loggat in</string>
+    <string name="congrats_title">Grattis!</string>
+    <string name="congrats_text">"Konfigurationen är klar! 
+
+Om du har konfigurerat konton påbörjas nu importen av innehåll, till exempel kontakter och e-post. Detta kan ta upp till en halvtimme men du kan börja använda telefonen på en gång.
+
+Vi rekommenderar att du ställer in ett säkerhetslås för telefonen genom att gå till Inställningar > Säkerhet och skärmlås."</string>
+    <string name="setup_complete_title">Konfigureringen är klar</string>
+    <string name="setup_complete_text">"Du har avslutat alla dator- och enhetskonfigurationer.
+
+Du kan nu börja använda telefonen."</string>
+    <string name="done">Färdig</string>
+    <string name="welcome_android">Välkommen</string>
+    <string name="privacy_policy">Användning av telefonen regleras i enlighet med Motorolas sekretesspolicy och villkoren i den.</string>
+    <string name="learn_more">Mer information</string>
+    <string name="emergency_call">Nödsamtal</string>
+    <string name="create_later">Skapa konto senare</string>
+    <string name="email_colon">E-postadress:</string>
+    <string name="location_consent_string">Platsmedgivande</string>
+    <string name="location_consent_description">Googles platstjänst tillhandahåller din ungefärliga position till program utan att använda GPS. Du kan inaktivera funktionerna i Inställningar under Platstjänster.</string>
+    <string name="use_location_service">Tillåt Googles platstjänst att samla in anonyma platsdata. Insamlingen sker även när inget program körs.</string>
+    <string name="signup">Registrera ett nytt konto</string>
+    <string name="login">Använd ett befintligt konto</string>
+    <string name="password">Lösenord</string>
+    <string name="ok">OK</string>
+    <string name="email_address_error">"E-postadressen måste vara minst 6 tecken lång och kan bestå av bokstäver, siffror och understreck(_).
+"<i>Till exempel </i>"dinepost@domän.se
+"</string>
+    <string name="retrieving_password">Hämtar lösenord …</string>
+    <string name="error_creating_account_title">Fel när konto skapades</string>
+    <string name="unspecified_service_error">Ett fel inträffade när kontot skapades. Försök igen.</string>
+    <string name="password_emailed">En länk för lösenordsåterställning har skickats till din e-postadress</string>
+    <string name="contacts">Kontakter</string>
+    <string name="calendar">Kalender</string>
+    <string name="none">Inget</string>
+    <string name="captcha_text">Verifiera dina inloggningsuppgifter genom att ange texten i fältet nedan</string>
+    <string name="set_up_apn">Konfigurera APN</string>
+    <string name="set_up_cloud">Konfigurera moln</string>
+    <string name="set_up_wifi">Konfigurera Wi-Fi</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">IMEI-numret är %1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">MEID-numret är %1$s</string>
+    <string name="error_account_disabled">Kontot inaktiverades i Blur-tjänsten</string>
+    <string name="error_account_not_found">Kontot finns inte i Blur-tjänsten</string>
+    <string name="error_already_exists">Kontot finns redan i Blur-tjänsten. Välj ett annat konto-id.</string>
+    <string name="error_already_initialized">Det finns redan ett konto associerat till din telefon.</string>
+    <string name="error_connect_timeout">Tidsgränsen för anslutningen har nåtts. Försök igen.</string>
+    <string name="error_try_again">Ett fel har inträffat. Försök igen.</string>
+    <string name="error_invalid_credentials">Användarnamnet eller lösenordet är felaktigt. Kontrollera dem och försök igen.</string>
+    <string name="error_invalid_params">Inmatningen är ogiltig. Försök igen.</string>
+    <string name="error_internal_server">Ett internt serverfel har inträffat. Försök igen.</string>
+    <string name="error_no_server_response">Servern fick inget svar. Kontrollera att tjänsten fungerar och försök igen.</string>
+    <string name="error_not_allowed">Din begäran nekades. Försök igen.</string>
+    <string name="error_not_found">Begäran hittades inte.</string>
+    <string name="error_not_initialized">För begäran krävs användarautentiseringsuppgifter men de angavs inte i begäran.</string>
+    <string name="error_password_mismatch">Felaktigt lösenord. Försök igen.</string>
+    <string name="error_current_password_mismatch">Felaktigt lösenord. Försök igen.</string>
+    <string name="error_radio_down">Telefonradion kunde inte ansluta till nätverket. Kontrollera att radion är påslagen och, om så är fallet, flyttar du den till ett område med bättre täckning och försöker igen.</string>
+    <string name="error_service_busy">Det går inte att ansluta just nu, försök igen senare.</string>
+    <string name="error_socket_timeout">Tidsgränsen för svar på begäran har nåtts. Konton kan ha skapats på fel sätt.</string>
+    <string name="error_too_many">Du har försökt återställa ditt lösenord för många gånger idag. Försök igen senare.</string>
+    <string name="error_unauthorized">Blur-tjänsten meddelade att din begäran var otillåten. Kontrollera att Blur-tjänsten fungerar.</string>
+    <string name="error_wrong_device">Kontot används av en annan enhet. Enheten måste tas bort innan kontot kan användas.</string>
+    <string name="error_wrong_password">Ditt ID och/eller lösenord kunde inte identifieras. Kontrollera dem och försök igen. Om du har glömt ditt lösenord klickar du på knappen \"Glömt lösenord\" så skickas det till din e-postadress.</string>
+    <string name="error_captcha_invalid">Ange informationen igen.</string>
+    <string name="error_captcha_expired">Tidsgränsen för autentiseringen har nåtts. Försök igen.</string>
+    <string name="error_ssl_error">Det har uppstått ett problem med klockan i enheten. Kontakta kundtjänst.</string>
+    <string name="error_retreiving_information">Ett fel inträffade när information hämtades.</string>
+    <string name="error_wifi_only">Program för sociala nätverk är inställda för synkronisering endast via Wi-Fi.</string>
+    <string name="service_data_error">Det förekom fel vid hämtning av data från Blur-tjänsten.</string>
+    <string name="retry">Försök igen</string>
+    <string name="terms_of_service_text">Internetdataanslutning krävs för att visa villkoren.</string>
+    <string name="data_analytics_text">Internetdataanslutning krävs för att visa dataanalyser.</string>
+    <string name="end_user_license_agreement_text">PROGRAVMVARULICENSAVTAL – innehållstext</string>
+    <string name="bad_phone_format">Telefonnumret får bara innehålla siffror, \"–\" eller \"+\"</string>
+    <string name="bad_password_format">Lösenordet får inte innehålla blanksteg.</string>
+    <string name="must_be_at_least">{0} måste innehålla minst {1} tecken.</string>
+    <string name="start">Starta</string>
+    <string name="finish">Slutför</string>
+    <string name="set_up_cancel">Hoppa över konfiguration</string>
+    <string name="waiting_for_connection">Söker efter dataanslutning</string>
+    <string name="setup_blur_device_title">Konfigurera Blur-enhet</string>
+    <string name="connection_failed_text">Anslutning misslyckades</string>
+    <string name="no_network_connection">Ingen nätverksanslutning</string>
+    <string name="service_error_text">Fel med Motorola-tjänsten</string>
+    <string name="connection_chooser_select">"Välj en anslutningstyp
+ för att slutföra konfigurationen"</string>
+    <string name="connection_chooser_type">Anslutningstyp</string>
+    <string name="skip_setup_title">Hoppa över konfiguration</string>
+    <string name="skip_setup_text">"Om du hoppar över konfigurationen fungerar inte vissa funktioner i enheten.
+ 
+ Du kommer att få påminnelser om att genomföra konfigurationen när det finns en dataanslutning eller när du försöker använda program som bara fungerar om konfigurationen är genomförd.
+ 
+ Välj nästa om du vill se platsmedgivandet. Därefter avslutas konfigurationen och startskärmen öppnas."</string>
+    <string name="blur_required">Blur-konto krävs</string>
+    <string name="setup">Konfiguration</string>
+    <string name="connection_retry">Försök upprätta mobilanslutning</string>
+    <string name="connection_skip">Hoppa över för tillfället</string>
+    <string name="connection_cell_retry_text">"Anslutning misslyckades!
+ Du behöver en dataanslutning för att slutföra konfigurationen.
+
+ Tryck på knappen \"Försök igen\" när du har fått tillbaka nätverkstäckningen."</string>
+    <string name="sim_removed">SIM har tagits bort</string>
+    <string name="simswap_signin_instruction">SIM-kortet togs nyligen bort. Logga in på ditt konto för att verifiera identiteten.</string>
+    <string name="reset_phone">Återställ telefonen</string>
+    <string name="sign_in">Logga in</string>
+    <string name="checking_progress_text">Kontrollerar …</string>
+    <string name="error_need_email_and_password_to_signin">Logga in på ditt konto för att verifiera din identitet.</string>
+    <string name="delete_email_accounts_msg">Vid inläsning av ett befintligt MOTOBLUR-konto tas alla e-postkonton bort från enheten och ersätts med de konton som lagras i din MOTOBLUR-profil.</string>
+    <string name="delete_email_accounts_continue_btn">Fortsätt</string>
+    <string name="moto_required">Motorola-konto krävs</string>
+    <string name="moto_required_info">"\"Systemuppdateringar\" är inte tillgängliga utan ett Motorola-tjänstkonto.
+
+Vill du konfigurera ett konto nu?"</string>
+    <string name="sn_required">Konto för socialt nätverk krävs</string>
+    <string name="sn_required_info">"\"{0}\" är inte tillgängligt utan konto för socialt nätverk.
+Om du vill skapa ett nytt konto klickar du på knappen \"Inställning\"."</string>
+    <string name="connection_failed_textinfo">"Du behöver en dataanslutning för att slutföra konfigurationen.
+
+Du har följande val:"</string>
+    <string name="no_network_connection_textinfo">"Du behöver en dataanslutning för att slutföra konfigurationen.
+Du har följande val:
+"</string>
+    <string name="service_error_textinfo">Ett internt serverfel har inträffat. Försök igen.</string>
+    <string name="setup_wifi">Skapa en Wi-Fi-anslutning</string>
+    <string name="retry_cellular">Försök med aktuell anslutning</string>
+    <string name="skip_for_now">Hoppa över konfiguration för tillfället</string>
+    <string name="try_again_later">Försök igen senare.</string>
+    <string name="account_creation_timeout_title">Det här tar längre tid än väntat</string>
+    <string name="account_creation_timeout_content">Vi fortsätter att försöka i bakgrunden.</string>
+    <string name="communicating_with_server">"Kommunicerar med servern.
+Vänta ..."</string>
+    <string name="notification_title">Kontokonfiguration</string>
+    <string name="notification_text">Ange captcha</string>
+    <string name="blur_account_setup">Konfigurera Blur-konto</string>
+    <string name="restore_previous_device">Återställa tidigare enhet?</string>
+    <string name="restore_details_string">"Återställa kontakter, inställningar och konton från en tidigare Motorola-enhet?
+"</string>
+    <string name="enter_motorola_id">Ett MotoCast-ID krävs för att återställa innehåll.</string>
+    <string name="what_is_motoid">Vad är ett MotoCast-ID?</string>
+    <string name="yes_restore">Ja, jag vill återställa</string>
+    <string name="no_restore">Nej, återställ inte</string>
+    <string name="setup_title">Motorola-konfiguration</string>
+    <string name="quick_upload">Snabböverföring</string>
+    <string name="quick_upload_pictures">Snabböverföring av bilder</string>
+    <string name="quick_upload_videos">Snabböverföring av videor</string>
+    <string name="uploading_pictures">Överför bild(er) till %1$s</string>
+    <string name="uploading_videos">Överför videor till %1$s</string>
+    <string name="uploading_pictures_and_videos">Överför bild(er) och video(r) till %1$s</string>
+    <string name="quick_upload_pics_not_setup_text">Standardkontot för snabböverföring av bilder har inte konfigurerats. Vill du konfigurera standardkontot för snabböverföring nu och fortsätta med överföringen?</string>
+    <string name="quick_upload_videos_not_setup_text">Standardkontot för snabböverföring av videor har inte konfigurerats. Vill du konfigurera standardkontot för snabböverföring nu och fortsätta med överföringen?</string>
+    <string name="web_setting">Ja</string>
+    <string name="web_cancel_upload">Avbryt</string>
+    <string name="web_cancel">Nej</string>
+    <string name="toast_BlurFailed">Blur har inte installerats!</string>
+    <string name="online_album_email_addr_title">Ange e-postadress</string>
+    <string name="enter_email">Ange e-postadress</string>
+    <string name="add_account_dot">Lägg till konto ...</string>
+    <string name="btn_ok">OK</string>
+    <string name="data_saver_enabled">Datasparläget har aktiverats</string>
+    <string name="data_saver_text">Den här överföringen köas för överföring när Wi-Fi blir tillgängligt. Om du vill överföra genast går du till inställningarna och inaktiverar datasparläget.</string>
+    <string name="delayed_toast">%1$s köas för överföring när Wi-Fi blir tillgängligt. Kontrollera förloppet i meddelandefönstret.</string>
+    <string name="n_items">%1$d objekt</string>
+    <string name="gathering_check_caption">Jag hjälper gärna Motorola att förbättra tjänstens kvalitet genom att </string>
+    <string name="gathering_link">lämna mer information</string>
+    <string name="gathering_check_caption2"> om hur jag använder enheten</string>
+    <string name="tos_link">Motorolas tjänstevillkor</string>
+    <string name="large_upload">Stor överföring</string>
+    <string name="large_upload_text">Överföring via nätverket kan ta längre tid än vid användning av ett Wi-Fi-nätverk.</string>
+    <string name="upload_via_wifi">Överför via Wi-Fi</string>
+    <string name="upload_now">Överför nu</string>
+    <string name="settings_button">Inställningar</string>
+    <string name="cancel_button">Avbryt</string>
+    <string name="blur_required_info">är inte tillgängligt utan ett Blur-konto. Om du vill skapa ett nytt konto eller logga in på ett befintligt klickar du på Inställning</string>
+    <string name="airplane_active">Flygplansläget är aktivt.</string>
+    <string name="privacy_policy_title">SEKRETESSPOLICY</string>
+    <string name="privacy_policy_summary">Motorola tar sitt ansvar för att skydda den information som du anförtror oss på största allvar. I den här sekretesspolicyn beskrivs hur vi samlar in information från din mobilenhet och vad vi gör med den. Standardavgifter för dataanvändning kan tillkomma. Om du vill ha mer information kan du läsa den fullständiga sekretesspolicyn.</string>
+    <string name="privacy_profiles_title">Sekretessprofiler</string>
+    <string name="privacy_profiles_summary">Välj den sekretessprofil som bäst överensstämmer med dina behov av sekretesskydd.</string>
+    <string name="location_services_title">Platstjänster</string>
+    <string name="location_services_summary">Program som har åtkomst till platsinformation för din enhet och vad det kan hjälpa dig att göra.</string>
+    <string name="location_services_content_default">Om du aktiverar våra platsbaserade tjänster använder vi platsinformation baserat på GPS-koordinater och placering av mobilmaster och trådlösa nätverk för att hjälpa dig att söka efter platser i närheten av dig, koppla användningsmönster till viktiga platser och föreslå lämpligt enhetsbeteende, utforska metoder för att förbättra våra produkter och tjänster och efterleva tillämpliga lagar.</string>
+    <string name="collection_use_title">Insamling och användning</string>
+    <string name="collection_use_summary">Vilka typer av data som samlas in från din enhet och hur de hjälper Motorola att förbättra sina tjänster.</string>
+    <string name="collection_use_content_default">Beroende på vilken sekretessprofil du väljer samlar vi in delar av eller all följande information: kärnfunktionsdata, prestandainformation, analysdata, personlig information, programanvändningshistorik, allmänt tillgänglig information från profiler på sociala medienätverk som är kopplade till din enhet och information om de webbplatser som du besöker via den inbyggda webbläsaren i enheten. Vi använder den här informationen i följande syften: göra det möjligt för dig att skicka och ta emot meddelanden via dina konton för e-post och sociala nätverk, underlätta för support, felsöka och optimera prestanda för enheten, informera dig om Motorolas produkter och tjänster, utveckla förbättringar av Motorolas produkter och tjänster och utföra demografisk analys och ta fram marknadssegment.</string>
+    <string name="tracking_ads_title">Spårning och annonser</string>
+    <string name="tracking_ads_summary">Webbspårningsteknik, t.ex. taggar och cookies, används inte i enheten.</string>
+    <string name="tracking_ads_content_default">Vi använder inte webbspårningsteknik, till exempel pixeltaggar eller cookie-data, i enheten, till att lagra känslig information som lösenord eller personuppgifter, analysera trafik, anpassa enhetsfunktioner eller utforska metoder för att förbättra Motorolas produkter och tjänster. Webbplatser som du besöker eller program som du installerar och använder i mobilenheten kan emellertid använda sådan spårningsteknik, beroende på gällande användarvillkor.</string>
+    <string name="security_title">Säkerhet</string>
+    <string name="security_summary">Motorola använder standardiserad säkerhetspraxis och -protokoll.</string>
+    <string name="security_content_default">Innan vi delar din information med tjänsteleverantörer som arbetar för oss kräver vi att de säkerställer att din information är skyddad i enlighet med våra standarder och att de inte använder din information i något oberoende syfte. Vi vidtar även tekniska och organisatoriska standardåtgärder för att skydda den information som vi samlar in och använder för att tillhandahålla tjänster och support. Du bör använda de medföljande säkerhetsfunktionerna för att säkerställa att enheten alltid är skyddad.</string>
+    <string name="contact_motorola_title">Kontakta Motorola</string>
+    <string name="contact_motorola_summary">Kontakta Motorola om du har frågor eller funderingar.</string>
+    <string name="contact_motorola_content_default">"Du kan kontakta Motorola om du vill granska, göra tillägg i, korrigera, uppdatera eller ta bort din personliga information eller ställa frågor om den här sekretesspolicyn på:
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+USA
+E-post: privacy@motorola.com"</string>
+    <string name="full_privacy_title">Motorolas fullst. sekretesspolicy</string>
+    <string name="full_privacy_summary">Visa hela Motorolas sekretesspolicy.</string>
+    <string name="full_privacy_content_default">Internetdataanslutning krävs för att visa sekretesspolicyn.</string>
+    <string name="privacy_common_content_default">"Enheten får åtkomst till platsinformation baserat på GPS-koordinater och mobiltelefonimaster och trådlösa nätverk.
+
+Den här informationen används till att:
+
+-Söka efter platser nära dig
+-Länka mönster för enhetsanvändning till viktiga platser och föreslå enhetsbeteenden.
+-Utforska olika sätt att förbättra Motorola-produkter och -tjänster
+-Efterleva juridiska krav
+{1}POLICY FÖR HELTÄCKANDE PLATSTJÄNSTER;;{2}Text gällande heltäckande platstjänster.
+Text gällande heltäckande platstjänster.
+Text gällande heltäckande platstjänster.
+Text gällande heltäckande platstjänster.
+Text gällande heltäckande platstjänster.
+Text gällande heltäckande platstjänster.
+"</string>
+    <string name="motorola_privacy_profiles_title">MOTOROLAS SEKRETESSPROFILER</string>
+    <string name="motorola_privacy_profiles_summary">Vi kan samla in information om hur du använder enheten i syfte att tillhandahålla utökad kundsupport och förbättra kvaliteten på våra produkter och tjänster. Välj en sekretessprofil som överensstämmer med dina behov. Mer information finns i vår sekretesspolicy.</string>
+    <string name="motorola_privacy_profiles_footer">Du kan ändra dina inställningar när du vill via menyn Sekretess i programmet Inställningar i enheten.</string>
+    <string name="see_detail">Se detaljer</string>
+    <string name="opt_out_title">Inget - %1$s</string>
+    <string name="opt_out_summary">Inga data samlas in, förutom anonym information så att enheten kan hållas uppdaterad</string>
+    <string name="support_title">Support - %1$s</string>
+    <string name="support_summary">Information för teknisk support och information så att enheten kan hållas uppdaterad</string>
+    <string name="standard_title">Standard - %1$s</string>
+    <string name="standard_summary">Information som krävs för support för enheten och rekommendationer om Motorola-produkter</string>
+    <string name="advanced_title">Avancerad - %1$s</string>
+    <string name="advanced_summary">Standarddata samt information så att du kan använda enheten till att hitta platser i närheten av var du befinner dig och ta del av andra rekommendationer</string>
+    <string name="privacy_notification_text">Välj en sekretesspolicy</string>
+    <string name="opt_out_profile_title">INGEN SEKRETESSPROFIL</string>
+    <string name="opt_out_profile_text">Vi samlar endast in kärnfunktionsdata som krävs för att grundläggande funktioner, till exempel kontroll av om det finns tillgängliga programvaruuppdateringar för enheten. Om du väljer det alternativet kan det inverka negativt på våra möjligheter att tillhandahålla teknisk support för enheten.</string>
+    <string name="support_profile_title">PROFIL FÖR ENDAST SUPPORT</string>
+    <string name="support_profile_text">Om du väljer alternativet Sekretessprofil för endast support samlar vi endast in kärnfunktionsdata och supportinformation som krävs för att vi ska kunna ge bättre teknisk support för din enhet. Vi använder den informationen endast i felsökningssyfte och för att göra en uppföljning med dig efter att vi har tillhandahållit support för din enhet.</string>
+    <string name="standard_profile_title">STANDARDPROFIL FÖR SEKRETESS</string>
+    <string name="standard_profile_text">Om du väljer standardprofilen samlar vi in kärnfunktionsdata, prestandadata och analysdata. Förutom information som krävs för support för enheten samlar vi in och analyserar information om hur du använder enheten så att vi kan förbättra våra produkter och tjänster, ge dig rekommendationer om Motorola-produkter och -tjänster och tillhandahålla ännu bättre support för din enhet.</string>
+    <string name="advanced_profile_title">AVANCERAD PROFIL FÖR SEKRETESS</string>
+    <string name="advanced_profile_text">I syfte att tillhandahålla bästa möjliga användarupplevelse samlar vi in kärnfunktionsinformation, supportinformation, prestandainformation, information om hur du använder enheten, plats för enheten, användning av den inbyggda webbläsaren, programanvändningshistorik och allmänt tillgänglig information från profiler på sociala nätverk. Vi använder den informationen till att ytterligare förbättra vår tekniska support, låta funktionen SmartActions analysera var du befinner dig, ge bättre rekommendationer och utföra demografiska analyser.</string>
+    <string name="advanced_profile_text_tablet">I syfte att tillhandahålla bästa möjliga användarupplevelse samlar vi in kärnfunktionsinformation, supportinformation, prestandainformation, information om hur du använder enheten, plats för enheten, användning av den inbyggda webbläsaren, programanvändningshistorik och allmänt tillgänglig information från profiler på sociala nätverk. Vi använder den informationen till att ytterligare förbättra vår tekniska support och utföra demografiska analyser.</string>
+    <string name="privacy_link">Visa hela sekretesspolicyn</string>
+    <string name="privacy_error">Det går inte att ansluta just nu. Du kan försöka igen via Inställningar > Sekretess > Motorolas sekretesspolicy.</string>
+    <string name="terms_error">Det går inte att ansluta just nu. Du kan försöka igen via Inställningar > Om telefonen > Juridisk information.</string>
+    <string name="legal_error">Det går inte att ansluta just nu.</string>
+    <string name="legal_error_title">Fel</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">Jag accepterar Motorolas användarvillkor och sekretesspolicyer</string>
+    <string name="backup_settings_title">Säkerhetskopiera och återställ</string>
+    <string name="backup_restore_instruction">Använd Google-kontot för att säkerhetskopiera dina program, inställningar (t.ex. bokmärken och Wi-Fi-lösenord) och övriga data. Om du tidigare säkerhetskopierat ditt konto kan du återställa det till den här telefonen nu.</string>
+    <string name="backup_restore_setting">Du kan när som helst ändra dina säkerhetskopieringsinställningar i Sekretessinställningar.</string>
+    <string name="restore_title">Återställ från Google-konto</string>
+    <string name="backup_title">Säkerhetskopiera med Google-konto</string>
+</resources>

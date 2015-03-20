@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">附件已儲存</item>
+        <item quantity="one">附件已儲存</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"無法儲存附件，因為 SD 卡已遺失。
+
+請重新插入 SD 卡。"</item>
+        <item quantity="one">"無法儲存附件，因為 SD 卡已遺失。
+
+請重新插入 SD 卡。"</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">記憶體不足，無法儲存附件。</item>
+        <item quantity="one">記憶體不足，無法儲存附件。</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">無法儲存一個或多個附件。</item>
+        <item quantity="one">無法儲存附件。</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">即將刪除 %1$d 則訊息。</item>
+        <item quantity="one">即將刪除 1 則訊息。</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">已保護 %1$d 則訊息。</item>
+        <item quantity="one">已保護 1 則訊息。</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">已取消保護 %1$d 則訊息。</item>
+        <item quantity="one">已取消保護 1 則訊息。</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">您有多個工作提醒</item>
+        <item quantity="one">您有一個工作提醒</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d 個提醒)</item>
+        <item quantity="one">有 1 項工作待完成</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">找到 %d 個工作</item>
+        <item quantity="zero">找到 %d 個工作</item>
+        <item quantity="one">找到 %d 個工作</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">過期</item>
+        <item quantity="one">過期</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">在每個工作完成後每隔 %1$d 天</item>
+        <item quantity="one">每天在每個工作完成後</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">在每個工作完成後每隔 %1$d 週</item>
+        <item quantity="one">每週在每個工作完成後</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">在每個工作完成後每隔 %1$d 月</item>
+        <item quantity="one">每月在每個工作完成後</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">在每個工作完成後每隔 %1$d 年</item>
+        <item quantity="one">每年在每個工作完成後</item>
+    </plurals>
+</resources>

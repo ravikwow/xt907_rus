@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>En sida per ark</item>
+        <item>Två sidor per ark</item>
+        <item>Fyra sidor per ark</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Porträtt</item>
+        <item>Landskap</item>
+        <item>Omvänt landskap</item>
+        <item>Omvänt porträtt</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>porträtt</item>
+        <item>landskap</item>
+        <item>omvänt landskap</item>
+        <item>omvänt porträtt</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Ensidig</item>
+        <item>Tvåsidig, långsida</item>
+        <item>Tvåsidig, kortsida</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>ensidig</item>
+        <item>tvåsidig, långsida</item>
+        <item>tvåsidig, kortsida</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="MmsUaprofFormat" value="$product" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.motorola.com/phoneconfig/xt885/Profile/xt885_ca.rdf" />
+    <setting type="string" name="MmsVersion" value="mms_version_1_1" />
+</settings>

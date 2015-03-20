@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Soğuma Modu</string>
+    <string name="batt_temp_cooldown_title">Soğuma Modu</string>
+    <string name="batt_temp_cooldown_msg">Telefon şu anda Soğuma modunda. Yalnızca acil durum çağrısı yapılabilir.</string>
+    <string name="lockscreen_emergency_call">Acil durum çağrısı</string>
+</resources>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">Valmistellaan laitetta</string>
+    <string name="cpu_idle_wait_msg">Odota hetki...</string>
+    <string name="splash_screen_text">Tervetuloa Motorolaan</string>
+    <string name="please_choose_a_language">Valitse kieli:</string>
+    <string name="welcome_to_motoblur">Tervetuloa MOTOBLUR-palveluun</string>
+    <string name="next">Seur.</string>
+    <string name="back">Takaisin</string>
+    <string name="make_emergency_call_by_pressing_menu">Voit soittaa hätäpuhelun asennuksen aikana painamalla \"Valikko\"-näppäintä.</string>
+    <string name="sign_up_or_login_main_text">Tarvitset puhelimen tärkeitä palveluita varten MOTOBLUR -tilin sekä MOTOBLUR-internet-portaalin.</string>
+    <string name="password_colon">Salasana:</string>
+    <string name="forgot_password">Etkö muista salasanaa?</string>
+    <string name="forgot_password_title">Salasana unohtunut</string>
+    <string name="enter_password">Kirjoita salasana</string>
+    <string name="motoblur_terms_of_service">MOTOBLUR-palvelun käyttöehdot</string>
+    <string name="moto_service_review_the_above">"Valitsemalla \"Hyväksyn\"-valintanäytön hyväksyt Motorola-ohjelmistojen käyttöoikeussopimuksen, käyttöehdot ja tietosuojalausunnon.
+
+Sinun on hyväksyttävä nämä ehdot, jotta voit käyttää tätä palvelua."</string>
+    <string name="terms_and_conditions">Motorolan käyttöehdot</string>
+    <string name="sharing_additional_information">Lisätietojen jako</string>
+    <string name="moto_service_agreement">Motorola-sopimus</string>
+    <string name="terms_of_service_check_caption">Hyväksyn seuraavat </string>
+    <string name="downloading_terms">Ladataan käyttöehtoja…</string>
+    <string name="creating_your_blur_account">Luodaan MOTOBLUR-tiliä</string>
+    <string name="generic_carrier_contact_text">Ota yhteys asiakaspalveluun ja pyydä salasana.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">Vahvistamaton MOTOBLUR-tili</string>
+    <string name="cancel">Peruuta</string>
+    <string name="signin">Kirjaudu sisään</string>
+    <string name="checking_for_updates">Etsitään päivityksiä…</string>
+    <string name="downloading_updates">"Ladataan päivitys.
+ 
+Odota hetki…"</string>
+    <string name="error_deleting_account">Virhe poistettaessa tiliä</string>
+    <string name="congrats_title_login">Kirjautuminen onnistui</string>
+    <string name="congrats_title">Valmis!</string>
+    <string name="congrats_text">"Asennus on valmis. 
+
+Jos olet määrittänyt tilejä, niiden sisältö (esimerkiksi yhteystiedot ja sähköpostit) tuodaan nyt. Tämä voi kestää jopa 30 minuuttia, mutta voit ryhtyä käyttämään puhelinta heti.
+
+Suosittelemme, että aktivoit puhelimen turvalukituksen kohdassa Asetukset > Suojaus ja näytön lukitus."</string>
+    <string name="setup_complete_title">Asennus valmis</string>
+    <string name="setup_complete_text">"Olet suorittanut kaikki tietokone- ja laiteasetukset.
+
+Ala käyttämään puhelinta heti…"</string>
+    <string name="done">Valmis</string>
+    <string name="welcome_android">Tervetuloa</string>
+    <string name="privacy_policy">Tämän puhelimen käyttöä koskee Motorolan tietosuojakäytäntö ja sen käyttöehdot.</string>
+    <string name="learn_more">Lisätietoja</string>
+    <string name="emergency_call">Hätäpuhelu</string>
+    <string name="create_later">Määritä tili myöhemmin</string>
+    <string name="email_colon">Sähköpostiosoite:</string>
+    <string name="location_consent_string">Suostumus sijaintitietojen jakamiselle</string>
+    <string name="location_consent_description">Googlen paikannuspalvelu antaa sovelluksien käyttöön matkapuhelimen sijaintitietoja ilman GPS-paikannusta. Voit poistaa sijaintitoiminnot käytöstä Sijaintipalvelujen asetuksista.</string>
+    <string name="use_location_service">Salli Googlen paikannuspalvelun kerätä sijaintitietoja nimettömästi. Tiedot kerätään, kun mikään sovellus ei ole käynnissä.</string>
+    <string name="signup">Rekisteröi uusi tili</string>
+    <string name="login">Käytä nykyistä tiliä</string>
+    <string name="password">Salasana</string>
+    <string name="ok">OK</string>
+    <string name="email_address_error">"Sähköpostiosoitteen on oltava vähintään 6 merkkiä pitkä, ja se voi sisältää kirjaimia, numeroita ja alaviivoja (_).
+"<i>Esimerkki: </i>"omaposti@toimialue.com
+"</string>
+    <string name="retrieving_password">Haetaan salasana…</string>
+    <string name="error_creating_account_title">Virhe luotaessa tiliä</string>
+    <string name="unspecified_service_error">Virhe tiliä luotaessa. Yritä uudelleen.</string>
+    <string name="password_emailed">Salasanalinkki on lähetetty sähköpostiisi</string>
+    <string name="contacts">Yhteystiedot</string>
+    <string name="calendar">Kalenteri</string>
+    <string name="none">Ei mitään</string>
+    <string name="captcha_text">Vahvista kirjautuminen kirjoittamalla teksti alla olevaan kenttään</string>
+    <string name="set_up_apn">Määritä APN</string>
+    <string name="set_up_cloud">Määritä pilvipalvelu</string>
+    <string name="set_up_wifi">Määritä Wi-Fi</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">IMEI-numero on %1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">MEID-numero on %1$s</string>
+    <string name="error_account_disabled">Tili poistettiin Blur-palvelusta</string>
+    <string name="error_account_not_found">Tiliä ei ole Blur-palvelussa</string>
+    <string name="error_already_exists">Tili on jo olemassa Blur-palvelussa. Valitse toinen tilin tunnus.</string>
+    <string name="error_already_initialized">Puhelimeen on jo liitetty tili.</string>
+    <string name="error_connect_timeout">Yhteys aikakatkaistiin. Yritä uudelleen.</string>
+    <string name="error_try_again">Virhe. Yritä uudelleen.</string>
+    <string name="error_invalid_credentials">Virheellinen käyttäjänimi tai salasana. Tarkista kirjautumistiedot ja yritä uudelleen.</string>
+    <string name="error_invalid_params">Antamasi tieto on virheellinen. Yritä uudelleen.</string>
+    <string name="error_internal_server">Sisäinen palvelinvirhe. Yritä uudelleen</string>
+    <string name="error_no_server_response">Palvelin ei vastaa. Tarkista, että palvelu on käytettävissä ja yritä uudelleen.</string>
+    <string name="error_not_allowed">Pyyntöä ei hyväksytty. Yritä uudelleen.</string>
+    <string name="error_not_found">Pyyntöä ei löydy.</string>
+    <string name="error_not_initialized">Pyyntö edellyttää kirjautumistietoja, mutta niitä ei ole annettu pyynnön yhteydessä.</string>
+    <string name="error_password_mismatch">Väärä salasana. Yritä uudelleen.</string>
+    <string name="error_current_password_mismatch">Väärä nykyinen salasana. Yritä uudelleen.</string>
+    <string name="error_radio_down">Puhelimen radio ei voi muodostaa yhteyttä verkkoon. Tarkista, että radio on käytössä tai siirry paikkaan, jossa on parempi kuuluvuus, ja yritä uudelleen.</string>
+    <string name="error_service_busy">Yhteyttä ei voi muodostaa juuri nyt. Yritä myohemmin uudelleen.</string>
+    <string name="error_socket_timeout">Pyyntö aikakatkaistiin vastausta odotettaessa. Tili on ehkä luotu virheellisesti.</string>
+    <string name="error_too_many">Olet yrittänyt asettaa salasanan uudelleen liian monta kertaa tänään. Yritä myöhemmin uudelleen.</string>
+    <string name="error_unauthorized">Blur-palvelu ilmoitti, että pyyntösi on luvaton. Tarkista, että Blur-palvelu on käytettävissä.</string>
+    <string name="error_wrong_device">Tämä tili on jo käytössä toisessa laitteessa. Tämä laite on tyhjennettävä ennen kuin tiliä voidaan käyttää.</string>
+    <string name="error_wrong_password">"Käyttäjänimeä ja/tai salasanaa ei tunnistettu. Tarkista tiedot ja yritä uudelleen. Jos olet unohtanut salasanasi, napsauta 'Salasana unohtunut' -painiketta. Salasana lähetetään sähköpostiisi."</string>
+    <string name="error_captcha_invalid">Anna tiedot uudelleen.</string>
+    <string name="error_captcha_expired">Todennus on vanhentunut. Yritä uudelleen.</string>
+    <string name="error_ssl_error">Laitteen kellotoiminnossa on ongelma. Ota yhteys asiakaspalveluun.</string>
+    <string name="error_retreiving_information">Virhe haettaessa tietoja.</string>
+    <string name="error_wifi_only">Sosiaalisten verkkojen sovelluksia synkronoidaan vain Wi-Fi-verkossa.</string>
+    <string name="service_data_error">Virheitä haettaessa tietoja Blur-palvelusta.</string>
+    <string name="retry">Yritä uudelleen</string>
+    <string name="terms_of_service_text">Käyttöehtojen näyttämiseen tarvitaan internet-datayhteys.</string>
+    <string name="data_analytics_text">Tietoanalyysin näyttämiseen tarvitaan internet-datayhteys.</string>
+    <string name="end_user_license_agreement_text">KÄYTTÖOIKEUSSOPIMUS sisältö</string>
+    <string name="bad_phone_format">"Puhelinnumerossa voi olla vain numeroita tai merkit '-' ja '+'"</string>
+    <string name="bad_password_format">Salasanassa ei saa olla välilyöntejä.</string>
+    <string name="must_be_at_least">{0} täytyy olla vähintään {1} merkkiä.</string>
+    <string name="start">Aloita</string>
+    <string name="finish">Valmis</string>
+    <string name="set_up_cancel">Ohita asetukset</string>
+    <string name="waiting_for_connection">Tarkistetaan datayhteyttä</string>
+    <string name="setup_blur_device_title">Määritä Blur-laite</string>
+    <string name="connection_failed_text">Yhteyden muodostaminen epäonnistui</string>
+    <string name="no_network_connection">Ei verkkoyhteyttä</string>
+    <string name="service_error_text">Motorolan palveluvirhe</string>
+    <string name="connection_chooser_select">"Viimeistele asetuksien määrittäminen
+ valitsemalla yhteystyyppi"</string>
+    <string name="connection_chooser_type">Yhteystyyppi</string>
+    <string name="skip_setup_title">Ohita asetukset</string>
+    <string name="skip_setup_text">"Jos ohitat asetukset, osa laitteen ominaisuuksista ei tule käytettäviksi.
+ 
+ Laite muistuttaa sinua asetusten viimeistelystä, kun datayhteys on käytettävissä, tai jos yrität käyttää sovellusta, jonka käyttö edellyttää asetusten viimeistelyä.
+ 
+ Valitse \"Seuraava\" ja lue suostumus sijaintitietojen jakamiselle. Tämän jälkeen asennus on valmis ja puhelin siirtyy aloitusnäyttöön."</string>
+    <string name="blur_required">Tarvitaan Blur-tili</string>
+    <string name="setup">Asetukset</string>
+    <string name="connection_retry">Yritä muodostaa uudelleen yhteys matkapuhelinverkkoon</string>
+    <string name="connection_skip">Ohita nyt</string>
+    <string name="connection_cell_retry_text">"Yhteyttä ei voi muodostaa.
+ Asetuksien viimeistelemiseen tarvitaan datayhteys.
+
+Siirry verkon katealueelle ja paina \"Yritä uudelleen\" -painiketta."</string>
+    <string name="sim_removed">SIM-kortti poistettu</string>
+    <string name="simswap_signin_instruction">SIM-kortti poistettiin äskettäin. Kirjaudu tilillesi, jotta henkilöllisyytesi voidaan todentaa.</string>
+    <string name="reset_phone">Palauta puhelimen alkuasetukset</string>
+    <string name="sign_in">Kirjaudu sisään</string>
+    <string name="checking_progress_text">Tarkistetaan…</string>
+    <string name="error_need_email_and_password_to_signin">Vahvista henkilöllisyytesi kirjautumalla tilille.</string>
+    <string name="delete_email_accounts_msg">Olemassa olevan MOTOBLUR-tilin lataaminen poistaa laitteesta kaikki sähköpostitilit ja korvaa ne tileillä, jotka on tallennettu MOTOBLUR-profiiliisi.</string>
+    <string name="delete_email_accounts_continue_btn">Jatka</string>
+    <string name="moto_required">Tarvitaan Motorola-tili</string>
+    <string name="moto_required_info">"\"Järjestelmäpäivitys\" ei ole käytettävissä ilman Motorola-tiliä.
+
+Haluatko määrittää tilin nyt?"</string>
+    <string name="sn_required">Tarvitaan yhteisötili</string>
+    <string name="sn_required_info">"\"{0}\" ei ole käytettävissä ilman yhteisötiliä.
+Voit luoda uuden tilin napsauttamalla \"Asetukset\"-painiketta."</string>
+    <string name="connection_failed_textinfo">"Asetuksien viimeistelemiseen tarvitaan datayhteys.
+
+Valitse jokin seuraavista:"</string>
+    <string name="no_network_connection_textinfo">"Tarvitset datayhteyden, ennen kuin voit jatkaa.
+
+Valitse jokin seuraavista:"</string>
+    <string name="service_error_textinfo">Sisäinen palvelinvirhe. Yritä uudelleen.</string>
+    <string name="setup_wifi">Määritä Wi-Fi-yhteys</string>
+    <string name="retry_cellular">Käytä nykyistä yhteyttä</string>
+    <string name="skip_for_now">Ohita asetukset tällä kertaa</string>
+    <string name="try_again_later">Yritä myöhemmin uudelleen</string>
+    <string name="account_creation_timeout_title">Toiminto kestää odotettua pidempään.</string>
+    <string name="account_creation_timeout_content">Toimintoa jatketaan taustalla.</string>
+    <string name="communicating_with_server">"Otetaan yhteyttä palvelimeen.
+Odota..."</string>
+    <string name="notification_title">Tilin asetukset</string>
+    <string name="notification_text">Kirjoita kuvavarmenne</string>
+    <string name="blur_account_setup">Blur-tilin asetukset</string>
+    <string name="restore_previous_device">Palautetaanko aiempi laite?</string>
+    <string name="restore_details_string">"Palautetaanko aiemman Motorola-laitteen yhteystiedot, asetukset ja tilit?
+"</string>
+    <string name="enter_motorola_id">Sisällön palauttaminen vaatii MotoCast-tunnuksen.</string>
+    <string name="what_is_motoid">Mikä MotoCast-tunnus on?</string>
+    <string name="yes_restore">Kyllä, haluan palauttaa</string>
+    <string name="no_restore">Ei, ei palautusta</string>
+    <string name="setup_title">Motorola-määritys</string>
+    <string name="quick_upload">Pikalataus</string>
+    <string name="quick_upload_pictures">Kuvien pikalataus</string>
+    <string name="quick_upload_videos">Videoiden pikalataus</string>
+    <string name="uploading_pictures">Ladataan kuvia kohteeseen %1$s</string>
+    <string name="uploading_videos">Ladataan videoita kohteeseen %1$s</string>
+    <string name="uploading_pictures_and_videos">Ladataan kuvia ja videoita kohteeseen %1$s</string>
+    <string name="quick_upload_pics_not_setup_text">Kuvien oletuspikalähetystiliä ei ole asetettu. Haluatko asettaa oletuspikalähetystilin nyt ja jatkaa latausta?</string>
+    <string name="quick_upload_videos_not_setup_text">Videoiden oletuspikalähetystiliä ei ole asetettu. Haluatko asettaa oletuspikalähetystilin nyt ja jatkaa latausta?</string>
+    <string name="web_setting">Kyllä</string>
+    <string name="web_cancel_upload">Peruuta</string>
+    <string name="web_cancel">Ei</string>
+    <string name="toast_BlurFailed">Bluria ei ole asennettu.</string>
+    <string name="online_album_email_addr_title">Kirjoita sähköpostiosoite</string>
+    <string name="enter_email">Kirjoita osoite</string>
+    <string name="add_account_dot">Lisää tili...</string>
+    <string name="btn_ok">OK</string>
+    <string name="data_saver_enabled">Tiedonsäästö käytössä</string>
+    <string name="data_saver_text">Lataus on siirtojonossa, kunnes Wi-Fi tulee saataville. Jos haluat ladata välittömästi, siirry asetuksiin ja poista tiedonsäästö käytöstä.</string>
+    <string name="delayed_toast">%1$s on latausjonossa, kunnes Wi-Fi tulee saataville. Voit tarkistaa etenemisen ilmoitusikkunasta.</string>
+    <string name="n_items">%1$d kohteita</string>
+    <string name="gathering_check_caption">Hyväksyn, että autan Motorolaa parantamaan palvelun laatua </string>
+    <string name="gathering_link">jakamalla lisätietoja</string>
+    <string name="gathering_check_caption2"> siitä, kuinka käytän laitettani</string>
+    <string name="tos_link">Motorola-palveluehdot</string>
+    <string name="large_upload">Suuri lataus</string>
+    <string name="large_upload_text">Verkkoon lataaminen saattaa kestää pitempään kuin Wi-Fi-verkkoon lataaminen.</string>
+    <string name="upload_via_wifi">Lataa Wi-Fi:n kautta</string>
+    <string name="upload_now">Lataa nyt</string>
+    <string name="settings_button">Asetukset</string>
+    <string name="cancel_button">Peruuta</string>
+    <string name="blur_required_info">Kohdetta ei voi käyttää ilman Blur-tiliä. Luo uusi tili tai kirjaudu olemassa olevalle tilille napsauttamalla Asetukset-painiketta</string>
+    <string name="airplane_active">Lentokonetila on käytössä.</string>
+    <string name="privacy_policy_title">TIETOSUOJAKÄYTÄNTÖ</string>
+    <string name="privacy_policy_summary">Motorola on sitoutunut suojaamaan asiakkaidensa tiedot. Tässä tietosuojakäytännössä kerrotaan, kuinka mobiililaitteista kerätään tietoja ja mihin tarkoituksiin kerättyjä tietoja käytetään. Tiedonsiirtomaksuja voidaan veloittaa. Yksityiskohtaisempia tietoja käytännöistä on tietosuojalausunnossamme.</string>
+    <string name="privacy_profiles_title">Tietosuojaprofiilit</string>
+    <string name="privacy_profiles_summary">Valitse tarpeisiisi parhaiten sopiva tietosuojaprofiili.</string>
+    <string name="location_services_title">Sijaintipalvelut</string>
+    <string name="location_services_summary">Sovellukset, jotka saavat tietoonsa laitteesi sijainnin, ja tietoja siitä, mitä voit tehdä näiden tietojen avulla.</string>
+    <string name="location_services_content_default">Jos otat sijaintipohjaiset palvelumme käyttöön, käytämme GPS-koordinaatteihin, radiomastojen sijaintiin ja langattomiin verkkoihin perustuvia sijaintitietoja hakemaan läheisiä paikkoja, liittämään laitteen käyttöäsi tiettyihin sijainteihin ja sen pohjalta ehdottamaan tiettyjä toimintoja, Motorolan tuotteiden ja palveluiden kehittämiseen sekä lakisääteisten velvollisuuksiemme noudattamiseen.</string>
+    <string name="collection_use_title">Kerääminen ja käyttö</string>
+    <string name="collection_use_summary">Mitä tietoja Motorola kerää laitteestasi ja miten niitä käytetään palvelujen parantamiseen.</string>
+    <string name="collection_use_content_default">Valitsemasi tietosuojaprofiilin mukaan keräämme seuraavia tietoja tai joitakin niistä: tieto-ja perussuorituskyvystä ja yleisestä suorituskyvystä, tilastollisia tietoja, tietoja sovellusten käytöstä ja laitteen selaimella käyttämistäsi verkkosivuista sekä henkilökohtaisia tietoja ja julkisia tietoja laitteeseen liitetyistä yhteisöpalvelutileistä. Näitä tietoja tarvitaan sähköpostiviestien ja yhteisöpalveluviestien lähettämiseen ja vastaanottamiseen, asiakastuen tarjoamiseen, vianmääritykseen, laitteen suorituskyvyn optimoimiseen, Motorolan tuotteista ja palveluista tiedottamiseen, Motorolan tuotteiden ja palveluiden kehittämiseen, väestöanalyysin tekemiseen sekä markkinasegmenttien mallintamiseen.</string>
+    <string name="tracking_ads_title">Seuranta ja mainokset</string>
+    <string name="tracking_ads_summary">Laitteesi ei käytä verkonseurantatekniikoita, kuten tunnisteita tai evästeitä.</string>
+    <string name="tracking_ads_content_default">Emme käytä verkonseurantatekniikoita, kuten verkkojäljitteitä tai evästeitä, henkilökohtaisten tietojen, kuten salasanojen tai henkilötietojen, tallentamiseen, tietoliikenteen analysoimiseen, laitteen toimintojen mukauttamiseen tai Motorolan tuotteiden ja palveluiden parantamiseen. Kuitenkin mobiililaitteella selaamasi verkkosivustot tai laitteeseen asentamasi ja sillä käyttämäsi sovellukset saattavat asettaa ja käyttää omien käyttöehtojensa mukaisia jäljittimiä.</string>
+    <string name="security_title">Suojaus</string>
+    <string name="security_summary">Motorola käyttää vakiosuojaustoimenpiteitä ja -protokollia.</string>
+    <string name="security_content_default">Ennen kuin jaamme tietosi palveluntarjoajakumppaneillemme, vaadimme, että he suojaavat tietosi Motorolan standardien mukaan eivätkä käytä tietoja omiin tarkoituksiinsa. Suojelemme palvelun ja asiakastuen tarjoamiseksi keräämiämme tietoja teknisillä ja organisatorisilla vakiosuojaustoimenpiteillä. Suosittelemme, että pidät laitteesi suojattuna käyttämällä tarjottuja suojaustoimenpiteitä.</string>
+    <string name="contact_motorola_title">Ota Motorolaan yhteyttä</string>
+    <string name="contact_motorola_summary">Ota yhteyttä Motorolaan, jos sinulla on kysyttävää.</string>
+    <string name="contact_motorola_content_default">"Jos haluat tarkastella, muuttaa, korjata, päivittää tai poistaa omia tietojasi tai kysyä jotakin tästä tietosuojakäytännöstä, voit ottaa yhteyttä Motorolaan. Osoite:
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+USA
+Sähköpostiosoite: privacy@motorola.com"</string>
+    <string name="full_privacy_title">Koko tietosuojakäytäntö</string>
+    <string name="full_privacy_summary">Näytä Motorolan koko tietosuojakäytäntö.</string>
+    <string name="full_privacy_content_default">Tietosuojakäytännön lukeminen vaatii internetyhteyden.</string>
+    <string name="privacy_common_content_default">"Laitteesi käyttää GPS-koordinaatteihin, radiomastojen sijaintiin ja langattomiin verkkoihin perustuvia sijaintitietoja.
+
+Näitä tietoja käytetään seuraaviin tarkoituksiin:
+
+-Hakemaan läheisiä paikkoja
+-Liittämään laitteen käyttöäsi tiettyihin sijainteihin ja sen pohjalta ehdottamaan tiettyjä toimintoja
+-Motorolan tuotteiden ja palvelujen kehittämiseen
+-Lakisääteisten velvollisuuksien noudattamiseen
+{1}KATTAVA SIJAINTIPALVELUKÄYTÄNTÖ;;{2}FULL Location services text.
+FULL Location services text.
+FULL Location services text.
+FULL Location services text.
+FULL Location services text.
+FULL Location services text.
+"</string>
+    <string name="motorola_privacy_profiles_title">MOTOROLAN TIETOSUOJAPROFIILIT</string>
+    <string name="motorola_privacy_profiles_summary">Voimme kerätä tietoja mobiililaitteen käyttötavoistasi tehokkaamman asiakastuen tarjoamiseksi sekä tuotteidemme ja palvelumme laadun parantamiseksi. Valitse tarpeisiisi parhaiten sopiva tietosuojaprofiili. Lisätietoja on Tietosuojakäytännössä.</string>
+    <string name="motorola_privacy_profiles_footer">Voit muuttaa valintaasi milloin vain laitteesi asetussovelluksen Tietosuoja-valikosta.</string>
+    <string name="see_detail">Näytä lisätiedot</string>
+    <string name="opt_out_title">Ei mitään - %1$s</string>
+    <string name="opt_out_summary">Vain laitteen päivitykseen tarvittavia, anonyymeja tietoja kerätään.</string>
+    <string name="support_title">Tuki - %1$s</string>
+    <string name="support_summary">Teknisen tuen tarvitsemia tietoja ja laitteen päivitykseen tarvittavia tietoja</string>
+    <string name="standard_title">Normaali - %1$s</string>
+    <string name="standard_summary">Laitteen tukemiseen sekä tuotesuositusten tekemiseen tarvittavia tietoja</string>
+    <string name="advanced_title">Edistynyt - %1$s</string>
+    <string name="advanced_summary">Perustietoja sekä tietoja, joita hyödyntämällä laite voi auttaa löytämään lähellä olevia paikkoja ja antaa muita suosituksia</string>
+    <string name="privacy_notification_text">Valitse tietosuojakäytäntö</string>
+    <string name="opt_out_profile_title">EI MITÄÄN -TIETOSUOJAPROFIILI</string>
+    <string name="opt_out_profile_text">Keräämme tietoja vain perussuorituskyvystä, koska tarvitsemme tietoja perustoimintojen suorittamiseen, esimerkiksi laitteellesi tarjolla olevien ohjelmistopäivitysten määrittämiseen. Jos valitset tämän vaihtoehdon, emme voi tarjota täyttä teknistä tukea laitteelle.</string>
+    <string name="support_profile_title">VAIN TUKI -TIETOSUOJAPROFIILI</string>
+    <string name="support_profile_text">Jos valitset Vain tuki -tietosuojaprofiilin, keräämme tietoja vain perussuorituskyvystä ja tukitietoja, koska näitä tietoja tarvitaan laitteen tehostetun teknisen tuen tarjoamiseen. Käytämme näitä tietoja vain vianmääritykseen ja laitteelle annetun tuen jälkiseurantaan.</string>
+    <string name="standard_profile_title">NORMAALI TIETOSUOJAPROFIILI</string>
+    <string name="standard_profile_text">Jos valitset Normaalin tietosuojaprofiilin, keräämme tietoja perussuorituskyvystä ja yleisestä suorituskyvystä sekä tilastollisia tietoja. Tukitietojen lisäksi keräämme ja analysoimme tietoja laitteen käyttötavoista palvelumme ja tuotteidemme parantamiseksi, laitteen tuen kehittämiseksi sekä Motorolan tuotteiden ja palveluiden suositteluun.</string>
+    <string name="advanced_profile_title">EDISTYNYT TIETOSUOJAPROFIILI</string>
+    <string name="advanced_profile_text">Käyttäjäystävällisyyden parantamiseksi keräämme tietoja perussuorituskyvystä ja yleisestä suorituskyvystä, tukitietoja ja tietoja laitteen käyttötavoista, laitteen sijainnista, laitteen oman verkkoselaimen ja muiden sovellusten käytöstä sekä julkisia tietoja yhteisöpalvelutileistä. Näitä tietoja käytetään teknisen tuen kehittämiseen, sijainnin analysointiin SmartActions-toiminnolla sekä kohdennettujen suositusten ja väestöanalyysin tekemiseen.</string>
+    <string name="advanced_profile_text_tablet">Käyttäjäystävällisyyden parantamiseksi keräämme tietoja perussuorituskyvystä ja yleisestä suorituskyvystä, tukitietoja ja tietoja laitteen käyttötavoista, laitteen sijainnista, laitteen oman verkkoselaimen ja muiden sovellusten käytöstä sekä julkisia tietoja yhteisöpalvelutileistä. Näitä tietoja käytetään teknisen tuen kehittämiseen ja väestöanalyysin tekemiseen.</string>
+    <string name="privacy_link">Näytä koko tietosuojakäytäntö</string>
+    <string name="privacy_error">Yhteyden muodostaminen ei onnistu. Voit palata tähän myöhemmin valitsemalla Asetukset > Tietosuoja > Motorolan tietosuojakäytäntö.</string>
+    <string name="terms_error">Yhteyden muodostaminen ei onnistu. Voit palata tähän myöhemmin valitsemalla Asetukset > Tietoja puhelimesta > Oikeudelliset tiedot.</string>
+    <string name="legal_error">Yhteyden muodostaminen ei onnistu.</string>
+    <string name="legal_error_title">Virhe</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">Hyväksyn Motorolan käyttöehdot ja tietosuojakäytännöt</string>
+    <string name="backup_settings_title">Varmuuskopioi ja palauta</string>
+    <string name="backup_restore_instruction">Käytä Google-tiliäsi sovellusten, asetusten (kuten kirjanmerkkien ja Wi-Fi-salasanojen) ja muiden tietojen varmuuskopiointiin. Jos olet aiemmin luonut varmuuskopion tällä tilillä, voit palauttaa sen nyt puhelimeen.</string>
+    <string name="backup_restore_setting">Voit vaihtaa varmuuskopiointiasetuksia milloin tahansa Tietosuoja-asetuksissa.</string>
+    <string name="restore_title">Palauta Google-tililtä</string>
+    <string name="backup_title">Varmuuskopioi Google-tilin avulla</string>
+</resources>

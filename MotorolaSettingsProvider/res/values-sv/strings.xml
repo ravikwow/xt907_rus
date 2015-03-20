@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_writeGservices">Skriv Gservices-inställningar.</string>
+    <string name="permdesc_writeGservices">Tillåter programmet att ändra inställningarna i Gservices.</string>
+    <string name="permlab_tcmdLocal">Använd testkommandon</string>
+    <string name="permdesc_tcmdLocal">Använd testkommandon</string>
+    <string name="settings_storage">Lagring av inställningar</string>
+</resources>

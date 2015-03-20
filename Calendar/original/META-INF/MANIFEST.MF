@@ -1,0 +1,631 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable/calendars_item.xml
+SHA1-Digest: 21mdhinBEllyoJQ2KebeMy/hJE8=
+
+Name: res/drawable-mdpi/chip_background_selected.9.png
+SHA1-Digest: +W7AfwrAVlbg0xzhSlqQ6UJsy4M=
+
+Name: res/drawable-hdpi/ic_menu_done_holo_light.png
+SHA1-Digest: ZRbsROQiggajkd8Kpx594jlprak=
+
+Name: res/xml/about_preferences.xml
+SHA1-Digest: sZUdHB6QvfB3LtXTntMhMkdUnr8=
+
+Name: res/layout/event_info_dialog.xml
+SHA1-Digest: eTVw60tq82P3nGOuDu09uLofwH8=
+
+Name: res/drawable-hdpi/minical_bg_shadow_holo_light.9.png
+SHA1-Digest: p+s3qihEUbwXlFNiY6h3u8Wsc6g=
+
+Name: res/drawable/calname_bottom_unselected.xml
+SHA1-Digest: 5hwcCxGZUxfpAJsiiwAishaEos8=
+
+Name: res/drawable/today_icon.xml
+SHA1-Digest: gcJw5PboegBoXPYFZQlgGd82xQc=
+
+Name: res/layout/edit_event_2.xml
+SHA1-Digest: Kc8vdAoP1W2ldrDUo5Fovsixgx0=
+
+Name: res/menu/more_action_popup_menu.xml
+SHA1-Digest: +EAQSLwHKB4y9MFV5JDcWJhty5M=
+
+Name: res/layout/appwidget_day.xml
+SHA1-Digest: l+xzmfBZTZiMtc1qkbwqnqC8vkQ=
+
+Name: res/layout/all_in_one.xml
+SHA1-Digest: BijH/TajMrCLA2xxNWl3rOXPHz8=
+
+Name: res/menu/all_in_one_title_bar.xml
+SHA1-Digest: LJisWiX/hp3Sm06SGjK6OAdLv0s=
+
+Name: res/layout-sw600dp/event_info_label.xml
+SHA1-Digest: yExTlawKIc4ws/AuJaop6bLEnRI=
+
+Name: res/layout/month_by_week.xml
+SHA1-Digest: cfqYqkDEpxPV5wXLz4vZn4aaWVo=
+
+Name: res/xml/general_preferences.xml
+SHA1-Digest: KDoTjrQble04xcpEvHZKF60/wM0=
+
+Name: res/drawable/calname_unselected_underselect.xml
+SHA1-Digest: fMeX1/q2N8o0CwB7gnjwEgqBTTM=
+
+Name: res/drawable-hdpi/calname_bottom_unselected_pressed_holo_light.9
+ .png
+SHA1-Digest: RUUHK1UFBc1kzaM6V+PazvAILoA=
+
+Name: res/drawable-hdpi/ic_alarm_holo_dark.png
+SHA1-Digest: OiPp14KxiUjXsXHECGGD8eBj+Lo=
+
+Name: res/layout/edit_event_single_column.xml
+SHA1-Digest: xOAkxdG7kEiAtHhvHrTCG3W3PF0=
+
+Name: res/menu/edit_event_title_bar.xml
+SHA1-Digest: bzQHCROz0vEkVRjOUfeuiAKk1sc=
+
+Name: res/layout-sw600dp/contact_item.xml
+SHA1-Digest: Og9JBzSQRcczTSWazJ2uAdqpgZw=
+
+Name: res/drawable/list_item_font_primary.xml
+SHA1-Digest: xdR6dgAmVMkLpFG9chL2xO8n098=
+
+Name: res/layout/agenda_reminder_item.xml
+SHA1-Digest: LYG6G8XkKFHwfE1d5U/mUUqmJK0=
+
+Name: res/layout/select_calendars_multi_accounts_fragment.xml
+SHA1-Digest: 0AEncI/Joi8RFsQCy4YQtMsOAtU=
+
+Name: res/layout/widget_all_day_item.xml
+SHA1-Digest: 1qdM/zzq9AwqPSpxqsI4rOw9wZQ=
+
+Name: res/drawable-hdpi/panel_month_event_holo_light.9.png
+SHA1-Digest: +i8LZfgpB0O9894vRIuukPldyz0=
+
+Name: res/drawable-hdpi/calname_unselected_underselect_holo_light.9.pn
+ g
+SHA1-Digest: 2X+h/TxjpujIxL4u3PfV1SShwk0=
+
+Name: res/layout/event_info_label.xml
+SHA1-Digest: YxjRRLc29BYALg56clNu02p8QYU=
+
+Name: res/drawable-hdpi/widget_chip_responded_bg.9.png
+SHA1-Digest: IScE/kItYhZJMXj9VtFKX2VswY8=
+
+Name: res/drawable-hdpi/ic_expand_large_holo_light.png
+SHA1-Digest: Dt46fOWLg1F7rFGvXz0/ZACk/PQ=
+
+Name: res/drawable-hdpi/stat_notify_calendar.png
+SHA1-Digest: uVJBGv/3GwoQ82lmklAtv4h0EvY=
+
+Name: res/mipmap-xhdpi/ic_launcher_calendar.png
+SHA1-Digest: QofAU4vj4ywa4b4oHlCKoAnkwOU=
+
+Name: res/drawable-hdpi/ic_alarm_dark.png
+SHA1-Digest: tXD10qc2TZHq7w27j2jXCKqVqLE=
+
+Name: res/layout/bubble_event.xml
+SHA1-Digest: SEFg3WaOMHXjQe37H3jKE7z5oHs=
+
+Name: res/drawable-hdpi/calname_bottom_unselected_underselect_pressed_
+ holo_light.9.png
+SHA1-Digest: WUTgbBoIU2ZaXHhJnORxIYKmYrA=
+
+Name: res/layout/copy_chip_dialog_layout.xml
+SHA1-Digest: aOzbeFmszKKv1sWlEnLPKXyavWo=
+
+Name: res/drawable-hdpi/calname_select_underselect_pressed_holo_light.
+ 9.png
+SHA1-Digest: VktPJpSsP+xSHic/kJBSxHqSIJE=
+
+Name: res/drawable-hdpi/list_focused_holo.9.png
+SHA1-Digest: JzFi15SaJp8E2fH1obCDacR8t8E=
+
+Name: res/drawable-hdpi/today_blue_week_holo_light.9.png
+SHA1-Digest: skG/frSKL7aj3j0vV1NUnBd9XqM=
+
+Name: res/drawable-hdpi/ic_menu_moreoverflow_normal_holo_dark.png
+SHA1-Digest: T1g+8G/BP3L25AP/FXpk1PSSCqk=
+
+Name: res/drawable-hdpi/list_pressed_holo.9.png
+SHA1-Digest: QtWkcyE9BkNnw1yFIg0MvA/kaoQ=
+
+Name: res/layout-sw600dp/agenda_fragment.xml
+SHA1-Digest: srBhOvpna36WiMHieIYlm7mbK6k=
+
+Name: res/layout/full_month_by_week.xml
+SHA1-Digest: 0ngy2oR8PSFdb+f5uohtRBh3nZ4=
+
+Name: res/drawable-sw600dp/ic_menu_compose_holo_dark.png
+SHA1-Digest: BKAom/fpPBr8gSoMHmoNqLvicjE=
+
+Name: res/drawable-hdpi/calname_bottom_unselected_underselect_holo_lig
+ ht.9.png
+SHA1-Digest: dbWak7h0yesylQ+fGxohvaGMYOo=
+
+Name: res/layout/calendar_sync_item.xml
+SHA1-Digest: IUrBdHMtGFHaBAz06MMKy1n5tJE=
+
+Name: res/drawable/bg_separator_inset.xml
+SHA1-Digest: asUvBeb3pHeptACqIwJoU5smjeM=
+
+Name: res/layout-sw600dp-w960dp-h527dp/all_in_one.xml
+SHA1-Digest: KDNuwcs897qKCLE4XEfIYRhHD8o=
+
+Name: res/drawable-hdpi/list_multi_left_secondary_holo.9.png
+SHA1-Digest: eZJLpzQl9xf86kljNY1x5s1i6/s=
+
+Name: res/drawable-hdpi/ic_repeat_dark.png
+SHA1-Digest: SGdCZaD+FIwkhWPpQrYqEl4EDoA=
+
+Name: res/drawable-hdpi/list_multi_left_focused_holo.9.png
+SHA1-Digest: kAG8lOXkDDLKe8TutH+nPVv1LMg=
+
+Name: res/drawable-mdpi/chip_checkmark.png
+SHA1-Digest: fVmzKbIxQ/S+bThE+RDNOMEElo8=
+
+Name: res/drawable-hdpi/ic_menu_email_holo_light.png
+SHA1-Digest: wLlc7q/+E101Tj7XGJmlmfod9S0=
+
+Name: res/layout-land/all_in_one.xml
+SHA1-Digest: f6vUbdajfpRGEeO8jQ2vxioSgO4=
+
+Name: res/drawable-hdpi/list_multi_left_primary_holo.9.png
+SHA1-Digest: Fvqy+Ym/cvuc/faoi/MLfYEBfOo=
+
+Name: res/drawable-hdpi/list_multi_left_activated_holo.9.png
+SHA1-Digest: epz39WQG6+HUs2hOUyLG+sYbv2M=
+
+Name: res/layout/actionbar_pulldown_menu_button.xml
+SHA1-Digest: ttM6pJ1J0LCB+zVKX74Stvcwcl0=
+
+Name: res/layout-sw600dp/edit_event_1.xml
+SHA1-Digest: Kci3QKF2ctAp1nnLwQLOrnz4oRc=
+
+Name: res/layout/expandable_textview.xml
+SHA1-Digest: i2S9axTqdHBgTsLxM/v8ycpPtrU=
+
+Name: res/drawable/event_info_mail_button.xml
+SHA1-Digest: xJjezl0IrK7SZiI+7vqetk8N4Us=
+
+Name: res/drawable-hdpi/timeline_indicator_activated_holo_light.9.png
+SHA1-Digest: X8p0lRExrbcv4MPr8rozdOpFX7A=
+
+Name: res/menu-sw600dp-land/all_in_one_title_bar.xml
+SHA1-Digest: LRCl0Gg98iunlIiATzIbsCj8H5I=
+
+Name: res/drawable-sw600dp/ic_menu_today_holo_light.png
+SHA1-Digest: OA2kPRsPZLDaLh5Ht7TqST6JvdA=
+
+Name: res/layout-sw600dp/agenda_day.xml
+SHA1-Digest: F7kjKSRvLijQIIKzdr5gA1HxZAA=
+
+Name: res/layout/chips_alternate_item.xml
+SHA1-Digest: sL0VRbEAp0F6zcWBhC/iwmQqDtk=
+
+Name: res/drawable-hdpi/ic_alarm_white.png
+SHA1-Digest: NcF2z9VNGku2rT+H8Udhi3G7ujc=
+
+Name: res/drawable-hdpi/ic_contact_picture.png
+SHA1-Digest: Iw4tEMdD8JoJ+drdsiiXzH8x/I8=
+
+Name: res/layout/widget_item.xml
+SHA1-Digest: C9ofRzcR02DD+Lt5uhelYW8et94=
+
+Name: res/menu/ical_event_info_title_bar.xml
+SHA1-Digest: QKu1rtpF1+KExcc9+Dy3IsaO9PI=
+
+Name: res/drawable-hdpi/snooze.png
+SHA1-Digest: S5hnEF2Bqa2Ugrtnah3M4LNgPRU=
+
+Name: res/drawable-hdpi/calname_bottom_select_underunselected_holo_lig
+ ht.9.png
+SHA1-Digest: ZwPRKAmkoljtBPKQDgmU6q3lTho=
+
+Name: res/drawable-hdpi/calname_unselected_underselect_pressed_holo_li
+ ght.9.png
+SHA1-Digest: mhDA19+CiuadKfIZ648Rmu5h1yE=
+
+Name: res/drawable-hdpi/calname_select_underunselected_pressed_holo_li
+ ght.9.png
+SHA1-Digest: +rWF/easTDyquKUPyB7fLOF58eU=
+
+Name: res/drawable-hdpi/chip_background_invalid.9.png
+SHA1-Digest: aQi3PTGOkABT14Ca4UbUDrfTcbk=
+
+Name: res/drawable-hdpi/cal_widget_date_bg.9.png
+SHA1-Digest: NdqZZU/7pHdupxSJIzl0EfTLLJ8=
+
+Name: res/layout/appwidget.xml
+SHA1-Digest: dkmEpjYgPiIlPB/Le2ExQusTiLo=
+
+Name: res/layout-sw600dp/full_month_by_week.xml
+SHA1-Digest: lvqI03x+u4QItcgiUd2eJXLnjvc=
+
+Name: res/drawable-sw600dp/agenda_item_bg_primary.xml
+SHA1-Digest: cnnFhxwgLdBsahieqeOX0VSrATE=
+
+Name: res/drawable-hdpi/calname_select_underselect_holo_light.9.png
+SHA1-Digest: e9IK8CDKSrSNRNNvRi12f+hZD2Q=
+
+Name: res/layout/search.xml
+SHA1-Digest: DvWTAhx2XhYJiSxs+DnSndGK2R8=
+
+Name: res/drawable-hdpi/chip_background_selected.9.png
+SHA1-Digest: J5hBIVt3yc5abcyxPKFGrLMhI5A=
+
+Name: res/layout/agenda_item.xml
+SHA1-Digest: TfLIX8ofpJMhBtRe+0Y8yqDdD2U=
+
+Name: res/drawable-hdpi/header_bg_cal_widget_normal_holo.9.png
+SHA1-Digest: bCXLL5ybiY4estZse193VXxFEGc=
+
+Name: res/layout/appwidget_loading.xml
+SHA1-Digest: NkD06HF8SX7j5l89b5NrAZxN5k8=
+
+Name: res/drawable-mdpi/chip_background.9.png
+SHA1-Digest: lxhWTU8xiJLpz9U4QCjLmVNWt2E=
+
+Name: res/drawable-hdpi/list_primary_holo.9.png
+SHA1-Digest: 84QqdGWhWtaRp+kzhZp1zHYKPdQ=
+
+Name: res/drawable-hdpi/calname_select_underunselected_holo_light.9.pn
+ g
+SHA1-Digest: 69nyKQ0jSgxw5ZHa3lvic6zaWQ8=
+
+Name: res/drawable-hdpi/ic_menu_trash_holo_light.png
+SHA1-Digest: 0M5FRnwPMt1Zs37eCxEQ0nRa3ZE=
+
+Name: res/drawable/calname_unselected.xml
+SHA1-Digest: qf2m9sBBwdWvc566KtGuX6+86s4=
+
+Name: res/drawable-hdpi/header_bg_cal_widget_focused_holo.9.png
+SHA1-Digest: 8jo2tJ9dDfE56yscB2+S9hLxMhs=
+
+Name: res/layout/alert_item.xml
+SHA1-Digest: xdUFgR3ojs4MbuYSRDgyFqf74ns=
+
+Name: res/layout/full_month_header.xml
+SHA1-Digest: 9gxSn8EoDLUSPnFWl4L9DOo2erU=
+
+Name: res/drawable-sw600dp/ic_menu_trash_holo_dark.png
+SHA1-Digest: 7BzFgsWJTYEbCcrTEugWOKlRKFU=
+
+Name: res/layout/email_autocomplete_item.xml
+SHA1-Digest: VUaMKpFN7tbs4GL2P8CL5oS0VvQ=
+
+Name: res/drawable/calname_bottom_select_underunselected.xml
+SHA1-Digest: oizKKJmCUz3yN1d23fH6cYLRrKo=
+
+Name: res/layout/alert_activity.xml
+SHA1-Digest: ATPYss8RTd5iBUlfvYzSEisUR4o=
+
+Name: res/layout/account_calendars.xml
+SHA1-Digest: 04MTnO03aD9ItzR88XO3U5acUEI=
+
+Name: res/layout/edit_event_custom_actionbar.xml
+SHA1-Digest: WoQyGAtZgTavWmpsz3X30y+YwB8=
+
+Name: res/drawable-hdpi/frame_event_color_cal_widget_holo.png
+SHA1-Digest: 34sICl7HklJfaCkKfmi05kiK39k=
+
+Name: res/drawable/ic_expand_holo_light.xml
+SHA1-Digest: eNJaGQZ12ITS7rKT5JCV1Tx2Hhw=
+
+Name: res/mipmap-hdpi/ic_launcher_calendar.png
+SHA1-Digest: O/A235YXwdb5bUwQmKZ8Lc6BusY=
+
+Name: res/layout/edit_reminder_item.xml
+SHA1-Digest: URdo4FLEIe1iJEZAg//qTRNDp2M=
+
+Name: res/layout/edit_event_1.xml
+SHA1-Digest: jIhCzysYCb2QGp8pExcCWIOGvNQ=
+
+Name: res/drawable-hdpi/timeline_indicator_holo_light.9.png
+SHA1-Digest: 68/IzTlICfBXhvVWJgneCODwCwM=
+
+Name: res/drawable/calname_select_underselect.xml
+SHA1-Digest: ICtrcuMRjN9yCHNMNa7A4OayyCU=
+
+Name: res/drawable-hdpi/ic_expand_small_holo_light.png
+SHA1-Digest: BjqP32EXCn1hJ7uK85jWBXj5+b8=
+
+Name: res/drawable-hdpi/calname_bottom_unselected_holo_light.9.png
+SHA1-Digest: 8Fs6ZZNmH4xBUF+gYWTK2amkwHg=
+
+Name: res/layout-sw600dp/agenda_item.xml
+SHA1-Digest: cEEUEwOIGr1Gm2t2iWaOa2BV6Jo=
+
+Name: res/menu/search_title_bar.xml
+SHA1-Digest: QPDH3U8eBzTSPYPTr3M2NHcR/k8=
+
+Name: res/layout/calendars_item.xml
+SHA1-Digest: EoIcqBYeDNhypqV+BuYKyYu9IaQ=
+
+Name: res/drawable-hdpi/ic_menu_settings_holo_light.png
+SHA1-Digest: 5HgLy++c1wWvuiySW70XQ3YyUsM=
+
+Name: res/drawable-hdpi/ic_menu_refresh_holo_light.png
+SHA1-Digest: /tKfS7vgUai6J7wnv0DRRuK7B7o=
+
+Name: res/menu/settings_title_bar.xml
+SHA1-Digest: iZfoLmTy3JRfWSto144xYFt/NuQ=
+
+Name: res/drawable-sw600dp/agenda_item_bg_secondary.xml
+SHA1-Digest: jxyzSCjPmgfdVJ+0Ij8a32wwE8Q=
+
+Name: res/drawable/agenda_item_bg_secondary.xml
+SHA1-Digest: XGcm2K5/IOQzaUtmO5R/1ZvWatQ=
+
+Name: res/layout/account_item.xml
+SHA1-Digest: DaZSzHe1oJUuHO8Y6bDILB6r+7E=
+
+Name: res/drawable-hdpi/ic_forward.png
+SHA1-Digest: xHwAzt0Egcn5bgJkkObMHAi8kyQ=
+
+Name: res/layout/contact_item.xml
+SHA1-Digest: f1pgmsTUlnLdO9RLX3XKvJE5Ut8=
+
+Name: res/drawable-hdpi/calname_bottom_select_underselect_pressed_holo
+ _light.9.png
+SHA1-Digest: Uv9S/uLd22BM/N0GR1GK4lxCubk=
+
+Name: res/drawable-hdpi/ic_collapse_large_holo_light.png
+SHA1-Digest: +tpycTQd3psn6eBpHWiY1b1rC9E=
+
+Name: res/mipmap-mdpi/ic_launcher_calendar.png
+SHA1-Digest: eNRnP7kjoQLZ7o3bH6SzdUF7JQ8=
+
+Name: res/layout-land/search.xml
+SHA1-Digest: pyzUIEDUZvr+oE/Ul1Hah0aQWBQ=
+
+Name: res/layout-sw600dp/edit_event.xml
+SHA1-Digest: yx95B6T1tNRMDwQqGJriLCMXL2E=
+
+Name: res/xml/calendar_settings_headers.xml
+SHA1-Digest: 7Ekp+r4TWzPGE2L+LqurkSBAIXg=
+
+Name: res/layout-sw600dp/edit_event_single_column.xml
+SHA1-Digest: druGWzqaL5K8xHFshkjd96z+uHs=
+
+Name: res/layout/quick_response_item.xml
+SHA1-Digest: JUuJNxod+LG0Yqtqv6LbAMjuIFI=
+
+Name: res/drawable-mdpi/chip_delete.png
+SHA1-Digest: Bct4Q/AoXkowCQxhwN2FameyT1g=
+
+Name: res/drawable-hdpi/ic_menu_trash_holo_dark.png
+SHA1-Digest: 7BzFgsWJTYEbCcrTEugWOKlRKFU=
+
+Name: res/drawable-hdpi/ic_collapse_small_holo_light.png
+SHA1-Digest: psB089LFS2ZiWB5r6wCYDPlzzP0=
+
+Name: res/drawable/calname_select_underunselected.xml
+SHA1-Digest: mLaSTkNkqhKQphRUyCEpzl2pSLM=
+
+Name: res/layout/chips_recipient_dropdown_item.xml
+SHA1-Digest: l/FpIHDXcdfiTlIcs/CwNo3jbLU=
+
+Name: res/xml/appwidget_info.xml
+SHA1-Digest: Wg7f1IjbYKW0Ulm/nqb39twISEU=
+
+Name: res/drawable-hdpi/calname_unselected_pressed_holo_light.9.png
+SHA1-Digest: rPTlg/VeQeLcRdLFkGcEpqldmno=
+
+Name: res/drawable-hdpi/bg_separator.9.png
+SHA1-Digest: v2ZqWS0AU/ejoL4djs+E7JLxGvg=
+
+Name: res/drawable-hdpi/calname_bottom_select_underselect_holo_light.9
+ .png
+SHA1-Digest: SgpAG/VVi/70YOl5oyuWls2fhpA=
+
+Name: res/layout/event_info.xml
+SHA1-Digest: ISeoqJfJ+2as9/24ghRtxHElUZ0=
+
+Name: res/layout/agenda_fragment.xml
+SHA1-Digest: vITRd8GpYG2+yc1Ht5Xq67kWPmc=
+
+Name: res/drawable-hdpi/ic_menu_email_holo_dark.png
+SHA1-Digest: MY6wYsAn1YhKdFmlyE53IN9uQDA=
+
+Name: res/drawable-hdpi/stat_notify_calendar_multiple.png
+SHA1-Digest: zb1o+IIBM8qPR94w51Q2QV2V2sM=
+
+Name: resources.arsc
+SHA1-Digest: nQeri1D59+V4A4b/VGjwQ9OsJg4=
+
+Name: res/drawable-hdpi/ic_menu_search_holo_light.png
+SHA1-Digest: l6OVdhM8epxMY7qtFsdOAv9FGgs=
+
+Name: res/layout/agenda_day.xml
+SHA1-Digest: jTcg4UFk5dL3RMtoMLuCuZddKvM=
+
+Name: res/layout/calendars_dropdown_item.xml
+SHA1-Digest: rfI7b25f8w0o4sYVstdQ5ux1DQw=
+
+Name: res/layout/timezone_footer.xml
+SHA1-Digest: d9RY6LaWzuBIsvfpzxYiKRG6eX4=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 8xAbq+fUc2/zzOvT9YGTokEle8U=
+
+Name: res/drawable-hdpi/calendar_widget_preview.png
+SHA1-Digest: slcfUV2R5mfuuH/77wiWTMx6KuI=
+
+Name: res/layout/mini_calendar_item.xml
+SHA1-Digest: amLmPMvZX+RyOen4akf7Hy+uiQA=
+
+Name: res/layout/mini_month_header.xml
+SHA1-Digest: E8Qx/uZHY2Hth856m2wRIgalGZA=
+
+Name: res/drawable-hdpi/ic_menu_select_visible_calendars_holo_light.pn
+ g
+SHA1-Digest: W29pouF3mIcnEVYXtmeawmIsGgE=
+
+Name: res/xml/other_preferences.xml
+SHA1-Digest: AonEg4s53uDrxgBJ95hSO17WSVw=
+
+Name: res/drawable-hdpi/ic_menu_compose_holo_light.png
+SHA1-Digest: +0qj1d0aKNYEEXcyvBb7YRUEi90=
+
+Name: res/anim/slide_right_in.xml
+SHA1-Digest: BPR1kxdNaeq18tmAh4xsbB9E7co=
+
+Name: res/layout/email_autocomplete_item_loading.xml
+SHA1-Digest: Bk+NZPDdMSMoNV1Z7am7MCs+BMc=
+
+Name: res/layout/actionbar_pulldown_menu_top_button_no_date.xml
+SHA1-Digest: tGI1cCPIhrm6EtabWYHCfZH3I40=
+
+Name: res/drawable/calname_bottom_unselected_underselect.xml
+SHA1-Digest: UgqNmzXxjw6YVAPG79hzudJAgZA=
+
+Name: res/layout/date_range_title.xml
+SHA1-Digest: pcMBZjT0d2RYhsSsg1N/DiGwB4E=
+
+Name: res/layout/actionbar_pulldown_menu_top_button.xml
+SHA1-Digest: rh66H8YEAQt+OqNi5pM6ee9AjDw=
+
+Name: res/menu-land/all_in_one_title_bar.xml
+SHA1-Digest: 64/Hcx180+w90aWPcVoHKsLztJs=
+
+Name: res/drawable-hdpi/ic_menu_remove_field_holo_light.png
+SHA1-Digest: ljD4N4yzocd8DvyaMxw3SiPlqAI=
+
+Name: res/drawable-hdpi/bg_event_cal_widget_holo.9.png
+SHA1-Digest: 6P29WG2mDliXhXWqCSiw891Otb4=
+
+Name: res/layout/appwidget_no_events.xml
+SHA1-Digest: fLyUMiAoKkhCwmcw7bYYLbmQiXQ=
+
+Name: res/layout/more_item.xml
+SHA1-Digest: oGsEs1D+8aZDzdZHudMsoWIVvPc=
+
+Name: res/anim/slide_left_in.xml
+SHA1-Digest: V5RWIPPOx49WKqxCS/KqedM5Wik=
+
+Name: res/drawable-hdpi/ic_menu_today_holo_light.png
+SHA1-Digest: OA2kPRsPZLDaLh5Ht7TqST6JvdA=
+
+Name: res/layout/edit_event.xml
+SHA1-Digest: 6aDrCo0pD6buPBgDypPT+IcDx5E=
+
+Name: res/menu/event_info_title_bar.xml
+SHA1-Digest: heCCuxUiSXAdpMVVbIvaxOOyglw=
+
+Name: res/drawable-hdpi/chip_checkmark.png
+SHA1-Digest: Eg8piEh+c42DWIXMW8x1vg9g7BI=
+
+Name: res/drawable-hdpi/header_bg_cal_widget_pressed_holo.9.png
+SHA1-Digest: DajrxhZlqJ7OepQwMjYhf2SaQdQ=
+
+Name: res/menu-sw600dp/all_in_one_title_bar.xml
+SHA1-Digest: LRCl0Gg98iunlIiATzIbsCj8H5I=
+
+Name: res/layout/day_activity.xml
+SHA1-Digest: Y6VzBxegrcPdpc+pkGesWU7qFPU=
+
+Name: res/drawable-hdpi/ic_repeat_white.png
+SHA1-Digest: BdAXVg29kS8Rf9QOW9QnMFINYls=
+
+Name: res/layout/select_calendars_fragment.xml
+SHA1-Digest: VlNsrEXkXUnzZGLNt3VVOwr15zg=
+
+Name: res/layout/agenda_header_footer.xml
+SHA1-Digest: Bxz+evz9DJA2Juzf18N1MQAHT9o=
+
+Name: res/anim/slide_left_out.xml
+SHA1-Digest: 4y3xu410ia/RHCMB8zTFRJ5xcAY=
+
+Name: res/drawable-hdpi/chip_delete.png
+SHA1-Digest: Bct4Q/AoXkowCQxhwN2FameyT1g=
+
+Name: res/drawable-hdpi/list_multi_left_pressed_holo.9.png
+SHA1-Digest: A2D3gjxkPqj0l61AfOoiMeTyo+k=
+
+Name: res/drawable-sw600dp/ic_collapse_holo_light.xml
+SHA1-Digest: Wdse18dU4X0mgyzsbim1d9naiKg=
+
+Name: res/drawable-mdpi/ic_contact_picture.png
+SHA1-Digest: YfI35kCJGFs+Aiu+lrbWQbFdqwQ=
+
+Name: res/drawable-hdpi/cal_widget_bg.9.png
+SHA1-Digest: SOnd6U6KukqTl62/ZMbK1D5yo5g=
+
+Name: res/xml/searchable.xml
+SHA1-Digest: suENpz4CxLXGEmZOYctQZTa0jxk=
+
+Name: res/drawable-hdpi/calname_bottom_select_underunselected_pressed_
+ holo_light.9.png
+SHA1-Digest: KBljxzZOiouz84L/uN6WpTpAGTw=
+
+Name: res/drawable/list_item_font_secondary.xml
+SHA1-Digest: R7JTmeXwtcnyKeZKAl2Zbl2UsgU=
+
+Name: res/drawable-sw600dp/ic_expand_holo_light.xml
+SHA1-Digest: aSwoWpIawBusyWSYKwvUEqZoOkQ=
+
+Name: res/layout-sw600dp/full_month_header.xml
+SHA1-Digest: lCcOSyx8m3b3G6jOSMxvQFZ0Pfg=
+
+Name: res/layout-sw600dp/all_in_one.xml
+SHA1-Digest: Eu2pGseAdCfp+ht0wTLVTcOgYxY=
+
+Name: res/drawable-mdpi/chip_background_invalid.9.png
+SHA1-Digest: A/fhLUZrZiPs4wfKtWqqEtz1UW4=
+
+Name: res/drawable-hdpi/chip_background.9.png
+SHA1-Digest: U/Z6rXd7aUc5y2wmkd4TeaY7fqc=
+
+Name: res/drawable-hdpi/ic_menu_cancel_holo_light.png
+SHA1-Digest: ljD4N4yzocd8DvyaMxw3SiPlqAI=
+
+Name: res/drawable/ic_collapse_holo_light.xml
+SHA1-Digest: 89iy3jH7qcKpBd3PPG5glKuJEGU=
+
+Name: res/drawable-mdpi/bg_separator.9.png
+SHA1-Digest: v2ZqWS0AU/ejoL4djs+E7JLxGvg=
+
+Name: res/drawable-hdpi/list_secondary_holo.9.png
+SHA1-Digest: pFMmqJkekQC2jjtfIJaIYI+VqQo=
+
+Name: res/anim/slide_right_out.xml
+SHA1-Digest: dsBEWvGhg/cQNw2BjUfB4iifPf8=
+
+Name: res/drawable-hdpi/ic_menu_add_field_holo_light.png
+SHA1-Digest: Z5TPIeO4UUDJVX7qXtwuxVe3LgA=
+
+Name: res/drawable-hdpi/widget_show.png
+SHA1-Digest: hX5wsvySuzwFgqolmiikK3DLs7w=
+
+Name: res/layout/simple_frame_layout.xml
+SHA1-Digest: urmEEIML2PIGqzgQE/EhK4aErDY=
+
+Name: res/drawable/agenda_item_bg_primary.xml
+SHA1-Digest: Av5J7b7/vlq0YiMTwof3dwlWXE8=
+
+Name: res/drawable-hdpi/calname_unselected_holo_light.9.png
+SHA1-Digest: EiZKIgCUNQBSx94rZkGqdnXqhHY=
+
+Name: res/layout/notification.xml
+SHA1-Digest: agUt9kk7lmQtwnHfl8AtUznPHGE=
+
+Name: res/drawable/calname_bottom_select_underselect.xml
+SHA1-Digest: e7tK/nwSRDvnV9U0wbW6A2cPGZ8=
+
+Name: res/drawable-hdpi/dayline_minical_holo_light.9.png
+SHA1-Digest: 0NNj76JsX1B36O7+Lc3iRFKK2mQ=
+
+Name: res/drawable/appwidget_header_selector.xml
+SHA1-Digest: 0F8LVGu71pCDJcj2pWmDOhS9CBE=
+
+Name: res/drawable-hdpi/widget_chip_not_responded_bg.9.png
+SHA1-Digest: vTqMzr54pptjzVuHnSbGq+Bla+U=
+
+Name: res/drawable-hdpi/ic_menu_compose_holo_dark.png
+SHA1-Digest: BKAom/fpPBr8gSoMHmoNqLvicjE=
+
+Name: res/drawable-hdpi/ic_menu_add_event_holo_light.png
+SHA1-Digest: PCPrH7KooDEMlq3RWp5Wop5g4QQ=
+

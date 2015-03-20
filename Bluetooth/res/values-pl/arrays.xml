@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Jedna strona na arkusz</item>
+        <item>Dwie strony na arkusz</item>
+        <item>Cztery strony na arkusz</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Pionowy</item>
+        <item>Poziomy</item>
+        <item>Poziomy odwrócony</item>
+        <item>Pionowy odwrócony</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>pionowa</item>
+        <item>pozioma</item>
+        <item>pozioma odwrócona</item>
+        <item>pionowa odwrócona</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Jednostronnie</item>
+        <item>Dwustronnie, długi brzeg</item>
+        <item>Dwustronnie, krótki brzeg</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>jednostronnie</item>
+        <item>dwustronnie, orientacja pionowa</item>
+        <item>dwustronnie, orientacja pozioma</item>
+    </string-array>
+</resources>

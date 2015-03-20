@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>每面一頁</item>
+        <item>每面兩頁</item>
+        <item>每面四頁</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>豎直</item>
+        <item>橫向</item>
+        <item>橫向反轉</item>
+        <item>豎直反轉</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>豎直</item>
+        <item>橫向</item>
+        <item>橫向反轉</item>
+        <item>豎直反轉</item>
+    </string-array>
+    <string-array name="sides">
+        <item>單面</item>
+        <item>雙面長邊</item>
+        <item>雙面短邊</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>單面</item>
+        <item>雙面長邊</item>
+        <item>雙面短邊</item>
+    </string-array>
+</resources>

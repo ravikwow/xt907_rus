@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtSizeA">14.0sp</dimen>
+    <dimen name="txtSizeB">16.0sp</dimen>
+    <dimen name="tos_termsSize">18.0sp</dimen>
+</resources>

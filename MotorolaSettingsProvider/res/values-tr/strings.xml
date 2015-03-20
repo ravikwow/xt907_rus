@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_writeGservices">Gservices ayarlarını yaz.</string>
+    <string name="permdesc_writeGservices">Uygulamaların Gservices ayarlarını değiştirmesine izin verir.</string>
+    <string name="permlab_tcmdLocal">Test Komutlarını Kullan</string>
+    <string name="permdesc_tcmdLocal">Test Komutlarını Kullan</string>
+    <string name="settings_storage">Ayarlar Deposu</string>
+</resources>

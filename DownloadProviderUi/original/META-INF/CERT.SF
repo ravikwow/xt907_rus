@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: 9Xtre3NFcvjiYUfRGNvEm7k1nlI=
+
+Name: res/drawable-hdpi/ic_download_misc_file_type.png
+SHA1-Digest: 00WiCMONxthygig2D0cclOu1jfw=
+
+Name: res/menu/download_menu.xml
+SHA1-Digest: AqpHnKdSth3hJtsavcvz/9v0nkI=
+
+Name: res/anim/footer_disappear.xml
+SHA1-Digest: fHVlJCJM+8L0JGNv8OpC3fgALFc=
+
+Name: res/layout/list_group_header.xml
+SHA1-Digest: WdoVehO/woNN6Q5Cpjenhq4hBpA=
+
+Name: res/layout/download_list.xml
+SHA1-Digest: 510USDt+ZEjlG88Vvq6L1FZenNU=
+
+Name: res/mipmap-hdpi/ic_launcher_download.png
+SHA1-Digest: sGU6R/4I6TK/ryCMX9GxFeO0v6Y=
+
+Name: res/mipmap-xhdpi/ic_launcher_download.png
+SHA1-Digest: oeRlQz483lcXkyGcb8qHhNhK75I=
+
+Name: resources.arsc
+SHA1-Digest: 3o/9fjQUT9nmLXUYRoLXvzc2SP0=
+
+Name: res/layout/download_list_item.xml
+SHA1-Digest: +7PWnCTbaXV8s3T8WNRuOy8yzsE=
+
+Name: res/drawable-hdpi/ic_launcher_drm_file.png
+SHA1-Digest: fDp7tCrYYU6IQe8b4oXARqXBZwY=
+
+Name: res/drawable-hdpi/ic_menu_desk_clock.png
+SHA1-Digest: a6WcZ0/ABZrTgwv3TowiLpPwKvg=
+
+Name: AndroidManifest.xml
+SHA1-Digest: cfZDz3oXRnX2XiPP4jt5/Z2iB9M=
+
+Name: res/mipmap-mdpi/ic_launcher_download.png
+SHA1-Digest: ok881zYax9D6DOmWHhFsWmgGvU8=
+
+Name: res/anim/footer_appear.xml
+SHA1-Digest: xORmjBxFttuybcOEhC2THylg6ak=
+

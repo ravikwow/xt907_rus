@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/legal_reader" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/AccSet_bottomSpacing" style="@style/AccSet">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/legal_reader_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/privacy_link_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/navigation_bar" style="@style/NavBar">
+        <Button android:id="@id/next_button" android:text="@string/ok" android:onClick="onClick" style="@style/NavBarSqrButton" />
+    </LinearLayout>
+</LinearLayout>

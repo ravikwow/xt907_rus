@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_menu_title">Behandle SIM-kort</string>
+    <string name="main_menu_import_from_sim_card">Importér SIM-kort</string>
+    <string name="main_menu_export_to_sim_card">Eksportér kontakter</string>
+    <string name="main_menu_delete_from_sim_card">Slett kontakter</string>
+    <string name="main_menu_import_from_sim_card_text">Importér kontakter lagret på SIM-kortet</string>
+    <string name="main_menu_export_to_sim_card_text">Lagre kontakter på SIM-kortet</string>
+    <string name="main_menu_delete_from_sim_card_text">Slett kontakter på SIM-kortet</string>
+    <string name="text_longname_truncate">Avkort</string>
+    <string name="text_longname_ignore">Ignorer</string>
+    <string name="title_longname_prompt">Eksisterende langnavn</string>
+    <string name="text_longname_prompt">Eksisterende langnavn (overskrider grensen på %d tegn). Avkorte eller ignorere?</string>
+    <string name="title_importing">Importerer kontakter</string>
+    <string name="title_import_cancelled">Importen ble avbrutt</string>
+    <string name="title_import_complete">Importen er fullført</string>
+    <string name="title_import_error">Feil under import</string>
+    <string name="title_import_confirmation">Importér</string>
+    <string name="text_import_confirmation">Kopiere valgte kontakter?</string>
+    <string name="text_progress_import">Importerer %1$d av %2$d ...</string>
+    <string name="text_result_import_cancel">"%1$d kontakter ble importert fra 
+SIM-kortet."</string>
+    <string name="text_result_import_success">"%1$d kontakter ble importert fra 
+SIM-kortet."</string>
+    <string name="text_result_import_error_0">Ingen kontakter ble importert. Det oppstod en feil.</string>
+    <string name="text_result_import_error_x">%1$d kontakter ble importert fra SIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_import_cancel_1">%1$d kontakt ble importert fra SIM-kortet.</string>
+    <string name="text_result_import_success_1">%1$d kontakt ble importert fra SIM-kortet.</string>
+    <string name="text_result_import_error_1">%1$d kontakt ble importert fra SIM-kortet. Det oppstod en feil.</string>
+    <string name="title_exporting">Eksporterer kontakter</string>
+    <string name="title_export_cancelled">Eksporten er avbrutt</string>
+    <string name="title_export_complete">Eksporten er fullført</string>
+    <string name="title_export_error">Feil under eksport</string>
+    <string name="title_sim_full">SIM-kortet er fullt</string>
+    <string name="title_export_confirmation">Eksportér</string>
+    <string name="text_export_confirmation">"Kun navn og deler av informasjonen kan lagres på 
+SIM-kortet. Kopiere valgt(e) kontakt(er)?"</string>
+    <string name="text_progress_export">Eksporterer %1$d av %2$d ...</string>
+    <string name="text_result_export_cancel">"%1$d kontakter ble lagret på 
+SIM-kortet."</string>
+    <string name="text_result_export_success">"%1$d kontakter ble lagret på 
+SIM-kortet."</string>
+    <string name="text_result_export_error_0">Ingen kontakter ble eksportert. Det oppstod en feil.</string>
+    <string name="text_result_export_error_x">%1$d kontakter ble lagret på SIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_sim_full_error">Kunne ikke eksportere kontaktene. Frigi plass på SIM-kortet og prøv på nytt.</string>
+    <string name="text_reslut_export_already_exist">Valgt(e) kontakt(er) finnes allerede på SIM-kortet.</string>
+    <string name="text_result_export_cancel_1">%1$d kontakt ble lagret på SIM-kortet.</string>
+    <string name="text_result_export_success_1">%1$d kontakt ble lagret på SIM-kortet.</string>
+    <string name="text_result_export_error_1">%1$d kontakt ble lagret på SIM-kortet. Det oppstod en feil.</string>
+    <string name="title_deleting">Sletter kontakter</string>
+    <string name="title_delete_cancelled">Slettingen ble avbrutt</string>
+    <string name="title_delete_complete">Slettingen er fullført</string>
+    <string name="title_delete_error">Feil under sletting</string>
+    <string name="title_delete_confirmation">Slett</string>
+    <string name="text_delete_confirmation">"De valgte kontaktene vil bli slettet fra 
+SIM-kortet."</string>
+    <string name="text_progress_delete">Sletter %1$d av %2$d ...</string>
+    <string name="text_result_delete_cancel">"%1$d kontakter ble slettet fra 
+SIM-kortet."</string>
+    <string name="text_result_delete_success">"%1$d kontakter ble slettet fra 
+SIM-kortet."</string>
+    <string name="text_result_delete_error_0">Ingen kontakter ble slettet. Det oppstod en feil.</string>
+    <string name="text_result_delete_error_x">%1$d kontakter ble slettet fra SIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_delete_cancel_1">%1$d kontakt ble slettet fra SIM-kortet.</string>
+    <string name="text_result_delete_success_1">%1$d kontakt ble slettet fra SIM-kortet.</string>
+    <string name="text_result_delete_error_1">%1$d kontakt ble slettet fra SIM-kortet. Det oppstod en feil.</string>
+    <string name="text_examining_sim_card">Kontrollerer SIM-kortet</string>
+    <string name="text_result_max_digit">Kan ikke eksportere en kontakt med et telefonnummer på mer enn %1$d sifre.</string>
+    <string name="button_select_all">Merk alle</string>
+    <string name="button_deselect_all">Opphev merking</string>
+    <string name="button_copy_to_sim">Eksportér</string>
+    <string name="button_copy_from_sim">Importér</string>
+    <string name="button_delete_from_sim">Slett</string>
+    <string name="title_contacts">Kontakter</string>
+    <string name="groups_dialog_title">Vis</string>
+    <string name="text_no_records_sim">Det finnes ingen kontakter på SIM-kortet.</string>
+    <string name="text_no_records_phone">Det finnes ingen kontakter.</string>
+    <string name="title_alert_sim">SIM-kort</string>
+    <string name="title_alert_phone">Telefonminne</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Avbryt</string>
+    <string name="text_reading_sim">Leser SIM-kort ...</string>
+    <string name="text_reading_phb">Leser telefonliste ...</string>
+    <string name="text_loading_groups">Laster grupper ...</string>
+    <string name="text_no_sim_card">Sett inn SIM-kortet.</string>
+    <string name="text_group_all_contacts">Alle kontakter</string>
+    <string name="text_search_no_contacts">Ingen kontakter</string>
+    <string name="text_search_type_to_search">Skriv her for å søke</string>
+    <string name="text_search_exit_search">Avslutt søk</string>
+    <string name="text_search_text">Tekst</string>
+    <string name="exit_search">Avslutt søk</string>
+    <string name="no_name">(Uten navn)</string>
+    <string name="main_menu_title_KDDI_overlay">Administrer UIM-kort</string>
+    <string name="main_menu_import_from_sim_card_KDDI_overlay">Importer UIM-kort</string>
+    <string name="main_menu_import_from_sim_card_text_KDDI_overlay">Importer kontakter lagret på UIM-kortet</string>
+    <string name="main_menu_export_to_sim_card_text_KDDI_overlay">Lagre kontakter på UIM-kortet</string>
+    <string name="main_menu_delete_from_sim_card_text_KDDI_overlay">Slett kontakter på UIM-kortet</string>
+    <string name="text_result_import_cancel_KDDI_overlay">%1$d kontakter ble importert fra UIM-kortet.</string>
+    <string name="text_result_import_success_KDDI_overlay">%1$d kontakter ble importert fra UIM-kortet.</string>
+    <string name="text_result_import_error_x_KDDI_overlay">%1$d kontakter ble importert fra UIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_import_cancel_1_KDDI_overlay">%1$d kontakt ble importert fra UIM-kortet.</string>
+    <string name="text_result_import_success_1_KDDI_overlay">%1$d kontakt ble importert fra UIM-kortet.</string>
+    <string name="text_result_import_error_1_KDDI_overlay">%1$d kontakt ble importert fra UIM-kortet. Det oppstod en feil.</string>
+    <string name="title_sim_full_KDDI_overlay">UIM-kortet er fullt</string>
+    <string name="text_export_confirmation_KDDI_overlay">Kun navn og deler av informasjonen kan lagres på UIM-kortet. Kopiere valgt(e) kontakt(er)?</string>
+    <string name="text_result_export_cancel_KDDI_overlay">%1$d kontakter ble lagret på UIM-kortet.</string>
+    <string name="text_result_export_success_KDDI_overlay">%1$d kontakter ble lagret på UIM-kortet.</string>
+    <string name="text_result_export_error_x_KDDI_overlay">%1$d kontakter ble lagret på UIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_sim_full_error_KDDI_overlay">Kunne ikke eksportere kontaktene. Frigi plass på UIM-kortet, og prøv på nytt.</string>
+    <string name="text_reslut_export_already_exist_KDDI_overlay">Valgt(e) kontakt(er) finnes allerede på UIM-kortet.</string>
+    <string name="text_result_export_cancel_1_KDDI_overlay">%1$d kontakt ble lagret på UIM-kortet.</string>
+    <string name="text_result_export_success_1_KDDI_overlay">%1$d kontakt ble lagret på UIM-kortet.</string>
+    <string name="text_result_export_error_1_KDDI_overlay">%1$d kontakt ble lagret på UIM-kortet. Det oppstod en feil.</string>
+    <string name="text_delete_confirmation_KDDI_overlay">De valgte kontaktene vil bli slettet fra UIM-kortet.</string>
+    <string name="text_result_delete_cancel_KDDI_overlay">%1$d kontakter ble slettet fra UIM-kortet.</string>
+    <string name="text_result_delete_success_KDDI_overlay">%1$d kontakter ble slettet fra UIM-kortet.</string>
+    <string name="text_result_delete_error_x_KDDI_overlay">%1$d kontakter ble slettet fra UIM-kortet. Det oppstod en feil.</string>
+    <string name="text_result_delete_cancel_1_KDDI_overlay">%1$d kontakt ble slettet fra UIM-kortet.</string>
+    <string name="text_result_delete_success_1_KDDI_overlay">%1$d kontakt ble slettet fra UIM-kortet.</string>
+    <string name="text_result_delete_error_1_KDDI_overlay">%1$d kontakt ble slettet fra UIM-kortet. Det oppstod en feil.</string>
+    <string name="text_examining_sim_card_KDDI_overlay">Kontrollerer UIM-kortet</string>
+    <string name="text_no_records_sim_KDDI_overlay">Det finnes ingen kontakter på UIM-kortet.</string>
+    <string name="title_alert_sim_KDDI_overlay">UIM-kort</string>
+    <string name="text_reading_sim_KDDI_overlay">Leser UIM-kortet ...</string>
+    <string name="text_no_sim_card_KDDI_overlay">Sett inn UIM-kortet.</string>
+</resources>

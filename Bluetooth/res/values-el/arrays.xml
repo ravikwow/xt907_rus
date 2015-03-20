@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Μία σελίδα ανά όψη</item>
+        <item>Δύο σελίδες ανά όψη</item>
+        <item>Τέσσερις σελίδες ανά όψη</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Πορτραίτο</item>
+        <item>Τοπίο</item>
+        <item>Ανεστραμμένος οριζόντιος προσανατολισμός</item>
+        <item>Ανεστραμμένος κατακόρυφος προσανατολισμός</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>κατακόρυφος προσανατολισμός</item>
+        <item>οριζόντιος προσανατολισμός</item>
+        <item>αντίστροφος οριζόντιος προσανατολισμός</item>
+        <item>αντίστροφος κατακόρυφος προσανατολισμός</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Μονής όψης</item>
+        <item>Διπλής όψης, μεγάλη πλευρά</item>
+        <item>Διπλής όψης, μικρή πλευρά</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>μίας όψης</item>
+        <item>δύο όψεων (οριζόντια)</item>
+        <item>δύο όψεων (κατακόρυφα)</item>
+    </string-array>
+</resources>

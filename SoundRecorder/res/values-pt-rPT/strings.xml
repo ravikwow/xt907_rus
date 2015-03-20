@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gravador de som</string>
+    <string name="record_your_message">Gravar mensagem</string>
+    <string name="message_recorded">Mensagem gravada</string>
+    <string name="review_message">Rever mensagem</string>
+    <string name="recording">A gravar</string>
+    <string name="recording_stopped">Gravação parada</string>
+    <string name="storage_is_full">Armazenamento cheio</string>
+    <string name="max_length_reached">Tamanho máximo atingido</string>
+    <string name="insert_sd_card">Insira um cartão SD</string>
+    <string name="min_available">%d min disponíveis</string>
+    <string name="sec_available">%d s disponíveis</string>
+    <string name="accept">Concluído</string>
+    <string name="discard">Rejeitar</string>
+    <string name="button_ok">OK</string>
+    <string name="press_record">Toque no botão de gravação</string>
+    <string name="press_record_ssr">Toque no botão de gravação</string>
+    <string name="audio_db_title_format">dd-MM-yyyy HH:mm:ss</string>
+    <string name="audio_db_artist_name">As suas gravações</string>
+    <string name="audio_db_album_name">Gravações de áudio</string>
+    <string name="audio_db_playlist_name">As minhas gravações</string>
+    <string name="error_sdcard_access">Não é possível aceder ao cartão SD.</string>
+    <string name="error_app_internal">Erro interno da aplicação</string>
+    <string name="error_app_unsupported">Formato não suportado</string>
+    <string name="error_mediadb_new_record">Não foi possível guardar o áudio gravado.</string>
+    <string name="error_mediadb_incall">Esta opção é suportada apenas durante as chamadas</string>
+    <string name="error_mediadb_aacincall">A gravação de chamadas de voz em formato AAC não é suportada</string>
+</resources>

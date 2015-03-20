@@ -1,0 +1,67 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: /h59K5MseWCYcgRwPpVYSSk71EQ=
+
+Name: res/drawable-hdpi/bt_share.png
+SHA1-Digest: u2Pi5ejC5T+veigwJ+dCsf8IDRw=
+
+Name: res/drawable-hdpi/ic_launcher_folder_bluetooth.png
+SHA1-Digest: 0/ateVptsTwm97M6iuFp69de73k=
+
+Name: res/layout/print_status.xml
+SHA1-Digest: KrRR4yk7IlpQFLHLMOEkB9gWxe0=
+
+Name: res/layout/no_transfers.xml
+SHA1-Digest: WXWzdM3ODC0dKxPqsGS6kX5h47c=
+
+Name: res/layout/auth.xml
+SHA1-Digest: bYUq+tQ0HjjvOrxZrODUtVJy5tM=
+
+Name: res/layout/bluetooth_transfers_page.xml
+SHA1-Digest: TfxHuPtm2FS0P0mUl9ueKVP1q64=
+
+Name: res/layout/file_transfer.xml
+SHA1-Digest: kGks/HazYl6fsXM6L7/Gui2kE40=
+
+Name: resources.arsc
+SHA1-Digest: crBXOk608FzyxlvqKI9MEwRdwXo=
+
+Name: res/layout/bpp_setting.xml
+SHA1-Digest: idrWcHEBUn1dzDH2bhWDCse6DRY=
+
+Name: res/menu/transferhistorycontextfinished.xml
+SHA1-Digest: ov/+e5rDLqgwf/x8//j+fS7UkGI=
+
+Name: res/layout/testactivity_main.xml
+SHA1-Digest: W+zusDvXQeTngx5ri0jS+OoCjBw=
+
+Name: res/layout/bluetooth_transfer_item.xml
+SHA1-Digest: i5ipee2LCEUMnoYhErvZZP8vSp4=
+
+Name: res/layout/main.xml
+SHA1-Digest: Ssyn09cEKy8CDM/NDd9ta1iXZ18=
+
+Name: res/xml/printing_pref.xml
+SHA1-Digest: /R9VrXqNz3YprZ28UII0cAnHMQA=
+
+Name: res/layout/confirm_dialog.xml
+SHA1-Digest: S7Ev1OQycTvvmBd6WtrhkI3MPJk=
+
+Name: AndroidManifest.xml
+SHA1-Digest: ehVnJiIs0yJGMwrrt4JxBEMAMTM=
+
+Name: res/menu/receivedfilescontextfinished.xml
+SHA1-Digest: +QRuc/I4858PNtXQWZ6ScJ6mVsI=
+
+Name: res/menu/transferhistory.xml
+SHA1-Digest: YSk0UKLcXj/xpWnEEU6/eiWMQnw=
+
+Name: res/layout/bt_enabling_progress.xml
+SHA1-Digest: l9TNFCYTfC/t9f+jWqNYXfQz7d0=
+
+Name: res/drawable-hdpi/printer.png
+SHA1-Digest: 8/Z3gWCMpqbHJzoADsT7ze2svZo=
+
+Name: res/drawable-hdpi/bt_incomming_file_notification.png
+SHA1-Digest: x/WkkGg9BGO0kXBDA9KDqRZWCYM=
+

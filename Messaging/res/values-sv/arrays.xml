@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Felaktigt resultat returnerades</item>
+        <item>Sparat</item>
+        <item>Ogiltiga parametrar</item>
+        <item>Målfilen finns redan</item>
+        <item>Källfilen finns inte</item>
+        <item>Filstorleksbegränsningen är för liten</item>
+        <item>Ogiltig fil eller format som inte kan användas</item>
+        <item>Systembatteriet är kritiskt lågt</item>
+        <item>Systemminnet är kritiskt lågt</item>
+        <item>Kunde inte starta: Okända orsaker</item>
+        <item>Kunde inte spara: Okänt I/O-fel</item>
+        <item>Kunde inte spara: Kunde inte skapa sökväg</item>
+        <item>Kunde inte spara: Kunde inte skapa fil</item>
+        <item>Kunde inte spara: Lagringsutrymmet är kritiskt lågt</item>
+        <item>Sparningen avbröts</item>
+        <item>Kunde inte starta: Skärmstorlek som inte kan användas</item>
+        <item>Källfilen ändrad</item>
+        <item>SD-kort borttaget</item>
+        <item>Tyvärr kan du inte lägga till den här videon i meddelandet.</item>
+    </string-array>
+</resources>

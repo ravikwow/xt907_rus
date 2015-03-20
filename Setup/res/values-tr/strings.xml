@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">Cihaz hazırlanıyor</string>
+    <string name="cpu_idle_wait_msg">Lütfen bekleyin...</string>
+    <string name="splash_screen_text">"Motorola'ya Hoş Geldiniz"</string>
+    <string name="please_choose_a_language">Dilinizi seçin:</string>
+    <string name="welcome_to_motoblur">"MOTOBLUR'a hoş geldiniz"</string>
+    <string name="next">İleri</string>
+    <string name="back">Geri</string>
+    <string name="make_emergency_call_by_pressing_menu">Kurulum sırasında acil durum çağrısı yapmak için \"Menü\" tuşuna basın.</string>
+    <string name="sign_up_or_login_main_text">Telefonunuzdaki önemli bilgileri okumak için bir MOTOBLUR hesabı ve MOTOBLUR Internet portalı gerekir.</string>
+    <string name="password_colon">Şifre:</string>
+    <string name="forgot_password">Şifreyi mi unuttunuz?</string>
+    <string name="forgot_password_title">Şifreyi mi unuttunuz?</string>
+    <string name="enter_password">Şifreyi girin</string>
+    <string name="motoblur_terms_of_service">MOTOBLUR Hizmet Koşulları</string>
+    <string name="moto_service_review_the_above">"\"Kabul ediyorum\" onay kutusunu seçerseniz Motorola Yazılım Lisans Sözleşmesini, Hizmet Koşullarını ve Gizlilik Bildirimini kabul etmiş olursunuz.
+
+Hizmeti kullanabilmek için bu şartları kabul etmelisiniz."</string>
+    <string name="terms_and_conditions">Motorola Hüküm ve Koşulları</string>
+    <string name="sharing_additional_information">Ek bilgileri paylaşma</string>
+    <string name="moto_service_agreement">Motorola Sözleşmesi</string>
+    <string name="terms_of_service_check_caption">Kabul ediyorum: </string>
+    <string name="downloading_terms">Koşullar indiriliyor…</string>
+    <string name="creating_your_blur_account">MOTOBLUR hesabınız oluşturuluyor</string>
+    <string name="generic_carrier_contact_text">Şifrenizi öğrenmek için lütfen müşteri hizmetlerini arayın.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">Doğrulanmamış MOTOBLUR hesabı</string>
+    <string name="cancel">İptal</string>
+    <string name="signin">Oturum aç</string>
+    <string name="checking_for_updates">Güncellemeler kontrol ediliyor…</string>
+    <string name="downloading_updates">"Güncelleme indiriliyor 
+ 
+Lütfen bekleyin…"</string>
+    <string name="error_deleting_account">Hesap Kaldırma Hatası</string>
+    <string name="congrats_title_login">Başarıyla oturum açtınız</string>
+    <string name="congrats_title">Tebrikler!</string>
+    <string name="congrats_text">"Kurulumunuz tamamlandı! 
+
+Herhangi bir hesap kurduysanız şimdi kişiler ve e-posta gibi içeriğiniz alınacak. Bu işlem 30 dakika kadar sürebilir, ancak telefonunuzu kullanmaya hemen başlayabilirsiniz.
+
+Ayarlar > Güvenlik ve ekran kilidi seçeneğine giderek bu telefon için bir Güvenlik kilidi ayarlamanızı öneririz."</string>
+    <string name="setup_complete_title">Kurulum tamamlandı</string>
+    <string name="setup_complete_text">"Tüm PC ve cihaz yapılandırmalarını tamamladınız.
+
+Telefonunuzu kullanmaya hemen başlayabilirsiniz…"</string>
+    <string name="done">Bitti</string>
+    <string name="welcome_android">Hoş Geldiniz</string>
+    <string name="privacy_policy">Bu telefonu kullanmanız, gizlilik politikası ve şartlarına tabidir.</string>
+    <string name="learn_more">Ayrıntılı bilgi</string>
+    <string name="emergency_call">Acil durum çağrısı</string>
+    <string name="create_later">Hesabı daha sonra kur</string>
+    <string name="email_colon">E-posta adresi:</string>
+    <string name="location_consent_string">Konum izni</string>
+    <string name="location_consent_description">"Google'ın konum hizmeti, GPS kullanmadan yaklaşık konumunuzu bildiren uygulamalar sağlar. Bu özellikleri, Ayarlar'da Konum hizmetleri bölümünde devre dışı bırakabilirsiniz."</string>
+    <string name="use_location_service">"Google'ın konum hizmetinin anonim konum verisi toplamasına izin ver. Hiçbir uygulama çalışmasa bile veriler toplanmaya devam edecektir."</string>
+    <string name="signup">Yeni bir hesap oluştur</string>
+    <string name="login">Mevcut bir hesabı kullan</string>
+    <string name="password">Şifre</string>
+    <string name="ok">Tamam</string>
+    <string name="email_address_error">"E-posta adresi en az 6 karakter uzunluğunda olmalı ve harfler, sayılar ve alt çizgi (_) karakterlerinden oluşmalıdır.
+"<i>Örneğin, </i>"epostaniz@alan.com
+"</string>
+    <string name="retrieving_password">Şifre alınıyor…</string>
+    <string name="error_creating_account_title">Hesap oluşturma hatası</string>
+    <string name="unspecified_service_error">Hesabınız oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <string name="password_emailed">E-posta adresinize şifre sıfırlama bağlantısı gönderildi</string>
+    <string name="contacts">Kişiler</string>
+    <string name="calendar">Takvim</string>
+    <string name="none">Yok</string>
+    <string name="captcha_text">Oturum açmanızı doğrulamak için lütfen metni aşağıdaki alana girin</string>
+    <string name="set_up_apn">"APN'yi kur"</string>
+    <string name="set_up_cloud">Bulut kur</string>
+    <string name="set_up_wifi">Kablosuz kur</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">IMEI numarası %1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">MEID numarası %1$s</string>
+    <string name="error_account_disabled">Hesap Blur hizmetinde devre dışı bırakıldı</string>
+    <string name="error_account_not_found">Hesap Blur hizmetinde bulunmuyor</string>
+    <string name="error_already_exists">Hesap Blur hizmetinde zaten var. Lütfen farklı bir hesap kimliği seçin.</string>
+    <string name="error_already_initialized">Telefonunuzla ilişkili bir hesap zaten var.</string>
+    <string name="error_connect_timeout">Bağlantı zaman aşımına uğradı. Lütfen tekrar deneyin.</string>
+    <string name="error_try_again">Bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <string name="error_invalid_credentials">Kullanıcı adınız veya şifreniz yanlış. Lütfen kontrol edip tekrar deneyin.</string>
+    <string name="error_invalid_params">Girişiniz geçersiz. Lütfen tekrar deneyin.</string>
+    <string name="error_internal_server">Bir dahili sunucu hatası oluştu. Lütfen tekrar deneyin</string>
+    <string name="error_no_server_response">Sunucu yanıt vermiyor. Hizmetin çalışıp çalışmadığını kontrol edin ve tekrar deneyin.</string>
+    <string name="error_not_allowed">İsteğiniz reddedildi. Lütfen tekrar deneyin.</string>
+    <string name="error_not_found">İstek bulunamadı.</string>
+    <string name="error_not_initialized">İstek kullanıcı kimlik bilgilerini gerektiriyor, ancak bu bilgiler istekle birlikte sağlanmadı.</string>
+    <string name="error_password_mismatch">Yanlış şifre. Lütfen tekrar deneyin.</string>
+    <string name="error_current_password_mismatch">Mevcut şifre yanlış. Lütfen tekrar deneyin.</string>
+    <string name="error_radio_down">Telefon radyosu ağa bağlanamıyor. Radyonun açık olduğundan emin olun; radyo açıksa, kapsamanın daha iyi olduğu bir alana gidin ve tekrar deneyin.</string>
+    <string name="error_service_busy">Şu anda bağlanılamıyor, daha sonra tekrar deneyin.</string>
+    <string name="error_socket_timeout">İstek yanıt beklerken zaman aşımına uğradı. Hesap yanlış oluşturulmuş olabilir.</string>
+    <string name="error_too_many">Bugün şifrenizi sıfırlamayı çok fazla denediniz. Lütfen daha sonra tekrar deneyin.</string>
+    <string name="error_unauthorized">Blur hizmeti isteğinizin yetkilendirilmediğini belirtti. Blur hizmetinin çalıştığından emin olmak için kontrol edin.</string>
+    <string name="error_wrong_device">Bu hesap bir başka cihaz tarafından kullanılmaktadır. Bu hesap kullanılmadan önce cihaz silinmelidir.</string>
+    <string name="error_wrong_password">Kimliğiniz ve/veya Şifreniz tanınmadı. Lütfen bilgilerinizi doğrulayın ve tekrar deneyin.Şifrenizi unuttuysanız, e-postayla size gönderilmesi için \"Şifremi Unuttum\" düğmesine tıklayın.</string>
+    <string name="error_captcha_invalid">Lütfen bilgiyi tekrar girin.</string>
+    <string name="error_captcha_expired">Kimlik doğrulamanın süresi doldu. Lütfen tekrar deneyin.</string>
+    <string name="error_ssl_error">Cihazın saatiyle ilgili bir sorun var. Lütfen müşteri hizmetleriyle irtibata geçin.</string>
+    <string name="error_retreiving_information">Bilgi alınırken bir hata oluştu.</string>
+    <string name="error_wifi_only">Sosyal Ağ uygulamaları yalnızca kablosuz üzerinden senkronize olacak şekilde ayarlanmış.</string>
+    <string name="service_data_error">Blur hizmetinden veriler alınırken hata oluştu.</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="terms_of_service_text">"Hüküm ve Koşullar'ı görüntülemek için Internet veri bağlantısı gerekir."</string>
+    <string name="data_analytics_text">Veri Analitiklerini görüntülemek için Internet veri bağlantısı gerekir.</string>
+    <string name="end_user_license_agreement_text">YAZILIM LİSANS ANLAŞMASI içerik metni</string>
+    <string name="bad_phone_format">"Telefon numaranız rakamlardan, '-' işaretinden veya '+' işaretinden oluşmalıdır"</string>
+    <string name="bad_password_format">Şifrenizde boşluk bulunamaz</string>
+    <string name="must_be_at_least">{0} en az {1} karakter olmalıdır.</string>
+    <string name="start">Başlat</string>
+    <string name="finish">Fince</string>
+    <string name="set_up_cancel">Kurulumu atla</string>
+    <string name="waiting_for_connection">Veri bağlantısı kontrol ediliyor</string>
+    <string name="setup_blur_device_title">Blur cihazını kur</string>
+    <string name="connection_failed_text">Bağlantı başarısız</string>
+    <string name="no_network_connection">Ağ bağlantısı yok</string>
+    <string name="service_error_text">Motorola hizmet hatası</string>
+    <string name="connection_chooser_select">"Kurulumu bitirmek için lütfen
+ bir bağlantı türü seçin"</string>
+    <string name="connection_chooser_type">Bağlantı türü</string>
+    <string name="skip_setup_title">Kurulumu atla</string>
+    <string name="skip_setup_text">"\"Kurulumu atlarsanız, cihazdaki bazı özellikler kullanılamaz.
+\" 
+ Cihaz, bir veri bağlantısı olduğunda veya kurulumu tamamlamanızı gerektiren bir uygulamayı kullanmaya çalıştığınızda kurulumu tamamlamanızı isteyecektir.
+ 
+ Konum iznini görüntülemek için ileri'yi seçin, böylece kurulum tamamlanır ve Ana ekrana gidersiniz."</string>
+    <string name="blur_required">Blur hesabı gerekli</string>
+    <string name="setup">Kurulum</string>
+    <string name="connection_retry">Hücresel bağlantıyı tekrar dene</string>
+    <string name="connection_skip">Şimdilik atla</string>
+    <string name="connection_cell_retry_text">"Bağlantı başarısız!
+ Kurulumu tamamlamak için bir veri bağlantısına ihtiyacınız var.
+
+ Kapsama alanına girdiğinizde lütfen \"Tekrar dene\" düğmesine basın."</string>
+    <string name="sim_removed">SIM çıkarıldı</string>
+    <string name="simswap_signin_instruction">SIM kart yeni çıkarılmış, kimliği doğrulamak için hesabınızda oturum açın.</string>
+    <string name="reset_phone">Telefonu sıfırla</string>
+    <string name="sign_in">Oturum aç</string>
+    <string name="checking_progress_text">Kontrol Ediliyor…</string>
+    <string name="error_need_email_and_password_to_signin">Kimliği doğrulamak için hesabınızda oturum açın.</string>
+    <string name="delete_email_accounts_msg">Var olan bir MOTOBLUR hesabını yükleme tüm E-posta hesaplarını cihazınızdan kaldıracak ve MOTOBLUR profilinizde depolanan hesaplarla değiştirecektir.</string>
+    <string name="delete_email_accounts_continue_btn">Devam et</string>
+    <string name="moto_required">Motorola hesabı gerekiyor</string>
+    <string name="moto_required_info">"Motorola hizmet hesabı olmadan \"sistem güncellemeleri\" kullanılamaz.
+
+Şimdi bir hesap oluşturmak istiyor musunuz?"</string>
+    <string name="sn_required">Sosyal Ağ hesabı gerekiyor</string>
+    <string name="sn_required_info">"Sosyal ağ hesabı olmadan \"{0}\" kullanılamaz.
+Yeni bir hesap oluşturmak için \"Kur\" düğmesine tıklayın."</string>
+    <string name="connection_failed_textinfo">"Kurulumu tamamlamak için bir veri bağlantısına ihtiyacınız var.
+
+Aşağıdakilerden birini seçin:"</string>
+    <string name="no_network_connection_textinfo">"Devam etmek için bir veri bağlantısına ihtiyacınız var.
+Aşağıdakilerden birini seçin:
+"</string>
+    <string name="service_error_textinfo">Bir dahili sunucu hatası oluştu. Lütfen tekrar deneyin.</string>
+    <string name="setup_wifi">Bir kablosuz bağlantı kur</string>
+    <string name="retry_cellular">Mevcut bağlantıyla tekrar dene</string>
+    <string name="skip_for_now">Kurulumu şimdilik atla</string>
+    <string name="try_again_later">Daha sonra tekrar deneyin</string>
+    <string name="account_creation_timeout_title">İşlem beklenenden uzun sürdü</string>
+    <string name="account_creation_timeout_content">Denemeye arka planda devam edeceğiz.</string>
+    <string name="communicating_with_server">"Sunucuyla bağlantı kuruluyor.
+Lütfen bekleyin..."</string>
+    <string name="notification_title">Hesap Kurulumu</string>
+    <string name="notification_text">Lütfen güvenlik kodunu girin</string>
+    <string name="blur_account_setup">Blur Hesabı Kurulumu</string>
+    <string name="restore_previous_device">Önceki cihaz geri yüklensin mi?</string>
+    <string name="restore_details_string">"Önceki bir Motorola cihazından kişiler, ayarlar ve hesaplar geri yüklensin mi?
+"</string>
+    <string name="enter_motorola_id">İçeriği geri yüklemek için bir MotoCast kimliği gerekir.</string>
+    <string name="what_is_motoid">MotoCast kimliği nedir?</string>
+    <string name="yes_restore">Evet, şimdi geri yükle</string>
+    <string name="no_restore">Hayır, geri yükleme</string>
+    <string name="setup_title">Motorola kurulumu</string>
+    <string name="quick_upload">Hızlı yükleme</string>
+    <string name="quick_upload_pictures">Resimler için hızlı yükleme</string>
+    <string name="quick_upload_videos">Videolar için hızlı yükleme</string>
+    <string name="uploading_pictures">Resimler %1$s konumuna yükleniyor</string>
+    <string name="uploading_videos">Videolar %1$s konumuna yükleniyor</string>
+    <string name="uploading_pictures_and_videos">Resimler ve videolar %1$s konumuna yükleniyor</string>
+    <string name="quick_upload_pics_not_setup_text">Resimler için varsayılan Hızlı yükleme hesabı kurulmadı. Varsayılan Hızlı yükleme hesabını şimdi kurmak ve bu yüklemeye devam etmek istiyor musunuz?</string>
+    <string name="quick_upload_videos_not_setup_text">Videolar için varsayılan Hızlı yükleme hesabı kurulmadı. Varsayılan Hızlı yükleme hesabını şimdi kurmak ve bu yüklemeye devam etmek istiyor musunuz?</string>
+    <string name="web_setting">Evet</string>
+    <string name="web_cancel_upload">İptal</string>
+    <string name="web_cancel">Hayır</string>
+    <string name="toast_BlurFailed">Blur Yüklenmedi!</string>
+    <string name="online_album_email_addr_title">E-posta adresini girin</string>
+    <string name="enter_email">E-posta adresi</string>
+    <string name="add_account_dot">Hesap ekle...</string>
+    <string name="btn_ok">Tamam</string>
+    <string name="data_saver_enabled">Veri kaydedici etkin</string>
+    <string name="data_saver_text">Bu karşıya yükleme kablosuz kullanılamadığında aktarım için kuyruğa alınacak. Hemen karşıya yüklemek için, veri tasarrufunu devre dışı bırakmak için ayarlara gidin.</string>
+    <string name="delayed_toast">Kablosuz kullanılabilir olduğunda %1$s karşıya yükleme için kuyruğa alınacak. Bildirim penceresinde işlemi kontrol edin.</string>
+    <string name="n_items">%1$d öğe</string>
+    <string name="gathering_check_caption">"Cihazımı kullanma şeklimle ilgili "</string>
+    <string name="gathering_link">ek bilgileri paylaşarak</string>
+    <string name="gathering_check_caption2">" Motorola'nın hizmet kalitesini iyileştirmesine yardımcı olmayı kabul ediyorum"</string>
+    <string name="tos_link">Motorola Hizmet Koşulları</string>
+    <string name="large_upload">Büyük karşıya yükleme</string>
+    <string name="large_upload_text">Ağ üzerinden karşıya yükleme bir kablosuz ağ kullanmaktan daha uzun sürebilir.</string>
+    <string name="upload_via_wifi">Kablosuz üzerinden karşıya yükle</string>
+    <string name="upload_now">Şimdi karşıya yükle</string>
+    <string name="settings_button">Ayarlar</string>
+    <string name="cancel_button">İptal</string>
+    <string name="blur_required_info">"\"{0}\", Blur hesabı olmadan kullanılamaz.
+Yeni bir hesap oluşturmak veya mevcut hesapta oturum açmak için \"Kurulum\" düğmesini tıklayın"</string>
+    <string name="airplane_active">Uçak modu etkin.</string>
+    <string name="privacy_policy_title">GİZLİLİK POLİTİKASI</string>
+    <string name="privacy_policy_summary">Motorola olarak bize emanet ettiğiniz bilgilerin korunmasına büyük önem veriyoruz. Bu gizlilik politikasında mobil cihazınızdan bilgileri nasıl topladığımız ve bu bilgilerle ne yaptığımız açıklanmaktadır. Standart veri kullanım ücretleri geçerli olabilir. Tam Gizlilik Beyanımızı okuyarak daha fazla bilgi edinebilirsiniz.</string>
+    <string name="privacy_profiles_title">Gizlilik profilleri</string>
+    <string name="privacy_profiles_summary">Gereksinimlerinize en iyi uyan gizlilik profilini seçin.</string>
+    <string name="location_services_title">Konum hizmetleri</string>
+    <string name="location_services_summary">Cihaz konumunuza erişebilen uygulamalar nelerdir ve konum bilgileri ne işinize yarar?</string>
+    <string name="location_services_content_default">Konuma dayalı hizmetlerimizi etkinleştirirseniz, yakınınızdaki yerleri aramanıza yardımcı olmak, cihaz kullanım kalıplarıyla önemli konumlar arasında bağlantı oluşturmak ve uygun cihaz davranışı önerilerinde bulunmak, ürünlerimizi ve hizmetlerimizi geliştirmenin yollarını araştırmak ve geçerli yasalara uymak için GPS koordinatlarına ve yakınınızdaki baz istasyonları ile kablosuz ağların konumuna dayalı konum bilgilerine erişiriz.</string>
+    <string name="collection_use_title">Toplama ve kullanma</string>
+    <string name="collection_use_summary">Cihazınızdan ne tür veriler toplanır ve hizmetlerimizi geliştirebilmemiz için bu bilgiler nasıl kullanılır?</string>
+    <string name="collection_use_content_default">Seçtiğiniz gizlilik profiline bağlı olarak, şu bilgilerin bir kısmını veya tamamını toplarız: temel işlevsel veriler, performans verileri, analiz verileri, kişisel bilgiler, uygulama kullanımı geçmişiniz, cihazınızla bağlantılı sosyal ağ profillerindeki herkese açık bilgiler ve cihazınızın yerleşik tarayıcısını kullanarak ziyaret ettiğiniz web siteleriyle ilgili bilgiler. Bu bilgileri, e-posta ve sosyal ağ hesaplarınız üzerinden mesaj gönderip alabilmenizi sağlamak, destek, sorun giderme ve cihazınızın optimize edilmesi konusunda yardımcı olmak, sizi Motorola ürün ve hizmetleri hakkında bilgilendirmek, Motorola ürün ve hizmetlerini daha iyi hale getirmek, nüfus analizi yapmak ve pazar segmenti modelleri elde etmek için kullanırız.</string>
+    <string name="tracking_ads_title">İzleme ve reklamlar</string>
+    <string name="tracking_ads_summary">Cihazınızda etiketler veya çerezler gibi web izleme teknolojileri kullanılmaz.</string>
+    <string name="tracking_ads_content_default">Şifreler veya kişisel verileriniz gibi hassas bilgileri saklamak, trafiği analiz etmek, cihaz özelliklerini kişiselleştirmek veya Motorola ürün ve hizmetlerini daha iyi hale getirmenin yollarını araştırmak için cihazınıza piksel etiketleri veya çerezler gibi web izleme teknolojileri yerleştirmez veya bunlara erişmeyiz. Bununla birlikte, ziyaret ettiğiniz web siteleri ve mobil cihazınıza yükleyip kullandığınız uygulamalar, bu tür izleyicileri kendi kullanım şartlarına uygun bir şekilde yerleştirip kullanabilir.</string>
+    <string name="security_title">Güvenlik</string>
+    <string name="security_summary">Motorola, standart güvenlik uygulamaları ve protokolleri kullanır.</string>
+    <string name="security_content_default">Bilgilerinizi bizim adımıza çalışan hizmet sağlayıcılarıyla paylaşmadan önce, bilgilerinizin standartlarımıza göre korunmasını ve herhangi bir bağımsız amaçla kullanılmamasını zorunlu tutarız. Ayrıca, size hizmet ve destek sağlamak üzere topladığımız ve kullandığımız bilgileri korumak için teknik ve kurumsal güvenlik önlemleri alırız. Cihazınızın güvenliğini korumak için her zaman cihazın güvenlik özelliklerini kullanmanız gerekir.</string>
+    <string name="contact_motorola_title">"Motorola'ya ulaşın"</string>
+    <string name="contact_motorola_summary">Sorularınız veya şüphelerinizle ilgili olarak Motorola ile iletişim kurun.</string>
+    <string name="contact_motorola_content_default">"Bilgilerinizi incelemek, değiştirmek, düzeltmek, güncellemek veya silmek ya da bu gizlilik politikası beyanıyla ilgili sorularınızı sormak için Motorola'ya şu adresten ulaşabilirsiniz:
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+ABD
+E-posta: privacy@motorola.com"</string>
+    <string name="full_privacy_title">Tam gizlilik politikamız</string>
+    <string name="full_privacy_summary">Motorola gizlilik politikasının tamamını görüntüleyin.</string>
+    <string name="full_privacy_content_default">"Gizlilik Politikası'nı görüntülemek için internet veri bağlantısı gerekiyor."</string>
+    <string name="privacy_common_content_default">"Cihazınız, GPS koordinatlarına, baz istasyonu konumlarına ve kablosuz ağlara dayalı konum bilgilerine erişir.
+
+Bu bilgiler, şu amaçlarla kullanılır:
+
+-Yakınınızdaki yerleri bulma
+-Cihaz kullanım kalıplarını belirli konumlara bağlama ve cihaz davranışları önerme.
+-Motorola ürünlerini ve hizmetlerini geliştirme yollarını araştırma
+-Hukuki yükümlülüklere uyma
+{1}TAM KONUM HİZMETLERİ POLİTİKASI;;{2}TAM Konum hizmetleri metni.
+TAM Konum hizmetleri metni.
+TAM Konum hizmetleri metni.
+TAM Konum hizmetleri metni.
+TAM Konum hizmetleri metni.
+TAM Konum hizmetleri metni.
+"</string>
+    <string name="motorola_privacy_profiles_title">MOTOROLA GİZLİLİK PROFİLLERİ</string>
+    <string name="motorola_privacy_profiles_summary">Size geliştirilmiş müşteri desteği sağlamak ve ürünlerimiz ile hizmetlerimizin kalitesini iyileştirmek için cihazınızı nasıl kullandığınızla ilgili bilgileri toplayabiliriz. Lütfen gereksinimlerinizi karşılayan bir gizlilik profili seçin. Daha fazla bilgi için lütfen Gizlilik Politikamıza bakın.</string>
+    <string name="motorola_privacy_profiles_footer">Cihazınızın Ayarlar uygulamasında Gizlilik menüsüne giderek istediğiniz zaman seçiminizi değiştirebilirsiniz.</string>
+    <string name="see_detail">Ayrıntılara bakın</string>
+    <string name="opt_out_title">Hiçbiri - %1$s</string>
+    <string name="opt_out_summary">Cihazınızın güncelliğini korumak için gereken anonim bilgiler dışında herhangi bir veri toplanmaz</string>
+    <string name="support_title">Destek - %1$s</string>
+    <string name="support_summary">Teknik destek ve cihazınızın güncelliğini korumak için gereken bilgiler</string>
+    <string name="standard_title">Standart - %1$s</string>
+    <string name="standard_summary">Cihazınızla ilgili destek sunmak ve Motorola ürünleri konusunda önerilerde bulunmak için gereken bilgiler</string>
+    <string name="advanced_title">Gelişmiş - %1$s</string>
+    <string name="advanced_summary">Standart verilere ek olarak cihazınızın yakınınızdaki yerleri bulmanıza yardımcı olmasını ve başka önerilerde bulunmasını sağlayacak bilgiler</string>
+    <string name="privacy_notification_text">Bir Gizlilik Politikası seçin</string>
+    <string name="opt_out_profile_title">HİÇBİRİ GİZLİLİK PROFİLİ</string>
+    <string name="opt_out_profile_text">Temel İşlevsel Verileri yalnızca cihazınız için kullanılabilir yazılım güncellemesi olup olmadığını belirlemek gibi temel işlevleri gerçekleştirmek için toplarız. Bu seçeneği belirlerseniz, cihazınıza teknik destek sağlama yeteneğimiz bundan olumsuz bir şekilde etkilenecektir.</string>
+    <string name="support_profile_title">YALNIZCA DESTEK GİZLİLİK PROFİLİ</string>
+    <string name="support_profile_text">Yalnızca destek gizlilik profilini seçerseniz, sadece cihazınıza daha iyi teknik destek sağlamak için gereken Temel İşlevsel Bilgileri ve Destek Bilgilerini toplarız. Bu bilgileri sorunları gidermek ve cihazınıza destek sağladıktan sonra sizinle iletişim kurmak amacıyla kullanırız.</string>
+    <string name="standard_profile_title">STANDART GİZLİLİK PROFİLİ</string>
+    <string name="standard_profile_text">Standart profili seçerseniz, Temel İşlevsel Verileri, Performans Verilerini ve Analiz Verilerini toplarız. Destek bilgilerine ek olarak, ürün ve hizmetlerimizi daha iyi hale getirmek, Motorola ürün ve hizmetleri konusunda size önerilerde bulunmak ve daha iyi bir destek hizmeti sunmak amacıyla cihazınızı nasıl kullandığınızla ilgili bilgileri toplar ve analiz ederiz.</string>
+    <string name="advanced_profile_title">GELİŞMİŞ GİZLİLİK PROFİLİ</string>
+    <string name="advanced_profile_text">Size mümkün olan en iyi kullanıcı deneyimini sağlamak için Temel İşlevsel Bilgileri, Destek Bilgilerini, Performans Verilerini, cihazı nasıl kullandığınızla ilgili bilgileri, cihazınızın konumunu, yerleşik web tarayıcısı kullanımınızı, uygulama kullanımı geçmişini ve herkese açık olan sosyal profil bilgilerinizi toplarız. Bu bilgileri, teknik destek yeteneklerimizi daha da geliştirmek, SmartActions yazılımının konumunuzu analiz etmesini sağlamak, iyileştirilmiş önerilerde bulunmak ve demografik analizler gerçekleştirmek için kullanırız.</string>
+    <string name="advanced_profile_text_tablet">Size mümkün olan en iyi kullanıcı deneyimini sağlamak için Temel İşlevsel Bilgileri, Destek Bilgilerini, Performans Verilerini, cihazı nasıl kullandığınızla ilgili bilgileri, cihazınızın konumunu, yerleşik web tarayıcısı kullanımınızı, uygulama kullanımı geçmişini ve herkese açık olan sosyal profil bilgilerinizi toplarız. Bu bilgileri, teknik destek yeteneklerimizi daha da geliştirmek ve demografik analizler gerçekleştirmek için kullanırız.</string>
+    <string name="privacy_link">"Tüm Gizlilik Politikası'nı görüntüleyin"</string>
+    <string name="privacy_error">Şu an bağlanılamıyor. Ayarlar > Gizlilik > Motorola Gizlilik Politikası seçeneklerini kullanarak daha sonra tekrar deneyebilirsiniz.</string>
+    <string name="terms_error">Şu an bağlanılamıyor. Ayarlar > Telefon hakkında > Yasal bilgiler seçeneklerini kullanarak daha sonra tekrar deneyebilirsiniz.</string>
+    <string name="legal_error">Şu an bağlanılamıyor</string>
+    <string name="legal_error_title">Hata</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">"Motorola Şartlar ve Gizlilik Politikaları'nı kabul ediyorum"</string>
+    <string name="backup_settings_title">Yedekle ve Geri Yükle|</string>
+    <string name="backup_restore_instruction">Google Hesabınızı uygulamalarınızı, ayarlarınızı (yer işaretleri ve kablosuz şifreleri gibi) ve diğer verileri yedeklemek için kullanabilirsiniz. Hesabınızı daha önce yedeklediyseniz şimdi bu telefona geri yükleyebilirsiniz.</string>
+    <string name="backup_restore_setting">Yedekleme ayarlarınızı istediğiniz zaman Gizlilik Ayarları bölümünden değiştirebilirsiniz.</string>
+    <string name="restore_title">Google Hesabından geri yükleyin</string>
+    <string name="backup_title">Google Hesabına yedekleyin</string>
+</resources>

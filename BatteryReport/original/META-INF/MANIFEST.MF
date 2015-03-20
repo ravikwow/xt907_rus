@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: YkZbPywFZx+50FAgW/FX/p7ZzwE=
+
+Name: res/drawable/icon.png
+SHA1-Digest: 7xizMYuoK0G55atqZU5G+9iBNGs=
+
+Name: res/layout/batt_temp_cooldown_uidata.xml
+SHA1-Digest: oC6kntTS92I7mMhHYq//sTmlank=
+
+Name: resources.arsc
+SHA1-Digest: LNF06mp9yVgBFoiswL/kcAJ09fY=
+
+Name: res/drawable/zz_moto_batt_temp_bar.png
+SHA1-Digest: zVkZN5jowI3qSdhUT64lJhUwTOQ=
+
+Name: res/drawable/ic_emergency.png
+SHA1-Digest: WPI5w85ADLQNMPPkgQ4kCNUxYd0=
+

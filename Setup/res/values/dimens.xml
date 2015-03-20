@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="AccSet_hspacing">10.0dip</dimen>
+    <dimen name="AccSet_topSpacing">12.0dip</dimen>
+    <dimen name="AccSet_bottomSpacing">20.0dip</dimen>
+    <dimen name="AccSet_textViewSizeSm">14.0sp</dimen>
+    <dimen name="AccSet_textViewSize">24.0sp</dimen>
+    <dimen name="AccSet_indentSpacing">32.0dip</dimen>
+    <dimen name="AccSet_vspacing">11.0dip</dimen>
+    <dimen name="AccSet_v2spacing">23.0dip</dimen>
+    <dimen name="radio_button_padding">45.0dip</dimen>
+    <dimen name="radio_button_vspacing">27.0dip</dimen>
+    <dimen name="content_area_left_padding">10.0dip</dimen>
+    <dimen name="content_area_right_padding">10.0dip</dimen>
+    <dimen name="formitem_vspacing">3.0dip</dimen>
+    <dimen name="formitem_hspacing">5.0dip</dimen>
+    <dimen name="title_bar_padding">5.0dip</dimen>
+    <dimen name="title_bar_control_size">50.0dip</dimen>
+    <dimen name="privacy_policy_padding">7.0dip</dimen>
+    <dimen name="welcome_bar_margin_top">50.0dip</dimen>
+    <dimen name="welcome_screen_margin_left">20.0dip</dimen>
+    <dimen name="welcome_screen_margin_right">20.0dip</dimen>
+    <dimen name="welcome_bar_text_size">40.0sp</dimen>
+    <dimen name="welcome_language_margin_top">45.0dip</dimen>
+    <dimen name="welcome_language_margin_right">20.0dip</dimen>
+    <dimen name="welcome_language_spinner_height">45.0dip</dimen>
+    <dimen name="welcome_anddroid_margin_top">25.0dip</dimen>
+    <dimen name="welcome_android_button_width">170.0dip</dimen>
+    <dimen name="welcome_android_button_height">60.0dip</dimen>
+    <dimen name="welcome_privacy_padding_bottum">15.0dip</dimen>
+    <dimen name="welcome_privacy_text_size">16.0sp</dimen>
+    <dimen name="welcome_emergency_button_text_size">18.0sp</dimen>
+    <dimen name="welcome_emergency_button_drawable_padding">7.0dip</dimen>
+    <dimen name="titleLinkSize">16.0sp</dimen>
+</resources>

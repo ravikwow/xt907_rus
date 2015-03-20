@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_name">20.0sp</dimen>
+    <dimen name="contact_address">14.0sp</dimen>
+    <dimen name="padding_medium">6.0dip</dimen>
+    <dimen name="padding_links">10.0dip</dimen>
+    <dimen name="padding_margin_message_item">4.0dip</dimen>
+    <dimen name="padding_composer_lateral">4.0dip</dimen>
+    <dimen name="listitem_vertical_margin">3.0dip</dimen>
+    <dimen name="listitem_horizontal_margin">5.0dip</dimen>
+    <dimen name="listitem_contact_photo_size">48.0dip</dimen>
+    <dimen name="listitem_contact_photo_right_margin">5.0dip</dimen>
+    <dimen name="avatar_width_height">64.0dip</dimen>
+    <dimen name="action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="event_detail_lSpacing">40.0dip</dimen>
+    <dimen name="interative_title_button_space">48.0dip</dimen>
+    <dimen name="interactive_title_bar_height">60.0dip</dimen>
+    <dimen name="interactive_title_bar_button_width">48.0dip</dimen>
+    <dimen name="arrow_icon_top_margin">60.0dip</dimen>
+    <dimen name="arrow_icon_right_margin">59.0dip</dimen>
+    <dimen name="arrow_icon_Left_margin">14.0dip</dimen>
+    <dimen name="arrow_icon_bottom_margin">-8.5dip</dimen>
+    <dimen name="arrow_icon_right_margin_short">2.0dip</dimen>
+    <dimen name="dialog_selection_frame_top_padding">20.0dip</dimen>
+    <dimen name="dialog_selection_frame_bottom_padding">20.0dip</dimen>
+    <dimen name="dashboard_grid_view_column_witdh">90.0dip</dimen>
+    <dimen name="arrow_icon_top_margin_tagbar">110.0dip</dimen>
+    <dimen name="arrow_icon_left_margin_tagbar">20.0dip</dimen>
+    <dimen name="arrow_icon_bottom_margin_tagbar">-8.5dip</dimen>
+    <dimen name="general_list_layout_width">-1.0dip</dimen>
+    <dimen name="general_list_layout_height">-1.0dip</dimen>
+    <dimen name="general_list_margin_left">0.0dip</dimen>
+    <dimen name="general_list_margin_right">0.0dip</dimen>
+</resources>

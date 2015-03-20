@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="connection_timeout_count">1800</integer>
+    <integer name="cpu_idle_wait_profile_duration">30000</integer>
+    <integer name="cpu_idle_wait_profile_interval">500</integer>
+    <integer name="cpu_idle_wait_idle_threshold">50</integer>
+    <integer name="cpu_idle_wait_idle_threshold_duration">5000</integer>
+</resources>

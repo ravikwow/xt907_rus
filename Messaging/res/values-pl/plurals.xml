@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Zapisano załączniki</item>
+        <item quantity="one">Załącznik zapisany</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Nie można zapisać załączników, ponieważ brak karty pamięci.
+
+Włóż kartę pamięci."</item>
+        <item quantity="one">"Nie można zapisać załącznika, ponieważ brak karty pamięci.
+
+Włóż kartę pamięci."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Za mało pamięci, aby zapisać załączniki.</item>
+        <item quantity="one">Za mało pamięci, aby zapisać załącznik.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Zapisanie co najmniej jednego załącznika nie powiodło się.</item>
+        <item quantity="one">Zapisanie załącznika nie powiodło się.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">Zostanie usuniętych wiadomości: %1$d.</item>
+        <item quantity="one">Wiadomość zostanie usunięta.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">Wiadomości chronionych: %1$d</item>
+        <item quantity="one">1 wiadomość chroniona</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Usunięto ochronę z %1$d</item>
+        <item quantity="one">Usunięto ochronę z 1</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Masz przypomnienia o zadaniach</item>
+        <item quantity="one">Masz przypomienie o zadaniu</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(Przypomnień: %1$d)</item>
+        <item quantity="one">1 zadanie ukończone</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">Znaleziono zadań - %d</item>
+        <item quantity="zero">Znaleziono zadań - %d</item>
+        <item quantity="one">Znaleziono zadań - %d</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Spóźnione</item>
+        <item quantity="one">Spóźnione</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Co %1$d dni gdy zadanie ukończone</item>
+        <item quantity="one">Codziennie, gdy zadanie ukończone</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Co %1$d tygodni gdy zadanie ukończone</item>
+        <item quantity="one">Co tydzień, gdy zadanie ukończone</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Co %1$d miesięcy, gdy zadanie ukończone</item>
+        <item quantity="one">Co miesiąc, gdy zadanie ukończone</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Co %1$d lat, gdy zadanie ukończone</item>
+        <item quantity="one">Co rok, gdy zadanie ukończone</item>
+    </plurals>
+</resources>

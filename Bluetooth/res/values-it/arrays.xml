@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Una pagina per lato</item>
+        <item>Due pagine per lato</item>
+        <item>Quattro pagine per lato</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Verticale</item>
+        <item>Orizzontale</item>
+        <item>Orizzontale capovolto</item>
+        <item>Verticale capovolto</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>verticale</item>
+        <item>orizzontale</item>
+        <item>orizzontale capovolto</item>
+        <item>verticale capovolto</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Su un lato</item>
+        <item>Fronte/retro lato lungo</item>
+        <item>Fronte/retro lato corto</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>solo fronte</item>
+        <item>fronte/retro lato lungo</item>
+        <item>fronte/retro lato corto</item>
+    </string-array>
+</resources>

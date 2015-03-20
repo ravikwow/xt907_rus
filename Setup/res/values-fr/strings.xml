@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">"Préparation de l'appareil en cours."</string>
+    <string name="cpu_idle_wait_msg">Veuillez patienter...</string>
+    <string name="splash_screen_text">Bienvenue sur Motorola</string>
+    <string name="please_choose_a_language">Choisir la langue</string>
+    <string name="welcome_to_motoblur">Bienvenue sur MOTOBLUR</string>
+    <string name="next">Suivant</string>
+    <string name="back">Précédent</string>
+    <string name="make_emergency_call_by_pressing_menu">"Pour effectuer un appel d'urgence pendant la configuration, appuyez sur la touche \"Menu\" ."</string>
+    <string name="sign_up_or_login_main_text">"Pour utiliser les services de base de votre téléphone ainsi que le portail Internet MOTOBLUR, vous devez disposer d'un compte MOTOBLUR."</string>
+    <string name="password_colon">Mot de passe :</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="forgot_password_title">Mot de passe oublié</string>
+    <string name="enter_password">Saisir le mot de passe</string>
+    <string name="motoblur_terms_of_service">"Conditions d'utilisation MOTOBLUR"</string>
+    <string name="moto_service_review_the_above">"En cochant la case \"J'accepte\", vous confirmez accepter le contrat de licence logicielle, les conditions d'utilisation et la déclaration de confidentialité de Motorola.
+
+Si vous n'acceptez pas ces conditions, vous ne pourrez pas utiliser cet appareil."</string>
+    <string name="terms_and_conditions">"Conditions d'utilisation MOTOROLA"</string>
+    <string name="sharing_additional_information">"Partage d'informations"</string>
+    <string name="moto_service_agreement">Contrat Motorola</string>
+    <string name="terms_of_service_check_caption">"J'accepte les "</string>
+    <string name="downloading_terms">Téléchargement des conditions…</string>
+    <string name="creating_your_blur_account">Création de votre compte MOTOBLUR en cours</string>
+    <string name="generic_carrier_contact_text">Appelez le service clientèle pour récupérer votre mot de passe.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">Compte MOTOBLUR non vérifié</string>
+    <string name="cancel">Annuler</string>
+    <string name="signin">Se connecter</string>
+    <string name="checking_for_updates">Recherche de mises à jour…</string>
+    <string name="downloading_updates">"Téléchargement de la mise à jour 
+ 
+Veuillez patienter…"</string>
+    <string name="error_deleting_account">Erreur lors de la suppression du compte</string>
+    <string name="congrats_title_login">Connexion réussie</string>
+    <string name="congrats_title">Félicitations !</string>
+    <string name="congrats_text">"Votre configuration est terminée ! 
+
+Si vous avez configuré des comptes, nous allons à présent importer vos contacts et votre e-mail. Ceci peut prendre jusqu'à 30 minutes, mais vous pouvez commencer à utiliser votre téléphone dès à présent.
+
+Nous vous recommandons de définir un verrou de sécurité sur le téléphone (via Paramètres > Sécurité et verrouillage de l'écran)."</string>
+    <string name="setup_complete_title">Configuration terminée</string>
+    <string name="setup_complete_text">"Vous avez terminé la configuration de l'ordinateur et de l'appareil.
+
+Vous pouvez commencer à utiliser votre téléphone dès maintenant…"</string>
+    <string name="done">Terminé</string>
+    <string name="welcome_android">Bienvenue</string>
+    <string name="privacy_policy">"L'utilisation que vous faites de ce téléphone est soumise à la politique de confidentialité Motorola et à ses conditions."</string>
+    <string name="learn_more">En savoir plus</string>
+    <string name="emergency_call">"Appel d'urgence"</string>
+    <string name="create_later">Configurer le compte plus tard</string>
+    <string name="email_colon">Adresse e-mail :</string>
+    <string name="location_consent_string">Autorisation de localisation</string>
+    <string name="location_consent_description">"Le service de localisation de Google propose des applications permettant de déterminer le lieu où vous vous trouvez sans l'aide d'un GPS. Vous pouvez désactiver ces fonctionnalités dans le menu Paramètres, sous Services de localisation."</string>
+    <string name="use_location_service">"Autoriser le service de localisation de Google à recueillir des données de localisation anonymes. Les données sont collectées indépendamment de l'activité des applications."</string>
+    <string name="signup">"S'enregistrer"</string>
+    <string name="login">Utiliser un compte existant</string>
+    <string name="password">Mot de passe</string>
+    <string name="ok">OK</string>
+    <string name="email_address_error">"L'adresse e-mail doit comprendre au moins 6 caractères et peut contenir des lettres, chiffres et tirets de soulignement (_).
+"<i>Par exemple, </i>"mon_nom@domaine.com
+"</string>
+    <string name="retrieving_password">Récupération du mot de passe…</string>
+    <string name="error_creating_account_title">Erreur lors de la création du compte</string>
+    <string name="unspecified_service_error">"Une erreur s'est produite lors de la création de votre compte. Veuillez réessayer."</string>
+    <string name="password_emailed">Un lien de réinitialisation de mot de passe a été envoyé à votre adresse e-mail.</string>
+    <string name="contacts">Contacts</string>
+    <string name="calendar">Agenda</string>
+    <string name="none">Aucun(e)</string>
+    <string name="captcha_text">Pour vérifier votre connexion, veuillez entrer le texte dans le champ ci-dessous.</string>
+    <string name="set_up_apn">Paramètres APN</string>
+    <string name="set_up_cloud">Paramètres serveur</string>
+    <string name="set_up_wifi">Paramètres Wi-Fi</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">Le numéro IMEI est %1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">Le numéro MEID est %1$s</string>
+    <string name="error_account_disabled">Ce compte a été désactivé sur le service Blur.</string>
+    <string name="error_account_not_found">"Ce compte n'existe pas sur le service Blur."</string>
+    <string name="error_already_exists">Ce compte existe déjà sur le service Blur. Choisissez un autre ID de compte.</string>
+    <string name="error_already_initialized">Votre téléphone est déjà associé à un autre compte.</string>
+    <string name="error_connect_timeout">Le délai de connexion est dépassé. Veuillez réessayer.</string>
+    <string name="error_try_again">"Une erreur s'est produite. Veuillez réessayer."</string>
+    <string name="error_invalid_credentials">"Votre nom d'utilisateur ou votre mot de passe est incorrect. Vérifiez-les et réessayez."</string>
+    <string name="error_invalid_params">Entrée non valide. Veuillez réessayer.</string>
+    <string name="error_internal_server">"Une erreur du serveur interne s'est produite. Veuillez réessayer"</string>
+    <string name="error_no_server_response">"Le serveur n'a pas répondu. Vérifiez que le service fonctionne, puis réessayez."</string>
+    <string name="error_not_allowed">Votre demande a été refusée. Veuillez réessayer.</string>
+    <string name="error_not_found">"La demande n'a pas été trouvée."</string>
+    <string name="error_not_initialized">"La demande impliquait les informations de connexion de l'utilisateur mais celles-ci n'étaient pas fournies."</string>
+    <string name="error_password_mismatch">Mot de passe incorrect. Veuillez réessayer.</string>
+    <string name="error_current_password_mismatch">Mot de passe actuel incorrect. Veuillez réessayer.</string>
+    <string name="error_radio_down">"La radio du téléphone n'est pas en mesure de se connecter au réseau. Vérifiez que la radio est activée ou, si elle l'est, déplacez-la dans une zone de meilleure couverture et réessayez."</string>
+    <string name="error_service_busy">Connexion impossible pour le moment. Réessayez ultérieurement.</string>
+    <string name="error_socket_timeout">"Le délai de la demande a été dépassé sans réponse. Le compte n'a peut-être pas été correctement créé."</string>
+    <string name="error_too_many">"Vous avez tenté de réinitialiser votre mot de passe trop de fois aujourd'hui. Réessayez ultérieurement."</string>
+    <string name="error_unauthorized">"Le service Blur a indiqué que votre demande n'était pas autorisée. Vérifiez que le service Blur fonctionne."</string>
+    <string name="error_wrong_device">Ce compte est utilisé par un autre périphérique. Vous devez supprimer ce périphérique pour pouvoir utiliser ce compte.</string>
+    <string name="error_wrong_password">"Impossible de reconnaître votre ID et/ou mot de passe. Vérifiez et réessayez. Si vous avez oublié votre mot de passe, appuyez sur le bouton 'Mot de passe oublié' pour le recevoir par e-mail."</string>
+    <string name="error_captcha_invalid">Saisissez à nouveau les informations.</string>
+    <string name="error_captcha_expired">"Le délai d'authentification a expiré. Veuillez réessayer."</string>
+    <string name="error_ssl_error">"L'horloge du périphérique a rencontré un problème. Veuillez contacter le service client."</string>
+    <string name="error_retreiving_information">"Une erreur s'est produite lors de la récupération des informations."</string>
+    <string name="error_wifi_only">Les applications de réseaux sociaux sont définies sur la synchronisation en Wi-Fi uniquement.</string>
+    <string name="service_data_error">"Des erreurs se sont produites lors de l'acquisition de données sur le service Blur."</string>
+    <string name="retry">Nouvel essai</string>
+    <string name="terms_of_service_text">"Une connexion de données Internet est nécessaire pour afficher les Conditions d'utilisation."</string>
+    <string name="data_analytics_text">"Une connexion de données Internet est nécessaire pour afficher l'analyseur de données."</string>
+    <string name="end_user_license_agreement_text">Texte de fond ACCORD LICENCE LOGICIELLE</string>
+    <string name="bad_phone_format">"Votre numéro de téléphone ne doit contenir que des chiffres, '-' ou '+'"</string>
+    <string name="bad_password_format">"Votre mot de passe ne peut pas contenir d'espaces."</string>
+    <string name="must_be_at_least">Le champ {0} doit contenir au moins {1} caractères.</string>
+    <string name="start">Démarrer</string>
+    <string name="finish">Terminer</string>
+    <string name="set_up_cancel">"Ignorer l'installation"</string>
+    <string name="waiting_for_connection">Vérification de la connectivité des données</string>
+    <string name="setup_blur_device_title">Configurer le téléphone Blur</string>
+    <string name="connection_failed_text">Échec de la connexion</string>
+    <string name="no_network_connection">Aucune connexion réseau</string>
+    <string name="service_error_text">Erreur de service Motorola</string>
+    <string name="connection_chooser_select">"Sélectionnez un type de connexion
+ pour terminer la configuration"</string>
+    <string name="connection_chooser_type">Type de connexion</string>
+    <string name="skip_setup_title">"Ignorer l'installation"</string>
+    <string name="skip_setup_text">"Si vous ignorez l'installation, certaines fonctionnalités de votre appareil ne seront pas disponibles.
+
+ L'appareil vous rappellera de terminer l'installation lorsqu'une connexion de données sera disponible ou si vous tentez d'utiliser une application qui requiert de terminer l'installation.
+ 
+ Sélectionnez Suivant pour afficher l'autorisation de localisation ; une fois cette étape terminée, l'installation s'achèvera et vous serez dirigé vers l'écran d'accueil."</string>
+    <string name="blur_required">Compte Blur nécessaire</string>
+    <string name="setup">Configurer</string>
+    <string name="connection_retry">Réessayer connexion cellulaire</string>
+    <string name="connection_skip">Ignorer pour le moment</string>
+    <string name="connection_cell_retry_text">"Échec de la connexion.
+ Vous avez besoin d'une connexion de données afin de terminer la configuration.
+
+ Appuyez sur le bouton \"Réessayer\" lors de votre retour dans la couverture réseau."</string>
+    <string name="sim_removed">Carte SIM retirée</string>
+    <string name="simswap_signin_instruction">"La carte SIM a été retirée. Connectez-vous à votre compte pour une vérification d'identité."</string>
+    <string name="reset_phone">Réinitialiser le téléphone</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="checking_progress_text">Recherche…</string>
+    <string name="error_need_email_and_password_to_signin">Connectez-vous à votre compte pour confirmer votre identité.</string>
+    <string name="delete_email_accounts_msg">Si vous chargez un compte MOTOBLUR existant, tous les comptes de messagerie sur votre appareil seront supprimés et remplacés par les comptes enregistrés dans votre profil MOTOBLUR.</string>
+    <string name="delete_email_accounts_continue_btn">Continuer</string>
+    <string name="moto_required">Compte Motorola requis</string>
+    <string name="moto_required_info">"\"Mises à jour du système\" non accessible sans compte de services Motorola.
+
+Voulez-vous créer un compte maintenant ?"</string>
+    <string name="sn_required">Compte de réseau social requis</string>
+    <string name="sn_required_info">"\"{0}\" n'est pas accessible sans compte de réseau social.
+Pour créer un compte, appuyez sur le bouton \"Configurer\"."</string>
+    <string name="connection_failed_textinfo">"Pour terminer la configuration, vous avez besoin d'une connexion de données.
+
+Vous disposez des choix suivants :"</string>
+    <string name="no_network_connection_textinfo">"Pour continuer, vous avez besoin d'une connexion de données.
+Vous disposez des choix suivants :
+"</string>
+    <string name="service_error_textinfo">"Une erreur du serveur interne s'est produite. Veuillez réessayer."</string>
+    <string name="setup_wifi">Configurer une connexion Wi-Fi</string>
+    <string name="retry_cellular">Réessayer avec la connexion actuelle</string>
+    <string name="skip_for_now">Ignorer cette étape pour le moment</string>
+    <string name="try_again_later">Réessayez ultérieurement</string>
+    <string name="account_creation_timeout_title">"L'opération prend plus longtemps que prévu."</string>
+    <string name="account_creation_timeout_content">Nous allons réessayer en arrière-plan.</string>
+    <string name="communicating_with_server">"Communication avec le serveur.
+Veuillez patienter..."</string>
+    <string name="notification_title">Configuration du compte</string>
+    <string name="notification_text">Saisissez le captcha.</string>
+    <string name="blur_account_setup">Configuration du compte Blur</string>
+    <string name="restore_previous_device">Restaurer un appareil Motorola précédent ?</string>
+    <string name="restore_details_string">"Restaurer les contacts, paramètres et comptes à partir d'un appareil Motorola précédent ?
+"</string>
+    <string name="enter_motorola_id">Un ID MotoCast est nécessaire pour restaurer le contenu.</string>
+    <string name="what_is_motoid">"Qu'est-ce qu'un ID MotoCast ?"</string>
+    <string name="yes_restore">Oui, je souhaite restaurer</string>
+    <string name="no_restore">Non, ne pas restaurer</string>
+    <string name="setup_title">Configuration Motorola</string>
+    <string name="quick_upload">Envoi rapide</string>
+    <string name="quick_upload_pictures">Envoi rapide pour les images</string>
+    <string name="quick_upload_videos">Envoi rapide pour les vidéos</string>
+    <string name="uploading_pictures">Envoi de photos vers %1$s</string>
+    <string name="uploading_videos">Envoi de vidéos vers %1$s</string>
+    <string name="uploading_pictures_and_videos">Envoi de photos et vidéos vers %1$s</string>
+    <string name="quick_upload_pics_not_setup_text">"Le compte d'envoi rapide par défaut des photos n'est pas configuré. Voulez-vous le configurer maintenant et continuer cet envoi ?"</string>
+    <string name="quick_upload_videos_not_setup_text">"Le compte d'envoi rapide par défaut des vidéos n'est pas configuré. Voulez-vous le configurer maintenant et continuer cet envoi ?"</string>
+    <string name="web_setting">Oui</string>
+    <string name="web_cancel_upload">Annuler</string>
+    <string name="web_cancel">Non</string>
+    <string name="toast_BlurFailed">Blur non installé !</string>
+    <string name="online_album_email_addr_title">Adresse e-mail</string>
+    <string name="enter_email">"Saisir l'adresse e-mail"</string>
+    <string name="add_account_dot">Ajouter un compte...</string>
+    <string name="btn_ok">OK</string>
+    <string name="data_saver_enabled">Contrôle des flux de données activé</string>
+    <string name="data_saver_text">"Cet envoi sera mis en file d'attente et transféré lorsque le Wi-Fi sera disponible. Pour procéder immédiatement à l'envoi, désactivez le contrôle des flux de données dans les paramètres."</string>
+    <string name="delayed_toast">"%1$s sera mis en file d'attente et envoyé lorsque le Wi-Fi sera disponible. Vérifiez la progression dans la fenêtre de notification."</string>
+    <string name="n_items">%1$d élément(s)</string>
+    <string name="gathering_check_caption">"J'accepte d'aider Motorola à améliorer la qualité de son service en "</string>
+    <string name="gathering_link">partageant des informations supplémentaires</string>
+    <string name="gathering_check_caption2">" sur l'utilisation de mon appareil"</string>
+    <string name="tos_link">"Conditions d'utilisation MOTOROLA"</string>
+    <string name="large_upload">Envoi volumineux</string>
+    <string name="large_upload_text">"L'envoi via le réseau peut prendre plus de temps qu'avec un réseau Wi-Fi."</string>
+    <string name="upload_via_wifi">Envoyer via Wi-Fi</string>
+    <string name="upload_now">Envoyer maintenant</string>
+    <string name="settings_button">Paramètres</string>
+    <string name="cancel_button">Annuler</string>
+    <string name="blur_required_info">non disponible sans compte Blur. Pour créer un nouveau compte ou se connecter avec un compte existant, appuyez sur Configurer</string>
+    <string name="airplane_active">Le mode Avion est activé.</string>
+    <string name="privacy_policy_title">CONFIDENTIALITÉ MOTOROLA</string>
+    <string name="privacy_policy_summary">"Chez Motorola, nous nous engageons à protéger les informations que vous nous communiquez. La présente politique de confidentialité explique comment nous collectons les informations issues de votre appareil portable et les utilisons. Des frais de connexion de données habituels peuvent s'appliquer. Pour plus d'informations, consultez notre déclaration de confidentialité dans son intégralité."</string>
+    <string name="privacy_profiles_title">Profils de confidentialité</string>
+    <string name="privacy_profiles_summary">Sélectionnez le profil de confidentialité qui correspond le mieux à vos besoins.</string>
+    <string name="location_services_title">Services de localisation</string>
+    <string name="location_services_summary">Applications pouvant accéder aux données de localisation de votre appareil, et avantages associés.</string>
+    <string name="location_services_content_default">"Si vous activez nos services de localisation, nous nous servirons des informations de localisation obtenues grâce aux coordonnées GPS et aux antennes relais téléphoniques et réseaux sans fil à proximité pour vous permettre de trouver des lieux intéressants dans les environs, pour associer des schémas d'utilisation de l'appareil à des lieux importants et suggérer un comportement approprié à l'appareil, pour rechercher un moyen d'améliorer nos produits et services, et pour nous conformer aux lois en vigueur."</string>
+    <string name="collection_use_title">Collecte et utilisation</string>
+    <string name="collection_use_summary">Types de données collectées sur votre appareil et amélioration des services Motorola résultante.</string>
+    <string name="collection_use_content_default">"En fonction du profil de confidentialité sélectionné, nous collectons une partie ou la totalité des informations suivantes : données fonctionnelles principales, données de performances, données d'analyse, informations personnelles, historique de l'utilisation des applications, informations publiques provenant des profils de réseaux sociaux associés à votre appareil et informations sur les sites Web consultés via le navigateur intégré à l'appareil. Nous utilisons ces informations pour vous permettre d'envoyer et de recevoir des messages par e-mail et sur vos comptes de réseaux sociaux, pour faciliter l'assistance, le dépannage et l'optimisation des performances de votre appareil, pour vous informer sur les produits et les services Motorola, pour améliorer les produits et services Motorola et pour réaliser des analyses démographiques et des modélisations de segments de marché."</string>
+    <string name="tracking_ads_title">Suivi et publicité</string>
+    <string name="tracking_ads_summary">"Votre appareil n'utilise pas de technologies de suivi comme les tags ou les cookies."</string>
+    <string name="tracking_ads_content_default">"Nous ne plaçons ou n'accédons à aucune technologie de suivi Web comme les pixels invisibles ou les cookies sur votre appareil pour stocker des informations sensibles telles que vos mots de passe ou vos données personnelles, analyser le trafic, personnaliser les fonctions de l'appareil ou rechercher des opportunités d'améliorer les produits et services Motorola. Il se peut en revanche que les sites Web que vous visitez ou les applications que vous installez ou utilisez sur votre appareil placent et utilisent des technologies de ce type, soumises à leurs propres conditions d'utilisation."</string>
+    <string name="security_title">Sécurité</string>
+    <string name="security_summary">Motorola emploie des méthodes et des protocoles standard de sécurité.</string>
+    <string name="security_content_default">"Avant de partager vos informations avec les fournisseurs de services auxquels nous sommes associés, nous exigeons qu'ils les protègent conformément à nos principes et qu'ils ne les utilisent pas à d'autres fins. Nous utilisons des méthodes de sécurité technique et organisationnelle standard pour protéger les informations que nous collectons et utilisons dans le but de vous fournir des services et une assistance. Vous devez utiliser les fonctions de sécurité fournies pour assurer la sécurité de votre appareil à tout moment."</string>
+    <string name="contact_motorola_title">Contacter MOTOROLA</string>
+    <string name="contact_motorola_summary">Contacter Motorola pour toute question ou tout renseignement.</string>
+    <string name="contact_motorola_content_default">"Vous pouvez contacter Motorola pour vérifier, modifier, corriger, mettre à jour ou supprimer vos informations ou pour en savoir plus sur la présente déclaration de confidentialité à l'adresse :
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+États-Unis
+e-mail : privacy@motorola.com"</string>
+    <string name="full_privacy_title">Politique de confidentialité</string>
+    <string name="full_privacy_summary">Affichez la politique complète de Motorola en matière de confidentialité.</string>
+    <string name="full_privacy_content_default">Une connexion de données Internet est nécessaire pour afficher la politique de confidentialité.</string>
+    <string name="privacy_common_content_default">"Votre appareil accède à des informations de localisation basées sur vos coordonnées GPS, l'emplacement des relais cellulaires et des réseaux sans fil.
+
+Ces informations sont utilisées pour :
+
+-Rechercher des adresses à proximité
+-Faire le lien entre les schémas d'utilisation des appareils et les adresses importantes, pour suggérer des comportements d'appareil.
+-Rechercher des moyens d'améliorer les produits et services Motorola
+-Respecter les obligations légales
+{1}POLITIQUE COMPLÈTE DES SERVICES DE LOCALISATION;;{2}Texte COMPLET relatif aux services de localisation.
+Texte COMPLET relatif aux services de localisation.
+Texte COMPLET relatif aux services de localisation.
+Texte COMPLET relatif aux services de localisation.
+Texte COMPLET relatif aux services de localisation.
+Texte COMPLET relatif aux services de localisation.
+"</string>
+    <string name="motorola_privacy_profiles_title">PROFILS DE CONFIDENTIALITÉ</string>
+    <string name="motorola_privacy_profiles_summary">"Nous pouvons collecter des informations sur la façon dont vous utilisez votre appareil afin de vous fournir une assistance client optimisée et d'améliorer la qualité de nos produits et services. Veuillez sélectionner un profil qui correspond à vos besoins. Pour plus d'informations, reportez-vous à notre politique de confidentialité."</string>
+    <string name="motorola_privacy_profiles_footer">"Vous pouvez à tout moment modifier votre sélection en accédant au menu Confidentialité de l'application Paramètres de votre appareil."</string>
+    <string name="see_detail">"Plus d'infos"</string>
+    <string name="opt_out_title">Aucun - %1$s</string>
+    <string name="opt_out_summary">"Aucune donnée ne sera collectée, à l'exception des informations anonymes permettant de maintenir votre appareil à jour"</string>
+    <string name="support_title">Assistance - %1$s</string>
+    <string name="support_summary">"Informations relatives à l'assistance technique et permettant de maintenir votre appareil à jour"</string>
+    <string name="standard_title">Standard - %1$s</string>
+    <string name="standard_summary">Informations nécessaires pour dépanner votre appareil et vous suggérer des produits Motorola</string>
+    <string name="advanced_title">Avancé - %1$s</string>
+    <string name="advanced_summary">Données standard et autres infos pour vous aider à trouver des lieux à proximité et vous faire des suggestions</string>
+    <string name="privacy_notification_text">Choisir une politique de confidentialité</string>
+    <string name="opt_out_profile_title">PROFIL DE CONFIDENTIALITÉ AUCUN</string>
+    <string name="opt_out_profile_text">"Nous collecterons uniquement les données fonctionnelles principales nécessaires à l'exécution des fonctions de bases telles que la détection des mises à jour logicielles disponibles pour votre produit. Si vous sélectionnez cette option, nous ne serons pas en mesure d'assurer l'assistance technique complète sur votre appareil."</string>
+    <string name="support_profile_title">PROFIL ASSISTANCE UNIQUEMENT</string>
+    <string name="support_profile_text">"Si vous sélectionnez le profil de confidentialité Assistance uniquement, nous collecterons uniquement les données fonctionnelles principales et les informations nécessaires à l'assistance technique complète sur votre appareil. Ces informations serviront uniquement à dépanner votre appareil et à prendre contact avec vous dans le cadre de la procédure d'intervention."</string>
+    <string name="standard_profile_title">PROFIL STANDARD</string>
+    <string name="standard_profile_text">"Si vous sélectionnez le profil Standard, nous collecterons les données fonctionnelles principales, ainsi que les données de performances et d'analyse. Outre les informations nécessaires pour dépanner votre appareil, nous collecterons et analyserons également les informations relatives à la façon dont vous utilisez votre appareil dans le but d'apporter des améliorations à nos produits et services, de vous suggérer des produits et services Motorola et d'optimiser encore davantage notre capacité à dépanner votre appareil."</string>
+    <string name="advanced_profile_title">PROFIL AVANCÉ</string>
+    <string name="advanced_profile_text">"Afin de garantir une expérience utilisateur optimale, nous collectons les données fonctionnelles principales, les informations nécessaires à l'assistance technique, les données de performance, les informations concernant votre utilisation de l'appareil, l'emplacement de l'appareil, votre utilisation du navigateur Web intégré, l'historique d'utilisation des applications et les informations de réseaux sociaux accessibles publiquement. Ces informations nous permettront d'améliorer nos services d'assistance technique, de déterminer votre position via la fonction SmartActions, de vous faire de meilleures suggestions et d'effectuer des analyses démographiques."</string>
+    <string name="advanced_profile_text_tablet">"Afin de garantir une expérience utilisateur optimale, nous collectons les données fonctionnelles principales, les informations nécessaires à l'assistance technique, les données de performance, les informations concernant votre utilisation de l'appareil, la localisation de l'appareil, votre utilisation du navigateur Web intégré, l'historique d'utilisation des applications et les informations de réseaux sociaux accessibles publiquement. Ces informations nous permettront d'améliorer nos services d'assistance technique et d'effectuer des analyses démographiques."</string>
+    <string name="privacy_link">Afficher la politique de confidentialité complète</string>
+    <string name="privacy_error">Connexion impossible pour le moment. Réessayez plus tard via Paramètres > Confidentialité > Politique de confidentialité Motorola.</string>
+    <string name="terms_error">Connexion impossible pour le moment. Réessayez plus tard via Paramètres > À propos du téléphone > Informations légales.</string>
+    <string name="legal_error">Connexion impossible pour le moment.</string>
+    <string name="legal_error_title">Erreur</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">"J'accepte les conditions d'utilisation et Ies politiques de confidentialité de Motorola"</string>
+    <string name="backup_settings_title">Sauvegarde et restauration</string>
+    <string name="backup_restore_instruction">"Utilisez votre compte Google pour sauvegarder vos applications, vos paramètres (tels que les signets et les mots de passe Wi-Fi), ainsi que d'autres données. Si vous avez déjà sauvegardé le contenu de votre compte, vous pouvez le restaurer maintenant vers ce téléphone."</string>
+    <string name="backup_restore_setting">Vous pouvez modifier vos paramètres de sauvegarde à tout moment dans Paramètres de confidentialité.</string>
+    <string name="restore_title">"Restaurer à partir d'un compte Google"</string>
+    <string name="backup_title">Sauvegarder avec un compte Google</string>
+</resources>

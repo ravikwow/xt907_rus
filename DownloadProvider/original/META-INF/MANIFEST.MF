@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: iiU9EjM/Ti7e8lgmLATbFFegk3M=
+
+Name: resources.arsc
+SHA1-Digest: PimPQosuio2q1/I8kbaVwDsWJE0=
+

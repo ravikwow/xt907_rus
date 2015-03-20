@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ListItem">
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">?android:listPreferredItemHeight</item>
+    </style>
+    <style name="ListItemCol">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="ListItemCol.Photo" parent="@style/ListItemCol">
+        <item name="android:layout_width">@dimen/listitem_contact_photo_size</item>
+        <item name="android:layout_height">@dimen/listitem_contact_photo_size</item>
+        <item name="android:layout_marginRight">@dimen/listitem_contact_photo_right_margin</item>
+    </style>
+    <style name="ListItemCol2">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="ListItemIcon">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ListItemText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ListItemTextMedium">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BadgeTxt">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="BadgeTxt.Secondary" parent="@style/BadgeTxt">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+    </style>
+    <style name="MsgItemImage">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingBottom">7.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TxtMsgItem">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TxtDateTimeStamp">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ContactList">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ContactList.Name" parent="@style/ContactList">
+        <item name="android:textSize">@dimen/contact_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+    <style name="ContactList.Address" parent="@style/ContactList">
+        <item name="android:textSize">@dimen/contact_address</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+    <style name="AddressingWidgetDropDown">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">20.0sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AddressingWidgetDropDown.Contact" parent="@style/AddressingWidgetDropDown">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AddressingWidgetDropDown.Info" parent="@style/AddressingWidgetDropDown">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AddressingWidgetDropDown.Address" parent="@style/AddressingWidgetDropDown">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="AddressTxtError">
+        <item name="android:textColor">#ffcf0000</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance" />
+    <style name="TextAppearance.EditEvent_Label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.EditEvent_MoreLabel" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Spinner" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextAppearance.EditEvent_SpinnerButton" parent="@style/TextAppearance.EditEvent_Spinner">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+    </style>
+    <style name="TextAppearance_ViewEvent_TitleNormal">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance_ViewEvent_TitleCompleted">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance_ViewEvent_TitleOverdue">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance_ViewEvent_ItemLabel">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ViewEvent_Item">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextAppearance_TaskList_Header">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TextAppearance_TaskList_Header_Small" parent="@style/TextAppearance_TaskList_Header">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="Background_ViewEvent_Title">
+        <item name="android:background">#ffc1e0fe</item>
+    </style>
+    <style name="TextAppearance.TagDialog_item" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_TitleNormal">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_TitleCompleted">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_TitleOverdue">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_DateOverdue">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_DateDueDate">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ListItem_Description">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance_ListItem_Details">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_ViewByTagTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/view_by_tag_header</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TasksTheme.Normal" parent="@android:style/Theme.Holo" />
+    <style name="TasksTheme.ActiveNoTitle" parent="@style/TasksTheme.Normal">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="TasksTheme.EditEventActivity" parent="@style/TasksTheme.Normal">
+        <item name="android:startYear">1970</item>
+        <item name="android:endYear">2036</item>
+    </style>
+    <style name="Divider_ViewEvent">
+        <item name="android:background">?android:dividerHorizontal</item>
+    </style>
+    <style name="Divider_EditEvent">
+        <item name="android:background">?android:dividerHorizontal</item>
+    </style>
+    <style name="textxsmall">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+    <style name="textxsmall.Bold" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance_FolderTagListItem_OverdueCount">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffaa0000</item>
+    </style>
+    <style name="TextAppearance_FolderTagAllButton_TotalCount">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TextAppearance_FolderTagAllButton_OverdueCount">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffaa0000</item>
+    </style>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="NotificationSecondaryText">
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="NotificationSubjectText">
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="ActionBar.Dark" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:backgroundSplit">@android:color/black</item>
+    </style>
+    <style name="Theme.DarkActionBar" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ActionBar.Dark</item>
+    </style>
+</resources>

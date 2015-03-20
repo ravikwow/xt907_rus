@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/ic_download_misc_file_type.png
+SHA1-Digest: jm92gUIOWzG8qTWpXMbSI9JDhCw=
+
+Name: res/menu/download_menu.xml
+SHA1-Digest: ONRR7qVrYtF+ycDzwa/7uHEXWC4=
+
+Name: res/anim/footer_disappear.xml
+SHA1-Digest: g7dE4vQdkzEGmr0FGNTAJR551E4=
+
+Name: res/layout/list_group_header.xml
+SHA1-Digest: cgKyeL8mjGXNOCdOqlMEULLy3js=
+
+Name: res/layout/download_list.xml
+SHA1-Digest: ppZSs1fwGsViM17Y3Bk6KDsyd34=
+
+Name: res/mipmap-hdpi/ic_launcher_download.png
+SHA1-Digest: DaRAHQMlNqfwcnODlwTS+YWjJ+w=
+
+Name: res/mipmap-xhdpi/ic_launcher_download.png
+SHA1-Digest: FbhnkFGWlUz+IJ3bnz3U02bia8s=
+
+Name: resources.arsc
+SHA1-Digest: HWOrNcqw//P6JIWUcijU0+uHhwc=
+
+Name: res/layout/download_list_item.xml
+SHA1-Digest: ryVSxMifPFBdpBTQOI96/I2/3ZQ=
+
+Name: res/drawable-hdpi/ic_launcher_drm_file.png
+SHA1-Digest: MTxAx80q9yPrIWUssjK1lc4U2so=
+
+Name: res/drawable-hdpi/ic_menu_desk_clock.png
+SHA1-Digest: m8+C711ujZd1oiM3rXFYWPbqq6M=
+
+Name: AndroidManifest.xml
+SHA1-Digest: PRv+D2FOkGKO9OoyZNIXIc8JxKQ=
+
+Name: res/mipmap-mdpi/ic_launcher_download.png
+SHA1-Digest: 3VpW8r1vmeBGPQ2IwPUhNV7H7kw=
+
+Name: res/anim/footer_appear.xml
+SHA1-Digest: oOkuG3Cdnv/SV9UbmIc2pTLOUpc=
+

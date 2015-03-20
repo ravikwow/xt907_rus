@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="integer" name="mms_maximum_message_size" value="0" />
+    <setting type="boolean" name="GenerateUserAgent" value="false" />
+    <setting type="string" name="MmsUserAgentFormat" value="" />
+    <setting type="string" name="mms_user_agent" value="" />
+    <setting type="string" name="MmsUaprofFormat" value="$product" />
+    <setting type="string" name="mms_x_wap_profile_url" value="" />
+    <setting type="string" name="sms_pref_key_email_gateway_num" value="" />
+    <setting type="integer" name="mms_max_image_height" value="0" />
+    <setting type="integer" name="mms_max_image_width" value="0" />
+    <setting type="integer" name="ConnectivityWaitTimeout" value="45000" />
+    <setting type="integer" name="InServiceWaitTimeout" value="20000" />
+    <setting type="integer" name="MmsAbortProgressLimit" value="90" />
+    <setting type="integer" name="MmsConnectionTimeout" value="30000" />
+    <setting type="integer" name="MmsMaxPictureSizeForRetry" value="0" />
+    <setting type="integer" name="MmsNoResponseTimeout" value="120000" />
+    <setting type="integer" name="MmsNoProgressTimeout" value="180000" />
+    <setting type="integer" name="mms_retry_timeout1" value="60000" />
+    <setting type="integer" name="mms_retry_timeout2" value="300000" />
+    <setting type="integer" name="mms_retry_timeout3" value="600000" />
+    <setting type="integer" name="mms_retry_timeout4" value="1800000" />
+    <setting type="integer" name="MmsTransferTimeout" value="240000" />
+    <setting type="integer" name="MmsTransferTimeoutForVoiceCall" value="0" />
+    <setting type="string" name="mms_country_code" value="1" />
+    <setting type="boolean" name="mms_non_ascii_file_name_support" value="false" />
+    <setting type="string" name="mms_online_album" value="" />
+    <setting type="boolean" name="SmsMmsEnableAlias" value="false" />
+    <setting type="boolean" name="sms_mms_show_network_timestamp" value="false" />
+    <setting type="integer" name="sms_mms_threshold" value="6" />
+    <setting type="boolean" name="sms_pref_key_to_email" value="false" />
+    <setting type="boolean" name="CallbackNumEnable" value="false" />
+    <setting type="boolean" name="CallbackNumDefaultPref" value="true" />
+    <setting type="boolean" name="CopyMessageToSimEnabled" value="false" />
+    <setting type="boolean" name="ContactPickerEnabled" value="false" />
+    <setting type="boolean" name="DeliveryReportEnable" value="true" />
+    <setting type="boolean" name="EmailGatewayFromSimCard" value="false" />
+    <setting type="boolean" name="ErrorCodesEnable" value="false" />
+    <setting type="boolean" name="ExtraAddressCharactersEnabled" value="false" />
+    <setting type="boolean" name="GroupRequiresMmsByDefault" value="true" />
+    <setting type="boolean" name="HistoryForSuggestionsEnabled" value="false" />
+    <setting type="string" name="ProprietaryHttpHeader" value="" />
+    <setting type="boolean" name="IsLocationVCardMandatory" value="false" />
+    <setting type="boolean" name="LocationVcardWarningEnabled" value="false" />
+    <setting type="boolean" name="MmsAdjustImageOrientation" value="true" />
+    <setting type="boolean" name="MmsDisableRetryAfterServerTimeout" value="false" />
+    <setting type="boolean" name="MmsNotifyServerError" value="false" />
+    <setting type="integer" name="MaxNumRecipients" value="0" />
+    <setting type="boolean" name="MaxNumRecipientsEnable" value="false" />
+    <setting type="string" name="MmsDefaultApnName" value="" />
+    <setting type="string" name="MmsMaxVideoResolution" value="QVGA" />
+    <setting type="string" name="MmsAcceptHeader" value="*/*, application/vnd.wap.mms-message, application/vnd.wap.sic" />
+    <setting type="boolean" name="MmsCommonVideoResolutionsOnlyEnabled" value="false" />
+    <setting type="boolean" name="MmsContentDispositionSupport" value="true" />
+    <setting type="boolean" name="MmsConvertIcalToVcalEnabled" value="false" />
+    <setting type="boolean" name="MmsEncodingUTF8" value="false" />
+    <setting type="integer" name="MmsFromFormat" value="0" />
+    <setting type="integer" name="MmsMaxVideoRecordingSeconds" value="0" />
+    <setting type="integer" name="MmsMicrocellMessageSize" value="0" />
+    <setting type="boolean" name="MmsMicrocellPictureResizeEnabled" value="false" />
+    <setting type="string" name="MmsMicrocellOperatorName" value="" />
+    <setting type="string" name="MmsMimeTypeBlackList" value="" />
+    <setting type="integer" name="MmsMinNumOfMediasOnSlideshow" value="3" />
+    <setting type="boolean" name="MmsNumberPlusPrefixEnabled" value="false" />
+    <setting type="boolean" name="MmsOnlineAlbumEnabled" value="false" />
+    <setting type="boolean" name="MmsRestrictionModeEnabled" value="false" />
+    <setting type="integer" name="MmsRMMaximumMessageSize" value="307200" />
+    <setting type="integer" name="MmsRMMaxImageWidth" value="1600" />
+    <setting type="integer" name="MmsRMMaxImageHeight" value="1200" />
+    <setting type="integer" name="MmsSlideshowMaxImageWidth" value="1024" />
+    <setting type="integer" name="MmsSlideshowMaxImageHeight" value="728" />
+    <setting type="boolean" name="MmsSubjectEnable" value="true" />
+    <setting type="integer" name="MmsSubjectSizeLimit" value="40" />
+    <setting type="string" name="MmsVersion" value="mms_version_1_2" />
+    <setting type="boolean" name="MmsVideoResizeEnabled" value="true" />
+    <setting type="boolean" name="MmsVZWIPv6Enabled" value="false" />
+    <setting type="boolean" name="MmsUseCCForRecipients" value="false" />
+    <setting type="boolean" name="MsgDetailsEnable" value="true" />
+    <setting type="boolean" name="MTMemoryFullEnable" value="false" />
+    <setting type="boolean" name="NotifyWapMmscEnable" value="false" />
+    <setting type="boolean" name="PlayAudioAsSlideshow" value="false" />
+    <setting type="boolean" name="PriorityEnable" value="false" />
+    <setting type="boolean" name="SecondaryMmscSupport" value="false" />
+    <setting type="boolean" name="ShortCodeDetectionEnabled" value="false" />
+    <setting type="boolean" name="SignatureEnable" value="false" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="30" />
+    <setting type="boolean" name="SmsEmailConvertToMmsOnMultipleSegmentsEnabled" value="true" />
+    <setting type="boolean" name="SmsEmailConvertToMmsOnNon7BitEncodingEnabled" value="true" />
+    <setting type="boolean" name="SmsMmsEmotIconInKeypadEnabled" value="false" />
+    <setting type="boolean" name="SmsMmsSortByUnreadConversations" value="false" />
+    <setting type="boolean" name="SmsOneRRCConnection" value="false" />
+    <setting type="boolean" name="SmsToMmsAutoConvert" value="true" />
+    <setting type="boolean" name="SmsToMmsConvertEnabled" value="true" />
+    <setting type="integer" name="SMSUCS2CharacterLimit" value="0" />
+    <setting type="boolean" name="TransIdEnable" value="false" />
+    <setting type="string" name="UaprofTagName" value="x-wap-profile" />
+    <setting type="boolean" name="WapRejectEnable" value="false" />
+    <setting type="boolean" name="GroupMessageTypeEnabled" value="true" />
+    <setting type="boolean" name="SendBlankSmsEnabled" value="false" />
+    <setting type="boolean" name="ShowMessageGroupTypeWarningAvailable" value="false" />
+    <setting type="boolean" name="ForceCanonicalAddressUpdate" value="false" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="false" />
+    <setting type="boolean" name="RoamingAutoRetrieveEnabled" value="false" />
+    <setting type="boolean" name="AutoRetrievalDefaultPref" value="true" />
+    <setting type="boolean" name="RetrievalRoamingDefaultPref" value="false" />
+    <setting type="boolean" name="VibrateDefaultPref" value="true" />
+    <setting type="integer" name="OutgoingMessageTypeDefaultPref" value="0" />
+    <setting type="integer" name="DefaultEncodingMethod" value="0" />
+    <setting type="string" name="encoding_spaESP" value="0, true, true, true, false" />
+    <setting type="string" name="encoding_porPRT" value="0, true, true, true, true" />
+    <setting type="string" name="encoding_turTUR" value="2, false, false, true, true" />
+    <setting type="string" name="encoding_polPOL" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_hunHUN" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_cesCZE" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_slkSVK" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_hrvHRV" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_srpBIH" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_ellGRC" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_ronROU" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_bulBGR" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_fraFRA" value="0, true, true, false, false" />
+    <setting type="string" name="encoding_sweSWE" value="0, true, false, false, false" />
+    <setting type="string" name="encoding_nobNOR" value="0, true, false, false, false" />
+    <setting type="string" name="encoding_danDNK" value="0, true, false, false, false" />
+    <setting type="string" name="encoding_finFIN" value="0, true, false, false, false" />
+    <setting type="string" name="encoding_engUSA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_fraCAN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_itaITA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_deuDEU" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_spaUSA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_porBRA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_nldNLD" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_korKOR" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_zhoTWN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_jpnJPN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_hebISR" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_araEGY" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_catESP" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_slvSVN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_srpSRB" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_thaTHA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_ukrUKR" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_rusRUS" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_litLTU" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_lavLVA" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_engCAN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_zhoCHN" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_vieVNM" value="1, true, true, false, false" />
+    <setting type="string" name="encoding_default" value="1, true, true, false, false" />
+</settings>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/phone_link_menu" android:visible="false">
+        <item android:id="@id/dial_id" android:title="@string/read_message_contextmenu_dial_dot" />
+        <item android:id="@id/send_message_to_phone_id" android:title="@string/read_message_contextmenu_text" />
+        <item android:id="@id/copy_phone_id" android:title="@string/read_message_contextmenu_copy_phone_number" />
+        <item android:id="@id/share_phone_id" android:title="@string/read_message_contextmenu_share_phone" />
+        <item android:id="@id/add_phone_to_contact_id" android:title="@string/add_contact_menu_item" />
+    </group>
+    <group android:id="@id/email_link_menu" android:visible="false">
+        <item android:id="@id/send_email_id" android:title="@string/read_message_contextmenu_send_mail" />
+        <item android:id="@id/send_message_to_email_id" android:title="@string/read_message_contextmenu_text" />
+        <item android:id="@id/copy_email_id" android:title="@string/read_message_contextmenu_copy_email" />
+        <item android:id="@id/share_email_id" android:title="@string/read_message_contextmenu_share_email" />
+        <item android:id="@id/add_email_to_contact_id" android:title="@string/add_contact_menu_item" />
+    </group>
+    <group android:id="@id/geo_link_menu" android:visible="false">
+        <item android:id="@id/open_map_id" android:title="@string/read_message_contextmenu_map" />
+        <item android:id="@id/copy_geo_id" android:title="@string/read_message_contextmenu_copy" />
+        <item android:id="@id/add_geo_to_contact_id" android:title="@string/add_contact_menu_item" />
+    </group>
+    <group android:id="@id/link_menu" android:visible="false">
+        <item android:id="@id/open_link_id" android:title="@string/read_message_contextmenu_openlink" />
+        <item android:id="@id/share_link_id" android:title="@string/read_message_contextmenu_sharelink" />
+        <item android:id="@id/copy_link_id" android:title="@string/read_message_contextmenu_copylink" />
+    </group>
+</menu>

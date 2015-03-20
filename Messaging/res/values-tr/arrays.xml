@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Hatalı sonuç döndürüldü</item>
+        <item>Kaydetme başarılı</item>
+        <item>Geçersiz parametreler</item>
+        <item>Hedef dosya zaten mevcut</item>
+        <item>Kaynak dosya mevcut değil</item>
+        <item>Dosya boyutu sınırlaması çok küçük</item>
+        <item>Geçersiz dosya veya desteklenmeyen biçim</item>
+        <item>Sistem pili ciddi düzeyde düşük</item>
+        <item>Sistem hafızası ciddi düzeyde düşük</item>
+        <item>Açılamadı: Nedeni bilinmiyor</item>
+        <item>Kaydedilemedi: Bilinmeyen G/Ç hatası</item>
+        <item>Kaydedilemedi: Yol oluşturulamadı</item>
+        <item>Kaydedilemedi: Dosya oluşturulamadı</item>
+        <item>Kaydedilemedi: Depolama alanı ciddi düzeyde düşük</item>
+        <item>Kaydetme iptal edildi</item>
+        <item>Açılamadı: Desteklenmeyen ekran boyutu</item>
+        <item>Kaynak dosya değiştirildi</item>
+        <item>SD kart çıkarıldı</item>
+        <item>Bu videoyu mesajınıza ekleyemezsiniz.</item>
+    </string-array>
+</resources>

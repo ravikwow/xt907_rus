@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Ekler kaydedildi</item>
+        <item quantity="one">Ek kaydedildi</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"SD kart bulunmadığından ekler kaydedilemez.
+
+Lütfen SD kartı tekrar takın."</item>
+        <item quantity="one">"SD kart bulunmadığından ek kaydedilemez.
+
+Lütfen SD kartı tekrar takın."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Ekleri kaydetmek için yeterli hafıza yok.</item>
+        <item quantity="one">Eki kaydetmek için yeterli hafıza yok.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Bir ya da daha fazla ek kaydedilemedi.</item>
+        <item quantity="one">Ek kaydedilemedi.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d mesaj silinecek.</item>
+        <item quantity="one">1 mesaj silinecek.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d mesaj korunacak.</item>
+        <item quantity="one">1 mesaj korunacak.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d mesajın koruması kaldırıldı.</item>
+        <item quantity="one">1 mesajın koruması kaldırıldı.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Görev hatırlatıcılarınız var</item>
+        <item quantity="one">Bir görev hatırlatıcınız var</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d hatırlatıcı)</item>
+        <item quantity="one">Tamamlanacak 1 görev var</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d görev bulundu</item>
+        <item quantity="zero">%d görev bulundu</item>
+        <item quantity="one">%d görev bulundu</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Gecikmiş</item>
+        <item quantity="one">Gecikmiş</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Görevler tamamlandıktan sonra %1$d günde bir</item>
+        <item quantity="one">Görevler tamamlandıktan sonra her gün</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Görevler tamamlandıktan sonra %1$d haftada bir</item>
+        <item quantity="one">Görevler tamamlandıktan sonra her hafta</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Görevler tamamlandıktan sonra %1$d ayda bir</item>
+        <item quantity="one">Görevler tamamlandıktan sonra her ay</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Görevler tamamlandıktan sonra %1$d yılda bir</item>
+        <item quantity="one">Görevler tamamlandıktan sonra her yıl</item>
+    </plurals>
+</resources>

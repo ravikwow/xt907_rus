@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers android:title="@string/privacy_policy_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <header android:title="@string/privacy_policy_summary" android:key="HeadTitle" />
+    <header android:title="@string/privacy_profiles_title" android:key="PrivacyProfiles" android:summary="@string/privacy_profiles_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_PRIVACY_POLICIES" />
+    </header>
+    <header android:title="@string/location_services_title" android:key="LocationServices" android:summary="@string/location_services_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="Location" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/location_services_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/location_services_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/collection_use_title" android:key="CollectionAndUse" android:summary="@string/collection_use_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="CollectionAndUse" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/collection_use_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/collection_use_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/tracking_ads_title" android:key="TrackingAndAds" android:summary="@string/tracking_ads_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="TrackingAndAds" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/tracking_ads_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/tracking_ads_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/security_title" android:key="Security" android:summary="@string/security_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="Security" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/security_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/security_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/contact_motorola_title" android:key="ContactMotorola" android:summary="@string/contact_motorola_summary">
+        <extra android:name="someKey" android:value="somePrefValue" />
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="ContactMotorola" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/contact_motorola_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/contact_motorola_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/full_privacy_title" android:key="FullPrivacy" android:summary="@string/full_privacy_summary">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="FullPrivacy" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/full_privacy_title" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/full_privacy_content_default" />
+        </intent>
+    </header>
+    <header android:title="@string/terms_and_conditions" android:key="FullTerms">
+        <intent android:action="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER">
+            <extra android:name="type" android:value="TosType" />
+            <extra android:name="android.intent.extra.TITLE" android:value="@string/terms_and_conditions" />
+            <extra android:name="android.intent.extra.TEXT" android:value="@string/terms_of_service_text" />
+        </intent>
+    </header>
+</preference-headers>

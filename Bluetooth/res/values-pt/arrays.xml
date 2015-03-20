@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Uma página por lado</item>
+        <item>Duas páginas por lado</item>
+        <item>Quatro páginas por lado</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Retrato</item>
+        <item>Paisagem</item>
+        <item>Reverter paisagem</item>
+        <item>Reverter retrato</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>retrato</item>
+        <item>paisagem</item>
+        <item>paisagem reversa</item>
+        <item>retrato reverso</item>
+    </string-array>
+    <string-array name="sides">
+        <item>De um lado</item>
+        <item>De dois lados com borda larga</item>
+        <item>De dois lados com borda estreita</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>De um lado</item>
+        <item>De dois lados com borda larga</item>
+        <item>De dois lados com borda estreita</item>
+    </string-array>
+</resources>

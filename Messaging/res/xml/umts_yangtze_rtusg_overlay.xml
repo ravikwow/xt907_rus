@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.motorola.com/phoneconfig/xt886/Profile/xt886_gsmna.rdf" />
+</settings>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: AndroidManifest.xml
+SHA1-Digest: DFnNqnIDURET5E+5E6+JKjrzqIU=
+
+Name: res/drawable-hdpi/ic_launcher_settings.png
+SHA1-Digest: 8Mv/cEMltBs6aQL5guY+e860ni0=
+
+Name: res/xml/bookmarks.xml
+SHA1-Digest: fnRtODLqCkOg9B0OaCD8ROZL5Sk=
+
+Name: resources.arsc
+SHA1-Digest: hm0kBJaANT6u2O8MtWFi5KnHRuQ=
+

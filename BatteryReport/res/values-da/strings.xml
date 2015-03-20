@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nedkølingstilstand</string>
+    <string name="batt_temp_cooldown_title">Nedkølingstilstand</string>
+    <string name="batt_temp_cooldown_msg">Telefonen er nu i nedkølingstilstand. Kun nødopkald.</string>
+    <string name="lockscreen_emergency_call">Nødopkald</string>
+</resources>

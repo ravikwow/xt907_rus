@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.contacts.genie.TransparentGenieCling android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.motorola.contacts.genie.TransparentGenieCling android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.motorola.contacts.genie.TransparentGenieCling android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.motorola.contacts.genie.GenieCling android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+                <TextView android:background="@drawable/bubble_up_ctr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/genie_call_a_contact_tap_message" style="@style/GMClingText" />
+            </com.motorola.contacts.genie.GenieCling>
+        </com.motorola.contacts.genie.TransparentGenieCling>
+        <com.motorola.contacts.genie.GenieCling android:gravity="left" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+    </com.motorola.contacts.genie.TransparentGenieCling>
+</com.motorola.contacts.genie.TransparentGenieCling>

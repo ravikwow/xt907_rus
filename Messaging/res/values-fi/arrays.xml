@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Virheellinen tulos palautettu</item>
+        <item>Tallennus onnistui</item>
+        <item>Virheelliset parametrit</item>
+        <item>Kohdetiedosto on jo olemassa</item>
+        <item>Lähdetiedostoa ei ole olemassa</item>
+        <item>Tiedoston kokorajoitus on liian pieni</item>
+        <item>Virheellinen tiedosto tai muotoa ei tueta</item>
+        <item>Järjestelmän akun varaus on erittäin alhainen</item>
+        <item>Järjestelmän muisti on erittäin alhainen</item>
+        <item>Käynnistys epäonnistui: tuntemattomat syyt</item>
+        <item>Tallennus epäonnistui: tuntematon I/O-virhe</item>
+        <item>Tallennus epäonnistui: polkua ei voi luoda</item>
+        <item>Tallennus epäonnistui: tiedostoa ei voi luoda</item>
+        <item>Tallennus epäonnistui: tallennustila on erittäin alhainen</item>
+        <item>Tallennus peruutettu</item>
+        <item>Käynnistys epäonnistui: näytön kokoa ei tueta</item>
+        <item>Lähdetiedosto muokattu</item>
+        <item>SD-kortti poistettu</item>
+        <item>Et voi lisätä videota viestiisi.</item>
+    </string-array>
+</resources>

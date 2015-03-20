@@ -1,0 +1,40 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: dJyn7qI97/LZPirXx3UOH8Zj1Wc=
+
+Name: res/drawable-hdpi/idle_led.png
+SHA1-Digest: bsUcNEJ32Kukvnwgv5q/AuyLx4E=
+
+Name: AndroidManifest.xml
+SHA1-Digest: WdYLTqGP845jAm3EqltjnA+1kvY=
+
+Name: res/drawable-hdpi/recording_led.png
+SHA1-Digest: HznvveGjUiIQlGBCLrfG7Wy3o+c=
+
+Name: res/drawable-hdpi/gradient_bg.png
+SHA1-Digest: 8LP33zyhJWhYlSwLKwbzQg+C9mw=
+
+Name: res/layout-port/main.xml
+SHA1-Digest: K2Bs7CO59ftEa3AVME5o8WcB27o=
+
+Name: res/drawable-hdpi/record.png
+SHA1-Digest: /A/LLmJ9mRN8xygxj4K41L9OM8k=
+
+Name: res/drawable-hdpi/vumeter.png
+SHA1-Digest: 2hB3iFR/DkLCSpalqfVQvlSl4kE=
+
+Name: res/layout-land/main.xml
+SHA1-Digest: 3YlrpQlNnTH2XET8zOp2mlUaMak=
+
+Name: resources.arsc
+SHA1-Digest: DCN+JyDOBxNH7+96tkhF1sO8ssc=
+
+Name: res/drawable-hdpi/ic_launcher_soundrecorder.png
+SHA1-Digest: 3zW7oRg14/QqXUHSddaJFlY3NH8=
+
+Name: res/drawable-hdpi/play.png
+SHA1-Digest: cgWXkAZ5wlEzE6mwgqg4J5CGEBA=
+
+Name: res/drawable-hdpi/stop.png
+SHA1-Digest: 7NNB/sZkuxN5wnil8GTgGUHq3WE=
+

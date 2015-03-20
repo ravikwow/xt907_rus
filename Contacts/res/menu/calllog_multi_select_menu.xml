@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_ab_trash" android:id="@id/delete" android:title="@string/delete" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_text_holo_dark" android:id="@id/message" android:visible="false" android:title="@string/message" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_add_contact" android:id="@id/add" android:visible="false" android:title="@string/addtocontact" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_see_contacts" android:id="@id/view" android:visible="false" android:title="@string/viewcontact" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_dialpad" android:id="@id/edit" android:visible="false" android:title="@string/editbeforecall" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_ab_call" android:id="@id/call" android:visible="false" android:title="@string/callvoicemail" android:showAsAction="ifRoom" />
+    <item android:id="@id/add_speeddial" android:visible="false" android:title="@string/menu_addToSpeedDial" android:showAsAction="never" />
+    <item android:id="@id/delete_speeddial" android:visible="false" android:title="@string/menu_deleteFromSpeedDial" android:showAsAction="never" />
+    <item android:id="@id/task" android:visible="false" android:title="@string/addtotask" android:showAsAction="never" />
+</menu>

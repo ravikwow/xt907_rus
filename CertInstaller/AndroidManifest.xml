@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.certinstaller">
+    <original-package android:name="com.android.certinstaller"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+    <application android:allowBackup="false" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".CertInstallerMain" android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.credentials.INSTALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/x-x509-ca-cert"/>
+                <data android:mimeType="application/x-x509-user-cert"/>
+                <data android:mimeType="application/x-pkcs12"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".CertInstaller" android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter> //BEGIN Motorola,fdvt36,2011/11/28,IKENTPR-472 /Porting EDM feature
+<intent-filter>
+                <action android:name="com.motorola.intent.action.INSTALL_CERTIFICATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter> //End IKENTPR-472
+</activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".CertFileList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

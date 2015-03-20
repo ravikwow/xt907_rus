@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Τα συνημμένα αποθηκεύτηκαν</item>
+        <item quantity="one">Το συνημμένο αποθηκεύτηκε</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Δεν είναι δυνατή η αποθήκευση των συνημμένων. Λείπει η κάρτα SD.
+
+Επανεισαγάγετε την κάρτα SD."</item>
+        <item quantity="one">"Δεν είναι δυνατή η αποθήκευση του συνημμένου. Λείπει η κάρτα SD.
+
+Επανεισαγάγετε την κάρτα SD."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Η μνήμη δεν επαρκεί για την αποθήκευση των συνημμένων.</item>
+        <item quantity="one">Η μνήμη δεν επαρκεί για την αποθήκευση του συνημμένου.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Απέτυχε η αποθήκευση ενός ή περισσότερων συνημμένων.</item>
+        <item quantity="one">Η αποθήκευση του συνημμένου απέτυχε.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d μηνύματα θα διαγραφούν.</item>
+        <item quantity="one">1 μήνυμα θα διαγραφεί.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d μηνύματα προστατεύονται.</item>
+        <item quantity="one">1 μήνυμα προστατεύεται.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d μηνύματα δεν προστατεύονται.</item>
+        <item quantity="one">1 μήνυμα δεν προστατεύεται.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Έχετε υπενθυμίσεις εργασιών</item>
+        <item quantity="one">Έχετε μία υπενθύμιση εργασίας</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d υπενθυμίσεις)</item>
+        <item quantity="one">1 εκκρεμής εργασία</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">Βρέθηκαν %d εργασίες</item>
+        <item quantity="zero">Βρέθηκαν %d εργασίες</item>
+        <item quantity="one">Βρέθηκε %d εργασία</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Εκπρόθεσμες</item>
+        <item quantity="one">Εκπρόθεσμες</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Κάθε %1$d ημέρες μετά την ολοκλήρωση κάθε εργασίας</item>
+        <item quantity="one">Κάθε μέρα μετά την ολοκλ. κάθε εργ.</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Κάθε %1$d εβδομάδες μετά την ολοκλήρωση κάθε εργασίας</item>
+        <item quantity="one">Εβδομαδιαία μετά την ολοκλ. κάθε εργ.</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Κάθε %1$d μήνες μετά την ολοκλήρωση κάθε εργασίας</item>
+        <item quantity="one">Μηνιαία μετά την ολοκλ. κάθε εργ.</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Κάθε %1$d έτη μετά την ολοκλήρωση κάθε εργασίας</item>
+        <item quantity="one">Ετήσια μετά την ολοκλ. κάθε εργ.</item>
+    </plurals>
+</resources>

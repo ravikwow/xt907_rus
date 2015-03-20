@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="show_splash_screen">false</bool>
+    <bool name="show_goole_setup">true</bool>
+    <bool name="location_consent_checked">false</bool>
+    <bool name="display_learn_more_link">true</bool>
+    <bool name="explicit_tos_acceptance_required">false</bool>
+    <bool name="show_tos_acceptance_during_setup">false</bool>
+    <bool name="setup_thread_priority_high">true</bool>
+    <bool name="cpu_idle_wait_enabled">true</bool>
+</resources>

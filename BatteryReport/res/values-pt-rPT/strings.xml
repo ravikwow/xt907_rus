@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modo de arrefecimento</string>
+    <string name="batt_temp_cooldown_title">Modo de arrefecimento</string>
+    <string name="batt_temp_cooldown_msg">O telefone está em modo de arrefecimento. Só chamadas de emergência.</string>
+    <string name="lockscreen_emergency_call">Chamada de emergência</string>
+</resources>

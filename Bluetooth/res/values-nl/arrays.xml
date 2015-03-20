@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Eén pagina per zijde</item>
+        <item>"Twee pagina's per zijde"</item>
+        <item>"Vier pagina's per zijde"</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Staand</item>
+        <item>Liggend</item>
+        <item>Liggend gedraaid</item>
+        <item>Staand gedraaid</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>staand</item>
+        <item>liggend</item>
+        <item>liggend gedraaid</item>
+        <item>staand gedraaid</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Enkelzijdig</item>
+        <item>Tweezijdig, staand</item>
+        <item>Tweezijdig, liggend</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>enkelzijdig</item>
+        <item>tweezijdig staand</item>
+        <item>tweezijdig liggend</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Onjuist resultaat geretourneerd</item>
+        <item>Opgeslagen</item>
+        <item>Ongeldige parameters</item>
+        <item>Doelbestand bestaat al</item>
+        <item>Bronbestand bestaat niet</item>
+        <item>Limiet bestandsgrootte is te gering</item>
+        <item>Ongeldig bestand of niet-ondersteunde bestandsindeling</item>
+        <item>Niveau systeemaccu is kritiek</item>
+        <item>Niveau systeemgeheugen is kritiek</item>
+        <item>Starten mislukt: reden onbekend</item>
+        <item>Opslaan mislukt: onbekende I/O-fout</item>
+        <item>Opslaan mislukt: pad is niet gemaakt</item>
+        <item>Opslaan mislukt: bestand is niet gemaakt</item>
+        <item>Opslaan mislukt: niveau opslagruimte is kritiek</item>
+        <item>Opslaan geannuleerd</item>
+        <item>Starten mislukt: niet-ondersteund schermformaat</item>
+        <item>Bronbestand gewijzigd</item>
+        <item>SD-kaart verwijderd</item>
+        <item>U kunt deze video niet aan uw bericht toevoegen.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Én side per side</item>
+        <item>To sider per side</item>
+        <item>Fire sider per side</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Portrett</item>
+        <item>Landskap</item>
+        <item>Omvendt landskap</item>
+        <item>Omvendt portrett</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>portrett</item>
+        <item>landskap</item>
+        <item>omvendt landskap</item>
+        <item>omvendt portrett</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Ensidig</item>
+        <item>Tosidig, langside</item>
+        <item>Tosidig, kortside</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>ensidig</item>
+        <item>tosidig, langside</item>
+        <item>tosidig, kortside</item>
+    </string-array>
+</resources>

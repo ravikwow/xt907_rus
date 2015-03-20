@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">Apparaat voorbereiden</string>
+    <string name="cpu_idle_wait_msg">Een ogenblik geduld...</string>
+    <string name="splash_screen_text">Welkom bij Motorola</string>
+    <string name="please_choose_a_language">Selecteer uw taal:</string>
+    <string name="welcome_to_motoblur">Welkom bij MOTOBLUR</string>
+    <string name="next">Volgende</string>
+    <string name="back">Terug</string>
+    <string name="make_emergency_call_by_pressing_menu">Als u tijdens de instelling een alarmnummer wilt bellen, drukt u op de toets Menu.</string>
+    <string name="sign_up_or_login_main_text">U heeft een MOTOBLUR-account nodig om belangrijke services op de telefoon en de MOTOBLUR-internetportal te gebruiken.</string>
+    <string name="password_colon">Wachtwoord:</string>
+    <string name="forgot_password">Wachtwoord vergeten?</string>
+    <string name="forgot_password_title">Wachtwoord vergeten</string>
+    <string name="enter_password">Wachtwoord invoeren</string>
+    <string name="motoblur_terms_of_service">MOTOBLUR-servicevoorwaarden</string>
+    <string name="moto_service_review_the_above">"Door Ik ga akkoord te selecteren, gaat u akkoord met de softwarelicentieovereenkomst, servicevoorwaarden en privacyverklaring van Motorola.
+
+U moet akkoord gaan met deze voorwaarden om het apparaat te kunnen gebruiken."</string>
+    <string name="terms_and_conditions">Algemene voorwaarden Motorola</string>
+    <string name="sharing_additional_information">Extra informatie delen</string>
+    <string name="moto_service_agreement">Motorola-overeenkomst</string>
+    <string name="terms_of_service_check_caption">Ik ga akkoord met de </string>
+    <string name="downloading_terms">Voorwaarden downloaden…</string>
+    <string name="creating_your_blur_account">Uw MOTOBLUR-account wordt gemaakt</string>
+    <string name="generic_carrier_contact_text">Bel de klantenservice om uw wachtwoord te achterhalen.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">Niet-geverifieerd MOTOBLUR-account</string>
+    <string name="cancel">Annuleren</string>
+    <string name="signin">Aanmelden</string>
+    <string name="checking_for_updates">Controleren op updates…</string>
+    <string name="downloading_updates">"Update wordt gedownload.
+
+Een ogenblik geduld…"</string>
+    <string name="error_deleting_account">Fout bij verwijderen van account</string>
+    <string name="congrats_title_login">U bent aangemeld</string>
+    <string name="congrats_title">Gefeliciteerd</string>
+    <string name="congrats_text">"De installatie is voltooid. 
+
+Als u accounts heeft ingesteld, wordt uw inhoud (zoals uw contacten en e-mail) nu geïmporteerd. Dit kan tot 30 minuten duren, maar u kunt uw telefoon direct gaan gebruiken.
+
+Het verdient aanbeveling een beveiligingsvergrendeling in te stellen. Ga daarvoor naar Instellingen > Beveiliging en schermvergrendeling."</string>
+    <string name="setup_complete_title">Installatie voltooid</string>
+    <string name="setup_complete_text">"De pc en het apparaat zijn volledig geconfigureerd.
+
+U kunt uw telefoon gelijk gebruiken…"</string>
+    <string name="done">Gereed</string>
+    <string name="welcome_android">Welkom</string>
+    <string name="privacy_policy">Uw gebruik van deze telefoon is onderworpen aan de voorwaarden van het Motorola-privacybeleid.</string>
+    <string name="learn_more">Meer info</string>
+    <string name="emergency_call">Noodoproep</string>
+    <string name="create_later">Account later instellen</string>
+    <string name="email_colon">E-mailadres:</string>
+    <string name="location_consent_string">Google-locatie gebruiken</string>
+    <string name="location_consent_description">De locatieservice van Google voorziet apps van uw locatie (bij benadering) zonder gebruik te maken van GPS. U kunt deze functie uitschakelen in Instellingen onder Locatieservices.</string>
+    <string name="use_location_service">Sta de locatieservice van Google toe om anonieme locatiegegevens te verzamelen. Het verzamelen vindt plaats ongeacht of er actieve apps zijn.</string>
+    <string name="signup">Een nieuw account registreren</string>
+    <string name="login">Een bestaand account gebruiken</string>
+    <string name="password">Wachtwoord</string>
+    <string name="ok">OK</string>
+    <string name="email_address_error">"E-mailadres moet minimaal 6 tekens bevatten en mag bestaan uit letters, cijfers en liggende streepjes (_).
+"<i>Bijvoorbeeld: </i>"uwemail@domain.com
+"</string>
+    <string name="retrieving_password">Wachtwoord wordt opgehaald…</string>
+    <string name="error_creating_account_title">Fout bij maken van account</string>
+    <string name="unspecified_service_error">Er is een fout opgetreden bij het maken van uw account. Probeer het opnieuw.</string>
+    <string name="password_emailed">Er is een link voor het opnieuw instellen van uw wachtwoord naar uw e-mailadres verzonden</string>
+    <string name="contacts">Contacten</string>
+    <string name="calendar">Agenda</string>
+    <string name="none">Geen</string>
+    <string name="captcha_text">Verifieer uw aanmelding door de tekst in het onderstaande veld in te voeren</string>
+    <string name="set_up_apn">APN instellen</string>
+    <string name="set_up_cloud">Netwerk instellen</string>
+    <string name="set_up_wifi">Wi-Fi instellen</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">IMEI-nummer is %1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">IMEID-nummer is %1$s</string>
+    <string name="error_account_disabled">Het account is uitgeschakeld op de Blur-service</string>
+    <string name="error_account_not_found">Het account bestaat niet op de Blur-service</string>
+    <string name="error_already_exists">Het account bestaat al op de Blur-service. Kies een andere account-id.</string>
+    <string name="error_already_initialized">Er is al een account aan uw telefoon gekoppeld.</string>
+    <string name="error_connect_timeout">Er is een time-out opgetreden voor de verbinding. Probeer het opnieuw.</string>
+    <string name="error_try_again">Er is een fout opgetreden. Probeer het opnieuw.</string>
+    <string name="error_invalid_credentials">Uw gebruikersnaam of wachtwoord is onjuist. Controleer deze en probeer het opnieuw.</string>
+    <string name="error_invalid_params">Uw vermelding is ongeldig. Probeer het opnieuw.</string>
+    <string name="error_internal_server">Er is een interne serverfout opgetreden. Probeer het opnieuw.</string>
+    <string name="error_no_server_response">De server heeft niet gereageerd. Controleer of de service werkt en probeer het opnieuw.</string>
+    <string name="error_not_allowed">Uw aanvraag is afgewezen. Probeer het opnieuw.</string>
+    <string name="error_not_found">De aanvraag is niet gevonden.</string>
+    <string name="error_not_initialized">Voor de aanvraag waren gebruikersreferenties vereist, maar deze werden niet verstrekt in de aanvraag.</string>
+    <string name="error_password_mismatch">Ongeldig wachtwoord! Probeer het opnieuw.</string>
+    <string name="error_current_password_mismatch">Onjuist huidig wachtwoord. Probeer het opnieuw.</string>
+    <string name="error_radio_down">De radio van de telefoon kan geen verbinding maken met het netwerk. Controleer of de radio is ingeschakeld, ga naar een plek met een betere ontvangst en probeer het vervolgens opnieuw.</string>
+    <string name="error_service_busy">Kan geen verbinding maken. Probeer het later opnieuw.</string>
+    <string name="error_socket_timeout">Er is een time-out voor de aanvraag opgetreden bij het wachten op een reactie. Het account is mogelijk op onjuiste wijze gemaakt.</string>
+    <string name="error_too_many">U heeft vandaag te vaak geprobeerd uw wachtwoord opnieuw in te stellen. Probeer het later opnieuw.</string>
+    <string name="error_unauthorized">De Blur-service heeft aangegeven dat uw aanvraag ongeautoriseerd was. Controleer of de Blur-service werkt.</string>
+    <string name="error_wrong_device">Dit account wordt gebruikt door een ander apparaat. Dit apparaat moet worden gewist voordat dit account kan worden gebruikt.</string>
+    <string name="error_wrong_password">"Uw ID en/of wachtwoord is niet herkend. Verifieer en probeer het opnieuw. Als u uw wachtwoord bent vergeten, klikt u op de knop 'Wachtwoord vergeten' om een e-mailbericht met het wachtwoord te ontvangen."</string>
+    <string name="error_captcha_invalid">Voer de informatie opnieuw in.</string>
+    <string name="error_captcha_expired">De verificatie is verlopen. Probeer het opnieuw.</string>
+    <string name="error_ssl_error">Er is een probleem opgetreden met de klok op het apparaat. Neem contact op met de klantenservice.</string>
+    <string name="error_retreiving_information">Er is een fout opgetreden bij het ophalen van informatie.</string>
+    <string name="error_wifi_only">Apps voor sociale netwerken zijn ingesteld om alleen via Wi-Fi te synchroniseren.</string>
+    <string name="service_data_error">Er zijn fouten opgetreden bij het ophalen van gegevens van de Blur-service.</string>
+    <string name="retry">Opnieuw proberen</string>
+    <string name="terms_of_service_text">Internetgegevensverbinding vereist om voorwaarden weer te geven.</string>
+    <string name="data_analytics_text">Internetgegevensverbinding vereist om Data Analytics weer te geven.</string>
+    <string name="end_user_license_agreement_text">Tekst inhoud SOFTWARELICENTIEOVEREENKOMST</string>
+    <string name="bad_phone_format">"Uw telefoonnummers mag alleen cijfers, '-' of '+' bevatten"</string>
+    <string name="bad_password_format">Uw wachtwoord mag geen spaties bevatten.</string>
+    <string name="must_be_at_least">{0} moet ten minste {1} tekens lang zijn.</string>
+    <string name="start">Start</string>
+    <string name="finish">Voltooien</string>
+    <string name="set_up_cancel">Instellen overslaan</string>
+    <string name="waiting_for_connection">Controleren op gegevensverbinding</string>
+    <string name="setup_blur_device_title">Blur-apparaat instellen</string>
+    <string name="connection_failed_text">Verbinding mislukt</string>
+    <string name="no_network_connection">Geen netwerkverbinding</string>
+    <string name="service_error_text">Motorola-servicefout</string>
+    <string name="connection_chooser_select">"Selecteer een verbindingstype
+ om het instellen te voltooien"</string>
+    <string name="connection_chooser_type">Verbindingstype</string>
+    <string name="skip_setup_title">Instellen overslaan</string>
+    <string name="skip_setup_text">"Als u de installatie overslaat, zijn sommige functies van het apparaat niet beschikbaar.
+ 
+ U zult er door het apparaat aan worden herinnerd de installatie te voltooien wanneer er een gegevensverbinding beschikbaar is of wanneer u probeert gebruik te maken van een app waarvoor volledige installatie is vereist.
+ 
+ Selecteer Volgende om Toestemming voor locatie weer te geven. Vervolgens is de installatie voltooid en keert u terug naar het startscherm."</string>
+    <string name="blur_required">Sociaal account vereist</string>
+    <string name="setup">Instellen</string>
+    <string name="connection_retry">Opnieuw GSM proberen</string>
+    <string name="connection_skip">Nu overslaan</string>
+    <string name="connection_cell_retry_text">"Verbinding mislukt.
+ U heeft een gegevensverbinding nodig om de instelling te voltooien.
+
+ Klik op de knop \"Opnieuw\" als u wilt teruggaan naar netwerkdekking."</string>
+    <string name="sim_removed">SIM verwijderd</string>
+    <string name="simswap_signin_instruction">De SIM-kaart is onlangs verwijderd. Meld u aan bij uw account om uw identiteit te laten controleren.</string>
+    <string name="reset_phone">Telefoon opnieuw instellen</string>
+    <string name="sign_in">Aanmelden</string>
+    <string name="checking_progress_text">Controleren…</string>
+    <string name="error_need_email_and_password_to_signin">Meld u aan bij uw account om uw identiteit te controleren.</string>
+    <string name="delete_email_accounts_msg">Als een bestaand MOTOBLUR-account wordt geladen, worden alle e-mailaccounts van uw apparaat verwijderd en vervangen door de accounts die zijn opgeslagen in uw MOTOBLUR-profiel.</string>
+    <string name="delete_email_accounts_continue_btn">Doorgaan</string>
+    <string name="moto_required">Motorola-account vereist</string>
+    <string name="moto_required_info">"Systeemupdates is niet beschikbaar zonder een Motorola-serviceaccount.
+
+Wilt u nu een account instellen?"</string>
+    <string name="sn_required">Account voor sociaal netwerk vereist</string>
+    <string name="sn_required_info">"{0} is niet beschikbaar zonder account voor een sociaal netwerk.
+U kunt een nieuw account maken door op de knop Instellen te tikken."</string>
+    <string name="connection_failed_textinfo">"Als u de instelling wilt voltooien, heeft u een gegevensverbinding nodig.
+
+U heeft de volgende keuzemogelijkheden:"</string>
+    <string name="no_network_connection_textinfo">"Als u verder wilt gaan, heeft u een gegevensverbinding nodig.
+U heeft de volgende keuzemogelijkheden:
+"</string>
+    <string name="service_error_textinfo">Er is een interne serverfout opgetreden. Probeer het opnieuw.</string>
+    <string name="setup_wifi">Een Wi-Fi-verbinding instellen</string>
+    <string name="retry_cellular">Opnieuw proberen met de huidige verbinding</string>
+    <string name="skip_for_now">Instellen nu overslaan</string>
+    <string name="try_again_later">Probeer het later opnieuw</string>
+    <string name="account_creation_timeout_title">Dit duurt langer dan verwacht</string>
+    <string name="account_creation_timeout_content">We blijven het op de achtergrond proberen.</string>
+    <string name="communicating_with_server">"Communiceren met server.
+Een ogenblik geduld..."</string>
+    <string name="notification_title">Account instellen</string>
+    <string name="notification_text">Voer de captcha in</string>
+    <string name="blur_account_setup">Blur-account instellen</string>
+    <string name="restore_previous_device">Vorig apparaat herstellen?</string>
+    <string name="restore_details_string">"Wilt u contacten, instellingen en accounts van een vorig Motorola-apparaat herstellen?
+"</string>
+    <string name="enter_motorola_id">Voor het herstellen van inhoud is een MotoCast-id vereist.</string>
+    <string name="what_is_motoid">Wat is een MotoCast-id?</string>
+    <string name="yes_restore">Ja, herstellen</string>
+    <string name="no_restore">Nee, niet herstellen</string>
+    <string name="setup_title">Motorola-instellingen</string>
+    <string name="quick_upload">Snel uploaden</string>
+    <string name="quick_upload_pictures">"Snel uploaden voor foto's"</string>
+    <string name="quick_upload_videos">"Snel uploaden voor video's"</string>
+    <string name="uploading_pictures">"Foto's uploaden naar %1$s"</string>
+    <string name="uploading_videos">"Video's uploaden naar %1$s"</string>
+    <string name="uploading_pictures_and_videos">"Foto's en video's uploaden naar %1$s"</string>
+    <string name="quick_upload_pics_not_setup_text">Het standaardaccount om snel afbeeldingen te uploaden is niet ingesteld. Wilt u nu het standaardaccount voor snel uploaden instellen en doorgaan met deze upload?</string>
+    <string name="quick_upload_videos_not_setup_text">"Het standaardaccount om snel video's te uploaden is niet ingesteld. Wilt u nu het standaardaccount voor snel uploaden instellen en doorgaan met deze upload?"</string>
+    <string name="web_setting">Ja</string>
+    <string name="web_cancel_upload">Annuleren</string>
+    <string name="web_cancel">Nee</string>
+    <string name="toast_BlurFailed">Blur niet geïnstalleerd.</string>
+    <string name="online_album_email_addr_title">E-mailadres invoeren</string>
+    <string name="enter_email">E-mailadres invoeren</string>
+    <string name="add_account_dot">Account toevoegen...</string>
+    <string name="btn_ok">OK</string>
+    <string name="data_saver_enabled">Gegevensbesparing ingeschakeld</string>
+    <string name="data_saver_text">Deze upload wordt in de wachtrij geplaatst totdat Wi-Fi beschikbaar is. Ga naar de instellingen en schakel Gegevensbesparing uit als u direct wilt uploaden.</string>
+    <string name="delayed_toast">%1$s wordt in de wachtrij geplaatst om te worden geüpload wanneer Wi-Fi beschikbaar wordt. Controleer de voortgang in het meldingsvenster.</string>
+    <string name="n_items">%1$d items</string>
+    <string name="gathering_check_caption">Ik wil Motorola helpen de kwaliteit van de service te verbeteren door </string>
+    <string name="gathering_link">aanvullende informatie te delen</string>
+    <string name="gathering_check_caption2"> over de manier waarop ik mijn apparaat gebruik</string>
+    <string name="tos_link">Motorola-servicevoorwaarden</string>
+    <string name="large_upload">Grote upload</string>
+    <string name="large_upload_text">Uploaden via het netwerk kan langer duren dan via een Wi-Fi-netwerk.</string>
+    <string name="upload_via_wifi">Uploaden via Wi-Fi</string>
+    <string name="upload_now">Nu uploaden</string>
+    <string name="settings_button">Instellingen</string>
+    <string name="cancel_button">Annuleren</string>
+    <string name="blur_required_info">is niet beschikbaar zonder account voor een sociaal netwerk. U kunt een nieuw account maken of u aanmelden bij een bestaand account door op Instellen te tikken</string>
+    <string name="airplane_active">Vliegmodus is actief.</string>
+    <string name="privacy_policy_title">MOTOROLA-PRIVACYBELEID</string>
+    <string name="privacy_policy_summary">Motorola neemt de beveiliging van de gegevens die u ons verschaft uiterst serieus. In dit privacybeleid wordt beschreven hoe wij de gegevens van uw mobiele apparaat verzamelen en wat wij vervolgens met deze gegevens doen. Er gelden standaardkosten voor gegevensverkeer. Lees onze volledige Privacyverklaring als u hier meer informatie over wilt.</string>
+    <string name="privacy_profiles_title">Privacyprofielen</string>
+    <string name="privacy_profiles_summary">Selecteer een privacyprofiel dat het best aansluit op uw wensen.</string>
+    <string name="location_services_title">Locatieservices</string>
+    <string name="location_services_summary">Apps die toegang hebben tot uw apparaatlocaties en waarmee deze informatie u kan helpen.</string>
+    <string name="location_services_content_default">Als u de locatieservices inschakelt, hebben we toegang tot uw locatiegegevens op basis van de GPS-coördinaten en de zendmasten en draadloze netwerken in de buurt. Zo helpen we u bij het zoeken naar locaties, kunnen we gebruikspatronen aan belangrijke locaties koppelen en passende handelingen suggereren teneinde onze producten en services te verbeteren, rekening houdend met de toepasselijke wetgeving.</string>
+    <string name="collection_use_title">Verzamelen en gebruiken</string>
+    <string name="collection_use_summary">De typen gegevens die van uw apparaat worden verzameld en hoe deze worden gebruikt om Motorola te helpen de services te verbeteren.</string>
+    <string name="collection_use_content_default">Afhankelijk van het privacyprofiel dat u selecteert, verzamelen we onderstaande gegevens of een deel daarvan: de belangrijkste functionele gegevens, prestatiegegevens, analysegegevens, persoonlijke gegevens, de gebruiksgeschiedenis van uw apparaat, openbaar beschikbare informatie van profielen voor sociale netwerken die aan het apparaat zijn gekoppeld en informatie over de websites die u bezoekt met de geïntegreerde browser. We gebruiken deze gegevens zodat u berichten via e-mail en sociale netwerken kunt verzenden en ontvangen, voor ondersteuningsdoeleinden, voor het oplossen van problemen, voor het optimaliseren van de prestaties van uw apparaat, om u op de hoogte te houden van de producten en services van Motorola, om verbeteringen aan te brengen aan de producten en services van Motorola, en voor demografische analyses en om marktsegmenten in kaart te brengen.</string>
+    <string name="tracking_ads_title">Tracking en advertenties</string>
+    <string name="tracking_ads_summary">Uw apparaat gebruikt geen webtracking-technologieën zoals tags of cookies.</string>
+    <string name="tracking_ads_content_default">We maken geen gebruik van tracking-technologieën als pixel tags of cookies op uw apparaat om gevoelige gegevens, zoals wachtwoorden of uw persoonlijke gegevens, op te slaan, om internetverkeer te analyseren, om uw apparaat van persoonlijke instellingen te voorzien of om de producten en services van Motorola te verbeteren. Websites die u bezoekt of apps die u op uw mobiele apparaat installeert en gebruikt, maken echter mogelijk wel gebruik van dergelijke trackers die zijn onderworpen aan hun eigen gebruiksvoorwaarden.</string>
+    <string name="security_title">Beveiliging</string>
+    <string name="security_summary">Motorola implementeert standaard beveiligingsvoorzieningen en protocollen.</string>
+    <string name="security_content_default">Voordat we gegevens delen met serviceproviders die namens ons handelen moeten zij aangeven dat zij uw gegevens beveiligen overeenkomstig de daarvoor geldende standaarden en dat zij uw gegevens niet voor andere doeleinden inzetten. Daarnaast maken we gebruik van algemene technische en organisatorische beveiligingsmaatregelen om de gegevens te beveiligen die we van u ontvangen voor hulp en ondersteuningsdoeleinden. Gebruik de meegeleverde beveiligingsfuncties om het apparaat constant te beveiligen.</string>
+    <string name="contact_motorola_title">Contact met Motorola</string>
+    <string name="contact_motorola_summary">Neem in geval van vragen of twijfel gerust contact op met Motorola.</string>
+    <string name="contact_motorola_content_default">"Neem contact op met Motorola als u uw gegevens wilt herzien, aanpassen, corrigeren, bijwerken of verwijderen of als u vragen heeft over dit privacybeleid via:
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+USA
+E-mail:privacy@motorola.com"</string>
+    <string name="full_privacy_title">Volledig Motorola-privacybeleid</string>
+    <string name="full_privacy_summary">Bekijk het volledige Motorola-privacybeleid.</string>
+    <string name="full_privacy_content_default">Internetgegevensverbinding vereist om het privacybeleid te bekijken.</string>
+    <string name="privacy_common_content_default">"Uw apparaat heeft toegang tot locatiegegevens op basis van GPS-coördinaten, zendmastlocaties en draadloze netwerken.
+
+Deze gegevens worden gebruikt voor:
+
+- Het vinden van locaties bij u in de buurt
+- Het koppelen van gebruikspatronen aan bepaalde locaties en het voorspellen van apparaatgedrag.
+- Het onderzoeken van manieren om producten en services van Motorola te verbeteren
+- Het voldoen aan wettelijke verplichtingen
+;;{1}VOLLEDIGE BELEID OMTRENT LOCATIESERVICES;;{2}VOLLEDIGE tekst met betrekking tot locatieservices.
+VOLLEDIGE tekst met betrekking tot locatieservices.
+VOLLEDIGE tekst met betrekking tot locatieservices.
+VOLLEDIGE tekst met betrekking tot locatieservices.
+VOLLEDIGE tekst met betrekking tot locatieservices.
+VOLLEDIGE tekst met betrekking tot locatieservices.
+"</string>
+    <string name="motorola_privacy_profiles_title">MOTOROLA-PRIVACYPROFIELEN</string>
+    <string name="motorola_privacy_profiles_summary">Wij verzamelen gegevens over de manier waarop u het apparaat gebruikt om u zo goed mogelijk van dienst te kunnen zijn en de kwaliteit van onze producten en services te verbeteren. Selecteer het privacyprofiel dat het best aansluit op uw wensen. Raadpleeg voor meer informatie ons Privacybeleid.</string>
+    <string name="motorola_privacy_profiles_footer">U kunt uw selectie op elk gewenst moment wijzigen via het menu Privacy in de instellingen van uw apparaat.</string>
+    <string name="see_detail">Details weergeven</string>
+    <string name="opt_out_title">Geen - %1$s</string>
+    <string name="opt_out_summary">Er worden geen gegevens verzameld, met uitzondering van anonieme gegevens om uw apparaat up-to-date te houden</string>
+    <string name="support_title">Ondersteuning - %1$s</string>
+    <string name="support_summary">Er worden gegevens verzameld voor technische ondersteuning en om uw apparaat up-to-date te houden</string>
+    <string name="standard_title">Standaard - %1$s</string>
+    <string name="standard_summary">Gegevens die nodig zijn voor de ondersteuning van uw apparaat en voor aanbevelingen over de producten van Motorola</string>
+    <string name="advanced_title">Geavanceerd - %1$s</string>
+    <string name="advanced_summary">Standaardgegevens plus gegevens die u helpen locaties bij u in de buurt te vinden en gegevens voor andere aanbevelingen.</string>
+    <string name="privacy_notification_text">Selecteer een privacybeleid</string>
+    <string name="opt_out_profile_title">GEEN GEGEVENS</string>
+    <string name="opt_out_profile_text">We verzamelen slechts de belangrijkste functionele gegevens die nodig zijn voor de basisfuncties, zoals het controleren op beschikbare software-updates voor uw apparaat. Als u deze optie selecteert, heeft dat negatieve gevolgen voor de technische ondersteuning die wij kunnen bieden.</string>
+    <string name="support_profile_title">ALLEEN ONDERSTEUNING</string>
+    <string name="support_profile_text">Als u het privacyprofiel Alleen ondersteuning kiest, verzamelen wij alleen de belangrijkste functionele gegevens en de ondersteuningsgegevens die nodig zijn om betere technische ondersteuning voor uw apparaat te bieden. Deze informatie wordt alleen gebruikt om problemen op te lossen en de ondersteuning te controleren.</string>
+    <string name="standard_profile_title">STANDAARDPRIVACYPROFIEL</string>
+    <string name="standard_profile_text">Als u het profiel Standaard kiest, verzamelen wij de belangrijkste functionele gegevens, de prestatiegegevens en de analytische gegevens. Naast ondersteuningsgegevens verzamelen en analyseren wij informatie over de manier waarop u het apparaat gebruikt om onze producten en services te verbeteren, u aanbevelingen te kunnen geven over de producten en services van Motorola en onze ondersteuningswerkzaamheden verder te verbeteren.</string>
+    <string name="advanced_profile_title">GEAVANCEERD PRIVACYPROFIEL</string>
+    <string name="advanced_profile_text">Voor de best mogelijke gebruikservaring verzamelen we de belangrijkste functionele gegevens, ondersteuningsgegevens, prestatiegegevens, gegevens over de manier waarop u uw apparaat gebruikt, de locatie van uw apparaat, over het gebruik van de geïntegreerde webbrowser, over de gebruikshistorie van de apps en gegevens op profielen voor sociale netwerken die voor iedereen toegankelijk zijn. We gebruiken deze gegevens om onze ondersteuningsvoorzieningen verder te verbeteren, met SmartActions uw locatie te bepalen, betere aanbevelingen te kunnen doen en voor demografische analyses.</string>
+    <string name="advanced_profile_text_tablet">Voor de best mogelijke gebruikservaring verzamelen we de belangrijkste functionele gegevens, ondersteuningsgegevens, prestatiegegevens, gegevens over de manier waarop u uw apparaat gebruikt, de locatie van uw apparaat, over het gebruik van de geïntegreerde webbrowser, over de gebruikshistorie van de apps en gegevens op sociale netwerkprofielen die voor iedereen toegankelijk zijn. We gebruiken deze gegevens om onze ondersteuningsvoorzieningen verder te verbeteren en voor demografische analyses.</string>
+    <string name="privacy_link">Volledig privacybeleid weergeven</string>
+    <string name="privacy_error">Kan momenteel geen verbinding maken. U kunt het opnieuw bekijken via Instellingen > Privacy > Motorola-privacybeleid.</string>
+    <string name="terms_error">Kan momenteel geen verbinding maken. U kunt het opnieuw bekijken via Instellingen > Telefooninfo > Juridisch.</string>
+    <string name="legal_error">Kan momenteel geen verbinding maken.</string>
+    <string name="legal_error_title">Fout</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">Ik accepteer de Gebruikersvoorwaarden en het Privacybeleid van Motorola</string>
+    <string name="backup_settings_title">Back-up maken en terugzetten</string>
+    <string name="backup_restore_instruction">Gebruik uw Google-account om een back-up van uw apps, instellingen (zoals bladwijzers en Wi-Fi-wachtwoorden) en andere gegevens te maken. Als u eerder een back-up heeft gemaakt met dit account, kunt u dit nu terugzetten op deze telefoon.</string>
+    <string name="backup_restore_setting">U kunt uw back-upinstellingen op elk gewenst tijdstip wijzigen in Privacyinstellingen.</string>
+    <string name="restore_title">Terugzetten van Google-account</string>
+    <string name="backup_title">Back-up maken met Google-account</string>
+</resources>

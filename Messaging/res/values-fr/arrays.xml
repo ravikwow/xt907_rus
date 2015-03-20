@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Résultat renvoyé incorrect</item>
+        <item>Enregistrement effectué.</item>
+        <item>Paramètres non valides.</item>
+        <item>Le fichier cible existe déjà.</item>
+        <item>"Le fichier source n'existe pas."</item>
+        <item>La limite de taille des fichiers est trop restreinte.</item>
+        <item>Fichier non valide ou format non pris en charge.</item>
+        <item>La batterie système a atteint un niveau très faible</item>
+        <item>La mémoire système a atteint un niveau très faible</item>
+        <item>Échec du démarrage : raisons inconnues.</item>
+        <item>"Échec de l'enregistrement : erreur E/S inconnue."</item>
+        <item>"Échec de l'enregistrement : échec de création du chemin."</item>
+        <item>"Échec de l'enregistrement : échec de création du fichier."</item>
+        <item>"Échec de l'enregistrement : espace de stockage très faible."</item>
+        <item>Enregistrement annulé.</item>
+        <item>"Échec du démarrage : taille d'écran non prise en charge."</item>
+        <item>Fichier source modifié.</item>
+        <item>Carte SD retirée.</item>
+        <item>Désolé, vous ne pouvez pas ajouter cette vidéo à votre message.</item>
+    </string-array>
+</resources>

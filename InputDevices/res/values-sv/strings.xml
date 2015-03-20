@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Inmatningsenheter</string>
+    <string name="keyboard_layouts_label">Android-tangentbord</string>
+    <string name="keyboard_layout_english_us_label">Engelska (USA)</string>
+    <string name="keyboard_layout_english_us_dvorak_label">Engelska (USA), Dvorak-layout</string>
+    <string name="keyboard_layout_german_label">Tyska</string>
+    <string name="keyboard_layout_french_label">Franska</string>
+    <string name="keyboard_layout_french_ca_label">Franska (Kanada)</string>
+    <string name="keyboard_layout_russian_label">Ryska</string>
+    <string name="keyboard_layout_russian_mac_label">Ryska, Mac-layout</string>
+    <string name="keyboard_layout_spanish_label">Spanska</string>
+    <string name="keyboard_layout_swiss_french_label">Schweizisk franska</string>
+    <string name="keyboard_layout_swiss_german_label">Schweizisk tyska</string>
+    <string name="keyboard_layout_belgian">Belgiska</string>
+    <string name="keyboard_layout_bulgarian">Bulgariska</string>
+    <string name="keyboard_layout_italian">Italienska</string>
+    <string name="keyboard_layout_danish">Danska</string>
+    <string name="keyboard_layout_norwegian">Norska</string>
+    <string name="keyboard_layout_swedish">Svenska</string>
+    <string name="keyboard_layout_finnish">Finska</string>
+    <string name="keyboard_layout_croatian">Kroatiska</string>
+    <string name="keyboard_layout_czech">Tjeckiska</string>
+    <string name="keyboard_layout_estonian">Estniska</string>
+    <string name="keyboard_layout_hungarian">Ungerska</string>
+    <string name="keyboard_layout_icelandic">Isländska</string>
+    <string name="keyboard_layout_portuguese">Portugisiska</string>
+    <string name="keyboard_layout_slovak">Slovakiska</string>
+    <string name="keyboard_layout_slovenian">Slovenska</string>
+    <string name="keyboard_layout_turkish">Turkiska</string>
+    <string name="keyboard_layout_ukrainian">Ukrainska</string>
+</resources>

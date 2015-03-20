@@ -1,0 +1,64 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: 15wgyHLenF/mhIDi9CJE4OnaJNA=
+
+Name: res/drawable-hdpi/ic_contact_list_picture.png
+SHA1-Digest: nLgkGGSNGL4XivkWX5StSbDgLzY=
+
+Name: res/layout/progress_bar_layout.xml
+SHA1-Digest: M17AnS43U/UAa6ULagnLkvYJKj8=
+
+Name: res/drawable-hdpi/ic_launcher_sim_toolkit.png
+SHA1-Digest: eXn1DQLc9tawCNk5HRJz2Iw9qZI=
+
+Name: res/drawable/ic_dialog_alert.png
+SHA1-Digest: JuZ6VkDjJciY4+2bKMvn69govVc=
+
+Name: res/layout/contact_list_item.xml
+SHA1-Digest: 7d6hGy3UObF6aGOJJH5eyOetsC4=
+
+Name: res/drawable-hdpi/ab_solid_custom_blue_inverse_holo.9.png
+SHA1-Digest: JUnYXoKFYRGHzoRjibqZHC+IYn4=
+
+Name: res/drawable/ic_btn_round_more_normal.png
+SHA1-Digest: gKDuj3eKhESnsX7n8A5ygTtQw4Q=
+
+Name: resources.arsc
+SHA1-Digest: G4nZoM8RqynH7L2zTIgp/Y3C2Mg=
+
+Name: res/layout/main_menu_list_item.xml
+SHA1-Digest: aFNtSl7hHJEXiVeTw6i/zYvqnJI=
+
+Name: res/layout/groups_spinner_selector.xml
+SHA1-Digest: hQgZ7KuHSQh4tUGPXzB8m8rLbzI=
+
+Name: res/layout/groups_spinner_list_item.xml
+SHA1-Digest: 3MoHCoXcPd60srA0wexGniAFs78=
+
+Name: AndroidManifest.xml
+SHA1-Digest: t5VOZCA9CQUHKDsI6PB+r61PyKw=
+
+Name: res/drawable/ic_dialog_info.png
+SHA1-Digest: mF+kduGvGhP/SrmCPt7tTZBNUSI=
+
+Name: res/drawable-hdpi/ab_stacked_opaque_dark_holo.9.png
+SHA1-Digest: ZxB8OmhItf1TSlKUkzNu37qoNXc=
+
+Name: res/drawable-hdpi/ab_bottom_opaque_dark_holo.9.png
+SHA1-Digest: F5FWpyTfJ/QToesFfOle+iFGwVo=
+
+Name: res/drawable/action_bar_item_background.xml
+SHA1-Digest: ymmlY+MOdvv2E5llR0R7tbwaf9s=
+
+Name: res/drawable-hdpi/action_bar_item_pressed_holo_light.9.png
+SHA1-Digest: 12oPgX01rno7yZs5UD4M3bSoaI4=
+
+Name: res/menu/sim_menu.xml
+SHA1-Digest: oLRpbWK6J1ljx+QBZK54NYSwJsA=
+
+Name: res/layout/contacts_list.xml
+SHA1-Digest: EAXbc1VNtZ/COuKjP3YuUl9yRto=
+
+Name: res/layout/main_menu.xml
+SHA1-Digest: vc5qCqqXXW4l+CbXBm3rP71KMCc=
+

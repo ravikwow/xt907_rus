@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="people_guide_quest_complete_dialog_message">
+        <item>@string/add_contact_dialog1</item>
+    </string-array>
+    <string-array name="call_contact_guide_quest_complete_dialog_message">
+        <item>@string/call_contact_dialog1</item>
+    </string-array>
+    <string-array name="otherLabels">
+        <item>Organization</item>
+        <item>Note</item>
+    </string-array>
+</resources>

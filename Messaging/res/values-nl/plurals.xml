@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Bijlagen opgeslagen</item>
+        <item quantity="one">Bijlage opgeslagen</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Kan de bijlagen niet opslaan omdat de SD-kaart ontbreekt.
+
+Plaats de SD-kaart terug."</item>
+        <item quantity="one">"Kan de bijlage niet opslaan omdat de SD-kaart ontbreekt.
+
+Plaats de SD-kaart terug."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Er is onvoldoende geheugen om de bijlagen op te slaan.</item>
+        <item quantity="one">Er is onvoldoende geheugen om de bijlage op te slaan.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Een of meer bijlagen zijn niet opgeslagen.</item>
+        <item quantity="one">De bijlage is niet opgeslagen.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d berichten worden verwijderd.</item>
+        <item quantity="one">1 bericht wordt verwijderd.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d berichten beveiligd.</item>
+        <item quantity="one">1 bericht beveiligd.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Beveiliging van %1$d berichten opgeheven.</item>
+        <item quantity="one">Beveiliging van 1 bericht opgeheven.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">U heeft taakherinneringen</item>
+        <item quantity="one">U heeft een taakherinnering</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d herinneringen)</item>
+        <item quantity="one">1 taak te voltooien</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d taken gevonden</item>
+        <item quantity="zero">%d taak gevonden</item>
+        <item quantity="one">%d taak gevonden</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Te laat</item>
+        <item quantity="one">Te laat</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Elke %1$d dagen nadat elke taak is voltooid</item>
+        <item quantity="one">Elke dag nadat elke taak is voltooid</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Elke %1$d weken nadat elke taak is voltooid</item>
+        <item quantity="one">Elke week nadat elke taak is voltooid</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Elke %1$d maanden nadat elke taak is voltooid</item>
+        <item quantity="one">Elke maand nadat elke taak is voltooid</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Elke %1$d jaren nadat elke taak is voltooid</item>
+        <item quantity="one">Elk jaar nadat elke taak is voltooid</item>
+    </plurals>
+</resources>

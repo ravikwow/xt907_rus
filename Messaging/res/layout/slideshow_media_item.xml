@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/message_list_item_background" android:descendantFocusability="blocksDescendants" style="?android:attr/listViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/media_icon" android:layout_marginLeft="@dimen/padding_margin_message_item" android:layout_marginTop="@dimen/padding_margin_message_item" android:layout_marginRight="@dimen/padding_margin_message_item" android:layout_marginBottom="@dimen/padding_margin_message_item" style="@style/ListItemCol.Photo" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_weight="1.0" style="@style/ListItemCol2">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/media_name" android:layout_marginRight="@dimen/listitem_horizontal_margin" style="@style/ListItemText" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/media_size" android:layout_marginRight="@dimen/listitem_horizontal_margin" style="@style/ListItemText" />
+    </LinearLayout>
+</LinearLayout>

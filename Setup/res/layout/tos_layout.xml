@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tos_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.motorola.blur.setup.ProgressBadge android:id="@id/progress_badge" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:step="0" app:text="@string/moto_service_agreement" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_topSpacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textStyle="bold" android:layout_gravity="left" android:id="@id/tos_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/AccSet_topSpacing" android:text="@string/moto_service_agreement" style="@style/AccSetTextView" />
+                <TextView android:textSize="@dimen/tos_termsSize" android:id="@id/tos_text1" android:text="@string/moto_service_review_the_above" style="@style/TxtInstructional" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/AccSet_topSpacing">
+                    <CheckBox android:id="@id/tos_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:linksClickable="true" android:layout_gravity="center_vertical" android:id="@id/terms_check_caption_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/formitem_hspacing" style="@style/TxtTerms" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:enabled="false" android:id="@id/gathering_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:linksClickable="true" android:layout_gravity="center_vertical" android:id="@id/gathering_check_caption_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/formitem_hspacing" style="@style/TxtTerms" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/navigation_bar" style="@style/NavBar">
+        <Button android:id="@id/back_button" android:text="@string/back" android:onClick="onClick" style="@style/NavBarSqrButton" />
+        <Button android:id="@id/next_button" android:text="@string/next" android:onClick="onClick" style="@style/NavBarSqrButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Liitteet tallennettu</item>
+        <item quantity="one">Liite tallennettu</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Liiteitä ei voitu tallentaa, koska SD-kortti puuttuu.
+
+Aseta SD-kortti uudestaan."</item>
+        <item quantity="one">"Liitettä ei voitu tallentaa, koska SD-kortti puuttuu.
+
+Aseta SD-kortti uudestaan."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Muisti ei riitä liitteiden tallentamiseen.</item>
+        <item quantity="one">Muisti ei riitä liitteen tallentamiseen.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Vähintään yhtä liitettä ei voitu tallentaa.</item>
+        <item quantity="one">Liitettä ei voitu tallentaa.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d viestiä poistetaan.</item>
+        <item quantity="one">1 viesti poistetaan.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d viestiä suojattu.</item>
+        <item quantity="one">1 viesti suojattu.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d viestin suojaus poistettu.</item>
+        <item quantity="one">1 viestin suojaus poistettu.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Sinulla on tehtävämuistutuksia</item>
+        <item quantity="one">Sinulla on tehtävämuistutus</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d muistutusta)</item>
+        <item quantity="one">1 suoritettava tehtävä</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d tehtävää löydetty</item>
+        <item quantity="zero">%d tehtävä löydetty</item>
+        <item quantity="one">%d tehtävä löydetty</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Myöhässä</item>
+        <item quantity="one">Myöhässä</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Joka %1$d päivä, kun jokainen tehtävä on valmis</item>
+        <item quantity="one">Joka pv, kun jokainen tehtävä on valmis</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Joka %1$d viikko, kun jokainen tehtävä on valmis</item>
+        <item quantity="one">Joka vk, kun jokainen tehtävä on valmis</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Joka %1$d kuukausi, kun jokainen tehtävä on valmis</item>
+        <item quantity="one">Joka kk, kun jokainen tehtävä on valmis</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Joka %1$d vuosi, kun jokainen tehtävä on valmis</item>
+        <item quantity="one">Joka v, kun jokainen tehtävä on valmis</item>
+    </plurals>
+</resources>

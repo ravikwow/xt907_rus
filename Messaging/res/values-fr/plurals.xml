@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Pièces jointes enregistrées</item>
+        <item quantity="one">Pièce jointe enregistrée</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Impossible d'enregistrer les pièces jointes : la carte SD fait défaut.
+
+Réinsérez la carte SD."</item>
+        <item quantity="one">"Impossible d'enregistrer la pièce jointe : la carte SD fait défaut.
+
+Réinsérez la carte SD."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Mémoire insuffisante pour enregistrer les pièces jointes.</item>
+        <item quantity="one">Mémoire insuffisante pour enregistrer la pièce jointe.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">"L'enregistrement d'une ou plusieurs pièces jointes a échoué."</item>
+        <item quantity="one">"L'enregistrement de la pièce jointe a échoué."</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d messages seront supprimés.</item>
+        <item quantity="one">1 message va être supprimé.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d messages protégés.</item>
+        <item quantity="one">1 message protégé.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d messages déprotégés.</item>
+        <item quantity="one">1 message déprotégé.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Vous avez des rappels de tâches</item>
+        <item quantity="one">Vous avez un rappel de tâche</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d rappels)</item>
+        <item quantity="one">1 tâche à terminer</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d tâches trouvées</item>
+        <item quantity="zero">%d tâche trouvée</item>
+        <item quantity="one">%d tâche trouvée</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Échue(s)</item>
+        <item quantity="one">Échue(s)</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">"Tous les %1$d jours après l'exécution de chaque tâche"</item>
+        <item quantity="one">Tous les jours après chaque tâche</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">"Toutes les %1$d semaines après l'exécution de chaque tâche"</item>
+        <item quantity="one">Toutes les semaines après chaque tâche</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">"Tous les %1$d mois après l'exécution de chaque tâche"</item>
+        <item quantity="one">Tous les mois après chaque tâche</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Tous les %1$d ans après chaque tâche</item>
+        <item quantity="one">Tous les ans après chaque tâche</item>
+    </plurals>
+</resources>

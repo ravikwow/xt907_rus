@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/topText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" />
+    <ImageView android:id="@id/top_Icon" android:tag="free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_incoming_call_answer" />
+    <TextView android:textSize="14.0dip" android:textColor="?android:textColorPrimary" android:ellipsize="marquee" android:gravity="center" android:id="@id/top_Text2" android:tag="static" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slide_to_answer_hint" android:singleLine="true" />
+</merge>

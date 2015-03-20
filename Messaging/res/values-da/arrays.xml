@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Forkert resultat returneret</item>
+        <item>Lagring fuldført</item>
+        <item>Ugyldige parametre</item>
+        <item>Målfilen findes allerede</item>
+        <item>Kildefilen findes ikke</item>
+        <item>Filstørrelsesbegrænsningen er for lille</item>
+        <item>Ugyldig fil eller ikke-understøttet format</item>
+        <item>Systembatteriniveauet er kritisk lavt</item>
+        <item>Systemhukommelsen er kritisk lav</item>
+        <item>Åbning mislykkedes: Ukendte årsager</item>
+        <item>Lagring mislykkedes: Ukendt I/O-fejl</item>
+        <item>Lagring mislykkedes: Kunne ikke oprette sti</item>
+        <item>Lagring mislykkedes: Kunne ikke oprette fil</item>
+        <item>Lagring mislykkedes: Lagringspladsen er kritisk lav</item>
+        <item>Lagring annulleret</item>
+        <item>Åbning mislykkedes: Ikke-understøttet skærmstørrelse</item>
+        <item>Kildefil ændret</item>
+        <item>SD-kort fjernet</item>
+        <item>Du kan desværre ikke føje denne video til din besked</item>
+    </string-array>
+</resources>

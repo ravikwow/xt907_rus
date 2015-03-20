@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_general_settings_title" android:key="pref_key_general_settings">
+        <CheckBoxPreference android:title="@string/pref_title_delivery_reports" android:key="pref_key_delivery_reports" android:summary="@string/pref_summary_delivery_reports" android:defaultValue="false" />
+        <Preference android:persistent="false" android:title="@string/pref_title_msg_delete" android:key="pref_key_msg_delete_limit" android:summary="@string/pref_summary_delete_limit" />
+        <com.motorola.messaging.settings.ManageSimPreference android:title="@string/pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/pref_summary_manage_sim_messages" />
+        <ListPreference android:entries="@array/message_group_type_items" android:title="@string/message_group_type" android:key="pref_key_message_group_type" android:dialogTitle="@string/message_group_type" android:entryValues="@array/message_group_type_items_values" />
+        <CheckBoxPreference android:title="@string/pref_title_location_card" android:key="pref_key_location_card" android:summary="@string/pref_summary_location_card" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval" android:summary="@string/pref_summary_mms_auto_retrieval" android:defaultValue="true" />
+        <CheckBoxPreference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:dependency="pref_key_mms_auto_retrieval" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/pref_msg_signature_title" android:key="pref_key_enable_signature" android:summary="@string/summary_signature_preference" android:defaultValue="false" />
+        <EditTextPreference android:persistent="true" android:layout="?android:preferenceLayoutChild" android:singleLine="false" android:maxLength="32" android:capitalize="sentences" android:title="@string/Edit_signature" android:key="pref_key_message_signature" android:dependency="pref_key_enable_signature" android:defaultValue="" android:dialogTitle="@string/pref_msg_signature_title" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/pref_title_sms_mms_callback_number" android:key="pref_key_enable_callback_number" android:summary="@string/pref_summary_sms_mms_callback_number" android:defaultValue="true" />
+        <EditTextPreference android:persistent="true" android:layout="?android:preferenceLayoutChild" android:maxLength="20" android:title="@string/edit_callback_number" android:key="pref_key_sms_mms_callback_number" android:dependency="pref_key_enable_callback_number" android:defaultValue="" android:dialogTitle="@string/enter_callback_number" android:inputType="phone" />
+        <Preference android:persistent="false" android:title="@string/clear_search_history" android:key="pref_key_clear_search_history" />
+        <CheckBoxPreference android:title="@string/pref_title_restriction_mode" android:key="pref_key_restriction_mode" android:summary="@string/pref_summary_restriction_mode" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_notification_settings_title">
+        <CheckBoxPreference android:title="@string/pref_title_notification_enabled" android:key="pref_key_enable_notifications" android:summary="@string/pref_summary_notification_enabled" android:defaultValue="true" />
+        <RingtonePreference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_notification_ringtone" android:key="pref_key_ringtone" android:dependency="pref_key_enable_notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+        <CheckBoxPreference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vibrate" android:summary="@string/pref_summary_notification_vibrate" android:dependency="pref_key_enable_notifications" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

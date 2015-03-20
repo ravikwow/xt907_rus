@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="contacts_dark_ui">false</bool>
+    <bool name="config_allow_import_from_sdcard">true</bool>
+    <bool name="config_import_all_vcard_from_sdcard_automatically">false</bool>
+    <bool name="config_allow_users_select_all_vcard_import">true</bool>
+    <bool name="config_allow_export_to_sdcard">true</bool>
+    <bool name="config_allow_share_visible_contacts">true</bool>
+    <bool name="config_enable_dialer_key_vibration">true</bool>
+    <bool name="config_browse_list_show_images">true</bool>
+    <bool name="config_show_onscreen_dial_button">true</bool>
+    <bool name="config_sort_order_user_changeable">true</bool>
+    <bool name="config_default_sort_order_primary">true</bool>
+    <bool name="config_display_order_user_changeable">true</bool>
+    <bool name="config_default_display_order_primary">true</bool>
+    <bool name="config_editor_field_order_primary">true</bool>
+    <bool name="config_editor_include_phonetic_name">false</bool>
+    <bool name="config_use_two_panes">false</bool>
+    <bool name="config_use_two_panes_in_favorites">false</bool>
+    <bool name="show_home_icon">false</bool>
+    <bool name="config_show_group_action_in_action_bar">false</bool>
+    <bool name="config_allow_sim_import">true</bool>
+    <bool name="fdn_sdn_lookup">false</bool>
+    <bool name="ftr_35631_sprint_feature">false</bool>
+    <bool name="smart_dialer_qwerty_support">true</bool>
+    <bool name="ftr_36344_meaningful_event_log">true</bool>
+    <bool name="ftr_35413_use_message_button">false</bool>
+    <bool name="ftr_36927_exclude_voicemail">false</bool>
+    <bool name="ftr_28651_assisted_dialing">true</bool>
+    <bool name="ftr_36876_call_time_display_by_date_time_format">false</bool>
+    <bool name="mmi_imei_display">true</bool>
+    <bool name="ftr_35964_call_setting_for_kor">false</bool>
+    <bool name="config_lunch_default_people_tab">true</bool>
+    <bool name="config_enable_contacts_search_in_phone">true</bool>
+</resources>

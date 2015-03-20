@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Zwrócono nieprawidłowy wynik</item>
+        <item>Zapis powiódł się</item>
+        <item>Nieprawidłowe parametry</item>
+        <item>Plik docelowy już istnieje</item>
+        <item>Plik źródłowy nie istnieje</item>
+        <item>Ograniczenie rozmiaru pliku jest niewystarczające</item>
+        <item>Nieprawidłowy plik lub nieobsługiwany format pliku</item>
+        <item>Napięcie baterii systemowej jest bardzo niskie</item>
+        <item>Ilość wolnej pamięci systemu jest bardzo mała</item>
+        <item>Uruchomienie nie powiodło się: nieznane powody</item>
+        <item>Zapis nie powiódł się: nieznany błąd I/O</item>
+        <item>Zapis nie powiódł się: błąd tworzenia ścieżki</item>
+        <item>Zapis nie powiódł się: błąd tworzenia pliku</item>
+        <item>Zapis nie powiódł się: krytycznie niski poziom wolnej pamięci</item>
+        <item>Anulowano zapis</item>
+        <item>Uruchomienie nie powiodło się: nieobsługiwany rozmiar ekranu</item>
+        <item>Plik źródłowy został zmieniony</item>
+        <item>Karta SD została usunięta</item>
+        <item>Niestety, nie możesz dołączyć tego pliku wideo do wiadomości.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/app_icon.png
+SHA1-Digest: jxhlkEG3cvJ/PIpleMgkar8ki0c=
+
+Name: AndroidManifest.xml
+SHA1-Digest: +0abWX72Tdsf+jOLEzpAbNZH7CU=
+
+Name: resources.arsc
+SHA1-Digest: UImLBpTBOwVzwmnL69gPGpA/q9A=
+

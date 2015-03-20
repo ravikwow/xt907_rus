@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Resultado incorreto recebido</item>
+        <item>Guardado com êxito</item>
+        <item>Parâmetros inválidos</item>
+        <item>O ficheiro de destino já existe</item>
+        <item>O ficheiro de origem não existe</item>
+        <item>O limite de tamanho do ficheiro é demasiado baixo</item>
+        <item>Ficheiro inválido ou formato não suportado</item>
+        <item>A bateria do sistema está demasiado fraca</item>
+        <item>O sistema está a ficar sem memória disponível</item>
+        <item>Falha ao iniciar: motivos desconhecidos</item>
+        <item>Falha ao guardar: erro de E/S desconhecido</item>
+        <item>Falha ao guardar: não foi possível criar caminho</item>
+        <item>Falha ao guardar: não foi possível criar ficheiro</item>
+        <item>Falha ao guardar: o espaço de armazenamento é demasiado pequeno</item>
+        <item>Operação cancelada</item>
+        <item>Falha ao iniciar: tamanho de ecrã não suportado</item>
+        <item>Ficheiro de origem modificado</item>
+        <item>Cartão SD removido</item>
+        <item>Não é possível adicionar este vídeo à mensagem.</item>
+    </string-array>
+</resources>

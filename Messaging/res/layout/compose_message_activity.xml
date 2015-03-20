@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ViewStub android:id="@id/addressing_widget_stub" android:layout="@layout/recipients_editor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/subject_stub" android:layout="@layout/composer_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ListView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:paddingBottom="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="3.0dip" android:stackFromBottom="true" android:scrollingCache="false" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" style="?android:attr/listViewStyle" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/message_text_color_light" android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_composer" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/bottom_panel" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/warning_bar_stub" android:layout="@layout/warning_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@android:color/holo_blue_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding_composer_lateral" android:paddingTop="@dimen/padding_medium" android:paddingRight="@dimen/padding_composer_lateral" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.motorola.messaging.view.MessageEditorLayout android:id="@id/msg_editor" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ScrollView android:id="@id/msg_editor_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/msg_editor_inner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ViewStub android:layout_gravity="top|center" android:id="@id/attachment_view_stub" android:layout="@layout/attachment_view" android:inflatedId="@id/attachment_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+                            <EditText android:id="@id/embedded_text_editor" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:nextFocusRight="@id/send_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/compose_text_enter_hint" android:autoText="true" android:layout_alignParentBottom="true" />
+                        </LinearLayout>
+                    </ScrollView>
+                </com.motorola.messaging.view.MessageEditorLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/editor_side_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/send_button" android:nextFocusLeft="@id/embedded_text_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_button" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

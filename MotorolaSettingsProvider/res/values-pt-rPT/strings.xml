@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_writeGservices">Escrever definições Gservices.</string>
+    <string name="permdesc_writeGservices">Permite à aplicação alterar as definições Gservices.</string>
+    <string name="permlab_tcmdLocal">Utilizar comandos de teste</string>
+    <string name="permdesc_tcmdLocal">Utilizar comandos de teste</string>
+    <string name="settings_storage">Armazenamento de definições</string>
+</resources>

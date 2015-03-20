@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="mms_user_agent" value="motoxt912" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.vtext.com/mot/xt912/xt912.xml" />
+</settings>

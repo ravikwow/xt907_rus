@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/bt_share.png
+SHA1-Digest: P5wCZmR1LLybNEjeFpaeZnKKiHU=
+
+Name: res/drawable-hdpi/ic_launcher_folder_bluetooth.png
+SHA1-Digest: F0U42VgucrUGyi6hK63PaEA/FSM=
+
+Name: res/layout/print_status.xml
+SHA1-Digest: NnPTkCIWVuWMzsWZ8/MytiZJqis=
+
+Name: res/layout/no_transfers.xml
+SHA1-Digest: P/1NHUrUIKi1quVZEAY7w7MWGCA=
+
+Name: res/layout/auth.xml
+SHA1-Digest: 4EGYlUfI1oiI1gUC0937K2YbCOQ=
+
+Name: res/layout/bluetooth_transfers_page.xml
+SHA1-Digest: dVo30feubZVr51/2mjJAC0/8KQ8=
+
+Name: res/layout/file_transfer.xml
+SHA1-Digest: sj5WysTXRV2RP8febmuj0dYWuhM=
+
+Name: resources.arsc
+SHA1-Digest: CBxBbbzFDmoxhhn9reRr8nPA1uE=
+
+Name: res/layout/bpp_setting.xml
+SHA1-Digest: 6cZHRxXS/qLCxVs3vavu1a2kYaA=
+
+Name: res/menu/transferhistorycontextfinished.xml
+SHA1-Digest: wQsfIRv3REQ6Fm9aCsRtiOjmsAo=
+
+Name: res/layout/testactivity_main.xml
+SHA1-Digest: SEsvJVccoreBLP8LQSd2V3Wy/f0=
+
+Name: res/layout/bluetooth_transfer_item.xml
+SHA1-Digest: EvhKJVMVDwg68VzhuxQGXvqb4JA=
+
+Name: res/layout/main.xml
+SHA1-Digest: y0S9wd/U4rJe4qZ7amZW8e8ZdQs=
+
+Name: res/xml/printing_pref.xml
+SHA1-Digest: hr0a/TkIO81NmUvOpcl8Su3nrtM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: qL78+ALQLrziNlQ7qV5WFUBkTw0=
+
+Name: res/layout/confirm_dialog.xml
+SHA1-Digest: gEQgMIXZd7PQHd38dqdfr3TFlDw=
+
+Name: res/menu/transferhistory.xml
+SHA1-Digest: dJ1f63Ita4jSvUBqmz9SaJnFib0=
+
+Name: res/menu/receivedfilescontextfinished.xml
+SHA1-Digest: JaS5Hy+fuqoOl38qZp3p0SKOhOQ=
+
+Name: res/drawable-hdpi/bt_incomming_file_notification.png
+SHA1-Digest: d5fqLa2PTfQsZLWcQRwFm7n0Elc=
+
+Name: res/drawable-hdpi/printer.png
+SHA1-Digest: NWNQJb0VwkYYnREHkzyOulWdaNc=
+
+Name: res/layout/bt_enabling_progress.xml
+SHA1-Digest: 3CSw1QJFjS9g3QTlsxRHfjd2POc=
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Restituito risultato errato</item>
+        <item>Salvataggio completato</item>
+        <item>Parametri non validi</item>
+        <item>File di destinazione già esistente</item>
+        <item>Il file di origine non esiste</item>
+        <item>Limite dimensione file troppo basso</item>
+        <item>File non valido o formato non supportato</item>
+        <item>Batteria del sistema scarica</item>
+        <item>Memoria del sistema insufficiente</item>
+        <item>Avvio non riuscito: motivo sconosciuto</item>
+        <item>Salvataggio non riuscito: errore I/O sconosciuto</item>
+        <item>Salvataggio non riuscito: impossibile creare il percorso</item>
+        <item>Salvataggio non riuscito: impossibile creare il file</item>
+        <item>Salvataggio non riuscito: spazio memoria insufficiente</item>
+        <item>Salvataggio annullato</item>
+        <item>Avvio non riuscito: dimensione schermo non supportata</item>
+        <item>File di origine modificato</item>
+        <item>Scheda SD rimossa</item>
+        <item>Impossibile aggiungere questo video al messaggio.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: iiklW3lYZ0CQI5WkqCnufko1Q6Y=
+
+Name: res/drawable-hdpi/ic_fail.png
+SHA1-Digest: rJpl0o+0FzQ2roSxHCWIzQzjtBU=
+
+Name: res/layout/app_details.xml
+SHA1-Digest: UJ5xalqRAkJMhwrJJ7eG5/ooFbM=
+
+Name: res/layout/label.xml
+SHA1-Digest: jFmYrzWbWSYj+bJquDVDgRvbjbE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: ezt70p4aQJSdJmcmK4o6dP3JSB4=
+
+Name: res/drawable/ic_result_status.xml
+SHA1-Digest: C1pj6NZpGIDoczI+2cm5YTFiFVU=
+
+Name: res/layout/install_confirm.xml
+SHA1-Digest: Ry+PVhUXMwyXB8K/a1QVKhC4kOE=
+
+Name: res/layout/op_progress.xml
+SHA1-Digest: YBXEjtXtfKRy6MFmy5TtSy80H4s=
+
+Name: res/layout/uninstall_confirm.xml
+SHA1-Digest: kT6QLiV6Mle39Cc/Z5ae3Q0dPl8=
+
+Name: res/layout/install_start.xml
+SHA1-Digest: Fl5W5AwNSdk26WttMNISUHYkodk=
+
+Name: resources.arsc
+SHA1-Digest: TkLC1GHnGHdIuRhW3bR/ue7pts4=
+
+Name: res/layout/uninstall_progress.xml
+SHA1-Digest: EgOOVXPHI23gCOMqHjP8VuBJB4k=
+
+Name: res/drawable-hdpi/ic_success.png
+SHA1-Digest: YnSuPbClApXMDF4i/9nlq/q6DNM=
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unicode_to_gsm_7bit_supported_character>
+    <translation from="0x03B1" to="0x0041" />
+    <translation from="0x03B2" to="0x0042" />
+    <translation from="0x03B3" to="0x0393" />
+    <translation from="0x03B4" to="0x0394" />
+    <translation from="0x03B5" to="0x0045" />
+    <translation from="0x03C6" to="0x03A6" />
+    <translation from="0x03B7" to="0x0048" />
+    <translation from="0x03B9" to="0x0049" />
+    <translation from="0x03BA" to="0x004B" />
+    <translation from="0x03BB" to="0x039B" />
+    <translation from="0x03BE" to="0x039E" />
+    <translation from="0x03BC" to="0x004D" />
+    <translation from="0x03BD" to="0x004E" />
+    <translation from="0x03BF" to="0x004F" />
+    <translation from="0x03C9" to="0x03A9" />
+    <translation from="0x03C1" to="0x0050" />
+    <translation from="0x03C0" to="0x03A0" />
+    <translation from="0x03C3" to="0x03A3" />
+    <translation from="0x03C2" to="0x03A3" />
+    <translation from="0x03C4" to="0x0054" />
+    <translation from="0x03B8" to="0x0398" />
+    <translation from="0x03C8" to="0x03A8" />
+    <translation from="0x03C7" to="0x0058" />
+    <translation from="0x03C5" to="0x0059" />
+    <translation from="0x03B6" to="0x005A" />
+    <translation from="0x03AC" to="0x0041" />
+    <translation from="0x03AD" to="0x0045" />
+    <translation from="0x03AE" to="0x0048" />
+    <translation from="0x03AF" to="0x0049" />
+    <translation from="0x03CC" to="0x004F" />
+    <translation from="0x03CD" to="0x0059" />
+    <translation from="0x03CE" to="0x03A9" />
+</unicode_to_gsm_7bit_supported_character>

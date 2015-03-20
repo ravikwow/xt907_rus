@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Bilagorna har sparats.</item>
+        <item quantity="one">Bilagan har sparats.</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"SD-kortet saknas, så bilagorna kan inte sparas.
+
+Sätt i SD-kortet."</item>
+        <item quantity="one">"SD-kortet saknas, så bilagan kan inte sparas.
+
+Sätt i SD-kortet."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Minnet räcker inte till för att spara bilagorna.</item>
+        <item quantity="one">Minnet räcker inte till för att spara bilagan.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">En eller flera bilagor har inte sparats.</item>
+        <item quantity="one">Bilagan har inte sparats.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d meddelanden tas bort.</item>
+        <item quantity="one">1 meddelande tas bort.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d meddelanden skyddas.</item>
+        <item quantity="one">1 meddelande skyddas.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Skyddet togs bort för %1$d meddelanden.</item>
+        <item quantity="one">Skyddet togs bort för 1 meddelande.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Du har påminnelser om uppgifter</item>
+        <item quantity="one">Du har en påminnelse om en uppgift</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d påminnelser)</item>
+        <item quantity="one">1 uppgift att slutföra</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d uppgifter hittades</item>
+        <item quantity="zero">%d uppgift hittades</item>
+        <item quantity="one">%d uppgift hittades</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Förfallna</item>
+        <item quantity="one">Förfallen</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Var %1$d:e dag när varje uppg. har slutf.</item>
+        <item quantity="one">Varje dag när varje uppg. har slutförts</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Var %1$d:e vecka när varje uppg. har slutf.</item>
+        <item quantity="one">Varje vecka när varje uppg. har slutf.</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Var %1$d:e månad när varje uppg. har slutf.</item>
+        <item quantity="one">Varje månad när varje uppg. har slutf.</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Vart %1$d:e år när varje uppg. har slutf.</item>
+        <item quantity="one">Varje år när varje uppgift har slutförts</item>
+    </plurals>
+</resources>

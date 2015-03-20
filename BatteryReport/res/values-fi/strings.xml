@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jäähdytystila</string>
+    <string name="batt_temp_cooldown_title">Jäähdytystila</string>
+    <string name="batt_temp_cooldown_msg">Puhelin on nyt jäähdytystilassa. Vain hätäpuhelut.</string>
+    <string name="lockscreen_emergency_call">Hätäpuhelu</string>
+</resources>

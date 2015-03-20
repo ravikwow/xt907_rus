@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Vedlegget ble lagret</item>
+        <item quantity="one">Vedlegget ble lagret</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Vedlegget ble ikke lagret fordi SD-kortet mangler.
+
+Sett inn SD-kortet igjen."</item>
+        <item quantity="one">"Vedlegget ble ikke lagret fordi SD-kortet mangler.
+
+Sett inn SD-kortet igjen."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Det er ikke nok minne til å lagre vedleggene.</item>
+        <item quantity="one">Det er ikke nok minne til å lagre vedlegget.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">En eller flere av vedleggene ble ikke lagret.</item>
+        <item quantity="one">Vedlegget ble ikke lagret.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d meldinger vil bli slettet.</item>
+        <item quantity="one">1 melding vil bli slettet.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d meldinger er beskyttet.</item>
+        <item quantity="one">1 melding er beskyttet.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Fjernet beskyttelse for %1$d meldinger.</item>
+        <item quantity="one">Fjernet beskyttelse for 1 melding.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Du har påminnelser om oppgaver</item>
+        <item quantity="one">Du har en påminnelse om en oppgave</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d påminnelser)</item>
+        <item quantity="one">1 oppgave å fullføre</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d oppgaver funnet</item>
+        <item quantity="zero">%d oppgave funnet</item>
+        <item quantity="one">%d oppgave funnet</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Forfalt</item>
+        <item quantity="one">Forfalt</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Hver %1$d dag etter at hver oppgave er fullført</item>
+        <item quantity="one">Hver dag etter at hver oppgave er fullført</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Hver %1$d uke etter at hver oppgave er fullført</item>
+        <item quantity="one">Hver uke etter at hver oppgave er fullført</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Hver %1$d måned etter at hver oppgave er fullført</item>
+        <item quantity="one">Hver måned etter oppgavene er fullført</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Hvert %1$d år etter at hver oppgave er fullført</item>
+        <item quantity="one">Hvert år etter at hver oppgave er fullført</item>
+    </plurals>
+</resources>

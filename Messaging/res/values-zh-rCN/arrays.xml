@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>返回错误结果</item>
+        <item>保存成功</item>
+        <item>无效参数</item>
+        <item>目标文件已存在</item>
+        <item>源文件不存在</item>
+        <item>文件大小限制太小</item>
+        <item>文件无效或格式不受支持</item>
+        <item>系统电池电量太低</item>
+        <item>系统存储空间太小</item>
+        <item>启动失败：未知原因</item>
+        <item>保存失败：未知 I/O 错误</item>
+        <item>保存失败：无法创建路径</item>
+        <item>保存失败：无法创建文件</item>
+        <item>保存失败：存储空间太小</item>
+        <item>已取消保存</item>
+        <item>启动失败：屏幕大小不受支持</item>
+        <item>源文件已修改</item>
+        <item>SD 卡已移除</item>
+        <item>抱歉，您无法将此视频添加到信息。</item>
+    </string-array>
+</resources>

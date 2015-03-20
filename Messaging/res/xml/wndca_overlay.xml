@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="integer" name="mms_maximum_message_size" value="307200" />
+    <setting type="boolean" name="GenerateUserAgent" value="true" />
+    <setting type="boolean" name="MTMemoryFullEnable" value="true" />
+    <setting type="boolean" name="VibrateDefaultPref" value="false" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="boolean" name="RoamingAutoRetrieveEnabled" value="true" />
+    <setting type="boolean" name="WapRejectEnable" value="true" />
+    <setting type="integer" name="DefaultEncodingMethod" value="1" />
+</settings>

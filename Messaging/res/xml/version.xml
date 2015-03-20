@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="StaticVersionSettings" value="msg-stab-02-jb.8" />
+    <setting type="string" name="PreferencesVersionSettings" value="msg-stab-02-jb.1" />
+</settings>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="enableButtonText" format="string" />
+    <attr name="disableButtonText" format="string" />
+    <attr name="changeNumButtonText" format="string" />
+    <attr name="confirmMode">
+        <enum name="confirm" value="0" />
+        <enum name="activation" value="1" />
+    </attr>
+    <attr name="serviceClass">
+        <enum name="voice" value="1" />
+        <enum name="data" value="2" />
+    </attr>
+    <attr name="reason">
+        <enum name="unconditional" value="0" />
+        <enum name="busy" value="1" />
+        <enum name="no_reply" value="2" />
+        <enum name="not_reachable" value="3" />
+    </attr>
+    <attr name="unlock_Fling" format="boolean" />
+    <attr name="unlock_TwoTap" format="boolean" />
+    <attr name="showArrowAnimationOnIdle" format="boolean" />
+    <attr name="shakeStartGraphic" format="boolean" />
+    <attr name="keepTargetVisibleDim" format="boolean" />
+    <attr name="showRippleAnimation" format="integer" />
+    <attr name="autoPing" format="boolean" />
+    <attr name="layout_rotate" format="integer" />
+    <attr name="layout_showDuration" format="integer" />
+    <attr name="layout_hideDuration" format="integer" />
+    <attr name="layout_stayDuration" format="integer" />
+    <attr name="layout_nodeIndex" format="integer" />
+    <attr name="layout_nodeDirection" format="integer" />
+    <attr name="layout_targetDirection" format="integer" />
+    <attr name="layout_isRunwayNode" format="boolean" />
+    <attr name="layout_isUnlockKey" format="boolean" />
+    <attr name="layout_isSelectedVisual" format="boolean" />
+    <attr name="layout_isHint" format="boolean" />
+    <attr name="layout_isBackground" format="boolean" />
+</resources>

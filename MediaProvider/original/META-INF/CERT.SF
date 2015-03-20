@@ -1,0 +1,19 @@
+Signature-Version: 1.0
+Created-By: HAB (Motorola Inc.)
+SHA1-Digest-Manifest: euWV01UG6lVORHxju1llXpO01n0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: ueyNW45ie1G7x5rkQ5DiSD0gxy8=
+
+Name: res/drawable-hdpi/ic_search_category_music_album.png
+SHA1-Digest: 00ALVNYbgAC3m+H2B7/O2PhzJYs=
+
+Name: resources.arsc
+SHA1-Digest: bmGC1OkTMF6l+ye0Q52ZduXMmlE=
+
+Name: res/drawable-hdpi/ic_search_category_music_artist.png
+SHA1-Digest: biLJXec7YuLk+rcFARuMufErtWw=
+
+Name: res/drawable-hdpi/ic_search_category_music_song.png
+SHA1-Digest: fL8nO2hl7xrd55/ZWDbyKZ4eW8g=
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Retorno de resultado incorreto</item>
+        <item>Salvo</item>
+        <item>Parâmetros inválidos</item>
+        <item>O arquivo final já existe.</item>
+        <item>O arquivo fonte não existe.</item>
+        <item>A limitação do tamanho do arquivo é muito pequena.</item>
+        <item>Arquivo inválido ou formato não suportado.</item>
+        <item>A bateria do sistema está muito baixa.</item>
+        <item>A memória do sistema está muito baixa.</item>
+        <item>Falha ao executar: Motivos desconhecidos</item>
+        <item>Falha ao salvar: Falha I/O desconhecida</item>
+        <item>Falha ao salvar: Falha ao criar caminho</item>
+        <item>Falha ao salvar: Falha ao criar arquivo</item>
+        <item>Falha ao salvar: O espaço de armazenamento está muito baixo.</item>
+        <item>Salvar cancelado</item>
+        <item>Falha ao executar: Tamanho da tela não suportada</item>
+        <item>Arquivo fonte modificada</item>
+        <item>Cartão SD removido</item>
+        <item>Não é possível adicionar este vídeo a sua mensagem.</item>
+    </string-array>
+</resources>

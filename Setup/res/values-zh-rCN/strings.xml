@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cpu_idle_wait_title">正在准备设备</string>
+    <string name="cpu_idle_wait_msg">请稍候...</string>
+    <string name="splash_screen_text">欢迎使用摩托罗拉手机</string>
+    <string name="please_choose_a_language">选择语言：</string>
+    <string name="welcome_to_motoblur">欢迎使用 MOTOBLUR</string>
+    <string name="next">下一步</string>
+    <string name="back">返回</string>
+    <string name="make_emergency_call_by_pressing_menu">在设置过程中如需拨打紧急呼叫,按\"菜单\" 键.</string>
+    <string name="sign_up_or_login_main_text">您需要先创建一个 MOTOBLUR 帐户，这样才能使用手机的基本服务以及访问 MOTOBLUR 网络门户。</string>
+    <string name="password_colon">密码：</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="forgot_password_title">忘记密码</string>
+    <string name="enter_password">输入密码</string>
+    <string name="motoblur_terms_of_service">MOTOBLUR 服务条款</string>
+    <string name="moto_service_review_the_above">"选择 \"我同意\" 复选框即表示您同意摩托罗拉软件许可协议、服务条款和隐私声明条款。
+
+您必须同意这些条款后才能使用该设备。"</string>
+    <string name="terms_and_conditions">摩托罗拉条款和条件</string>
+    <string name="sharing_additional_information">共享更多信息</string>
+    <string name="moto_service_agreement">摩托罗拉服务协议</string>
+    <string name="terms_of_service_check_caption">我同意</string>
+    <string name="downloading_terms">正在下载条款…</string>
+    <string name="creating_your_blur_account">正在创建您的Blur帐户…</string>
+    <string name="generic_carrier_contact_text">请呼叫客服,以找回密码.</string>
+    <string name="motoblur">MOTOBLUR</string>
+    <string name="unverified_motoblur_account">尚未验证的MOTOBLUR帐户</string>
+    <string name="cancel">取消</string>
+    <string name="signin">登录</string>
+    <string name="checking_for_updates">正在检查更新…</string>
+    <string name="downloading_updates">"正在下载更新
+ 
+请稍候…"</string>
+    <string name="error_deleting_account">删除帐户错误</string>
+    <string name="congrats_title_login">登录成功</string>
+    <string name="congrats_title">祝贺您！</string>
+    <string name="congrats_text">"设置完成！
+
+如果您设置了任意帐户，现在即可导入您的内容，如联系人和电子邮件。完成该过程可能需要 30 分钟，但您可立即开始使用手机。
+
+建议您转到设置 > 安全和屏幕锁定，为手机设置安全锁定。"</string>
+    <string name="setup_complete_title">设置完成</string>
+    <string name="setup_complete_text">"您已完成所有计算机和设备配置。
+
+立即开始使用手机…"</string>
+    <string name="done">完成</string>
+    <string name="welcome_android">欢迎使用</string>
+    <string name="privacy_policy">使用本手机必须遵守摩托罗拉隐私协议及其条款。</string>
+    <string name="learn_more">了解详情</string>
+    <string name="emergency_call">紧急呼叫</string>
+    <string name="create_later">稍后设置帐户</string>
+    <string name="email_colon">电子邮件地址:</string>
+    <string name="location_consent_string">同意定位</string>
+    <string name="location_consent_description">无需使用 GPS 即可通过 Google 定位服务确定您的大概位置。您可以在设置的位置下停用这些功能。</string>
+    <string name="use_location_service">允许定位服务收集匿名定位数据。即使所有应用程序都不运行，也会进行收集。</string>
+    <string name="signup">注册新帐户</string>
+    <string name="login">使用现有帐户</string>
+    <string name="password">密码</string>
+    <string name="ok">确定</string>
+    <string name="email_address_error">"电子邮件地址必须至少 6 个字符，且必须由字母、数字或下划线（_）组成。
+"<i>例如，</i>"youremail@domain.com
+"</string>
+    <string name="retrieving_password">正在检索密码…</string>
+    <string name="error_creating_account_title">创建帐户出错</string>
+    <string name="unspecified_service_error">使用服务创建帐户时出错.请重试.</string>
+    <string name="password_emailed">密码重置链接已发送到您的电子邮件地址</string>
+    <string name="contacts">联系人</string>
+    <string name="calendar">日历</string>
+    <string name="none">无</string>
+    <string name="captcha_text">请在以下文字输入区输入文字进行登录验证</string>
+    <string name="set_up_apn">设置接入点名称</string>
+    <string name="set_up_cloud">设置 Cloud</string>
+    <string name="set_up_wifi">设置 WLAN</string>
+    <string name="show_IMEI">IMEI</string>
+    <string name="msg_IMEI">IMEI码是%1$s</string>
+    <string name="show_MEID">MEID</string>
+    <string name="msg_MEID">MEID 码是 %1$s</string>
+    <string name="error_account_disabled">该帐户在 Blur 服务中已停用</string>
+    <string name="error_account_not_found">Blur帐户中不存在该帐户</string>
+    <string name="error_already_exists">Blur 帐户中已存在该帐户。请选择不同的帐户 ID。</string>
+    <string name="error_already_initialized">此设备已配置了一个帐户。</string>
+    <string name="error_connect_timeout">该连接超时，请重试。</string>
+    <string name="error_try_again">出现错误，请重试。</string>
+    <string name="error_invalid_credentials">用户名或密码错误，请检查后重试。</string>
+    <string name="error_invalid_params">您的请求不正确，请重试。</string>
+    <string name="error_internal_server">内部服务器发生错误，请重试。</string>
+    <string name="error_no_server_response">该服务器没有响应，请检查以确保该服务已启用并重试。</string>
+    <string name="error_not_allowed">请求被拒绝，请重试。</string>
+    <string name="error_not_found">该请求没有找到.</string>
+    <string name="error_not_initialized">该请求需要用户证书，但是他们在该请求中没有提供。</string>
+    <string name="error_password_mismatch">密码错误，请重试。</string>
+    <string name="error_current_password_mismatch">当前密码有误，请重试。</string>
+    <string name="error_radio_down">该设备的手机信号无法连接到网络，请确保手机信号已打开；如果已打开，将其移至信号覆盖率好的位置并重试。</string>
+    <string name="error_service_busy">服务器忙，目前无法连接，请稍后再试。</string>
+    <string name="error_socket_timeout">等待响应的请求超时。该帐户可能未创建完成。</string>
+    <string name="error_too_many">今天您尝试重置密码的次数太多，请稍后重试。</string>
+    <string name="error_unauthorized">Blur服务指示您的请求未经验证，请检查以确保Blur服务正在正常工作。</string>
+    <string name="error_wrong_device">另一设备正在使用该帐户，使用此帐户之前必须清除该设备。</string>
+    <string name="error_wrong_password">"您的ID和/或密码无法识别，请检查并重试。如果您忘记了密码，请单击'忘记密码'按钮，密码将发至您的电子邮箱。"</string>
+    <string name="error_captcha_invalid">验证码字符串错误，请重试。</string>
+    <string name="error_captcha_expired">验证码到期，请重试。</string>
+    <string name="error_ssl_error">设备上时钟出错，请与客服联系。</string>
+    <string name="error_retreiving_information">检索信息时出错。</string>
+    <string name="error_wifi_only">社交网络应用程序设置为仅通过 WLAN 进行同步。</string>
+    <string name="service_data_error">从 Blur 服务获取数据存在错误</string>
+    <string name="retry">重试</string>
+    <string name="terms_of_service_text">需要互联网数据连接才能查看条款和条件。</string>
+    <string name="data_analytics_text">需要互联网数据连接才能查看数据分析。</string>
+    <string name="end_user_license_agreement_text">软件许可协议内容</string>
+    <string name="bad_phone_format">"您的手机号码必须只包含数字、'-'或'+'"</string>
+    <string name="bad_password_format">密码不能包含空格。</string>
+    <string name="must_be_at_least">{0}必须至少 {1} 个字符。</string>
+    <string name="start">开始</string>
+    <string name="finish">完成</string>
+    <string name="set_up_cancel">跳过设置</string>
+    <string name="waiting_for_connection">正在检查数据连接</string>
+    <string name="setup_blur_device_title">设置 Blur 设备</string>
+    <string name="connection_failed_text">连接失败</string>
+    <string name="no_network_connection">无网络连接</string>
+    <string name="service_error_text">摩托罗拉服务错误</string>
+    <string name="connection_chooser_select">"请选择连接类型
+以完成设置"</string>
+    <string name="connection_chooser_type">连接类型</string>
+    <string name="skip_setup_title">跳过设置</string>
+    <string name="skip_setup_text">"如果您跳过设置，设备上的某些功能可能无法使用。
+ 
+ 当数据连接可用或在您尝试使用要求您完成设置的应用程序时，设备将提示您完成设置。
+ 
+ 选择下一步以查看定位许可，然后即可完成设置并进入主屏幕。"</string>
+    <string name="blur_required">需要 Blur 帐户</string>
+    <string name="setup">设置</string>
+    <string name="connection_retry">重试蜂窝网络连接</string>
+    <string name="connection_skip">现在跳过</string>
+    <string name="connection_cell_retry_text">"连接失败！
+为了完成设置，您需要进行数据连接。
+
+有网络覆盖时请按\"重试\"按钮。"</string>
+    <string name="sim_removed">SIM 卡已移除</string>
+    <string name="simswap_signin_instruction">SIM 卡最近被移除，请登录您的帐户以验证身份。</string>
+    <string name="reset_phone">重置手机</string>
+    <string name="sign_in">登录</string>
+    <string name="checking_progress_text">正在检查…</string>
+    <string name="error_need_email_and_password_to_signin">登录帐户以验证身份。</string>
+    <string name="delete_email_accounts_msg">加载一个现有 MOTOBLUR 帐户将删除手机内的所有电子邮件帐户并用 MOTOBLUR 配置文件中存储的帐户替换他们。</string>
+    <string name="delete_email_accounts_continue_btn">继续</string>
+    <string name="moto_required">需要摩托罗拉帐户</string>
+    <string name="moto_required_info">"无摩托罗拉服务帐户，\"系统更新\"不可用。
+
+是否立即设置一个帐户？"</string>
+    <string name="sn_required">需要社交网络帐户</string>
+    <string name="sn_required_info">"无社交网络帐户，\"{0}\"的社交功能不可用。
+请点击\"设置\" 按钮，创建一个新帐户。"</string>
+    <string name="connection_failed_textinfo">"为完成设置，您需要进行数据连接
+
+您有以下选择："</string>
+    <string name="no_network_connection_textinfo">"为完成设置，您需要进行数据连接。
+您有以下选择：
+"</string>
+    <string name="service_error_textinfo">内部服务器发生错误。请重试。</string>
+    <string name="setup_wifi">设置 WLAN 连接</string>
+    <string name="retry_cellular">重试当前连接</string>
+    <string name="skip_for_now">跳过当前设置</string>
+    <string name="try_again_later">请稍后再试</string>
+    <string name="account_creation_timeout_title">超过预期时间</string>
+    <string name="account_creation_timeout_content">我们将继续在后台进行尝试.</string>
+    <string name="communicating_with_server">"正在与服务器通信。
+请稍候..."</string>
+    <string name="notification_title">帐户设置</string>
+    <string name="notification_text">请输入验证码</string>
+    <string name="blur_account_setup">Blur 帐户设置</string>
+    <string name="restore_previous_device">恢复之前的摩托罗拉设备？</string>
+    <string name="restore_details_string">"从之前的摩托罗拉设备中恢复联系人、设置和帐户？
+"</string>
+    <string name="enter_motorola_id">您必须输入您的 MotoCast ID 才能恢复内容。</string>
+    <string name="what_is_motoid">什么是 MotoCast ID？</string>
+    <string name="yes_restore">是的，我想恢复</string>
+    <string name="no_restore">不，不恢复</string>
+    <string name="setup_title">摩托罗拉设置</string>
+    <string name="quick_upload">快速上传</string>
+    <string name="quick_upload_pictures">快速上传图片</string>
+    <string name="quick_upload_videos">快速上传视频</string>
+    <string name="uploading_pictures">正在将图片上传到 %1$s</string>
+    <string name="uploading_videos">正在将视频上传到 %1$s</string>
+    <string name="uploading_pictures_and_videos">正在将图片和视频上传到 %1$s</string>
+    <string name="quick_upload_pics_not_setup_text">尚未为图片设置默认快速上传帐户。是否立即设置默认快速上传帐户并继续上传？</string>
+    <string name="quick_upload_videos_not_setup_text">尚未为视频设置默认快速上传帐户。是否立即设置默认快速上传帐户并继续上传？</string>
+    <string name="web_setting">是</string>
+    <string name="web_cancel_upload">取消</string>
+    <string name="web_cancel">否</string>
+    <string name="toast_BlurFailed">未安装 Blur！</string>
+    <string name="online_album_email_addr_title">输入电子邮件地址</string>
+    <string name="enter_email">输入电子邮件</string>
+    <string name="add_account_dot">添加帐户...</string>
+    <string name="btn_ok">确定</string>
+    <string name="data_saver_enabled">数据保护已开启</string>
+    <string name="data_saver_text">当 WLAN 可用时该上传将加入传输队列。要立即上传，请转到设置停用数据节约。</string>
+    <string name="delayed_toast">当 WLAN 可用时 %1$s 将加入上传队列。在通知窗口中检查进程。</string>
+    <string name="n_items">%1$d 项</string>
+    <string name="gathering_check_caption">"我想通过共享有关我如何使用手机的
+"</string>
+    <string name="gathering_link">更多信息</string>
+    <string name="gathering_check_caption2">，帮助摩托罗拉改善服务质量。</string>
+    <string name="tos_link">摩托罗拉服务条款</string>
+    <string name="large_upload">大文件上传</string>
+    <string name="large_upload_text">通过网络上传可能比通过 WLAN 网络上传需要更长时间。</string>
+    <string name="upload_via_wifi">通过 WLAN 上传</string>
+    <string name="upload_now">立即上传</string>
+    <string name="settings_button">设置</string>
+    <string name="cancel_button">取消</string>
+    <string name="blur_required_info">"无 Blur 帐户，\"{0}\"不可用。
+点击\"设置\"按钮，创建新的 Blur 帐户或登录现有帐户。"</string>
+    <string name="airplane_active">已开启飞行模式。</string>
+    <string name="privacy_policy_title">摩托罗拉隐私协议</string>
+    <string name="privacy_policy_summary">摩托罗拉重视保护您提交给我们的信息。本隐私协议描述了我们如何从您的移动设备收集信息以及如何使用这些信息。可能会产生数据流量费。阅读我们的全部隐私声明，以了解更多信息。</string>
+    <string name="privacy_profiles_title">隐私配置文件</string>
+    <string name="privacy_profiles_summary">选择最适合您的需要的隐私配置文件。</string>
+    <string name="location_services_title">定位服务</string>
+    <string name="location_services_summary">可访问设备位置的应用程序，以及该信息可以帮助您做的事。</string>
+    <string name="location_services_content_default">如果您启用了基于位置的服务，我们将访问基于 GPS 坐标、基站定位和无线网络的定位信息，以帮助您查找周围的地点，在明显位置显示设备使用模式，并提出设备行为建议，探索改进摩托罗拉产品和服务的方法，并遵守法律义务。</string>
+    <string name="collection_use_title">收集和使用</string>
+    <string name="collection_use_summary">从您的设备收集各种类型的数据以及如何用它来帮助摩托罗拉改善服务。</string>
+    <string name="collection_use_content_default">根据您选择的隐私配置文件，我们将收集以下部分或全部信息：核心功能数据、性能数据、分析数据、个人信息、应用程序使用历史记录、链接到设备的社交网络配置文件中公开可获得的信息，以及使用设备内置浏览器访问网站的信息。我们利用此信息使您能够通过电子邮件和社交网络帐户收发信息，帮助支持、排除故障和优化设备性能，告诉您关于摩托罗拉的产品和服务，帮助改善摩托罗拉的产品和服务，并进行统计分析和模拟细分市场。</string>
+    <string name="tracking_ads_title">跟踪和广告</string>
+    <string name="tracking_ads_summary">您的设备不使用网络跟踪技术，如标签和 cookie。</string>
+    <string name="tracking_ads_content_default">我们不会在您的设备上安置或使用网络跟踪技术（如像素标签或 cookie）来存储敏感信息（如密码或个人数据）、分析流量、个性化设备功能或探索改进摩托罗拉产品和服务的方式。但是，您访问的网页或在您的移动设备上安装和使用的应用程序可能根据其使用条款安置和使用此类跟踪技术。</string>
+    <string name="security_title">安全性</string>
+    <string name="security_summary">摩托罗拉使用标准的安全措施和协议。</string>
+    <string name="security_content_default">我们在与代表我们工作的服务提供商共享您的信息之前，将要求他们按照我们的标准保护您的信息，并且不以任何独立目的使用您的信息。我们也使用标准的技术和组织保障措施来保护为向您提供服务和支持而收集和使用的信息。您应该使用提供的安全功能随时保持您的设备安全。</string>
+    <string name="contact_motorola_title">联系摩托罗拉</string>
+    <string name="contact_motorola_summary">如有任何问题或疑问，请联系摩托罗拉。</string>
+    <string name="contact_motorola_content_default">"您可以联系摩托罗拉，以检查、修改、修正、更新或删除您的信息或发邮件至以下地址询问关于隐私协议的问题：
+
+Motorola Mobility
+Privacy Compliance Program
+600 US Highway 45, W435M
+Libertyville, IL 60048
+USA
+电子邮件：privacy@motorola.com"</string>
+    <string name="full_privacy_title">全部摩托罗拉隐私协议</string>
+    <string name="full_privacy_summary">查看完整的摩托罗拉隐私协议。</string>
+    <string name="full_privacy_content_default">需要互联网数据连接才能查看隐私协议。</string>
+    <string name="privacy_common_content_default">"您的设备可访问基于 GPS 坐标、基站定位和无线网络的定位信息。
+
+该信息用于：
+
+-查找您周围的地点
+-在明显位置显示设备使用模式，并提出设备行为建议。
+-探索改进摩托罗拉产品和服务的方法
+-遵守法律义务
+{1}全定位服务协议；{2}定位服务全文。
+定位服务全文。
+定位服务全文。
+定位服务全文。
+定位服务全文。
+定位服务全文。
+"</string>
+    <string name="motorola_privacy_profiles_title">摩托罗拉隐私配置文件</string>
+    <string name="motorola_privacy_profiles_summary">为了向您提供增强的客户支持和改进产品和服务质量，我们将收集关于您如何使用设备的信息。请选择符合您需要的隐私配置文件。如需了解更多信息，请查看我们的隐私协议。</string>
+    <string name="motorola_privacy_profiles_footer">您可通过设备中设置应用程序下的隐私权菜单随时更改选择。</string>
+    <string name="see_detail">查看详情</string>
+    <string name="opt_out_title">无 - %1$s</string>
+    <string name="opt_out_summary">除了保持设备不断更新的匿名信息之外，将不会收集任何数据</string>
+    <string name="support_title">支持 - %1$s</string>
+    <string name="support_summary">用于技术支持和保持设备不断更新的信息</string>
+    <string name="standard_title">标准 - %1$s</string>
+    <string name="standard_summary">为设备提供支持和推荐摩托罗拉产品所需的信息</string>
+    <string name="advanced_title">高级 - %1$s</string>
+    <string name="advanced_summary">标准数据及其他信息，以便您的设备可帮助您找到周围地点及提供其他推荐</string>
+    <string name="privacy_notification_text">选择隐私协议</string>
+    <string name="opt_out_profile_title">无隐私配置文件</string>
+    <string name="opt_out_profile_text">我们将仅收集用于执行基本功能的必要核心功能数据，如确定您的设备是否有可用软件更新。如果您选择了此选项，将会为我们向您的设备提供技术支持带来不利影响。</string>
+    <string name="support_profile_title">仅支持隐私配置文件</string>
+    <string name="support_profile_text">如果您选择了仅支持隐私配置文件，我们将仅收集为您的设备提供改进技术支持所需的必要核心功能数据和支持信息。我们仅将此类信息用于故障排除，及向您的设备提供支持后提供跟进维护。</string>
+    <string name="standard_profile_title">标准隐私配置文件</string>
+    <string name="standard_profile_text">如果您选择了标准配置文件，我们将收集核心功能数据、性能数据和分析数据。除支持信息外，我们还收集和分析关于您如何使用设备的信息，以改进我们的产品和服务，向您提出与摩托罗拉产品和服务相关的建议，并进一步增强我们支持您的设备的能力。</string>
+    <string name="advanced_profile_title">高级隐私配置文件</string>
+    <string name="advanced_profile_text">为了向您提供可能的最佳用户体验，我们收集核心功能信息、支持信息、性能数据、关于您如何使用设备、设备位置、使用内置网页浏览器和应用程序使用历史记录的信息以及可用的公开社交配置文件信息。我们将此类信息用于进一步增强我们的技术支持能力，通过 Smart Actions 分析您的位置，提供改进建议，及执行人口统计分析。</string>
+    <string name="advanced_profile_text_tablet">为了向您提供可能的最佳用户体验，我们收集核心功能信息、支持信息、性能数据、关于您如何使用设备、设备位置、使用内置网页浏览器和应用程序使用历史记录的信息以及可用的公开社交配置文件信息。我们将此类信息用于进一步增强我们的技术支持能力，及执行人口统计分析。</string>
+    <string name="privacy_link">查看完整的隐私协议</string>
+    <string name="privacy_error">此时无法连接。您可通过设置 > 隐私权 > 摩托罗拉隐私协议，再次进行访问。</string>
+    <string name="terms_error">此时无法连接。您可通过设置 > 关于手机 > 法律信息，再次进行访问。</string>
+    <string name="legal_error">此时无法连接。</string>
+    <string name="legal_error_title">错误</string>
+    <string name="truste_url">http://privacy-policy.truste.com/certified-policy/mobile/app/en/motorola.com</string>
+    <string name="i_agree">我同意摩托罗拉条款和隐私协议</string>
+    <string name="backup_settings_title">备份和还原</string>
+    <string name="backup_restore_instruction">使用您的 Google 帐户备份应用程序、设置（如书签和 WLAN 密码）及其他数据。如果您之前已使用您的帐户进行过备份，现在即可将备份内容恢复到本手机。</string>
+    <string name="backup_restore_setting">您可以随时在隐私权设置中更改备份设置。</string>
+    <string name="restore_title">从 Google 帐户还原</string>
+    <string name="backup_title">使用 Google 帐户备份</string>
+</resources>

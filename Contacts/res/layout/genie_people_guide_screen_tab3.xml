@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.contacts.genie.GenieCling android:id="@id/genie_layout_3" android:background="@drawable/bg_genie_gradient_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/people_guide_screen1_fav_tab_navigator" android:background="@drawable/btn_cling_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="175.0dip" android:text="@string/done" style="@style/ClingButton" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_weight="1.0">
+                <TextView android:paddingBottom="5.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/genie_search" style="@style/GMClingTitleText" />
+                <TextView android:paddingBottom="5.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/genie_search_message" style="@style/GMClingText" />
+                <ImageView android:background="@drawable/leader_down" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.motorola.contacts.genie.GenieCling>

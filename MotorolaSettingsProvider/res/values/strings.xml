@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hslp_address" />
+    <string name="supl_pref_apn" />
+    <string name="supl_alt_apns" />
+    <string name="supl_dm_provider_id" />
+    <string name="supl_dm_name" />
+    <string name="supl_dm_addr_type" />
+    <string name="supl_dm_app_id">ap0004</string>
+    <string name="vm_number_cdma">*86</string>
+    <string name="mms_uaprof_tagname">x-wap-profile</string>
+    <string name="country_code">1</string>
+    <string name="def_led_notification_enabled">1</string>
+    <string name="def_screen_lock_enabled">1</string>
+    <string name="def_country_name">United States of America</string>
+    <string name="def_country_idd">011</string>
+    <string name="def_country_ndd">1</string>
+    <string name="def_country_area_code">000</string>
+    <string name="preload_carrier" />
+    <string name="default_contact_account_name" />
+    <string name="default_contact_account_type" />
+    <string name="contact_additional_menu_intent" />
+    <string name="contact_additional_menu_title" />
+    <string name="contact_additional_menu_icon" />
+    <string name="contact_additional_menu_res_package" />
+    <string name="def_double_tap_value">none</string>
+    <string name="def_keyboard_layout_external">init:us_basic</string>
+    <string name="demo_video_path_in_system">/system/etc/motorola/MotoDemo/Moto_Demo.3gp</string>
+    <string name="demo_video_path_in_sdcard">/MotoDemo/Moto_Demo.3gp</string>
+    <string name="demo_video_download_uri">www.mobile-5.com/motorola/videos/video01_en.3gp</string>
+    <string name="wifi_p2p_device_name">Android_</string>
+    <string name="roaming_plmn_table" />
+    <string name="black_list_roaming_plmn_table" />
+    <string name="roaming_mcc_table" />
+    <string name="permlab_writeGservices">Write Gservices settings.</string>
+    <string name="permdesc_writeGservices">Allows the application to change the settings in Gservices.</string>
+    <string name="permlab_tcmdLocal">Use Test Commands</string>
+    <string name="permdesc_tcmdLocal">Use Test Commands</string>
+    <string name="settings_storage">Settings Storage</string>
+</resources>

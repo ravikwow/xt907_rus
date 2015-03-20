@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cancel_menu_item" android:background="?android:actionBarItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/cancel_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ab_cancel" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/action_bar_button_text_color" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_doNotSave" style="@android:style/Widget.Holo.ActionBar.TabText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/save_menu_item" android:background="?android:actionBarItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/save_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ab_done" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/action_bar_button_text_color" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_save" style="@android:style/Widget.Holo.ActionBar.TabText" />
+    </LinearLayout>
+</LinearLayout>

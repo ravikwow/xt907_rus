@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Yksi sivu / puoli</item>
+        <item>Kaksi sivua / puoli</item>
+        <item>Neljä sivua / puoli</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Muotokuva</item>
+        <item>Maisema</item>
+        <item>Käännetty vaaka</item>
+        <item>Käännetty pysty</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>muotokuva</item>
+        <item>maisema</item>
+        <item>reverse-landscape</item>
+        <item>reverse-portrait</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Yksipuolinen</item>
+        <item>Kaksipuolinen, pitkä reunus</item>
+        <item>Kaksipuolinen, lyhyt reunus</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>one-sided</item>
+        <item>two-sided-long-edge</item>
+        <item>two-sided-short-edge</item>
+    </string-array>
+</resources>

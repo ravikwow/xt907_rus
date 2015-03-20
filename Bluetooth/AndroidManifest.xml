@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="@string/sharedUserId" package="com.android.bluetooth">
+    <original-package android:name="com.android.bluetooth"/>
+    <permission android:description="@string/permdesc_bluetoothShareManager" android:label="@string/permlab_bluetoothShareManager" android:name="android.permission.ACCESS_BLUETOOTH_SHARE" android:protectionLevel="signature"/>
+    <permission android:description="@string/permdesc_bluetoothWhitelist" android:label="@string/permlab_bluetoothWhitelist" android:name="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" android:protectionLevel="signature"/> ,
+<permission android:description="@string/permdesc_handoverStatus" android:label="@string/permlab_handoverStatus" android:name="com.android.permission.HANDOVER_STATUS" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.permission.HANDOVER_STATUS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT"/>
+    <uses-permission android:name="android.permission.MMS_PUSH"/>
+    <application android:icon="@drawable/bt_share" android:label="@string/app_name">
+        <uses-library android:name="javax.btobex"/>
+        <provider android:authorities="com.android.bluetooth.opp" android:name=".opp.BluetoothOppProvider" android:process="@string/process">
+            <path-permission android:path="/btopp" android:permission="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+        </provider>
+        <service android:name=".opp.BluetoothOppService" android:permission="android.permission.ACCESS_BLUETOOTH_SHARE" android:process="@string/process"/>
+        <receiver android:name=".opp.BluetoothOppReceiver" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.btopp.intent.action.OPEN_RECEIVED_FILES"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".opp.BluetoothOppHandoverReceiver" android:permission="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.btopp.intent.action.WHITELIST_DEVICE"/>
+                <action android:name="android.btopp.intent.action.STOP_HANDOVER_TRANSFER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.btopp.intent.action.HANDOVER_SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.btopp.intent.action.HANDOVER_SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/bt_share_picker_label" android:name=".opp.BluetoothOppLauncherActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="text/x-vcard"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="application/zip"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="application/x-koan"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="x-mixmedia/*"/>
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.btopp.intent.action.OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.android.btopp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnableActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtErrorActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppBtEnablingActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppIncomingFileConfirmActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name=".opp.BluetoothOppTransferActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert"/>
+        <activity android:icon="@drawable/ic_launcher_folder_bluetooth" android:label="@string/btopp_live_folder" android:name=".opp.BluetoothOppLiveFolder" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="" android:name=".opp.BluetoothOppTransferHistory" android:process="@string/process"/>
+        <activity android:excludeFromRecents="true" android:name=".pbap.BluetoothPbapActivity" android:process="@string/process" android:theme="@android:style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_bpp" android:name=".bpp.BluetoothBppActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_bpp" android:name=".bpp.BluetoothBppSetting" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_bpp" android:name=".bpp.BluetoothBppPrintPrefActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_bpp" android:name=".bpp.BluetoothBppStatusActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_bpp" android:name=".bpp.BluetoothBppAuthActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".pbap.BluetoothPbapService" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.IBluetoothPbap"/>
+            </intent-filter>
+        </service>
+        <receiver android:name=".pbap.BluetoothPbapReceiver" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REPLY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:name=".ftp.BluetoothFtpActivity" android:process="@string/process" android:theme="@android:style/Theme.Dialog.Alert">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".ftp.BluetoothFtpService" android:process="@string/process"/>
+        <receiver android:name=".ftp.BluetoothFtpReceiver" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:name=".map.BluetoothMasActivity" android:process="@string/process" android:theme="@android:style/Theme.Dialog.Alert">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".map.BluetoothMasService" android:process="@string/process"/>
+        <receiver android:name=".map.BluetoothMasReceiver" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".thermometer.BluetoothThermometerServices" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.IBluetoothThermometerServices"/>
+            </intent-filter>
+        </service>
+        <service android:name=".proximity.LEProximityServices" android:process="@string/process">
+            <intent-filter>
+                <action android:name="android.bluetooth.IBluetoothLEProximityServices"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

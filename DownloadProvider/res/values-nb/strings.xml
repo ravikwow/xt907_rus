@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Nedlaster</string>
+    <string name="permlab_downloadManager">Få tilgang til nedlasteren.</string>
+    <string name="permdesc_downloadManager">Gjør at programmet får tilgang til nedlastingsbehandlingen og kan bruke den til å laste ned filer. Skadelige programmer kan bruke dette til å forstyrre nedlastinger og få tilgang til privat informasjon.</string>
+    <string name="permlab_downloadManagerAdvanced">Avansert nedlastingsfunksjonalitet.</string>
+    <string name="permdesc_downloadManagerAdvanced">Gjør at programmet får tilgang til avanserte funksjoner i nedlastingsbehandlingen. Skadelige programmer kan bruke dette til å forstyrre nedlastinger og få tilgang til privat informasjon.</string>
+    <string name="permlab_downloadCompletedIntent">Sende nedlastingsvarslinger</string>
+    <string name="permdesc_downloadCompletedIntent">Gjør at programmet kan sende varsler om ferdige nedlastinger. Skadelige programmer kan bruke dette for å forvirre andre programmer som laster ned filer.</string>
+    <string name="permlab_seeAllExternal">Vis alle nedlastinger til SD-kort</string>
+    <string name="permdesc_seeAllExternal">Gjør at programmet kan se alle nedlastinger til SD-kortet, uavhengig av hvilket program som lastet dem ned.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Reserver lagringsplass i nedlastingsbufferen</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Gjør at programmet kan laste ned filer til nedlastingsbufferen, som ikke kan slettes automatisk når nedlastingsbehandlingen trenger mer plass.</string>
+    <string name="permlab_downloadWithoutNotification">last ned filer uten varsling</string>
+    <string name="permdesc_downloadWithoutNotification">Gjør at programmet kan laste ned filer via nedlastingsbehandlingen uten at brukeren varsles.</string>
+    <string name="permlab_accessAllDownloads">Tilgang til alle systemnedlastinger</string>
+    <string name="permdesc_accessAllDownloads">Gjør at programmet kan vise og endre alle nedlastinger som er startet av andre programmer i systemet.</string>
+    <string name="download_unknown_title">&lt;Uten navn></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" og %d til"</string>
+    <string name="notification_download_complete">Nedlasting fullført.</string>
+    <string name="notification_download_failed">Nedlasting mislyktes.</string>
+    <string name="notification_need_wifi_for_size">Nedlastingsstørrelsen krever Wi-Fi.</string>
+    <string name="notification_paused_in_background">Satt på pause i bakgrunnen.</string>
+    <string name="wifi_required_title">Nedlastingen er for stor for operatørnettverket</string>
+    <string name="wifi_required_body" formatted="false">"Du må bruke Wi-Fi for å fullføre denne %s-nedlastingen. 
+
+Trykk på %s for å starte nedlastingen neste gang du er koblet til et Wi-Fi-nettverk."</string>
+    <string name="wifi_recommended_title">Vil du sette nedlastingen i kø til senere?</string>
+    <string name="wifi_recommended_body" formatted="false">"Hvis du starter denne %s -nedlastingen nå, kan det redusere batterilevetiden og/eller resultere i ekstra mobildatabruk, noe som igjen kan føre til kostnader fra mobiloperatøren avhengig av abonnementet ditt.
+
+ Trykk på %s for å starte nedlastingen neste gang du er koblet til et Wi-Fi-nettverk."</string>
+    <string name="button_queue_for_wifi">Kø</string>
+    <string name="button_cancel_download">Avbryt</string>
+    <string name="button_start_now">Start nå</string>
+    <string name="download_percent">%d %%</string>
+    <string name="notification_dwonload_wait_mobile_network">Nedlasting krever mobilnettverk</string>
+    <string name="notification_dwonload_wait_wifi_network">Nedlasting krever Wi-Fi-nettverk</string>
+    <string name="notification_dwonload_wait_network">Nedlasting krever nettverk</string>
+    <string name="notification_download_insufficient_space">Nedlasting mislyktes, ikke nok minne</string>
+</resources>

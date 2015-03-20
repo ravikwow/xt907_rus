@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caller_id_display_values">
+        <item>Yalnızca Zil</item>
+        <item>Arayan Kimliği ve Zil</item>
+        <item>Arayan Kimliği Tekrarı</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Ağ varsayılanı</item>
+        <item>Numarayı gizle</item>
+        <item>Numarayı göster</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>Küresel</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>Yalnızca EvDo</item>
+        <item>EvDo olmadan CDMA</item>
+        <item>CDMA/EvDo auto</item>
+        <item>GSM/WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM/WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE/CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>İngilizce</item>
+        <item>Fransızca</item>
+        <item>İspanyolca</item>
+        <item>Japonca</item>
+        <item>Korece</item>
+        <item>Çince</item>
+        <item>İbranice</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (otomatik mod)</item>
+        <item>Yalnızca WCDMA</item>
+        <item>Yalnızca GSM</item>
+        <item>GSM/WCDA (WCDMA tercihli)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Yalnızca ana şebeke</item>
+        <item>Otomatik</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>Yalnızca Ana Ağlar</item>
+        <item>Bağlı Ağlar</item>
+        <item>Tüm Ağlar</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>Yalnızca CDMA</item>
+        <item>Yalnızca EvDo</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY Kapalı</item>
+        <item>TTY Tam</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normal</item>
+        <item>Uzun</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_d2we_34387">
+        <item>Küresel</item>
+        <item>CDMA</item>
+        <item>GSM/UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_d2we_34387">
+        <item>7</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="select_network_display_values_34387">
+        <item>"Yalnızca GSM
+(pil tasarrufu sağlar)"</item>
+        <item>"Yalnızca UMTS
+(daha iyi performans)"</item>
+        <item>"Otomatik
+(varsayılan)"</item>
+    </string-array>
+    <string-array name="select_network_display_values">
+        <item>Yalnızca 2G</item>
+        <item>"Yalnızca 3G
+(daha iyi performans)"</item>
+        <item>"Otomatik
+(varsayılan)"</item>
+    </string-array>
+    <string-array name="select_network_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_35989">
+        <item>Genel</item>
+        <item>LTE / CDMA</item>
+        <item>Yalnızca CDMA</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_35989">
+        <item>10</item>
+        <item>8</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="voicemail_notification_vibrate_when_entries">
+        <item>Her zaman</item>
+        <item>Yalnızca sessizken</item>
+        <item>Hiçbir zaman</item>
+    </string-array>
+    <string-array name="entries_voicemail_choose_vmvvm">
+        <item>Sesli Mesaj</item>
+        <item>Görsel Sesli Mesaj</item>
+        <item>Her Zaman Seç</item>
+    </string-array>
+    <string-array name="entry_values_voicemail_choose_vmvvm">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_vvm_roaming_prompt">
+        <item>Sesli Mesaj</item>
+        <item>Görsel Sesli Mesaj</item>
+        <item>Her Zaman Seç</item>
+    </string-array>
+    <string-array name="entry_values_vvm_roaming_prompt">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_rm_system_select_choices">
+        <item>Yalnızca ana şebeke</item>
+        <item>Otomatik A</item>
+        <item>Otomatik B</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_39325">
+        <item>Küresel</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_39325">
+        <item>10</item>
+        <item>8</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_37619">
+        <item>Küresel</item>
+        <item>LTE / CDMA</item>
+        <item>LTE / GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_37619">
+        <item>10</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

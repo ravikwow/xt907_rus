@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sms_priority_modes">
+        <item>@string/priority_normal</item>
+        <item>@string/priority_high</item>
+    </string-array>
+    <string-array name="message_errors">
+        <item>Incorrect result returned</item>
+        <item>Saving succeeded</item>
+        <item>Invalid parameters</item>
+        <item>Target file already exists</item>
+        <item>Source file does not exist</item>
+        <item>File size limitation is too small</item>
+        <item>Invalid file or unsupported format</item>
+        <item>System battery is critically low</item>
+        <item>System memory is critically low</item>
+        <item>Launch failed: Unknown reasons</item>
+        <item>Saving failed: Unknown I/O error</item>
+        <item>Saving failed: Fail to create path</item>
+        <item>Saving failed: Fail to create file</item>
+        <item>Saving failed: Storage space is critical low</item>
+        <item>Saving canceled</item>
+        <item>Launch failed: Unsupported screen size</item>
+        <item>Source file modified</item>
+        <item>SD card removed</item>
+        <item>Sorry, you cannot add this video to your message.</item>
+    </string-array>
+    <string-array name="smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:D</item>
+        <item>:-/</item>
+        <item>:\"></item>
+        <item>:-P</item>
+        <item>:-*</item>
+        <item>=-O</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>":'("</item>
+        <item>:-D</item>
+        <item>:-X</item>
+        <item>:|</item>
+        <item>O:)</item>
+        <item>:-$</item>
+        <item>:-\\</item>
+    </string-array>
+    <array name="smiley_icons">
+        <item>@drawable/ic_control_happy</item>
+        <item>@drawable/ic_control_sad</item>
+        <item>@drawable/ic_control_winking</item>
+        <item>@drawable/ic_control_big_grin</item>
+        <item>@drawable/ic_control_confused</item>
+        <item>@drawable/ic_control_embarrassed</item>
+        <item>@drawable/ic_control_tongue_sticking</item>
+        <item>@drawable/ic_control_kissing</item>
+        <item>@drawable/ic_control_surprised</item>
+        <item>@drawable/ic_control_angry</item>
+        <item>@drawable/ic_control_cool</item>
+        <item>@drawable/ic_control_crying</item>
+        <item>@drawable/ic_control_laughing</item>
+        <item>@drawable/ic_control_lips_sealed</item>
+        <item>@drawable/ic_control_not_talking</item>
+        <item>@drawable/ic_control_angel</item>
+        <item>@drawable/ic_control_money_mouth</item>
+        <item>@drawable/ic_control_wtf</item>
+    </array>
+    <string-array name="smiley_texts_parser">
+        <item>:-)</item>
+        <item>:)</item>
+        <item>:-(</item>
+        <item>:(</item>
+        <item>;-)</item>
+        <item>;)</item>
+        <item>:D</item>
+        <item>:-/</item>
+        <item>:\"></item>
+        <item>:-[</item>
+        <item>:-P</item>
+        <item>:P</item>
+        <item>:-*</item>
+        <item>:*</item>
+        <item>=-O</item>
+        <item>=O</item>
+        <item>:O</item>
+        <item>X(</item>
+        <item>X-(</item>
+        <item>B-)</item>
+        <item>":'("</item>
+        <item>:-D</item>
+        <item>:-X</item>
+        <item>:X</item>
+        <item>:-!</item>
+        <item>:!</item>
+        <item>:-|</item>
+        <item>:|</item>
+        <item>O:-)</item>
+        <item>O:)</item>
+        <item>:-$</item>
+        <item>:$</item>
+        <item>o_O</item>
+        <item>:-\\</item>
+        <item>:\\</item>
+    </string-array>
+    <array name="smiley_icons_parser">
+        <item>@drawable/ic_list_happy</item>
+        <item>@drawable/ic_list_happy</item>
+        <item>@drawable/ic_list_sad</item>
+        <item>@drawable/ic_list_sad</item>
+        <item>@drawable/ic_list_winking</item>
+        <item>@drawable/ic_list_winking</item>
+        <item>@drawable/ic_list_big_grin</item>
+        <item>@drawable/ic_list_confused</item>
+        <item>@drawable/ic_list_embarrassed</item>
+        <item>@drawable/ic_list_embarrassed</item>
+        <item>@drawable/ic_list_tongue_sticking</item>
+        <item>@drawable/ic_list_tongue_sticking</item>
+        <item>@drawable/ic_list_kissing</item>
+        <item>@drawable/ic_list_kissing</item>
+        <item>@drawable/ic_list_surprised</item>
+        <item>@drawable/ic_list_surprised</item>
+        <item>@drawable/ic_list_angry</item>
+        <item>@drawable/ic_list_angry</item>
+        <item>@drawable/ic_list_angry</item>
+        <item>@drawable/ic_list_cool</item>
+        <item>@drawable/ic_list_crying</item>
+        <item>@drawable/ic_list_laughing</item>
+        <item>@drawable/ic_list_lips_sealed</item>
+        <item>@drawable/ic_list_lips_sealed</item>
+        <item>@drawable/ic_list_lips_sealed</item>
+        <item>@drawable/ic_list_lips_sealed</item>
+        <item>@drawable/ic_list_not_talking</item>
+        <item>@drawable/ic_list_not_talking</item>
+        <item>@drawable/ic_list_angel</item>
+        <item>@drawable/ic_list_angel</item>
+        <item>@drawable/ic_list_money_mouth</item>
+        <item>@drawable/ic_list_money_mouth</item>
+        <item>@drawable/ic_list_wtf</item>
+        <item>@drawable/ic_list_wtf</item>
+        <item>@drawable/ic_list_wtf</item>
+    </array>
+    <string-array name="message_group_type_items">
+        <item>@string/group_conversation_group_type_option_explain</item>
+        <item>@string/group_conversation_individual_type_option</item>
+    </string-array>
+    <string-array name="message_group_type_items_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

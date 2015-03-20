@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="class_zero_background">#7f040000</color>
+    <color name="controller_background">#c0000000</color>
+    <color name="search_list_gray">#ffd1d3d4</color>
+    <color name="search_list_dark_gray">#ff787878</color>
+    <color name="sim_message_list_light_gray">#ffb0b0b0</color>
+    <color name="link_color">#ff64e8f4</color>
+    <color name="text_color_light">#ffffffff</color>
+    <color name="message_outline_color">#ff808080</color>
+    <color name="message_text_color_light">#ffffffff</color>
+    <color name="message_text_color_out">#ffffffff</color>
+    <color name="message_text_color_in">#ffffffff</color>
+    <color name="message_color_in">#ff0d4c63</color>
+    <color name="message_color_out">#ff494949</color>
+</resources>

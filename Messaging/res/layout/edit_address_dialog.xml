@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="40.0dip" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.motorola.messaging.addressingwidget.AddressingAutoComplete android:textSize="20.0sp" android:id="@id/edit_auto_complete_textview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/edit_dialog_pickerchoice_checkbox" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.motorola.android.providers.settings">
+    <permission android:description="@string/permdesc_tcmdLocal" android:label="@string/permlab_tcmdLocal" android:name="com.motorola.android.permission.TCMD_LOCAL" android:protectionLevel="signatureOrSystem"/>
+    <application android:allowClearUserData="false" android:icon="@drawable/ic_launcher_settings" android:label="@string/settings_storage">
+        <provider android:authorities="com.motorola.android.providers.settings" android:multiprocess="false" android:name="MotorolaSettingsProvider" android:process="system" android:writePermission="android.permission.WRITE_SECURE_SETTINGS"/>
+    </application>
+</manifest>

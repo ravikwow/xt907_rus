@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/speedDialEditAdapterHandle" android:layout_width="fill_parent" android:layout_height="@dimen/call_log_list_contact_photo_size" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/pickerPosition" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/addSpeedDialClickArea" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/pickerImage" android:layout_width="@dimen/call_log_list_contact_photo_size" android:layout_height="@dimen/call_log_list_contact_photo_size" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/pickerName" android:layout_marginTop="5.0dip" style="@style/Contacts.SpeedDialNameEditSingleLine" />
+            <TextView android:id="@id/pickerNumber" style="@style/Contacts.SpeedDialNumberEditSingleLine" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/removeSpeedDialClickArea" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_notify_clear" android:scaleType="centerInside" android:layout_centerVertical="true" />
+</LinearLayout>

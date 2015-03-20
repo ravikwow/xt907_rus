@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Attachments saved</item>
+        <item quantity="one">Attachment saved</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"The attachments cannot be saved as the SD card is missing.
+
+Please re-insert SD card."</item>
+        <item quantity="one">"The attachment cannot be saved as the SD card is missing.
+
+Please re-insert SD card."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">There is not enough memory to save the attachments.</item>
+        <item quantity="one">There is not enough memory to save the attachment.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">One or more of the attachments have failed to save.</item>
+        <item quantity="one">The attachment failed to save.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d messages will be deleted.</item>
+        <item quantity="one">1 message will be deleted.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d messages protected.</item>
+        <item quantity="one">1 message protected.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d messages unprotected.</item>
+        <item quantity="one">1 message unprotected.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">You have task reminders</item>
+        <item quantity="one">You have a task reminder</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d reminders)</item>
+        <item quantity="one">1 task to complete</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d tasks found</item>
+        <item quantity="zero">%d task found</item>
+        <item quantity="one">%d task found</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Overdue</item>
+        <item quantity="one">Overdue</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Every %1$d days after each task is completed</item>
+        <item quantity="one">Every day after each task is completed</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Every %1$d weeks after each task is completed</item>
+        <item quantity="one">Every week after each task is completed</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Every %1$d months after each task is completed</item>
+        <item quantity="one">Every month after each task is completed</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Every %1$d years after each task is completed</item>
+        <item quantity="one">Every year after each task is completed</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="integer" name="mms_maximum_message_size" value="1048576" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="159" />
+    <setting type="integer" name="sms_mms_threshold" value="6" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="boolean" name="AutoRetrievalDefaultPref" value="false" />
+    <setting type="boolean" name="CallbackNumEnable" value="true" />
+    <setting type="boolean" name="PriorityEnable" value="true" />
+    <setting type="boolean" name="SignatureEnable" value="true" />
+    <setting type="boolean" name="SecondaryMmscSupport" value="true" />
+    <setting type="integer" name="MmsFromFormat" value="1" />
+    <setting type="boolean" name="MmsNumberPlusPrefixEnabled" value="true" />
+    <setting type="string" name="ProprietaryHttpHeader" value="x-vzw-mdn: $mdn" />
+    <setting type="boolean" name="sms_pref_key_to_email" value="true" />
+    <setting type="string" name="sms_pref_key_email_gateway_num" value="6245" />
+    <setting type="boolean" name="NotifyWapMmscEnable" value="true" />
+    <setting type="string" name="mms_online_album" value="4444" />
+    <setting type="boolean" name="MmsOnlineAlbumEnabled" value="true" />
+    <setting type="boolean" name="CallbackNumDefaultPref" value="false" />
+    <setting type="integer" name="DefaultEncodingMethod" value="1" />
+    <setting type="integer" name="OutgoingMessageTypeDefaultPref" value="1" />
+</settings>

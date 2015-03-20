@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.InCallTouchUi android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android">
+    <RelativeLayout android:id="@id/inCallControls" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/dtmf_twelve_key_dialer_stub" android:layout="@layout/dtmf_twelve_key_dialer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dialpad_vertical_margin" android:layout_above="@id/bottomButtons" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bottomButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/extraButtonRow" android:background="@color/incall_button_extrarow_background" android:paddingLeft="@dimen/button_cluster_side_padding" android:paddingRight="@dimen/button_cluster_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/manageConferenceButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/manageConferenceButtonImage" android:clickable="false" android:src="@drawable/ic_groups_holo_dark" android:contentDescription="@string/onscreenManageConferenceText" style="@style/InCallExtraRowButton" />
+                    <TextView android:id="@id/manageConferenceButtonLabel" android:text="@string/onscreenManageConferenceText" style="@style/InCallExtraRowButtonLabel" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/cdmaMergeButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/cdmaMergeButtonImage" android:clickable="false" android:src="@drawable/ic_merge" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallExtraRowButton" />
+                    <TextView android:id="@id/cdmaMergeButtonLabel" android:text="@string/onscreenMergeCallsText" style="@style/InCallExtraRowButtonLabel" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/cdmaSwapButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/cdmaSwapButtonImage" android:clickable="false" android:src="@drawable/ic_incall_switch" android:contentDescription="@string/onscreenSwapCallsText" style="@style/InCallExtraRowButton" />
+                    <TextView android:id="@id/cdmaSwapButtonLabel" android:text="@string/onscreenSwapCallsText" style="@style/InCallExtraRowButtonLabel" />
+                </LinearLayout>
+            </FrameLayout>
+            <ImageButton android:id="@id/endButton" android:background="@drawable/end_call_background" android:layout_width="fill_parent" android:src="@drawable/ic_dial_end_call" android:contentDescription="@string/onscreenEndCallText" style="@style/InCallEndButton" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/dialpad_background" android:paddingLeft="@dimen/button_cluster_side_padding" android:paddingRight="@dimen/button_cluster_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/VerticalSeparator" />
+                <com.android.phone.AlphaToggleButton android:id="@id/dialpadButton" android:background="@drawable/btn_compound_background" android:textOn="@string/onscreenShowDialpadText" android:textOff="@string/onscreenShowDialpadText" android:drawableTop="@drawable/ic_dialpad" android:layout_weight="1.0" android:contentDescription="@string/onscreenShowDialpadText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <ToggleButton android:id="@id/audioButton" android:background="@drawable/btn_compound_background" android:textOn="@string/onscreenSpeakerText" android:textOff="@string/onscreenSpeakerText" android:drawableTop="@drawable/btn_compound_audio" android:layout_weight="1.0" android:contentDescription="@string/onscreenAudioText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <com.android.phone.AlphaToggleButton android:id="@id/muteButton" android:background="@drawable/btn_compound_background" android:textOn="@string/onscreenMuteText" android:textOff="@string/onscreenMuteText" android:drawableTop="@drawable/ic_mute_holo_dark" android:layout_weight="1.0" android:contentDescription="@string/onscreenMuteText" style="@style/InCallCompoundButton" />
+                <View style="@style/VerticalSeparator" />
+                <com.android.phone.AlphaButton android:id="@id/addButton" android:text="@string/onscreenAddCallText" android:drawableTop="@drawable/ic_add_contact_holo_dark" android:layout_weight="1.0" android:contentDescription="@string/onscreenAddCallText" style="@style/InCallAlphaButton" />
+                <com.android.phone.AlphaButton android:id="@id/umtsMergeButton" android:text="@string/onscreenMergeButtonShortText" android:drawableTop="@drawable/ic_merge" android:layout_weight="1.0" android:contentDescription="@string/onscreenMergeButtonShortText" style="@style/InCallAlphaButton" />
+                <com.android.phone.AlphaToggleButton android:id="@id/holdButton" android:background="@drawable/btn_compound_background" android:textOn="@string/onscreenHoldShortText" android:textOff="@string/onscreenHoldShortText" android:drawableTop="@drawable/ic_hold_pause_holo_dark" android:layout_weight="1.0" android:contentDescription="@string/onscreenHoldShortText" style="@style/InCallCompoundButton" />
+                <com.android.phone.AlphaButton android:id="@id/umtsSwapButton" android:text="@string/onscreenSwapCallsShortText" android:drawableTop="@drawable/ic_incall_switch" android:layout_weight="1.0" android:contentDescription="@string/onscreenSwapCallsShortText" style="@style/InCallAlphaButton" />
+                <com.android.phone.AlphaButton android:id="@id/overflowButton" android:text="@string/onscreenOverflowText" android:drawableTop="@drawable/ic_menu_overflow" android:layout_weight="1.0" android:contentDescription="@android:string/action_menu_overflow_description" style="@style/InCallAlphaButton" />
+                <View style="@style/VerticalSeparator" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:id="@id/incomingCallHolder" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/moto_incoming_lockscreen" />
+    </LinearLayout>
+</com.android.phone.InCallTouchUi>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="mms_user_agent" value="xt910k" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.motorola.com/phoneconfig/motoxt910k/Profile/motoxt910k.rdf" />
+</settings>

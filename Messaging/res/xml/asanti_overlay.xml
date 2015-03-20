@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="mms_user_agent" value="xt896" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.vtext.com/mot/xt896/xt896.xml" />
+    <setting type="integer" name="mms_max_image_height" value="1936" />
+    <setting type="integer" name="mms_max_image_width" value="2592" />
+</settings>

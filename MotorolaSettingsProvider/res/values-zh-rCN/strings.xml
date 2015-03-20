@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="supl_dm_app_id">ap0004</string>
+    <string name="vm_number_cdma">*86</string>
+    <string name="mms_uaprof_tagname">x-wap-profile</string>
+    <string name="country_code">1</string>
+    <string name="def_led_notification_enabled">1</string>
+    <string name="def_screen_lock_enabled">1</string>
+    <string name="def_country_name">美国</string>
+    <string name="def_country_idd">011</string>
+    <string name="def_country_ndd">1</string>
+    <string name="def_country_area_code">000</string>
+    <string name="permlab_writeGservices">写入GPS服务设置.</string>
+    <string name="permdesc_writeGservices">允许应用程序更改G服务中的设置.</string>
+    <string name="permlab_tcmdLocal">使用测试命令</string>
+    <string name="permdesc_tcmdLocal">使用测试命令</string>
+    <string name="settings_storage">设置存储</string>
+    <string name="mms_country_code">1</string>
+</resources>

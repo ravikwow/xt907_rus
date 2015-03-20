@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="boolean" name="GenerateUserAgent" value="true" />
+    <setting type="integer" name="mms_maximum_message_size" value="307200" />
+    <setting type="string" name="MmsAcceptHeader" value="image/jpeg, image/gif, image/jpg, image/pjpeg, image/png, image/bmp, image/wbmp, image/tiff, image/vnd.wap.wbmp, image/wbmp, image/x-bmp, image/x-ms-bmp, video/3gp, video/3gpp, video/mpeg, video/mpg, video/mp4, video/mpg4, video/mpeg4, video/mpeg-4, video/mp4v-es, video/x-ms-wmv, video/3gpp2, audio/amr, audio/imelody, audio/mid, audio/midi, audio/x-midi, audio/x-mid, audio/sp-mid, audio/sp-midi, audio/wav, audio/x-wav, audio/x-wave, audio/aac, audio/x-amr, audio/3gpp, audio/mp3, audio/mp4, audio/x-ms-wma, audio/mpeg, text/plain, text/x-imelody, text/x-vCalendar, text/x-vCard, application/vnd.smaf, application/vnd.wap.mms-message, application/vnd.wap.sic, application/smil, application/vnd.wap.multipart.mixed, application/vnd.wap.multipart.alternative, application/vnd.wap.multipart.related, multipart/mixed, multipart/alternative, multipart/related, application/rpdu, application/octet-stream, application/vnd.oma.drm.message, application/vnd.oma.drm.content" />
+    <setting type="boolean" name="GroupMessageTypeEnabled" value="false" />
+    <setting type="integer" name="OutgoingMessageTypeDefaultPref" value="1" />
+    <setting type="boolean" name="SmsToMmsAutoConvert" value="false" />
+    <setting type="boolean" name="WapRejectEnable" value="true" />
+    <setting type="boolean" name="ManualRetryEnable" value="true" />
+    <setting type="boolean" name="sms_mms_show_network_timestamp" value="true" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="boolean" name="RoamingAutoRetrieveEnabled" value="true" />
+    <setting type="boolean" name="RetrievalRoamingDefaultPref" value="true" />
+</settings>

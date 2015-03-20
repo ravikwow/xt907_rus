@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="string" name="mms_user_agent" value="XT910" />
+    <setting type="string" name="mms_x_wap_profile_url" value="http://uaprof.motorola.com/phoneconfig/motoxt910/Profile/motoxt910.rdf" />
+    <setting type="integer" name="mms_max_image_height" value="2448" />
+    <setting type="integer" name="mms_max_image_width" value="3264" />
+</settings>

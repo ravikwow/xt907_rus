@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/address_table" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/listitem_horizontal_margin" android:shrinkColumns="0" android:layout_toLeftOf="@id/checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TableRow>
+            <TextView android:textSize="20.0sp" android:id="@id/address" android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/listitem_horizontal_margin" style="@style/ListItemText" />
+            <TextView android:textSize="20.0sp" android:id="@id/address_label" style="@style/ListItemText" />
+        </TableRow>
+    </TableLayout>
+    <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ListItemIcon" />
+</RelativeLayout>

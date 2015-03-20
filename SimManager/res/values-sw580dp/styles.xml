@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SimManagerTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/SimManagerActionBarStyle</item>
+        <item name="android:actionBarWidgetTheme">@style/SimManagerActionBarTheme</item>
+        <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item>
+    </style>
+    <style name="BackgroundOnly" parent="@style/SimManagerTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="SimManagerActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_custom_blue_inverse_holo</item>
+        <item name="android:backgroundStacked">@drawable/ab_solid_custom_blue_inverse_holo</item>
+    </style>
+    <style name="SimManagerActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:dropDownListViewStyle">@style/ListViewDropdownStyle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">#ffcccccc</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+    </style>
+    <style name="ListViewDropdownStyle" parent="@android:style/Widget.ListView.DropDown">
+        <item name="android:listSelector">?android:listChoiceBackgroundIndicator</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_24 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/ic_fail.png
+SHA1-Digest: Nr1r1aHpkGrW42RfF7D6uYSPKeA=
+
+Name: res/layout/label.xml
+SHA1-Digest: we0AYaNB6101QSdjf2J5pUQsVmM=
+
+Name: res/layout/app_details.xml
+SHA1-Digest: MJNHnlZ3SXIg299rSOyGnB4WX2A=
+
+Name: res/layout/install_confirm.xml
+SHA1-Digest: elqriUcQtjWOJ7tPsT5s8xMNjoo=
+
+Name: res/drawable/ic_result_status.xml
+SHA1-Digest: /+RuG9hbuu5mlP1AiFBBhXuhaw0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 5KOOv5tFmQB+0bTh1kaywSl62cY=
+
+Name: res/layout/uninstall_confirm.xml
+SHA1-Digest: +7dJZPSVN1o2FIvI3MVjkbOEYqE=
+
+Name: res/layout/op_progress.xml
+SHA1-Digest: 20SLrBHURjLD+5Y7BoidpbJqLmY=
+
+Name: res/layout/install_start.xml
+SHA1-Digest: dfcGHidWweZ9D4khA1yEEn6sKtc=
+
+Name: resources.arsc
+SHA1-Digest: pklIgKAcQD4skhP5LR7WmLfLzxw=
+
+Name: res/layout/uninstall_progress.xml
+SHA1-Digest: IWlONR1fvBIjitTFmtT55qUq1z0=
+
+Name: res/drawable-hdpi/ic_success.png
+SHA1-Digest: KHPY2R+bzsVhEyaRpbz6mVo9xrk=
+

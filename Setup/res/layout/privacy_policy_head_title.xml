@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="?android:scrollbarSize" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/privacy_policy_padding" android:layout_marginBottom="@dimen/privacy_policy_padding">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/tos_check_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+                <CheckBox android:id="@id/tos_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_topSpacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/i_agree" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="com.motorola.blur.setup">
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS"/>
+    <uses-permission android:name="com.motorola.blur.service.blur.Permissions.INTERACT_BLUR_SERVICE"/>
+    <uses-permission android:name="com.motorola.blur.service.email.Permissions.ACTION_SEND"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_WRITE"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_READ"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD"/>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.motorola.blur.service.email.Permissions.INTERACT"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.PERFORM_CDMA_PROVISIONING"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="com.motorola.blur.permission.PASSWORD_PROTECTION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BACKUP"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application android:allowClearUserData="false" android:label="@string/setup" android:name=".BlurAppSetup">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.motorola.blur.startup.CpuIdleWaitActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter android:priority="499">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name=".HomeActivity" android:theme="@android:style/Theme.Holo.NoActionBar">
+            <intent-filter android:priority="6">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.blur.setup.ACTION_SKIP_SETUP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_thb_setup" android:name=".SplashScreenActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_thb_setup" android:launchMode="singleTop" android:name=".QASilentLogin"/>
+        <activity android:icon="@drawable/ic_thb_setup" android:name=".LocationConsentActivity">
+            <intent-filter>
+                <action android:name="com.motorola.blur.locationconsent"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/ic_thb_setup" android:name=".CongratsActivity"/>
+        <activity android:name=".PrivacySetupActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <receiver android:enabled="true" android:name=".TransientNotificationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.blur.setupprovider.action.POST_SETUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".FinishSetupFlowReceiver">
+            <intent-filter>
+                <action android:name="com.motorola.blur.setupprovider.action.POST_SETUP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".Ready2GoReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.config.CONFIGURED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_thb_setup" android:name=".SkipSetupActivity"/>
+        <activity android:icon="@drawable/ic_thb_setup" android:name="com.motorola.blur.setup.ConnectionFailed" android:theme="@android:style/Theme.Holo.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/blank_icon" android:label="@string/backup_settings_title" android:name=".BackupRestoreActivity"/>
+        <service android:exported="false" android:name="RestoreService"/>
+        <activity android:icon="@drawable/ic_thb_setup" android:name="com.motorola.blur.setup.ServiceError"/>
+        <activity android:icon="@drawable/ic_thb_setup" android:name="com.motorola.blur.setup.AccountCreationTimeout"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/ic_thb_setup" android:launchMode="singleTop" android:name=".BlurNeededActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="com.motorola.blur.setup.SETUP_BLUR_ACCOUNT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:icon="@drawable/ic_thb_setup" android:name=".HuxEmailWrapperActivity" android:theme="@android:style/Theme.Holo.NoActionBar"/>
+        <activity android:label="" android:name="com.motorola.blur.privacy.PrivacyPolicyActivity" android:theme="@style/Moto_Theme.Holo.TitleNoActionBar">
+            <intent-filter>
+                <action android:name="com.motorola.blur.ACTION_LAUNCH_MOTO_PRIVACY_POLICY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/blank_icon" android:label="@string/motorola_privacy_profiles_title" android:name="com.motorola.blur.privacy.PrivacyProfilesActivity">
+            <intent-filter>
+                <action android:name="com.motorola.blur.ACTION_LAUNCH_MOTO_PRIVACY_POLICIES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/blank_icon" android:name="com.motorola.blur.privacy.PrivacyProfilesDescActivity"/>
+        <receiver android:name="com.motorola.blur.privacy.PrivacyReminderReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.motorola.blur.setupprovider.action.POST_SETUP"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="" android:name="com.motorola.blur.privacy.LegalReaderActivity" android:theme="@style/Moto_Theme.Holo.TitleNoActionBar">
+            <intent-filter>
+                <action android:name="com.motorola.blur.ACTION_LAUNCH_MOTO_LEGAL_READER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.motorola.blur.privacy.LegalReaderActivity$LegalService">
+            <intent-filter>
+                <action android:name="com.motorola.blur.service.blur.devicesetup.getlegaltext.resp"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_thb_setup" android:name="com.motorola.blur.privacy.TosActivity">
+            <intent-filter>
+                <action android:name="com.motorola.blur.ACTION_LAUNCH_MOTO_SERVICE_AGREEMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_thb_setup" android:launchMode="singleTop" android:name=".CreateBlurAccountActivity" android:theme="@android:style/Theme.Holo.NoActionBar"/>
+        <receiver android:name=".CreateBlurAccountReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.motorola.blur.setup.EXPLICIT_TOS_ACCEPTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".CreateBlurAccountService">
+            <intent-filter android:label="this.is.my.test.service">
+                <action android:name="com.motorola.blur.service.blur.devicesetup.slient.registration"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="BotaUpgradeCheckReceiver">
+            <intent-filter>
+                <action android:name="SilentRegActionAccomplished"/>
+                <action android:name="com.motorola.blur.setupprovider.action.POST_SETUP"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

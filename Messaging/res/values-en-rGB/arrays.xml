@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_errors">
+        <item>Incorrect result returned</item>
+        <item>Successfully saved</item>
+        <item>Invalid parameters</item>
+        <item>Target file already exists</item>
+        <item>Source file does not exist</item>
+        <item>File size limit is too small</item>
+        <item>Invalid file or unsupported format</item>
+        <item>System battery is critically low</item>
+        <item>System memory is critically low</item>
+        <item>Launch failed: unknown reason</item>
+        <item>Save failed: unknown I/O error</item>
+        <item>Save failed: failed to create path</item>
+        <item>Save failed: failed to create file</item>
+        <item>Save failed: storage space is critically low</item>
+        <item>Save cancelled</item>
+        <item>Launch failed: unsupported screen size</item>
+        <item>Source file modified</item>
+        <item>SD card removed</item>
+        <item>Sorry, you cannot add this video to your message.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="boolean" name="GenerateUserAgent" value="true" />
+    <setting type="integer" name="mms_maximum_message_size" value="614400" />
+    <setting type="integer" name="DefaultEncodingMethod" value="1" />
+    <setting type="boolean" name="PlayAudioAsSlideshow" value="true" />
+    <setting type="boolean" name="sms_pref_key_to_email" value="true" />
+    <setting type="string" name="sms_pref_key_email_gateway_num" value="121" />
+    <setting type="boolean" name="sms_mms_show_network_timestamp" value="true" />
+    <setting type="boolean" name="SmsEmailConvertToMmsOnMultipleSegmentsEnabled" value="false" />
+    <setting type="boolean" name="SignatureEnable" value="true" />
+    <setting type="boolean" name="RetrievalRoamingDefaultPref" value="true" />
+    <setting type="boolean" name="MmsSubjectEnable" value="false" />
+    <setting type="boolean" name="DeliveryReportEnable" value="false" />
+    <setting type="integer" name="MaxNumRecipients" value="10" />
+    <setting type="boolean" name="MaxNumRecipientsEnable" value="true" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="159" />
+    <setting type="boolean" name="MTMemoryFullEnable" value="true" />
+</settings>

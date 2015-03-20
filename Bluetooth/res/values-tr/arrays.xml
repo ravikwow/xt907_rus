@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Her yüzde birer sayfa</item>
+        <item>Her yüzde ikişer sayfa</item>
+        <item>Her yüzde dörder sayfa</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Dikey</item>
+        <item>Yatay</item>
+        <item>Ters Yatay</item>
+        <item>Ters Dikey</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>dikey</item>
+        <item>yatay</item>
+        <item>ters yatay</item>
+        <item>ters dikey</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Bir taraflı</item>
+        <item>İki taraflı Uzun Kenar</item>
+        <item>İki taraflı Kısa Kenar</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>tek taraflı</item>
+        <item>iki-taraflı-uzun-kenarlı</item>
+        <item>iki-taraflı-kısa-kenarlı</item>
+    </string-array>
+</resources>

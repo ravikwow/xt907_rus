@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caller_id_display_values">
+        <item>Vain soitto</item>
+        <item>Soittajan tunnus ja soitto</item>
+        <item>Soittajan tunnuksen toisto</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Verkon oletus</item>
+        <item>Piilota numero</item>
+        <item>Näytä numero</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE/WCDMA</item>
+        <item>LTE</item>
+        <item>Globaali</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>Vain EvDo</item>
+        <item>CDMA, ei EvDo</item>
+        <item>CDMA/EvDo auto</item>
+        <item>GSM/WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM/WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE/CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>englanti</item>
+        <item>ranska</item>
+        <item>espanja</item>
+        <item>japani</item>
+        <item>korea</item>
+        <item>kiina</item>
+        <item>heprea</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (automaattinen tila)</item>
+        <item>Vain WCDMA</item>
+        <item>Vain GSM</item>
+        <item>GSM/WCDA (ensisijainen: WCDMA)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Vain kotipuhelin</item>
+        <item>Automaattinen</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>Vain kotiverkot</item>
+        <item>Yhteisverkot</item>
+        <item>Kaikki verkot</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>Vain CDMA</item>
+        <item>Vain EvDo</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY pois käytöstä</item>
+        <item>TTY täysi</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normaali</item>
+        <item>Pitkä</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_d2we_34387">
+        <item>Globaali</item>
+        <item>CDMA</item>
+        <item>GSM/UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_d2we_34387">
+        <item>7</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="select_network_display_values_34387">
+        <item>"Vain GSM
+Säästää akkua"</item>
+        <item>"Vain UMTS
+Parempi suorituskyky"</item>
+        <item>"Automaattinen
+Oletus"</item>
+    </string-array>
+    <string-array name="select_network_display_values">
+        <item>Vain 2G</item>
+        <item>"Vain 3G
+parempi suorituskyky"</item>
+        <item>"Automaattinen
+oletus"</item>
+    </string-array>
+    <string-array name="select_network_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_35989">
+        <item>Globaali</item>
+        <item>LTE/CDMA</item>
+        <item>Vain CDMA</item>
+        <item>GSM/UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_35989">
+        <item>10</item>
+        <item>8</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="voicemail_notification_vibrate_when_entries">
+        <item>Aina</item>
+        <item>Vain äänettömässä tilassa</item>
+        <item>Ei koskaan</item>
+    </string-array>
+    <string-array name="entries_voicemail_choose_vmvvm">
+        <item>Vastaajapalvelu</item>
+        <item>Visuaalinen vastaaja</item>
+        <item>Valitse aina</item>
+    </string-array>
+    <string-array name="entry_values_voicemail_choose_vmvvm">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_vvm_roaming_prompt">
+        <item>Vastaajapalvelu</item>
+        <item>Visuaalinen vastaaja</item>
+        <item>Valitse aina</item>
+    </string-array>
+    <string-array name="entry_values_vvm_roaming_prompt">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_rm_system_select_choices">
+        <item>Vain kotiverkko</item>
+        <item>Automaattinen A</item>
+        <item>Automaattinen B</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_39325">
+        <item>Globaali</item>
+        <item>LTE/CDMA</item>
+        <item>GSM/UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_39325">
+        <item>10</item>
+        <item>8</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_37619">
+        <item>Globaali</item>
+        <item>LTE/CDMA</item>
+        <item>LTE/GSM/UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_37619">
+        <item>10</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

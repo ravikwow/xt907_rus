@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="55.0dip" style="@style/Background_ViewEvent_Title">
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/completed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                <TextView android:gravity="left" android:layout_gravity="left|center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/TextAppearance_ViewEvent_TitleNormal" />
+                <CheckBox android:id="@id/starred_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/starStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/general_view_link" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center_vertical" android:id="@id/general_view_title" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="45.0dip" android:text="@string/taskify_email_lable" android:layout_weight="1.0" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/call_sms_container" android:background="?android:selectableItemBackground" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/taskify_call_title" android:paddingLeft="20.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taskify_calendar_lable" android:layout_weight="1.0" android:layout_alignParentLeft="true" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/dial_call" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/sym_action_call" />
+                <View android:id="@id/taskify_diver" android:visibility="visible" android:layout_width="2.0dip" android:layout_height="fill_parent" style="@style/Divider_ViewEvent" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/sent_sms" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/sym_action_message" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/priority_percentage" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="5.0dip" style="@style/Divider_ViewEvent" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/priority_image" android:paddingLeft="1.0dip" android:paddingTop="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list_importance_high" />
+                    <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/priority_percentage_data" android:paddingLeft="5.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance_ViewEvent_Item" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/account_container" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="5.0dip" style="@style/Divider_ViewEvent" />
+                <RelativeLayout android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/account_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" style="@style/TextAppearance_ViewEvent_Item" />
+                    <ImageView android:id="@id/account_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_task" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/repeat_container" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="5.0dip" style="@style/Divider_ViewEvent" />
+                <RelativeLayout android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/repeat" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" style="@style/TextAppearance_ViewEvent_Item" />
+                    <ImageView android:id="@id/repeat_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_repeat" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/time_container" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Divider_ViewEvent" />
+                <RelativeLayout android:id="@id/overdue_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:id="@id/overdue_label" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:text="@string/overdue" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+                    <ImageView android:id="@id/priority_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_flag" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/start_end_time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" style="@style/TextAppearance_ViewEvent_Item" />
+                    <ImageView android:id="@id/priority_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_due" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/reminder_container" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="5.0dip" style="@style/Divider_ViewEvent" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/reminder_lable" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:text="@string/reminder_label" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+                    <ImageView android:id="@id/reminder_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_reminder" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+                <TextView android:id="@id/reminder_value" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:text="@string/reminder_label" style="@style/TextAppearance_ViewEvent_Item" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/description_container" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="5.0dip" style="@style/Divider_ViewEvent" />
+                <RelativeLayout android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/description" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" style="@style/TextAppearance_ViewEvent_Item" />
+                    <ImageView android:id="@id/note_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_note" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Divider_ViewEvent" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/tag_container" android:background="?android:selectableItemBackground" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tag_label" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:layout_marginRight="@dimen/event_detail_lSpacing" android:text="@string/tags_label" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+                    <TextView android:id="@id/tag_names" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:layout_marginRight="@dimen/event_detail_lSpacing" android:text="@string/no_tag_label" style="@style/TextAppearance_ViewEvent_Item" />
+                </LinearLayout>
+                <ImageView android:id="@id/tag_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_list_tag" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/tag_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_btn_round_more_normal" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Divider_ViewEvent" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/note_taking_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/view_note_taking" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_note_h" />
+                <TextView android:id="@id/no_note_img" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/event_detail_lSpacing" android:layout_marginRight="@dimen/event_detail_lSpacing" android:text="@string/no_note_img_label" style="@style/TextAppearance_ViewEvent_ItemLabel" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Allegati salvati</item>
+        <item quantity="one">Allegato salvato</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Impossibile salvare gli allegati. Nessuna scheda SD presente.
+
+Inserisci una scheda SD."</item>
+        <item quantity="one">"Impossibile salvare l'allegato. Nessuna scheda SD presente.
+
+Inserisci una scheda SD."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Memoria insufficiente per salvare gli allegati.</item>
+        <item quantity="one">"Memoria insufficiente per salvare l'allegato."</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Uno o più allegati non sono stati salvati.</item>
+        <item quantity="one">"L'allegato non è stato salvato."</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d messaggi verranno eliminati.</item>
+        <item quantity="one">1 messaggio verrà eliminato.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d messaggi protetti.</item>
+        <item quantity="one">1 messaggio protetto.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">Protezione rimossa da %1$d messaggi</item>
+        <item quantity="one">Protezione rimossa da 1 messaggio</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Sono presenti promemoria attività</item>
+        <item quantity="one">È presente un promemoria attività</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d promemoria)</item>
+        <item quantity="one">1 attività da completare</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d attività trovate</item>
+        <item quantity="zero">%d attività trovata</item>
+        <item quantity="one">%d attività trovata</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Scadute</item>
+        <item quantity="one">Scadute</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Ogni %1$d giorni alla fine di ogni attività</item>
+        <item quantity="one">Ogni giorno alla fine di ogni attività</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Ogni %1$d settimane alla fine di ogni attività</item>
+        <item quantity="one">Ogni settimana alla fine di ogni attività</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Ogni %1$d mesi alla fine di ogni attività</item>
+        <item quantity="one">Ogni mese alla fine di ogni attività</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Ogni %1$d anni alla fine di ogni attività</item>
+        <item quantity="one">Ogni anno alla fine di ogni attività</item>
+    </plurals>
+</resources>

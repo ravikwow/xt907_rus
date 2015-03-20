@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Eine Seite pro Seite</item>
+        <item>Zwei Seiten pro Seite</item>
+        <item>Vier Seiten pro Seite</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Hochformat</item>
+        <item>Querformat</item>
+        <item>Kopfstehendes Querformat</item>
+        <item>Kopfstehendes Hochformat</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>Hochformat</item>
+        <item>Querformat</item>
+        <item>Kopfstehendes Querformat</item>
+        <item>Kopfstehendes Hochformat</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Einseitig</item>
+        <item>Zweiseitig (Hochformat)</item>
+        <item>Zweiseitig (Querformat)</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>Einseitig</item>
+        <item>Zweiseitig, Hochformat</item>
+        <item>Zweiseitig, Querformat</item>
+    </string-array>
+</resources>

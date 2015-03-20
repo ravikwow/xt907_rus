@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="boolean" name="MmsRestrictionModeEnabled" value="true" />
+    <setting type="integer" name="mms_maximum_message_size" value="614400" />
+    <setting type="integer" name="DefaultEncodingMethod" value="1" />
+    <setting type="integer" name="SmsCharsRemainTilCounter" value="159" />
+    <setting type="boolean" name="MmsConvertIcalToVcalEnabled" value="true" />
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="boolean" name="RoamingAutoRetrieveEnabled" value="true" />
+    <setting type="boolean" name="SignatureEnable" value="true" />
+    <setting type="integer" name="OutgoingMessageTypeDefaultPref" value="1" />
+</settings>

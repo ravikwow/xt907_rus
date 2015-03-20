@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.motorola.simmanager">
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_READ"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_WRITE"/>
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <application android:icon="@drawable/ic_launcher_sim_toolkit" android:label="@string/main_menu_title" android:name=".SimManagerApp" android:theme="@style/SimManagerTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/main_menu_title" android:name=".SimManagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.android.simmanager.ACTION_MANAGE_SIM"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ImportExportActivity" android:theme="@style/BackgroundOnly">
+            <intent-filter>
+                <action android:name="com.motorola.android.simmanager.ACTION_IMPORT_EXPORT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".PhoneContactListActivity" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="com.motorola.android.simmanager.ACTION_EXPORT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".AdnContactListActivity" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="com.motorola.android.simmanager.ACTION_IMPORT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.android.simmanager.ACTION_DELETE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

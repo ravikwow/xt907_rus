@@ -1,0 +1,32 @@
+.class public Lcom/motorola/messaging/pdu/InvalidHeaderValueException;
+.super Lcom/motorola/messaging/util/MmsException;
+.source "InvalidHeaderValueException.java"
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x1c7f1651e1e18aa6L
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 32
+    invoke-direct {p0}, Lcom/motorola/messaging/util/MmsException;-><init>()V
+
+    .line 33
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "message"    # Ljava/lang/String;
+
+    .prologue
+    .line 41
+    invoke-direct {p0, p1}, Lcom/motorola/messaging/util/MmsException;-><init>(Ljava/lang/String;)V
+
+    .line 42
+    return-void
+.end method

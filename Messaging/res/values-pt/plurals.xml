@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Anexos salvos</item>
+        <item quantity="one">Anexo salvo</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Não é possível salvar os anexos, pois não há cartão SD.
+
+Por favor, reinsira o cartão SD."</item>
+        <item quantity="one">"Não é possível salvar o anexo, pois não há cartão SD.
+
+Insira um cartão SD."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Não há memória suficiente para salvar os anexos.</item>
+        <item quantity="one">Não há memória suficiente para salvar o anexo.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Falha ao salvar um ou mais dos anexos.</item>
+        <item quantity="one">Falha ao salvar o anexo.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d mensagens serão excluídas.</item>
+        <item quantity="one">1 mensagem será excluída.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d mensagens protegidas.</item>
+        <item quantity="one">1 mensagem protegida.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d mensagens desprotegidas.</item>
+        <item quantity="one">1 mensagem desprotegida.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Você tem lembretes de tarefa.</item>
+        <item quantity="one">Você tem um lembrete de tarefa.</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d lembretes)</item>
+        <item quantity="one">1 tarefa a ser concluída</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d tarefas encontradas</item>
+        <item quantity="zero">%d tarefa encontrada</item>
+        <item quantity="one">%d tarefa encontrada</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Atrasadas</item>
+        <item quantity="one">Atrasadas</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Todos %1$d dias depois de cada tarefa completa</item>
+        <item quantity="one">Todos os dias após conclusão</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Todas %1$d semanas depois de cada tarefa completa</item>
+        <item quantity="one">Todas as semanas após conclusão</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Todo %1$d mês depois de cada tarefa completa</item>
+        <item quantity="one">Todos os meses após conclusão</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">A cada %1$d anos depois de cada tarefa completa</item>
+        <item quantity="one">Todos os anos após conclusão</item>
+    </plurals>
+</resources>

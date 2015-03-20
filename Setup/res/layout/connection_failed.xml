@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/connection_failed_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.motorola.blur.setup">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/congrats_title_view" android:paddingLeft="@dimen/content_area_left_padding" android:paddingTop="@dimen/AccSet_topSpacing" android:paddingRight="@dimen/content_area_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_network_connection" style="@style/AccSetTextView" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/connection_failed_view" android:paddingLeft="@dimen/content_area_left_padding" android:paddingRight="@dimen/content_area_right_padding" android:layout_marginTop="@dimen/AccSet_vspacing" android:layout_marginBottom="@dimen/radio_button_vspacing" android:text="@string/no_network_connection_textinfo" style="@style/AccSetTextViewMedium" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <RadioGroup android:orientation="vertical" android:id="@id/connection_failed_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/connection_failed_setup_wifi_radio">
+                    <RadioButton android:id="@id/connection_failed_setup_wifi_radio" android:paddingLeft="@dimen/radio_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_wifi" />
+                    <RadioButton android:id="@id/connection_failed_retry_cellluar_radio" android:paddingLeft="@dimen/radio_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry_cellular" />
+                    <RadioButton android:id="@id/connection_failed_skip_radio" android:paddingLeft="@dimen/radio_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_again_later" />
+                </RadioGroup>
+                <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/navigation_bar" style="@style/NavBar">
+        <Button android:id="@id/back_button" android:text="@string/back" android:onClick="onClick" style="@style/NavBarSqrButton" />
+        <Button android:id="@id/next_button" android:text="@string/next" android:onClick="onClick" style="@style/NavBarSqrButton" />
+    </LinearLayout>
+</LinearLayout>

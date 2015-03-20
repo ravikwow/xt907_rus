@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SimManagerTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/SimManagerActionBarStyle</item>
+        <item name="android:actionBarItemBackground">?android:selectableItemBackground</item>
+    </style>
+    <style name="BackgroundOnly" parent="@style/SimManagerTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="SimManagerActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:displayOptions"></item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_opaque_dark_holo</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_opaque_dark_holo</item>
+    </style>
+</resources>

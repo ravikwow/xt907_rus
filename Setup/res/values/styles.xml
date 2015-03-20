@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Blur">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Blur.TxtInstructional" parent="@style/Blur">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Blur.TxtPopupInst" parent="@style/Blur">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffa5a5a5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Blur.TxtGridItem" parent="@style/Blur">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+    </style>
+    <style name="Blur.ActionBar" parent="@style/Blur">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/action_bar_bg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Blur.BtnActionBar" parent="@style/Blur">
+        <item name="android:background">@drawable/btn_actionbar</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Blur.TxtBtnActionBar" parent="@style/Blur.BtnActionBar">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Blur.TxtBtnActionBar2" parent="@style/Blur.TxtBtnActionBar">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="Blur.TxtBtnActionBar3" parent="@style/Blur.TxtBtnActionBar">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="Blur.TitleBar" parent="@style/Blur">
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:drawable/title_bar</item>
+        <item name="android:padding">@dimen/title_bar_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Blur.TxtTitleBar" parent="@android:style/TextAppearance.WindowTitle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Blur.TxtReadScreen" parent="@style/Blur">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Blur.Btn" parent="@style/Blur">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/control_button_selector</item>
+    </style>
+    <style name="Blur.Btn.TitleBar" parent="@style/Blur.Btn">
+        <item name="android:background">@drawable/title_bar_control</item>
+        <item name="android:layout_width">@dimen/title_bar_control_size</item>
+        <item name="android:layout_height">@dimen/title_bar_control_size</item>
+    </style>
+    <style name="Blur.ListItem" parent="@style/Blur">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:listPreferredItemHeight</item>
+    </style>
+    <style name="Blur.TxtListItemA" parent="@style/Blur">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Blur.TxtListItemA.Small" parent="@style/Blur.TxtListItemA">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="Blur.TxtListItemB" parent="@style/Blur">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">left|center</item>
+    </style>
+    <style name="Blur.TxtListItemB.SingleLine" parent="@style/Blur.TxtListItemB">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Blur.FormItemTxt" parent="@style/Blur">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Blur.FormItemTxt.A" parent="@style/Blur.FormItemTxt">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="Blur.FormItemTxt.B" parent="@style/Blur.FormItemTxt">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="AccSet" parent="@style/Blur">
+        <item name="android:paddingLeft">@dimen/AccSet_hspacing</item>
+        <item name="android:paddingTop">@dimen/AccSet_topSpacing</item>
+        <item name="android:paddingRight">@dimen/AccSet_hspacing</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="AccSetTextView" parent="@style/Blur">
+        <item name="android:textSize">@dimen/AccSet_textViewSize</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="AccSetTextViewMedium" parent="@style/Blur.TxtListItemA.Small">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="AccSetTextView.Title" parent="@style/AccSetTextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AccSetTextViewXSmall" parent="@style/AccSetTextViewMedium">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="TxtListItemABlack" parent="@style/Blur.TxtListItemA">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="TxtListItemBBlack" parent="@style/Blur.TxtListItemB">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="AccSetTextViewCheckCaption">
+        <item name="android:textSize">@dimen/AccSet_textViewSizeSm</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="Theme.Dialog.NoTitleBar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="ListItemTxtA" parent="@style/Blur.TxtListItemB.SingleLine">
+        <item name="android:textSize">@dimen/txtSizeA</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ListItemTxtB">
+        <item name="android:textSize">@dimen/txtSizeB</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FormItemTxt.A" parent="@style/Blur.FormItemTxt.A">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="FormItemTxt.B" parent="@style/Blur.FormItemTxt.B">
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+    <style name="FormItemTxt.C" parent="@style/FormItemTxt.A">
+        <item name="android:layout_marginLeft">2.0sp</item>
+    </style>
+    <style name="TxtInstructional" parent="@style/Blur.TxtInstructional">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="TxtGridItem" parent="@style/Blur.TxtGridItem">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+    <style name="TxtTerms">
+        <item name="android:textSize">@dimen/tos_termsSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WelcomeStart">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+    <style name="NavBar" parent="@android:style/ButtonBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="NavBarSqrButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Theme.Blur.Light" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Moto_Theme.Holo.TitleNoActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

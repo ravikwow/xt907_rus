@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting type="boolean" name="AutoRetrievalEnabled" value="true" />
+    <setting type="integer" name="mms_maximum_message_size" value="409600" />
+    <setting type="boolean" name="sms_pref_key_to_email" value="true" />
+    <setting type="string" name="sms_pref_key_email_gateway_num" value="6245" />
+    <setting type="boolean" name="PriorityEnable" value="true" />
+    <setting type="integer" name="MmsFromFormat" value="1" />
+    <setting type="boolean" name="TransIdEnable" value="true" />
+    <setting type="string" name="UaprofTagName" value="profile" />
+    <setting type="boolean" name="WapRejectEnable" value="true" />
+    <setting type="integer" name="sms_mms_threshold" value="1" />
+    <setting type="string" name="MmsUaprofFormat" value="http://mms.cwwmms.com/uaprofs/moto$modelno.rdf" />
+    <setting type="string" name="ProprietaryHttpHeader" value="accept-charset: US-ASCII, ISO-8859-1, UTF-8|X-MDN: $mdn" />
+</settings>

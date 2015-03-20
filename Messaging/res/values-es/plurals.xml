@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Archivos adjuntos guardados</item>
+        <item quantity="one">Archivo adjunto guardado</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Los archivos adjuntos no se han podido guardar porque falta la tarjeta SD.
+
+Inserta de nuevo la tarjeta SD."</item>
+        <item quantity="one">"El archivo adjunto no se ha podido guardar porque falta la tarjeta SD.
+
+Inserta de nuevo la tarjeta SD."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">No hay suficiente memoria para guardar los adjuntos.</item>
+        <item quantity="one">No hay suficiente memoria para guardar el adjunto.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">No se han podido guardar uno o varios de los archivos adjuntos.</item>
+        <item quantity="one">No se ha podido guardar el archivo adjunto.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">Se eliminarán %1$d mensajes.</item>
+        <item quantity="one">Se eliminará un mensaje.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d mensajes protegidos.</item>
+        <item quantity="one">1 mensaje protegido.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d mensajes desprotegidos.</item>
+        <item quantity="one">1 mensaje desprotegido.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">Tienes recordatorios de tareas</item>
+        <item quantity="one">Tienes un recordatorio de tareas</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(%1$d recordatorios)</item>
+        <item quantity="one">1 tarea por completar</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">%d tareas encontradas</item>
+        <item quantity="zero">%d tarea encontrada</item>
+        <item quantity="one">%d tarea encontrada</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">Vencidas</item>
+        <item quantity="one">Vencida</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Cada %1$d días tras finalizar cada tarea</item>
+        <item quantity="one">Cada día tras finalizar cada tarea</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Cada %1$d semanas tras finalizar cada tarea</item>
+        <item quantity="one">Cada semana tras finalizar cada tarea</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Cada %1$d meses tras finalizar cada tarea</item>
+        <item quantity="one">Cada mes tras finalizar cada tarea</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Cada %1$d años tras finalizar cada tarea</item>
+        <item quantity="one">Cada año tras finalizar cada tarea</item>
+    </plurals>
+</resources>

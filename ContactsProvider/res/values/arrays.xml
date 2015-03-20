@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unrestricted_packages">
+        <item>com.android.contacts</item>
+        <item>com.android.phone</item>
+        <item>com.facebook.katana</item>
+        <item>com.motorola.blurgallery</item>
+        <item>com.motorola.blur.contacts.data</item>
+        <item>com.motorola.blur.contacts.sync</item>
+        <item>com.motorola.messaging</item>
+        <item>com.motorola.blur.friendfeed</item>
+        <item>com.motorola.blurgallery</item>
+        <item>com.motorola.contextual.smartrules</item>
+        <item>com.motorola.contacts.ice</item>
+    </string-array>
+    <string-array name="unrestricted_motosignature_packages">
+        <item>com.motorola.blur.home</item>
+        <item>com.motorola.motochat</item>
+        <item>com.motorola.notifier.plugin.facebookblur</item>
+        <item>com.motorola.quickview</item>
+        <item>com.motorola.motgallery</item>
+        <item>com.motorola.smartcardock</item>
+        <item>com.motorola.gallerywidget</item>
+        <item>com.motorola.smartmode</item>
+        <item>com.motorola.contacts.ice</item>
+        <item>com.motorola.widget.favorites</item>
+    </string-array>
+</resources>
