@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_writeGservices">Запись настроек Gservices.</string>
+    <string name="permdesc_writeGservices">Разрешает приложению изменить настройки Gservices.</string>
+    <string name="permlab_tcmdLocal">Использовать команды проверки</string>
+    <string name="permdesc_tcmdLocal">Использовать команды проверки</string>
+    <string name="settings_storage">Хранилище настроек</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Режим охлаждения</string>
+    <string name="batt_temp_cooldown_title">Режим охлаждения</string>
+    <string name="batt_temp_cooldown_msg">Телефон находится в режиме охлаждения. Возможны только экстренные вызовы.</string>
+    <string name="lockscreen_emergency_call">Экстренный вызов</string>
+</resources>

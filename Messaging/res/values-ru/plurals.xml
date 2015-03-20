@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="successfull_save_message">
+        <item quantity="other">Вложения сохранены</item>
+        <item quantity="one">Вложение сохранено</item>
+    </plurals>
+    <plurals name="sdcard_missing_error_message">
+        <item quantity="other">"Вложения нельзя сохранить, так как SD-карта отсутствует.
+
+Вставьте SD-карту повторно."</item>
+        <item quantity="one">"Вложение нельзя сохранить, так как SD-карта отсутствует.
+
+Вставьте SD-карту повторно."</item>
+    </plurals>
+    <plurals name="not_enough_memory_error_message">
+        <item quantity="other">Недостаточно памяти для сохранения вложений.</item>
+        <item quantity="one">Недостаточно памяти для сохранения вложения.</item>
+    </plurals>
+    <plurals name="generic_error_message">
+        <item quantity="other">Не удалось сохранить одно или несколько вложений.</item>
+        <item quantity="one">Не удалось сохранить вложение.</item>
+    </plurals>
+    <plurals name="confirm_delete_multiple_message">
+        <item quantity="other">%1$d сообщения(й) будет удалено.</item>
+        <item quantity="one">1 сообщение будет удалено.</item>
+    </plurals>
+    <plurals name="messages_protected_toast">
+        <item quantity="other">%1$d сообщений защищено.</item>
+        <item quantity="one">1 сообщение защищено.</item>
+    </plurals>
+    <plurals name="messages_unprotected_toast">
+        <item quantity="other">%1$d сообщений незащищены.</item>
+        <item quantity="one">1 сообщение незащищено.</item>
+    </plurals>
+    <plurals name="notification_ticker_text">
+        <item quantity="other">У вас присутствуют напоминания о задаче</item>
+        <item quantity="one">У вас присутствует напоминание о задаче</item>
+    </plurals>
+    <plurals name="notification_content_text">
+        <item quantity="other">(Напоминаний: %1$d)</item>
+        <item quantity="one">1 задача на завершение</item>
+    </plurals>
+    <plurals name="search_task_found">
+        <item quantity="other">найдено задач: %d</item>
+        <item quantity="zero">найдено задач: %d</item>
+        <item quantity="one">найдено задач: %d</item>
+    </plurals>
+    <plurals name="Overdue_list">
+        <item quantity="other">С истекшим сроком действия</item>
+        <item quantity="one">С истекшим сроком действия</item>
+    </plurals>
+    <plurals name="regenerate_daily">
+        <item quantity="other">Каждые %1$d дня(ей) по завершении каждой задачи</item>
+        <item quantity="one">Ежедневно по завершении каждой задачи</item>
+    </plurals>
+    <plurals name="regenerate_weekly">
+        <item quantity="other">Каждые %1$d недели(ь) по завершении каждой задачи</item>
+        <item quantity="one">Еженедельно по завершении каждой задачи</item>
+    </plurals>
+    <plurals name="regenerate_monthly">
+        <item quantity="other">Каждые %1$d месяца(ев) по завершении каждой задачи</item>
+        <item quantity="one">Ежемесячно по завершении каждой задачи</item>
+    </plurals>
+    <plurals name="regenerate_yearly">
+        <item quantity="other">Каждый %1$d год(а) по завершении каждой задачи</item>
+        <item quantity="one">Ежегодно по завершении каждой задачи</item>
+    </plurals>
+</resources>

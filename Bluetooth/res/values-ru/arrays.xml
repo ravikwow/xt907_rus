@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numberup">
+        <item>Одна страница на сторону</item>
+        <item>Две страницы на сторону</item>
+        <item>Четыре страницы на сторону</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>Портрет</item>
+        <item>Пейзаж</item>
+        <item>Перевернутый пейзаж</item>
+        <item>Перевернутый портрет</item>
+    </string-array>
+    <string-array name="orientation_val">
+        <item>портрет</item>
+        <item>пейзаж</item>
+        <item>reverse-landscape</item>
+        <item>reverse-portrait</item>
+    </string-array>
+    <string-array name="sides">
+        <item>Односторонний</item>
+        <item>Двусторонний (длинная сторона)</item>
+        <item>Двусторонний (короткая сторона)</item>
+    </string-array>
+    <string-array name="sides_val">
+        <item>односторонний</item>
+        <item>two-sided-long-edge</item>
+        <item>two-sided-short-edge</item>
+    </string-array>
+</resources>
